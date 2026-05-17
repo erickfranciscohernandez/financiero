@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter Estratégico — 16 de Mayo, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --cream: #ede7d5;
+    --accent: #c0392b;
+    --gold: #b8860b;
+    --steel: #2c3e50;
+    --muted: #6b6457;
+    --rule: #c9b99a;
+    --tag-bg: #0d0d0d;
+    --tag-text: #f5f0e8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  /* ── HEADER ── */
+  .masthead {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 20px 0 14px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+  .masthead-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  .edition-bar {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  /* ── HEADLINE BLOCK ── */
+  .headline-block {
+    border-left: 4px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+  .headline-block h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+  .headline-block .deck {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* ── RESUMEN EJECUTIVO ── */
+  .exec-summary {
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .exec-summary::before {
+    content: 'RESUMEN EJECUTIVO';
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .exec-summary p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--steel);
+    font-weight: 400;
+  }
+
+  /* ── SECTION DIVIDER ── */
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 14px;
+  }
+  .section-label .tag {
+    background: var(--tag-bg);
+    color: var(--tag-text);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    white-space: nowrap;
+  }
+  .section-label .rule-line {
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  .section-label .num {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+  }
+
+  .paragraph-block {
+    margin-bottom: 6px;
+  }
+  .paragraph-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .paragraph-block p {
+    font-size: 14.5px;
+    line-height: 1.85;
+    color: #1a1a1a;
+    font-weight: 300;
+  }
+  .paragraph-block p strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ── DATA STRIP ── */
+  .data-strip {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--rule);
+    margin: 28px 0;
+    overflow: hidden;
+  }
+  .data-item {
+    flex: 1;
+    padding: 14px 16px;
+    border-right: 1px solid var(--rule);
+    text-align: center;
+  }
+  .data-item:last-child { border-right: none; }
+  .data-item .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 5px;
+  }
+  .data-item .value {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .data-item .value.up { color: #1a6b3c; }
+  .data-item .value.down { color: var(--accent); }
+  .data-item .change {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    display: block;
+    margin-top: 2px;
+  }
+
+  /* ── INSIGHT DEL DÍA ── */
+  .insight-block {
+    margin-top: 40px;
+    border-top: 3px solid var(--ink);
+    padding-top: 24px;
+  }
+  .insight-block .insight-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+  .insight-block blockquote {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.6;
+    color: var(--steel);
+    padding-left: 20px;
+    border-left: 3px solid var(--gold);
+    margin-bottom: 14px;
+  }
+  .insight-block .insight-body {
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: var(--muted);
+    font-weight: 300;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    margin-top: 48px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer-left {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  .footer-right {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  hr.thin {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 24px 0;
+  }
+
+  @media (max-width: 600px) {
+    .data-strip { flex-direction: column; }
+    .data-item { border-right: none; border-bottom: 1px solid var(--rule); }
+    .data-item:last-child { border-bottom: none; }
+    .masthead { flex-direction: column; gap: 8px; }
+    .headline-block h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-title">Newsletter Estratégico · Edición Diaria</div>
+  <div class="masthead-meta">
+    Sábado, 16 de Mayo de 2026<br>
+    Para ejecutivos, inversores y tomadores de decisión
+  </div>
+</div>
+<div class="edition-bar">Edición N° — Mayo 16, 2026 · Santiago, Chile</div>
+
+<!-- HEADLINE -->
+<div class="headline-block">
+  <h1>La cumbre Trump–Xi concluye con simbolismo y decepciones: mercados absorben resultados mientras Chile enfrenta inflación al alza y TPM en pausa</h1>
+  <p class="deck">La reunión en Beijing no produjo los avances estructurales esperados. Taiwán, Irán y la IA permanecen como focos de tensión irresueltos, mientras la economía global y la chilena navegan un entorno de mayor incertidumbre energética y geopolítica.</p>
+</div>
+
+<!-- DATA STRIP -->
+<div class="data-strip">
+  <div class="data-item">
+    <span class="label">Dólar Obs. CLP</span>
+    <span class="value">$891</span>
+    <span class="change">Banco Central · 16 may</span>
+  </div>
+  <div class="data-item">
+    <span class="label">Cobre LME</span>
+    <span class="value up">US$4,62</span>
+    <span class="change">libra · rally mayo</span>
+  </div>
+  <div class="data-item">
+    <span class="label">TPM Chile</span>
+    <span class="value">4,5%</span>
+    <span class="change">sin cambios · abr 2026</span>
+  </div>
+  <div class="data-item">
+    <span class="label">IPC Anual CL</span>
+    <span class="value down">4,0%</span>
+    <span class="change">abril 2026</span>
+  </div>
+  <div class="data-item">
+    <span class="label">PIB Chile 2026e</span>
+    <span class="value">2,0%</span>
+    <span class="change">proyección mercado</span>
+  </div>
+</div>
+
+<!-- RESUMEN EJECUTIVO -->
+<div class="exec-summary">
+  <p>El panorama global de esta jornada está dominado por tres ejes: el desenlace decepcionante de la cumbre bilateral entre Donald Trump y Xi Jinping en Beijing, el impacto persistente del conflicto en Medio Oriente sobre las cadenas energéticas y la inflación global, y el reposicionamiento de la inteligencia artificial como infraestructura corporativa de alcance sistémico. Para Chile y Latinoamérica, el escenario proyecta inflación elevada en el corto plazo, crecimiento moderado a la baja y un cobre con soporte —pero vulnerable a correcciones si el diálogo comercial entre superpotencias no avanza. La CMF, por su parte, profundiza su agenda de modernización regulatoria con Basilea III y finanzas abiertas como ejes centrales de 2026–2027.</p>
+</div>
+
+<!-- PÁRRAFO 1 - GEOPOLÍTICA -->
+<div class="section-label">
+  <span class="tag">Geopolítica</span>
+  <span class="rule-line"></span>
+  <span class="num">01</span>
+</div>
+<div class="paragraph-block">
+  <h2>La cumbre Beijing: estabilización sin avances estratégicos — y China sale mejor posicionada</h2>
+  <p>La reunión de dos días entre Trump y Xi Jinping en Beijing concluyó el viernes 15 de mayo con una narrativa divergente entre ambas potencias. <strong>Desde la perspectiva estadounidense, el resultado fue escaso:</strong> ningún gran avance en comercio, ninguna resolución sobre Taiwán, ningún compromiso formal sobre Irán. La delegación de Trump regresó con logros simbólicos —200 aviones Boeing en lugar de los 500 proyectados, lo que hundió la acción de la compañía un 4%— y la creación de consejos bilaterales de comercio e inversión que aún no tienen detalles formalizados. Xi Jinping, en cambio, gestionó la reunión desde una posición de fortaleza relativa: formuló la advertencia más contundente hasta la fecha sobre Taiwán, descartó concesiones sobre Irán y proyectó la imagen de un liderazgo estable frente a una contraparte "errática". La cancillería china calificó la cumbre de "histórica"; la evaluación occidental es más sobria. <strong>Para los mercados emergentes latinoamericanos, el subproducto más relevante es que la tregua arancelaria no fue formalmente extendida ni profundizada</strong>, dejando un margen de incertidumbre comercial que presionará las cadenas de valor regionales en los próximos trimestres. La visita de Xi a EE.UU. en otoño boreal es el próximo hito a monitorear.</p>
+</div>
+
+<!-- PÁRRAFO 2 - ECONOMÍA GLOBAL -->
+<div class="section-label">
+  <span class="tag">Economía Global</span>
+  <span class="rule-line"></span>
+  <span class="num">02</span>
+</div>
+<div class="paragraph-block">
+  <h2>Inflación global revisada al alza: la guerra en Medio Oriente reescribe el escenario de tasas</h2>
+  <p>El conflicto en Irán —iniciado a fines de febrero— ha alterado de forma significativa el escenario macroeconómico global. <strong>El FMI proyecta que la inflación mundial alcanzará 4,4% en 2026</strong>, casi un punto porcentual por encima de lo proyectado antes del estallido bélico, con el precio del petróleo instalado sobre los US$100 por barril y los precios energéticos filtrándose a lo largo de todas las cadenas productivas. La Reserva Federal mantuvo tasas sin cambios en su reunión de abril —en el rango de 3,50%–3,75%— adoptando un tono más cauteloso, con tres miembros del FOMC oponiéndose al sesgo acomodaticio. <strong>El mercado descuenta una Fed en pausa durante el resto de 2026.</strong> En Europa, el BCE enfrenta un dilema simétrico: el PIB de la eurozona creció apenas 0,1% intertrimestral en el primer trimestre y el sentimiento económico encadenó tres meses de caída, pero la presidenta Lagarde ha insinuado posibles alzas de tipos si la inflación energética persiste. El crecimiento global se estima en 2,6% para 2026, con riesgo de desaceleración a 2,5% si el conflicto se profundiza. Para los tomadores de decisión en Latinoamérica, el mensaje es claro: el ciclo de flexibilización monetaria global está en pausa, y las condiciones financieras permanecerán más ajustadas de lo anticipado a inicios de año.</p>
+</div>
+
+<hr class="thin">
+
+<!-- PÁRRAFO 3 - MERCADOS -->
+<div class="section-label">
+  <span class="tag">Mercados Financieros</span>
+  <span class="rule-line"></span>
+  <span class="num">03</span>
+</div>
+<div class="paragraph-block">
+  <h2>Bolsas cerca de máximos pese a la geopolítica: el rally de semiconductores y la IA sostienen la valuación</h2>
+  <p>Los mercados globales han mostrado una resiliencia notable frente a la acumulación de riesgos geopolíticos. <strong>Los beneficios empresariales en EE.UU. crecen 26% en lo que va del año y los semiconductores acumulan un alza de 65,4% en 2026</strong>, impulsados por la inversión en infraestructura de inteligencia artificial. El índice SOX cotiza con un múltiplo P/E de 28x, valoración elevada pero sostenida por la aceleración de utilidades. Con la temporada de resultados llegando a su fin —solo resta NVIDIA entre las "Magnificent 7"— los mercados necesitan avances concretos en las negociaciones geopolíticas para continuar la senda alcista. El decepcionante desenlace de la cumbre Trump–Xi ya generó presión vendedora en activos de riesgo. <strong>El cobre opera cerca de US$4,62 la libra</strong>, respaldado por la demanda china para infraestructura eléctrica y proyectos de energía renovable. Este nivel es estratégicamente positivo para Chile: cada centavo sostenido de alza en el metal representa entre US$30 y US$60 millones adicionales en ingresos fiscales. El peso chileno se muestra relativamente firme, con el dólar observado en torno a $891, beneficiado por el sólido precio del cobre y el flujo de capital hacia emergentes que han buscado diversificarse fuera de activos estadounidenses.</p>
+</div>
+
+<!-- PÁRRAFO 4 - CHILE ESTRATÉGICO -->
+<div class="section-label">
+  <span class="tag">Chile Estratégico</span>
+  <span class="rule-line"></span>
+  <span class="num">04</span>
+</div>
+<div class="paragraph-block">
+  <h2>Chile ajusta proyecciones a la baja: inflación en 4% anual y PIB 2026 convergiendo al 2%</h2>
+  <p>La economía chilena enfrenta en mayo un cuadro de doble presión: inflación al alza por el encarecimiento de combustibles y un crecimiento que se modera ante el deterioro externo. <strong>El IPC acumula 4,0% anual en abril</strong>, su mayor avance mensual desde 2022 según Bloomberg Línea, impulsado por el retiro de subsidios a combustibles y el efecto indirecto de la guerra en Oriente Medio sobre el precio del crudo. El Banco Central mantiene la Tasa de Política Monetaria (TPM) en 4,5%, sin señales de flexibilización en el corto plazo, dadas las presiones inflacionarias. La Encuesta de Expectativas Económicas del Banco Central del 12 de mayo revisó el crecimiento del PIB para 2026 a la baja, convergiendo en torno al 2%, desde el rango de 2%–3% proyectado originalmente por el gobierno de Kast. <strong>El mercado espera que la inflación anual cierre en 4,3% a diciembre</strong>, con una moderación proyectada para 2027. En el frente positivo, la Encuesta de Operadores Financieros del 14 de mayo mostró una moderación de las expectativas inflacionarias a 12 meses —desde 4,0% a 3,4%—, lo que sugiere que el shock de energía podría estar siendo parcialmente absorbido. La minería sigue siendo un factor de incertidumbre: la producción cuprífera acusa disrupciones y menor ley del mineral, lo que limita el efecto multiplicador del alto precio internacional sobre la economía real.</p>
+</div>
+
+<hr class="thin">
+
+<!-- PÁRRAFO 5 - TECNOLOGÍA E IA -->
+<div class="section-label">
+  <span class="tag">Tecnología e IA</span>
+  <span class="rule-line"></span>
+  <span class="num">05</span>
+</div>
+<div class="paragraph-block">
+  <h2>La IA se consolida como infraestructura corporativa: la brecha entre empresas líderes y rezagadas se amplifica</h2>
+  <p>El informe B2B Signals de OpenAI —publicado el 6 de mayo— confirma una tendencia estructural de alto impacto para los tomadores de decisión: <strong>las empresas en el percentil 95 de adopción de IA utilizan la tecnología 3,5 veces más por trabajador que una compañía típica</strong>, frente a una brecha de apenas 2x en abril de 2025. La diferencia es acumulativa, no estática, lo que significa que el gap competitivo se amplía exponencialmente para las organizaciones que retrasen su adopción. La industria ha pivotado desde el usuario individual hacia el mercado corporativo, donde los contratos multimillonarios ofrecen ingresos más estables; el negocio real reside en la integración de datos, seguridad y control de flujos de trabajo. En paralelo, la adquisición de xAI por SpaceX —valorada en aproximadamente US$1,25 billones— redefine la concentración del poder de IA a escala global. Para Latinoamérica, la ventana de oportunidad es real pero acotada: <strong>mientras los marcos regulatorios globales se definen, los ecosistemas regionales tienen margen para establecer estándares propios en IA aplicada a sectores verticales</strong> —salud, fintech, agricultura, educación— aprovechando datos locales que los modelos generalistas no poseen. El costo operativo de sistemas de IA avanzada puede superar entre 2 y 10 veces el costo de personal humano equivalente en 2026, lo que exige análisis riguroso de retorno antes de escalar.</p>
+</div>
+
+<!-- PÁRRAFO 6 - CMF Y REGULACIÓN FINANCIERA -->
+<div class="section-label">
+  <span class="tag">Regulación Financiera · CMF</span>
+  <span class="rule-line"></span>
+  <span class="num">06</span>
+</div>
+<div class="paragraph-block">
+  <h2>CMF acelera la modernización del sistema financiero chileno: Basilea III, Open Finance y modelos internos de riesgo en agenda</h2>
+  <p>La Comisión para el Mercado Financiero (CMF) avanza en 2026 en una de sus agendas regulatorias más ambiciosas en años. En el frente prudencial, la presidenta Catherine Tornel anunció el impulso de los Modelos Internos de riesgo de crédito bajo Basilea III, transitando desde un esquema estandarizado hacia uno en que cada banco utilice su propio modelo —validado previamente por la CMF. <strong>Este paso eleva la sofisticación y precisión del sistema bancario chileno</strong> en la administración de riesgo y capital, alineando al país con los estándares de la OCDE. En finanzas abiertas (Open Finance), la CMF postergó la puesta en marcha del Sistema de Finanzas Abiertas (SFA) desde julio de 2026 a julio de 2027, incorporando mayor gradualidad a solicitud del sistema bancario. Si bien la demora reduce la competencia de corto plazo para los bancos establecidos, <strong>otorga tiempo para que las entidades fintech e incumbentes construyan la infraestructura técnica necesaria</strong>. La conferencia anual 2026 de la CMF, titulada "Hacia un Sistema Financiero Sostenible: Inclusión, Confianza y Transformación Digital", anticipa que la regulación de conducta bancaria y los estándares de ciberseguridad para fintech serán los próximos focos normativos. Para el sector asegurador e institucional, la normativa en materia de Activos Ponderados por Riesgo de Mercado (APRM) y los requerimientos de liquidez de cámaras de pagos de bajo valor refuerzan la arquitectura de estabilidad sistémica del mercado local.</p>
+</div>
+
+<!-- PÁRRAFO 7 - COOPERATIVISMO -->
+<div class="section-label">
+  <span class="tag">Cooperativismo · Chile</span>
+  <span class="rule-line"></span>
+  <span class="num">07</span>
+</div>
+<div class="paragraph-block">
+  <h2>El cooperativismo chileno en tensión: señales de moderación en el registro activo pero nuevo impulso estatal con $1.342 millones en subsidios</h2>
+  <p>El sector cooperativo chileno enfrenta un momento de inflexión en 2026. Según el Informe de Creación de Empresas y Cooperativas de marzo —publicado por el Ministerio de Economía el 5 de mayo— <strong>el país registra 2.118 cooperativas activas, con una disminución anual de 1,0%</strong>, mientras que el número de socios alcanza los 2.141.135 personas, también con una leve caída de 0,9% en doce meses. Esta moderación contrasta con el dinamismo observado durante el Año Internacional de las Cooperativas 2025, cuando el sector creció 11,4% entre octubre de 2024 y octubre de 2025. La respuesta del Estado no se ha hecho esperar: Sercotec abrió esta semana una convocatoria nacional del programa Fortalecimiento y Creación de Empresas Sociales y Cooperativas, con un fondo de <strong>$1.342 millones en subsidios para 67 organizaciones</strong> —$8 millones para nuevas cooperativas y $20 millones para fortalecer las existentes—, sin exigir aporte empresarial significativo. En el plano regulatorio, la CMF incorporó en su Plan 2026-2027 normativa específica para las <strong>Cooperativas de Ahorro y Crédito (CAC) fiscalizadas</strong>, incluyendo reglas de devolución de cuotas, creación de filiales —con especial mención a la posibilidad de constituir Administradoras de Fondos de Pensiones— y estándares de solvencia prudencial alineados con Basilea. Esta última línea regulatoria tiene relevancia estratégica: abriría a las cooperativas financieras más grandes, como Coopeuch —que destinó $21.378 millones a revalorizar cuotas de sus cooperados en 2025 y se posiciona como la institución financiera privada de mayor ahorro en Chile— una vía regulada para competir en el mercado previsional. Para inversores y analistas, el cooperativismo chileno representa un segmento de la economía social con más de 2 millones de socios, activos financieros relevantes y una agenda de modernización regulatoria activa, pero que requiere resolver sus desafíos de formación de socios, digitalización y escala para consolidarse como actor de largo plazo en la economía nacional.</p>
+</div>
+
+<hr class="thin">
+
+<!-- INSIGHT DEL DÍA -->
+<div class="insight-block">
+  <span class="insight-label">Insight del Día · Perspectiva Estratégica</span>
+  <blockquote>"En un mundo cada vez más multipolar y con cada vez menos multilateralismo, la gestión de riesgos geopolíticos, fiscales y tecnológicos determinará quién crece y quién queda rezagado."</blockquote>
+  <p class="insight-body">La cumbre Trump–Xi ilustra con claridad la paradoja del momento global: dos potencias que no pueden permitirse el lujo de desconectarse, pero que tampoco pueden acordar las reglas del sistema que comparten. Para los inversores y ejecutivos latinoamericanos, esto no es un problema lejano —es el marco estructural dentro del cual deben tomar decisiones de capital, cadena de suministro y acceso a tecnología en los próximos 24 meses. Chile, como economía exportadora de commodities con sólidos fundamentos institucionales, tiene una posición relativa favorable: precio del cobre en niveles históricos altos, sistema financiero ordenado y una agenda regulatoria de modernización creíble. El riesgo no está en el modelo, sino en la ejecución. La ventana de inflación elevada —con IPC anual en 4% y TPM en pausa— comprime el margen de maniobra monetario y fiscal justo cuando el entorno externo exige mayor resiliencia. La IA, mientras tanto, no espera: las empresas que estén construyendo hoy sus capacidades de adopción profunda estarán operando en una liga diferente en 2027. En contextos de incertidumbre sistémica, la ventaja competitiva no la dan los activos, sino la velocidad de adaptación institucional.</p>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-left">
+    Newsletter Estratégico · Edición diaria<br>
+    Fuentes: Banco Central de Chile · CMF · FMI · Bloomberg · Reuters · Diario Financiero · Infobae · Euronews · CNN · Bankinter Research
+  </div>
+  <div class="footer-right">Santiago, 16 de mayo de 2026</div>
+</div>
+
+</body>
+</html>
