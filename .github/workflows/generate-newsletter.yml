@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: pip install requests weasyprint
 
+      - name: Generate dynamic mock news (for sandbox environment)
+        run: python generate_mock_news.py
+
       - name: Fetch live economic indicators (FASE 4)
         run: python fetch_live_data.py
 
