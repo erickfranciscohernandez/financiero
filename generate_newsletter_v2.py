@@ -49,16 +49,17 @@ def build_news_items(news_list):
     return items
 
 def main():
-    print("🎯 Generando Newsletter Estratégico v2 (Con Cooperativismo y CMF)...\n")
+    print("🎯 Generando Newsletter Estratégico v2 (Con Economía en Vivo)...\n")
 
     # Obtener noticias
-    print("📡 Intentando conectar a RSS feeds...")
+    print("📡 Intentando conectar a RSS feeds de fuentes premium...")
+    print("   Fuentes: Bloomberg, Reuters, Financial Times, The Economist, CNBC\n")
     all_news = fetch_all_news()
 
     # Si no hay noticias, cargar desde JSON
     if sum(len(v) for v in all_news.values()) == 0:
         print("⚠️  No se pudo conectar a RSS feeds.")
-        print("📁 Cargando noticias desde archivo JSON...")
+        print("📁 Cargando noticias desde archivo JSON con datos actualizados...")
         json_news = load_noticias_from_json()
         if json_news:
             all_news = json_news
@@ -66,17 +67,20 @@ def main():
 
     print(f"\n✅ Noticias obtenidas:")
     print(f"   • Geopolítica: {len(all_news['geopolitica'])}")
-    print(f"   • Economía: {len(all_news['economia_mercados'])}")
-    print(f"   • Chile: {len(all_news['chile_estrategico'])}")
-    print(f"   • Tendencias: {len(all_news['tendencias'])}")
+    print(f"   • Economía y Mercados (Bloomberg/Reuters/FT/Economist/CNBC): {len(all_news['economia_mercados'])}")
+    print(f"   • Chile Estratégico: {len(all_news['chile_estrategico'])}")
+    print(f"   • Tendencias Tech: {len(all_news['tendencias'])}")
     print(f"   • Cooperativismo: {len(all_news['cooperativismo'])}")
     print(f"   • CMF: {len(all_news['cmf'])}")
 
     current_date = datetime.now().strftime('%d de %B, %Y').replace('May', 'Mayo')
 
+    # Preparar noticias de economía y mercados
+    econ_items = build_news_items(all_news['economia_mercados'])
+
     # Generar HTML
     print("\n🎨 Generando HTML...")
-    html = generate_html_newsletter(all_news, current_date)
+    html = generate_html_newsletter(all_news, current_date, econ_items)
 
     # Guardar
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -86,11 +90,28 @@ def main():
     print(f"   Archivo: newsletter.html")
     print(f"   Secciones: 9 (incluyendo Cooperativismo y CMF)")
 
-def generate_html_newsletter(all_news, current_date):
+def generate_html_newsletter(all_news, current_date, econ_items=None):
     """Generate complete HTML newsletter"""
+
+    if econ_items is None:
+        econ_items = build_news_items(all_news['economia_mercados'])
 
     coop_items = build_news_items(all_news['cooperativismo'])
     cmf_items = build_news_items(all_news['cmf'])
+
+    econ_html = ""
+    for item in econ_items:
+        econ_html += f'''
+      <div class="news-item">
+        <a href="{item['link']}" target="_blank" class="news-link">
+          <div class="news-item-title">{item['tema']}</div>
+        </a>
+        <div class="news-item-detail">{item['detalle']}</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">{item['impacto']}</span>
+          <a href="{item['link']}" target="_blank" class="source-link">→ {item['source']}</a>
+        </div>
+      </div>'''
 
     coop_html = ""
     for item in coop_items:
@@ -397,6 +418,18 @@ def generate_html_newsletter(all_news, current_date):
     Cobertura completa del mercado financiero chileno: regulación CMF, movimientos geopolíticos globales,
     desarrollo del sector cooperativo, tendencias tecnológicas y oportunidades de inversión.
     Newsletter generado automáticamente desde múltiples RSS feeds de calidad.
+  </div>
+
+  <!-- ECONOMÍA Y MERCADOS - FUENTES PREMIUM -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">💹</span>
+      Economía y Mercados - Fuentes Premium
+    </div>
+    <span class="section-subtitle">Análisis directo de Bloomberg, Reuters, Financial Times, The Economist y CNBC</span>
+    <div class="content-block">
+{econ_html}
+    </div>
   </div>
 
   <!-- COOPERATIVISMO -->

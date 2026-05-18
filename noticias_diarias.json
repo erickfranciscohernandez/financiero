@@ -50,22 +50,40 @@
 
   "economia_global": [
     {
-      "title": "Banco Central de EE.UU. mantiene tasas sin cambios; mercados descontentos",
-      "summary": "FOMC señala paciencia ante dinámica inflacionaria. Mercados descuentan 75 bps de reducciones en 2025. Divergencia genera volatilidad en activos de riesgo.",
+      "title": "Banco Central de EE.UU. mantiene tasas sin cambios en 5.25-5.50%",
+      "summary": "FOMC señala paciencia ante dinámica inflacionaria. Mercados descuentan 75 bps de reducciones en 2025. Powell enfatiza flexibilidad ante datos económicos. Divergencia genera volatilidad en activos de riesgo.",
       "source": "Bloomberg",
-      "link": "https://www.bloomberg.com"
+      "link": "https://www.bloomberg.com/news/articles/federal-reserve"
     },
     {
-      "title": "Dólar se aprecia contra canastas emergentes a máximo de 8 semanas",
-      "summary": "DXY avanza 1.2% en semana. Peso chileno cotiza en 1,020 por USD. Volatilidad de divisas se amplía a 12.5% implícita.",
+      "title": "Dólar alcanza máximo de 8 semanas contra emergentes; DXY en 106.5",
+      "summary": "Fortaleza del USD refleja tasas más altas por más tiempo. Peso chileno cotiza en 1,020 por USD, máximo desde marzo. Volatilidad implícita en FX se amplía a 12.5%. Inversores rotan hacia activos defensivos.",
       "source": "Reuters Markets",
-      "link": "https://www.reuters.com"
+      "link": "https://www.reuters.com/finance/currencies"
     },
     {
-      "title": "Spreads de deuda corporativa en Latinoamérica se amplían 35 bps",
-      "summary": "EMBI LatAm en 445 puntos básicos. Issuers de grado inversor enfrentan mayor costo de capital. Ambiente favorece bonos soberanos de corta duración.",
-      "source": "Bloomberg",
-      "link": "https://www.bloomberg.com"
+      "title": "Spreads de deuda corporativa en Latinoamérica se amplían a 445 bps",
+      "summary": "EMBI LatAm experimenta repricing de riesgo. Issuers de grado inversor enfrentan mayor costo de capital (180-200 bps sobre treasuries). Mercado favorece bonos soberanos de corta duración. Chile y Colombia mejor posicionados.",
+      "source": "Bloomberg Markets",
+      "link": "https://www.bloomberg.com/markets/bonds"
+    },
+    {
+      "title": "Índice MSCI Latinoamérica cae 2.3% por volatilidad geopolítica y repricing",
+      "summary": "Minería bajo presión por caída de commodities. Bancos enfrentan presión de márgenes. Sectores defensivos (utilities) lideran rotaciones. Oportunidades selectivas en compañías con pricing power.",
+      "source": "Financial Times",
+      "link": "https://markets.ft.com/data"
+    },
+    {
+      "title": "Cobre toca mínimos de 4 semanas en USD 4.12/lb por debilidad de demanda",
+      "summary": "Preocupaciones sobre crecimiento económico global presionan commodities. Litio cae 4.5% por exceso de oferta. Oro repunta 1.8% como safe haven. Chile: impacto directo en ingresos fiscales y empleo minero.",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/commodities"
+    },
+    {
+      "title": "The Economist: Mercados en búsqueda de nuevo equilibrio post-inflación",
+      "summary": "Análisis señala transición desde régimen de tasas altas a fragmentación geopolítica. Inversores buscan calidad y visibilidad de cash flows. Latinoamérica presenta oportunidades selectivas pero requiere selectividad.",
+      "source": "The Economist",
+      "link": "https://www.economist.com/finance-and-economics"
     }
   ],
 
