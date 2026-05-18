@@ -24,20 +24,26 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests weasyprint
 
-      - name: Generate newsletter v3 with intelligence
+      - name: Fetch live economic indicators (FASE 4)
+        run: python fetch_live_data.py
+
+      - name: Generate newsletter v4 with visualizations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python generate_newsletter_v3.py
+        run: python generate_newsletter_v4.py
 
       - name: Export to multiple formats (PDF, JSON, CSV)
         run: python export_newsletter.py
+
+      - name: Run alert system
+        run: python alerts_system.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add newsletter.html
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update daily newsletter - $(date +'%Y-%m-%d')"
+          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update newsletter with live data - $(date +'%Y-%m-%d')"
           git push
