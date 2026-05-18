@@ -1,0 +1,40 @@
+name: Generate Daily Newsletter
+
+on:
+  schedule:
+    # Ejecutar diariamente a las 09:00 UTC
+    - cron: '0 9 * * *'
+  # También permitir ejecución manual
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate newsletter
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_newsletter.py
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add newsletter.html
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update daily newsletter - $(date +'%Y-%m-%d')"
+          git push
