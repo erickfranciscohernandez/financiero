@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter Estratégico — 18 de Mayo, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --cream: #ede7d5;
+    --accent: #c0392b;
+    --gold: #b8860b;
+    --steel: #2c3e50;
+    --muted: #6b6457;
+    --rule: #c9b99a;
+    --tag-bg: #0d0d0d;
+    --tag-text: #f5f0e8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+
+  .masthead {
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 20px 0 14px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .masthead-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }
+
+  .masthead-meta {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  .edition-bar {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 28px;
+  }
+
+  .headline-block {
+    border-left: 4px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 28px;
+  }
+
+  .headline-block h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }
+
+  .headline-block .deck {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .exec-summary {
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    border-radius: 2px;
+  }
+
+  .exec-summary h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+
+  .exec-summary p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+
+  .exec-summary p + p {
+    margin-top: 10px;
+  }
+
+  .news-section {
+    margin-bottom: 40px;
+  }
+
+  .news-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--rule);
+  }
+
+  .news-item {
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .news-item:last-child {
+    border-bottom: none;
+  }
+
+  .news-date {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 6px;
+  }
+
+  .news-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  .news-meta {
+    font-size: 13px;
+    color: var(--muted);
+    font-style: italic;
+  }
+
+  .footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <div class="masthead">
+    <div class="masthead-title">Financiero Newsletter</div>
+    <div class="masthead-meta">
+      18 de Mayo, 2026<br>
+      EDICIÓN DIARIA
+    </div>
+  </div>
+
+  <div class="edition-bar">Actualización de Commits</div>
+
+  <div class="headline-block">
+    <h1>Resumen de Actividad</h1>
+    <p class="deck">Commits y cambios en el repositorio erickfranciscohernandez/financiero</p>
+  </div>
+
+  <div class="exec-summary">
+    <h2>Resumen Ejecutivo</h2>
+    <p>Se han detectado <strong>1</strong> cambios en el repositorio en las últimas 24 horas. Este newsletter se genera automáticamente basado en la actividad del repositorio en GitHub.</p>
+  </div>
+
+  <div class="news-section">
+    <h2>Commits Recientes</h2>
+    
+    <div class="news-item">
+      <div class="news-date">2026-05-17 03:30</div>
+      <h3 class="news-title">Add files via upload</h3>
+      <p class="news-meta">Por <strong>erickfranciscohernandez</strong> • <a href="https://github.com/erickfranciscohernandez/financiero/commit/f00271f0c507cb912890561660a4bd6c8f57b3d4" style="color: var(--accent); text-decoration: none;">f00271f</a></p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Este newsletter se genera automáticamente diariamente.</p>
+    <p><a href="https://github.com/erickfranciscohernandez/financiero">Ver en GitHub</a></p>
+  </div>
+</body>
+</html>
