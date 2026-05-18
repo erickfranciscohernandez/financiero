@@ -89,10 +89,45 @@ REPO_NAME = 'repositorio'  # Cambiar nombre del repositorio
 
 ## Visualización
 
+### Localmente
+
 Para ver el newsletter generado, abre `newsletter.html` en tu navegador.
+
+### En Línea (Público)
+
+El proyecto incluye una página de inicio (`index.html`) que redirige al newsletter.
+
+**Para publicar en línea con GitHub Pages:**
+
+1. Ve a tu repositorio en GitHub
+2. Haz clic en **Settings** → **Pages**
+3. En "Source", selecciona:
+   - Branch: `main` (o tu rama por defecto)
+   - Folder: `/ (root)`
+4. Haz clic en **Save**
+
+Tu newsletter estará disponible en:
+```
+https://<tu-usuario>.github.io/<nombre-repo>/
+```
+
+Por ejemplo:
+```
+https://erickfranciscohernandez.github.io/financiero/
+```
+
+## Acceso Público
+
+Una vez habilitadas las Pages:
+
+- **Página de inicio:** https://erickfranciscohernandez.github.io/financiero/
+- **Newsletter actual:** https://erickfranciscohernandez.github.io/financiero/newsletter.html
+- **Compartir con otros:** Puedes compartir el enlace públicamente
 
 ## Notas
 
 - La información se obtiene de los últimos 24 horas
 - El script maneja automáticamente errores de conexión
 - El token de GitHub se usa para aumentar los límites de rate limiting
+- Los cambios se publican automáticamente mediante GitHub Pages
+- El newsletter se actualiza diariamente a las 09:00 UTC
