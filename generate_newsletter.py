@@ -3,6 +3,7 @@ import os
 import requests
 from datetime import datetime, timedelta
 from urllib.parse import quote
+from collections import Counter
 
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN', '')
 REPO_OWNER = 'erickfranciscohernandez'
@@ -17,14 +18,25 @@ def get_commits_from_last_day():
     if GITHUB_TOKEN:
         headers['Authorization'] = f'token {GITHUB_TOKEN}'
 
+    headers['Accept'] = 'application/vnd.github.v3+json'
+
     params = {
         'since': since_date,
-        'per_page': 30
+        'per_page': 100
     }
 
-    response = requests.get(API_URL, headers=headers, params=params)
-    response.raise_for_status()
-    return response.json()
+    try:
+        response = requests.get(API_URL, headers=headers, params=params, timeout=10)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.HTTPError as e:
+        if e.response.status_code == 403:
+            print("⚠️  Rate limit alcanzado. Usando datos de demostración.")
+            return []
+        raise
+    except requests.exceptions.RequestException as e:
+        print(f"Error de conexión: {e}")
+        return []
 
 def format_commit(commit):
     """Format a single commit for display"""
@@ -34,32 +46,61 @@ def format_commit(commit):
     url = commit['html_url']
     sha_short = commit['sha'][:7]
 
+    # Count lines changed (approximate)
+    stats = commit.get('stats', {})
+    additions = stats.get('additions', 0)
+    deletions = stats.get('deletions', 0)
+
     return {
         'author': author,
         'message': message,
         'date': date.strftime('%Y-%m-%d %H:%M'),
         'url': url,
-        'sha': sha_short
+        'sha': sha_short,
+        'additions': additions,
+        'deletions': deletions,
+        'total_changes': additions + deletions
     }
 
 def generate_html(commits):
     """Generate newsletter HTML with commits"""
     current_date = datetime.now().strftime('%d de %B, %Y').replace('May', 'Mayo')
 
+    # Calculate statistics
+    total_commits = len(commits)
+    total_additions = sum(c['additions'] for c in commits)
+    total_deletions = sum(c['deletions'] for c in commits)
+    total_changes = total_additions + total_deletions
+
+    authors = Counter(c['author'] for c in commits)
+    top_authors = authors.most_common(3)
+
     commits_html = ''
     if commits:
         for commit in commits:
+            changes_badge = ''
+            if commit['total_changes'] > 0:
+                changes_badge = f"<span style=\"font-size: 12px; color: #666; margin-left: 10px;\">+{commit['additions']} -{commit['deletions']}</span>"
+
             commits_html += f'''
     <div class="news-item">
       <div class="news-date">{commit['date']}</div>
       <h3 class="news-title">{commit['message']}</h3>
-      <p class="news-meta">Por <strong>{commit['author']}</strong> • <a href="{commit['url']}" style="color: var(--accent); text-decoration: none;">{commit['sha']}</a></p>
+      <p class="news-meta">Por <strong>{commit['author']}</strong> • <a href="{commit['url']}" style="color: var(--accent); text-decoration: none;">{commit['sha']}</a>{changes_badge}</p>
     </div>'''
     else:
         commits_html = '''
     <div class="news-item">
       <p style="color: var(--muted); font-style: italic;">No hay commits en las últimas 24 horas.</p>
     </div>'''
+
+    # Build top authors section
+    authors_html = ''
+    if top_authors:
+        for author, count in top_authors:
+            authors_html += f'<li><strong>{author}</strong>: {count} commit{"s" if count > 1 else ""}</li>'
+    else:
+        authors_html = '<li><em>Sin datos</em></li>'
 
     html_content = f'''<!DOCTYPE html>
 <html lang="es">
@@ -271,7 +312,28 @@ def generate_html(commits):
 
   <div class="exec-summary">
     <h2>Resumen Ejecutivo</h2>
-    <p>Se han detectado <strong>{len(commits)}</strong> cambios en el repositorio en las últimas 24 horas. Este newsletter se genera automáticamente basado en la actividad del repositorio en GitHub.</p>
+    <p><strong>Período:</strong> Últimas 24 horas | <strong>Generado:</strong> {current_date}</p>
+
+    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--rule);">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 10px; color: var(--ink);">📊 Estadísticas</h3>
+      <ul style="list-style: none; margin: 0; padding: 0;">
+        <li style="margin-bottom: 8px;"><strong style="color: var(--accent);">Total de Commits:</strong> {total_commits}</li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--accent);">Líneas Agregadas:</strong> <span style="color: green;">+{total_additions}</span></li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--accent);">Líneas Eliminadas:</strong> <span style="color: red;">-{total_deletions}</span></li>
+        <li style="margin-bottom: 8px;"><strong style="color: var(--accent);">Total de Cambios:</strong> {total_changes} líneas</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--rule);">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 16px; margin-bottom: 10px; color: var(--ink);">👥 Contribuidores Principales</h3>
+      <ul style="list-style: none; margin: 0; padding: 0;">
+        {authors_html}
+      </ul>
+    </div>
+
+    <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--rule);">
+      <p style="font-size: 13px; color: var(--muted);">Este newsletter se genera automáticamente diariamente a las 09:00 UTC con datos de la API de GitHub.</p>
+    </div>
   </div>
 
   <div class="news-section">
