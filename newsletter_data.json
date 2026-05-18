@@ -1,0 +1,82 @@
+{
+  "fecha": "18 de mayo, 2026",
+  "titular_principal": "Turbulencia geopolítica redefine cartografía de inversión en Latinoamérica",
+  "resumen_ejecutivo": "Los mercados latinoamericanos enfrentan una semana de volatilidad inducida por tensiones geopolíticas en Asia, caída de commodities y revisión a la baja de expectativas de crecimiento global. El índice MSCI Latinoamérica cae 2.3%, mientras el cobre toca mínimos de 4 semanas. En Chile, la reforma tributaria avanza legislativamente pero genera incertidumbre regulatoria. La dinámica apunta a una rotación sectorial hacia defensivas y activos de renta fija.",
+
+  "geopolitica": {
+    "titular": "Escalada Comercial China-EE.UU. Impacta Demanda de Commodities",
+    "parrafo1": "Las tensiones comerciales bilaterales se intensificaron tras nuevas sanciones estadounidenses a empresas de semiconductores chinas. Pekín respondió con represalias arancelarias sobre productos agrícolas estadounidenses. Este escenario fragmenta cadenas de suministro globales y presiona demanda de materias primas, afectando directamente economías minero-exportadoras como Chile, Perú y Colombia.",
+    "parrafo2": "La OPEP+ confirmó reducción de producción de petróleo, respaldada por Rusia bajo presión económica. Esto genera un piso de precios de crudo entre USD 75-80 por barril. Medio Oriente mantiene tensiones logísticas en el Estrecho de Ormuz, añadiendo prima de riesgo geopolítico.",
+    "parrafo3": "América Latina observa con cautela elecciones en Brasil (2026) y dinámicas políticas en Argentina. El spread EMBI Latinoamérica se amplió a 445 puntos básicos, reflejando repricing de riesgo país. Gobiernos de la región buscan balancear presión fiscal con estabilidad macroeconómica.",
+    "impacto": "Presión sobre términos de intercambio, volatilidad cambiaria y flight-to-quality en mercados de bonos soberanos."
+  },
+
+  "economia_mercados": {
+    "titular": "Banco Central de EE.UU. Mantiene Rates en Pausa; Mercados Descuentan Ciclo de Cortes",
+    "tasas": {
+      "fed": "5.25-5.50%",
+      "bcch": "8.25%",
+      "bcrp": "5.75%",
+      "bcra": "35.00%"
+    },
+    "commodities": {
+      "cobre": "USD 4.12/lb (-3.2% semana)",
+      "petroleo": "USD 78.5/bbl (WTI)",
+      "oro": "USD 2,385/oz (+1.8%)",
+      "litio": "USD 115/ton (-4.5% semana)"
+    },
+    "parrafo1": "El FOMC mantiene tasas sin cambios, señalando paciencia mientras monitorea dinámica inflacionaria. Mercados ahora descuentan 75 bps de reducciones acumuladas en 2025, más agresivo que la guía forward de la Fed. Esta brecha genera volatilidad de corto plazo en activos de renta variable.",
+    "parrafo2": "El dólar se aprecia contra canastas emergentes (DXY +1.2%), presionando activos denominados en monedas locales. El CLP cotiza en 1,020 por dólar, máximo de 8 semanas. Volatilidad implícita en derivados de divisas se amplía a 12.5%.",
+    "parrafo3": "En renta variable, tecnología global se desacelera tras alertas de demanda de IA. El Nasdaq cae 4.1% MTD. Sectores defensivos (utilities, consumo básico) lideran rotaciones. En Latinoamérica, bancos y minería enfrentan presión de márgenes.",
+    "parrafo4": "Criptomercados navegan presión regulatoria post-elecciones. Bitcoin cotiza USD 62,400 (-2.1%), reflejando menor apetito por riesgo. Stablecoins mantienen demanda como hedges.",
+    "parrafo5": "Spreads de deuda corporativa en LatAm se amplían 35 bps. Issuers de grado inversor enfrentan mayor costo de capital. Este ambiente favorece deuda pública y bonos sovereignos de corta duración."
+  },
+
+  "chile_estrategico": {
+    "titular": "Reforma Tributaria Avanza; Minería Enfrenta Presión de Costos",
+    "noticias": [
+      {
+        "tema": "Reforma Tributaria",
+        "detalle": "Proyecto avanza en comisiones parlamentarias. Gobierno busca recaudación adicional de UF 2.5M anuales. Sector empresarial negocia transiciones graduales. Impacto neto: presión en rentabilidad corporativa pero fortalece finanzas públicas.",
+        "impacto": "Neutral-Negativo para equities; Positivo para bonos soberanos"
+      },
+      {
+        "tema": "Minería de Cobre",
+        "detalle": "Codelco anuncia ajustes operacionales ante caída de precios. Costos en aumento presionan márgenes. Inversión de expansión en pausa hasta mayor claridad de precios. Expectativas de producción 2025 revisadas a la baja.",
+        "impacto": "Riesgo para empleo y recaudación fiscal"
+      },
+      {
+        "tema": "Mercado Inmobiliario",
+        "detalle": "UF acumula alza de 2.8% YTD. Tasas hipotecarias en 7.2% promedio. Transacciones inmobiliarias caen 12% interanual. Sector construcción enfrenta presión de costos y demanda débil.",
+        "impacto": "Riesgo de sobreendeudamiento de hogares; oportunidades en activos castigados"
+      },
+      {
+        "tema": "Energía",
+        "detalle": "Licitación de energía renovable atrae inversión. Capacidad solar adicionada suma 2.3 GW en 2024. Precios de electricidad moderándose. Transición energética avanza pero genera desafíos en generación térmica.",
+        "impacto": "Positivo para inversión en infraestructura; riesgo para empresas fósiles"
+      }
+    ]
+  },
+
+  "tendencias": {
+    "titular": "Inteligencia Artificial Redefine Productividad; Defensa y Ciberseguridad en Auge",
+    "parrafo1": "La adopción acelerada de IA en empresas genera ganancia de productividad estimada en 15-25% anual en sectores de servicios. Sin embargo, brecha de skills amplía desigualdad. Latinoamérica rezagada en ecosistema de IA (inversión VC en IA región = 2% del global). Oportunidad: atracción de talent pools y nearshoring de operaciones de IA.",
+    "parrafo2": "Inversión en defensa y ciberseguridad crece a CAGR de 12% globally. Geopolítica impulsa modernización militar. América Latina observa presupuestos de defensa moderados pero en aumento. Tendencia: consolidación de vendors regionales y partnerships con majors estadounidenses.",
+    "parrafo3": "Data centers y cloud infrastructure se posicionan como activo de clase (comprable como renta fija con spreads atractivos). Demanda por IA compute genera construcción acelerada. Chile compite por posicionarse como hub de data centers en Sudamérica (ventajas: energía barata, estabilidad política).",
+    "parrafo4": "Automatización industrial reduce dependencia de mano de obra pero requiere reskilling masivo. Startups fintech latinoamericanas consolidan posición tras ola de consolidación 2023-2024. Open banking y pagos digitales generan oportunidades en SME lending.",
+    "impacto_inversion": "Sectores ganadores: Tech, Defensa, Energía Verde, Financiero Digital. Sectores en riesgo: Retail tradicional, Manufactura intensiva en labor, Energía fósil."
+  },
+
+  "insight": "Los mercados transicionan de un régimen dominated por inflación/tasas hacia otro donde fragmentación geopolítica y disruption tecnológica son variables dominantes. Inversores deben rotar portafolios desde 'growth a cualquier precio' hacia 'quality con visibilidad de cash flows'. En Latinoamérica, oportunidad está en selectividad sectorial y países con estabilidad institucional + reformas modernizadoras (Chile, Colombia). Riesgo sistémico: desacoplamiento geopolítico reduce diversificación global y comprime multiples de activos emergentes.",
+
+  "fuentes": [
+    "Bloomberg Terminal",
+    "Reuters Markets",
+    "El Mostrador",
+    "Diario Financiero",
+    "CMF Chile",
+    "CEPAL",
+    "FT Markets",
+    "The Economist Intelligence Unit"
+  ]
+}

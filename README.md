@@ -1,6 +1,6 @@
-# Newsletter Estratégico
+# Newsletter Estratégico Premium
 
-Sistema automatizado para generar un newsletter diario basado en la actividad del repositorio de GitHub.
+Sistema automatizado para generar un newsletter diario estratégico de análisis geopolítico, económico y de tendencias orientado a ejecutivos, inversionistas y tomadores de decisión en Latinoamérica.
 
 ## Características
 
