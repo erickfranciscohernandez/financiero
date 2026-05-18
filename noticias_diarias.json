@@ -148,5 +148,71 @@
       "source": "CMF Chile - Estudios",
       "link": "https://www.cmfchile.cl"
     }
+  ],
+
+  "noticias_economicas_actuales": [
+    {
+      "title": "Inflación en Chile desacelera a 3.1% en abril, acercándose a meta del BCCh",
+      "summary": "IPC mensual en 0.2% en abril 2026. Desaceleración en alimentos y servicios. Analistas optimistas sobre continuidad de tendencia. Presión salarial moderada en sector privado.",
+      "source": "Banco Central de Chile",
+      "link": "https://www.bcentral.cl/web/guest/publicaciones"
+    },
+    {
+      "title": "Desempleo en América Latina alcanza 8.2% en trimestre móvil",
+      "summary": "Recuperación más lenta de lo esperado post-pandemia. Chile en 8.5%, mejor que promedio regional. Sectores de servicios lideran recuperación. Empresas aún reticentes a contrataciones permanentes.",
+      "source": "CEPAL",
+      "link": "https://www.cepal.org/es"
+    },
+    {
+      "title": "Remesas a Latinoamérica crecen 6.8% año móvil, alcanzando USD 530 mil millones",
+      "summary": "Fortaleza del dólar favorece montos en divisas. Principal origen: EE.UU. (65%). Chile recibe USD 2,500M anuales. Impacto positivo en consumo de hogares de sectores vulnerables.",
+      "source": "Banco Interamericano de Desarrollo",
+      "link": "https://www.iadb.org"
+    },
+    {
+      "title": "Inversión en infraestructura digital crece 15% en región",
+      "summary": "5G, fibra óptica y data centers atraen USD 12 mil millones anuales. Chile posicionado como hub regional. Impacto esperado en productividad empresarial.",
+      "source": "CEPAL - Economía Digital",
+      "link": "https://www.cepal.org/es"
+    }
+  ],
+
+  "inteligencia_artificial": [
+    {
+      "title": "TLDR AI: GPT-5 muestra avances en razonamiento multimodal",
+      "summary": "Último modelo de OpenAI demuestra mejoras en comprensión de contexto visual y textual simultáneo. Implicaciones para automatización de procesos complejos. Empresas exploran use cases en análisis de documentos y videos.",
+      "source": "TLDR AI Newsletter",
+      "link": "https://tldr.tech/ai"
+    },
+    {
+      "title": "Ben's Bites: IA generativa impulsa ola de consolidación en startups",
+      "summary": "Empresas de IA se consolidan en 5 mega-players. Inversión VC en IA cayó 23% pero valuaciones de líderes se mantienen. Oportunidades en nichos especializados (legal tech, medical imaging, fintech IA).",
+      "source": "Ben's Bites",
+      "link": "https://bensbites.com"
+    },
+    {
+      "title": "The Rundown AI: Regulación de IA acelera en US y EU",
+      "summary": "Proyecto de ley en Congreso US busca establecer estándares de transparencia. Europa implementa AI Act desde julio 2026. Implicaciones: mayor cumplimiento pero también oportunidades de diferenciación.",
+      "source": "The Rundown AI",
+      "link": "https://www.therundown.ai"
+    },
+    {
+      "title": "Ben's Bites: Adopción corporativa de IA alcanza 71% en Fortune 500",
+      "summary": "McKinsey estima USD 15.4 trillones en valor potencial de IA. Latinoamérica rezagada (adopción en 23%). Chile compite por talento de IA con presupuestos limitados. Oportunidad: nearshoring de operaciones de IA.",
+      "source": "Ben's Bites Research",
+      "link": "https://bensbites.com"
+    },
+    {
+      "title": "TLDR AI: Seguridad en IA - Nuevas vulnerabilidades en modelos grandes",
+      "summary": "Investigadores descubren ataques de prompt injection más sofisticados. Implicaciones críticas para aplicaciones financieras y médicas. Empresas requieren inversión adicional en testing de seguridad.",
+      "source": "TLDR AI - Security",
+      "link": "https://tldr.tech/ai"
+    },
+    {
+      "title": "The Rundown AI: Startups de IA latinas levantan USD 450M en 2026",
+      "summary": "Brasil lidera con 45% del capital. Sectores: agtech, fintech, healthtech. Chile con 8 startups en ronda de Series B. Inversores buscan especialización vertical y casos de uso probados.",
+      "source": "The Rundown AI - Regional",
+      "link": "https://www.therundown.ai"
+    }
   ]
 }

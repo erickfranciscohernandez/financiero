@@ -18,7 +18,9 @@ def load_noticias_from_json(filepath='noticias_diarias.json'):
             'chile_estrategico': data.get('economia_chile', []),
             'tendencias': data.get('tendencias_tech', []),
             'cooperativismo': data.get('cooperativismo', []),
-            'cmf': data.get('cmf', [])
+            'cmf': data.get('cmf', []),
+            'noticias_economicas': data.get('noticias_economicas_actuales', []),
+            'ia': data.get('inteligencia_artificial', [])
         }
     except:
         return None
@@ -67,7 +69,9 @@ def main():
 
     print(f"\n✅ Noticias obtenidas:")
     print(f"   • Geopolítica: {len(all_news['geopolitica'])}")
-    print(f"   • Economía y Mercados (Bloomberg/Reuters/FT/Economist/CNBC): {len(all_news['economia_mercados'])}")
+    print(f"   • Economía y Mercados (Premium): {len(all_news['economia_mercados'])}")
+    print(f"   • Noticias Económicas Actuales: {len(all_news.get('noticias_economicas', []))}")
+    print(f"   • Inteligencia Artificial (TLDR/Ben's/Rundown): {len(all_news.get('ia', []))}")
     print(f"   • Chile Estratégico: {len(all_news['chile_estrategico'])}")
     print(f"   • Tendencias Tech: {len(all_news['tendencias'])}")
     print(f"   • Cooperativismo: {len(all_news['cooperativismo'])}")
@@ -78,9 +82,15 @@ def main():
     # Preparar noticias de economía y mercados
     econ_items = build_news_items(all_news['economia_mercados'])
 
+    # Preparar noticias económicas actuales
+    econ_actuales = build_news_items(all_news.get('noticias_economicas', []))
+
+    # Preparar noticias de IA
+    ia_items = build_news_items(all_news.get('ia', []))
+
     # Generar HTML
     print("\n🎨 Generando HTML...")
-    html = generate_html_newsletter(all_news, current_date, econ_items)
+    html = generate_html_newsletter(all_news, current_date, econ_items, econ_actuales, ia_items)
 
     # Guardar
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -90,11 +100,17 @@ def main():
     print(f"   Archivo: newsletter.html")
     print(f"   Secciones: 9 (incluyendo Cooperativismo y CMF)")
 
-def generate_html_newsletter(all_news, current_date, econ_items=None):
+def generate_html_newsletter(all_news, current_date, econ_items=None, econ_actuales=None, ia_items=None):
     """Generate complete HTML newsletter"""
 
     if econ_items is None:
         econ_items = build_news_items(all_news['economia_mercados'])
+
+    if econ_actuales is None:
+        econ_actuales = build_news_items(all_news.get('noticias_economicas', []))
+
+    if ia_items is None:
+        ia_items = build_news_items(all_news.get('ia', []))
 
     coop_items = build_news_items(all_news['cooperativismo'])
     cmf_items = build_news_items(all_news['cmf'])
@@ -102,6 +118,34 @@ def generate_html_newsletter(all_news, current_date, econ_items=None):
     econ_html = ""
     for item in econ_items:
         econ_html += f'''
+      <div class="news-item">
+        <a href="{item['link']}" target="_blank" class="news-link">
+          <div class="news-item-title">{item['tema']}</div>
+        </a>
+        <div class="news-item-detail">{item['detalle']}</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">{item['impacto']}</span>
+          <a href="{item['link']}" target="_blank" class="source-link">→ {item['source']}</a>
+        </div>
+      </div>'''
+
+    econ_actuales_html = ""
+    for item in econ_actuales:
+        econ_actuales_html += f'''
+      <div class="news-item">
+        <a href="{item['link']}" target="_blank" class="news-link">
+          <div class="news-item-title">{item['tema']}</div>
+        </a>
+        <div class="news-item-detail">{item['detalle']}</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">{item['impacto']}</span>
+          <a href="{item['link']}" target="_blank" class="source-link">→ {item['source']}</a>
+        </div>
+      </div>'''
+
+    ia_html = ""
+    for item in ia_items:
+        ia_html += f'''
       <div class="news-item">
         <a href="{item['link']}" target="_blank" class="news-link">
           <div class="news-item-title">{item['tema']}</div>
@@ -429,6 +473,30 @@ def generate_html_newsletter(all_news, current_date, econ_items=None):
     <span class="section-subtitle">Análisis directo de Bloomberg, Reuters, Financial Times, The Economist y CNBC</span>
     <div class="content-block">
 {econ_html}
+    </div>
+  </div>
+
+  <!-- NOTICIAS ECONÓMICAS ACTUALES -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">📰</span>
+      Noticias Económicas Actuales
+    </div>
+    <span class="section-subtitle">Indicadores clave y desarrollos económicos del momento</span>
+    <div class="content-block">
+{econ_actuales_html}
+    </div>
+  </div>
+
+  <!-- INTELIGENCIA ARTIFICIAL - TENDENCIAS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🤖</span>
+      Inteligencia Artificial - Tendencias y Disruption
+    </div>
+    <span class="section-subtitle">Contenido de TLDR AI, Ben's Bites y The Rundown AI</span>
+    <div class="content-block">
+{ia_html}
     </div>
   </div>
 
