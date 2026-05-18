@@ -24,19 +24,25 @@ def load_noticias_from_json(filepath='noticias_diarias.json'):
         return None
 
 def build_news_items(news_list):
-    """Build news items for newsletter"""
+    """Build news items for newsletter with links"""
     items = []
     for i, news in enumerate(news_list[:4]):
         items.append({
             "tema": news['title'][:50],
+            "titulo_completo": news['title'],
             "detalle": news['summary'][:200],
+            "link": news.get('link', '#'),
+            "source": news.get('source', 'Fuente'),
             "impacto": "En análisis - Ver fuentes"
         })
 
     while len(items) < 4:
         items.append({
             "tema": "Monitoreo",
+            "titulo_completo": "Monitoreo de mercado",
             "detalle": "Se mantiene análisis actualizado.",
+            "link": "#",
+            "source": "Fuente",
             "impacto": "Neutral"
         })
 
@@ -90,18 +96,28 @@ def generate_html_newsletter(all_news, current_date):
     for item in coop_items:
         coop_html += f'''
       <div class="news-item">
-        <div class="news-item-title">{item['tema']}</div>
+        <a href="{item['link']}" target="_blank" class="news-link">
+          <div class="news-item-title">{item['tema']}</div>
+        </a>
         <div class="news-item-detail">{item['detalle']}</div>
-        <span class="impact-badge">{item['impacto']}</span>
+        <div class="news-item-footer">
+          <span class="impact-badge">{item['impacto']}</span>
+          <a href="{item['link']}" target="_blank" class="source-link">→ {item['source']}</a>
+        </div>
       </div>'''
 
     cmf_html = ""
     for item in cmf_items:
         cmf_html += f'''
       <div class="news-item">
-        <div class="news-item-title">{item['tema']}</div>
+        <a href="{item['link']}" target="_blank" class="news-link">
+          <div class="news-item-title">{item['tema']}</div>
+        </a>
         <div class="news-item-detail">{item['detalle']}</div>
-        <span class="impact-badge">{item['impacto']}</span>
+        <div class="news-item-footer">
+          <span class="impact-badge">{item['impacto']}</span>
+          <a href="{item['link']}" target="_blank" class="source-link">→ {item['source']}</a>
+        </div>
       </div>'''
 
     html = f'''<!DOCTYPE html>
@@ -278,6 +294,40 @@ def generate_html_newsletter(all_news, current_date):
     display: inline-block;
     color: #fff;
     background: var(--accent);
+  }}
+
+  .news-link {{
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }}
+
+  .news-link:hover .news-item-title {{
+    color: var(--accent);
+    text-decoration: underline;
+  }}
+
+  .news-item-footer {{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
+  }}
+
+  .source-link {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }}
+
+  .source-link:hover {{
+    text-decoration: underline;
+    color: var(--steel);
   }}
 
   .insight-box {{
