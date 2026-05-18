@@ -26,10 +26,10 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate strategic newsletter
+      - name: Generate automated newsletter with RSS feeds
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python generate_strategic_newsletter.py
+        run: python generate_newsletter_automated.py
 
       - name: Commit and push changes
         run: |
