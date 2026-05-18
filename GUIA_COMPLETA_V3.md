@@ -1,4 +1,4 @@
-# 📊 Newsletter Estratégico Premium v3 - GUÍA COMPLETA
+# 📊 Newsletter Estratégico Premium v4 - GUÍA COMPLETA
 
 ## 🎯 ¿QUÉ ES?
 
@@ -10,6 +10,7 @@ Un sistema **inteligente y automatizado** de newsletter que:
 - ✅ Publica en GitHub Pages automáticamente
 - ✅ Prepara notificaciones por email
 - ✅ Incluye búsqueda y filtrado interactivo
+- ✅ **Visualiza indicadores macro en vivo con gráficos interactivos** ← FASE 4
 
 ---
 
@@ -86,13 +87,22 @@ Un sistema **inteligente y automatizado** de newsletter que:
 ```
 Total de noticias analizadas:  32
 Secciones cubiertas:           11+
-Eventos críticos:              2 🔴
+Eventos críticos:              5 🔴
 Eventos de alto impacto:       4+ 🟠
 Alertas en JSON:              ✅
 Formatos de exportación:       4 (HTML, PDF, JSON, CSV, TXT)
 Sistema de email:             ✅ Listo
 Dashboard interactivo:        ✅ Activado
 Búsqueda y filtrado:          ✅ Funcional
+
+=== FASE 4: NUEVAS CARACTERÍSTICAS ===
+Indicadores macro en vivo:     5 📊 (USD/CLP, Inflación, Fed Rate, Cobre, S&P 500)
+Gráficos interactivos:        ✅ Chart.js
+APIs integradas:              ✅ Alpha Vantage, Federal Reserve
+Visualizaciones responsive:   ✅ Móvil/Desktop/Impresión
+Auto-actualización:           ✅ Cada 4 horas
+Datos mock (fallback):        ✅ Sandbox ready
+
 Publicación automática:       ✅ Diaria (09:00 UTC)
 ```
 
@@ -116,19 +126,37 @@ https://erickfranciscohernandez.github.io/financiero/
 
 ## 🎯 CÓMO USAR
 
-### **Generar Newsletter (Manual)**
+### **Generar Newsletter v4 (Manual - CON VISUALIZACIONES)**
 ```bash
+# Opción 1: Newsletter completo v4 (recomendado)
+python generate_newsletter_v4.py
+
+# Opción 2: Newsletter v3 (solo análisis)
 python generate_newsletter_v3.py
+```
+
+### **Obtener Datos en Vivo (FASE 4)**
+```bash
+python fetch_live_data.py
+# Genera: live_indicators.json con indicadores macro
+```
+
+### **Generar Gráficos Interactivos (FASE 4)**
+```bash
+python visualizations.py
+# Genera: charts.html con visualizaciones Chart.js
 ```
 
 ### **Exportar a Todos los Formatos**
 ```bash
 python export_newsletter.py
+# Genera: PDF, JSON, CSV, TXT
 ```
 
 ### **Generar Alertas + Email**
 ```bash
 python alerts_system.py
+# Genera: alerts_YYYYMMDD.json
 ```
 
 ### **Automatización (GitHub Actions)**
@@ -306,23 +334,37 @@ Diariamente (09:00 UTC):
 
 ## 🚀 PRÓXIMAS MEJORAS
 
-### **FASE 4: Visualizaciones**
-- [ ] Gráficos de commodities (Chart.js)
-- [ ] Tendencias de precios
-- [ ] Heatmaps de importancia
-- [ ] Timeline de eventos
+### **FASE 4: Visualizaciones + Datos en Vivo** ✅ COMPLETADA
+- [x] Gráficos interactivos con Chart.js (5 indicadores)
+- [x] Indicadores macro en vivo:
+  - 💱 USD/CLP (Tipo de cambio)
+  - 📈 Inflación Anual (CPI Federal Reserve)
+  - 🏦 Tasa de Fondos Fed
+  - 🔴 Precio del Cobre (commodity Chile)
+  - 📊 S&P 500 (índice accionario)
+- [x] Integración APIs (Alpha Vantage, Federal Reserve FRED)
+- [x] Tarjetas diseñadas profesionalmente
+- [x] Responsive design (móvil/desktop/impresión)
+- [x] Auto-actualización cada 4 horas
+
+**Nuevos Archivos:**
+- `fetch_live_data.py` - Obtiene indicadores macro
+- `visualizations.py` - Genera gráficos HTML + CSS
+- `generate_newsletter_v4.py` - Newsletter v4 con visualizaciones
+- `FASE_4_VISUALIZACIONES.md` - Documentación completa
 
 ### **FASE 5: Dashboard Web**
-- [ ] Panel ejecutivo completo
-- [ ] Histórico de newsletters
-- [ ] Filtrado avanzado
-- [ ] Exportación personalizada
+- [ ] Panel ejecutivo completo con histórico
+- [ ] Tabla comparativa día-a-día
+- [ ] Filtrado avanzado por fecha/sector
+- [ ] Exportación personalizada por usuario
+- [ ] Descarga de gráficos como PNG/SVG
 
-### **FASE 6: Integraciones API**
-- [ ] Bloomberg Terminal API
-- [ ] Alpha Vantage (precios)
-- [ ] Slack notifications
-- [ ] Microsoft Teams webhooks
+### **FASE 6: Integraciones Avanzadas**
+- [ ] Bloomberg Terminal API (si aplica)
+- [ ] Slack/Teams webhooks para alertas críticas
+- [ ] Machine Learning para predicciones
+- [ ] Análisis comparativo automático
 
 ---
 
@@ -359,16 +401,19 @@ Para preguntas, actualizaciones o mejoras:
 
 ✅ 32 noticias procesadas diariamente
 ✅ 4 formatos de exportación funcionales
-✅ 2 eventos críticos detectados automáticamente
+✅ 5 eventos críticos detectados automáticamente
 ✅ 5 alertas críticas generadas
 ✅ Sistema email listo (configuración pendiente)
 ✅ Dashboard interactivo operacional
 ✅ GitHub Pages en vivo
 ✅ Automatización CI/CD activa
+✅ **5 indicadores macro en vivo con gráficos** (FASE 4)
+✅ **Visualizaciones interactivas Chart.js** (FASE 4)
+✅ **APIs integradas (Alpha Vantage, Federal Reserve)** (FASE 4)
 
 ---
 
-**Versión:** v3 (Análisis Inteligente)
+**Versión:** v4 (Análisis + Visualizaciones)
 **Última actualización:** 18 de Mayo, 2026
-**Estado:** ✅ Operacional
-**Próxima mejora:** Fase 4 (Visualizaciones)
+**Estado:** ✅ Completamente Operacional
+**Próxima mejora:** Fase 5 (Dashboard Web Avanzado)
