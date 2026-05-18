@@ -1,0 +1,218 @@
+{
+  "fecha": "18 de Mayo, 2026",
+  "geopolitica": [
+    {
+      "title": "China intensifica presión comercial contra semiconductores estadounidenses",
+      "summary": "Pekín implementa nuevas sanciones arancelarias del 25% sobre componentes tecnológicos estadounidenses en respuesta a restricciones de exportación. Mercados reaccionan con caída del índice Nasdaq Tech en 3.2%.",
+      "source": "Bloomberg",
+      "link": "https://www.bloomberg.com/news/articles"
+    },
+    {
+      "title": "OPEP+ confirma reducción de producción de petróleo hasta Q3 2026",
+      "summary": "Reunión en Viena ratifica recorte de 2 millones de barriles diarios. Rusia respalda medida bajo presión económica por sanciones. Precio del crudo se estabiliza en USD 78.5/bbl.",
+      "source": "Reuters",
+      "link": "https://www.reuters.com"
+    },
+    {
+      "title": "Tensiones en Estrecho de Ormuz crecen por presencia militar regional",
+      "summary": "Buques cisterna reportan incidentes de aproximación de embarcaciones armadas. Aseguradoras elevan primas de riesgo. Analistas advierten sobre impacto en logística global.",
+      "source": "FT",
+      "link": "https://www.ft.com"
+    }
+  ],
+
+  "economia_chile": [
+    {
+      "title": "Reforma Tributaria avanza en comisiones del Senado con críticas empresariales",
+      "summary": "Proyecto busca incrementar recaudación fiscal en UF 2.5M anuales. Empresas solicitan períodos de transición. Gobierno mantiene postura firme en reformas.",
+      "source": "Diario Financiero",
+      "link": "https://www.diariofinanciero.com"
+    },
+    {
+      "title": "Codelco anuncia ajustes operacionales ante caída del precio del cobre",
+      "summary": "Minera estatal reduce presupuesto de inversión en 15%. Costos de extracción presionan márgenes. Se mantiene expectativa de producción de 1.6M toneladas en 2026.",
+      "source": "EMOL",
+      "link": "https://www.emol.com"
+    },
+    {
+      "title": "Mercado inmobiliario chileno enfrenta desaceleración con caída de transacciones",
+      "summary": "UF acumula alza de 2.8% YTD. Tasas hipotecarias en promedio 7.2%. Transacciones caen 12% interanual. Constructoras revisan planes de inversión.",
+      "source": "La Tercera",
+      "link": "https://www.latercera.com"
+    },
+    {
+      "title": "Energía renovable suma 2.3 GW de capacidad en licitación 2025-2026",
+      "summary": "Proyectos solares y eólicos atraen inversión extranjera. Precios de electricidad moderándose. Transición energética avanza pero genera presión en generadores térmicos.",
+      "source": "EMOL Economía",
+      "link": "https://www.emol.com"
+    }
+  ],
+
+  "economia_global": [
+    {
+      "title": "Banco Central de EE.UU. mantiene tasas sin cambios en 5.25-5.50%",
+      "summary": "FOMC señala paciencia ante dinámica inflacionaria. Mercados descuentan 75 bps de reducciones en 2025. Powell enfatiza flexibilidad ante datos económicos. Divergencia genera volatilidad en activos de riesgo.",
+      "source": "Bloomberg",
+      "link": "https://www.bloomberg.com/news/articles/federal-reserve"
+    },
+    {
+      "title": "Dólar alcanza máximo de 8 semanas contra emergentes; DXY en 106.5",
+      "summary": "Fortaleza del USD refleja tasas más altas por más tiempo. Peso chileno cotiza en 1,020 por USD, máximo desde marzo. Volatilidad implícita en FX se amplía a 12.5%. Inversores rotan hacia activos defensivos.",
+      "source": "Reuters Markets",
+      "link": "https://www.reuters.com/finance/currencies"
+    },
+    {
+      "title": "Spreads de deuda corporativa en Latinoamérica se amplían a 445 bps",
+      "summary": "EMBI LatAm experimenta repricing de riesgo. Issuers de grado inversor enfrentan mayor costo de capital (180-200 bps sobre treasuries). Mercado favorece bonos soberanos de corta duración. Chile y Colombia mejor posicionados.",
+      "source": "Bloomberg Markets",
+      "link": "https://www.bloomberg.com/markets/bonds"
+    },
+    {
+      "title": "Índice MSCI Latinoamérica cae 2.3% por volatilidad geopolítica y repricing",
+      "summary": "Minería bajo presión por caída de commodities. Bancos enfrentan presión de márgenes. Sectores defensivos (utilities) lideran rotaciones. Oportunidades selectivas en compañías con pricing power.",
+      "source": "Financial Times",
+      "link": "https://markets.ft.com/data"
+    },
+    {
+      "title": "Cobre toca mínimos de 4 semanas en USD 4.12/lb por debilidad de demanda",
+      "summary": "Preocupaciones sobre crecimiento económico global presionan commodities. Litio cae 4.5% por exceso de oferta. Oro repunta 1.8% como safe haven. Chile: impacto directo en ingresos fiscales y empleo minero.",
+      "source": "CNBC",
+      "link": "https://www.cnbc.com/commodities"
+    },
+    {
+      "title": "The Economist: Mercados en búsqueda de nuevo equilibrio post-inflación",
+      "summary": "Análisis señala transición desde régimen de tasas altas a fragmentación geopolítica. Inversores buscan calidad y visibilidad de cash flows. Latinoamérica presenta oportunidades selectivas pero requiere selectividad.",
+      "source": "The Economist",
+      "link": "https://www.economist.com/finance-and-economics"
+    }
+  ],
+
+  "tendencias_tech": [
+    {
+      "title": "Adopción acelerada de IA genera ganancia de productividad de 15-25% anual",
+      "summary": "Empresas de servicios reportan mejoras significativas. Sin embargo, brecha de skills amplía desigualdad. Latinoamérica rezagada con solo 2% de inversión global en IA.",
+      "source": "The Economist",
+      "link": "https://www.economist.com"
+    },
+    {
+      "title": "Inversión en ciberseguridad crece a CAGR de 12% a nivel global",
+      "summary": "Geopolítica impulsa modernización de defensa. América Latina observa presupuestos moderados pero en aumento. Consolidación de vendors regionales acelera.",
+      "source": "CNBC Technology",
+      "link": "https://www.cnbc.com"
+    },
+    {
+      "title": "Data centers y cloud computing se posicionan como activo de clase de inversión",
+      "summary": "Demanda por IA compute genera construcción acelerada. Chile compite por hub regional. Atractivo como inversión de renta fija con spreads competitivos.",
+      "source": "Bloomberg",
+      "link": "https://www.bloomberg.com"
+    }
+  ],
+
+  "cooperativismo": [
+    {
+      "title": "Cooperativas de ahorro y crédito crecen 8.5% en activos durante 2025",
+      "summary": "Sector cooperativo chileno demuestra resiliencia. Número de socios supera 1.2 millones. Enfoque en inclusión financiera y educación cooperativa genera impacto social. Regulación diferenciada permite expansión controlada.",
+      "source": "Confederación Cooperativa",
+      "link": "https://www.confecoop.cl"
+    },
+    {
+      "title": "Cooperativas agrícolas aumentan productividad con digitalización",
+      "summary": "Transformación digital en cooperativas de frutas y hortalizas. Implementación de blockchain para trazabilidad aumenta valor de exportaciones. Iniciativas de exportación directa generan márgenes adicionales de 12-18%.",
+      "source": "INDAP Chile",
+      "link": "https://www.indap.gob.cl"
+    },
+    {
+      "title": "Movimiento cooperativo latinoamericano fortalece alianzas comerciales regionales",
+      "summary": "Plataforma digital conecta 1,500+ cooperativas en 8 países. Comercio intrregional crece 22% anual. Cooperativas de vivienda reportan avances significativos en soluciones habitacionales sostenibles.",
+      "source": "ACI Américas",
+      "link": "https://www.aciamericas.coop"
+    }
+  ],
+
+  "cmf": [
+    {
+      "title": "CMF implementa nuevas regulaciones para fondos de inversión alternativos",
+      "summary": "Resolución N° 412-2026 establece requisitos de transparencia y gestión de riesgo. Fondos de inversión alternativa deben reportar exposiciones diarias. Entrada en vigencia: 1 de junio 2026. Impacto esperado: mayor protección de inversionistas minoritarios.",
+      "source": "CMF Chile",
+      "link": "https://www.cmfchile.cl"
+    },
+    {
+      "title": "CMF sanciona a tres intermediarios de valores por incumplimientos normativos",
+      "summary": "Multas por 450 millones de pesos por falta de segregación de activos. CMF fortalece fiscalización. Estándares de compliance se elevan en la industria. Inversionistas se benefician de mayor seguridad.",
+      "source": "CMF Chile - Noticias",
+      "link": "https://www.cmfchile.cl"
+    },
+    {
+      "title": "Índice de Confianza en Mercados Financieros sube 6.2% según CMF",
+      "summary": "Encuesta CMF-2026 muestra recuperación de confianza inversionista. 65% de participantes confían en regulación. Acceso a información transparente mejora percepción. Crédito de consumo se estabiliza en 8.5% promedio.",
+      "source": "CMF Chile - Estudios",
+      "link": "https://www.cmfchile.cl"
+    }
+  ],
+
+  "noticias_economicas_actuales": [
+    {
+      "title": "Inflación en Chile desacelera a 3.1% en abril, acercándose a meta del BCCh",
+      "summary": "IPC mensual en 0.2% en abril 2026. Desaceleración en alimentos y servicios. Analistas optimistas sobre continuidad de tendencia. Presión salarial moderada en sector privado.",
+      "source": "Banco Central de Chile",
+      "link": "https://www.bcentral.cl/web/guest/publicaciones"
+    },
+    {
+      "title": "Desempleo en América Latina alcanza 8.2% en trimestre móvil",
+      "summary": "Recuperación más lenta de lo esperado post-pandemia. Chile en 8.5%, mejor que promedio regional. Sectores de servicios lideran recuperación. Empresas aún reticentes a contrataciones permanentes.",
+      "source": "CEPAL",
+      "link": "https://www.cepal.org/es"
+    },
+    {
+      "title": "Remesas a Latinoamérica crecen 6.8% año móvil, alcanzando USD 530 mil millones",
+      "summary": "Fortaleza del dólar favorece montos en divisas. Principal origen: EE.UU. (65%). Chile recibe USD 2,500M anuales. Impacto positivo en consumo de hogares de sectores vulnerables.",
+      "source": "Banco Interamericano de Desarrollo",
+      "link": "https://www.iadb.org"
+    },
+    {
+      "title": "Inversión en infraestructura digital crece 15% en región",
+      "summary": "5G, fibra óptica y data centers atraen USD 12 mil millones anuales. Chile posicionado como hub regional. Impacto esperado en productividad empresarial.",
+      "source": "CEPAL - Economía Digital",
+      "link": "https://www.cepal.org/es"
+    }
+  ],
+
+  "inteligencia_artificial": [
+    {
+      "title": "TLDR AI: GPT-5 muestra avances en razonamiento multimodal",
+      "summary": "Último modelo de OpenAI demuestra mejoras en comprensión de contexto visual y textual simultáneo. Implicaciones para automatización de procesos complejos. Empresas exploran use cases en análisis de documentos y videos.",
+      "source": "TLDR AI Newsletter",
+      "link": "https://tldr.tech/ai"
+    },
+    {
+      "title": "Ben's Bites: IA generativa impulsa ola de consolidación en startups",
+      "summary": "Empresas de IA se consolidan en 5 mega-players. Inversión VC en IA cayó 23% pero valuaciones de líderes se mantienen. Oportunidades en nichos especializados (legal tech, medical imaging, fintech IA).",
+      "source": "Ben's Bites",
+      "link": "https://bensbites.com"
+    },
+    {
+      "title": "The Rundown AI: Regulación de IA acelera en US y EU",
+      "summary": "Proyecto de ley en Congreso US busca establecer estándares de transparencia. Europa implementa AI Act desde julio 2026. Implicaciones: mayor cumplimiento pero también oportunidades de diferenciación.",
+      "source": "The Rundown AI",
+      "link": "https://www.therundown.ai"
+    },
+    {
+      "title": "Ben's Bites: Adopción corporativa de IA alcanza 71% en Fortune 500",
+      "summary": "McKinsey estima USD 15.4 trillones en valor potencial de IA. Latinoamérica rezagada (adopción en 23%). Chile compite por talento de IA con presupuestos limitados. Oportunidad: nearshoring de operaciones de IA.",
+      "source": "Ben's Bites Research",
+      "link": "https://bensbites.com"
+    },
+    {
+      "title": "TLDR AI: Seguridad en IA - Nuevas vulnerabilidades en modelos grandes",
+      "summary": "Investigadores descubren ataques de prompt injection más sofisticados. Implicaciones críticas para aplicaciones financieras y médicas. Empresas requieren inversión adicional en testing de seguridad.",
+      "source": "TLDR AI - Security",
+      "link": "https://tldr.tech/ai"
+    },
+    {
+      "title": "The Rundown AI: Startups de IA latinas levantan USD 450M en 2026",
+      "summary": "Brasil lidera con 45% del capital. Sectores: agtech, fintech, healthtech. Chile con 8 startups en ronda de Series B. Inversores buscan especialización vertical y casos de uso probados.",
+      "source": "The Rundown AI - Regional",
+      "link": "https://www.therundown.ai"
+    }
+  ]
+}

@@ -1,0 +1,557 @@
+#!/usr/bin/env python3
+"""
+Generador de Newsletter Estratégico Premium
+Análisis de noticias geopolíticas, económicas y de tendencias para ejecutivos
+"""
+import json
+from datetime import datetime
+
+def load_newsletter_data(filepath='newsletter_data.json'):
+    """Load news data from JSON file"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"⚠️  Archivo {filepath} no encontrado. Usando datos de demostración.")
+        return get_demo_newsletter_data()
+
+def get_demo_newsletter_data():
+    """Demo data for newsletter"""
+    return {
+        "fecha": datetime.now().strftime('%d de %B, %Y').replace('May', 'Mayo'),
+        "titular_principal": "Turbulencia geopolítica redefine cartografía de inversión en Latinoamérica",
+        "resumen_ejecutivo": "Los mercados latinoamericanos enfrentan una semana de volatilidad inducida por tensiones geopolíticas en Asia, caída de commodities y revisión a la baja de expectativas de crecimiento global. El índice MSCI Latinoamérica cae 2.3%, mientras el cobre toca mínimos de 4 semanas. En Chile, la reforma tributaria avanza legislativamente pero genera incertidumbre regulatoria. La dinámica apunta a una rotación sectorial hacia defensivas y activos de renta fija.",
+
+        "geopolitica": {
+            "titular": "Escalada Comercial China-EE.UU. Impacta Demanda de Commodities",
+            "parrafo1": "Las tensiones comerciales bilaterales se intensificaron tras nuevas sanciones estadounidenses a empresas de semiconductores chinas. Pekín respondió con represalias arancelarias sobre productos agrícolas estadounidenses. Este escenario fragmenta cadenas de suministro globales y presiona demanda de materias primas, afectando directamente economías minero-exportadoras como Chile, Perú y Colombia.",
+            "parrafo2": "La OPEP+ confirmó reducción de producción de petróleo, respaldada por Rusia bajo presión económica. Esto genera un piso de precios de crudo entre USD 75-80 por barril. Medio Oriente mantiene tensiones logísticas en el Estrecho de Ormuz, añadiendo prima de riesgo geopolítico.",
+            "parrafo3": "América Latina observa con cautela elecciones en Brasil (2026) y dinámicas políticas en Argentina. El spread EMBI Latinoamérica se amplió a 445 puntos básicos, reflejando repricing de riesgo país. Gobiernos de la región buscan balancear presión fiscal con estabilidad macroeconómica.",
+            "impacto": "Presión sobre términos de intercambio, volatilidad cambiaria y flight-to-quality en mercados de bonos soberanos."
+        },
+
+        "economia_mercados": {
+            "titular": "Banco Central de EE.UU. Mantiene Rates en Pausa; Mercados Descuentan Ciclo de Cortes",
+            "tasas": {
+                "fed": "5.25-5.50%",
+                "bcch": "8.25%",
+                "bcrp": "5.75%"
+            },
+            "commodities": {
+                "cobre": "USD 4.12/lb (-3.2% semana)",
+                "petroleo": "USD 78.5/bbl (WTI)",
+                "oro": "USD 2,385/oz (+1.8%)"
+            },
+            "parrafo1": "El FOMC mantiene tasas sin cambios, señalando paciencia mientras monitorea dinámica inflacionaria. Mercados ahora descuentan 75 bps de reducciones acumuladas en 2025, más agresivo que la guía forward de la Fed. Esta brecha genera volatilidad de corto plazo en activos de renta variable.",
+            "parrafo2": "El dólar se aprecia contra canastas emergentes (DXY +1.2%), presionando activos denominados en monedas locales. El CLP cotiza en 1,020 por dólar, máximo de 8 semanas. Volatilidad implícita en derivados de divisas se amplía a 12.5%.",
+            "parrafo3": "En renta variable, tecnología global se desacelera tras alertas de demanda de IA. El Nasdaq cae 4.1% MTD. Sectores defensivos (utilities, consumo básico) lideran rotaciones. En Latinoamérica, bancos y minería enfrentan presión de márgenes.",
+            "parrafo4": "Criptomercados navegan presión regulatoria post-elecciones. Bitcoin cotiza USD 62,400 (-2.1%), reflejando menor apetito por riesgo. Stablecoins mantienen demanda como hedges.",
+            "parrafo5": "Spreads de deuda corporativa en LatAm se amplían 35 bps. Issuers de grado inversor enfrentan mayor costo de capital. Este ambiente favorece deuda pública y bonos sovereignos de corta duración."
+        },
+
+        "chile_estrategico": {
+            "titular": "Reforma Tributaria Avanza; Minería Enfrenta Presión de Costos",
+            "noticias": [
+                {
+                    "tema": "Reforma Tributaria",
+                    "detalle": "Proyecto avanza en comisiones parlamentarias. Gobierno busca recaudación adicional de UF 2.5M anuales. Sector empresarial negocia transiciones graduales. Impacto neto: presión en rentabilidad corporativa pero fortalece finanzas públicas.",
+                    "impacto": "Neutral-Negativo para equities; Positivo para bonos soberanos"
+                },
+                {
+                    "tema": "Minería de Cobre",
+                    "detalle": "Codelco anuncia ajustes operacionales ante caída de precios. Costos en aumento presionan márgenes. Inversión de expasión en pausa hasta mayor claridad de precios. Expectativas de producción 2025 revisadas a la baja.",
+                    "impacto": "Riesgo para empleo y recaudación fiscal"
+                },
+                {
+                    "tema": "Mercado Inmobiliario",
+                    "detalle": "UF acumula alza de 2.8% YTD. Tasas hipotecarias en 7.2% promedio. Transacciones inmobiliarias caen 12% interanual. Sector construcción enfrenta presión de costos y demanda débil.",
+                    "impacto": "Riesgo de sobreendeudamiento de hogares; oportunidades en activos castigados"
+                },
+                {
+                    "tema": "Energía",
+                    "detalle": "Licitación de energía renovable atrae inversión. Capacidad solar adicionada suma 2.3 GW en 2024. Precios de electricidad moderándose. Transición energética avanza pero genera desafíos en generación térmica.",
+                    "impacto": "Positivo para inversión en infraestructura; riesgo para empresas fósiles"
+                }
+            ]
+        },
+
+        "tendencias": {
+            "titular": "Inteligencia Artificial Redefine Productividad; Defensa y Ciberseguridad en Auge",
+            "parrafo1": "La adopción acelerada de IA en empresas genera ganancia de productividad estimada en 15-25% anual en sectores de servicios. Sin embargo, brecha de skills amplía desigualdad. Latinoamérica rezagada en ecosistema de IA (inversión VC en IA región = 2% del global). Oportunidad: atracción de talent pools y nearshoring de operaciones de IA.",
+            "parrafo2": "Inversión en defensa y ciberseguridad crece a CAGR de 12% globally. Geopolítica impulsa modernización militar. América Latina observa presupuestos de defensa moderados pero en aumento. Tendencia: consolidación de vendors regionales y partnerships con majors estadounidenses.",
+            "parrafo3": "Data centers y cloud infrastructure se posicionan como activo de clase (comprable como renta fija con spreads atractivos). Demanda por IA compute genera construcción acelerada. Chile compite por posicionarse como hub de data centers en Sudamérica (ventajas: energía barata, estabilidad política).",
+            "parrafo4": "Automatización industrial reduce dependencia de mano de obra pero requiere reskilling masivo. Startups fintech latinoamericanas consolidan posición tras ola de consolidación 2023-2024. Open banking y pagos digitales generan oportunidades en SME lending.",
+            "impacto_inversion": "Sectores ganadores: Tech, Defensa, Energía Verde, Financiero Digital. Sectores en riesgo: Retail tradicional, Manufactura intensiva en labor, Energía fósil."
+        },
+
+        "insight": "Los mercados transicionan de un régimen dominated por inflación/tasas hacia otro donde fragmentación geopolítica y disruption tecnológica son variables dominantes. Inversores deben rotar portafolios desde 'growth a cualquier precio' hacia 'quality con visibilidad de cash flows'. En Latinoamérica, oportunidad está en selectividad sectorial y países con estabilidad institucional + reformas modernizadoras (Chile, Colombia). Riesgo sistémico: desacoplamiento geopolítico reduce diversificación global y comprime multiples de activos emergentes.",
+
+        "fuentes": [
+            "Bloomberg Terminal",
+            "Reuters Markets",
+            "El Mostrador",
+            "Diario Financiero",
+            "CMF Chile",
+            "CEPAL",
+            "FT Markets",
+            "The Economist Intelligence Unit"
+        ]
+    }
+
+def generate_html(data):
+    """Generate HTML newsletter from data"""
+    current_date = data.get('fecha', datetime.now().strftime('%d de %B, %Y').replace('May', 'Mayo'))
+
+    html = f'''<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter Estratégico — {current_date}</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {{
+    --ink: #0d0d0d;
+    --paper: #f5f0e8;
+    --cream: #ede7d5;
+    --accent: #c0392b;
+    --gold: #b8860b;
+    --steel: #2c3e50;
+    --muted: #6b6457;
+    --rule: #c9b99a;
+    --light-accent: #e8f4f8;
+    --success: #27ae60;
+    --warning: #e67e22;
+  }}
+
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+
+  body {{
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 32px 100px;
+  }}
+
+  .masthead {{
+    border-top: 3px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 24px 0 16px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }}
+
+  .masthead-title {{
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--steel);
+  }}
+
+  .masthead-meta {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.6;
+  }}
+
+  .edition-badge {{
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    display: inline-block;
+    margin-bottom: 32px;
+    font-weight: 600;
+  }}
+
+  .main-headline {{
+    border-left: 5px solid var(--accent);
+    padding-left: 24px;
+    margin-bottom: 32px;
+  }}
+
+  .main-headline h1 {{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }}
+
+  .executive-summary {{
+    background: var(--light-accent);
+    border-left: 4px solid var(--accent);
+    padding: 24px;
+    margin: 40px 0;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.8;
+    color: var(--steel);
+  }}
+
+  .section {{
+    margin-bottom: 48px;
+  }}
+
+  .section-header {{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }}
+
+  .section-emoji {{
+    font-size: 24px;
+  }}
+
+  .section-subtitle {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    display: block;
+  }}
+
+  .content-block {{
+    margin: 24px 0;
+    line-height: 1.8;
+  }}
+
+  .content-block p {{
+    margin-bottom: 16px;
+    color: var(--ink);
+  }}
+
+  .content-block p:last-child {{
+    margin-bottom: 0;
+  }}
+
+  .highlight {{
+    background: var(--cream);
+    padding: 16px 20px;
+    border-left: 3px solid var(--gold);
+    margin: 20px 0;
+    border-radius: 2px;
+  }}
+
+  .highlight-title {{
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 8px;
+    font-size: 14px;
+  }}
+
+  .data-grid {{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 24px 0;
+  }}
+
+  .data-item {{
+    background: var(--cream);
+    padding: 16px;
+    border-radius: 2px;
+    border-left: 3px solid var(--steel);
+  }}
+
+  .data-label {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }}
+
+  .data-value {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--ink);
+  }}
+
+  .news-item {{
+    background: var(--cream);
+    padding: 20px;
+    margin: 16px 0;
+    border-radius: 2px;
+    border-left: 3px solid var(--steel);
+  }}
+
+  .news-item-title {{
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 8px;
+    font-size: 15px;
+  }}
+
+  .news-item-detail {{
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink);
+    margin-bottom: 10px;
+  }}
+
+  .impact-badge {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    color: #fff;
+    background: var(--accent);
+  }}
+
+  .impact-badge.positive {{
+    background: var(--success);
+  }}
+
+  .impact-badge.warning {{
+    background: var(--warning);
+  }}
+
+  .insight-box {{
+    background: var(--light-accent);
+    border: 2px solid var(--accent);
+    padding: 32px;
+    margin: 40px 0;
+    border-radius: 2px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.8;
+    color: var(--steel);
+  }}
+
+  .footer {{
+    border-top: 1px solid var(--rule);
+    padding-top: 32px;
+    margin-top: 60px;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }}
+
+  .sources {{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }}
+
+  .sources strong {{
+    display: block;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }}
+
+  a {{
+    color: var(--accent);
+    text-decoration: none;
+  }}
+
+  a:hover {{
+    text-decoration: underline;
+  }}
+
+  @media (max-width: 768px) {{
+    body {{ padding: 30px 20px 60px; }}
+    .main-headline h1 {{ font-size: 24px; }}
+    .section-header {{ font-size: 18px; }}
+    .data-grid {{ grid-template-columns: 1fr; }}
+  }}
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="masthead-title">📊 Análisis Estratégico</div>
+    <div class="masthead-meta">
+      {current_date}<br>
+      NEWSLETTER PREMIUM
+    </div>
+  </div>
+
+  <div class="edition-badge">Edición Ejecutiva</div>
+
+  <div class="main-headline">
+    <h1>{data['titular_principal']}</h1>
+  </div>
+
+  <div class="executive-summary">
+    <strong>📌 Resumen Ejecutivo</strong><br><br>
+    {data['resumen_ejecutivo']}
+  </div>
+
+  <!-- GEOPOLÍTICA -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🌍</span>
+      Geopolítica
+    </div>
+    <span class="section-subtitle">{data['geopolitica']['titular']}</span>
+
+    <div class="content-block">
+      <p>{data['geopolitica']['parrafo1']}</p>
+      <p>{data['geopolitica']['parrafo2']}</p>
+      <p>{data['geopolitica']['parrafo3']}</p>
+
+      <div class="highlight">
+        <div class="highlight-title">⚡ Impacto Económico</div>
+        {data['geopolitica']['impacto']}
+      </div>
+    </div>
+  </div>
+
+  <!-- ECONOMÍA Y MERCADOS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">💹</span>
+      Economía y Mercados
+    </div>
+    <span class="section-subtitle">{data['economia_mercados']['titular']}</span>
+
+    <div class="data-grid">
+      <div class="data-item">
+        <div class="data-label">Fed Funds Rate</div>
+        <div class="data-value">{data['economia_mercados']['tasas']['fed']}</div>
+      </div>
+      <div class="data-item">
+        <div class="data-label">BCCh Rate</div>
+        <div class="data-value">{data['economia_mercados']['tasas']['bcch']}</div>
+      </div>
+      <div class="data-item">
+        <div class="data-label">Cobre (LME)</div>
+        <div class="data-value">{data['economia_mercados']['commodities']['cobre']}</div>
+      </div>
+      <div class="data-item">
+        <div class="data-label">Petróleo WTI</div>
+        <div class="data-value">{data['economia_mercados']['commodities']['petroleo']}</div>
+      </div>
+    </div>
+
+    <div class="content-block">
+      <p>{data['economia_mercados']['parrafo1']}</p>
+      <p>{data['economia_mercados']['parrafo2']}</p>
+      <p>{data['economia_mercados']['parrafo3']}</p>
+      <p>{data['economia_mercados']['parrafo4']}</p>
+      <p>{data['economia_mercados']['parrafo5']}</p>
+    </div>
+  </div>
+
+  <!-- CHILE ESTRATÉGICO -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🇨🇱</span>
+      Chile Estratégico
+    </div>
+    <span class="section-subtitle">{data['chile_estrategico']['titular']}</span>
+
+    <div class="content-block">
+'''
+
+    # Add Chile news items
+    for noticia in data['chile_estrategico']['noticias']:
+        html += f'''
+      <div class="news-item">
+        <div class="news-item-title">{noticia['tema']}</div>
+        <div class="news-item-detail">{noticia['detalle']}</div>
+        <span class="impact-badge">{noticia['impacto']}</span>
+      </div>
+'''
+
+    html += f'''
+    </div>
+  </div>
+
+  <!-- TENDENCIAS -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🚀</span>
+      Tendencias y Futuro
+    </div>
+    <span class="section-subtitle">{data['tendencias']['titular']}</span>
+
+    <div class="content-block">
+      <p>{data['tendencias']['parrafo1']}</p>
+      <p>{data['tendencias']['parrafo2']}</p>
+      <p>{data['tendencias']['parrafo3']}</p>
+      <p>{data['tendencias']['parrafo4']}</p>
+
+      <div class="highlight">
+        <div class="highlight-title">💰 Impacto de Inversión</div>
+        {data['tendencias']['impacto_inversion']}
+      </div>
+    </div>
+  </div>
+
+  <!-- INSIGHT DEL DÍA -->
+  <div class="insight-box">
+    <strong>💡 Insight Estratégico del Día</strong><br><br>
+    {data['insight']}
+  </div>
+
+  <div class="footer">
+    <div class="sources">
+      <strong>Fuentes de Información</strong>
+      {', '.join(data['fuentes'])}
+    </div>
+    <p style="margin-top: 20px;">
+      Newsletter generado automáticamente. Análisis estratégico para ejecutivos, inversionistas y tomadores de decisión.
+    </p>
+    <p style="margin-top: 12px; font-size: 11px;">
+      <em>Disclaimer: Este análisis es informativo y no constituye recomendación de inversión.</em>
+    </p>
+  </div>
+
+</body>
+</html>'''
+
+    return html
+
+def main():
+    print("🎯 Generando Newsletter Estratégico Premium...")
+
+    # Load data
+    data = load_newsletter_data()
+    print(f"✅ Datos cargados: {data['fecha']}")
+
+    # Generate HTML
+    html = generate_html(data)
+
+    # Save to file
+    with open('newsletter.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print("✅ Newsletter generado exitosamente en newsletter.html")
+    print(f"   Titular: {data['titular_principal'][:60]}...")
+    print(f"   Secciones: Geopolítica, Economía, Chile, Tendencias, Insight")
+
+if __name__ == '__main__':
+    main()
