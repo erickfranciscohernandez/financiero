@@ -88,5 +88,47 @@
       "source": "Bloomberg",
       "link": "https://www.bloomberg.com"
     }
+  ],
+
+  "cooperativismo": [
+    {
+      "title": "Cooperativas de ahorro y crédito crecen 8.5% en activos durante 2025",
+      "summary": "Sector cooperativo chileno demuestra resiliencia. Número de socios supera 1.2 millones. Enfoque en inclusión financiera y educación cooperativa genera impacto social. Regulación diferenciada permite expansión controlada.",
+      "source": "Confederación Cooperativa",
+      "link": "https://www.confecoop.cl"
+    },
+    {
+      "title": "Cooperativas agrícolas aumentan productividad con digitalización",
+      "summary": "Transformación digital en cooperativas de frutas y hortalizas. Implementación de blockchain para trazabilidad aumenta valor de exportaciones. Iniciativas de exportación directa generan márgenes adicionales de 12-18%.",
+      "source": "INDAP Chile",
+      "link": "https://www.indap.gob.cl"
+    },
+    {
+      "title": "Movimiento cooperativo latinoamericano fortalece alianzas comerciales regionales",
+      "summary": "Plataforma digital conecta 1,500+ cooperativas en 8 países. Comercio intrregional crece 22% anual. Cooperativas de vivienda reportan avances significativos en soluciones habitacionales sostenibles.",
+      "source": "ACI Américas",
+      "link": "https://www.aciamericas.coop"
+    }
+  ],
+
+  "cmf": [
+    {
+      "title": "CMF implementa nuevas regulaciones para fondos de inversión alternativos",
+      "summary": "Resolución N° 412-2026 establece requisitos de transparencia y gestión de riesgo. Fondos de inversión alternativa deben reportar exposiciones diarias. Entrada en vigencia: 1 de junio 2026. Impacto esperado: mayor protección de inversionistas minoritarios.",
+      "source": "CMF Chile",
+      "link": "https://www.cmfchile.cl"
+    },
+    {
+      "title": "CMF sanciona a tres intermediarios de valores por incumplimientos normativos",
+      "summary": "Multas por 450 millones de pesos por falta de segregación de activos. CMF fortalece fiscalización. Estándares de compliance se elevan en la industria. Inversionistas se benefician de mayor seguridad.",
+      "source": "CMF Chile - Noticias",
+      "link": "https://www.cmfchile.cl"
+    },
+    {
+      "title": "Índice de Confianza en Mercados Financieros sube 6.2% según CMF",
+      "summary": "Encuesta CMF-2026 muestra recuperación de confianza inversionista. 65% de participantes confían en regulación. Acceso a información transparente mejora percepción. Crédito de consumo se estabiliza en 8.5% promedio.",
+      "source": "CMF Chile - Estudios",
+      "link": "https://www.cmfchile.cl"
+    }
   ]
 }

@@ -1,12 +1,118 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""
+Generador Automatizado de Newsletter Estratégico v2
+Incluye: Cooperativismo y CMF
+"""
+import json
+from datetime import datetime
+from fetch_news_rss import fetch_all_news
+
+def load_noticias_from_json(filepath='noticias_diarias.json'):
+    """Load news from JSON file as fallback"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return {
+            'geopolitica': data.get('geopolitica', []),
+            'economia_mercados': data.get('economia_global', []),
+            'chile_estrategico': data.get('economia_chile', []),
+            'tendencias': data.get('tendencias_tech', []),
+            'cooperativismo': data.get('cooperativismo', []),
+            'cmf': data.get('cmf', [])
+        }
+    except:
+        return None
+
+def build_news_items(news_list):
+    """Build news items for newsletter"""
+    items = []
+    for i, news in enumerate(news_list[:4]):
+        items.append({
+            "tema": news['title'][:50],
+            "detalle": news['summary'][:200],
+            "impacto": "En análisis - Ver fuentes"
+        })
+
+    while len(items) < 4:
+        items.append({
+            "tema": "Monitoreo",
+            "detalle": "Se mantiene análisis actualizado.",
+            "impacto": "Neutral"
+        })
+
+    return items
+
+def main():
+    print("🎯 Generando Newsletter Estratégico v2 (Con Cooperativismo y CMF)...\n")
+
+    # Obtener noticias
+    print("📡 Intentando conectar a RSS feeds...")
+    all_news = fetch_all_news()
+
+    # Si no hay noticias, cargar desde JSON
+    if sum(len(v) for v in all_news.values()) == 0:
+        print("⚠️  No se pudo conectar a RSS feeds.")
+        print("📁 Cargando noticias desde archivo JSON...")
+        json_news = load_noticias_from_json()
+        if json_news:
+            all_news = json_news
+            print("✅ Noticias cargadas desde noticias_diarias.json")
+
+    print(f"\n✅ Noticias obtenidas:")
+    print(f"   • Geopolítica: {len(all_news['geopolitica'])}")
+    print(f"   • Economía: {len(all_news['economia_mercados'])}")
+    print(f"   • Chile: {len(all_news['chile_estrategico'])}")
+    print(f"   • Tendencias: {len(all_news['tendencias'])}")
+    print(f"   • Cooperativismo: {len(all_news['cooperativismo'])}")
+    print(f"   • CMF: {len(all_news['cmf'])}")
+
+    current_date = datetime.now().strftime('%d de %B, %Y').replace('May', 'Mayo')
+
+    # Generar HTML
+    print("\n🎨 Generando HTML...")
+    html = generate_html_newsletter(all_news, current_date)
+
+    # Guardar
+    with open('newsletter.html', 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print("\n✅ Newsletter generado exitosamente!")
+    print(f"   Archivo: newsletter.html")
+    print(f"   Secciones: 9 (incluyendo Cooperativismo y CMF)")
+
+def generate_html_newsletter(all_news, current_date):
+    """Generate complete HTML newsletter"""
+
+    coop_items = build_news_items(all_news['cooperativismo'])
+    cmf_items = build_news_items(all_news['cmf'])
+
+    coop_html = ""
+    for item in coop_items:
+        coop_html += f'''
+      <div class="news-item">
+        <div class="news-item-title">{item['tema']}</div>
+        <div class="news-item-detail">{item['detalle']}</div>
+        <span class="impact-badge">{item['impacto']}</span>
+      </div>'''
+
+    cmf_html = ""
+    for item in cmf_items:
+        cmf_html += f'''
+      <div class="news-item">
+        <div class="news-item-title">{item['tema']}</div>
+        <div class="news-item-detail">{item['detalle']}</div>
+        <span class="impact-badge">{item['impacto']}</span>
+      </div>'''
+
+    html = f'''<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newsletter Estratégico — 18 de Mayo, 2026</title>
+<title>Newsletter Estratégico — {current_date}</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
+  :root {{
     --ink: #0d0d0d;
     --paper: #f5f0e8;
     --cream: #ede7d5;
@@ -18,11 +124,11 @@
     --light-accent: #e8f4f8;
     --success: #27ae60;
     --warning: #e67e22;
-  }
+  }}
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 
-  body {
+  body {{
     background: var(--paper);
     color: var(--ink);
     font-family: 'IBM Plex Sans', sans-serif;
@@ -31,9 +137,9 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 50px 32px 100px;
-  }
+  }}
 
-  .masthead {
+  .masthead {{
     border-top: 3px solid var(--ink);
     border-bottom: 1px solid var(--rule);
     padding: 24px 0 16px;
@@ -41,26 +147,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-  }
+  }}
 
-  .masthead-title {
+  .masthead-title {{
     font-family: 'Playfair Display', serif;
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--steel);
-  }
+  }}
 
-  .masthead-meta {
+  .masthead-meta {{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
     color: var(--muted);
     text-align: right;
     line-height: 1.6;
-  }
+  }}
 
-  .edition-badge {
+  .edition-badge {{
     background: var(--ink);
     color: var(--paper);
     font-family: 'IBM Plex Mono', monospace;
@@ -71,24 +177,24 @@
     display: inline-block;
     margin-bottom: 32px;
     font-weight: 600;
-  }
+  }}
 
-  .main-headline {
+  .main-headline {{
     border-left: 5px solid var(--accent);
     padding-left: 24px;
     margin-bottom: 32px;
-  }
+  }}
 
-  .main-headline h1 {
+  .main-headline h1 {{
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: 900;
     line-height: 1.25;
     color: var(--ink);
     margin-bottom: 12px;
-  }
+  }}
 
-  .executive-summary {
+  .executive-summary {{
     background: var(--light-accent);
     border-left: 4px solid var(--accent);
     padding: 24px;
@@ -98,13 +204,13 @@
     font-weight: 500;
     line-height: 1.8;
     color: var(--steel);
-  }
+  }}
 
-  .section {
+  .section {{
     margin-bottom: 48px;
-  }
+  }}
 
-  .section-header {
+  .section-header {{
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 700;
@@ -115,13 +221,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
-  }
+  }}
 
-  .section-emoji {
+  .section-emoji {{
     font-size: 24px;
-  }
+  }}
 
-  .section-subtitle {
+  .section-subtitle {{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
     color: var(--muted);
@@ -129,41 +235,41 @@
     letter-spacing: 0.1em;
     margin-bottom: 20px;
     display: block;
-  }
+  }}
 
-  .content-block {
+  .content-block {{
     margin: 24px 0;
     line-height: 1.8;
-  }
+  }}
 
-  .content-block p {
+  .content-block p {{
     margin-bottom: 16px;
     color: var(--ink);
-  }
+  }}
 
-  .news-item {
+  .news-item {{
     background: var(--cream);
     padding: 20px;
     margin: 16px 0;
     border-radius: 2px;
     border-left: 3px solid var(--steel);
-  }
+  }}
 
-  .news-item-title {
+  .news-item-title {{
     font-weight: 700;
     color: var(--ink);
     margin-bottom: 8px;
     font-size: 15px;
-  }
+  }}
 
-  .news-item-detail {
+  .news-item-detail {{
     font-size: 14px;
     line-height: 1.7;
     color: var(--ink);
     margin-bottom: 10px;
-  }
+  }}
 
-  .impact-badge {
+  .impact-badge {{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 10px;
     font-weight: 600;
@@ -172,9 +278,9 @@
     display: inline-block;
     color: #fff;
     background: var(--accent);
-  }
+  }}
 
-  .insight-box {
+  .insight-box {{
     background: var(--light-accent);
     border: 2px solid var(--accent);
     padding: 32px;
@@ -185,39 +291,39 @@
     font-weight: 600;
     line-height: 1.8;
     color: var(--steel);
-  }
+  }}
 
-  .footer {
+  .footer {{
     border-top: 1px solid var(--rule);
     padding-top: 32px;
     margin-top: 60px;
     font-size: 12px;
     color: var(--muted);
     text-align: center;
-  }
+  }}
 
-  .sources {
+  .sources {{
     font-family: 'IBM Plex Mono', monospace;
     font-size: 11px;
     margin-top: 16px;
     padding-top: 16px;
     border-top: 1px solid var(--rule);
-  }
+  }}
 
-  .sources strong {
+  .sources strong {{
     display: block;
     margin-bottom: 8px;
     color: var(--ink);
-  }
+  }}
 
-  a {
+  a {{
     color: var(--accent);
     text-decoration: none;
-  }
+  }}
 
-  a:hover {
+  a:hover {{
     text-decoration: underline;
-  }
+  }}
 </style>
 </head>
 <body>
@@ -225,7 +331,7 @@
   <div class="masthead">
     <div class="masthead-title">📊 Análisis Estratégico Premium</div>
     <div class="masthead-meta">
-      18 de Mayo, 2026<br>
+      {current_date}<br>
       NEWSLETTER PREMIUM v2
     </div>
   </div>
@@ -251,27 +357,7 @@
     </div>
     <span class="section-subtitle">Movimiento Cooperativo en Expansión</span>
     <div class="content-block">
-
-      <div class="news-item">
-        <div class="news-item-title">Cooperativas de ahorro y crédito crecen 8.5% en ac</div>
-        <div class="news-item-detail">Sector cooperativo chileno demuestra resiliencia. Número de socios supera 1.2 millones. Enfoque en inclusión financiera y educación cooperativa genera impacto social. Regulación diferenciada permite e</div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">Cooperativas agrícolas aumentan productividad con </div>
-        <div class="news-item-detail">Transformación digital en cooperativas de frutas y hortalizas. Implementación de blockchain para trazabilidad aumenta valor de exportaciones. Iniciativas de exportación directa generan márgenes adicio</div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">Movimiento cooperativo latinoamericano fortalece a</div>
-        <div class="news-item-detail">Plataforma digital conecta 1,500+ cooperativas en 8 países. Comercio intrregional crece 22% anual. Cooperativas de vivienda reportan avances significativos en soluciones habitacionales sostenibles.</div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">Monitoreo</div>
-        <div class="news-item-detail">Se mantiene análisis actualizado.</div>
-        <span class="impact-badge">Neutral</span>
-      </div>
+{coop_html}
     </div>
   </div>
 
@@ -283,27 +369,7 @@
     </div>
     <span class="section-subtitle">Regulación y Supervisión de Mercados Financieros</span>
     <div class="content-block">
-
-      <div class="news-item">
-        <div class="news-item-title">CMF implementa nuevas regulaciones para fondos de </div>
-        <div class="news-item-detail">Resolución N° 412-2026 establece requisitos de transparencia y gestión de riesgo. Fondos de inversión alternativa deben reportar exposiciones diarias. Entrada en vigencia: 1 de junio 2026. Impacto esp</div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">CMF sanciona a tres intermediarios de valores por </div>
-        <div class="news-item-detail">Multas por 450 millones de pesos por falta de segregación de activos. CMF fortalece fiscalización. Estándares de compliance se elevan en la industria. Inversionistas se benefician de mayor seguridad.</div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">Índice de Confianza en Mercados Financieros sube 6</div>
-        <div class="news-item-detail">Encuesta CMF-2026 muestra recuperación de confianza inversionista. 65% de participantes confían en regulación. Acceso a información transparente mejora percepción. Crédito de consumo se estabiliza en </div>
-        <span class="impact-badge">En análisis - Ver fuentes</span>
-      </div>
-      <div class="news-item">
-        <div class="news-item-title">Monitoreo</div>
-        <div class="news-item-detail">Se mantiene análisis actualizado.</div>
-        <span class="impact-badge">Neutral</span>
-      </div>
+{cmf_html}
     </div>
   </div>
 
@@ -330,4 +396,9 @@
   </div>
 
 </body>
-</html>
+</html>'''
+
+    return html
+
+if __name__ == '__main__':
+    main()
