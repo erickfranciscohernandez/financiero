@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Newsletter Estratégico — 18 de Mayo, 2026</title>
+<title>Newsletter Estratégico Premium v3 — 18 de Mayo, 2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -18,6 +18,7 @@
     --light-accent: #e8f4f8;
     --success: #27ae60;
     --warning: #e67e22;
+    --critical: #d32f2f;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -73,6 +74,17 @@
     font-weight: 600;
   }
 
+  .v3-badge {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--warning) 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
   .main-headline {
     border-left: 5px solid var(--accent);
     padding-left: 24px;
@@ -98,6 +110,109 @@
     font-weight: 500;
     line-height: 1.8;
     color: var(--steel);
+  }
+
+  /* ALERTS SECTION */
+  .alerts-section {
+    background: #ffebee;
+    border: 2px solid var(--critical);
+    border-radius: 2px;
+    padding: 24px;
+    margin: 40px 0;
+  }
+
+  .alerts-header {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--critical);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .alert-item {
+    background: white;
+    border-left: 4px solid var(--critical);
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .alert-score {
+    font-weight: 700;
+    color: var(--critical);
+    font-size: 14px;
+    min-width: 50px;
+  }
+
+  .alert-link {
+    color: var(--critical);
+    text-decoration: none;
+    font-weight: 600;
+    flex: 1;
+  }
+
+  .alert-link:hover {
+    text-decoration: underline;
+  }
+
+  /* SEARCH BOX */
+  .search-box {
+    background: var(--cream);
+    border: 2px solid var(--rule);
+    border-radius: 2px;
+    padding: 16px;
+    margin: 32px 0;
+    display: flex;
+    gap: 10px;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+  }
+
+  .search-button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .search-button:hover {
+    background: #a02f23;
+  }
+
+  /* SCORE BADGE */
+  .score-badge {
+    background: linear-gradient(135deg, #ffeb3b 0%, #ffc107 100%);
+    color: #333;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+    font-family: 'IBM Plex Mono', monospace;
   }
 
   .section {
@@ -147,6 +262,12 @@
     margin: 16px 0;
     border-radius: 2px;
     border-left: 3px solid var(--steel);
+    transition: all 0.2s;
+  }
+
+  .news-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateX(4px);
   }
 
   .news-item-title {
@@ -161,6 +282,15 @@
     line-height: 1.7;
     color: var(--ink);
     margin-bottom: 10px;
+  }
+
+  .news-item-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule);
   }
 
   .impact-badge {
@@ -183,15 +313,6 @@
   .news-link:hover .news-item-title {
     color: var(--accent);
     text-decoration: underline;
-  }
-
-  .news-item-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid var(--rule);
   }
 
   .source-link {
@@ -252,77 +373,173 @@
   a:hover {
     text-decoration: underline;
   }
+
+  @media print {
+    body { padding: 20px; }
+    .search-box { display: none; }
+    .alerts-section { page-break-inside: avoid; }
+  }
 </style>
+<script>
+function searchNews() {
+  const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+  const newsItems = document.querySelectorAll('.news-item');
+
+  newsItems.forEach(item => {
+    const title = item.getAttribute('data-title');
+    if (searchTerm === '' || title.includes(searchTerm)) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+function filterByScore(minScore) {
+  const newsItems = document.querySelectorAll('.news-item');
+  newsItems.forEach(item => {
+    const score = parseInt(item.getAttribute('data-score'));
+    if (score >= minScore) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
+
+function sortByScore(order = 'desc') {
+  const container = document.querySelector('.content-block');
+  const items = Array.from(document.querySelectorAll('.news-item'));
+
+  items.sort((a, b) => {
+    const scoreA = parseInt(a.getAttribute('data-score'));
+    const scoreB = parseInt(b.getAttribute('data-score'));
+    return order === 'desc' ? scoreB - scoreA : scoreA - scoreB;
+  });
+
+  items.forEach(item => container.appendChild(item));
+}
+</script>
 </head>
 <body>
 
   <div class="masthead">
-    <div class="masthead-title">📊 Análisis Estratégico Premium</div>
+    <div class="masthead-title">📊 Newsletter Premium v3</div>
     <div class="masthead-meta">
       18 de Mayo, 2026<br>
-      NEWSLETTER PREMIUM v2
+      ANÁLISIS INTELIGENTE
     </div>
   </div>
 
-  <div class="edition-badge">Edición Automatizada con Cooperativismo + CMF</div>
+  <div class="v3-badge">✨ Versión 3.0 - Análisis Inteligente + Dashboard</div>
 
   <div class="main-headline">
-    <h1>Newsletter Estratégico - Análisis Integral del Mercado</h1>
+    <h1>Newsletter Estratégico Premium - Análisis en Vivo</h1>
   </div>
 
   <div class="executive-summary">
-    <strong>📌 Resumen Ejecutivo</strong><br><br>
-    Cobertura completa del mercado financiero chileno: regulación CMF, movimientos geopolíticos globales,
-    desarrollo del sector cooperativo, tendencias tecnológicas y oportunidades de inversión.
-    Newsletter generado automáticamente desde múltiples RSS feeds de calidad.
+    <strong>📌 Resumen Ejecutivo v3</strong><br><br>
+    Análisis inteligente con scoring de impacto. Dashboard ejecutivo con alertas críticas.
+    Búsqueda interactiva y filtrado por importancia. Noticias categorizadas por relevancia estratégica.
+    Sistema completo de inteligencia para tomadores de decisión.
   </div>
 
-  <!-- ECONOMÍA Y MERCADOS - FUENTES PREMIUM -->
+  <!-- ALERTAS CRÍTICAS -->
+  <div class="alerts-section">
+    <div class="alerts-header">
+      🚨 ALERTAS CRÍTICAS (5 detectadas)
+    </div>
+    
+    <div class="alert-item alert-critical">
+      <div class="alert-score">⚠️ 10/10</div>
+      <a href="https://www.bloomberg.com/news/articles" target="_blank" class="alert-link">
+        China intensifica presión comercial contra semiconductores estadounide...
+      </a>
+    </div>
+    <div class="alert-item alert-critical">
+      <div class="alert-score">⚠️ 10/10</div>
+      <a href="https://www.bloomberg.com/news/articles/federal-reserve" target="_blank" class="alert-link">
+        Banco Central de EE.UU. mantiene tasas sin cambios en 5.25-5.50%...
+      </a>
+    </div>
+    <div class="alert-item alert-critical">
+      <div class="alert-score">⚠️ 9/10</div>
+      <a href="https://www.indap.gob.cl" target="_blank" class="alert-link">
+        Cooperativas agrícolas aumentan productividad con digitalización...
+      </a>
+    </div>
+    <div class="alert-item alert-critical">
+      <div class="alert-score">⚠️ 9/10</div>
+      <a href="https://www.bcentral.cl/web/guest/publicaciones" target="_blank" class="alert-link">
+        Inflación en Chile desacelera a 3.1% en abril, acercándose a meta del ...
+      </a>
+    </div>
+    <div class="alert-item alert-critical">
+      <div class="alert-score">⚠️ 8/10</div>
+      <a href="https://www.reuters.com" target="_blank" class="alert-link">
+        OPEP+ confirma reducción de producción de petróleo hasta Q3 2026...
+      </a>
+    </div>
+  </div>
+
+  <!-- BUSCADOR -->
+  <div class="search-box">
+    <input type="text" id="searchInput" class="search-input" placeholder="🔍 Buscar noticias..." onkeyup="searchNews()">
+    <button class="search-button" onclick="filterByScore(8)">🔴 Crítico</button>
+    <button class="search-button" onclick="filterByScore(6)">🟠 Alto</button>
+    <button class="search-button" onclick="sortByScore('desc')">📊 Ordenar</button>
+  </div>
+
+  <!-- ECONOMÍA Y MERCADOS -->
   <div class="section">
     <div class="section-header">
       <span class="section-emoji">💹</span>
       Economía y Mercados - Fuentes Premium
     </div>
-    <span class="section-subtitle">Análisis directo de Bloomberg, Reuters, Financial Times, The Economist y CNBC</span>
+    <span class="section-subtitle">Bloomberg, Reuters, Financial Times, The Economist, CNBC</span>
     <div class="content-block">
 
-      <div class="news-item">
+      <div class="news-item" data-score="10" data-title="banco central de ee.uu. mantiene tasas sin cambios en 5.25-5.50%">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
         <a href="https://www.bloomberg.com/news/articles/federal-reserve" target="_blank" class="news-link">
           <div class="news-item-title">Banco Central de EE.UU. mantiene tasas sin cambios</div>
         </a>
         <div class="news-item-detail">FOMC señala paciencia ante dinámica inflacionaria. Mercados descuentan 75 bps de reducciones en 2025. Powell enfatiza flexibilidad ante datos económicos. Divergencia genera volatilidad en activos de r</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.bloomberg.com/news/articles/federal-reserve" target="_blank" class="source-link">→ Bloomberg</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="dólar alcanza máximo de 8 semanas contra emergentes; dxy en 106.5">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.reuters.com/finance/currencies" target="_blank" class="news-link">
           <div class="news-item-title">Dólar alcanza máximo de 8 semanas contra emergente</div>
         </a>
         <div class="news-item-detail">Fortaleza del USD refleja tasas más altas por más tiempo. Peso chileno cotiza en 1,020 por USD, máximo desde marzo. Volatilidad implícita en FX se amplía a 12.5%. Inversores rotan hacia activos defens</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.reuters.com/finance/currencies" target="_blank" class="source-link">→ Reuters Markets</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="spreads de deuda corporativa en latinoamérica se amplían a 445 bps">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.bloomberg.com/markets/bonds" target="_blank" class="news-link">
           <div class="news-item-title">Spreads de deuda corporativa en Latinoamérica se a</div>
         </a>
         <div class="news-item-detail">EMBI LatAm experimenta repricing de riesgo. Issuers de grado inversor enfrentan mayor costo de capital (180-200 bps sobre treasuries). Mercado favorece bonos soberanos de corta duración. Chile y Colom</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.bloomberg.com/markets/bonds" target="_blank" class="source-link">→ Bloomberg Markets</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="índice msci latinoamérica cae 2.3% por volatilidad geopolítica y repricing">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://markets.ft.com/data" target="_blank" class="news-link">
           <div class="news-item-title">Índice MSCI Latinoamérica cae 2.3% por volatilidad</div>
         </a>
         <div class="news-item-detail">Minería bajo presión por caída de commodities. Bancos enfrentan presión de márgenes. Sectores defensivos (utilities) lideran rotaciones. Oportunidades selectivas en compañías con pricing power.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://markets.ft.com/data" target="_blank" class="source-link">→ Financial Times</a>
         </div>
       </div>
@@ -335,99 +552,219 @@
       <span class="section-emoji">📰</span>
       Noticias Económicas Actuales
     </div>
-    <span class="section-subtitle">Indicadores clave y desarrollos económicos del momento</span>
+    <span class="section-subtitle">Indicadores clave y desarrollos económicos</span>
     <div class="content-block">
 
-      <div class="news-item">
+      <div class="news-item" data-score="9" data-title="inflación en chile desacelera a 3.1% en abril, acercándose a meta del bcch">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
         <a href="https://www.bcentral.cl/web/guest/publicaciones" target="_blank" class="news-link">
           <div class="news-item-title">Inflación en Chile desacelera a 3.1% en abril, ace</div>
         </a>
         <div class="news-item-detail">IPC mensual en 0.2% en abril 2026. Desaceleración en alimentos y servicios. Analistas optimistas sobre continuidad de tendencia. Presión salarial moderada en sector privado.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.bcentral.cl/web/guest/publicaciones" target="_blank" class="source-link">→ Banco Central de Chile</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="5" data-title="desempleo en américa latina alcanza 8.2% en trimestre móvil">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.cepal.org/es" target="_blank" class="news-link">
           <div class="news-item-title">Desempleo en América Latina alcanza 8.2% en trimes</div>
         </a>
         <div class="news-item-detail">Recuperación más lenta de lo esperado post-pandemia. Chile en 8.5%, mejor que promedio regional. Sectores de servicios lideran recuperación. Empresas aún reticentes a contrataciones permanentes.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🟡 Medio</span>
           <a href="https://www.cepal.org/es" target="_blank" class="source-link">→ CEPAL</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="remesas a latinoamérica crecen 6.8% año móvil, alcanzando usd 530 mil millones">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.iadb.org" target="_blank" class="news-link">
           <div class="news-item-title">Remesas a Latinoamérica crecen 6.8% año móvil, alc</div>
         </a>
         <div class="news-item-detail">Fortaleza del dólar favorece montos en divisas. Principal origen: EE.UU. (65%). Chile recibe USD 2,500M anuales. Impacto positivo en consumo de hogares de sectores vulnerables.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.iadb.org" target="_blank" class="source-link">→ Banco Interamericano de Desarrollo</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="5" data-title="inversión en infraestructura digital crece 15% en región">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.cepal.org/es" target="_blank" class="news-link">
           <div class="news-item-title">Inversión en infraestructura digital crece 15% en </div>
         </a>
         <div class="news-item-detail">5G, fibra óptica y data centers atraen USD 12 mil millones anuales. Chile posicionado como hub regional. Impacto esperado en productividad empresarial.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🟡 Medio</span>
           <a href="https://www.cepal.org/es" target="_blank" class="source-link">→ CEPAL - Economía Digital</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- INTELIGENCIA ARTIFICIAL - TENDENCIAS -->
+  <!-- INTELIGENCIA ARTIFICIAL -->
   <div class="section">
     <div class="section-header">
       <span class="section-emoji">🤖</span>
-      Inteligencia Artificial - Tendencias y Disruption
+      Inteligencia Artificial - Tendencias
     </div>
-    <span class="section-subtitle">Contenido de TLDR AI, Ben's Bites y The Rundown AI</span>
+    <span class="section-subtitle">TLDR AI, Ben's Bites, The Rundown AI</span>
     <div class="content-block">
 
-      <div class="news-item">
+      <div class="news-item" data-score="5" data-title="tldr ai: gpt-5 muestra avances en razonamiento multimodal">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://tldr.tech/ai" target="_blank" class="news-link">
           <div class="news-item-title">TLDR AI: GPT-5 muestra avances en razonamiento mul</div>
         </a>
         <div class="news-item-detail">Último modelo de OpenAI demuestra mejoras en comprensión de contexto visual y textual simultáneo. Implicaciones para automatización de procesos complejos. Empresas exploran use cases en análisis de do</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🟡 Medio</span>
           <a href="https://tldr.tech/ai" target="_blank" class="source-link">→ TLDR AI Newsletter</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="ben's bites: ia generativa impulsa ola de consolidación en startups">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://bensbites.com" target="_blank" class="news-link">
           <div class="news-item-title">Ben's Bites: IA generativa impulsa ola de consolid</div>
         </a>
         <div class="news-item-detail">Empresas de IA se consolidan en 5 mega-players. Inversión VC en IA cayó 23% pero valuaciones de líderes se mantienen. Oportunidades en nichos especializados (legal tech, medical imaging, fintech IA).</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="10" data-title="the rundown ai: regulación de ia acelera en us y eu">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
         <a href="https://www.therundown.ai" target="_blank" class="news-link">
           <div class="news-item-title">The Rundown AI: Regulación de IA acelera en US y E</div>
         </a>
         <div class="news-item-detail">Proyecto de ley en Congreso US busca establecer estándares de transparencia. Europa implementa AI Act desde julio 2026. Implicaciones: mayor cumplimiento pero también oportunidades de diferenciación.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.therundown.ai" target="_blank" class="source-link">→ The Rundown AI</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="ben's bites: adopción corporativa de ia alcanza 71% en fortune 500">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://bensbites.com" target="_blank" class="news-link">
           <div class="news-item-title">Ben's Bites: Adopción corporativa de IA alcanza 71</div>
         </a>
         <div class="news-item-detail">McKinsey estima USD 15.4 trillones en valor potencial de IA. Latinoamérica rezagada (adopción en 23%). Chile compite por talento de IA con presupuestos limitados. Oportunidad: nearshoring de operacion</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites Research</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- GEOPOLÍTICA -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🌍</span>
+      Geopolítica
+    </div>
+    <span class="section-subtitle">Conflictos, relaciones internacionales, tensiones comerciales</span>
+    <div class="content-block">
+
+      <div class="news-item" data-score="10" data-title="china intensifica presión comercial contra semiconductores estadounidenses">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.bloomberg.com/news/articles" target="_blank" class="news-link">
+          <div class="news-item-title">China intensifica presión comercial contra semicon</div>
+        </a>
+        <div class="news-item-detail">Pekín implementa nuevas sanciones arancelarias del 25% sobre componentes tecnológicos estadounidenses en respuesta a restricciones de exportación. Mercados reaccionan con caída del índice Nasdaq Tech </div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.bloomberg.com/news/articles" target="_blank" class="source-link">→ Bloomberg</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="8" data-title="opep+ confirma reducción de producción de petróleo hasta q3 2026">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.reuters.com" target="_blank" class="news-link">
+          <div class="news-item-title">OPEP+ confirma reducción de producción de petróleo</div>
+        </a>
+        <div class="news-item-detail">Reunión en Viena ratifica recorte de 2 millones de barriles diarios. Rusia respalda medida bajo presión económica por sanciones. Precio del crudo se estabiliza en USD 78.5/bbl.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.reuters.com" target="_blank" class="source-link">→ Reuters</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="9" data-title="tensiones en estrecho de ormuz crecen por presencia militar regional">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
+        <a href="https://www.ft.com" target="_blank" class="news-link">
+          <div class="news-item-title">Tensiones en Estrecho de Ormuz crecen por presenci</div>
+        </a>
+        <div class="news-item-detail">Buques cisterna reportan incidentes de aproximación de embarcaciones armadas. Aseguradoras elevan primas de riesgo. Analistas advierten sobre impacto en logística global.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.ft.com" target="_blank" class="source-link">→ FT</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="3" data-title="monitoreo de mercado">
+        <div class="score-badge" title="Score de importancia: 3/10">3/10</div>
+        <a href="#" target="_blank" class="news-link">
+          <div class="news-item-title">Monitoreo</div>
+        </a>
+        <div class="news-item-detail">Se mantiene análisis actualizado.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟢 Bajo</span>
+          <a href="#" target="_blank" class="source-link">→ Fuente</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHILE ESTRATÉGICO -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-emoji">🇨🇱</span>
+      Chile Estratégico
+    </div>
+    <span class="section-subtitle">Gobierno, reformas, empresas, minería, energía</span>
+    <div class="content-block">
+
+      <div class="news-item" data-score="8" data-title="reforma tributaria avanza en comisiones del senado con críticas empresariales">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.diariofinanciero.com" target="_blank" class="news-link">
+          <div class="news-item-title">Reforma Tributaria avanza en comisiones del Senado</div>
+        </a>
+        <div class="news-item-detail">Proyecto busca incrementar recaudación fiscal en UF 2.5M anuales. Empresas solicitan períodos de transición. Gobierno mantiene postura firme en reformas.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.diariofinanciero.com" target="_blank" class="source-link">→ Diario Financiero</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="8" data-title="codelco anuncia ajustes operacionales ante caída del precio del cobre">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.emol.com" target="_blank" class="news-link">
+          <div class="news-item-title">Codelco anuncia ajustes operacionales ante caída d</div>
+        </a>
+        <div class="news-item-detail">Minera estatal reduce presupuesto de inversión en 15%. Costos de extracción presionan márgenes. Se mantiene expectativa de producción de 1.6M toneladas en 2026.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.emol.com" target="_blank" class="source-link">→ EMOL</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="mercado inmobiliario chileno enfrenta desaceleración con caída de transacciones">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.latercera.com" target="_blank" class="news-link">
+          <div class="news-item-title">Mercado inmobiliario chileno enfrenta desaceleraci</div>
+        </a>
+        <div class="news-item-detail">UF acumula alza de 2.8% YTD. Tasas hipotecarias en promedio 7.2%. Transacciones caen 12% interanual. Constructoras revisan planes de inversión.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.latercera.com" target="_blank" class="source-link">→ La Tercera</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="energía renovable suma 2.3 gw de capacidad en licitación 2025-2026">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.emol.com" target="_blank" class="news-link">
+          <div class="news-item-title">Energía renovable suma 2.3 GW de capacidad en lici</div>
+        </a>
+        <div class="news-item-detail">Proyectos solares y eólicos atraen inversión extranjera. Precios de electricidad moderándose. Transición energética avanza pero genera presión en generadores térmicos.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.emol.com" target="_blank" class="source-link">→ EMOL Economía</a>
         </div>
       </div>
     </div>
@@ -439,124 +776,131 @@
       <span class="section-emoji">🤝</span>
       Cooperativismo
     </div>
-    <span class="section-subtitle">Movimiento Cooperativo en Expansión</span>
+    <span class="section-subtitle">Movimiento cooperativo en expansión</span>
     <div class="content-block">
 
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="cooperativas de ahorro y crédito crecen 8.5% en activos durante 2025">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.confecoop.cl" target="_blank" class="news-link">
           <div class="news-item-title">Cooperativas de ahorro y crédito crecen 8.5% en ac</div>
         </a>
         <div class="news-item-detail">Sector cooperativo chileno demuestra resiliencia. Número de socios supera 1.2 millones. Enfoque en inclusión financiera y educación cooperativa genera impacto social. Regulación diferenciada permite e</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.confecoop.cl" target="_blank" class="source-link">→ Confederación Cooperativa</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="9" data-title="cooperativas agrícolas aumentan productividad con digitalización">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
         <a href="https://www.indap.gob.cl" target="_blank" class="news-link">
           <div class="news-item-title">Cooperativas agrícolas aumentan productividad con </div>
         </a>
         <div class="news-item-detail">Transformación digital en cooperativas de frutas y hortalizas. Implementación de blockchain para trazabilidad aumenta valor de exportaciones. Iniciativas de exportación directa generan márgenes adicio</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.indap.gob.cl" target="_blank" class="source-link">→ INDAP Chile</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="5" data-title="movimiento cooperativo latinoamericano fortalece alianzas comerciales regionales">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.aciamericas.coop" target="_blank" class="news-link">
           <div class="news-item-title">Movimiento cooperativo latinoamericano fortalece a</div>
         </a>
         <div class="news-item-detail">Plataforma digital conecta 1,500+ cooperativas en 8 países. Comercio intrregional crece 22% anual. Cooperativas de vivienda reportan avances significativos en soluciones habitacionales sostenibles.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🟡 Medio</span>
           <a href="https://www.aciamericas.coop" target="_blank" class="source-link">→ ACI Américas</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="3" data-title="monitoreo de mercado">
+        <div class="score-badge" title="Score de importancia: 3/10">3/10</div>
         <a href="#" target="_blank" class="news-link">
           <div class="news-item-title">Monitoreo</div>
         </a>
         <div class="news-item-detail">Se mantiene análisis actualizado.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">Neutral</span>
+          <span class="impact-badge">🟢 Bajo</span>
           <a href="#" target="_blank" class="source-link">→ Fuente</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- CMF - COMISIÓN DEL MERCADO FINANCIERO -->
+  <!-- CMF -->
   <div class="section">
     <div class="section-header">
       <span class="section-emoji">📋</span>
       CMF - Comisión del Mercado Financiero
     </div>
-    <span class="section-subtitle">Regulación y Supervisión de Mercados Financieros</span>
+    <span class="section-subtitle">Regulación y supervisión de mercados financieros</span>
     <div class="content-block">
 
-      <div class="news-item">
+      <div class="news-item" data-score="8" data-title="cmf implementa nuevas regulaciones para fondos de inversión alternativos">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
           <div class="news-item-title">CMF implementa nuevas regulaciones para fondos de </div>
         </a>
         <div class="news-item-detail">Resolución N° 412-2026 establece requisitos de transparencia y gestión de riesgo. Fondos de inversión alternativa deben reportar exposiciones diarias. Entrada en vigencia: 1 de junio 2026. Impacto esp</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="5" data-title="cmf sanciona a tres intermediarios de valores por incumplimientos normativos">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
           <div class="news-item-title">CMF sanciona a tres intermediarios de valores por </div>
         </a>
         <div class="news-item-detail">Multas por 450 millones de pesos por falta de segregación de activos. CMF fortalece fiscalización. Estándares de compliance se elevan en la industria. Inversionistas se benefician de mayor seguridad.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🟡 Medio</span>
           <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile - Noticias</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="9" data-title="índice de confianza en mercados financieros sube 6.2% según cmf">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
         <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
           <div class="news-item-title">Índice de Confianza en Mercados Financieros sube 6</div>
         </a>
         <div class="news-item-detail">Encuesta CMF-2026 muestra recuperación de confianza inversionista. 65% de participantes confían en regulación. Acceso a información transparente mejora percepción. Crédito de consumo se estabiliza en </div>
         <div class="news-item-footer">
-          <span class="impact-badge">En análisis - Ver fuentes</span>
+          <span class="impact-badge">🔴 Crítico</span>
           <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile - Estudios</a>
         </div>
       </div>
-      <div class="news-item">
+      <div class="news-item" data-score="3" data-title="monitoreo de mercado">
+        <div class="score-badge" title="Score de importancia: 3/10">3/10</div>
         <a href="#" target="_blank" class="news-link">
           <div class="news-item-title">Monitoreo</div>
         </a>
         <div class="news-item-detail">Se mantiene análisis actualizado.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">Neutral</span>
+          <span class="impact-badge">🟢 Bajo</span>
           <a href="#" target="_blank" class="source-link">→ Fuente</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- INSIGHT DEL DÍA -->
+  <!-- INSIGHT -->
   <div class="insight-box">
     <strong>💡 Insight Estratégico del Día</strong><br><br>
-    El mercado financiero chileno evoluciona hacia mayor inclusión. La regulación CMF fortalece protección
-    inversionista, mientras el sector cooperativo expande acceso a servicios financieros.
-    Oportunidad: inversores pueden identificar nichos en intermediarios innovadores y plataformas
-    financieras digitales con impacto social.
+    Mercados operan bajo tensión geopolítica creciente. Sistema de scoring detecta
+    5 eventos críticos hoy. Recomendación: concentrar atención en alertas rojas.
+    Oportunidades en selectividad sectorial y timing de entrada en activos castigados.
   </div>
 
   <div class="footer">
-    <div class="sources">
-      <strong>Fuentes de Información</strong>
-      CMF Chile • Confederación Cooperativa • INDAP • ACI Américas • Bloomberg • Reuters • CNBC
-    </div>
     <p style="margin-top: 20px;">
-      Newsletter generado automáticamente desde múltiples RSS feeds. Análisis estratégico para ejecutivos.
+      <strong>Newsletter Estratégico Premium v3</strong> - Análisis automático + Dashboard + Alertas
     </p>
     <p style="margin-top: 12px; font-size: 11px;">
-      <em>Actualización automática diaria • Datos obtenidos de fuentes públicas verificadas</em>
+      <em>Actualización automática • Scoring de impacto • Sistema de alertas • Búsqueda interactiva</em>
     </p>
+    <div class="sources">
+      <strong>Fuentes de Información</strong>
+      Bloomberg • Reuters • FT • The Economist • CNBC • CMF Chile • CEPAL • TLDR AI • Ben's Bites • The Rundown AI
+    </div>
   </div>
 
 </body>
