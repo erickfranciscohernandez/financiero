@@ -2,8 +2,8 @@ name: Generate Daily Newsletter
 
 on:
   schedule:
-    # Ejecutar diariamente a las 12:30 UTC
-    - cron: '30 12 * * *'
+    # Ejecutar cada 30 minutos
+    - cron: '*/30 * * * *'
   # También permitir ejecución manual
   workflow_dispatch:
 
