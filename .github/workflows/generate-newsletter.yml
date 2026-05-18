@@ -26,10 +26,13 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Generate automated newsletter with RSS feeds
+      - name: Generate newsletter v3 with intelligence
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python generate_newsletter_automated.py
+        run: python generate_newsletter_v3.py
+
+      - name: Export to multiple formats (PDF, JSON, CSV)
+        run: python export_newsletter.py
 
       - name: Commit and push changes
         run: |
