@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajeador - Video Tech (Día del Padre)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .video-player {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: #000;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
+            margin-bottom: 30px;
+            border: 2px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .scene.active {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* ESCENA 1: DATO ESTADÍSTICO */
+        .scene-1 {
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            flex-direction: column;
+            position: relative;
+        }
+
+        .grid-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image:
+                repeating-linear-gradient(0deg, rgba(0, 255, 136, 0.1) 0px, rgba(0, 255, 136, 0.1) 1px, transparent 1px, transparent 40px),
+                repeating-linear-gradient(90deg, rgba(0, 255, 136, 0.1) 0px, rgba(0, 255, 136, 0.1) 1px, transparent 1px, transparent 40px);
+        }
+
+        .stat-container {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+        }
+
+        .big-number {
+            font-size: 72px;
+            color: #00ff88;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+            animation: numberCount 1s ease-out;
+            letter-spacing: 5px;
+        }
+
+        .stat-text {
+            font-size: 14px;
+            color: #00ff88;
+            margin-top: 20px;
+            animation: fadeInText 0.8s ease-out 0.3s both;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* ESCENA 2: PROBLEMA DATOS */
+        .scene-2 {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+            position: relative;
+        }
+
+        .data-visualization {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            position: relative;
+            padding: 40px 20px;
+        }
+
+        .bar-chart {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .bar-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            animation: slideInBar 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .bar-item:nth-child(1) { animation-delay: 0.2s; }
+        .bar-item:nth-child(2) { animation-delay: 0.4s; }
+        .bar-item:nth-child(3) { animation-delay: 0.6s; }
+
+        .bar-label {
+            width: 40px;
+            font-size: 10px;
+            color: #00ff88;
+            text-align: right;
+        }
+
+        .bar {
+            flex: 1;
+            height: 25px;
+            background: linear-gradient(90deg, #00ff88 0%, #00cc6a 100%);
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent 0px,
+                rgba(255, 255, 255, 0.3) 2px,
+                transparent 4px
+            );
+            animation: scanBar 0.5s linear infinite;
+        }
+
+        .bar-value {
+            width: 40px;
+            font-size: 12px;
+            color: #00ff88;
+            font-weight: bold;
+        }
+
+        /* ESCENA 3: CARGA TECNOLOGÍA */
+        .scene-3 {
+            background: linear-gradient(135deg, #000000 0%, #1a1a2e 100%);
+            position: relative;
+        }
+
+        .tech-loader {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .loading-nodes {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .node {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #00ff88;
+            animation: nodePulse 0.6s ease-in-out infinite;
+        }
+
+        .node:nth-child(1) { animation-delay: 0s; }
+        .node:nth-child(2) { animation-delay: 0.2s; }
+        .node:nth-child(3) { animation-delay: 0.4s; }
+        .node:nth-child(4) { animation-delay: 0.6s; }
+
+        .loading-line {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #00ff88 50%, transparent 100%);
+            animation: slideLine 1s linear infinite;
+        }
+
+        .loading-label {
+            color: #00ff88;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: blink 0.8s infinite;
+        }
+
+        /* ESCENA 4: PRODUCTO TECH */
+        .scene-4 {
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            position: relative;
+        }
+
+        .product-tech-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+        }
+
+        .product-tech {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f2020 100%);
+            border-radius: 15px;
+            position: relative;
+            animation: productFloatTech 2s ease-in-out infinite;
+            border: 2px solid #00ff88;
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.5);
+        }
+
+        .product-tech::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0, 255, 136, 0.1) 0px,
+                rgba(0, 255, 136, 0.1) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            border-radius: 15px;
+            animation: screenFlicker 0.1s linear infinite;
+        }
+
+        .product-tech::after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 40%;
+            background: radial-gradient(circle, #00ff88 0%, transparent 70%);
+            top: 25%;
+            left: 20%;
+            animation: techGlow 1.5s ease-in-out infinite;
+            filter: blur(10px);
+        }
+
+        .tech-specs {
+            text-align: center;
+            color: #00ff88;
+            font-size: 10px;
+            line-height: 2;
+            animation: slideUp 0.6s ease-out 0.4s both;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .spec-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+
+        .spec-icon {
+            width: 8px;
+            height: 8px;
+            background: #00ff88;
+            border-radius: 50%;
+        }
+
+        /* ESCENA 5: INTEGRACIÓN */
+        .scene-5 {
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+        }
+
+        .integration-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .integration-item {
+            width: 90%;
+            padding: 15px;
+            background: rgba(0, 255, 136, 0.1);
+            border: 2px solid #00ff88;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: slideInIntegration 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .integration-item:nth-child(1) { animation-delay: 0.2s; }
+        .integration-item:nth-child(2) { animation-delay: 0.4s; }
+        .integration-item:nth-child(3) { animation-delay: 0.6s; }
+
+        .integration-text {
+            color: #00ff88;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .integration-icon {
+            font-size: 20px;
+        }
+
+        /* ESCENA 6: CTA */
+        .scene-6 {
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cta-product-tech {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f2020 100%);
+            border-radius: 15px;
+            animation: slideUp 0.6s ease-out;
+            box-shadow: 0 0 40px rgba(0, 255, 136, 0.5);
+            border: 2px solid #00ff88;
+        }
+
+        .cta-text-tech {
+            text-align: center;
+        }
+
+        .cta-title-tech {
+            font-size: 16px;
+            font-weight: bold;
+            color: #00ff88;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .cta-tagline-tech {
+            font-size: 12px;
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cta-buttons-tech {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .cta-btn-tech {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+            border: 2px solid #00ff88;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn-tech:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+            transform: translateY(-2px);
+        }
+
+        /* CONTROLES */
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            background: rgba(0, 255, 136, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 255, 136, 0.2);
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00ff88 0%, #00cc6a 100%);
+            border: 2px solid #00ff88;
+            color: #000;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .play-btn:hover {
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+        }
+
+        .timeline {
+            flex: 1;
+            height: 6px;
+            background: rgba(0, 255, 136, 0.2);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88 0%, #00cc6a 100%);
+            width: 0%;
+            border-radius: 3px;
+        }
+
+        .timeline-handle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #00ff88;
+            border-radius: 50%;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            box-shadow: 0 0 10px rgba(0, 255, 136, 0.8);
+        }
+
+        .time-display {
+            color: #00ff88;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 50px;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+        }
+
+        .scene-indicator {
+            text-align: center;
+            color: #00ff88;
+            font-size: 12px;
+            margin-top: 10px;
+            text-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+        }
+
+        .title {
+            text-align: center;
+            color: #00ff88;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* ANIMACIONES */
+        @keyframes numberCount {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInBar {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scanBar {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes nodePulse {
+            0%, 100% {
+                opacity: 0.3;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes slideLine {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes productFloatTech {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes screenFlicker {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(2px);
+            }
+        }
+
+        @keyframes techGlow {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInIntegration {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">⚡ INNOVACIÓN BIENESTAR</div>
+
+        <div class="video-player">
+            <!-- ESCENA 1: DATO -->
+            <div class="scene scene-1 active">
+                <div class="grid-background"></div>
+                <div class="stat-container">
+                    <div class="big-number">73%</div>
+                    <div class="stat-text">Oficinistas con dolor cervical</div>
+                </div>
+            </div>
+
+            <!-- ESCENA 2: PROBLEMA DATOS -->
+            <div class="scene scene-2">
+                <div class="data-visualization">
+                    <div class="bar-chart">
+                        <div class="bar-item">
+                            <div class="bar-label">Dolor</div>
+                            <div class="bar" style="width: 75%;"></div>
+                            <div class="bar-value">75%</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Estrés</div>
+                            <div class="bar" style="width: 82%;"></div>
+                            <div class="bar-value">82%</div>
+                        </div>
+                        <div class="bar-item">
+                            <div class="bar-label">Rigidez</div>
+                            <div class="bar" style="width: 68%;"></div>
+                            <div class="bar-value">68%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: CARGA -->
+            <div class="scene scene-3">
+                <div class="tech-loader">
+                    <div class="loading-nodes">
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                        <div class="node"></div>
+                    </div>
+                    <div class="loading-line"></div>
+                    <div class="loading-label">Buscando solución...</div>
+                </div>
+            </div>
+
+            <!-- ESCENA 4: PRODUCTO -->
+            <div class="scene scene-4">
+                <div class="product-tech-container">
+                    <div class="product-tech"></div>
+                    <div class="tech-specs">
+                        <div class="spec-line">
+                            <div class="spec-icon"></div>
+                            <span>IA Temperature Control</span>
+                        </div>
+                        <div class="spec-line">
+                            <div class="spec-icon"></div>
+                            <span>App Integration</span>
+                        </div>
+                        <div class="spec-line">
+                            <div class="spec-icon"></div>
+                            <span>Wireless Charging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 5: INTEGRACIÓN -->
+            <div class="scene scene-5">
+                <div class="integration-container">
+                    <div class="integration-item">
+                        <span class="integration-text">Smartwatch Integration</span>
+                        <span class="integration-icon">⌚</span>
+                    </div>
+                    <div class="integration-item">
+                        <span class="integration-text">Voice Control Ready</span>
+                        <span class="integration-icon">🎤</span>
+                    </div>
+                    <div class="integration-item">
+                        <span class="integration-text">Cloud Analytics</span>
+                        <span class="integration-icon">☁️</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 6: CTA -->
+            <div class="scene scene-6">
+                <div class="cta-product-tech"></div>
+                <div class="cta-text-tech">
+                    <div class="cta-title-tech">FUTURO BIENESTAR</div>
+                    <div class="cta-tagline-tech">Tecnología para papá</div>
+                    <div class="cta-buttons-tech">
+                        <button class="cta-btn-tech">🛒 COMPRA AHORA</button>
+                        <button class="cta-btn-tech">🔧 ESPECIFICACIONES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="play-btn" id="playBtn">▶</button>
+            <div class="timeline" id="timeline">
+                <div class="timeline-progress" id="progress"></div>
+                <div class="timeline-handle" id="handle"></div>
+            </div>
+            <div class="time-display" id="timeDisplay">0:00 / 0:15</div>
+        </div>
+
+        <div class="scene-indicator">
+            <span id="sceneInfo">ESCENA 1/6: ESTADÍSTICA</span>
+        </div>
+    </div>
+
+    <script>
+        const scenes = [
+            { duration: 2, name: 'ESTADÍSTICA' },
+            { duration: 3, name: 'DATOS' },
+            { duration: 2, name: 'CARGANDO...' },
+            { duration: 4, name: 'SOLUCIÓN' },
+            { duration: 3, name: 'INTEGRACIÓN' },
+            { duration: 1, name: 'CTA' }
+        ];
+
+        const totalDuration = 15;
+        let currentTime = 0;
+        let isPlaying = false;
+        let animationId = null;
+
+        function updateSceneIndicator() {
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                cumulativeTime += scenes[i].duration;
+                if (currentTime < cumulativeTime) {
+                    document.getElementById('sceneInfo').textContent = `ESCENA ${i + 1}/6: ${scenes[i].name}`;
+                    break;
+                }
+            }
+        }
+
+        function showScene() {
+            const allScenes = document.querySelectorAll('.scene');
+            allScenes.forEach(s => s.classList.remove('active'));
+
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                if (currentTime < cumulativeTime + scenes[i].duration) {
+                    allScenes[i].classList.add('active');
+                    break;
+                }
+                cumulativeTime += scenes[i].duration;
+            }
+
+            updateSceneIndicator();
+        }
+
+        function updateUI() {
+            const percentage = (currentTime / totalDuration) * 100;
+            document.getElementById('progress').style.width = percentage + '%';
+
+            const minutes = Math.floor(currentTime);
+            const seconds = Math.round((currentTime % 1) * 60);
+            document.getElementById('timeDisplay').textContent = `0:${minutes < 10 ? '0' : ''}${minutes} / 0:15`;
+
+            showScene();
+        }
+
+        function animate() {
+            if (isPlaying) {
+                currentTime += 0.016;
+                if (currentTime >= totalDuration) {
+                    currentTime = totalDuration;
+                    isPlaying = false;
+                    document.getElementById('playBtn').textContent = '▶';
+                } else {
+                    animationId = requestAnimationFrame(animate);
+                }
+                updateUI();
+            }
+        }
+
+        document.getElementById('playBtn').addEventListener('click', () => {
+            if (isPlaying) {
+                isPlaying = false;
+                document.getElementById('playBtn').textContent = '▶';
+                if (animationId) cancelAnimationFrame(animationId);
+            } else {
+                if (currentTime >= totalDuration) currentTime = 0;
+                isPlaying = true;
+                document.getElementById('playBtn').textContent = '⏸';
+                animate();
+            }
+        });
+
+        document.getElementById('timeline').addEventListener('click', (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            currentTime = (x / rect.width) * totalDuration;
+            updateUI();
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>

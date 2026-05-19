@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajeador - Video Wellness (Día del Padre)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #e8dcc8 0%, #f5ede0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .video-player {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: #fafaf8;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            border: 2px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .scene.active {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* ESCENA 1: NATURALEZA ZEN */
+        .scene-1 {
+            background: linear-gradient(135deg, #a8d8ea 0%, #aa96da 50%, #fcbad3 100%);
+            flex-direction: column;
+            position: relative;
+        }
+
+        .zen-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .floating-leaves {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .leaf {
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.6;
+            animation: floatLeaf 3s ease-in-out infinite;
+        }
+
+        .leaf:nth-child(1) { top: 10%; left: 10%; animation-delay: 0s; }
+        .leaf:nth-child(2) { top: 20%; right: 15%; animation-delay: 0.5s; }
+        .leaf:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 1s; }
+        .leaf:nth-child(4) { top: 30%; right: 10%; animation-delay: 1.5s; }
+        .leaf:nth-child(5) { bottom: 30%; right: 20%; animation-delay: 2s; }
+
+        .zen-text {
+            position: relative;
+            z-index: 5;
+            text-align: center;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+            animation: fadeInZen 1s ease-out;
+        }
+
+        /* ESCENA 2: PROBLEMA BLOQUEO */
+        .scene-2 {
+            background: linear-gradient(135deg, #fde2e4 0%, #ffe5ec 100%);
+            position: relative;
+        }
+
+        .chakra-body {
+            position: relative;
+            width: 100px;
+            height: 150px;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .chakra {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .chakra-heart {
+            top: 40px;
+            left: 30px;
+            background: rgba(220, 20, 60, 0.2);
+            border: 2px solid #dc143c;
+            animation: blockPulse 1s infinite;
+        }
+
+        .chakra-throat {
+            top: 20px;
+            left: 30px;
+            background: rgba(100, 149, 237, 0.2);
+            border: 2px solid #6495ed;
+            animation: blockPulse 1s infinite;
+        }
+
+        .blockage-text {
+            position: absolute;
+            color: #dc143c;
+            font-size: 12px;
+            font-weight: bold;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            animation: slideUp 0.6s ease-out 0.3s both;
+        }
+
+        /* ESCENA 3: MEDITACIÓN */
+        .scene-3 {
+            background: linear-gradient(135deg, #b4e7ff 0%, #95e1d3 50%, #f38181 100%);
+            position: relative;
+        }
+
+        .meditation-circle {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(46, 204, 113, 0.3) 0%, transparent 70%);
+            animation: meditationAura 2s ease-in-out infinite;
+        }
+
+        .meditation-circle::before {
+            content: '🧘';
+            position: absolute;
+            font-size: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .meditation-circle::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(46, 204, 113, 0.3);
+            border-radius: 50%;
+            animation: expandAura 1.5s ease-out infinite;
+        }
+
+        .om-symbol {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 30px;
+            opacity: 0.5;
+            animation: fadeInOut 2s ease-in-out infinite;
+        }
+
+        /* ESCENA 4: SOLUCIÓN */
+        .scene-4 {
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+            position: relative;
+        }
+
+        .product-wellness {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+            border-radius: 15px;
+            position: relative;
+            animation: productRiseWellness 0.6s ease-out;
+            box-shadow: 0 10px 40px rgba(46, 204, 113, 0.3);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+        }
+
+        .product-wellness::before {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(46, 204, 113, 0.4) 0%, transparent 70%);
+            top: 20%;
+            left: 15%;
+            animation: chakraGlow 1.5s ease-in-out infinite;
+            filter: blur(12px);
+        }
+
+        .healing-aura {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            border: 2px solid rgba(46, 204, 113, 0.2);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: healingExpand 2s ease-out infinite;
+        }
+
+        .wellness-features {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            color: #2d2d2d;
+            font-size: 11px;
+            line-height: 2;
+            animation: slideUp 0.6s ease-out 0.4s both;
+            font-weight: 300;
+        }
+
+        .wellness-feature {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+
+        /* ESCENA 5: TRANSFORMACIÓN */
+        .scene-5 {
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+        }
+
+        .transformation-grid {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .transformation-card {
+            width: 90%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: slideInWellness 0.6s ease-out forwards;
+            opacity: 0;
+            border-left: 4px solid #2ecc71;
+            box-shadow: 0 5px 15px rgba(46, 204, 113, 0.2);
+        }
+
+        .transformation-card:nth-child(1) { animation-delay: 0.2s; }
+        .transformation-card:nth-child(2) { animation-delay: 0.4s; }
+        .transformation-card:nth-child(3) { animation-delay: 0.6s; }
+
+        .transformation-text {
+            font-size: 13px;
+            color: #2d2d2d;
+            font-weight: 300;
+        }
+
+        .transformation-icon {
+            font-size: 24px;
+        }
+
+        /* ESCENA 6: CTA */
+        .scene-6 {
+            background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cta-product-wellness {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+            border-radius: 15px;
+            animation: slideUp 0.6s ease-out;
+            box-shadow: 0 10px 40px rgba(46, 204, 113, 0.3);
+            border: 1px solid rgba(46, 204, 113, 0.3);
+        }
+
+        .cta-text-wellness {
+            text-align: center;
+        }
+
+        .cta-title-wellness {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2d2d2d;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .cta-tagline-wellness {
+            font-size: 13px;
+            color: #2ecc71;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .cta-buttons-wellness {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .cta-btn-wellness {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-btn-wellness:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4);
+        }
+
+        /* CONTROLES */
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            background: rgba(46, 204, 113, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .play-btn:hover {
+            box-shadow: 0 10px 30px rgba(46, 204, 113, 0.4);
+            transform: scale(1.05);
+        }
+
+        .timeline {
+            flex: 1;
+            height: 6px;
+            background: rgba(46, 204, 113, 0.2);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(46, 204, 113, 0.2);
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #2ecc71 0%, #27ae60 100%);
+            width: 0%;
+            border-radius: 3px;
+        }
+
+        .timeline-handle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #2ecc71;
+            border-radius: 50%;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            box-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+        }
+
+        .time-display {
+            color: #2ecc71;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 50px;
+        }
+
+        .scene-indicator {
+            text-align: center;
+            color: #2ecc71;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .title {
+            text-align: center;
+            color: #2ecc71;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* ANIMACIONES */
+        @keyframes floatLeaf {
+            0%, 100% {
+                transform: translateY(0) rotateZ(0deg);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translateY(-15px) rotateZ(180deg);
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes fadeInZen {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes blockPulse {
+            0%, 100% {
+                box-shadow: inset 0 0 10px rgba(220, 20, 60, 0.3);
+            }
+            50% {
+                box-shadow: inset 0 0 20px rgba(220, 20, 60, 0.6);
+            }
+        }
+
+        @keyframes meditationAura {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes expandAura {
+            from {
+                width: 100%;
+                height: 100%;
+            }
+            to {
+                width: 140%;
+                height: 140%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.8;
+            }
+        }
+
+        @keyframes productRiseWellness {
+            from {
+                opacity: 0;
+                transform: translateY(30px) scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes chakraGlow {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes healingExpand {
+            from {
+                width: 100%;
+                height: 100%;
+                opacity: 0.6;
+            }
+            to {
+                width: 180%;
+                height: 180%;
+                opacity: 0;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInWellness {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">🧘 BIENESTAR INTEGRAL</div>
+
+        <div class="video-player">
+            <!-- ESCENA 1: ZEN -->
+            <div class="scene scene-1 active">
+                <div class="zen-background">
+                    <div class="floating-leaves">
+                        <div class="leaf">🍃</div>
+                        <div class="leaf">🍂</div>
+                        <div class="leaf">🍃</div>
+                        <div class="leaf">🍂</div>
+                        <div class="leaf">🍃</div>
+                    </div>
+                </div>
+                <div class="zen-text">El bienestar es un viaje</div>
+            </div>
+
+            <!-- ESCENA 2: BLOQUEO -->
+            <div class="scene scene-2">
+                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
+                    <div class="chakra-body">
+                        <div class="chakra chakra-throat">🔵</div>
+                        <div class="chakra chakra-heart">🔴</div>
+                    </div>
+                    <div class="blockage-text">Bloqueos<br>Energéticos</div>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: MEDITACIÓN -->
+            <div class="scene scene-3">
+                <div style="position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;">
+                    <div class="om-symbol">ॐ</div>
+                    <div class="meditation-circle"></div>
+                </div>
+            </div>
+
+            <!-- ESCENA 4: SOLUCIÓN -->
+            <div class="scene scene-4">
+                <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; position: relative;">
+                    <div class="healing-aura"></div>
+                    <div class="product-wellness"></div>
+                    <div class="wellness-features">
+                        <div class="wellness-feature">
+                            <span>✓ Sanación física</span>
+                        </div>
+                        <div class="wellness-feature">
+                            <span>✓ Armonía corporal</span>
+                        </div>
+                        <div class="wellness-feature">
+                            <span>✓ Energía equilibrada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 5: TRANSFORMACIÓN -->
+            <div class="scene scene-5">
+                <div class="transformation-grid">
+                    <div class="transformation-card">
+                        <span class="transformation-text">Cuerpo en paz</span>
+                        <span class="transformation-icon">☮️</span>
+                    </div>
+                    <div class="transformation-card">
+                        <span class="transformation-text">Energía fluye</span>
+                        <span class="transformation-icon">✨</span>
+                    </div>
+                    <div class="transformation-card">
+                        <span class="transformation-text">Papá equilibrado</span>
+                        <span class="transformation-icon">🙏</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 6: CTA -->
+            <div class="scene scene-6">
+                <div class="cta-product-wellness"></div>
+                <div class="cta-text-wellness">
+                    <div class="cta-title-wellness">BIENESTAR INTEGRAL</div>
+                    <div class="cta-tagline-wellness">Tu cuerpo agradece</div>
+                    <div class="cta-buttons-wellness">
+                        <button class="cta-btn-wellness">🛒 COMPRA AHORA</button>
+                        <button class="cta-btn-wellness">🧘 MÁS INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="play-btn" id="playBtn">▶</button>
+            <div class="timeline" id="timeline">
+                <div class="timeline-progress" id="progress"></div>
+                <div class="timeline-handle" id="handle"></div>
+            </div>
+            <div class="time-display" id="timeDisplay">0:00 / 0:15</div>
+        </div>
+
+        <div class="scene-indicator">
+            <span id="sceneInfo">ESCENA 1/6: ZEN</span>
+        </div>
+    </div>
+
+    <script>
+        const scenes = [
+            { duration: 2, name: 'ZEN' },
+            { duration: 3, name: 'BLOQUEO' },
+            { duration: 2, name: 'MEDITACIÓN' },
+            { duration: 4, name: 'SOLUCIÓN' },
+            { duration: 3, name: 'TRANSFORMACIÓN' },
+            { duration: 1, name: 'CTA' }
+        ];
+
+        const totalDuration = 15;
+        let currentTime = 0;
+        let isPlaying = false;
+        let animationId = null;
+
+        function updateSceneIndicator() {
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                cumulativeTime += scenes[i].duration;
+                if (currentTime < cumulativeTime) {
+                    document.getElementById('sceneInfo').textContent = `ESCENA ${i + 1}/6: ${scenes[i].name}`;
+                    break;
+                }
+            }
+        }
+
+        function showScene() {
+            const allScenes = document.querySelectorAll('.scene');
+            allScenes.forEach(s => s.classList.remove('active'));
+
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                if (currentTime < cumulativeTime + scenes[i].duration) {
+                    allScenes[i].classList.add('active');
+                    break;
+                }
+                cumulativeTime += scenes[i].duration;
+            }
+
+            updateSceneIndicator();
+        }
+
+        function updateUI() {
+            const percentage = (currentTime / totalDuration) * 100;
+            document.getElementById('progress').style.width = percentage + '%';
+
+            const minutes = Math.floor(currentTime);
+            const seconds = Math.round((currentTime % 1) * 60);
+            document.getElementById('timeDisplay').textContent = `0:${minutes < 10 ? '0' : ''}${minutes} / 0:15`;
+
+            showScene();
+        }
+
+        function animate() {
+            if (isPlaying) {
+                currentTime += 0.016;
+                if (currentTime >= totalDuration) {
+                    currentTime = totalDuration;
+                    isPlaying = false;
+                    document.getElementById('playBtn').textContent = '▶';
+                } else {
+                    animationId = requestAnimationFrame(animate);
+                }
+                updateUI();
+            }
+        }
+
+        document.getElementById('playBtn').addEventListener('click', () => {
+            if (isPlaying) {
+                isPlaying = false;
+                document.getElementById('playBtn').textContent = '▶';
+                if (animationId) cancelAnimationFrame(animationId);
+            } else {
+                if (currentTime >= totalDuration) currentTime = 0;
+                isPlaying = true;
+                document.getElementById('playBtn').textContent = '⏸';
+                animate();
+            }
+        });
+
+        document.getElementById('timeline').addEventListener('click', (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            currentTime = (x / rect.width) * totalDuration;
+            updateUI();
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>

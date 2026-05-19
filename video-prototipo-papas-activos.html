@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajeador - Video Papás Activos (Día del Padre)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #2c1810 0%, #3d2817 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .video-player {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: #1a1a1a;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
+            margin-bottom: 30px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .scene.active {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* ESCENA 1: OUTDOOR */
+        .scene-1 {
+            background: linear-gradient(135deg, #87ceeb 0%, #e0f6ff 100%);
+            flex-direction: column;
+            position: relative;
+        }
+
+        .sky {
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(180deg, #87ceeb 0%, #e0f6ff 100%);
+            top: 0;
+        }
+
+        .mountain {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(135deg, #556b2f 0%, #6b8e23 100%);
+            clip-path: polygon(0 100%, 20% 40%, 40% 20%, 60% 30%, 80% 15%, 100% 40%, 100% 100%);
+        }
+
+        .cyclist {
+            position: relative;
+            width: 80px;
+            height: 60px;
+            z-index: 5;
+            animation: bikeMove 1s ease-out;
+        }
+
+        .bike-wheel {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            background: repeating-conic-gradient(
+                from 0deg,
+                #666 0deg 20deg,
+                transparent 20deg 40deg
+            );
+        }
+
+        .wheel-front {
+            right: 0;
+            bottom: 0;
+            animation: wheelRotate 0.5s linear infinite;
+        }
+
+        .wheel-back {
+            left: 0;
+            bottom: 0;
+            animation: wheelRotate 0.5s linear infinite;
+        }
+
+        .body-cyclist {
+            position: absolute;
+            width: 20px;
+            height: 25px;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+            border-radius: 8px;
+            left: 20px;
+            top: 10px;
+        }
+
+        .activity-label {
+            position: absolute;
+            top: 30%;
+            left: 20px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInText 0.8s ease-out;
+        }
+
+        /* ESCENA 2: PROBLEMA ACTIVOS */
+        .scene-2 {
+            background: linear-gradient(135deg, #c4a57b 0%, #d9a376 100%);
+            position: relative;
+        }
+
+        .activity-montage {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            position: relative;
+        }
+
+        .activity-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            animation: slideInActivity 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .activity-item:nth-child(1) { animation-delay: 0.2s; }
+        .activity-item:nth-child(2) { animation-delay: 0.4s; }
+        .activity-item:nth-child(3) { animation-delay: 0.6s; }
+
+        .activity-icon-large {
+            font-size: 40px;
+            animation: bounce 0.6s infinite;
+        }
+
+        .activity-icon-large:nth-child(2) {
+            animation-delay: 0.15s;
+        }
+
+        .activity-label-text {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .pain-indicator {
+            position: absolute;
+            width: 40px;
+            height: 50px;
+            right: 20px;
+            top: 30%;
+            background: rgba(220, 20, 60, 0.3);
+            border-radius: 10px;
+            border: 2px solid #dc143c;
+            animation: painPulse 1s infinite;
+        }
+
+        /* ESCENA 3: TRANSICIÓN NATURAL */
+        .scene-3 {
+            background: linear-gradient(135deg, #87ceeb 0%, #90ee90 50%, #ffd700 100%);
+            position: relative;
+        }
+
+        .sun {
+            width: 80px;
+            height: 80px;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: sunRise 1s ease-out;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.8);
+        }
+
+        .sun-rays {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ray {
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: rgba(255, 215, 0, 0.6);
+            transform-origin: left center;
+            animation: sunRayRadiate 0.8s ease-out forwards;
+        }
+
+        /* ESCENA 4: SOLUCIÓN */
+        .scene-4 {
+            background: linear-gradient(135deg, #d4a574 0%, #c49060 100%);
+            position: relative;
+        }
+
+        .product-active {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+            border-radius: 15px;
+            position: relative;
+            animation: productAppearActive 0.6s ease-out;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .product-active::before {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 40%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.6) 0%, transparent 70%);
+            border-radius: 10px;
+            top: 20%;
+            left: 20%;
+            animation: warmthGlow 1.5s ease-in-out infinite;
+            filter: blur(8px);
+        }
+
+        .features-active {
+            position: absolute;
+            bottom: 50px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 11px;
+            line-height: 1.8;
+            animation: slideUp 0.6s ease-out 0.4s both;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+
+        .feature-icon {
+            color: #ffd700;
+            font-size: 12px;
+        }
+
+        /* ESCENA 5: BENEFICIO */
+        .scene-5 {
+            background: linear-gradient(135deg, #90ee90 0%, #98fb98 100%);
+        }
+
+        .benefits-active {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .benefit-item-active {
+            width: 85%;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: slideInBenefit 0.6s ease-out forwards;
+            opacity: 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-item-active:nth-child(1) { animation-delay: 0.2s; }
+        .benefit-item-active:nth-child(2) { animation-delay: 0.4s; }
+        .benefit-item-active:nth-child(3) { animation-delay: 0.6s; }
+
+        .benefit-text-active {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2d2d2d;
+        }
+
+        .benefit-emoji-active {
+            font-size: 24px;
+        }
+
+        /* ESCENA 6: CTA */
+        .scene-6 {
+            background: linear-gradient(135deg, #d4a574 0%, #c49060 100%);
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cta-product-active {
+            width: 100px;
+            height: 140px;
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+            border-radius: 15px;
+            animation: slideUp 0.6s ease-out;
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+            border: 2px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .cta-text-active {
+            text-align: center;
+        }
+
+        .cta-title-active {
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .cta-tagline-active {
+            font-size: 13px;
+            color: #ffd700;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .cta-buttons-active {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .cta-btn-active {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #ffd700 0%, #ffb703 100%);
+            border: none;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-btn-active:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        /* CONTROLES */
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            background: rgba(212, 175, 55, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ffd700 0%, #ffb703 100%);
+            border: none;
+            color: #000;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .play-btn:hover {
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+            transform: scale(1.05);
+        }
+
+        .timeline {
+            flex: 1;
+            height: 6px;
+            background: rgba(212, 175, 55, 0.2);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #ffd700 0%, #ffb703 100%);
+            width: 0%;
+            border-radius: 3px;
+        }
+
+        .timeline-handle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #ffd700;
+            border-radius: 50%;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        }
+
+        .time-display {
+            color: #d4af37;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 50px;
+        }
+
+        .scene-indicator {
+            text-align: center;
+            color: #d4af37;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .title {
+            text-align: center;
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* ANIMACIONES */
+        @keyframes bikeMove {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes wheelRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInActivity {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes painPulse {
+            0%, 100% {
+                box-shadow: inset 0 0 10px rgba(220, 20, 60, 0.5);
+            }
+            50% {
+                box-shadow: inset 0 0 20px rgba(220, 20, 60, 0.8);
+            }
+        }
+
+        @keyframes sunRise {
+            from {
+                opacity: 0;
+                transform: translateY(50px) scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes sunRayRadiate {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+            to {
+                opacity: 0.6;
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes productAppearActive {
+            from {
+                opacity: 0;
+                transform: scale(0.6) rotateZ(-10deg);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) rotateZ(0deg);
+            }
+        }
+
+        @keyframes warmthGlow {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInBenefit {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">⛰️ PAPÁ ACTIVO SIN LÍMITES</div>
+
+        <div class="video-player">
+            <!-- ESCENA 1: OUTDOOR -->
+            <div class="scene scene-1 active">
+                <div class="sky"></div>
+                <div class="mountain"></div>
+                <div class="cyclist">
+                    <div class="bike-wheel wheel-front"></div>
+                    <div class="bike-wheel wheel-back"></div>
+                    <div class="body-cyclist"></div>
+                </div>
+                <div class="activity-label">⛰️ ACTIVO SIEMPRE</div>
+            </div>
+
+            <!-- ESCENA 2: PROBLEMA -->
+            <div class="scene scene-2">
+                <div class="activity-montage">
+                    <div class="activity-item">
+                        <span class="activity-icon-large">🚴</span>
+                        <span class="activity-label-text">Ciclismo: Cuello tenso</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-icon-large">💪</span>
+                        <span class="activity-label-text">Gym: Hombros adoloridos</span>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-icon-large">⛳</span>
+                        <span class="activity-label-text">Golf: Rigidez cervical</span>
+                    </div>
+                    <div class="pain-indicator"></div>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: TRANSICIÓN -->
+            <div class="scene scene-3">
+                <div class="sun-rays">
+                    <div class="sun">
+                        <div class="sun-rays">
+                            <!-- Rayos opcionales pueden agregarse aquí -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 4: SOLUCIÓN -->
+            <div class="scene scene-4">
+                <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;">
+                    <div class="product-active"></div>
+                    <div class="features-active">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Portátil & Inalámbrico</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Calor terapéutico</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Recuperación rápida</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 5: BENEFICIO -->
+            <div class="scene scene-5">
+                <div class="benefits-active">
+                    <div class="benefit-item-active">
+                        <span class="benefit-text-active">Sigue en movimiento</span>
+                        <span class="benefit-emoji-active">🏃</span>
+                    </div>
+                    <div class="benefit-item-active">
+                        <span class="benefit-text-active">Disfruta cada actividad</span>
+                        <span class="benefit-emoji-active">😊</span>
+                    </div>
+                    <div class="benefit-item-active">
+                        <span class="benefit-text-active">Papá sin dolor</span>
+                        <span class="benefit-emoji-active">🎯</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 6: CTA -->
+            <div class="scene scene-6">
+                <div class="cta-product-active"></div>
+                <div class="cta-text-active">
+                    <div class="cta-title-active">PAPÁ ACTIVO</div>
+                    <div class="cta-tagline-active">Sigue en movimiento</div>
+                    <div class="cta-buttons-active">
+                        <button class="cta-btn-active">🛒 COMPRA AHORA</button>
+                        <button class="cta-btn-active">📲 MÁS DETALLES</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="play-btn" id="playBtn">▶</button>
+            <div class="timeline" id="timeline">
+                <div class="timeline-progress" id="progress"></div>
+                <div class="timeline-handle" id="handle"></div>
+            </div>
+            <div class="time-display" id="timeDisplay">0:00 / 0:15</div>
+        </div>
+
+        <div class="scene-indicator">
+            <span id="sceneInfo">ESCENA 1/6: OUTDOOR</span>
+        </div>
+    </div>
+
+    <script>
+        const scenes = [
+            { duration: 2, name: 'OUTDOOR' },
+            { duration: 3, name: 'PROBLEMA' },
+            { duration: 2, name: 'TRANSICIÓN' },
+            { duration: 4, name: 'SOLUCIÓN' },
+            { duration: 3, name: 'BENEFICIO' },
+            { duration: 1, name: 'CTA' }
+        ];
+
+        const totalDuration = 15;
+        let currentTime = 0;
+        let isPlaying = false;
+        let animationId = null;
+
+        function updateSceneIndicator() {
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                cumulativeTime += scenes[i].duration;
+                if (currentTime < cumulativeTime) {
+                    document.getElementById('sceneInfo').textContent = `ESCENA ${i + 1}/6: ${scenes[i].name}`;
+                    break;
+                }
+            }
+        }
+
+        function showScene() {
+            const allScenes = document.querySelectorAll('.scene');
+            allScenes.forEach(s => s.classList.remove('active'));
+
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                if (currentTime < cumulativeTime + scenes[i].duration) {
+                    allScenes[i].classList.add('active');
+                    break;
+                }
+                cumulativeTime += scenes[i].duration;
+            }
+
+            updateSceneIndicator();
+        }
+
+        function updateUI() {
+            const percentage = (currentTime / totalDuration) * 100;
+            document.getElementById('progress').style.width = percentage + '%';
+
+            const minutes = Math.floor(currentTime);
+            const seconds = Math.round((currentTime % 1) * 60);
+            document.getElementById('timeDisplay').textContent = `0:${minutes < 10 ? '0' : ''}${minutes} / 0:15`;
+
+            showScene();
+        }
+
+        function animate() {
+            if (isPlaying) {
+                currentTime += 0.016;
+                if (currentTime >= totalDuration) {
+                    currentTime = totalDuration;
+                    isPlaying = false;
+                    document.getElementById('playBtn').textContent = '▶';
+                } else {
+                    animationId = requestAnimationFrame(animate);
+                }
+                updateUI();
+            }
+        }
+
+        document.getElementById('playBtn').addEventListener('click', () => {
+            if (isPlaying) {
+                isPlaying = false;
+                document.getElementById('playBtn').textContent = '▶';
+                if (animationId) cancelAnimationFrame(animationId);
+            } else {
+                if (currentTime >= totalDuration) currentTime = 0;
+                isPlaying = true;
+                document.getElementById('playBtn').textContent = '⏸';
+                animate();
+            }
+        });
+
+        document.getElementById('timeline').addEventListener('click', (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            currentTime = (x / rect.width) * totalDuration;
+            updateUI();
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>

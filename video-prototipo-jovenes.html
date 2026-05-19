@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masajeador - Video Jóvenes Gaming (Día del Padre)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0e27 0%, #16213e 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .video-player {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 9/16;
+            background: #000;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);
+            margin-bottom: 30px;
+            border: 2px solid rgba(0, 255, 255, 0.2);
+        }
+
+        .scene {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .scene.active {
+            opacity: 1;
+            z-index: 10;
+        }
+
+        /* ESCENA 1: GAMING SETUP */
+        .scene-1 {
+            background: linear-gradient(135deg, #0f1419 0%, #1a1f2e 100%);
+            flex-direction: column;
+            position: relative;
+        }
+
+        .monitor {
+            width: 100px;
+            height: 70px;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            border-radius: 5px;
+            position: relative;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+            animation: screenGlitch 0.3s ease-out;
+        }
+
+        .monitor::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255, 0, 255, 0.15) 0px,
+                rgba(255, 0, 255, 0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            border-radius: 5px;
+        }
+
+        .rgb-lights {
+            position: absolute;
+            width: 120px;
+            height: 8px;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 5px;
+        }
+
+        .rgb-light {
+            width: 20px;
+            height: 8px;
+            border-radius: 4px;
+            animation: rgbPulse 0.6s infinite;
+        }
+
+        .rgb-light:nth-child(1) {
+            background: #ff006e;
+            animation-delay: 0s;
+        }
+
+        .rgb-light:nth-child(2) {
+            background: #00d4ff;
+            animation-delay: 0.2s;
+        }
+
+        .rgb-light:nth-child(3) {
+            background: #00ff41;
+            animation-delay: 0.4s;
+        }
+
+        .rgb-light:nth-child(4) {
+            background: #ffb703;
+            animation-delay: 0.6s;
+        }
+
+        .rgb-light:nth-child(5) {
+            background: #ff006e;
+            animation-delay: 0.8s;
+        }
+
+        .rgb-light:nth-child(6) {
+            background: #00d4ff;
+            animation-delay: 1s;
+        }
+
+        .gaming-text {
+            position: absolute;
+            top: 50px;
+            color: #00d4ff;
+            font-size: 16px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+            animation: fadeInGlitch 0.8s ease-out;
+            letter-spacing: 2px;
+        }
+
+        /* ESCENA 2: PROBLEMA JÓVENES */
+        .scene-2 {
+            background: linear-gradient(135deg, #1a1f2e 0%, #2d3142 100%);
+            position: relative;
+        }
+
+        .problem-content {
+            width: 90%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+        }
+
+        .gaming-hours {
+            font-size: 48px;
+            color: #ff006e;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(255, 0, 110, 0.8);
+            animation: slideIn 0.6s ease-out;
+        }
+
+        .gaming-subtext {
+            color: #00d4ff;
+            font-size: 14px;
+            text-align: center;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .activity-icons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            animation: slideUp 0.6s ease-out 0.4s both;
+        }
+
+        .activity-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(0, 212, 255, 0.2);
+            border: 2px solid #00d4ff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .activity-icon:hover {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            transform: scale(1.1);
+        }
+
+        /* ESCENA 3: TRANSICIÓN TECH */
+        .scene-3 {
+            background: linear-gradient(135deg, #000000 0%, #1a1f2e 100%);
+        }
+
+        .tech-transition {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loading-circle {
+            width: 80px;
+            height: 80px;
+            border: 3px solid rgba(0, 212, 255, 0.3);
+            border-top: 3px solid #00d4ff;
+            border-radius: 50%;
+            animation: loadingRotate 1s linear infinite;
+        }
+
+        .loading-text {
+            position: absolute;
+            color: #00d4ff;
+            font-size: 12px;
+            margin-top: 100px;
+            animation: loadingBlink 0.8s infinite;
+        }
+
+        /* ESCENA 4: PRODUCTO GAMING */
+        .scene-4 {
+            background: linear-gradient(135deg, #0a0e27 0%, #16213e 100%);
+            position: relative;
+        }
+
+        .product-section {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            position: relative;
+        }
+
+        .product-gaming {
+            width: 90px;
+            height: 130px;
+            background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+            border-radius: 15px;
+            position: relative;
+            animation: productFloatGaming 2s ease-in-out infinite;
+            border: 2px solid #00d4ff;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+        }
+
+        .product-gaming::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                rgba(0, 212, 255, 0.3) 0px,
+                transparent 2px,
+                transparent 4px,
+                rgba(0, 212, 255, 0.3) 6px
+            );
+            border-radius: 15px;
+            animation: scanlines 0.1s linear infinite;
+        }
+
+        .product-gaming::after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 50%;
+            background: radial-gradient(circle, #00d4ff 0%, transparent 70%);
+            top: 20%;
+            left: 15%;
+            animation: glow 1.5s ease-in-out infinite;
+            filter: blur(10px);
+        }
+
+        .gaming-specs {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 11px;
+            line-height: 1.8;
+            animation: slideUp 0.6s ease-out 0.4s both;
+        }
+
+        .spec-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            margin: 5px 0;
+        }
+
+        .spec-icon {
+            color: #ff006e;
+            font-size: 12px;
+        }
+
+        /* ESCENA 5: RESULTADO GAMER */
+        .scene-5 {
+            background: linear-gradient(135deg, #1a1f2e 0%, #2d3142 100%);
+        }
+
+        .result-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 40px 20px;
+        }
+
+        .result-card {
+            width: 90%;
+            padding: 15px;
+            background: rgba(0, 212, 255, 0.1);
+            border: 2px solid #00d4ff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            animation: slideInResult 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .result-card:nth-child(1) { animation-delay: 0.2s; }
+        .result-card:nth-child(2) { animation-delay: 0.4s; }
+        .result-card:nth-child(3) { animation-delay: 0.6s; }
+
+        .result-text {
+            color: #00d4ff;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .result-emoji {
+            font-size: 24px;
+            animation: bounce 0.6s ease-out infinite;
+        }
+
+        /* ESCENA 6: CTA GAMING */
+        .scene-6 {
+            background: linear-gradient(135deg, #0a0e27 0%, #16213e 100%);
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cta-product-gaming {
+            width: 90px;
+            height: 130px;
+            background: linear-gradient(135deg, #1a1f2e 0%, #0f1419 100%);
+            border-radius: 15px;
+            border: 2px solid #00d4ff;
+            animation: slideUp 0.6s ease-out;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.5);
+        }
+
+        .cta-text-gaming {
+            text-align: center;
+        }
+
+        .cta-title-gaming {
+            font-size: 16px;
+            color: #00d4ff;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+        }
+
+        .cta-tagline-gaming {
+            font-size: 12px;
+            color: #ff006e;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .cta-buttons-gaming {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            animation: slideUp 0.6s ease-out 0.2s both;
+        }
+
+        .cta-btn-gaming {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            border: 2px solid #ff006e;
+            border-radius: 8px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-btn-gaming:hover {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* CONTROLES */
+        .controls {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            background: rgba(0, 212, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .play-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00d4ff 0%, #0099cc 100%);
+            border: 2px solid #ff006e;
+            color: #000;
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        .play-btn:hover {
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.8);
+        }
+
+        .timeline {
+            flex: 1;
+            height: 6px;
+            background: rgba(0, 212, 255, 0.2);
+            border-radius: 3px;
+            cursor: pointer;
+            position: relative;
+            border: 1px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .timeline-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff 0%, #ff006e 100%);
+            width: 0%;
+            border-radius: 3px;
+        }
+
+        .timeline-handle {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #00d4ff;
+            border-radius: 50%;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+        }
+
+        .time-display {
+            color: #00d4ff;
+            font-size: 12px;
+            font-weight: bold;
+            min-width: 50px;
+            text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+        }
+
+        .scene-indicator {
+            text-align: center;
+            color: #00d4ff;
+            font-size: 12px;
+            margin-top: 10px;
+            text-shadow: 0 0 5px rgba(0, 212, 255, 0.5);
+        }
+
+        .title {
+            text-align: center;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+            letter-spacing: 2px;
+        }
+
+        /* ANIMACIONES */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInResult {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInGlitch {
+            from {
+                opacity: 0;
+                text-shadow: 0 0 0px rgba(0, 212, 255, 0);
+            }
+            to {
+                opacity: 1;
+                text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
+            }
+        }
+
+        @keyframes rgbPulse {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes screenGlitch {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            20% {
+                transform: translateX(-2px);
+            }
+            40% {
+                transform: translateX(2px);
+            }
+            60% {
+                transform: translateX(-1px);
+            }
+            80% {
+                transform: translateX(1px);
+            }
+        }
+
+        @keyframes loadingRotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loadingBlink {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes productFloatGaming {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes scanlines {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(2px);
+            }
+        }
+
+        @keyframes glow {
+            0%, 100% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">🎮 GAMING CUELLO SIN LÍMITES</div>
+
+        <div class="video-player">
+            <!-- ESCENA 1: GAMING SETUP -->
+            <div class="scene scene-1 active">
+                <div class="monitor"></div>
+                <div class="rgb-lights">
+                    <div class="rgb-light"></div>
+                    <div class="rgb-light"></div>
+                    <div class="rgb-light"></div>
+                    <div class="rgb-light"></div>
+                    <div class="rgb-light"></div>
+                    <div class="rgb-light"></div>
+                </div>
+                <div class="gaming-text">12 HORAS FRENTE PANTALLA</div>
+            </div>
+
+            <!-- ESCENA 2: PROBLEMA -->
+            <div class="scene scene-2">
+                <div class="problem-content">
+                    <div class="gaming-hours">12H</div>
+                    <div class="gaming-subtext">Gaming sin parar = Cuello destrozado</div>
+                    <div class="activity-icons">
+                        <div class="activity-icon">🎮</div>
+                        <div class="activity-icon">📹</div>
+                        <div class="activity-icon">🖌️</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 3: TRANSICIÓN -->
+            <div class="scene scene-3">
+                <div class="tech-transition">
+                    <div class="loading-circle"></div>
+                    <div class="loading-text">CARGANDO SOLUCIÓN...</div>
+                </div>
+            </div>
+
+            <!-- ESCENA 4: SOLUCIÓN -->
+            <div class="scene scene-4">
+                <div class="product-section">
+                    <div class="product-gaming"></div>
+                    <div class="gaming-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon">⚡</span>
+                            <span>Sin cables, sin excusas</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">🔋</span>
+                            <span>12 horas de batería</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">❄️</span>
+                            <span>Modo gaming activado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 5: RESULTADO -->
+            <div class="scene scene-5">
+                <div class="result-container">
+                    <div class="result-card">
+                        <span class="result-text">Cuello ready para ranked</span>
+                        <span class="result-emoji">✅</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-text">Juega sin limitaciones</span>
+                        <span class="result-emoji">🎯</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-text">Papá gamer satisfecho</span>
+                        <span class="result-emoji">🔥</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ESCENA 6: CTA -->
+            <div class="scene scene-6">
+                <div class="cta-product-gaming"></div>
+                <div class="cta-text-gaming">
+                    <div class="cta-title-gaming">CUELLO SIN LÍMITES</div>
+                    <div class="cta-tagline-gaming">Gaming sin dolor</div>
+                    <div class="cta-buttons-gaming">
+                        <button class="cta-btn-gaming">🛒 COMPRA AHORA</button>
+                        <button class="cta-btn-gaming">📲 MÁS INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="play-btn" id="playBtn">▶</button>
+            <div class="timeline" id="timeline">
+                <div class="timeline-progress" id="progress"></div>
+                <div class="timeline-handle" id="handle"></div>
+            </div>
+            <div class="time-display" id="timeDisplay">0:00 / 0:15</div>
+        </div>
+
+        <div class="scene-indicator">
+            <span id="sceneInfo">ESCENA 1/6: GAMING SETUP</span>
+        </div>
+    </div>
+
+    <script>
+        const scenes = [
+            { duration: 2, name: 'GAMING SETUP' },
+            { duration: 3, name: 'PROBLEMA' },
+            { duration: 2, name: 'CARGANDO...' },
+            { duration: 4, name: 'SOLUCIÓN' },
+            { duration: 3, name: 'RESULTADO' },
+            { duration: 1, name: 'CTA' }
+        ];
+
+        const totalDuration = 15;
+        let currentTime = 0;
+        let isPlaying = false;
+        let animationId = null;
+
+        function updateSceneIndicator() {
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                cumulativeTime += scenes[i].duration;
+                if (currentTime < cumulativeTime) {
+                    document.getElementById('sceneInfo').textContent = `ESCENA ${i + 1}/6: ${scenes[i].name}`;
+                    break;
+                }
+            }
+        }
+
+        function showScene() {
+            const allScenes = document.querySelectorAll('.scene');
+            allScenes.forEach(s => s.classList.remove('active'));
+
+            let cumulativeTime = 0;
+            for (let i = 0; i < scenes.length; i++) {
+                if (currentTime < cumulativeTime + scenes[i].duration) {
+                    allScenes[i].classList.add('active');
+                    break;
+                }
+                cumulativeTime += scenes[i].duration;
+            }
+
+            updateSceneIndicator();
+        }
+
+        function updateUI() {
+            const percentage = (currentTime / totalDuration) * 100;
+            document.getElementById('progress').style.width = percentage + '%';
+
+            const minutes = Math.floor(currentTime);
+            const seconds = Math.round((currentTime % 1) * 60);
+            document.getElementById('timeDisplay').textContent = `0:${minutes < 10 ? '0' : ''}${minutes} / 0:15`;
+
+            showScene();
+        }
+
+        function animate() {
+            if (isPlaying) {
+                currentTime += 0.016;
+                if (currentTime >= totalDuration) {
+                    currentTime = totalDuration;
+                    isPlaying = false;
+                    document.getElementById('playBtn').textContent = '▶';
+                } else {
+                    animationId = requestAnimationFrame(animate);
+                }
+                updateUI();
+            }
+        }
+
+        document.getElementById('playBtn').addEventListener('click', () => {
+            if (isPlaying) {
+                isPlaying = false;
+                document.getElementById('playBtn').textContent = '▶';
+                if (animationId) cancelAnimationFrame(animationId);
+            } else {
+                if (currentTime >= totalDuration) currentTime = 0;
+                isPlaying = true;
+                document.getElementById('playBtn').textContent = '⏸';
+                animate();
+            }
+        });
+
+        document.getElementById('timeline').addEventListener('click', (e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            currentTime = (x / rect.width) * totalDuration;
+            updateUI();
+        });
+
+        updateUI();
+    </script>
+</body>
+</html>
