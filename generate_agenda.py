@@ -9,29 +9,36 @@ from datetime import datetime, timedelta
 AGENDA_EVENTS = {
     "icare": [
         {
-            "fecha": "2026-05-20",
-            "titulo": "Webinar: Seguros de Salud - Nuevas Coberturas",
-            "descripcion": "Sesión informativa sobre las nuevas coberturas en seguros de salud iCare. Registros abiertos.",
-            "hora": "15:00",
-            "tipo": "webinar",
-            "enlace": "https://www.icare.cl/eventos"
+            "fecha": "2026-06-03",
+            "titulo": "Conoce a tu ministro: Martín Arrau, Ministro de Obras Públicas",
+            "descripcion": "Encuentro directo con el Ministro de Obras Públicas para conocer sus iniciativas y políticas públicas.",
+            "hora": "08:30",
+            "tipo": "encuentro",
+            "enlace": "https://www.icare.cl/agenda-de-actividades/"
         },
         {
-            "fecha": "2026-05-22",
-            "titulo": "Jornada de Atención al Cliente iCare",
-            "descripcion": "Reunión presencial en oficinas principales para consultas y trámites de pólizas.",
-            "hora": "09:00",
-            "tipo": "presencial",
-            "ubicacion": "Santiago, Región Metropolitana",
-            "enlace": "https://www.icare.cl/contacto"
+            "fecha": "2026-06-10",
+            "titulo": "Conoce a tu ministro: Ximena Rincón, Ministra de Energía",
+            "descripcion": "Encuentro con la Ministra de Energía para discutir políticas de energía renovable y sostenibilidad.",
+            "hora": "08:30",
+            "tipo": "encuentro",
+            "enlace": "https://www.icare.cl/agenda-de-actividades/"
         },
         {
-            "fecha": "2026-05-25",
-            "titulo": "Seminario: Prevención de Riesgos en el Trabajo",
-            "descripcion": "Capacitación gratuita sobre normativas de seguridad laboral y seguros ocupacionales.",
-            "hora": "10:00",
+            "fecha": "2026-06-24",
+            "titulo": "Conoce a tu ministra: Ximena Lincolao, Ministra de Ciencia, Tecnología, Conocimiento e Innovación",
+            "descripcion": "Encuentro con la Ministra de Ciencia y Tecnología para explorar iniciativas de innovación en Chile.",
+            "hora": "08:30",
+            "tipo": "encuentro",
+            "enlace": "https://www.icare.cl/agenda-de-actividades/"
+        },
+        {
+            "fecha": "2026-06-18",
+            "titulo": "El Pulso de la Economía Nacional: Claves del IPoM – Junio",
+            "descripcion": "Análisis de la situación económica nacional con enfoque en el Informe de Política Monetaria de junio.",
+            "hora": "08:00",
             "tipo": "seminario",
-            "enlace": "https://www.icare.cl/eventos"
+            "enlace": "https://www.icare.cl/agenda-de-actividades/"
         }
     ],
     "cooperativas": [
