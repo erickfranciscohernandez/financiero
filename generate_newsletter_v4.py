@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Newsletter Estratégico v4 - FASE 4
-Incluye: Análisis inteligente + Visualizaciones + Datos en Vivo
+Incluye: Análisis inteligente + Visualizaciones + Datos en Vivo + Agenda
 """
 import json
 import sys
@@ -9,6 +9,7 @@ from datetime import datetime
 from fetch_news_rss import fetch_all_news
 from fetch_live_data import LiveDataFetcher, generate_chart_data
 from visualizations import generate_charts_html, generate_charts_css
+from generate_agenda import generate_agenda_html, get_agenda_css
 
 
 def load_noticias_from_json(filepath='noticias_diarias.json'):
@@ -192,12 +193,16 @@ def main():
     viz_html = integrate_visualizations_html(indicators)
     viz_css = get_visualization_css()
 
+    # Generate agenda section
+    agenda_html = generate_agenda_html()
+    agenda_css = get_agenda_css()
+
     # Generate old HTML (from v3)
     html_v3 = generate_html_advanced_v4(
         all_news, current_date,
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
-        alerts, viz_html, viz_css
+        alerts, viz_html, viz_css, agenda_html, agenda_css
     )
 
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -227,8 +232,8 @@ def main():
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
                                coop_items, cmf_items, geo_items, chile_items, alerts,
-                               viz_html, viz_css):
-    """Generate advanced HTML v4 with visualizations"""
+                               viz_html, viz_css, agenda_html, agenda_css):
+    """Generate advanced HTML v4 with visualizations and agenda"""
 
     def items_to_html(items):
         html = ""
@@ -551,6 +556,9 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
       /* VISUALIZACIONES CSS */
       {viz_css}
 
+      /* AGENDA CSS */
+      {agenda_css}
+
       @media print {{
         body {{ padding: 20px; }}
         .search-box {{ display: none; }}
@@ -664,9 +672,12 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         {econ_html}
     </div>
 
+    <!-- AGENDA DE ACTIVIDADES -->
+    {agenda_html}
+
     <div class="footer">
-        <strong>Newsletter Estratégico Premium v4 - FASE 4: Visualizaciones + Datos en Vivo</strong>
-        <p>Generado automáticamente · Análisis inteligente · Datos en vivo · Publicado en GitHub Pages</p>
+        <strong>Newsletter Estratégico Premium v4 - FASE 4: Visualizaciones + Datos en Vivo + Agenda</strong>
+        <p>Generado automáticamente · Análisis inteligente · Datos en vivo · Agenda de eventos · Publicado en GitHub Pages</p>
     </div>
 
     <script>
