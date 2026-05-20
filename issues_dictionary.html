@@ -464,7 +464,12 @@
 
         async function loadProblems() {
             try {
-                const response = await fetch('issues_dictionary.json');
+                const basePath = window.location.pathname.includes('/financiero/')
+                    ? '/financiero/'
+                    : '/';
+                const jsonUrl = basePath + 'issues_dictionary.json';
+                const response = await fetch(jsonUrl);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const data = await response.json();
                 allProblems = data.problems;
                 updateStats();
@@ -472,7 +477,7 @@
             } catch (error) {
                 console.error('Error loading problems:', error);
                 document.getElementById('results').innerHTML =
-                    '<div class="no-results"><h2>Error</h2><p>No se pudieron cargar los problemas</p></div>';
+                    '<div class="no-results"><h2>Error al cargar</h2><p>No se pudieron cargar los problemas. Error: ' + error.message + '</p></div>';
             }
         }
 
