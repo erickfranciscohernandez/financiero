@@ -1,0 +1,402 @@
+{
+  "problems": [
+    {
+      "id": "SW001",
+      "category": "Software",
+      "title": "Aplicación no inicia",
+      "description": "La aplicación financiera no abre",
+      "symptoms": [
+        "Error al ejecutar la aplicación",
+        "Pantalla en blanco",
+        "Proceso termina inmediatamente"
+      ],
+      "solutions": [
+        "Verificar que Python 3.11+ esté instalado",
+        "Instalar dependencias: pip install -r requirements.txt",
+        "Ejecutar en modo debug: python app.py --debug",
+        "Limpiar caché: rm -rf __pycache__ *.pyc",
+        "Verificar puertos: netstat -an | grep 5000"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "SW002",
+      "category": "Software",
+      "title": "API retorna error 500",
+      "description": "El servidor API responde con errores internos",
+      "symptoms": [
+        "Status code 500",
+        "Respuesta vacía del servidor",
+        "Logs con excepciones Python"
+      ],
+      "solutions": [
+        "Revisar logs de aplicación: tail -f logs/app.log",
+        "Validar conexión a base de datos",
+        "Verificar variables de entorno: echo $DATABASE_URL",
+        "Reiniciar servicio: systemctl restart app-service",
+        "Ejecutar tests: pytest tests/ -v"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "SW003",
+      "category": "Software",
+      "title": "Lentitud en carga de reportes",
+      "description": "Los reportes tardan más de lo esperado en generar",
+      "symptoms": [
+        "Tiempo de carga > 30 segundos",
+        "CPU al 100%",
+        "Memoria agotada"
+      ],
+      "solutions": [
+        "Análisis de rendimiento: python -m cProfile app.py",
+        "Optimizar queries SQL: EXPLAIN ANALYZE ...",
+        "Implementar caché: Redis setup",
+        "Revisar índices de base de datos",
+        "Reducir volumen de datos: archive old records"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "SW004",
+      "category": "Software",
+      "title": "Problema con integración de API externa",
+      "description": "Fallo al conectar con servicios externos (datos financieros, etc.)",
+      "symptoms": [
+        "Timeout en conexiones",
+        "Errores de autenticación",
+        "Datos desactualizados"
+      ],
+      "solutions": [
+        "Validar credenciales API en .env",
+        "Verificar endpoints: curl -v https://api.example.com/health",
+        "Revisar límites de rate limiting",
+        "Implementar reintentos exponenciales",
+        "Contactar al proveedor de API"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "SW005",
+      "category": "Software",
+      "title": "Conflicto de versiones de librerías",
+      "description": "Incompatibilidad entre versiones de dependencias",
+      "symptoms": [
+        "ImportError o ModuleNotFoundError",
+        "Comportamiento inesperado",
+        "Error: requirement already satisfied but with different version"
+      ],
+      "solutions": [
+        "Crear entorno virtual limpio: python -m venv venv",
+        "Reinstalar dependencias: pip install --upgrade -r requirements.txt",
+        "Especificar versiones exactas en requirements.txt",
+        "Usar pip-audit para detectar conflictos",
+        "Documentar versiones mínimas y máximas soportadas"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "HW001",
+      "category": "Hardware",
+      "title": "Disco duro casi lleno",
+      "description": "Espacio en disco insuficiente para operaciones",
+      "symptoms": [
+        "Advertencias de disco lleno",
+        "Aplicación no puede escribir archivos",
+        "Rendimiento muy lento"
+      ],
+      "solutions": [
+        "Verificar uso: df -h /",
+        "Identificar archivos grandes: du -sh /home/*",
+        "Limpiar logs antiguos: rm -rf logs/*.log.* (>30 días)",
+        "Archivar datos históricos",
+        "Aumentar capacidad de almacenamiento",
+        "Configurar limpieza automática de archivos temporales"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "HW002",
+      "category": "Hardware",
+      "title": "Fallo de memoria (RAM)",
+      "description": "Aplicación se bloquea por falta de memoria",
+      "symptoms": [
+        "Error: Out of Memory (OOM)",
+        "Proceso terminado abruptamente",
+        "Sistema responde lentamente"
+      ],
+      "solutions": [
+        "Monitorear memoria: free -h",
+        "Revisar procesos: top -o %MEM",
+        "Aumentar límites de memoria: ulimit -v unlimited",
+        "Optimizar código para reducir uso de memoria",
+        "Implementar garbage collection agresivo",
+        "Aumentar RAM del servidor"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "HW003",
+      "category": "Hardware",
+      "title": "Problemas de conectividad de red",
+      "description": "Servidor no puede acceder a la red o internet",
+      "symptoms": [
+        "Ping sin respuesta",
+        "DNS no resuelve",
+        "Conexión intermitente"
+      ],
+      "solutions": [
+        "Verificar configuración de red: ifconfig o ip addr",
+        "Probar conectividad: ping 8.8.8.8",
+        "Verificar DNS: nslookup google.com",
+        "Revisar firewall: ufw status",
+        "Reiniciar interfaz de red: sudo systemctl restart networking",
+        "Verificar cables y router"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "HW004",
+      "category": "Hardware",
+      "title": "CPU al 100%",
+      "description": "Procesador saturado, sistema responde lentamente",
+      "symptoms": [
+        "Carga del sistema muy alta",
+        "Aplicaciones congeladas",
+        "Ruido de ventilador del servidor"
+      ],
+      "solutions": [
+        "Identificar proceso culpable: top -n 1 -b | sort -k 9 -rn",
+        "Analizar profiling: python -m cProfile -s cumulative app.py",
+        "Optimizar algoritmos ineficientes",
+        "Distribuir carga entre múltiples procesos/threads",
+        "Escalar a múltiples servidores",
+        "Implementar caché"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "HW005",
+      "category": "Hardware",
+      "title": "Fallo de base de datos",
+      "description": "Servidor de base de datos no responde o está corrupto",
+      "symptoms": [
+        "Connection refused",
+        "Tabla bloqueada",
+        "Errors en integridad de datos"
+      ],
+      "solutions": [
+        "Verificar estado del servicio: systemctl status postgresql",
+        "Reiniciar base de datos: systemctl restart postgresql",
+        "Revisar logs: tail -f /var/log/postgresql.log",
+        "Validar integridad: PRAGMA integrity_check (SQLite)",
+        "Restaurar desde backup",
+        "Contactar al DBA"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "ACC001",
+      "category": "Accesos",
+      "title": "Problema de autenticación",
+      "description": "Usuario no puede iniciar sesión o la contraseña es rechazada",
+      "symptoms": [
+        "Login fallido",
+        "Mensaje de credenciales inválidas",
+        "Session timeout frecuente"
+      ],
+      "solutions": [
+        "Verificar que usuario existe en BD",
+        "Resetear contraseña del usuario",
+        "Limpiar sesiones antiguas: DELETE FROM sessions WHERE expired=true",
+        "Verificar políticas de contraseña",
+        "Revisar logs de autenticación",
+        "Habilitar MFA si está deshabilitado"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "ACC002",
+      "category": "Accesos",
+      "title": "Permisos insuficientes",
+      "description": "Usuario no tiene permisos para acceder a recursos",
+      "symptoms": [
+        "Acceso denegado (403)",
+        "Mensajes de 'No autorizado'",
+        "Funciones no disponibles"
+      ],
+      "solutions": [
+        "Verificar roles del usuario: SELECT * FROM user_roles WHERE user_id=X",
+        "Asignar rol correcto al usuario",
+        "Revisar matriz de permisos en la aplicación",
+        "Validar grupos de LDAP/Active Directory",
+        "Auditar cambios de permisos recientes",
+        "Documentar permisos requeridos por rol"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "ACC003",
+      "category": "Accesos",
+      "title": "Token o sesión expirado",
+      "description": "Usuario es desconectado por token vencido",
+      "symptoms": [
+        "Sesión termina inesperadamente",
+        "Token inválido o expirado",
+        "Redireccionamiento a login"
+      ],
+      "solutions": [
+        "Aumentar duración del token en config",
+        "Implementar refresh tokens automáticos",
+        "Sincronizar reloj del servidor: ntpdate -s ntp.ubuntu.com",
+        "Limpiar sesiones expiradas periódicamente",
+        "Revisar política de expiración",
+        "Notificar al usuario antes de expiración"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "ACC004",
+      "category": "Accesos",
+      "title": "VPN no conecta",
+      "description": "Usuario no puede acceder a recursos de forma remota",
+      "symptoms": [
+        "Conexión VPN rechazada",
+        "Timeout en conexión",
+        "Credenciales incorrectas aunque sean válidas"
+      ],
+      "solutions": [
+        "Verificar cliente VPN actualizado",
+        "Revisar estado del servidor VPN: systemctl status openvpn",
+        "Validar certificados: openssl x509 -text -noout -in cert.pem",
+        "Revisar firewall corporativo",
+        "Resetear credenciales VPN",
+        "Contactar a soporte de infraestructura"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "ACC005",
+      "category": "Accesos",
+      "title": "LDAP/Active Directory no sincroniza",
+      "description": "Usuarios no se sincronizan entre aplicación y directorio corporativo",
+      "symptoms": [
+        "Nuevos usuarios no aparecen en la app",
+        "Cambios de permisos no se reflejan",
+        "Error de conectividad LDAP"
+      ],
+      "solutions": [
+        "Verificar credenciales LDAP en configuración",
+        "Probar conexión: ldapsearch -x -h ldap.server.com -b 'dc=company,dc=com'",
+        "Revisar filtros LDAP en config",
+        "Verificar puertos abiertos: 389 (LDAP) o 636 (LDAPS)",
+        "Ejecutar sincronización manual",
+        "Revisar logs: tail -f /var/log/sldap/ldapd.log"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "DLP001",
+      "category": "DLP",
+      "title": "Intento de exfiltración de datos",
+      "description": "DLP detectó un intento de envío no autorizado de información sensible",
+      "symptoms": [
+        "Alerta DLP en dashboard",
+        "Bloqueo de email/transfer",
+        "Usuario intentó enviar archivo de datos sensibles"
+      ],
+      "solutions": [
+        "Revisar alerta en console DLP: ver detalles de evento",
+        "Contactar al usuario para verificar si fue legítimo",
+        "Si fue intento de robo: escalar a seguridad",
+        "Revisar políticas DLP aplicadas al usuario",
+        "Documentar incidente en SIEM",
+        "Actualizar reglas DLP si fue falso positivo"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "DLP002",
+      "category": "DLP",
+      "title": "Clasificación de datos sensibles incorrecta",
+      "description": "Documento no está correctamente marcado como confidencial",
+      "symptoms": [
+        "Datos sensibles compartidos sin restricción",
+        "Archivo no tiene etiqueta de confidencialidad",
+        "Permisos demasiado abiertos"
+      ],
+      "solutions": [
+        "Re-clasificar documento con nivel correcto",
+        "Aplicar etiquetas de Microsoft 365/AWS",
+        "Restringir acceso según clasificación",
+        "Auditar documentos similares",
+        "Capacitar usuarios sobre clasificación",
+        "Implementar auto-clasificación con ML"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "DLP003",
+      "category": "DLP",
+      "title": "Datos borrados sin autorización",
+      "description": "Alguien eliminó información sensible sin seguir procedimientos",
+      "symptoms": [
+        "Archivo/registro desaparecido",
+        "Cambios en base de datos sin auditoría",
+        "Falta de backup de datos importantes"
+      ],
+      "solutions": [
+        "Verificar logs de auditoría: SELECT * FROM audit_log WHERE action='DELETE'",
+        "Restaurar desde backup más reciente",
+        "Investigar quién y cuándo se eliminó",
+        "Revisar políticas de retención",
+        "Implementar soft-delete (marcar como eliminado, no borrar)",
+        "Aplicar controles de aprobación antes de delete",
+        "Contactar a seguridad para investigación"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "DLP004",
+      "category": "DLP",
+      "title": "Datos transferidos a ubicación no autorizada",
+      "description": "Información sensible se movió a cloud o servidor no aprobado",
+      "symptoms": [
+        "Alerta de transferencia a cloud no autorizado",
+        "Datos aparecen en ubicación no controlada",
+        "Violación de compliance (GDPR, HIPAA, etc.)"
+      ],
+      "solutions": [
+        "Identificar quién transfirió los datos",
+        "Verificar if fue accidental o intencional",
+        "Si cloud no autorizado: eliminar copia de allá",
+        "Revisar permisos de usuario",
+        "Implementar restricción de ubicaciones permitidas",
+        "Escalar a compliance si hay violación regulatoria",
+        "Documentar en registro de incidentes"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "DLP005",
+      "category": "DLP",
+      "title": "Contraseña en logs o mensajes",
+      "description": "Información de credenciales capturada en lugar inadecuado",
+      "symptoms": [
+        "Contraseña visible en logs",
+        "API key exponía en mensaje de error",
+        "Token de acceso en histórico de comandos"
+      ],
+      "solutions": [
+        "Limpiar logs: grep -v 'password\\|token\\|secret' app.log > clean.log",
+        "Resetear credenciales expuestas inmediatamente",
+        "Implementar sanitización de logs",
+        "Usar variables de entorno para secretos, no hardcoded",
+        "Implementar vault (HashiCorp Vault, AWS Secrets Manager)",
+        "Revisar herramientas de detección de secretos en CI/CD",
+        "Rotar keys/tokens comprometidos"
+      ],
+      "severity": "critical"
+    }
+  ]
+}
