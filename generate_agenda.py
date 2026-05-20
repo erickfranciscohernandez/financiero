@@ -63,7 +63,7 @@ AGENDA_EVENTS = {
 
 
 def generate_agenda_html():
-    """Genera sección HTML con agenda de actividades"""
+    """Genera sección HTML con agenda de actividades ordenada por fecha"""
 
     html = """
     <div class="section">
@@ -76,9 +76,28 @@ def generate_agenda_html():
         <div class="agenda-container">
 """
 
-    # Agregar eventos de iCare
-    html += '<div class="agenda-section"><h3>📅 iCare</h3>'
+    # Combinar todos los eventos y ordenar por fecha
+    all_events = []
+
+    # Agregar eventos de iCare con fuente
     for event in AGENDA_EVENTS.get('icare', []):
+        event_copy = event.copy()
+        event_copy['source'] = 'icare'
+        all_events.append(event_copy)
+
+    # Agregar eventos de cooperativas con fuente
+    for event in AGENDA_EVENTS.get('cooperativas', []):
+        event_copy = event.copy()
+        event_copy['source'] = 'cooperativas'
+        all_events.append(event_copy)
+
+    # Ordenar por fecha (YYYY-MM-DD se ordena alfabéticamente correctamente)
+    all_events.sort(key=lambda x: x['fecha'])
+
+    # Agrupar por fuente para mostrar con encabezados
+    html += '<div class="agenda-section"><h3>📅 iCare</h3>'
+    icare_events = [e for e in all_events if e['source'] == 'icare']
+    for event in icare_events:
         html += f'''
         <div class="agenda-item">
             <div class="agenda-date">
@@ -99,7 +118,8 @@ def generate_agenda_html():
 
     # Agregar eventos cooperativas
     html += '<div class="agenda-section"><h3>🤝 Movimiento Cooperativo</h3>'
-    for event in AGENDA_EVENTS.get('cooperativas', []):
+    coop_events = [e for e in all_events if e['source'] == 'cooperativas']
+    for event in coop_events:
         html += f'''
         <div class="agenda-item">
             <div class="agenda-date">

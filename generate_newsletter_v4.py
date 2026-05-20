@@ -173,13 +173,13 @@ def main():
     print("="*60)
     print("PASO 4: Preparando análisis")
     print("="*60)
-    econ_items = build_news_items_advanced(all_news['economia_mercados'])
+    econ_items = build_news_items_advanced(all_news.get('economia_mercados', []))
     econ_actuales = build_news_items_advanced(all_news.get('noticias_economicas', []))
     ia_items = build_news_items_advanced(all_news.get('ia', []))
-    coop_items = build_news_items_advanced(all_news['cooperativismo'])
-    cmf_items = build_news_items_advanced(all_news['cmf'])
-    geo_items = build_news_items_advanced(all_news['geopolitica'])
-    chile_items = build_news_items_advanced(all_news['chile_estrategico'])
+    coop_items = build_news_items_advanced(all_news.get('cooperativismo', []))
+    cmf_items = build_news_items_advanced(all_news.get('cmf', []))
+    geo_items = build_news_items_advanced(all_news.get('geopolitica', []))
+    chile_items = build_news_items_advanced(all_news.get('chile_estrategico', []))
     print("✅ Análisis completo\n")
 
     # Step 5: Generate HTML with visualizations
