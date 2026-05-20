@@ -202,11 +202,12 @@ def main():
     agenda_css = get_agenda_css()
 
     # Generate old HTML (from v3)
+    tendencias_items = build_news_items_advanced(all_news.get('tendencias', []))
     html_v3 = generate_html_advanced_v4(
         all_news, current_date,
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
-        alerts, viz_html, viz_css, agenda_html, agenda_css
+        tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css
     )
 
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -235,7 +236,7 @@ def main():
 
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
-                               coop_items, cmf_items, geo_items, chile_items, alerts,
+                               coop_items, cmf_items, geo_items, chile_items, tendencias_items, alerts,
                                viz_html, viz_css, agenda_html, agenda_css):
     """Generate advanced HTML v4 with visualizations and agenda"""
 
@@ -263,6 +264,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
     cmf_html = items_to_html(cmf_items)
     geo_html = items_to_html(geo_items)
     chile_html = items_to_html(chile_items)
+    tendencias_html = items_to_html(tendencias_items)
 
     # Alerts section
     alerts_html = ""
@@ -673,7 +675,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Tendencias Tech
         </h2>
         <span class="section-subtitle">Innovación · Startups · Cloud</span>
-        {econ_html}
+        {tendencias_html}
     </div>
 
     <!-- AGENDA DE ACTIVIDADES -->
