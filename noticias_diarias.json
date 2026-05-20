@@ -1,55 +1,48 @@
 {
   "geopolitica": [
     {
+      "title": "Rusia y OPEP+ coordinan estrategia energética en contexto geopolítico",
+      "summary": "Reunión estratégica entre líderes energéticos genera preocupación en mercados occidentales.",
+      "source": "Reuters",
+      "link": "https://www.reuters.com/business",
+      "date": "2026-05-20T11:18:25.808197"
+    },
+    {
       "title": "EE.UU. anuncia nuevas medidas de defensa en Pacífico",
       "summary": "Inversiones militares sin precedentes en la región generan reacciones de potencias asiáticas.",
       "source": "Financial Times",
       "link": "https://www.ft.com/world",
-      "date": "2026-05-20T00:31:44.312763"
+      "date": "2026-05-20T12:18:25.808215"
     },
     {
       "title": "China intensifica presión comercial contra semiconductores estadounidenses",
       "summary": "Nuevas restricciones comerciales impactan la industria tecnológica global. Analistas advierten sobre escalada de tensiones.",
       "source": "Bloomberg",
       "link": "https://www.bloomberg.com/news/articles",
-      "date": "2026-05-19T21:31:44.312777"
-    },
-    {
-      "title": "Rusia y OPEP+ coordinan estrategia energética en contexto geopolítico",
-      "summary": "Reunión estratégica entre líderes energéticos genera preocupación en mercados occidentales.",
-      "source": "Reuters",
-      "link": "https://www.reuters.com/business",
-      "date": "2026-05-19T18:31:44.312782"
+      "date": "2026-05-20T13:18:25.808219"
     }
   ],
   "economia_global": [
+    {
+      "title": "Banco Central Europeo considera nuevas medidas de estímulo",
+      "summary": "Preocupaciones por desaceleración económica empujan a BCE a evaluación de política monetaria.",
+      "source": "Financial Times",
+      "link": "https://www.ft.com",
+      "date": "2026-05-20T08:18:25.808233"
+    },
     {
       "title": "Mercados accionarios globales en volatilidad por datos económicos mixtos",
       "summary": "S&P 500 cierra mixto mientras se esperan reportes de empleo en EE.UU.",
       "source": "CNBC",
       "link": "https://www.cnbc.com",
-      "date": "2026-05-19T21:31:44.312795"
+      "date": "2026-05-20T12:18:25.808235"
     },
     {
       "title": "Petróleo recupera 2% en sesión de volatilidad",
       "summary": "Conflictos geopolíticos y datos de demanda impulsan precios del crudo.",
       "source": "Bloomberg",
       "link": "https://www.bloomberg.com/energy",
-      "date": "2026-05-20T00:31:44.312798"
-    },
-    {
-      "title": "Fed mantiene tasas en máximos; mercados anticipan cambio de política",
-      "summary": "Expectativas de recortes de tasas en próximos meses generan volatilidad en mercados de renta fija.",
-      "source": "Bloomberg",
-      "link": "https://www.bloomberg.com/news",
-      "date": "2026-05-19T18:31:44.312804"
-    },
-    {
-      "title": "Cobre toca mínimos de 4 semanas en USD 4.12/lb por debilidad de demanda",
-      "summary": "Commodity clave para Chile cae por preocupaciones de recesión global y menor actividad manufacturera.",
-      "source": "CNBC",
-      "link": "https://www.cnbc.com/commodities",
-      "date": "2026-05-19T21:31:44.312808"
+      "date": "2026-05-20T08:18:25.808241"
     }
   ],
   "economia_chile": [
@@ -58,74 +51,67 @@
       "summary": "Banco Central Chile mantiene postura restrictiva ante persistencia de presiones inflacionarias.",
       "source": "Diario Financiero",
       "link": "https://www.diariofinanciero.com",
-      "date": "2026-05-19T19:31:44.312818"
-    },
-    {
-      "title": "Gobierno anuncia nuevo programa de estímulo económico para Pymes",
-      "summary": "Medidas incluyen reducción de impuestos y líneas de crédito preferente para micro y pequeñas empresas.",
-      "source": "La Tercera",
-      "link": "https://www.latercera.com",
-      "date": "2026-05-19T18:31:44.312820"
+      "date": "2026-05-20T12:18:25.808254"
     },
     {
       "title": "Minería de cobre reporta caída de 8% en producción por menor demanda global",
       "summary": "Principales empresas mineras ajustan operaciones ante perspectivas económicas débiles.",
       "source": "EMOL",
       "link": "https://www.emol.com",
-      "date": "2026-05-19T23:31:44.312823"
+      "date": "2026-05-20T13:18:25.808257"
     },
     {
       "title": "Bolsa de Santiago cierra con alza de 1.2% impulsada por sector tecnológico",
       "summary": "Índice IPSA sube en sesión positiva reflejando recuperación de valores de software y telecomunicaciones.",
       "source": "Diario Financiero",
       "link": "https://www.diariofinanciero.com",
-      "date": "2026-05-19T20:31:44.312825"
+      "date": "2026-05-20T09:18:25.808260"
     }
   ],
   "tendencias_tech": [
     {
-      "title": "Meta invierte $10B en infraestructura de datos para AI generativa",
-      "summary": "Gasto récord refleja compromiso de Meta con desarrollo de tecnologías de próxima generación.",
-      "source": "The Verge",
-      "link": "https://www.theverge.com",
-      "date": "2026-05-20T00:31:44.312830"
+      "title": "Startups de semiconductores logran $2.3B en rondas de financiamiento",
+      "summary": "Inversores ven oportunidad en empresas especializadas en chips para IA y computación de borde.",
+      "source": "Crunchbase",
+      "link": "https://crunchbase.com",
+      "date": "2026-05-20T11:18:25.808266"
     },
     {
       "title": "OpenAI lanza nuevos modelos de IA con capacidades mejoradas de razonamiento",
       "summary": "Competencia se intensifica en carrera de inteligencia artificial con nuevas capacidades de análisis complejo.",
       "source": "TechCrunch",
       "link": "https://techcrunch.com",
-      "date": "2026-05-19T19:31:44.312833"
+      "date": "2026-05-20T14:18:25.808268"
     },
     {
-      "title": "Startups de semiconductores logran $2.3B en rondas de financiamiento",
-      "summary": "Inversores ven oportunidad en empresas especializadas en chips para IA y computación de borde.",
-      "source": "Crunchbase",
-      "link": "https://crunchbase.com",
-      "date": "2026-05-19T20:31:44.312835"
+      "title": "Meta invierte $10B en infraestructura de datos para AI generativa",
+      "summary": "Gasto récord refleja compromiso de Meta con desarrollo de tecnologías de próxima generación.",
+      "source": "The Verge",
+      "link": "https://www.theverge.com",
+      "date": "2026-05-20T13:18:25.808270"
     }
   ],
   "cooperativismo": [
+    {
+      "title": "Congreso Internacional de Cooperativismo se realizará en Santiago en agosto",
+      "summary": "Evento reunirá a líderes de movimiento cooperativo de 50 países para debatir sostenibilidad.",
+      "source": "ACI Americas",
+      "link": "https://www.aciamericas.coop",
+      "date": "2026-05-20T10:18:25.808275"
+    },
     {
       "title": "Red de cooperativas agrícolas invierte en tecnología de riego sostenible",
       "summary": "Iniciativa incluye monitoreo IoT y análisis de datos para optimizar uso de agua en cultivos.",
       "source": "El Mostrador",
       "link": "https://www.elmostrador.cl",
-      "date": "2026-05-19T19:31:44.312840"
+      "date": "2026-05-20T09:18:25.808277"
     },
     {
       "title": "Cooperativa de Ahorro chilena alcanza 500K miembros activos",
       "summary": "Crecimiento de 12% anual refleja aumento de confianza en modelo cooperativo de servicios financieros.",
       "source": "Cooperativas.cl",
       "link": "https://www.cooperativas.cl",
-      "date": "2026-05-20T00:31:44.312842"
-    },
-    {
-      "title": "Congreso Internacional de Cooperativismo se realizará en Santiago en agosto",
-      "summary": "Evento reunirá a líderes de movimiento cooperativo de 50 países para debatir sostenibilidad.",
-      "source": "ACI Americas",
-      "link": "https://www.aciamericas.coop",
-      "date": "2026-05-19T20:31:44.312844"
+      "date": "2026-05-20T11:18:25.808279"
     }
   ],
   "cmf": [
@@ -134,21 +120,21 @@
       "summary": "Multas por falta de diligencia debida en procesos de Know Your Customer alcanza $150 millones.",
       "source": "CMF Chile",
       "link": "https://www.cmfchile.cl",
-      "date": "2026-05-19T22:31:44.312848"
+      "date": "2026-05-20T12:18:25.808284"
     },
     {
       "title": "CMF aprueba nueva plataforma de crowdfunding con regulación flexible",
       "summary": "Resolución permite inversión en startups con límites de monto y perfil de inversionista.",
       "source": "CMF Chile",
       "link": "https://www.cmfchile.cl",
-      "date": "2026-05-19T23:31:44.312851"
+      "date": "2026-05-20T09:18:25.808286"
     },
     {
       "title": "CMF publica normas sobre transparencia en comisiones de fondos mutuos",
       "summary": "Medida regulatoria busca proteger derechos de inversionistas mediante mayor claridad de costos.",
       "source": "CMF Chile",
       "link": "https://www.cmfchile.cl",
-      "date": "2026-05-19T19:31:44.312853"
+      "date": "2026-05-20T11:18:25.808288"
     }
   ],
   "noticias_economicas_actuales": [
@@ -157,44 +143,51 @@
       "summary": "Expectativas sobre situación económica se fortalecen impulsadas por menor volatilidad política.",
       "source": "Universidad de Chile",
       "link": "https://www.uchile.cl",
-      "date": "2026-05-19T21:31:44.312887"
+      "date": "2026-05-20T10:18:25.808292"
     },
     {
-      "title": "Desempleo se sitúa en 8.2% según cifras de ocupación de trimestre",
-      "summary": "Tasa de desocupación se mantiene estable pese a moderación del crecimiento económico.",
-      "source": "Banco Central",
-      "link": "https://www.bcentral.cl",
-      "date": "2026-05-19T18:31:44.312893"
+      "title": "Remesas de trabajadores chilenos en el exterior caen 5% interanual",
+      "summary": "Menores ingresos por transferencias internacionales reflejan desaceleración en economías receptoras.",
+      "source": "INE",
+      "link": "https://www.ine.cl",
+      "date": "2026-05-20T09:18:25.808294"
     },
     {
       "title": "IPC de mayo muestra moderación en presiones inflacionarias",
       "summary": "Índice de Precios al Consumidor sube 0.3% mensual, por debajo de expectativas de analistas.",
       "source": "INE",
       "link": "https://www.ine.cl",
-      "date": "2026-05-19T20:31:44.312896"
+      "date": "2026-05-20T10:18:25.808315"
     }
   ],
   "inteligencia_artificial": [
     {
-      "title": "Google llama a regulación responsable de IA generativa en próxima década",
-      "summary": "Directiva destaca importancia de marcos regulatorios que balanceen innovación con seguridad.",
-      "source": "Ben's Bites",
-      "link": "https://bensbites.com",
-      "date": "2026-05-19T19:31:44.312904"
+      "title": "Startups de AI logran valuaciones record en rondas de Series B y C",
+      "summary": "Inversión en empresas de IA crece 300% respecto a año anterior impulsada por demanda corporativa.",
+      "source": "TLDR AI",
+      "link": "https://tldr.ai",
+      "date": "2026-05-20T13:18:25.808326"
     },
     {
       "title": "Detectan sesgos importantes en sistemas de IA de grandes empresas tecnológicas",
       "summary": "Estudio académico revela problemas de equidad en modelos de lenguaje usados por plataformas.",
       "source": "The Rundown AI",
       "link": "https://therundown.ai",
-      "date": "2026-05-19T22:31:44.312906"
+      "date": "2026-05-20T10:18:25.808328"
+    },
+    {
+      "title": "Google llama a regulación responsable de IA generativa en próxima década",
+      "summary": "Directiva destaca importancia de marcos regulatorios que balanceen innovación con seguridad.",
+      "source": "Ben's Bites",
+      "link": "https://bensbites.com",
+      "date": "2026-05-20T11:18:25.808331"
     },
     {
       "title": "Investigadores desarrollan modelo de IA que explica sus propias decisiones",
       "summary": "Avance en \"AI explicable\" abre puertas a adopción en sectores regulados como finanzas y salud.",
       "source": "TLDR AI",
       "link": "https://tldr.ai",
-      "date": "2026-05-19T19:31:44.312909"
+      "date": "2026-05-20T12:18:25.808333"
     }
   ]
 }

@@ -62,6 +62,8 @@ def analyze_news_importance(title, summary):
 def build_news_items_advanced(news_list):
     """Build news items with importance scoring"""
     items = []
+
+    # Mostrar todas las noticias disponibles (máximo 4)
     for i, news in enumerate(news_list[:4]):
         importance = analyze_news_importance(news['title'], news['summary'])
 
@@ -84,13 +86,15 @@ def build_news_items_advanced(news_list):
             "score": importance
         })
 
-    while len(items) < 4:
+    # Si hay menos de 1 noticia, agregar un item de monitoreo
+    # Pero si hay noticias, NO llenar con items vacíos
+    if len(items) == 0:
         items.append({
             "tema": "Monitoreo",
             "titulo_completo": "Monitoreo de mercado",
-            "detalle": "Se mantiene análisis actualizado.",
+            "detalle": "Se mantiene análisis actualizado de esta categoría.",
             "link": "#",
-            "source": "Fuente",
+            "source": "Sistema",
             "impacto": "🟢 Bajo",
             "score": 3
         })
