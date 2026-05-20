@@ -77,7 +77,7 @@ def generate_agenda_html():
 """
 
     # Agregar eventos de iCare
-    html += '<div class="agenda-section"><h3>🏥 iCare - Seguros de Salud</h3>'
+    html += '<div class="agenda-section"><h3>📅 iCare</h3>'
     for event in AGENDA_EVENTS.get('icare', []):
         html += f'''
         <div class="agenda-item">
