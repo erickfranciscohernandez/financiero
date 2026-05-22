@@ -86,19 +86,6 @@ def build_news_items_advanced(news_list):
             "score": importance
         })
 
-    # Si hay menos de 1 noticia, agregar un item de monitoreo
-    # Pero si hay noticias, NO llenar con items vacíos
-    if len(items) == 0:
-        items.append({
-            "tema": "Monitoreo",
-            "titulo_completo": "Monitoreo de mercado",
-            "detalle": "Se mantiene análisis actualizado de esta categoría.",
-            "link": "#",
-            "source": "Sistema",
-            "impacto": "🟢 Bajo",
-            "score": 3
-        })
-
     return items
 
 
