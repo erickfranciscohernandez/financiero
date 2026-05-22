@@ -1,137 +1,335 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Financiero Newsletter - Diario</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter Estratégico Financiero</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #212121;
+      min-height: 100vh;
+    }
 
-  .container {
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-  }
+    header {
+      background: linear-gradient(135deg, #1a237e 0%, #283593 60%, #0d47a1 100%);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
 
-  .logo {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
+    header .logo { font-size: 52px; margin-bottom: 12px; }
 
-  h1 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 28px;
-  }
+    header h1 {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
 
-  .subtitle {
-    color: #666;
-    margin-bottom: 30px;
-    font-size: 16px;
-  }
+    header p {
+      font-size: 15px;
+      opacity: 0.8;
+      max-width: 480px;
+      margin: 0 auto 24px;
+    }
 
-  .cta-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 14px 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-bottom: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: white;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
 
-  .cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
-  }
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #1a237e;
+      padding: 14px 36px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+    }
 
-  .info {
-    background: #f5f5f5;
-    border-left: 4px solid #667eea;
-    padding: 15px;
-    margin: 20px 0;
-    text-align: left;
-    border-radius: 4px;
-  }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
 
-  .info strong {
-    color: #333;
-  }
+    .main { max-width: 860px; margin: 0 auto; padding: 36px 20px; }
 
-  .info p {
-    color: #666;
-    font-size: 14px;
-    margin: 5px 0;
-  }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
 
-  .footer {
-    color: #999;
-    font-size: 12px;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-  }
+    .stat-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-top: 3px solid #1a237e;
+    }
 
-  .badge {
-    display: inline-block;
-    background: #e3f2fd;
-    color: #1976d2;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 15px;
-  }
-</style>
+    .stat-card .stat-icon { font-size: 28px; margin-bottom: 8px; }
+    .stat-card .stat-value { font-size: 26px; font-weight: 700; color: #1a237e; }
+    .stat-card .stat-label { font-size: 12px; color: #666; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1a237e;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #e3e8f0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .editions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+
+    .edition-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      border-left: 4px solid #1a237e;
+    }
+
+    .edition-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .edition-card.latest { border-left-color: #00897b; }
+
+    .edition-date {
+      font-size: 11px;
+      font-weight: 600;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+    }
+
+    .edition-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #212121;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+
+    .edition-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 12px;
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+
+    .edition-badge.latest-badge {
+      background: #e0f2f1;
+      color: #00695c;
+    }
+
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .category-chip {
+      background: white;
+      border-radius: 8px;
+      padding: 14px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+
+    .category-chip .chip-icon { font-size: 20px; }
+
+    .info-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .info-card .info-icon { font-size: 24px; flex-shrink: 0; }
+    .info-card strong { display: block; font-size: 14px; margin-bottom: 4px; color: #1a237e; }
+    .info-card p { font-size: 13px; color: #555; line-height: 1.5; }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      font-size: 13px;
+      color: #999;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    footer a { color: #1a237e; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      .stat-card .stat-value { font-size: 20px; }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">📰</div>
-    <div class="badge">Actualización Automática</div>
-    <h1>Financiero Newsletter</h1>
-    <p class="subtitle">Resumen diario de cambios en el repositorio</p>
 
-    <button class="cta-button" onclick="window.location.href='newsletter.html'">
-      Ver Newsletter Hoy →
-    </button>
+  <header>
+    <div class="logo">📊</div>
+    <div class="badge">⚡ Actualización Automática Diaria</div>
+    <h1>Newsletter Estratégico Financiero</h1>
+    <p>Análisis diario de geopolítica, economía global, mercados y tendencias para ejecutivos e inversionistas en Latinoamérica.</p>
+    <a class="cta-button" href="newsletter.html">Ver Edición de Hoy →</a>
+  </header>
 
-    <div class="info">
-      <strong>📅 Actualizaciones Diarias</strong>
-      <p>Se genera automáticamente cada día a las 09:00 UTC con la información más reciente.</p>
+  <div class="main">
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon">📰</div>
+        <div class="stat-value">8</div>
+        <div class="stat-label">Secciones</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🌍</div>
+        <div class="stat-value">25+</div>
+        <div class="stat-label">Noticias diarias</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">⏰</div>
+        <div class="stat-value">6h</div>
+        <div class="stat-label">Frecuencia</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon">🚨</div>
+        <div class="stat-value">Auto</div>
+        <div class="stat-label">Alertas críticas</div>
+      </div>
     </div>
 
-    <div class="info">
-      <strong>🔗 Fuente de Datos</strong>
-      <p>Commits y cambios del repositorio erickfranciscohernandez/financiero</p>
+    <!-- Ediciones recientes -->
+    <div class="section-title">📅 Ediciones Recientes</div>
+    <div class="editions-grid">
+      <a class="edition-card latest" href="newsletter.html">
+        <div class="edition-date">Edición actual</div>
+        <div class="edition-title">Newsletter Estratégico — Hoy</div>
+        <span class="edition-badge latest-badge">✅ Más reciente</span>
+      </a>
+      <a class="edition-card" href="newsletter_data_20260522.json" download>
+        <div class="edition-date">22 mayo 2026</div>
+        <div class="edition-title">Datos estructurados JSON</div>
+        <span class="edition-badge">⬇ Descargar</span>
+      </a>
+      <a class="edition-card" href="newsletter_data_20260520.json" download>
+        <div class="edition-date">20 mayo 2026</div>
+        <div class="edition-title">Datos estructurados JSON</div>
+        <span class="edition-badge">⬇ Descargar</span>
+      </a>
+      <a class="edition-card" href="noticias_20260522.csv" download>
+        <div class="edition-date">22 mayo 2026</div>
+        <div class="edition-title">Noticias en CSV</div>
+        <span class="edition-badge">⬇ Descargar</span>
+      </a>
     </div>
 
-    <div class="info">
-      <strong>⚡ Publicación Automática</strong>
-      <p>Cada cambio se publica automáticamente mediante GitHub Actions</p>
+    <!-- Categorías -->
+    <div class="section-title">🗂 Categorías Cubiertas</div>
+    <div class="categories-grid">
+      <div class="category-chip"><span class="chip-icon">🌍</span> Geopolítica</div>
+      <div class="category-chip"><span class="chip-icon">💹</span> Economía Global</div>
+      <div class="category-chip"><span class="chip-icon">🇨🇱</span> Chile Estratégico</div>
+      <div class="category-chip"><span class="chip-icon">🤝</span> Cooperativismo</div>
+      <div class="category-chip"><span class="chip-icon">🏛</span> CMF / Regulación</div>
+      <div class="category-chip"><span class="chip-icon">🤖</span> Inteligencia Artificial</div>
+      <div class="category-chip"><span class="chip-icon">📈</span> Mercados</div>
+      <div class="category-chip"><span class="chip-icon">🚀</span> Tendencias Tech</div>
     </div>
 
-    <div class="footer">
-      <p>Newsletter generado automáticamente • <a href="https://github.com/erickfranciscohernandez/financiero" style="color: #667eea; text-decoration: none;">Ver en GitHub</a></p>
+    <!-- Cómo funciona -->
+    <div class="section-title">⚙️ Cómo Funciona</div>
+    <div class="info-card">
+      <div class="info-icon">📡</div>
+      <div>
+        <strong>Fuentes de Noticias</strong>
+        <p>Obtiene noticias en tiempo real desde NewsAPI (Bloomberg, Reuters, medios chilenos). Con fallback automático a RSS feeds si hay fallas de conexión.</p>
+      </div>
     </div>
+    <div class="info-card">
+      <div class="info-icon">🤖</div>
+      <div>
+        <strong>Análisis Automático</strong>
+        <p>Cada noticia recibe un score de impacto (1-10) basado en palabras clave estratégicas. Las alertas críticas (score ≥ 8) se destacan automáticamente.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">📧</div>
+      <div>
+        <strong>Envío por Email</strong>
+        <p>El newsletter completo se envía automáticamente por email cada vez que se genera una nueva edición. Configurable vía GitHub Secrets.</p>
+      </div>
+    </div>
+    <div class="info-card">
+      <div class="info-icon">⚡</div>
+      <div>
+        <strong>Automatización con GitHub Actions</strong>
+        <p>El workflow se ejecuta cada 6 horas automáticamente, generando y publicando la nueva edición sin intervención manual.</p>
+      </div>
+    </div>
+
   </div>
+
+  <footer>
+    <p>
+      Newsletter Estratégico Financiero &nbsp;·&nbsp;
+      <a href="newsletter.html">Edición actual</a> &nbsp;·&nbsp;
+      <a href="https://github.com/erickfranciscohernandez/financiero">GitHub</a>
+    </p>
+    <p style="margin-top:6px;">Actualizado automáticamente cada 6 horas mediante GitHub Actions</p>
+  </footer>
+
 </body>
 </html>

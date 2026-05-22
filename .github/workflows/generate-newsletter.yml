@@ -2,9 +2,7 @@ name: Generate Daily Newsletter
 
 on:
   schedule:
-    # Ejecutar cada 6 horas
     - cron: '0 */6 * * *'
-  # También permitir ejecución manual
   workflow_dispatch:
 
 env:
@@ -27,29 +25,51 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests weasyprint
+        run: pip install requests
 
-      - name: Generate dynamic mock news (for sandbox environment)
-        run: python generate_mock_news.py
+      - name: Fetch news (NewsAPI → RSS fallback)
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+        run: |
+          python -c "
+          from fetch_news_rss import fetch_all_news
+          import json, os
+          news = fetch_all_news()
+          total = sum(len(v) for v in news.values())
+          print(f'Total noticias obtenidas: {total}')
+          if total == 0:
+              print('Sin noticias desde API/RSS — usando mock')
+              import subprocess
+              subprocess.run(['python', 'generate_mock_news.py'])
+          else:
+              with open('noticias_diarias.json', 'w', encoding='utf-8') as f:
+                  json.dump(news, f, ensure_ascii=False, indent=2)
+              print('noticias_diarias.json actualizado')
+          "
 
-      - name: Fetch live economic indicators (FASE 4)
+      - name: Fetch live economic indicators
         run: python fetch_live_data.py
 
-      - name: Generate newsletter v4 with visualizations
+      - name: Generate newsletter
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python generate_newsletter_v4.py
 
-      - name: Export to multiple formats (PDF, JSON, CSV)
+      - name: Export formats (JSON, CSV)
         run: python export_newsletter.py
 
-      - name: Run alert system
+      - name: Send newsletter by email and save alerts
+        env:
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_SMTP_SERVER: ${{ secrets.EMAIL_SMTP_SERVER }}
         run: python alerts_system.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json
+          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json noticias_diarias.json
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update newsletter with live data - $(date +'%Y-%m-%d')"
           git push
