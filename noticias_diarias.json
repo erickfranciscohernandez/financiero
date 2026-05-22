@@ -1,6 +1,13 @@
 {
   "geopolitica": [
     {
+      "title": "Trump Gets Another Ally in EU With Jansa’s Return in Slovenia",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-22/trump-gets-another-ally-in-eu-with-jansa-s-return-in-slovenia",
+      "summary": "Slovenian lawmakers elected nationalist leader Janez Jansa as the country’s next premier, tilting another European Union member to the right and handing Donald Trump a potential ally in the bloc.",
+      "source": "feeds.bloomberg.com",
+      "date": "Fri, 22 May 2026 15:02:19 GMT"
+    },
+    {
       "title": "EU Warns Companies to Diversify Supply Lines From China Faster",
       "link": "https://www.bloomberg.com/news/articles/2026-05-22/eu-warns-companies-to-diversify-supply-lines-from-china-faster",
       "summary": "The European Union’s industry chief said that businesses on the continent haven’t done enough to reduce major dependencies on China.",
@@ -20,16 +27,16 @@
       "summary": "The Royal International Air Tattoo at RAF Fairford, the UK’s biggest military air show, has been canceled this summer because US aircraft are using the venue for missions related to the Iran war, which continues to have wide-ranging impacts.",
       "source": "feeds.bloomberg.com",
       "date": "Fri, 22 May 2026 14:33:58 GMT"
-    },
-    {
-      "title": "Turkey’s London Investor Pitch Gets Upended by Markets Tailspin",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-22/turkey-s-london-investor-pitch-gets-upended-by-markets-tailspin",
-      "summary": "With a packed schedule of meetings and speeches in front of London investors, Turkey’s top economic officials set out on Thursday to ease concerns about the country’s accelerating pace of inflation.",
-      "source": "feeds.bloomberg.com",
-      "date": "Fri, 22 May 2026 14:30:23 GMT"
     }
   ],
   "economia_mercados": [
+    {
+      "title": "Turkish Assets Bounce Back After Court Blow to Opposition",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-22/turkey-prepares-for-market-impact-after-court-blow-to-opposition",
+      "summary": "Turkish assets rebounded after a rout yesterday as investors shrugged off the fallout from a court decision removing the leadership of the country’s main opposition party.",
+      "source": "feeds.bloomberg.com",
+      "date": "Fri, 22 May 2026 05:32:08 GMT"
+    },
     {
       "title": "The Hunt to Uncover a Global Art Trafficking Network",
       "link": "https://www.bloomberg.com/news/videos/2026-05-22/the-hunt-to-uncover-a-global-art-trafficking-network",
@@ -50,13 +57,6 @@
       "summary": "On this episode of Stock Movers with Alexis Christoforous:\n\n- Estee Lauder (EL) share are climbing following collapse of a proposed combination with Puig Brands that would have created one of the world’s largest fragrance and skincare companies. \n\n- IMAX Corp. (IMAX) shares jumped after the Wall Str",
       "source": "feeds.bloomberg.com",
       "date": "Fri, 22 May 2026 14:51:56 GMT"
-    },
-    {
-      "title": "Gold Drops as Fed’s Waller Says Next Move Likely to be Rate Hike",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-21/gold-steady-as-us-iran-signals-keep-rate-hike-bets-simmering",
-      "summary": "Gold declined as traders ramped up bets on Federal Reserve monetary tightening after Governor Christopher Waller warned the Iran war’s energy shock could fuel inflation.",
-      "source": "feeds.bloomberg.com",
-      "date": "Thu, 21 May 2026 22:34:42 GMT"
     }
   ],
   "chile_estrategico": [
@@ -91,6 +91,13 @@
   ],
   "tendencias": [
     {
+      "title": "Zoom Soars After Expansion Into New Products Begins to Pay Off",
+      "link": "https://www.bloomberg.com/news/articles/2026-05-21/zoom-sales-forecast-tops-estimates-after-product-expansion",
+      "summary": "Zoom Communications Inc. shares surged as much as 18% after the company projected stronger-than-anticipated sales growth and said that customers are paying for its expanded suite of office products.",
+      "source": "feeds.bloomberg.com",
+      "date": "Thu, 21 May 2026 20:32:28 GMT"
+    },
+    {
       "title": "House Panel to Investigate Insider Trading on Prediction Markets",
       "link": "https://www.bloomberg.com/news/articles/2026-05-22/house-panel-to-investigate-insider-trading-on-prediction-markets",
       "summary": "The House Oversight Committee is investigating how customers of Kalshi and Polymarket could be using non-public information to engage in insider trading, escalating concerns about prediction markets after some suspiciously well timed trades.",
@@ -110,13 +117,6 @@
       "summary": "Chinese fast-fashion brand Shein is known for churning out thousands of youth-friendly styles daily at low prices. Over the past few years, the e-commerce giant has been scrutinized for its environmental impact, as well as its production practices. So why is Shein buying sustainable fashion retailer",
       "source": "feeds.bloomberg.com",
       "date": "Fri, 22 May 2026 14:10:48 GMT"
-    },
-    {
-      "title": "AI Cartoon ‘Critterz’ Looks for Tech Partner Beyond OpenAI",
-      "link": "https://www.bloomberg.com/news/articles/2026-05-22/ai-cartoon-critterz-misses-cannes-debut-after-openai-shut-sora",
-      "summary": "Critterz, a feature-length cartoon intended to showcase how OpenAI’s video-generation capabilities could revolutionize filmmaking, has missed a planned Cannes Film Festival debut after the artificial intelligence company shut down its Sora tool, forcing its creators to look for a new AI partner.",
-      "source": "feeds.bloomberg.com",
-      "date": "Fri, 22 May 2026 08:51:02 GMT"
     }
   ],
   "cooperativismo": [],
