@@ -80,6 +80,11 @@ RSS_FEEDS = {
         "https://www.diariofinanciero.com/feed",
         "https://www.emol.com/rss/economia.xml",
     ],
+    "microsoft": [
+        "https://www.microsoft.com/en-us/research/feed/",
+        "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+        "https://www.microsoft.com/en-us/security/blog/feed/",
+    ],
 }
 
 def fetch_feed(url, timeout=5):
@@ -163,6 +168,7 @@ def fetch_all_news():
         'noticias_economicas_actuales': 'noticias_economicas',
         'cooperativismo': 'cooperativismo',
         'cmf': 'cmf',
+        'microsoft': 'microsoft',
     }
 
     all_news = {key: [] for key in category_map.values()}

@@ -193,11 +193,13 @@ def main():
 
     # Generate old HTML (from v3)
     tendencias_items = build_news_items_advanced(all_news.get('tendencias', []))
+    microsoft_items = build_news_items_advanced(all_news.get('microsoft', []))
     html_v3 = generate_html_advanced_v4(
         all_news, current_date,
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
-        tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css
+        tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css,
+        microsoft_items
     )
 
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -227,7 +229,7 @@ def main():
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
                                coop_items, cmf_items, geo_items, chile_items, tendencias_items, alerts,
-                               viz_html, viz_css, agenda_html, agenda_css):
+                               viz_html, viz_css, agenda_html, agenda_css, microsoft_items=None):
     """Generate advanced HTML v4 with visualizations and agenda"""
 
     def items_to_html(items):
@@ -255,6 +257,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
     geo_html = items_to_html(geo_items)
     chile_html = items_to_html(chile_items)
     tendencias_html = items_to_html(tendencias_items)
+    microsoft_html = items_to_html(microsoft_items or [])
 
     # Alerts section
     alerts_html = ""
@@ -666,6 +669,16 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         </h2>
         <span class="section-subtitle">Innovación · Startups · Cloud</span>
         {tendencias_html}
+    </div>
+
+    <!-- MICROSOFT NEWS -->
+    <div class="section">
+        <h2 class="section-header">
+            <span class="section-emoji">🪟</span>
+            Microsoft News
+        </h2>
+        <span class="section-subtitle">Microsoft Research · Microsoft 365 · Seguridad · IA</span>
+        {microsoft_html}
     </div>
 
     <!-- AGENDA DE ACTIVIDADES -->
