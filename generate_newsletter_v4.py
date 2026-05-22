@@ -77,7 +77,6 @@ def build_news_items_advanced(news_list):
             impact_level = "🟢 Bajo"
 
         items.append({
-            "tema": news['title'][:50],
             "titulo_completo": news['title'],
             "detalle": news['summary'][:200],
             "link": news.get('link', '#'),
@@ -234,7 +233,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
       <div class="news-item" data-score="{item['score']}" data-title="{item['titulo_completo'].lower()}">
         <div class="score-badge" title="Score de importancia: {item['score']}/10">{item['score']}/10</div>
         <a href="{item['link']}" target="_blank" class="news-link">
-          <div class="news-item-title">{item['tema']}</div>
+          <div class="news-item-title">{item['titulo_completo']}</div>
         </a>
         <div class="news-item-detail">{item['detalle']}</div>
         <div class="news-item-footer">
