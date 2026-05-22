@@ -25,7 +25,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests python-pptx
 
       - name: Fetch news (NewsAPI → RSS fallback)
         env:
@@ -58,6 +58,9 @@ jobs:
       - name: Export formats (JSON, CSV)
         run: python export_newsletter.py
 
+      - name: Export PowerPoint presentation
+        run: python export_pptx.py
+
       - name: Send newsletter by email and save alerts
         env:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
@@ -70,6 +73,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json noticias_diarias.json
+          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json noticias_diarias.json newsletter_*.pptx
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update newsletter with live data - $(date +'%Y-%m-%d')"
           git push
