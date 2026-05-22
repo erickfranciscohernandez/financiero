@@ -38,22 +38,48 @@ def strip_html(html):
 RSS_FEEDS = {
     "geopolitica": [
         "https://feeds.bloomberg.com/markets/news.rss",
-        "https://feeds.reuters.com/world",
-        "https://feeds.bloomberg.com/politics/news.rss"
+        "https://feeds.reuters.com/reuters/worldNews",
+        "https://feeds.bloomberg.com/politics/news.rss",
+        "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
     ],
     "economia_chile": [
         "https://www.diariofinanciero.com/feed",
         "https://www.emol.com/rss/economia.xml",
         "https://www.latercera.com/feed/",
+        "https://www.elmostrador.cl/feed/",
     ],
     "economia_global": [
         "https://feeds.bloomberg.com/markets/commodities.rss",
         "https://feeds.bloomberg.com/markets/currencies.rss",
-        "https://feeds.cnbc.com/id/100003114/rss.xml"
+        "https://feeds.cnbc.com/id/100003114/rss.xml",
+        "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",
+        "https://www.economist.com/finance-and-economics/rss.xml",
     ],
     "tendencias_tech": [
         "https://feeds.bloomberg.com/technology/news.rss",
-    ]
+        "https://techcrunch.com/feed/",
+        "https://www.theverge.com/rss/index.xml",
+    ],
+    "inteligencia_artificial": [
+        "https://techcrunch.com/tag/artificial-intelligence/feed/",
+        "https://venturebeat.com/category/ai/feed/",
+        "https://www.artificialintelligence-news.com/feed/",
+        "https://feeds.feedburner.com/nvidiablog",
+    ],
+    "noticias_economicas_actuales": [
+        "https://feeds.reuters.com/reuters/businessNews",
+        "https://feeds.cnbc.com/id/10000664/rss.xml",
+        "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml",
+        "https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml",
+    ],
+    "cooperativismo": [
+        "https://www.elmostrador.cl/feed/",
+        "https://www.latercera.com/feed/",
+    ],
+    "cmf": [
+        "https://www.diariofinanciero.com/feed",
+        "https://www.emol.com/rss/economia.xml",
+    ],
 }
 
 def fetch_feed(url, timeout=5):
@@ -127,21 +153,28 @@ def fetch_all_news():
     """Fetch news from all feeds"""
     print("🔄 Obteniendo noticias de RSS feeds...\n")
 
-    all_news = {
-        'geopolitica': [],
-        'economia_mercados': [],
-        'chile_estrategico': [],
-        'tendencias': []
+    # Mapeo entre categorías del RSS y claves internas del newsletter
+    category_map = {
+        'geopolitica': 'geopolitica',
+        'economia_chile': 'chile_estrategico',
+        'economia_global': 'economia_mercados',
+        'tendencias_tech': 'tendencias',
+        'inteligencia_artificial': 'ia',
+        'noticias_economicas_actuales': 'noticias_economicas',
+        'cooperativismo': 'cooperativismo',
+        'cmf': 'cmf',
     }
 
-    for category, urls in RSS_FEEDS.items():
-        print(f"\n📰 Categoría: {category}")
+    all_news = {key: [] for key in category_map.values()}
+
+    for rss_category, urls in RSS_FEEDS.items():
+        target = category_map.get(rss_category, 'economia_mercados')
+        print(f"\n📰 Categoría: {rss_category}")
         for url in urls:
             articles = fetch_feed(url)
             for article in articles:
-                cat = categorize_news(article)
-                if len(all_news[cat]) < 5:  # Máximo 5 por categoría
-                    all_news[cat].append(article)
+                if len(all_news[target]) < 5:  # Máximo 5 por categoría
+                    all_news[target].append(article)
 
     return all_news
 
