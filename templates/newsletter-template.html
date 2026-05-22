@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletter Estratégico — El Despacho</title>
+<meta name="description" content="Resumen ejecutivo diario de geopolítica, economía global, mercados financieros y tendencias estratégicas para tomadores de decisión en Latinoamérica.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #faf8f3;
+    --bg-card: #ffffff;
+    --bg-dark: #1a1a1a;
+    --ink: #1a1a1a;
+    --ink-muted: #5a5a5a;
+    --ink-soft: #8a8a8a;
+    --rule: #d8d4c8;
+    --rule-soft: #e8e4d8;
+    --accent: #8b1a1a;
+    --accent-soft: #b54545;
+    --gold: #b8860b;
+    --green: #2a5f3f;
+    --green-bg: #e8f0e8;
+    --red: #8b1a1a;
+    --red-bg: #f5e8e8;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Inter', -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .masthead {
+    border-bottom: 3px double var(--ink);
+    padding: 1.5rem 0 1rem;
+    background: var(--bg);
+  }
+  .masthead-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  .masthead-date {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .masthead-title {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.02em;
+    text-align: center;
+    font-variation-settings: "opsz" 144;
+    line-height: 1;
+  }
+  .masthead-title .small {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.4rem;
+    color: var(--ink-muted);
+  }
+  .masthead-edition {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    text-align: right;
+  }
+
+  .ticker {
+    background: var(--ink);
+    color: #f0ebe0;
+    padding: 0.7rem 0;
+    overflow: hidden;
+    border-bottom: 1px solid var(--ink);
+  }
+  .ticker-track {
+    display: flex;
+    gap: 3rem;
+    animation: scroll 40s linear infinite;
+    white-space: nowrap;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+  }
+  .ticker-item { display: flex; align-items: center; gap: 0.5rem; }
+  .ticker-label { color: #a8a39a; }
+  .ticker-value { color: #f0ebe0; font-weight: 500; }
+  .ticker-up { color: #6fcf97; }
+  .ticker-down { color: #eb5757; }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero-kicker {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .hero-kicker::before {
+    content: '';
+    width: 30px;
+    height: 1px;
+    background: var(--accent);
+  }
+  .hero-headline {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    font-variation-settings: "opsz" 144;
+    max-width: 900px;
+    color: var(--ink);
+  }
+  .hero-headline em {
+    font-style: italic;
+    color: var(--accent);
+    font-weight: 400;
+  }
+  .hero-summary {
+    margin-top: 2rem;
+    padding: 1.5rem 0 1.5rem 1.75rem;
+    border-left: 2px solid var(--accent);
+    max-width: 750px;
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink);
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .indicators {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .indicators-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 1.25rem;
+  }
+  .indicators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0;
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    background: var(--bg-card);
+  }
+  .indicator {
+    padding: 1.25rem 1.5rem;
+    border-right: 1px solid var(--rule);
+    position: relative;
+  }
+  .indicator:last-child { border-right: none; }
+  .indicator-label {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .indicator-value {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    font-variation-settings: "opsz" 144;
+  }
+  .indicator-delta {
+    font-family: var(--mono);
+    font-size: 11px;
+    margin-top: 0.4rem;
+    color: var(--ink-muted);
+  }
+  .delta-up { color: var(--green); }
+  .delta-down { color: var(--red); }
+
+  .main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+  }
+  @media (max-width: 900px) {
+    .main { grid-template-columns: 1fr; gap: 2rem; }
+    .indicator { border-right: none; border-bottom: 1px solid var(--rule); }
+    .indicators-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .article {
+    position: relative;
+    padding-top: 0.5rem;
+  }
+  .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .article-number {
+    font-family: var(--serif);
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  .article-category {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 500;
+  }
+  .article-title {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(24px, 3vw, 32px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+    font-variation-settings: "opsz" 96;
+  }
+  .article-body {
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--ink);
+    font-weight: 400;
+  }
+  .article-body p { margin-bottom: 1rem; }
+  .article-body p:last-child { margin-bottom: 0; }
+  .article:first-child .article-body p:first-child::first-letter {
+    font-family: var(--serif);
+    font-size: 4.2em;
+    font-weight: 500;
+    float: left;
+    line-height: 0.85;
+    margin: 0.1em 0.1em 0 0;
+    color: var(--accent);
+    font-variation-settings: "opsz" 144;
+  }
+
+  .sidebar {
+    border-left: 1px solid var(--rule);
+    padding-left: 2.5rem;
+  }
+  @media (max-width: 900px) {
+    .sidebar { border-left: none; padding-left: 0; border-top: 2px solid var(--ink); padding-top: 2rem; }
+  }
+  .sidebar-section { margin-bottom: 2.5rem; }
+  .sidebar-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .toc-list { list-style: none; }
+  .toc-item {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--rule-soft);
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    cursor: pointer;
+    transition: padding-left 0.2s ease;
+  }
+  .toc-item:hover { padding-left: 0.4rem; }
+  .toc-num {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--ink-soft);
+    min-width: 24px;
+    font-weight: 500;
+  }
+  .toc-text {
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--ink);
+  }
+  .toc-text strong {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.15rem;
+  }
+  .toc-text small {
+    color: var(--ink-muted);
+    font-size: 11px;
+  }
+  a.toc-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+  }
+
+  .insight {
+    max-width: 1100px;
+    margin: 0 auto 4rem;
+    padding: 0 2rem;
+  }
+  .insight-inner {
+    background: var(--ink);
+    color: #f0ebe0;
+    padding: 3rem 3rem 3.5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .insight-inner::before {
+    content: '"';
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    font-family: var(--serif);
+    font-size: 200px;
+    color: rgba(184, 134, 11, 0.2);
+    line-height: 1;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .insight-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+    position: relative;
+    z-index: 1;
+  }
+  .insight-text {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(20px, 2.5vw, 26px);
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+    max-width: 850px;
+    position: relative;
+    z-index: 1;
+    font-variation-settings: "opsz" 144;
+  }
+  .insight-attribution {
+    margin-top: 2rem;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem;
+    border-top: 3px double var(--ink);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (max-width: 700px) {
+    .footer { grid-template-columns: 1fr; }
+  }
+  .footer-sources {
+    font-family: var(--sans);
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--ink-muted);
+  }
+  .footer-sources strong {
+    display: block;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .footer-meta {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-align: right;
+    line-height: 1.8;
+  }
+  @media (max-width: 700px) { .footer-meta { text-align: left; } }
+  .disclaimer {
+    grid-column: 1 / -1;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 12px;
+    color: var(--ink-soft);
+    text-align: center;
+  }
+
+  @media print {
+    body { background: white; }
+    .ticker, .sidebar { display: none; }
+    .main { grid-template-columns: 1fr; }
+    .insight-inner { background: #f5f5f5; color: var(--ink); }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-date">{{FECHA}}</div>
+    <div class="masthead-title">
+      El Despacho
+      <span class="small">Newsletter Estratégico</span>
+    </div>
+    <div class="masthead-edition">Edición Nº {{NUMERO_EDICION}} · Premium</div>
+  </div>
+</header>
+
+<div class="ticker">
+  <div class="ticker-track">
+    {{TICKER_ITEMS}}
+  </div>
+</div>
+
+<section class="hero">
+  <div class="hero-kicker">Edición del día · Análisis ejecutivo</div>
+  <h1 class="hero-headline">{{TITULAR}}</h1>
+  <p class="hero-summary">{{RESUMEN_EJECUTIVO}}</p>
+</section>
+
+<section class="indicators">
+  <div class="indicators-label">— Indicadores de cierre · Mercados al día</div>
+  <div class="indicators-grid">
+{{INDICADORES}}
+  </div>
+</section>
+
+<main class="main">
+  <div class="article-list">
+{{ARTICULOS}}
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-label">En esta edición</div>
+      <ol class="toc-list">
+{{TOC}}
+      </ol>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Tiempo de lectura</div>
+      <div style="font-family: var(--serif); font-size: 32px; font-weight: 500; line-height: 1; color: var(--ink);">7 min</div>
+      <div style="font-family: var(--sans); font-size: 12px; color: var(--ink-muted); margin-top: 0.4rem;">6 artículos · ~1.500 palabras</div>
+    </div>
+  </aside>
+</main>
+
+<section class="insight">
+  <div class="insight-inner">
+    <div class="insight-label">— Insight del día</div>
+    <p class="insight-text">{{INSIGHT}}</p>
+    <div class="insight-attribution">— Análisis editorial · El Despacho</div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-sources">
+    <strong>Fuentes consultadas</strong>
+    {{FUENTES}}
+  </div>
+  <div class="footer-meta">
+    El Despacho<br>
+    Newsletter Estratégico<br>
+    Edición Nº {{NUMERO_EDICION}}<br>
+    {{FECHA_CORTA}}
+  </div>
+  <div class="disclaimer">
+    Este boletín es de carácter informativo y no constituye asesoría de inversión, legal ni tributaria. Las decisiones financieras son responsabilidad del lector.
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.toc-link').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+
+</body>
+</html>
