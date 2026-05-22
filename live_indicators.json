@@ -1,39 +1,39 @@
 {
-  "fecha": "2026-05-22T10:37:55.720889",
+  "fecha": "2026-05-22T14:05:40.426930",
   "version": "v4",
   "datos": {
     "usd_clp": {
       "tipo": "USD/CLP (simulado)",
       "precio": 808.5,
-      "fecha": "2026-05-22T10:37:55.774248",
+      "fecha": "2026-05-22T14:05:40.488143",
       "cambio": 16.5,
       "mock": true
     },
     "inflacion": {
       "tipo": "Inflación Anual (simulada)",
       "porcentaje": 3.2,
-      "fecha": "2026-05-21T10:37:55.869527",
+      "fecha": "2026-05-21T14:05:40.551599",
       "fuente": "Simulado",
       "mock": true
     },
     "fed_rate": {
       "tipo": "Tasa de fondos Fed (simulada)",
       "porcentaje": 4.5,
-      "fecha": "2026-05-21T10:37:55.969609",
+      "fecha": "2026-05-21T14:05:40.589760",
       "fuente": "Simulado",
       "mock": true
     },
     "cobre": {
       "tipo": "Cobre (simulado USD/lb)",
       "precio": 4.12,
-      "fecha": "2026-05-22T10:37:56.016975",
+      "fecha": "2026-05-22T14:05:40.627181",
       "mock": true
     },
     "sp500": {
       "tipo": "S&P 500 (simulado)",
       "precio": 5243.88,
       "cambio": 12.5,
-      "fecha": "2026-05-22T10:37:56.065639",
+      "fecha": "2026-05-22T14:05:40.663559",
       "mock": true
     }
   }

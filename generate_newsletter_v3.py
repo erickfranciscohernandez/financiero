@@ -82,17 +82,6 @@ def build_news_items_advanced(news_list):
             "score": importance
         })
 
-    while len(items) < 4:
-        items.append({
-            "tema": "Monitoreo",
-            "titulo_completo": "Monitoreo de mercado",
-            "detalle": "Se mantiene análisis actualizado.",
-            "link": "#",
-            "source": "Fuente",
-            "impacto": "🟢 Bajo",
-            "score": 3
-        })
-
     return items
 
 def generate_alerts(all_news):

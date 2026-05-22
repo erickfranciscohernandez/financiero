@@ -42,14 +42,6 @@ def build_chile_news_items(news_list):
             "impacto": "En análisis - Ver fuentes"
         })
 
-    # Rellenar si hay menos de 4
-    while len(items) < 4:
-        items.append({
-            "tema": "Monitoreo de mercado",
-            "detalle": "Se mantiene análisis de mercado local.",
-            "impacto": "Neutral"
-        })
-
     return items
 
 def generate_newsletter_from_news(all_news):

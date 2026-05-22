@@ -38,16 +38,6 @@ def build_news_items(news_list):
             "impacto": "En análisis - Ver fuentes"
         })
 
-    while len(items) < 4:
-        items.append({
-            "tema": "Monitoreo",
-            "titulo_completo": "Monitoreo de mercado",
-            "detalle": "Se mantiene análisis actualizado.",
-            "link": "#",
-            "source": "Fuente",
-            "impacto": "Neutral"
-        })
-
     return items
 
 def main():
