@@ -10,6 +10,7 @@ from fetch_news_rss import fetch_all_news
 from fetch_live_data import LiveDataFetcher, generate_chart_data
 from visualizations import generate_charts_html, generate_charts_css
 from generate_agenda import generate_agenda_html, get_agenda_css
+from generate_ai_analysis import run_ai_analysis
 
 
 def load_noticias_from_json(filepath='noticias_diarias.json'):
@@ -160,10 +161,13 @@ def main():
     alerts = generate_alerts(all_news)
     print(f"✅ {len(alerts)} alertas críticas detectadas\n")
 
-    # Step 4: Prepare news items
+    # Step 4: AI editorial analysis
     print("="*60)
-    print("PASO 4: Preparando análisis")
+    print("PASO 4: Análisis editorial con Claude AI")
     print("="*60)
+    ai_analyses = run_ai_analysis(all_news)
+
+    # Step 4b: Prepare news items
     econ_items = build_news_items_advanced(all_news.get('economia_mercados', []))
     econ_actuales = build_news_items_advanced(all_news.get('noticias_economicas', []))
     ia_items = build_news_items_advanced(all_news.get('ia', []))
@@ -194,7 +198,8 @@ def main():
         all_news, current_date,
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
-        tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css
+        tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css,
+        ai_analyses
     )
 
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -224,8 +229,23 @@ def main():
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
                                coop_items, cmf_items, geo_items, chile_items, tendencias_items, alerts,
-                               viz_html, viz_css, agenda_html, agenda_css):
-    """Generate advanced HTML v4 with visualizations and agenda"""
+                               viz_html, viz_css, agenda_html, agenda_css, ai_analyses=None):
+    """Generate advanced HTML v4 with visualizations, agenda and Claude AI analysis"""
+
+    if ai_analyses is None:
+        ai_analyses = {}
+
+    def ai_block(section_key):
+        """Render Claude AI analysis block for a section if available."""
+        text = ai_analyses.get(section_key, '')
+        if not text:
+            return ''
+        paragraphs = ''.join(f'<p>{p.strip()}</p>' for p in text.split('\n') if p.strip())
+        return f'''
+      <div class="ai-analysis">
+        <div class="ai-analysis-label">🤖 Análisis Editorial · Claude AI</div>
+        {paragraphs}
+      </div>'''
 
     def items_to_html(items):
         html = ""
@@ -252,6 +272,27 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
     geo_html = items_to_html(geo_items)
     chile_html = items_to_html(chile_items)
     tendencias_html = items_to_html(tendencias_items)
+
+    # AI analysis blocks per section
+    ai_resumen_text = ai_analyses.get('resumen_ejecutivo', '')
+    if ai_resumen_text:
+        resumen_paragraphs = ''.join(
+            f'<p>{p.strip()}</p>' for p in ai_resumen_text.split('\n') if p.strip()
+        )
+        ai_resumen = f'''<div class="executive-summary-ai">
+      <div class="ai-analysis-label">🤖 Resumen Ejecutivo · Claude AI</div>
+      {resumen_paragraphs}
+    </div>'''
+    else:
+        ai_resumen = ''
+    ai_geo         = ai_block('geopolitica')
+    ai_econ        = ai_block('economia_mercados')
+    ai_chile       = ai_block('chile_estrategico')
+    ai_coop        = ai_block('cooperativismo')
+    ai_cmf         = ai_block('cmf')
+    ai_mercados    = ai_block('noticias_economicas')
+    ai_tendencias  = ai_block('tendencias')
+    ai_ia          = ai_block('ia')
 
     # Alerts section
     alerts_html = ""
@@ -444,6 +485,45 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         font-size: 24px;
       }}
 
+      .ai-analysis {{
+        background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+        border-left: 4px solid #1a237e;
+        border-radius: 0 8px 8px 0;
+        padding: 18px 20px;
+        margin-bottom: 20px;
+      }}
+      .ai-analysis-label {{
+        font-size: 11px;
+        font-weight: 700;
+        color: #1a237e;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }}
+      .ai-analysis p {{
+        font-size: 14px;
+        line-height: 1.7;
+        color: #2c3548;
+        margin-bottom: 8px;
+      }}
+      .ai-analysis p:last-child {{ margin-bottom: 0; }}
+      .executive-summary-ai {{
+        background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 22px 24px;
+        margin-bottom: 24px;
+      }}
+      .executive-summary-ai .ai-analysis-label {{
+        color: rgba(255,255,255,0.7);
+      }}
+      .executive-summary-ai p {{
+        color: rgba(255,255,255,0.95);
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 8px;
+      }}
+
       .section-subtitle {{
         font-family: 'IBM Plex Mono', monospace;
         font-size: 11px;
@@ -576,6 +656,9 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         <button class="search-button" onclick="filterByScore(8)">Críticas</button>
     </div>
 
+    <!-- RESUMEN EJECUTIVO AI -->
+    {ai_resumen}
+
     <!-- ALERTAS CRÍTICAS -->
     <div class="alerts-section">
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
@@ -592,6 +675,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Economía y Mercados
         </h2>
         <span class="section-subtitle">Bloomberg · Reuters · Financial Times · CNBC · The Economist</span>
+        {ai_econ}
         {econ_html}
     </div>
 
@@ -602,6 +686,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Noticias Económicas Actuales
         </h2>
         <span class="section-subtitle">Indicadores clave · Análisis actualizado</span>
+        {ai_mercados}
         {econ_actuales_html}
     </div>
 
@@ -612,6 +697,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Inteligencia Artificial
         </h2>
         <span class="section-subtitle">TLDR AI · Ben's Bites · The Rundown AI</span>
+        {ai_ia}
         {ia_html}
     </div>
 
@@ -622,6 +708,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Geopolítica
         </h2>
         <span class="section-subtitle">China · EE.UU. · OPEP+ · Medio Oriente</span>
+        {ai_geo}
         {geo_html}
     </div>
 
@@ -632,6 +719,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Chile Estratégico
         </h2>
         <span class="section-subtitle">Gobierno · Minería · Energía</span>
+        {ai_chile}
         {chile_html}
     </div>
 
@@ -642,6 +730,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Cooperativismo
         </h2>
         <span class="section-subtitle">Movimiento cooperativo · Organización</span>
+        {ai_coop}
         {coop_html}
     </div>
 
@@ -652,6 +741,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             CMF
         </h2>
         <span class="section-subtitle">Comisión del Mercado Financiero</span>
+        {ai_cmf}
         {cmf_html}
     </div>
 
@@ -662,6 +752,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             Tendencias Tech
         </h2>
         <span class="section-subtitle">Innovación · Startups · Cloud</span>
+        {ai_tendencias}
         {tendencias_html}
     </div>
 

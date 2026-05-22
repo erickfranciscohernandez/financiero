@@ -179,6 +179,45 @@
         font-size: 24px;
       }
 
+      .ai-analysis {
+        background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+        border-left: 4px solid #1a237e;
+        border-radius: 0 8px 8px 0;
+        padding: 18px 20px;
+        margin-bottom: 20px;
+      }
+      .ai-analysis-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: #1a237e;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }
+      .ai-analysis p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #2c3548;
+        margin-bottom: 8px;
+      }
+      .ai-analysis p:last-child { margin-bottom: 0; }
+      .executive-summary-ai {
+        background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 22px 24px;
+        margin-bottom: 24px;
+      }
+      .executive-summary-ai .ai-analysis-label {
+        color: rgba(255,255,255,0.7);
+      }
+      .executive-summary-ai p {
+        color: rgba(255,255,255,0.95);
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 8px;
+      }
+
       .section-subtitle {
         font-family: 'IBM Plex Mono', monospace;
         font-size: 11px;
@@ -583,6 +622,9 @@
         <button class="search-button" onclick="filterByScore(8)">Críticas</button>
     </div>
 
+    <!-- RESUMEN EJECUTIVO AI -->
+    
+
     <!-- ALERTAS CRÍTICAS -->
     <div class="alerts-section">
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
@@ -707,7 +749,7 @@
 
       <!-- Info de actualización -->
       <div class="update-info">
-        <p>⏰ Última actualización: 22/05/2026 14:19 UTC</p>
+        <p>⏰ Última actualización: 22/05/2026 14:42 UTC</p>
         <p>📍 Datos en vivo · 🔄 Auto-actualización cada 4 horas</p>
       </div>
 
@@ -810,6 +852,7 @@
         </h2>
         <span class="section-subtitle">Bloomberg · Reuters · Financial Times · CNBC · The Economist</span>
         
+        
       <div class="news-item" data-score="8" data-title="banco central europeo considera nuevas medidas de estímulo">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
         <a href="https://www.ft.com" target="_blank" class="news-link">
@@ -853,6 +896,7 @@
         </h2>
         <span class="section-subtitle">Indicadores clave · Análisis actualizado</span>
         
+        
       <div class="news-item" data-score="5" data-title="índice de confianza del consumidor mejora por primera vez en 6 meses">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.uchile.cl" target="_blank" class="news-link">
@@ -895,6 +939,7 @@
             Inteligencia Artificial
         </h2>
         <span class="section-subtitle">TLDR AI · Ben's Bites · The Rundown AI</span>
+        
         
       <div class="news-item" data-score="5" data-title="startups de ai logran valuaciones record en rondas de series b y c">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
@@ -950,6 +995,7 @@
         </h2>
         <span class="section-subtitle">China · EE.UU. · OPEP+ · Medio Oriente</span>
         
+        
       <div class="news-item" data-score="5" data-title="rusia y opep+ coordinan estrategia energética en contexto geopolítico">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.reuters.com/business" target="_blank" class="news-link">
@@ -992,6 +1038,7 @@
             Chile Estratégico
         </h2>
         <span class="section-subtitle">Gobierno · Minería · Energía</span>
+        
         
       <div class="news-item" data-score="8" data-title="bcch mantiene tasas de interés en 5.25% en nueva reunión de política monetaria">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
@@ -1036,6 +1083,7 @@
         </h2>
         <span class="section-subtitle">Movimiento cooperativo · Organización</span>
         
+        
       <div class="news-item" data-score="5" data-title="congreso internacional de cooperativismo se realizará en santiago en agosto">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.aciamericas.coop" target="_blank" class="news-link">
@@ -1079,6 +1127,7 @@
         </h2>
         <span class="section-subtitle">Comisión del Mercado Financiero</span>
         
+        
       <div class="news-item" data-score="5" data-title="comisión del mercado financiero sanciona a tres corredoras por incumplimientos">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
@@ -1121,6 +1170,7 @@
             Tendencias Tech
         </h2>
         <span class="section-subtitle">Innovación · Startups · Cloud</span>
+        
         
       <div class="news-item" data-score="8" data-title="startups de semiconductores logran $2.3b en rondas de financiamiento">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>

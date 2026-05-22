@@ -25,7 +25,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests python-pptx
+        run: pip install requests python-pptx anthropic
 
       - name: Fetch news (NewsAPI → RSS fallback)
         env:
@@ -50,9 +50,10 @@ jobs:
       - name: Fetch live economic indicators
         run: python fetch_live_data.py
 
-      - name: Generate newsletter
+      - name: Generate newsletter with Claude AI analysis
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python generate_newsletter_v4.py
 
       - name: Export formats (JSON, CSV)
