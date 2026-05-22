@@ -38,6 +38,7 @@ jobs:
       - name: Generate newsletter v4 with visualizations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python generate_newsletter_v4.py
 
       - name: Export to multiple formats (PDF, JSON, CSV)
