@@ -143,17 +143,36 @@ def main():
     print("📡 Intentando conectar a RSS feeds...")
     all_news = fetch_all_news()
 
-    # Siempre cargar JSON para rellenar categorías que el RSS no cubre
-    # (noticias_economicas, ia, cooperativismo, cmf nunca vienen del RSS)
+    # Complementar con JSON para categorías vacías
     print("📁 Complementando con noticias del JSON...")
     json_news = load_noticias_from_json()
     if json_news:
         for key, items in json_news.items():
             if not all_news.get(key):
                 all_news[key] = items
-        print("✅ Noticias complementadas\n")
-    elif sum(len(v) for v in all_news.values()) == 0:
-        print("⚠️  Sin noticias disponibles")
+
+    # Último recurso: usar datos de respaldo para categorías aún vacías
+    try:
+        from generate_mock_news import generate_dynamic_news
+        mock_news = generate_dynamic_news()
+        mock_key_map = {
+            'cooperativismo': 'cooperativismo',
+            'cmf': 'cmf',
+            'noticias_economicas_actuales': 'noticias_economicas',
+            'inteligencia_artificial': 'ia',
+            'economia_global': 'economia_mercados',
+            'economia_chile': 'chile_estrategico',
+            'tendencias_tech': 'tendencias',
+            'geopolitica': 'geopolitica',
+        }
+        for mock_key, target_key in mock_key_map.items():
+            if not all_news.get(target_key) and mock_news.get(mock_key):
+                all_news[target_key] = mock_news[mock_key]
+                print(f"   ✅ {target_key}: usando datos de respaldo ({len(mock_news[mock_key])} noticias)")
+    except Exception as e:
+        print(f"   ⚠️  Sin datos de respaldo: {e}")
+
+    print("✅ Noticias listas\n")
 
     # Step 3: Generate alerts
     print("="*60)
