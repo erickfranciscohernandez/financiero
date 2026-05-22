@@ -199,7 +199,7 @@ def main():
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
         tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css,
-        microsoft_items
+        microsoft_items, ai_analyses
     )
 
     with open('newsletter.html', 'w', encoding='utf-8') as f:
@@ -229,8 +229,8 @@ def main():
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
                                coop_items, cmf_items, geo_items, chile_items, tendencias_items, alerts,
-                               viz_html, viz_css, agenda_html, agenda_css, microsoft_items=None):
-    """Generate advanced HTML v4 with visualizations and agenda"""
+                               viz_html, viz_css, agenda_html, agenda_css, microsoft_items=None, ai_analyses=None):
+    """Generate advanced HTML v4 with visualizations, agenda and Claude AI analysis"""
 
     def items_to_html(items):
         html = ""

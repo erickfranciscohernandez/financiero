@@ -179,6 +179,45 @@
         font-size: 24px;
       }
 
+      .ai-analysis {
+        background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+        border-left: 4px solid #1a237e;
+        border-radius: 0 8px 8px 0;
+        padding: 18px 20px;
+        margin-bottom: 20px;
+      }
+      .ai-analysis-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: #1a237e;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+      }
+      .ai-analysis p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: #2c3548;
+        margin-bottom: 8px;
+      }
+      .ai-analysis p:last-child { margin-bottom: 0; }
+      .executive-summary-ai {
+        background: linear-gradient(135deg, #1a237e 0%, #283593 100%);
+        color: white;
+        border-radius: 10px;
+        padding: 22px 24px;
+        margin-bottom: 24px;
+      }
+      .executive-summary-ai .ai-analysis-label {
+        color: rgba(255,255,255,0.7);
+      }
+      .executive-summary-ai p {
+        color: rgba(255,255,255,0.95);
+        font-size: 14px;
+        line-height: 1.75;
+        margin-bottom: 8px;
+      }
+
       .section-subtitle {
         font-family: 'IBM Plex Mono', monospace;
         font-size: 11px;
@@ -583,34 +622,37 @@
         <button class="search-button" onclick="filterByScore(8)">Críticas</button>
     </div>
 
+    <!-- RESUMEN EJECUTIVO AI -->
+    
+
     <!-- ALERTAS CRÍTICAS -->
     <div class="alerts-section">
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
         
-    <div class="alert-item" data-score="10">
-      <strong>🚨 Cobre toca mínimos de 4 semanas en USD 4.12/lb por debilidad...</strong>
-      <p>Commodity clave para Chile cae por preocupaciones de recesión global y menor actividad manufacturera.</p>
-      <small>Score: 10/10 | CNBC</small>
-    </div>
-    <div class="alert-item" data-score="9">
-      <strong>🚨 China intensifica presión comercial contra semiconductores e...</strong>
-      <p>Nuevas restricciones comerciales impactan la industria tecnológica global. Analistas advierten sobre escalada de tensiones.</p>
-      <small>Score: 9/10 | Bloomberg</small>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Trump Tells Warsh to Do ‘Own Thing’ as Fed Chair Sworn In...</strong>
+      <p>President Donald Trump stressed that he wants Kevin Warsh to independently lead the Federal Reserve, as he looked to downplay investor concern that he</p>
+      <small>Score: 8/10 | feeds.bloomberg.com</small>
     </div>
     <div class="alert-item" data-score="8">
-      <strong>🚨 EE.UU. anuncia nuevas medidas de defensa en Pacífico...</strong>
-      <p>Inversiones militares sin precedentes en la región generan reacciones de potencias asiáticas.</p>
-      <small>Score: 8/10 | Financial Times</small>
+      <strong>🚨 Warsh Says He'll Lead a 'Reform-Oriented' Fed...</strong>
+      <p>Kevin Warsh says he'll lead a "reform-oriented" Federal Reserve and goals will be pursued with "independence and resolve." In the months leading up to</p>
+      <small>Score: 8/10 | feeds.bloomberg.com</small>
     </div>
     <div class="alert-item" data-score="8">
-      <strong>🚨 Banco Central Europeo considera nuevas medidas de estímulo...</strong>
-      <p>Preocupaciones por desaceleración económica empujan a BCE a evaluación de política monetaria.</p>
-      <small>Score: 8/10 | Financial Times</small>
+      <strong>🚨 Kevin Warsh Sworn In as 17th Federal Reserve Chair...</strong>
+      <p>Kevin Warsh was sworn into office as the 17th chair of the Fed, promising the biggest shakeup in decades at the US central bank, and takes over at a t</p>
+      <small>Score: 8/10 | feeds.bloomberg.com</small>
     </div>
     <div class="alert-item" data-score="8">
-      <strong>🚨 Mercados accionarios globales en volatilidad por datos econó...</strong>
-      <p>S&P 500 cierra mixto mientras se esperan reportes de empleo en EE.UU.</p>
-      <small>Score: 8/10 | CNBC</small>
+      <strong>🚨 Trafigura Withdraws Huge Volumes of Copper From LME Warehous...</strong>
+      <p>Trafigura Group has moved to withdraw hundreds of millions of dollars of copper from London Metal Exchange warehouses as lucrative trading opportuniti</p>
+      <small>Score: 8/10 | feeds.bloomberg.com</small>
+    </div>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Bill Winters ‘Lower-Value Human’ Apology Not Enough for Unio...</strong>
+      <p>Bill Winters’ efforts to restore calm after making some controversial comments on AI have failed to reassure labor organizations, according to one of </p>
+      <small>Score: 8/10 | feeds.bloomberg.com</small>
     </div>
     </div>
 
@@ -707,7 +749,7 @@
 
       <!-- Info de actualización -->
       <div class="update-info">
-        <p>⏰ Última actualización: 22/05/2026 13:54 UTC</p>
+        <p>⏰ Última actualización: 22/05/2026 17:07 UTC</p>
         <p>📍 Datos en vivo · 🔄 Auto-actualización cada 4 horas</p>
       </div>
 
@@ -810,48 +852,49 @@
         </h2>
         <span class="section-subtitle">Bloomberg · Reuters · Financial Times · CNBC · The Economist</span>
         
-      <div class="news-item" data-score="10" data-title="cobre toca mínimos de 4 semanas en usd 4.12/lb por debilidad de demanda">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.cnbc.com/commodities" target="_blank" class="news-link">
-          <div class="news-item-title">Cobre toca mínimos de 4 semanas en USD 4.12/lb por</div>
-        </a>
-        <div class="news-item-detail">Commodity clave para Chile cae por preocupaciones de recesión global y menor actividad manufacturera.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.cnbc.com/commodities" target="_blank" class="source-link">→ CNBC</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="8" data-title="banco central europeo considera nuevas medidas de estímulo">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.ft.com" target="_blank" class="news-link">
-          <div class="news-item-title">Banco Central Europeo considera nuevas medidas de </div>
-        </a>
-        <div class="news-item-detail">Preocupaciones por desaceleración económica empujan a BCE a evaluación de política monetaria.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.ft.com" target="_blank" class="source-link">→ Financial Times</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="8" data-title="mercados accionarios globales en volatilidad por datos económicos mixtos">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.cnbc.com" target="_blank" class="news-link">
-          <div class="news-item-title">Mercados accionarios globales en volatilidad por d</div>
-        </a>
-        <div class="news-item-detail">S&P 500 cierra mixto mientras se esperan reportes de empleo en EE.UU.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.cnbc.com" target="_blank" class="source-link">→ CNBC</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="petróleo recupera 2% en sesión de volatilidad">
+        
+      <div class="news-item" data-score="5" data-title="uber said to study full takeover of germany’s delivery hero">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/energy" target="_blank" class="news-link">
-          <div class="news-item-title">Petróleo recupera 2% en sesión de volatilidad</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-22/uber-said-to-study-full-takeover-of-european-rival-delivery-hero" target="_blank" class="news-link">
+          <div class="news-item-title">Uber Said to Study Full Takeover of Germany’s Deli</div>
         </a>
-        <div class="news-item-detail">Conflictos geopolíticos y datos de demanda impulsan precios del crudo.</div>
+        <div class="news-item-detail">Uber Technologies Inc. is exploring options for a full takeover of Delivery Hero SE, people familiar with the matter said, a move that would help it better compete with DoorDash Inc. outside the US.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/energy" target="_blank" class="source-link">→ Bloomberg</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/uber-said-to-study-full-takeover-of-european-rival-delivery-hero" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="s&amp;p 500 is set for longest weekly rally since 2023: markets wrap">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-21/asian-stocks-to-rise-on-optimism-over-iran-talks-markets-wrap" target="_blank" class="news-link">
+          <div class="news-item-title">S&amp;P 500 Is Set for Longest Weekly Rally Since </div>
+        </a>
+        <div class="news-item-detail">Hopes for a deal between the US and Iran that will turn a fragile ceasefire into lasting peace fueled Wall Street optimism, driving stocks toward their longest streak of weekly gains since 2023.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-21/asian-stocks-to-rise-on-optimism-over-iran-talks-markets-wrap" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="8" data-title="trafigura withdraws huge volumes of copper from lme warehouses">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-22/trafigura-withdraws-huge-volumes-of-copper-from-lme-warehouses" target="_blank" class="news-link">
+          <div class="news-item-title">Trafigura Withdraws Huge Volumes of Copper From LM</div>
+        </a>
+        <div class="news-item-detail">Trafigura Group has moved to withdraw hundreds of millions of dollars of copper from London Metal Exchange warehouses as lucrative trading opportunities emerge in the US and China, according to people</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/trafigura-withdraws-huge-volumes-of-copper-from-lme-warehouses" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="fbi prepares for increasing drone threats disrupting world cup">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-22/fbi-prepares-for-drone-threats-disrupting-world-cup-video" target="_blank" class="news-link">
+          <div class="news-item-title">FBI Prepares for Increasing Drone Threats Disrupti</div>
+        </a>
+        <div class="news-item-detail">The FBI plans to deploy roughly 60 specially trained state and local police officers across venues for the FIFA World Cup to detect and electronically disable hostile drones as security officials warn</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-22/fbi-prepares-for-drone-threats-disrupting-world-cup-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
     </div>
@@ -864,50 +907,7 @@
         </h2>
         <span class="section-subtitle">Indicadores clave · Análisis actualizado</span>
         
-      <div class="news-item" data-score="7" data-title="ipc de mayo muestra moderación en presiones inflacionarias">
-        <div class="score-badge" title="Score de importancia: 7/10">7/10</div>
-        <a href="https://www.ine.cl" target="_blank" class="news-link">
-          <div class="news-item-title">IPC de mayo muestra moderación en presiones inflac</div>
-        </a>
-        <div class="news-item-detail">Índice de Precios al Consumidor sube 0.3% mensual, por debajo de expectativas de analistas.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.ine.cl" target="_blank" class="source-link">→ INE</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="desempleo se sitúa en 8.2% según cifras de ocupación de trimestre">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.bcentral.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Desempleo se sitúa en 8.2% según cifras de ocupaci</div>
-        </a>
-        <div class="news-item-detail">Tasa de desocupación se mantiene estable pese a moderación del crecimiento económico.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.bcentral.cl" target="_blank" class="source-link">→ Banco Central</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="índice de confianza del consumidor mejora por primera vez en 6 meses">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.uchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Índice de Confianza del Consumidor mejora por prim</div>
-        </a>
-        <div class="news-item-detail">Expectativas sobre situación económica se fortalecen impulsadas por menor volatilidad política.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.uchile.cl" target="_blank" class="source-link">→ Universidad de Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="remesas de trabajadores chilenos en el exterior caen 5% interanual">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.ine.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Remesas de trabajadores chilenos en el exterior ca</div>
-        </a>
-        <div class="news-item-detail">Menores ingresos por transferencias internacionales reflejan desaceleración en economías receptoras.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.ine.cl" target="_blank" class="source-link">→ INE</a>
-        </div>
-      </div>
+        
     </div>
 
     <!-- INTELIGENCIA ARTIFICIAL -->
@@ -918,50 +918,7 @@
         </h2>
         <span class="section-subtitle">TLDR AI · Ben's Bites · The Rundown AI</span>
         
-      <div class="news-item" data-score="5" data-title="investigadores desarrollan modelo de ia que explica sus propias decisiones">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://tldr.ai" target="_blank" class="news-link">
-          <div class="news-item-title">Investigadores desarrollan modelo de IA que explic</div>
-        </a>
-        <div class="news-item-detail">Avance en "AI explicable" abre puertas a adopción en sectores regulados como finanzas y salud.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://tldr.ai" target="_blank" class="source-link">→ TLDR AI</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="universidades crean programa de certificación en ia responsable">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://bensbites.com" target="_blank" class="news-link">
-          <div class="news-item-title">Universidades crean programa de certificación en I</div>
-        </a>
-        <div class="news-item-detail">Iniciativa educativa busca formar profesionales preparados en aspectos éticos de IA.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="detectan sesgos importantes en sistemas de ia de grandes empresas tecnológicas">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://therundown.ai" target="_blank" class="news-link">
-          <div class="news-item-title">Detectan sesgos importantes en sistemas de IA de g</div>
-        </a>
-        <div class="news-item-detail">Estudio académico revela problemas de equidad en modelos de lenguaje usados por plataformas.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://therundown.ai" target="_blank" class="source-link">→ The Rundown AI</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="startups de ai logran valuaciones record en rondas de series b y c">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://tldr.ai" target="_blank" class="news-link">
-          <div class="news-item-title">Startups de AI logran valuaciones record en rondas</div>
-        </a>
-        <div class="news-item-detail">Inversión en empresas de IA crece 300% respecto a año anterior impulsada por demanda corporativa.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://tldr.ai" target="_blank" class="source-link">→ TLDR AI</a>
-        </div>
-      </div>
+        
     </div>
 
     <!-- GEOPOLÍTICA -->
@@ -972,37 +929,49 @@
         </h2>
         <span class="section-subtitle">China · EE.UU. · OPEP+ · Medio Oriente</span>
         
-      <div class="news-item" data-score="9" data-title="china intensifica presión comercial contra semiconductores estadounidenses">
-        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
-        <a href="https://www.bloomberg.com/news/articles" target="_blank" class="news-link">
-          <div class="news-item-title">China intensifica presión comercial contra semicon</div>
+        
+      <div class="news-item" data-score="8" data-title="trump tells warsh to do ‘own thing’ as fed chair sworn in">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-22/warsh-to-be-sworn-in-as-fed-chief-during-white-house-ceremony" target="_blank" class="news-link">
+          <div class="news-item-title">Trump Tells Warsh to Do ‘Own Thing’ as Fed Chair S</div>
         </a>
-        <div class="news-item-detail">Nuevas restricciones comerciales impactan la industria tecnológica global. Analistas advierten sobre escalada de tensiones.</div>
+        <div class="news-item-detail">President Donald Trump stressed that he wants Kevin Warsh to independently lead the Federal Reserve, as he looked to downplay investor concern that he would pressure the new central bank chief on poli</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bloomberg.com/news/articles" target="_blank" class="source-link">→ Bloomberg</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/warsh-to-be-sworn-in-as-fed-chief-during-white-house-ceremony" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="rusia y opep+ coordinan estrategia energética en contexto geopolítico">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.reuters.com/business" target="_blank" class="news-link">
-          <div class="news-item-title">Rusia y OPEP+ coordinan estrategia energética en c</div>
+      <div class="news-item" data-score="8" data-title="warsh says he'll lead a 'reform-oriented' fed">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-22/warsh-says-he-ll-lead-a-reform-oriented-fed-video" target="_blank" class="news-link">
+          <div class="news-item-title">Warsh Says He'll Lead a 'Reform-Oriented' Fed</div>
         </a>
-        <div class="news-item-detail">Reunión estratégica entre líderes energéticos genera preocupación en mercados occidentales.</div>
+        <div class="news-item-detail">Kevin Warsh says he'll lead a "reform-oriented" Federal Reserve and goals will be pursued with "independence and resolve." In the months leading up to his nomination, Warsh said the Fed was not loweri</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-22/warsh-says-he-ll-lead-a-reform-oriented-fed-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="progress in iran talks undercut over uranium, tolls">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-21/progress-in-iran-talks-undercut-by-divide-over-uranium-tolls" target="_blank" class="news-link">
+          <div class="news-item-title">Progress in Iran Talks Undercut Over Uranium, Toll</div>
+        </a>
+        <div class="news-item-detail">Iran said the latest proposal from the US partly bridged the gap between the warring sides, but comments from the Islamic Republic’s supreme leader about keeping Tehran’s uranium stockpile and a dispu</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.reuters.com/business" target="_blank" class="source-link">→ Reuters</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-21/progress-in-iran-talks-undercut-by-divide-over-uranium-tolls" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="ee.uu. anuncia nuevas medidas de defensa en pacífico">
+      <div class="news-item" data-score="8" data-title="kevin warsh sworn in as 17th federal reserve chair">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.ft.com/world" target="_blank" class="news-link">
-          <div class="news-item-title">EE.UU. anuncia nuevas medidas de defensa en Pacífi</div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-22/kevin-warsh-sworn-in-as-17th-federal-reserve-chair-video" target="_blank" class="news-link">
+          <div class="news-item-title">Kevin Warsh Sworn In as 17th Federal Reserve Chair</div>
         </a>
-        <div class="news-item-detail">Inversiones militares sin precedentes en la región generan reacciones de potencias asiáticas.</div>
+        <div class="news-item-detail">Kevin Warsh was sworn into office as the 17th chair of the Fed, promising the biggest shakeup in decades at the US central bank, and takes over at a tense moment for the economy and the central bank. </div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.ft.com/world" target="_blank" class="source-link">→ Financial Times</a>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-22/kevin-warsh-sworn-in-as-17th-federal-reserve-chair-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
     </div>
@@ -1015,48 +984,49 @@
         </h2>
         <span class="section-subtitle">Gobierno · Minería · Energía</span>
         
-      <div class="news-item" data-score="5" data-title="gobierno anuncia nuevo programa de estímulo económico para pymes">
+        
+      <div class="news-item" data-score="5" data-title="lqn soluciones destaca el papel clave del mantenimiento informático en la continuidad de las empresas">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.latercera.com" target="_blank" class="news-link">
-          <div class="news-item-title">Gobierno anuncia nuevo programa de estímulo económ</div>
+        <a href="https://diariofinanciero.com/lqn-soluciones-destaca-el-papel-clave-del-mantenimiento-informatico-en-la-continuidad-de-las-empresas/" target="_blank" class="news-link">
+          <div class="news-item-title">LQN SOLUCIONES destaca el papel clave del mantenim</div>
         </a>
-        <div class="news-item-detail">Medidas incluyen reducción de impuestos y líneas de crédito preferente para micro y pequeñas empresas.</div>
+        <div class="news-item-detail">La creciente digitalización de las empresas ha convertido el mantenimiento informático en un pilar esencial para garantizar la continuidad operativa y la seguridad de los sistemas. LQN refuerza su pap</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.latercera.com" target="_blank" class="source-link">→ La Tercera</a>
+          <a href="https://diariofinanciero.com/lqn-soluciones-destaca-el-papel-clave-del-mantenimiento-informatico-en-la-continuidad-de-las-empresas/" target="_blank" class="source-link">→ www.diariofinanciero.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="bcch mantiene tasas de interés en 5.25% en nueva reunión de política monetaria">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.diariofinanciero.com" target="_blank" class="news-link">
-          <div class="news-item-title">BCCh mantiene tasas de interés en 5.25% en nueva r</div>
+      <div class="news-item" data-score="5" data-title="nuevo honda prelude: un coupé híbrido que proporciona una experiencia de “deslizamiento ilimitado”">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://diariofinanciero.com/nuevo-honda-prelude-un-coupe-hibrido-que-proporciona-una-experiencia-de-deslizamiento-ilimitado/" target="_blank" class="news-link">
+          <div class="news-item-title">Nuevo Honda Prelude: un coupé híbrido que proporci</div>
         </a>
-        <div class="news-item-detail">Banco Central Chile mantiene postura restrictiva ante persistencia de presiones inflacionarias.</div>
+        <div class="news-item-detail">Combinando la elegancia y el rendimiento de los planeadores modernos con la ambición de Honda de convertir los sueños en realidad a través de la ingeniería moderna, el nuevo coupé deportivo Honda Prel</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.diariofinanciero.com" target="_blank" class="source-link">→ Diario Financiero</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://diariofinanciero.com/nuevo-honda-prelude-un-coupe-hibrido-que-proporciona-una-experiencia-de-deslizamiento-ilimitado/" target="_blank" class="source-link">→ www.diariofinanciero.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="6" data-title="bolsa de santiago cierra con alza de 1.2% impulsada por sector tecnológico">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.diariofinanciero.com" target="_blank" class="news-link">
-          <div class="news-item-title">Bolsa de Santiago cierra con alza de 1.2% impulsad</div>
+      <div class="news-item" data-score="5" data-title="el sector agroalimentario catalán se reunirá en el x foro nacional mujeragro en lleida">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://diariofinanciero.com/el-sector-agroalimentario-catalan-se-reunira-en-el-x-foro-nacional-mujeragro-en-lleida/" target="_blank" class="news-link">
+          <div class="news-item-title">El sector agroalimentario catalán se reunirá en el</div>
         </a>
-        <div class="news-item-detail">Índice IPSA sube en sesión positiva reflejando recuperación de valores de software y telecomunicaciones.</div>
+        <div class="news-item-detail">Empresas agroalimentarias y organizaciones agrarias se vuelcan en el mayor encuentro por la igualdad en España que en esta décima edición se traslada a Lleida como una de las potencias nacionales en p</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.diariofinanciero.com" target="_blank" class="source-link">→ Diario Financiero</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://diariofinanciero.com/el-sector-agroalimentario-catalan-se-reunira-en-el-x-foro-nacional-mujeragro-en-lleida/" target="_blank" class="source-link">→ www.diariofinanciero.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="minería de cobre reporta caída de 8% en producción por menor demanda global">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.emol.com" target="_blank" class="news-link">
-          <div class="news-item-title">Minería de cobre reporta caída de 8% en producción</div>
+      <div class="news-item" data-score="5" data-title="suspenso en las aulas: la climatización de las escuelas infantiles es una asignatura pendiente según bosch">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://diariofinanciero.com/suspenso-en-las-aulas-la-climatizacion-de-las-escuelas-infantiles-es-una-asignatura-pendiente-segun-bosch/" target="_blank" class="news-link">
+          <div class="news-item-title">Suspenso en las aulas: la climatización de las esc</div>
         </a>
-        <div class="news-item-detail">Principales empresas mineras ajustan operaciones ante perspectivas económicas débiles.</div>
+        <div class="news-item-detail">La climatización en escuelas infantiles y guarderías se ha convertido en un reto cada vez más urgente en un contexto de condiciones ambientales más exigentes. La falta de sistemas adecuados en muchos </div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.emol.com" target="_blank" class="source-link">→ EMOL</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://diariofinanciero.com/suspenso-en-las-aulas-la-climatizacion-de-las-escuelas-infantiles-es-una-asignatura-pendiente-segun-bosch/" target="_blank" class="source-link">→ www.diariofinanciero.com</a>
         </div>
       </div>
     </div>
@@ -1069,39 +1039,7 @@
         </h2>
         <span class="section-subtitle">Movimiento cooperativo · Organización</span>
         
-      <div class="news-item" data-score="5" data-title="congreso internacional de cooperativismo se realizará en santiago en agosto">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.aciamericas.coop" target="_blank" class="news-link">
-          <div class="news-item-title">Congreso Internacional de Cooperativismo se realiz</div>
-        </a>
-        <div class="news-item-detail">Evento reunirá a líderes de movimiento cooperativo de 50 países para debatir sostenibilidad.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.aciamericas.coop" target="_blank" class="source-link">→ ACI Americas</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="cooperativa de ahorro chilena alcanza 500k miembros activos">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.cooperativas.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Cooperativa de Ahorro chilena alcanza 500K miembro</div>
-        </a>
-        <div class="news-item-detail">Crecimiento de 12% anual refleja aumento de confianza en modelo cooperativo de servicios financieros.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.cooperativas.cl" target="_blank" class="source-link">→ Cooperativas.cl</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="red de cooperativas agrícolas invierte en tecnología de riego sostenible">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.elmostrador.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Red de cooperativas agrícolas invierte en tecnolog</div>
-        </a>
-        <div class="news-item-detail">Iniciativa incluye monitoreo IoT y análisis de datos para optimizar uso de agua en cultivos.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.elmostrador.cl" target="_blank" class="source-link">→ El Mostrador</a>
-        </div>
-      </div>
+        
     </div>
 
     <!-- CMF -->
@@ -1112,39 +1050,7 @@
         </h2>
         <span class="section-subtitle">Comisión del Mercado Financiero</span>
         
-      <div class="news-item" data-score="5" data-title="cmf publica normas sobre transparencia en comisiones de fondos mutuos">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">CMF publica normas sobre transparencia en comision</div>
-        </a>
-        <div class="news-item-detail">Medida regulatoria busca proteger derechos de inversionistas mediante mayor claridad de costos.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="comisión del mercado financiero sanciona a tres corredoras por incumplimientos">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Comisión del Mercado Financiero sanciona a tres co</div>
-        </a>
-        <div class="news-item-detail">Multas por falta de diligencia debida en procesos de Know Your Customer alcanza $150 millones.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="8" data-title="cmf aprueba nueva plataforma de crowdfunding con regulación flexible">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">CMF aprueba nueva plataforma de crowdfunding con r</div>
-        </a>
-        <div class="news-item-detail">Resolución permite inversión en startups con límites de monto y perfil de inversionista.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
+        
     </div>
 
     <!-- TENDENCIAS TECH -->
@@ -1155,37 +1061,49 @@
         </h2>
         <span class="section-subtitle">Innovación · Startups · Cloud</span>
         
-      <div class="news-item" data-score="8" data-title="meta invierte $10b en infraestructura de datos para ai generativa">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.theverge.com" target="_blank" class="news-link">
-          <div class="news-item-title">Meta invierte $10B en infraestructura de datos par</div>
-        </a>
-        <div class="news-item-detail">Gasto récord refleja compromiso de Meta con desarrollo de tecnologías de próxima generación.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.theverge.com" target="_blank" class="source-link">→ The Verge</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="openai lanza nuevos modelos de ia con capacidades mejoradas de razonamiento">
+        
+      <div class="news-item" data-score="5" data-title="the rise of ai public safety">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://techcrunch.com" target="_blank" class="news-link">
-          <div class="news-item-title">OpenAI lanza nuevos modelos de IA con capacidades </div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-22/the-rise-of-ai-public-safety-video" target="_blank" class="news-link">
+          <div class="news-item-title">The Rise of AI Public Safety</div>
         </a>
-        <div class="news-item-detail">Competencia se intensifica en carrera de inteligencia artificial con nuevas capacidades de análisis complejo.</div>
+        <div class="news-item-detail">Axon President Josh Isner joins Bloomberg Open Interest to explain why Wall Street is misunderstanding the company’s AI strategy. From  drones to enterprise security and public safety software, Isner </div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://techcrunch.com" target="_blank" class="source-link">→ TechCrunch</a>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-22/the-rise-of-ai-public-safety-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="startups de semiconductores logran $2.3b en rondas de financiamiento">
+      <div class="news-item" data-score="8" data-title="bill winters ‘lower-value human’ apology not enough for unions">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://crunchbase.com" target="_blank" class="news-link">
-          <div class="news-item-title">Startups de semiconductores logran $2.3B en rondas</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-22/bill-winters-draws-union-ire-despite-lower-value-human-apology" target="_blank" class="news-link">
+          <div class="news-item-title">Bill Winters ‘Lower-Value Human’ Apology Not Enoug</div>
         </a>
-        <div class="news-item-detail">Inversores ven oportunidad en empresas especializadas en chips para IA y computación de borde.</div>
+        <div class="news-item-detail">Bill Winters’ efforts to restore calm after making some controversial comments on AI have failed to reassure labor organizations, according to one of the world’s largest union federations.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://crunchbase.com" target="_blank" class="source-link">→ Crunchbase</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/bill-winters-draws-union-ire-despite-lower-value-human-apology" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="musk could earn $760 billion from spacex mars-shot pay packages">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-22/musk-could-earn-760-billion-from-spacex-mars-shot-pay-packages" target="_blank" class="news-link">
+          <div class="news-item-title">Musk Could Earn $760 Billion From SpaceX Mars-Shot</div>
+        </a>
+        <div class="news-item-detail">Elon Musk is making a habit of collecting 12-figure compensation packages.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-22/musk-could-earn-760-billion-from-spacex-mars-shot-pay-packages" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="are fintech apps already dead?">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-22/are-fintech-apps-already-dead-video" target="_blank" class="news-link">
+          <div class="news-item-title">Are Fintech Apps Already Dead?</div>
+        </a>
+        <div class="news-item-detail">Is it the end of fintech and investing apps as we know it? Atomic Invest CEO David Dindi joins Bloomberg Open Interest to talk about the future of finance and why it belongs to AI companions, not apps</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-22/are-fintech-apps-already-dead-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
     </div>
