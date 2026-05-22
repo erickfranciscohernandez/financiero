@@ -143,13 +143,17 @@ def main():
     print("📡 Intentando conectar a RSS feeds...")
     all_news = fetch_all_news()
 
-    if sum(len(v) for v in all_news.values()) == 0:
-        print("⚠️  No se pudo conectar a RSS feeds.")
-        print("📁 Cargando noticias desde JSON...")
-        json_news = load_noticias_from_json()
-        if json_news:
-            all_news = json_news
-            print("✅ Noticias cargadas\n")
+    # Siempre cargar JSON para rellenar categorías que el RSS no cubre
+    # (noticias_economicas, ia, cooperativismo, cmf nunca vienen del RSS)
+    print("📁 Complementando con noticias del JSON...")
+    json_news = load_noticias_from_json()
+    if json_news:
+        for key, items in json_news.items():
+            if not all_news.get(key):
+                all_news[key] = items
+        print("✅ Noticias complementadas\n")
+    elif sum(len(v) for v in all_news.values()) == 0:
+        print("⚠️  Sin noticias disponibles")
 
     # Step 3: Generate alerts
     print("="*60)
