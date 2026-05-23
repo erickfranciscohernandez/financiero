@@ -1,7 +1,15 @@
 {
-  "fecha": "2026-05-23T15:22:16.035120",
-  "total_alertas": 0,
-  "alertas_criticas": 0,
+  "fecha": "2026-05-23T16:41:02.243217",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
-  "alertas": []
+  "alertas": [
+    {
+      "titulo": "Exportaciones chilenas suben 12% en primer cuatrimestre impulsadas por cobre y litio",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    }
+  ]
 }
