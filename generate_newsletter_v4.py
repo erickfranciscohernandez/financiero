@@ -148,10 +148,10 @@ def main():
     json_news = load_noticias_from_json()
     if json_news:
         for key, items in json_news.items():
-            if not all_news.get(key):
+            if len(all_news.get(key, [])) < 2:
                 all_news[key] = items
 
-    # Último recurso: usar datos de respaldo para categorías aún vacías
+    # Respaldo: garantizar mínimo 2 noticias en cada categoría
     try:
         from generate_mock_news import generate_dynamic_news
         mock_news = generate_dynamic_news()
@@ -166,9 +166,9 @@ def main():
             'geopolitica': 'geopolitica',
         }
         for mock_key, target_key in mock_key_map.items():
-            if not all_news.get(target_key) and mock_news.get(mock_key):
+            if len(all_news.get(target_key, [])) < 2 and mock_news.get(mock_key):
                 all_news[target_key] = mock_news[mock_key]
-                print(f"   ✅ {target_key}: usando datos de respaldo ({len(mock_news[mock_key])} noticias)")
+                print(f"   ✅ {target_key}: respaldo activado ({len(mock_news[mock_key])} noticias)")
     except Exception as e:
         print(f"   ⚠️  Sin datos de respaldo: {e}")
 
