@@ -10,6 +10,7 @@ from fetch_news_rss import fetch_all_news
 from fetch_live_data import LiveDataFetcher, generate_chart_data
 from visualizations import generate_charts_html, generate_charts_css
 from generate_agenda import generate_agenda_html, get_agenda_css
+from generate_ai_analysis import run_ai_analysis
 
 
 def load_noticias_from_json(filepath='noticias_diarias.json'):
