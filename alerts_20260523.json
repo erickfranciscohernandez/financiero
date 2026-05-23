@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-05-23T16:41:02.243217",
-  "total_alertas": 1,
-  "alertas_criticas": 1,
+  "fecha": "2026-05-23T20:35:10.476718",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -10,6 +10,20 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Cobre cotiza en USD 4.58/lb impulsado por demanda china y transición energética",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Dólar observado cierra en $945 ante fortalecimiento global del peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }
