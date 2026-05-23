@@ -213,6 +213,7 @@ def main():
     # Generate old HTML (from v3)
     tendencias_items = build_news_items_advanced(all_news.get('tendencias', []))
     microsoft_items = build_news_items_advanced(all_news.get('microsoft', []))
+    ai_analyses = run_ai_analysis(all_news)
     html_v3 = generate_html_advanced_v4(
         all_news, current_date,
         econ_items, econ_actuales, ia_items,
