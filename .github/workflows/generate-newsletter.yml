@@ -2,7 +2,9 @@ name: Generate Daily Newsletter
 
 on:
   schedule:
+    # Ejecutar cada 6 horas
     - cron: '0 */6 * * *'
+  # También permitir ejecución manual
   workflow_dispatch:
 
 env:
@@ -25,55 +27,30 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests python-pptx anthropic
+        run: pip install requests weasyprint
 
-      - name: Fetch news (NewsAPI → RSS fallback)
-        env:
-          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
-        run: |
-          python -c "
-          from fetch_news_rss import fetch_all_news
-          import json, os
-          news = fetch_all_news()
-          total = sum(len(v) for v in news.values())
-          print(f'Total noticias obtenidas: {total}')
-          if total == 0:
-              print('Sin noticias desde API/RSS — usando mock')
-              import subprocess
-              subprocess.run(['python', 'generate_mock_news.py'])
-          else:
-              with open('noticias_diarias.json', 'w', encoding='utf-8') as f:
-                  json.dump(news, f, ensure_ascii=False, indent=2)
-              print('noticias_diarias.json actualizado')
-          "
+      - name: Generate dynamic mock news (for sandbox environment)
+        run: python generate_mock_news.py
 
-      - name: Fetch live economic indicators
+      - name: Fetch live economic indicators (FASE 4)
         run: python fetch_live_data.py
 
-      - name: Generate newsletter with Claude AI analysis
+      - name: Generate newsletter v4 with visualizations
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python generate_newsletter_v4.py
 
-      - name: Export formats (JSON, CSV)
+      - name: Export to multiple formats (PDF, JSON, CSV)
         run: python export_newsletter.py
 
-      - name: Export PowerPoint presentation
-        run: python export_pptx.py
-
-      - name: Send newsletter by email and save alerts
-        env:
-          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-          EMAIL_SMTP_SERVER: ${{ secrets.EMAIL_SMTP_SERVER }}
+      - name: Run alert system
         run: python alerts_system.py
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json noticias_diarias.json newsletter_*.pptx
+          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update newsletter with live data - $(date +'%Y-%m-%d')"
           git push

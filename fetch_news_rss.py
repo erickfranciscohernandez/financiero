@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Fetcher de Noticias - NewsAPI + RSS Feeds
-Prioriza NewsAPI (noticias reales) con fallback a RSS y mock
+Prioriza NewsAPI (noticias reales) con fallback a RSS ampliado
 """
 import os
 import json
@@ -24,23 +24,57 @@ NEWSAPI_QUERIES = {
     'cmf': 'CMF Chile OR regulacion financiera Chile OR superintendencia valores',
     'noticias_economicas': 'bolsa latinoamerica OR dolar peso OR commodities OR cobre precio',
     'ia': 'inteligencia artificial OR ChatGPT OR OpenAI OR IA generativa',
+    'microsoft': 'Microsoft Copilot OR Microsoft AI OR Microsoft Azure OR Microsoft 365',
 }
 
 RSS_FEEDS = {
     'geopolitica': [
-        'https://feeds.reuters.com/Reuters/worldNews',
+        'https://feeds.reuters.com/reuters/worldNews',
         'https://feeds.bloomberg.com/politics/news.rss',
+        'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
     ],
     'chile_estrategico': [
         'https://www.diariofinanciero.com/feed',
         'https://www.emol.com/rss/economia.xml',
+        'https://www.latercera.com/feed/',
+        'https://www.elmostrador.cl/feed/',
     ],
     'economia_mercados': [
         'https://feeds.bloomberg.com/markets/news.rss',
+        'https://feeds.bloomberg.com/markets/commodities.rss',
+        'https://feeds.bloomberg.com/markets/currencies.rss',
         'https://feeds.cnbc.com/id/100003114/rss.xml',
+        'https://feeds.a.dj.com/rss/RSSMarketsMain.xml',
+        'https://www.economist.com/finance-and-economics/rss.xml',
     ],
     'tendencias': [
         'https://feeds.bloomberg.com/technology/news.rss',
+        'https://techcrunch.com/feed/',
+        'https://www.theverge.com/rss/index.xml',
+    ],
+    'ia': [
+        'https://techcrunch.com/tag/artificial-intelligence/feed/',
+        'https://venturebeat.com/category/ai/feed/',
+        'https://www.artificialintelligence-news.com/feed/',
+    ],
+    'noticias_economicas': [
+        'https://feeds.reuters.com/reuters/businessNews',
+        'https://feeds.cnbc.com/id/10000664/rss.xml',
+        'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml',
+        'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
+    ],
+    'cooperativismo': [
+        'https://www.elmostrador.cl/feed/',
+        'https://www.latercera.com/feed/',
+    ],
+    'cmf': [
+        'https://www.diariofinanciero.com/feed',
+        'https://www.emol.com/rss/economia.xml',
+    ],
+    'microsoft': [
+        'https://www.microsoft.com/en-us/research/feed/',
+        'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
+        'https://www.microsoft.com/en-us/security/blog/feed/',
     ],
 }
 
@@ -143,18 +177,13 @@ def fetch_rss_feed(url, timeout=5):
         return []
 
 
+# Mantener alias para compatibilidad con código antiguo
+fetch_feed = fetch_rss_feed
+
+
 def fetch_all_news():
-    """Fetch news: NewsAPI first, RSS fallback, then return what we have."""
-    all_news = {
-        'geopolitica': [],
-        'economia_mercados': [],
-        'chile_estrategico': [],
-        'tendencias': [],
-        'cooperativismo': [],
-        'cmf': [],
-        'noticias_economicas': [],
-        'ia': [],
-    }
+    """Fetch news: NewsAPI first, RSS fallback for categorías sin resultados."""
+    all_news = {key: [] for key in RSS_FEEDS}
 
     if NEWSAPI_KEY:
         print('🌐 Obteniendo noticias desde NewsAPI...')
@@ -166,20 +195,19 @@ def fetch_all_news():
         total = sum(len(v) for v in all_news.values())
         if total > 0:
             print(f'✅ NewsAPI: {total} noticias obtenidas\n')
-            return all_news
-        print('⚠️  NewsAPI sin resultados, intentando RSS...\n')
 
-    # RSS fallback
-    print('📡 Intentando RSS feeds...')
+    # RSS para categorías vacías (siempre se intenta Microsoft y demás)
+    print('📡 Complementando con RSS feeds...')
     for category, urls in RSS_FEEDS.items():
+        if all_news.get(category):
+            continue
         for url in urls:
             articles = fetch_rss_feed(url)
             if articles:
                 all_news[category].extend(articles[:4])
-        if all_news[category]:
-            print(f'   {category}: ✅ {len(all_news[category])} noticias')
-        else:
-            print(f'   {category}: ❌ sin conexión')
+                break
+        status = f'✅ {len(all_news[category])}' if all_news[category] else '❌ sin datos'
+        print(f'   {category}: {status}')
 
     return all_news
 
