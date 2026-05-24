@@ -1,22 +1,15 @@
 {
-  "fecha": "2026-05-24T09:10:30.861173",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-05-24T15:48:41.541444",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Cobre cotiza en USD 4.58/lb impulsado por demanda china y transición energética",
-      "seccion": "economia_global",
-      "score": 9,
+      "titulo": "Exportaciones chilenas suben 12% en primer cuatrimestre impulsadas por cobre y litio",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
-    },
-    {
-      "titulo": "Dólar observado cierra en $945 ante fortalecimiento global del peso",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.bcentral.cl"
     }
   ]
 }
