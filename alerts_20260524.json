@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-05-24T09:10:30.861173",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Cobre cotiza en USD 4.58/lb impulsado por demanda china y transición energética",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Dólar observado cierra en $945 ante fortalecimiento global del peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
+    }
+  ]
+}
