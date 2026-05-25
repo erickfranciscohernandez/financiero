@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-05-25T12:50:41.687102",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Exportaciones chilenas suben 12% en primer cuatrimestre impulsadas por cobre y litio",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Cobre cotiza en USD 4.58/lb impulsado por demanda china y transición energética",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    }
+  ]
+}
