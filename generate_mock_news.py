@@ -47,6 +47,42 @@ NEWS_TEMPLATES = {
             'source': 'Reuters',
             'link': 'https://www.reuters.com'
         },
+        {
+            'title': 'India y Pakistán firman acuerdo de cese al fuego bajo mediación de ONU y EE.UU.',
+            'summary': 'Tensión en la frontera de Cachemira cede tras semanas de enfrentamientos. Comunidad internacional celebra el acuerdo como alivio para estabilidad regional.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+        {
+            'title': 'G7 acuerda fondo de USD 50.000M para infraestructura en países en desarrollo como alternativa a BRICS',
+            'summary': 'Naciones industrializadas lanzan iniciativa conjunta para financiar proyectos de energía limpia, puertos y carreteras en África y Asia.',
+            'source': 'Bloomberg',
+            'link': 'https://www.bloomberg.com/politics'
+        },
+        {
+            'title': 'Taiwán refuerza defensa con nuevo escudo de misiles tras ejercicios militares chinos',
+            'summary': 'Gobierno de Taipéi anuncia compra de sistemas antimisiles Patriot PAC-3 a EE.UU. por USD 3.500M en respuesta a maniobras del Ejército Popular de Liberación.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': 'EE.UU.-China: tregua arancelaria de 90 días entra en fase de implementación técnica',
+            'summary': 'Equipos negociadores de Washington y Pekín acuerdan calendario de revisión de aranceles industriales. Reducción gradual afectará semiconductores, acero y productos agrícolas.',
+            'source': 'Bloomberg',
+            'link': 'https://www.bloomberg.com/politics'
+        },
+        {
+            'title': 'Cumbre G20 en Johannesburgo aborda deuda soberana de países emergentes y financiamiento verde',
+            'summary': 'Líderes del G20 discuten reestructuración coordinada de deudas para economías vulnerables y nuevas reglas de reporte climático para multilaterales.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+        {
+            'title': 'BRICS lanza moneda de reserva digital como alternativa al dólar para comercio entre miembros',
+            'summary': 'Nuevo instrumento financiero respaldado por canasta de divisas y commodities busca reducir dependencia del dólar en transacciones intrabloques.',
+            'source': 'The Economist',
+            'link': 'https://www.economist.com'
+        },
     ],
     'economia_global': [
         {
@@ -84,6 +120,42 @@ NEWS_TEMPLATES = {
             'summary': 'Exportaciones de China suben 6.1% interanual en abril, superando estimaciones y reduciendo temores de desaceleración.',
             'source': 'CNBC',
             'link': 'https://www.cnbc.com/asia-pacific'
+        },
+        {
+            'title': 'Dólar índice DXY cae a mínimos de dos años ante expectativas de recortes Fed en julio',
+            'summary': 'Debilidad del billete verde favorece commodities y emergentes. Oro supera USD 3.300/oz mientras cobre y litio refuerzan alzas.',
+            'source': 'Bloomberg',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': 'Banco Mundial eleva proyección de crecimiento para América Latina a 2.8% en 2026',
+            'summary': 'Mejora impulsada por mayores precios de materias primas y moderación de tasas en economías avanzadas. Chile y Perú lideran entre minero-exportadores.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/economics'
+        },
+        {
+            'title': 'Litio mantiene recuperación: carbonato supera USD 14.000/t ante nueva ola de demanda para baterías',
+            'summary': 'Aceleración de ventas de vehículos eléctricos en China y Europa reactiva demanda. SQM y Albemarle ajustan planes de producción al alza.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/business/energy'
+        },
+        {
+            'title': 'Fed pausa ciclo de tasas: mercados despejan 2 recortes posibles para segundo semestre 2026',
+            'summary': 'Actas del FOMC confirman postura de espera. Inflación PCE en 2.3% despeja camino para recortes en septiembre y diciembre.',
+            'source': 'CNBC',
+            'link': 'https://www.cnbc.com'
+        },
+        {
+            'title': 'Cobre alcanza USD 4.56/lb: déficit de oferta y demanda eléctrica global impulsan cotización',
+            'summary': 'Inventarios en LME caen a mínimos históricos mientras proyectos de redes eléctricas en India y EE.UU. elevan consumo estructural.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': 'Dólar índice DXY en mínimos de 18 meses: emergentes y commodities se benefician de debilidad del billete verde',
+            'summary': 'Expectativas de recorte Fed y déficit fiscal de EE.UU. presionan al dólar. Peso chileno, sol peruano y real brasileño registran apreciaciones significativas.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/economics'
         },
     ],
     'economia_chile': [
@@ -123,6 +195,42 @@ NEWS_TEMPLATES = {
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
+        {
+            'title': 'Gobierno anuncia plan de inversión pública de USD 5.400M para 2026-2027 en infraestructura y energía',
+            'summary': 'Cartera de proyectos contempla líneas de transmisión eléctrica, autopistas regionales y modernización de puertos. Concesiones privadas movilizarán recursos adicionales.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+        {
+            'title': 'Peso chileno se aprecia 3.2% en mayo apoyado por cobre y menor demanda de dólares',
+            'summary': 'Fortaleza del metal rojo y pausa Fed reducen presión sobre tipo de cambio. Empresas exportadoras y BCCh monitorean nivel de $930.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': 'Senado aprueba en general reforma tributaria que crea impuesto a ganancias de capital del 10%',
+            'summary': 'Legislación avanza a segundo trámite. Medida impactará ganancias en bolsa, bienes raíces y fondos de inversión. Mercado reacciona con cautela.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': 'Reforma de pensiones Chile: Senado aprueba artículo sobre fondo colectivo con 21 votos a favor',
+            'summary': 'Votación histórica en Cámara Alta consolida el sistema mixto de pensiones. AFP deberán ceder 3% de cotización a fondo solidario intergeneracional.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com/politica'
+        },
+        {
+            'title': 'Codelco inicia obras de modernización El Teniente: mayor proyecto de cobre subterráneo del mundo',
+            'summary': 'Inversión de USD 2.800M permitirá extender vida útil hasta 2060 con producción de 400.000 t/año. Primer blast marcó inicio de construcción.',
+            'source': 'EMOL',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': 'IPSA supera los 7.250 puntos: sector minero y energético lideran alza en bolsa local',
+            'summary': 'Índice bursátil chileno acumula retorno de 8.3% en 2026. Analistas proyectan rango 7.100-7.400 para el año ante precios del cobre y datos macro positivos.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
     ],
     'tendencias_tech': [
         {
@@ -148,6 +256,42 @@ NEWS_TEMPLATES = {
             'summary': 'GPU H100 y Blackwell Architecture consolidan dominio en infraestructura de entrenamiento de modelos de lenguaje.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/technology'
+        },
+        {
+            'title': 'Meta lanza Ray-Ban 3 con pantalla holográfica y asistente de IA integrado',
+            'summary': 'Tercera generación de gafas inteligentes incluye proyección AR de baja latencia y reconocimiento facial en tiempo real. Precio: USD 499.',
+            'source': 'The Verge',
+            'link': 'https://www.theverge.com'
+        },
+        {
+            'title': 'AMD lanza GPU Instinct MI400 para centros de datos desafiando dominio de Nvidia en IA',
+            'summary': 'Nuevo acelerador ofrece 40% más TFLOPS por dólar versus H200. Microsoft Azure y Google Cloud anuncian integración inmediata.',
+            'source': 'TechCrunch',
+            'link': 'https://techcrunch.com'
+        },
+        {
+            'title': 'Ciberseguridad: brecha en proveedor cloud expone datos de 200 millones de usuarios en Europa',
+            'summary': 'Incidente activa protocolos GDPR con notificaciones obligatorias. Reguladores europeos abren investigación y multas podrían superar EUR 800M.',
+            'source': 'MIT Technology Review',
+            'link': 'https://www.technologyreview.com'
+        },
+        {
+            'title': 'Apple Intelligence llega a iOS 19: Siri reescrito con LLM propio y procesamiento 100% on-device',
+            'summary': 'Nueva generación de IA de Apple integra razonamiento contextual sin enviar datos a la nube. Compatible con iPhone 16 y superiores desde junio 2026.',
+            'source': 'The Verge',
+            'link': 'https://www.theverge.com'
+        },
+        {
+            'title': 'SpaceX Starship completa primer vuelo comercial: lleva satélites de NASA y ESA a órbita polar',
+            'summary': 'Cohete más poderoso del mundo logra misión operacional tras cuatro años de pruebas. Abre nueva era de lanzamientos pesados a bajo costo.',
+            'source': 'TechCrunch',
+            'link': 'https://techcrunch.com'
+        },
+        {
+            'title': 'Chips neuromórficos de Intel Loihi 3 reducen consumo energético de IA en 95%',
+            'summary': 'Nueva arquitectura inspirada en el cerebro humano permite inferencia de modelos LLM en dispositivos edge sin GPU. Aplicaciones en robótica, IoT y salud.',
+            'source': 'MIT Technology Review',
+            'link': 'https://www.technologyreview.com'
         },
     ],
     'cooperativismo': [
@@ -181,6 +325,36 @@ NEWS_TEMPLATES = {
             'source': 'BID',
             'link': 'https://www.iadb.org'
         },
+        {
+            'title': 'Coopeuch integra IA generativa en atención al socio con reducción del 60% en tiempos de consulta',
+            'summary': 'Asistente virtual procesa solicitudes de crédito, ahorro y seguros en lenguaje natural. Proyecto piloto cubre 150.000 socios en fase 1.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': 'CONFECOOP lanza programa de educación financiera cooperativa para jóvenes de 18-30 años',
+            'summary': 'Iniciativa busca incorporar 200.000 nuevos socios jóvenes al sistema cooperativo en dos años con talleres presenciales y plataforma digital.',
+            'source': 'Cooperativas.cl',
+            'link': 'https://www.cooperativas.cl'
+        },
+        {
+            'title': 'Informe BID: cooperativas latinoamericanas gestionan activos por USD 380.000M con crecimiento de 11% anual',
+            'summary': 'Sector muestra resiliencia superior a banca tradicional en ciclos de estrés financiero. Chile destaca por solidez de Coopeuch y cobertura regional de cooperativas agrícolas.',
+            'source': 'BID',
+            'link': 'https://www.iadb.org'
+        },
+        {
+            'title': 'Coopeuch lanza app renovada con pagos QR, inversiones y crédito digital integrados',
+            'summary': 'Nueva plataforma móvil concentra todos los productos financieros cooperativos en una sola app. Más de 500.000 socios ya activos en versión beta.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': 'ACI Américas: cooperativas de ahorro latinoamericanas crecen 14% en socios activos durante 2025',
+            'summary': 'Incorporación de jóvenes de 18-35 años lidera expansión. Chile, Colombia y México reportan mayor dinamismo en apertura de cuentas cooperativas digitales.',
+            'source': 'ACI Américas',
+            'link': 'https://www.aciamericas.coop'
+        },
     ],
     'cmf': [
         {
@@ -213,6 +387,36 @@ NEWS_TEMPLATES = {
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
+        {
+            'title': 'CMF lanza sandbox regulatorio para startups fintech con hasta 18 meses de operación supervisada',
+            'summary': 'Marco experimental permite probar productos de crédito digital, pagos y gestión de inversiones con requisitos de capital reducidos y monitoreo mensual.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': 'CMF exige a bancos y cooperativas divulgación de riesgos climáticos en reportes anuales desde 2027',
+            'summary': 'Nueva norma alinea Chile con estándares TCFD y ISSB. Instituciones deben revelar exposición a riesgos físicos y de transición energética.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': 'CMF autoriza primer fondo de inversión de activos tokenizados en blockchain pública en Chile',
+            'summary': 'Administradora AGF emite participaciones tokenizadas bajo normativa aprobada en marzo. Instrumento permite fraccionar inversión en activos reales desde UF 10.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': 'CMF publica consulta pública sobre regulación de stablecoins y criptoactivos en Chile',
+            'summary': 'Regulador abre período de 60 días para recibir observaciones sobre marco legal para emisores de monedas estables y exchanges de criptoactivos.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': 'CMF amplía requerimientos de capital para cooperativas con activos superiores a UF 1.000.000',
+            'summary': 'Norma de Basilea adaptada exige índice de adecuación de capital mínimo de 10%. Cooperativas tienen plazo hasta diciembre 2026 para adecuarse.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
     ],
     'noticias_economicas_actuales': [
         {
@@ -242,6 +446,42 @@ NEWS_TEMPLATES = {
         {
             'title': 'Confianza empresarial ICARE sube 4 puntos y alcanza nivel neutral en mayo',
             'summary': 'Encuesta mensual refleja menor incertidumbre regulatoria y mejores perspectivas de demanda interna para el segundo semestre.',
+            'source': 'ICARE',
+            'link': 'https://www.icare.cl'
+        },
+        {
+            'title': 'Ventas del comercio minorista suben 4.2% en abril impulsadas por consumo de servicios y electrónica',
+            'summary': 'INE destaca recuperación del gasto de hogares tras período de contracción. Tasas de interés más bajas dinamizan crédito de consumo.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': 'Inversión extranjera directa en Chile supera USD 7.200M en primer cuatrimestre 2026',
+            'summary': 'Cifra representa alza de 18% respecto a igual período 2025. Sectores minería, energías renovables y tecnología concentran el 74% de los flujos.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': 'Banco Central proyecta crecimiento del PIB chileno entre 2.5% y 3.5% para 2026',
+            'summary': 'IPoM de mayo eleva rango por mayor dinamismo de inversión privada y consumo. Riesgo principal sigue siendo deterioro de condiciones externas.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': 'Encuesta de Expectativas Económicas BCCh: mercado anticipa dólar en $935 y TPM en 4.75% a fin de año',
+            'summary': 'Consenso de analistas espera apreciación adicional del peso y dos recortes de 25 pb en TPM en el segundo semestre ante convergencia de inflación.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': 'INE publica IPP de abril: precios al productor suben 0.1% mensual, acumulan 2.9% en 12 meses',
+            'summary': 'Moderación en precios mayoristas anticipa presiones inflacionarias contenidas en cadena de precios. Sectores agrícola e industrial registran menores alzas.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': 'ICARE: índice de confianza empresarial alcanza zona de expansión por primera vez desde 2024',
+            'summary': 'Encuesta de mayo muestra 55.3 puntos, sobre umbral de 50. Ejecutivos destacan menor incertidumbre regulatoria y mejora de condiciones de crédito.',
             'source': 'ICARE',
             'link': 'https://www.icare.cl'
         },
@@ -280,6 +520,42 @@ NEWS_TEMPLATES = {
         {
             'title': 'Startup chilena Xepelin lanza motor de IA para evaluación de crédito Pyme en tiempo real',
             'summary': 'Fintech usa modelos de lenguaje para analizar flujo de caja, historial tributario y comportamiento de pagos en menos de 2 minutos.',
+            'source': 'The Rundown AI',
+            'link': 'https://therundown.ai'
+        },
+        {
+            'title': 'Google lanza Gemini Ultra 2 con ventana de contexto de 2 millones de tokens y razonamiento multimodal',
+            'summary': 'Nuevo modelo lidera benchmarks de codificación y matemáticas. Integración nativa con Google Workspace permite analizar documentos empresariales completos.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+        {
+            'title': 'Microsoft lanza Copilot Wave 3 con agentes autónomos para finanzas, RRHH y cadena de suministro',
+            'summary': 'Tercera ola del asistente IA empresarial incorpora orquestación multi-agente. Demos muestran cierre automático de libros contables y gestión de órdenes de compra.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
+        },
+        {
+            'title': 'AI Act UE: primeras auditorías a sistemas de IA de alto riesgo revelan brechas de compliance en banca',
+            'summary': 'Reguladores europeos identifican 34 sistemas de scoring crediticio sin documentación técnica suficiente. Instituciones tienen 6 meses para remediar o suspender uso.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+        {
+            'title': 'Anthropic Claude 4: nuevo modelo supera GPT-5 en benchmarks de razonamiento legal y financiero',
+            'summary': 'Evaluaciones independientes muestran ventaja en análisis de contratos, modelado financiero y generación de código seguro. API disponible para empresas desde junio.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
+        },
+        {
+            'title': 'OpenAI GPT-5 integra búsqueda web en tiempo real y memoria persistente cross-session',
+            'summary': 'Nuevo modelo accede a información actualizada sin fechas de corte y recuerda contexto entre conversaciones. Precios API caen 40% respecto a GPT-4.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+        {
+            'title': 'Google Gemini Ultra 2 lidera benchmarks multimodales con ventana de 2M tokens y análisis de video',
+            'summary': 'Modelo puede analizar contratos completos, estados financieros y presentaciones en minutos. Integración nativa en Google Workspace potencia productividad empresarial.',
             'source': 'The Rundown AI',
             'link': 'https://therundown.ai'
         },
