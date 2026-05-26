@@ -305,7 +305,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         --rule: #e0e0e0;
         --cream: #f8f8f4;
         --steel: #455;
-        --accent: #c7254e;
+        --accent: #8b1a1a;
         --paper: #fff;
       }}
 
@@ -439,8 +439,8 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
 
       /* SCORE BADGE */
       .score-badge {{
-        background: linear-gradient(135deg, #ffeb3b 0%, #ffc107 100%);
-        color: #333;
+        background: #555;
+        color: #fff;
         font-weight: 700;
         font-size: 11px;
         padding: 4px 8px;
@@ -501,8 +501,8 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
       }}
 
       .news-item:hover {{
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        transform: translateX(4px);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border-left: 3px solid var(--accent);
       }}
 
       .news-item-title {{
@@ -618,7 +618,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">💱</span>
             Economía y Mercados
         </h2>
-        <span class="section-subtitle">Bloomberg · Reuters · Financial Times · CNBC · The Economist</span>
+        <span class="section-subtitle">Bloomberg · Reuters · WSJ · The Economist</span>
         {econ_html}
     </div>
 
@@ -628,7 +628,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">📊</span>
             Noticias Económicas Actuales
         </h2>
-        <span class="section-subtitle">Indicadores clave · Análisis actualizado</span>
+        <span class="section-subtitle">INE · BCCh · ICARE · Banco Mundial</span>
         {econ_actuales_html}
     </div>
 
@@ -638,7 +638,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">🤖</span>
             Inteligencia Artificial
         </h2>
-        <span class="section-subtitle">TLDR AI · Ben's Bites · The Rundown AI</span>
+        <span class="section-subtitle">OpenAI · Anthropic · Google DeepMind · TLDR AI</span>
         {ia_html}
     </div>
 
@@ -648,7 +648,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">🌍</span>
             Geopolítica
         </h2>
-        <span class="section-subtitle">China · EE.UU. · OPEP+ · Medio Oriente</span>
+        <span class="section-subtitle">Reuters · FT · Bloomberg · The Economist</span>
         {geo_html}
     </div>
 
@@ -658,7 +658,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">🇨🇱</span>
             Chile Estratégico
         </h2>
-        <span class="section-subtitle">Gobierno · Minería · Energía</span>
+        <span class="section-subtitle">Codelco · BCCh · CMF · Gobierno</span>
         {chile_html}
     </div>
 
@@ -668,7 +668,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">🤝</span>
             Cooperativismo
         </h2>
-        <span class="section-subtitle">Movimiento cooperativo · Organización</span>
+        <span class="section-subtitle">CONFECOOP · Coopeuch · ACI Américas · BID</span>
         {coop_html}
     </div>
 
@@ -678,7 +678,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">📋</span>
             CMF
         </h2>
-        <span class="section-subtitle">Comisión del Mercado Financiero</span>
+        <span class="section-subtitle">Regulación · Fintech · Banca · Mercado de Capitales</span>
         {cmf_html}
     </div>
 
@@ -688,7 +688,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">💻</span>
             Tendencias Tech
         </h2>
-        <span class="section-subtitle">Innovación · Startups · Cloud</span>
+        <span class="section-subtitle">TechCrunch · The Verge · MIT Tech Review</span>
         {tendencias_html}
     </div>
 
@@ -698,7 +698,7 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
             <span class="section-emoji">🪟</span>
             Microsoft News
         </h2>
-        <span class="section-subtitle">Microsoft Research · Microsoft 365 · Seguridad · IA</span>
+        <span class="section-subtitle">Microsoft Research · Copilot · Azure · Security</span>
         {microsoft_html}
     </div>
 
