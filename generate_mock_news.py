@@ -8,228 +8,228 @@ import json
 from datetime import datetime, timedelta
 import random
 
-# Plantillas de noticias por categoría — actualizadas mayo 2026
+# Plantillas de noticias por categoría — actualizadas junio 2026 (v2)
 NEWS_TEMPLATES = {
     'geopolitica': [
         {
-            'title': 'EE.UU. y China retoman negociaciones comerciales tras tregua arancelaria de 90 días',
-            'summary': 'Washington y Pekín acuerdan mesa de trabajo técnica para revisar aranceles industriales. Mercados reaccionan positivamente ante señales de distensión.',
+            'title': 'EE.UU. y China acuerdan cumbre presidencial para formalizar acuerdo comercial fase 2',
+            'summary': 'Trump y Xi acuerdan reunirse en Ginebra en julio para sellar segunda fase del acuerdo comercial. Aranceles industriales bajarían del 25% al 12% en sectores clave.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com/world'
         },
         {
-            'title': 'OTAN refuerza presencia en Europa del Este con nuevas brigadas multinacionales',
-            'summary': 'Alianza despliega 20.000 efectivos adicionales en Polonia y los países bálticos en respuesta a tensiones persistentes con Rusia.',
+            'title': 'Ucrania y Rusia acuerdan corredor humanitario permanente bajo supervisión de Cruz Roja',
+            'summary': 'Negociación mediada por Turquía logra primer acuerdo operacional desde inicio del conflicto. Permite evacuación civil y envío de ayuda a zonas en disputa.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/world'
         },
         {
-            'title': 'Arabia Saudita y Emiratos Árabes negocian acuerdo de normalización con Israel bajo mediación de EE.UU.',
-            'summary': 'Diplomacia activa en Medio Oriente podría reconfigurar alianzas regionales y estabilizar precios del petróleo.',
+            'title': 'OPEP+ extiende recortes de producción hasta diciembre de 2026 para defender precio del crudo',
+            'summary': 'Arabia Saudita liderará reducción adicional de 500.000 bpd. Mercado petrolero proyecta Brent entre USD 72-80 para el segundo semestre.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/news'
         },
         {
-            'title': 'BRICS amplía membresía con incorporación de Indonesia y Turquía',
-            'summary': 'Bloque suma peso económico y demográfico significativo, consolidando alternativa al orden financiero occidental.',
+            'title': 'Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual',
+            'summary': 'Medida es la más amplia adoptada por Bruselas contra Pekín. China amenaza con represalias arancelarias sobre automóviles y vinos europeos.',
             'source': 'The Economist',
             'link': 'https://www.economist.com'
         },
         {
-            'title': 'Trump impone nuevos aranceles del 25% a acero y aluminio europeos',
-            'summary': 'Medida proteccionista reactiva tensiones transatlánticas y genera alertas en industria manufacturera global.',
+            'title': 'Trump firma orden ejecutiva que restringe inversión china en semiconductores y energía nuclear de EE.UU.',
+            'summary': 'Decreto refuerza revisión del CFIUS y suspende acuerdos pendientes por USD 12.000M. Sector tecnológico global ajusta cadenas de suministro.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/politics'
         },
         {
-            'title': 'ONU alerta sobre crisis humanitaria en Sudán con 10 millones de desplazados',
-            'summary': 'Conflicto interno en el país africano genera presión migratoria y riesgo de inestabilidad regional.',
+            'title': 'ONU adopta resolución histórica sobre gobernanza global de inteligencia artificial',
+            'summary': 'Consejo de Seguridad aprueba por primera vez marco vinculante para uso de IA en sistemas de armas. 142 países firman compromiso de auditoría internacional.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com'
         },
         {
-            'title': 'India y Pakistán firman acuerdo de cese al fuego bajo mediación de ONU y EE.UU.',
-            'summary': 'Tensión en la frontera de Cachemira cede tras semanas de enfrentamientos. Comunidad internacional celebra el acuerdo como alivio para estabilidad regional.',
+            'title': 'Irán firma acuerdo nuclear con potencias occidentales que limita enriquecimiento de uranio a 20%',
+            'summary': 'Diplomacia de tres años culmina en Viena con reducción gradual de sanciones a cambio de inspecciones permanentes del OIEA. Israel mantiene reservas.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/world'
         },
         {
-            'title': 'G7 acuerda fondo de USD 50.000M para infraestructura en países en desarrollo como alternativa a BRICS',
-            'summary': 'Naciones industrializadas lanzan iniciativa conjunta para financiar proyectos de energía limpia, puertos y carreteras en África y Asia.',
+            'title': 'Cumbre ASEAN en Bangkok aprueba zona de libre comercio digital con reglas de datos transfronterizos',
+            'summary': 'Bloque de 10 países del sudeste asiático establece primer marco regional para flujos de datos comerciales. Cubre USD 340.000M en comercio digital.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/politics'
         },
         {
-            'title': 'Taiwán refuerza defensa con nuevo escudo de misiles tras ejercicios militares chinos',
-            'summary': 'Gobierno de Taipéi anuncia compra de sistemas antimisiles Patriot PAC-3 a EE.UU. por USD 3.500M en respuesta a maniobras del Ejército Popular de Liberación.',
+            'title': 'Corea del Norte lanza misil de alcance intercontinental que sobrevuela Japón',
+            'summary': 'Misil recorre 4.800 km antes de caer en el Océano Pacífico. EE.UU., Japón y Corea del Sur convocan consultas de emergencia y refuerzan ejercicios conjuntos.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com/world'
         },
         {
-            'title': 'EE.UU.-China: tregua arancelaria de 90 días entra en fase de implementación técnica',
-            'summary': 'Equipos negociadores de Washington y Pekín acuerdan calendario de revisión de aranceles industriales. Reducción gradual afectará semiconductores, acero y productos agrícolas.',
+            'title': 'Rusia congela activos de empresas europeas en represalia por nuevas sanciones del G7',
+            'summary': 'Moscú retiene propiedades y participaciones de 180 compañías de Francia, Alemania y Polonia. Medida afecta USD 6.400M en inversiones previas al conflicto.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/politics'
         },
         {
-            'title': 'Cumbre G20 en Johannesburgo aborda deuda soberana de países emergentes y financiamiento verde',
-            'summary': 'Líderes del G20 discuten reestructuración coordinada de deudas para economías vulnerables y nuevas reglas de reporte climático para multilaterales.',
+            'title': 'Africa lanza moneda de reserva panafricana AFRO respaldada por oro y commodities',
+            'summary': 'Unión Africana aprueba instrumento monetario regional en cumbre de Addis Abeba. Fase piloto cubre 12 países y USD 80.000M en intercambios comerciales intrarregionales.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/world'
         },
         {
-            'title': 'BRICS lanza moneda de reserva digital como alternativa al dólar para comercio entre miembros',
-            'summary': 'Nuevo instrumento financiero respaldado por canasta de divisas y commodities busca reducir dependencia del dólar en transacciones intrabloques.',
+            'title': 'G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales',
+            'summary': 'Plan moviliza USD 70.000M en diez años para financiar minas de litio, cobalto y tierras raras en países aliados. Chile, Australia y Canadá son socios clave.',
             'source': 'The Economist',
             'link': 'https://www.economist.com'
         },
     ],
     'economia_global': [
         {
-            'title': 'Cobre cotiza en USD 4.58/lb impulsado por demanda china y transición energética',
-            'summary': 'Metal rojo alcanza máximos del año respaldado por compras de China y aceleración de proyectos de energías renovables globales.',
+            'title': 'Cobre alcanza récord de USD 4.92/lb impulsado por déficit de oferta y demanda de transición energética',
+            'summary': 'LME registra inventarios más bajos desde 2005. Analistas proyectan precio promedio de USD 5.10/lb para 2027 ante persistente brecha entre oferta y demanda estructural.',
             'source': 'Bloomberg Commodities',
             'link': 'https://www.bloomberg.com/commodities'
         },
         {
-            'title': 'Fed mantiene tasa en 4.25% y señala dos recortes posibles para segundo semestre',
-            'summary': 'Jerome Powell indica que inflación converge al 2% pero el mercado laboral sigue robusto. Próxima reunión en julio será clave.',
+            'title': 'Fed anticipa primer recorte de tasas para septiembre con inflación PCE convergiendo al 2.1%',
+            'summary': 'Actas del FOMC revelan consenso creciente para iniciar ciclo de relajación. Mercados asignan 78% de probabilidad a recorte de 25 pb en septiembre.',
             'source': 'CNBC',
             'link': 'https://www.cnbc.com'
         },
         {
-            'title': 'FMI revisa al alza crecimiento global a 3.2% para 2026 liderado por Asia',
-            'summary': 'India y Vietnam lideran expansión en economías emergentes mientras Europa enfrenta estancamiento productivo.',
+            'title': 'FMI eleva proyección global a 3.4% para 2026: mayor optimismo en 4 años',
+            'summary': 'India crece 7.1%, Vietnam 6.8% y EE.UU. 2.6%. FMI advierte que tensiones comerciales y deuda soberana siguen siendo riesgos principales.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/economics'
         },
         {
-            'title': 'Petróleo Brent cae a USD 71 por exceso de oferta de OPEP+ y menor demanda europea',
-            'summary': 'Cártel petrolero enfrenta tensiones internas tras decisión de Arabia Saudita de mantener cuotas de producción elevadas.',
+            'title': 'Petróleo Brent repunta a USD 79 tras extensión de recortes OPEP+ hasta diciembre 2026',
+            'summary': 'Arabia Saudita lidera restricción adicional de 500.000 bpd. Posición de inventarios globales cae a mínimos de tres años, reforzando perspectivas alcistas.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com/business/energy'
         },
         {
-            'title': 'BCE reduce tasas 25 puntos base ante señales de desinflación en zona euro',
-            'summary': 'Christine Lagarde anticipa ciclo gradual de relajación monetaria. Euro se deprecia frente al dólar.',
+            'title': 'BCE recorta tasas por tercera vez en 2026, la tasa de depósito queda en 2.25%',
+            'summary': 'Christine Lagarde confirma normalización monetaria gradual. Euro cede frente al dólar pero Lagarde descarta recortes adicionales antes de septiembre.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/markets'
         },
         {
-            'title': 'Bolsas asiáticas cierran en alza tras dato de exportaciones chinas mejor a lo esperado',
-            'summary': 'Exportaciones de China suben 6.1% interanual en abril, superando estimaciones y reduciendo temores de desaceleración.',
+            'title': 'S&P 500 supera los 6.200 puntos: sector tecnológico y energético lideran rally',
+            'summary': 'Bolsas de EE.UU. alcanzan nuevos máximos históricos impulsadas por resultados corporativos mejor a lo esperado y expectativas de recorte de la Fed en septiembre.',
             'source': 'CNBC',
-            'link': 'https://www.cnbc.com/asia-pacific'
+            'link': 'https://www.cnbc.com/markets'
         },
         {
-            'title': 'Dólar índice DXY cae a mínimos de dos años ante expectativas de recortes Fed en julio',
-            'summary': 'Debilidad del billete verde favorece commodities y emergentes. Oro supera USD 3.300/oz mientras cobre y litio refuerzan alzas.',
+            'title': 'Oro supera USD 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas',
+            'summary': 'China, India y Turquía aumentan reservas de oro al ritmo más alto en 55 años. Analistas proyectan precio hacia USD 3.700/oz si Fed recorta en septiembre.',
             'source': 'Bloomberg',
             'link': 'https://www.bloomberg.com/markets'
         },
         {
-            'title': 'Banco Mundial eleva proyección de crecimiento para América Latina a 2.8% en 2026',
-            'summary': 'Mejora impulsada por mayores precios de materias primas y moderación de tasas en economías avanzadas. Chile y Perú lideran entre minero-exportadores.',
+            'title': 'Banco Mundial: América Latina crecerá 3.1% en 2026, la mejor performance desde 2011',
+            'summary': 'Impulso de commodities, inversión extranjera y consumo privado elevan perspectivas regionales. Chile, Brasil y Perú lideran entre exportadores de materias primas.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/economics'
         },
         {
-            'title': 'Litio mantiene recuperación: carbonato supera USD 14.000/t ante nueva ola de demanda para baterías',
-            'summary': 'Aceleración de ventas de vehículos eléctricos en China y Europa reactiva demanda. SQM y Albemarle ajustan planes de producción al alza.',
+            'title': 'Litio carbonato supera USD 16.500/t: boom de vehículos eléctricos relanza ciclo alcista',
+            'summary': 'China reporta ventas récord de 1.8M de vehículos eléctricos en mayo. SQM eleva guía de producción y proyecta ingresos de USD 3.200M para 2026.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com/business/energy'
         },
         {
-            'title': 'Fed pausa ciclo de tasas: mercados despejan 2 recortes posibles para segundo semestre 2026',
-            'summary': 'Actas del FOMC confirman postura de espera. Inflación PCE en 2.3% despeja camino para recortes en septiembre y diciembre.',
+            'title': 'Déficit fiscal de EE.UU. alcanza USD 1.8 billones en 2026: deuda supera el 130% del PIB',
+            'summary': 'CBO advierte que la trayectoria fiscal es insostenible sin ajuste. Rendimiento del bono T-10 trepa a 4.6%, presionando al alza el costo del crédito global.',
             'source': 'CNBC',
             'link': 'https://www.cnbc.com'
         },
         {
-            'title': 'Cobre alcanza USD 4.56/lb: déficit de oferta y demanda eléctrica global impulsan cotización',
-            'summary': 'Inventarios en LME caen a mínimos históricos mientras proyectos de redes eléctricas en India y EE.UU. elevan consumo estructural.',
+            'title': 'China lanza plan fiscal de USD 600.000M para estimular consumo interno y reactivar sector inmobiliario',
+            'summary': 'Beijing inyecta recursos en subsidios al consumo, infraestructura urbana y rescate de desarrolladores. Analistas estiman impulso de 0.8 pp al PIB en 2026.',
             'source': 'Bloomberg Commodities',
-            'link': 'https://www.bloomberg.com/commodities'
+            'link': 'https://www.bloomberg.com/markets'
         },
         {
-            'title': 'Dólar índice DXY en mínimos de 18 meses: emergentes y commodities se benefician de debilidad del billete verde',
-            'summary': 'Expectativas de recorte Fed y déficit fiscal de EE.UU. presionan al dólar. Peso chileno, sol peruano y real brasileño registran apreciaciones significativas.',
+            'title': 'Banco de Japón sube tasa de interés a 0.75%, mayor nivel desde 2008, ante presiones inflacionarias',
+            'summary': 'BoJ confirma normalización monetaria gradual. Yen se aprecia frente al dólar por primera vez en tres años. Exportadores japoneses ajustan coberturas cambiarias.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/economics'
         },
     ],
     'economia_chile': [
         {
-            'title': 'BCCh mantiene TPM en 5.0% y proyecta recorte en reunión de julio',
-            'summary': 'Banco Central evalúa que inflación se aproxima a meta del 3%. Mercado anticipa dos recortes adicionales en 2026.',
+            'title': 'BCCh recorta TPM a 4.75% en señal de inicio de nuevo ciclo de relajación monetaria',
+            'summary': 'Banco Central reduce tasa por primera vez desde 2024 ante convergencia de inflación al 3% y crecimiento sostenido. Próximo recorte proyectado para agosto.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Dólar observado cierra en $945 ante fortalecimiento global del peso',
-            'summary': 'Tipo de cambio retrocede impulsado por alza del cobre y señales de Fed. Exportadores ajustan coberturas cambiarias.',
+            'title': 'Dólar cae a $928: máximo histórico de cobre y pausa Fed aprecian el peso chileno',
+            'summary': 'Tipo de cambio alcanza mínimo en 18 meses. BCCh monitorea posible intervención si tendencia persiste. Exportadores incrementan liquidaciones de divisas.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Codelco anuncia inversión de USD 2.800M para modernizar división El Teniente',
-            'summary': 'Proyecto aumentará producción en 100.000 toneladas anuales y reducirá emisiones de carbono un 30% al 2030.',
+            'title': 'Codelco supera producción trimestral: 430.000 toneladas en Q1 2026, récord en seis años',
+            'summary': 'Corporación estatal eleva guía anual a 1.65 millones de toneladas. División El Teniente y Chuquicamata lideran incremento. Resultado fortalece posición fiscal.',
             'source': 'EMOL',
             'link': 'https://www.emol.com'
         },
         {
-            'title': 'IPSA sube 1.8% y supera los 7.200 puntos en mejor sesión del año',
-            'summary': 'Bolsa local lidera ganancias en Latinoamérica impulsada por sector minero y retail ante datos macro favorables.',
+            'title': 'IPSA alcanza récord histórico de 7.480 puntos: minería, retail y banca lideran alza',
+            'summary': 'Bolsa de Santiago registra mejor semestre desde 2010. Flujos extranjeros ingresan USD 1.200M. Analistas elevan proyección al rango 7.500-7.800 para el año.',
             'source': 'La Tercera',
             'link': 'https://www.latercera.com'
         },
         {
-            'title': 'Reforma de pensiones avanza en comisión del Senado con acuerdo sobre reparto',
-            'summary': 'Legisladores aprueban artículo clave sobre fondo colectivo solidario. Sistema mixto podría quedar aprobado antes de agosto.',
+            'title': 'Ley de pensiones promulgada: sistema mixto con 3% a fondo solidario entrará en vigencia en enero 2027',
+            'summary': 'Presidente Boric promulga reforma histórica tras tres años de tramitación. Nuevas pensiones promediarán CLP 320.000 adicionales según proyecciones del Ministerio.',
             'source': 'La Tercera',
             'link': 'https://www.latercera.com/politica'
         },
         {
-            'title': 'IPC de abril anota 0.2% mensual y acumula 3.8% en doce meses',
-            'summary': 'Inflación continúa tendencia bajista según INE. Alimentos y transporte explican la mayor parte del alza mensual.',
+            'title': 'IPC de mayo sube apenas 0.1% mensual y acumula 3.4% anual, mínimo en dos años',
+            'summary': 'INE confirma desaceleración inflacionaria. Caída en precios de combustibles y alimentos frescos modera el indicador. BCCh tiene margen para nuevos recortes.',
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'Gobierno anuncia plan de inversión pública de USD 5.400M para 2026-2027 en infraestructura y energía',
-            'summary': 'Cartera de proyectos contempla líneas de transmisión eléctrica, autopistas regionales y modernización de puertos. Concesiones privadas movilizarán recursos adicionales.',
+            'title': 'Gobierno lanza Ley de Datos Personales y activa regulación de IA en el sector financiero',
+            'summary': 'Legislación moderniza marco de privacidad y establece primera normativa nacional para sistemas algorítmicos de crédito y seguros. Entidades tienen 18 meses para adecuarse.',
             'source': 'La Tercera',
             'link': 'https://www.latercera.com'
         },
         {
-            'title': 'Peso chileno se aprecia 3.2% en mayo apoyado por cobre y menor demanda de dólares',
-            'summary': 'Fortaleza del metal rojo y pausa Fed reducen presión sobre tipo de cambio. Empresas exportadoras y BCCh monitorean nivel de $930.',
+            'title': 'SQM eleva producción de litio a 220.000 toneladas anuales con nueva planta en el Salar de Atacama',
+            'summary': 'Compañía inaugura instalación que eleva capacidad en 40%. Acuerdo con el Estado asegura royalty creciente vinculado al precio del carbonato de litio.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Senado aprueba en general reforma tributaria que crea impuesto a ganancias de capital del 10%',
-            'summary': 'Legislación avanza a segundo trámite. Medida impactará ganancias en bolsa, bienes raíces y fondos de inversión. Mercado reacciona con cautela.',
+            'title': 'PIB chileno crece 3.8% en primer trimestre 2026, el mejor dato desde 2021',
+            'summary': 'Banco Central confirma expansión impulsada por minería, construcción y servicios. Consumo privado sube 4.1% interanual apoyado por menor inflación y empleo estable.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': 'Ministerio de Hacienda proyecta superávit fiscal de 0.4% del PIB para 2026 gracias a cobre y litio',
+            'summary': 'Mejora en balance estructural permite financiar Plan de Inversión en Infraestructura y mantener holgura para eventualidades macroeconómicas.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Reforma de pensiones Chile: Senado aprueba artículo sobre fondo colectivo con 21 votos a favor',
-            'summary': 'Votación histórica en Cámara Alta consolida el sistema mixto de pensiones. AFP deberán ceder 3% de cotización a fondo solidario intergeneracional.',
-            'source': 'La Tercera',
-            'link': 'https://www.latercera.com/politica'
-        },
-        {
-            'title': 'Codelco inicia obras de modernización El Teniente: mayor proyecto de cobre subterráneo del mundo',
-            'summary': 'Inversión de USD 2.800M permitirá extender vida útil hasta 2060 con producción de 400.000 t/año. Primer blast marcó inicio de construcción.',
+            'title': 'Aeropuerto de Santiago inaugura terminal ampliada con capacidad para 30 millones de pasajeros anuales',
+            'summary': 'Concesionaria Nuevo Pudahuel entrega obra que duplica la superficie actual. Inversión de USD 920M mejora conectividad y posiciona al país como hub regional.',
             'source': 'EMOL',
             'link': 'https://www.emol.com'
         },
         {
-            'title': 'IPSA supera los 7.250 puntos: sector minero y energético lideran alza en bolsa local',
-            'summary': 'Índice bursátil chileno acumula retorno de 8.3% en 2026. Analistas proyectan rango 7.100-7.400 para el año ante precios del cobre y datos macro positivos.',
-            'source': 'Diario Financiero',
-            'link': 'https://www.df.cl'
+            'title': 'Tasa de desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato en cuatro años',
+            'summary': 'INE registra 180.000 nuevos empleos formales. Sector servicios, construcción y comercio lideran creación de puestos. Brecha de género en empleo cae al 10.3%.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
         },
     ],
     'tendencias_tech': [
@@ -296,192 +296,192 @@ NEWS_TEMPLATES = {
     ],
     'cooperativismo': [
         {
-            'title': 'Cooperativas de ahorro chilenas registran crecimiento de 14% en colocaciones durante primer trimestre 2026',
-            'summary': 'Sector cooperativo gana participación de mercado frente a banca tradicional. CONFECOOP proyecta cierre de año con activos por USD 8.500M.',
+            'title': 'Coopeuch supera 1 millón de socios activos: primera cooperativa de ahorro en Chile en alcanzar este hito',
+            'summary': 'Crecimiento de 18% en 12 meses refleja mayor confianza en el modelo cooperativo. Colocaciones alcanzan CLP 2.8 billones con morosidad de 1.7%.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
         {
-            'title': 'Coopeuch lanza plataforma digital para créditos hipotecarios con aprobación en 24 horas',
-            'summary': 'Mayor cooperativa de ahorro de Chile digitaliza proceso de crédito inmobiliario reduciendo tiempos de 30 días a 24 horas.',
+            'title': 'CONFECOOP anuncia fusión de cuatro cooperativas regionales para fortalecer capital y escala nacional',
+            'summary': 'Cooperativas de Valparaíso, Concepción, Temuco y Puerto Montt integran operaciones bajo nueva entidad con activos combinados de UF 2.800.000.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Congreso aprueba ley que amplía cobertura del Fogacoope a cooperativas medianas',
-            'summary': 'Nueva norma permite que cooperativas con activos entre UF 500.000 y UF 1.000.000 accedan al Fondo de Garantía Cooperativa.',
+            'title': 'Ley de Cooperativas actualizada promulgada: nueva normativa moderniza gobierno corporativo y refuerza derechos de socios',
+            'summary': 'Reforma del Código Cooperativo incorpora asambleas digitales, voto remoto y mayores exigencias de transparencia financiera. Entra en vigencia en enero 2027.',
             'source': 'El Mostrador',
             'link': 'https://www.elmostrador.cl'
         },
         {
-            'title': 'ACI Américas presenta informe: cooperativismo chileno entre los cinco más sólidos de la región',
-            'summary': 'Chile destaca por índices de solvencia, penetración rural y adopción tecnológica del sector cooperativo financiero.',
+            'title': 'Cooperativas agrícolas chilenas exportan USD 1.200M en frutas y vinos en primera mitad de 2026',
+            'summary': 'FEDEFRUTA reporta récord en exportaciones cooperativas hacia Asia y Europa. Uva de mesa, cerezas y vinos premium concentran el 68% del valor exportado.',
             'source': 'ACI Américas',
             'link': 'https://www.aciamericas.coop'
         },
         {
-            'title': 'Red de cooperativas agrícolas del Biobío accede a financiamiento verde del BID por USD 45M',
-            'summary': 'Recursos financiarán proyectos de riego eficiente, almacenamiento solar y reducción de huella de carbono.',
+            'title': 'BID aprueba crédito de USD 120M para modernización tecnológica del sector cooperativo chileno',
+            'summary': 'Financiamiento cubre transformación digital, ciberseguridad y capacitación en 85 cooperativas. Proyecto busca reducir brecha con banca tradicional en servicios digitales.',
             'source': 'BID',
             'link': 'https://www.iadb.org'
         },
         {
-            'title': 'Coopeuch integra IA generativa en atención al socio con reducción del 60% en tiempos de consulta',
-            'summary': 'Asistente virtual procesa solicitudes de crédito, ahorro y seguros en lenguaje natural. Proyecto piloto cubre 150.000 socios en fase 1.',
+            'title': 'Cooperativas de vivienda obtienen acceso a fondo MINVU de USD 200M para proyectos habitacionales',
+            'summary': 'Ministerio de Vivienda abre nueva línea de crédito exclusiva para cooperativas que desarrollen viviendas sociales y de clase media. Primeros proyectos en Región Metropolitana.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'CONFECOOP lanza programa de educación financiera cooperativa para jóvenes de 18-30 años',
-            'summary': 'Iniciativa busca incorporar 200.000 nuevos socios jóvenes al sistema cooperativo en dos años con talleres presenciales y plataforma digital.',
+            'title': 'CONFECOOP presenta modelo de cooperativa digital nativa para captar generación Z en Chile',
+            'summary': 'Nuevo formato opera 100% en app móvil con onboarding en 5 minutos, tarjeta de débito y productos de ahorro e inversión desde CLP 5.000.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
         {
-            'title': 'Informe BID: cooperativas latinoamericanas gestionan activos por USD 380.000M con crecimiento de 11% anual',
-            'summary': 'Sector muestra resiliencia superior a banca tradicional en ciclos de estrés financiero. Chile destaca por solidez de Coopeuch y cobertura regional de cooperativas agrícolas.',
+            'title': 'Sector cooperativo chileno acumula activos por USD 9.800M en junio 2026, récord histórico',
+            'summary': 'Crecimiento de 22% en doce meses refleja migración de ahorrantes desde fondos mutuos bancarios. Regulación CMF robustece confianza del público en el sector.',
             'source': 'BID',
             'link': 'https://www.iadb.org'
         },
         {
-            'title': 'Coopeuch lanza app renovada con pagos QR, inversiones y crédito digital integrados',
-            'summary': 'Nueva plataforma móvil concentra todos los productos financieros cooperativos en una sola app. Más de 500.000 socios ya activos en versión beta.',
+            'title': 'Coopeuch lanza primer producto de inversión en cobre tokenizado para socios',
+            'summary': 'Instrumento permite invertir en certificados respaldados por cobre físico desde UF 5. Rendimiento vinculado al precio LME con liquidez mensual garantizada.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'ACI Américas: cooperativas de ahorro latinoamericanas crecen 14% en socios activos durante 2025',
-            'summary': 'Incorporación de jóvenes de 18-35 años lidera expansión. Chile, Colombia y México reportan mayor dinamismo en apertura de cuentas cooperativas digitales.',
+            'title': 'ACI Américas: cooperativismo chileno es modelo a seguir en digitalización para América Latina',
+            'summary': 'Informe anual destaca adopción de open banking, IA en crédito y cobertura rural de cooperativas nacionales como mejores prácticas regionales para 2026.',
             'source': 'ACI Américas',
             'link': 'https://www.aciamericas.coop'
         },
     ],
     'cmf': [
         {
-            'title': 'CMF publica nueva norma sobre gestión de riesgos de ciberseguridad para bancos y cooperativas',
-            'summary': 'Regulador exige planes de continuidad operacional ante ataques cibernéticos y pruebas anuales de penetración a sistemas críticos.',
+            'title': 'CMF publica Norma de Carácter General N°502: nuevos estándares de resiliencia operacional para entidades financieras',
+            'summary': 'Regulador exige pruebas de recuperación ante desastres cada semestre, planes de continuidad con RTO máximo de 4 horas y reportes de incidentes en tiempo real.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF sanciona a cinco administradoras de fondos por fallas en información a inversionistas',
-            'summary': 'Multas totalizan UF 18.000. Irregularidades incluyen omisión de información material y conflictos de interés no declarados.',
+            'title': 'CMF multa a Banco Internacional y dos corredoras con UF 32.000 por operaciones sospechosas no reportadas',
+            'summary': 'Investigación detectó omisión de reportes SBIF en transacciones vinculadas a lavado de activos. Es la mayor sanción del regulador en el sector bursátil en 2026.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF actualiza normativa de open banking con nuevos estándares de API para Fintechs',
-            'summary': 'Circular 2026 obliga a instituciones financieras a exponer datos bajo protocolo OAuth 2.0 y formato JSON estándar para diciembre.',
+            'title': 'CMF aprueba primera plataforma de equity crowdfunding regulada en Chile bajo Ley Fintec',
+            'summary': 'Plataforma FinanCoop obtiene registro CMF y podrá captar hasta UF 10.000 por empresa en 12 meses. Abre financiamiento de capital a Pymes y startups nacionales.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF aprueba reglamento de tokenización de activos financieros en Chile',
-            'summary': 'Primera regulación latinoamericana integral sobre activos digitales nativos permite emisión de bonos y acciones tokenizadas.',
+            'title': 'CMF lanza portal de datos abiertos con información consolidada del sistema financiero chileno',
+            'summary': 'Plataforma Open Data publica en tiempo real indicadores de bancos, cooperativas, compañías de seguros y fondos de inversión. Integra API pública para desarrolladores.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF reporta morosidad bancaria en 2.1%, nivel más bajo en tres años',
-            'summary': 'Sistema financiero chileno muestra solvencia con índices de Basilea III sobre el 14%. Crédito hipotecario lidera recuperación.',
+            'title': 'CMF reporta caída de morosidad bancaria a 1.8%: sistema financiero en mejor posición desde 2019',
+            'summary': 'Índice de cartera vencida sobre colocaciones totales alcanza mínimo histórico. Capital de nivel 1 promedio supera 13.5% en todos los bancos supervisados.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF lanza sandbox regulatorio para startups fintech con hasta 18 meses de operación supervisada',
-            'summary': 'Marco experimental permite probar productos de crédito digital, pagos y gestión de inversiones con requisitos de capital reducidos y monitoreo mensual.',
+            'title': 'CMF emite circular que obliga a publicar tasas efectivas en créditos de consumo en formato estándar',
+            'summary': 'Medida de transparencia exige a bancos, cooperativas y Fintechs mostrar CAE y costo total en todas las cotizaciones. Entrará en vigor el 1 de septiembre de 2026.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF exige a bancos y cooperativas divulgación de riesgos climáticos en reportes anuales desde 2027',
-            'summary': 'Nueva norma alinea Chile con estándares TCFD y ISSB. Instituciones deben revelar exposición a riesgos físicos y de transición energética.',
+            'title': 'CMF regula uso de IA en modelos de scoring crediticio: obliga a explicabilidad y auditoría externa',
+            'summary': 'Nueva circular exige que algoritmos de crédito cumplan principios de transparencia, imparcialidad y derecho a explicación. Plazo de adecuación: 12 meses.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF autoriza primer fondo de inversión de activos tokenizados en blockchain pública en Chile',
-            'summary': 'Administradora AGF emite participaciones tokenizadas bajo normativa aprobada en marzo. Instrumento permite fraccionar inversión en activos reales desde UF 10.',
+            'title': 'CMF y BCCh publican informe conjunto sobre riesgos sistémicos del mercado de criptoactivos en Chile',
+            'summary': 'Documento identifica tres exchanges con concentración sistémica y propone regulación de reservas mínimas para emisores de stablecoins vinculados al peso chileno.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF publica consulta pública sobre regulación de stablecoins y criptoactivos en Chile',
-            'summary': 'Regulador abre período de 60 días para recibir observaciones sobre marco legal para emisores de monedas estables y exchanges de criptoactivos.',
+            'title': 'CMF actualiza tabla de tasas máximas convencionales: rebaja tope para créditos de consumo en junio 2026',
+            'summary': 'Tasa máxima convencional para créditos entre UF 200 y UF 5.000 baja de 41.2% a 38.7% anual. Medida beneficia a 2.3 millones de deudores de consumo.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF amplía requerimientos de capital para cooperativas con activos superiores a UF 1.000.000',
-            'summary': 'Norma de Basilea adaptada exige índice de adecuación de capital mínimo de 10%. Cooperativas tienen plazo hasta diciembre 2026 para adecuarse.',
+            'title': 'CMF autoriza inicio de operaciones de cuatro nuevas cooperativas de ahorro y crédito en regiones',
+            'summary': 'Resoluciones habilitantes cubren cooperativas en Atacama, Aysén, Los Lagos y Maule, ampliando acceso a crédito formal en zonas con baja cobertura bancaria.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
     ],
     'noticias_economicas_actuales': [
         {
-            'title': 'IPC de abril 2026 registra 0.2% mensual: inflación acumula 3.8% anual',
-            'summary': 'INE confirma tendencia desaceleradora. División alimentos sube 0.4% y transporte 0.3%, mientras vestuario cae 0.2%.',
+            'title': 'IPC de mayo 2026 registra 0.1% mensual: inflación cae a 3.4% anual, mínimo desde diciembre 2021',
+            'summary': 'INE confirma desaceleración sostenida. Combustibles caen 1.2% y alimentos frescos bajan 0.3%. Resultado fortalece expectativas de recorte de TPM en agosto.',
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'Desempleo en Chile baja a 7.8% en trimestre enero-marzo 2026',
-            'summary': 'INE registra creación neta de 45.000 empleos. Sector servicios y construcción lideran contratación.',
+            'title': 'Desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato desde el segundo trimestre de 2022',
+            'summary': 'INE registra 180.000 nuevos empleos formales. Construcción, servicios financieros y tecnología lideran contratación. Empleo femenino sube al 46.8% de la fuerza laboral.',
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'Imacec de marzo 2026 crece 3.4% interanual, superando estimaciones del mercado',
-            'summary': 'Banco Central destaca dinamismo en comercio y servicios. Sector minero aportó 0.8 puntos porcentuales al crecimiento.',
+            'title': 'Imacec de abril 2026 anota 4.1% de crecimiento interanual, superando todas las estimaciones',
+            'summary': 'Banco Central destaca dinamismo simultáneo en minería, comercio y manufactura. Es el cuarto mes consecutivo sobre el 3.5%, consolidando tendencia de expansión.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': 'Exportaciones chilenas suben 12% en primer cuatrimestre impulsadas por cobre y litio',
-            'summary': 'Balanza comercial acumula superávit de USD 3.200M. China sigue siendo el principal destino con el 38% del total exportado.',
+            'title': 'Exportaciones chilenas acumulan superávit de USD 4.800M en enero-mayo 2026',
+            'summary': 'Cobre, litio y fruta fresca lideran ingresos por USD 26.300M. China mantiene 41% de participación. Balanza energética mejora por menor precio del petróleo importado.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': 'Confianza empresarial ICARE sube 4 puntos y alcanza nivel neutral en mayo',
-            'summary': 'Encuesta mensual refleja menor incertidumbre regulatoria y mejores perspectivas de demanda interna para el segundo semestre.',
+            'title': 'ICARE: confianza empresarial sube a 57.8 puntos en junio, el nivel más alto desde el primer trimestre de 2022',
+            'summary': 'Encuesta mensual refleja menor incertidumbre regulatoria, optimismo por datos macro y expectativa de recorte de TPM. Inversión privada se reactiva en manufacturas y retail.',
             'source': 'ICARE',
             'link': 'https://www.icare.cl'
         },
         {
-            'title': 'Ventas del comercio minorista suben 4.2% en abril impulsadas por consumo de servicios y electrónica',
-            'summary': 'INE destaca recuperación del gasto de hogares tras período de contracción. Tasas de interés más bajas dinamizan crédito de consumo.',
+            'title': 'Ventas minoristas crecen 5.8% en mayo: electrodomésticos, vestuario y restaurantes lideran alza',
+            'summary': 'INE registra el mejor dato de ventas del comercio en 18 meses. Mayor empleo y menor inflación dinamizan consumo de hogares. Crédito de consumo creció 6.3% interanual.',
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'Inversión extranjera directa en Chile supera USD 7.200M en primer cuatrimestre 2026',
-            'summary': 'Cifra representa alza de 18% respecto a igual período 2025. Sectores minería, energías renovables y tecnología concentran el 74% de los flujos.',
+            'title': 'IED en Chile supera USD 9.600M en primer semestre 2026: minería limpia y centros de datos lideran inversión',
+            'summary': 'CORFO reporta cifra histórica. Proyectos de hidrógeno verde, plantas solares y data centers concentran el 56% del total. Regiones de Antofagasta y Atacama atraen mayor inversión.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': 'Banco Central proyecta crecimiento del PIB chileno entre 2.5% y 3.5% para 2026',
-            'summary': 'IPoM de mayo eleva rango por mayor dinamismo de inversión privada y consumo. Riesgo principal sigue siendo deterioro de condiciones externas.',
+            'title': 'Banco Central eleva rango de crecimiento del PIB 2026 a 3.5%-4.0% en IPoM de junio',
+            'summary': 'Revisión al alza respaldada por mayor dinamismo de inversión, consumo y exportaciones. BCCh advierte que deterioro del entorno externo sigue siendo riesgo principal.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': 'Encuesta de Expectativas Económicas BCCh: mercado anticipa dólar en $935 y TPM en 4.75% a fin de año',
-            'summary': 'Consenso de analistas espera apreciación adicional del peso y dos recortes de 25 pb en TPM en el segundo semestre ante convergencia de inflación.',
+            'title': 'Encuesta BCCh: mercado anticipa dólar en $910 y TPM en 4.25% al cierre de 2026',
+            'summary': 'Consenso de analistas ajusta proyecciones ante recorte ya realizado y mejores datos macro. Tres recortes adicionales de 25 pb son el escenario base para el segundo semestre.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': 'INE publica IPP de abril: precios al productor suben 0.1% mensual, acumulan 2.9% en 12 meses',
-            'summary': 'Moderación en precios mayoristas anticipa presiones inflacionarias contenidas en cadena de precios. Sectores agrícola e industrial registran menores alzas.',
+            'title': 'INE publica IPP de mayo: precios al productor caen 0.3% mensual, acumulan solo 1.8% en 12 meses',
+            'summary': 'Reducción en precios de insumos industriales anticipa menor presión inflacionaria aguas abajo. Sectores agrícola, minero e industrial registran contracción de costos.',
             'source': 'INE',
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'ICARE: índice de confianza empresarial alcanza zona de expansión por primera vez desde 2024',
-            'summary': 'Encuesta de mayo muestra 55.3 puntos, sobre umbral de 50. Ejecutivos destacan menor incertidumbre regulatoria y mejora de condiciones de crédito.',
+            'title': 'PIB primer trimestre 2026 confirmado en 3.8%: el mayor crecimiento trimestral en cinco años',
+            'summary': 'Revisión final del BCCh confirma expansión récord. Consumo privado (+4.1%), inversión fija (+6.2%) y exportaciones (+8.9%) fueron los motores del crecimiento.',
             'source': 'ICARE',
             'link': 'https://www.icare.cl'
         },
