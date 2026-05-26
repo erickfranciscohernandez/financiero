@@ -13,7 +13,7 @@
         --rule: #e0e0e0;
         --cream: #f8f8f4;
         --steel: #455;
-        --accent: #c7254e;
+        --accent: #8b1a1a;
         --paper: #fff;
       }
 
@@ -147,8 +147,8 @@
 
       /* SCORE BADGE */
       .score-badge {
-        background: linear-gradient(135deg, #ffeb3b 0%, #ffc107 100%);
-        color: #333;
+        background: #555;
+        color: #fff;
         font-weight: 700;
         font-size: 11px;
         padding: 4px 8px;
@@ -209,8 +209,8 @@
       }
 
       .news-item:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        transform: translateX(4px);
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        border-left: 3px solid var(--accent);
       }
 
       .news-item-title {
@@ -570,7 +570,7 @@
 <body>
     <div class="masthead">
         <span class="masthead-title">Newsletter Estratégico Premium</span>
-        <span class="masthead-date">25 de Mayo, 2026</span>
+        <span class="masthead-date">26 de Mayo, 2026</span>
     </div>
 
     <h1 class="title">Análisis Estratégico</h1>
@@ -587,15 +587,30 @@
     <div class="alerts-section">
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
         
-    <div class="alert-item" data-score="8">
-      <strong>🚨 Mundial 2026: Exige EE.UU. a la Selección del Congo aislarse...</strong>
-      <p>Andrew Giuliani, jefe del grupo de trabajo de la Casa Blanca para la justa mundialista, indicó que el equipo africano deberá realizar una cuarentena d</p>
-      <small>Score: 8/10 | Aristeguinoticias.com</small>
+    <div class="alert-item" data-score="10">
+      <strong>🚨 La guerra en Medio Oriente le trajo a la Argentina exportaci...</strong>
+      <p>Las exportaciones rozaron los US$9000 millones en abril, un máximo histórico, impulsadas en parte por combustibles; al mismo tiempo, los subsidios ene</p>
+      <small>Score: 10/10 | La Nacion</small>
     </div>
     <div class="alert-item" data-score="8">
-      <strong>🚨 La Policía Nacional celebra en Almería su carrera solidaria ...</strong>
-      <p>La Policía Nacional ha celebrado en Almería una nueva edición de la carrera solidaria Ruta 091, una cita deportiva y benéfica que ha alcanzado un réco</p>
-      <small>Score: 8/10 | Europapress.es</small>
+      <strong>🚨 “La fábrica oscura” de China ya fabrica cazas casi sin human...</strong>
+      <p>“Hunter-Killers. Máquinas de patrulla. Construidas en fábricas automatizadas.” La frase la pronuncia Kyle Reese en ‘Terminator’, cuando intenta explic</p>
+      <small>Score: 8/10 | Xataka.com</small>
+    </div>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Protestas y bloqueos en Bolivia: el presidente Rodrigo Paz r...</strong>
+      <p>El mandatario anunció la reducción del 50% de su sueldo y el de sus ministros a cuatro semanas del conflicto que mantiene aisladas a varias regiones y</p>
+      <small>Score: 8/10 | Diario EL PAIS Uruguay</small>
+    </div>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Jeff Park de Bitwise ve a cripto en su fase más alcista y la...</strong>
+      <p>Jeff Park, ejecutivo de Bitwise, sostiene que las criptomonedas están entrando en su fase “más alcista” y compara el momento actual del sector con la </p>
+      <small>Score: 8/10 | Diariobitcoin.com</small>
+    </div>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Las familias en situación vulnerable en Silleda recibirán co...</strong>
+      <p>El Concello firmó un convenio con la empresa Culinaria para distribuir menús o platos individuales, con un coste mínimo para las arcas locales</p>
+      <small>Score: 8/10 | Lavozdegalicia.es</small>
     </div>
     </div>
 
@@ -615,7 +630,7 @@
             <span class="indicator-label">USD/CLP</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">841.50</span>
+            <span class="big-number">808.50</span>
             <span class="unit">pesos chilenos</span>
           </div>
           <div class="indicator-change positive">
@@ -692,7 +707,7 @@
 
       <!-- Info de actualización -->
       <div class="update-info">
-        <p>⏰ Última actualización: 25/05/2026 21:57 UTC</p>
+        <p>⏰ Última actualización: 26/05/2026 19:34 UTC</p>
         <p>📍 Datos en vivo · 🔄 Auto-actualización cada 4 horas</p>
       </div>
 
@@ -751,7 +766,7 @@
       // Crear gráficos
       new Chart(document.getElementById('chart-usd-clp'), {
         type: 'line',
-        data: generateChartData('USD/CLP', 841.5, 850, 800),
+        data: generateChartData('USD/CLP', 808.5, 850, 800),
         options: chartOptions
       });
 
@@ -793,50 +808,50 @@
             <span class="section-emoji">💱</span>
             Economía y Mercados
         </h2>
-        <span class="section-subtitle">Bloomberg · Reuters · Financial Times · CNBC · The Economist</span>
+        <span class="section-subtitle">Bloomberg · Reuters · WSJ · The Economist</span>
         
-      <div class="news-item" data-score="5" data-title="iran deal hopes boost emerging market assets as oil slides">
+      <div class="news-item" data-score="5" data-title="farmers feel squeeze from higher fuel costs, fertilizer shortages">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-25/emerging-market-assets-rise-as-oil-drops-on-us-iran-deal-hopes" target="_blank" class="news-link">
-          <div class="news-item-title">Iran Deal Hopes Boost Emerging Market Assets as Oil Slides</div>
+        <a href="https://www.bloomberg.com/news/videos/2026-05-26/farmers-feel-squeeze-on-fuel-costs-fertilizer-shortages-video" target="_blank" class="news-link">
+          <div class="news-item-title">Farmers Feel Squeeze From Higher Fuel Costs, Fertilizer Shortages</div>
         </a>
-        <div class="news-item-detail">Emerging-market stocks and currencies rose Monday as signs that the US and Iran are nearing a deal to reopen the Strait of Hormuz pushed oil prices lower and boosted risk appetite.</div>
+        <div class="news-item-detail">Michael Swanson, chief agriculture economist at Wells Fargo's Agri-Food Institute, said that fruits and vegetables are facing the most pressure from global events, as higher fuel prices and supply cha</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-25/emerging-market-assets-rise-as-oil-drops-on-us-iran-deal-hopes" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <a href="https://www.bloomberg.com/news/videos/2026-05-26/farmers-feel-squeeze-on-fuel-costs-fertilizer-shortages-video" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="oil slides as us touts progress on deal toward reopening hormuz">
+      <div class="news-item" data-score="5" data-title="oil climbs as us-iran clashes muddy outlook for peace deal">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-24/latest-oil-market-news-and-analysis-for-may-25" target="_blank" class="news-link">
-          <div class="news-item-title">Oil Slides as US Touts Progress on Deal Toward Reopening Hormuz</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-25/latest-oil-market-news-and-analysis-for-may-26" target="_blank" class="news-link">
+          <div class="news-item-title">Oil Climbs as US-Iran Clashes Muddy Outlook for Peace Deal</div>
         </a>
-        <div class="news-item-detail">West Texas Intermediate crude briefly fell below $90 a barrel for the first time in almost three weeks amid signs the US and Iran were progressing toward an agreement to reopen the Strait of Hormuz.</div>
+        <div class="news-item-detail">Oil rebounded as fresh clashes between the US and Iran clouded the outlook for an interim deal to reopen the vital Strait of Hormuz.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-24/latest-oil-market-news-and-analysis-for-may-25" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-25/latest-oil-market-news-and-analysis-for-may-26" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="gold gains as prospects of iran deal temper inflation concerns">
+      <div class="news-item" data-score="5" data-title="insurance mogul greg lindberg gets 12 years for $2 billion fraud">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-24/gold-gains-as-prospects-of-iran-deal-temper-inflation-concerns" target="_blank" class="news-link">
-          <div class="news-item-title">Gold Gains as Prospects of Iran Deal Temper Inflation Concerns</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-26/insurance-mogul-greg-lindberg-gets-12-years-for-2-billion-fraud" target="_blank" class="news-link">
+          <div class="news-item-title">Insurance Mogul Greg Lindberg Gets 12 Years for $2 Billion Fraud</div>
         </a>
-        <div class="news-item-detail">Gold advanced after officials signaled the US was nearing a deal with Iran to reopen the Strait of Hormuz and restore oil flows, easing inflation fears.</div>
+        <div class="news-item-detail">North Carolina investment firm founder Greg Lindberg was sentenced Tuesday to 12 years in prison for siphoning more than $2 billion in reserves backing insurance policies and using the proceeds to pay</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-24/gold-gains-as-prospects-of-iran-deal-temper-inflation-concerns" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-26/insurance-mogul-greg-lindberg-gets-12-years-for-2-billion-fraud" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="hungary sees may 28 deal with eu on frozen funds, pm magyar says">
+      <div class="news-item" data-score="5" data-title="russia weighs curbing diesel, jet fuel exports as attacks grow">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-25/hungary-sees-may-28-deal-with-eu-on-frozen-funds-pm-magyar-says" target="_blank" class="news-link">
-          <div class="news-item-title">Hungary Sees May 28 Deal With EU on Frozen Funds, PM Magyar Says</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-05-26/russia-weighs-curbing-diesel-jet-fuel-exports-as-ukraine-attacks-grow" target="_blank" class="news-link">
+          <div class="news-item-title">Russia Weighs Curbing Diesel, Jet Fuel Exports as Attacks Grow</div>
         </a>
-        <div class="news-item-detail">Hungarian Prime Minister Peter Magyar said he’ll sign a political accord with the head of the European Union’s executive on May 28 on the release of the bloc’s frozen funds.</div>
+        <div class="news-item-detail">Russia is considering limiting exports of diesel and jet fuel, according to Interfax, as refinery run rates fall to multi-year lows amid Ukraine’s escalating attacks.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-25/hungary-sees-may-28-deal-with-eu-on-frozen-funds-pm-magyar-says" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <a href="https://www.bloomberg.com/news/articles/2026-05-26/russia-weighs-curbing-diesel-jet-fuel-exports-as-ukraine-attacks-grow" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
     </div>
@@ -847,52 +862,51 @@
             <span class="section-emoji">📊</span>
             Noticias Económicas Actuales
         </h2>
-        <span class="section-subtitle">Indicadores clave · Análisis actualizado</span>
+        <span class="section-subtitle">INE · BCCh · ICARE · Banco Mundial</span>
         
-      <div class="news-item" data-score="5" data-title="¿qué edificios enteros se venden en barcelona y por cuánto? las grandes operaciones inmobiliarias, calle a calle">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.eldiario.es/catalunya/edificios-enteros-venden-barcelona-grandes-operaciones-inmobiliarias-calle-calle_1_13245191.html" target="_blank" class="news-link">
-          <div class="news-item-title">¿Qué edificios enteros se venden en Barcelona y por cuánto? Las grandes operaciones inmobiliarias, calle a calle</div>
+      <div class="news-item" data-score="6" data-title="el bolso tote calvin klein foil logo baja a 67,95€ en amazon con un 54% de descuento">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.blogdechollos.com/el-bolso-tote-calvin-klein-foil-logo-baja-a-6795e-en-amazon-con-un-54-de-descuento/" target="_blank" class="news-link">
+          <div class="news-item-title">El bolso tote Calvin Klein Foil Logo baja a 67,95€ en Amazon con un 54% de descuento</div>
         </a>
-        <div class="news-item-detail">El Ayuntamiento registra 1.300 acuerdos de compraventa de fincas residenciales en siete años, un tercio en el centro de la ciudad y la mitad, con inquilinos, según los datos exhaustivos recabados por </div>
+        <div class="news-item-detail">Hay accesorios que pasan de un look a otro sin pedir demasiadas explicaciones. Un bolso tote entra justo en esa categoría: sirve para la oficina, para una jornada larga fuera de casa o para esos días </div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.eldiario.es/catalunya/edificios-enteros-venden-barcelona-grandes-operaciones-inmobiliarias-calle-calle_1_13245191.html" target="_blank" class="source-link">→ Eldiario.es</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.blogdechollos.com/el-bolso-tote-calvin-klein-foil-logo-baja-a-6795e-en-amazon-con-un-54-de-descuento/" target="_blank" class="source-link">→ Blogdechollos.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="mova sabe que en méxico nos gustan los productos 3b y trae su robot más poderoso, hasta ahora, pero con precio atractivo">
+      <div class="news-item" data-score="5" data-title="la mayor tesorería de eth llegó a las puertas del russell 1000 a pesar de estar en rojo">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.xataka.com.mx/home/mova-sabe-que-mexico-nos-gustan-productos-3b-trae-su-robot-poderoso-ahora-precio-atractivo" target="_blank" class="news-link">
-          <div class="news-item-title">MOVA sabe que en México nos gustan los productos 3B y trae su robot más poderoso, hasta ahora, pero con precio atractivo</div>
+        <a href="https://www.criptonoticias.com/mercados/bitmine-mayor-tesoreria-ethereum-russell-1000-rojo/" target="_blank" class="news-link">
+          <div class="news-item-title">La mayor tesorería de ETH llegó a las puertas del Russell 1000 a pesar de estar en rojo</div>
         </a>
-        <div class="news-item-detail">MOVA llegó oficialmente a nuestro país hace poco tiempo y se posicionó como una marca que busca quitarle el trono de la limpieza tecnológica a Dreame o a Dyson. Y ahora tenemos un nuevo modelo con gra</div>
+        <div class="news-item-detail">Bitmine tiene una capitalización de mercado tal que le permitiría entrar en ese índice bursátil.
+La entrada La mayor tesorería de ETH llegó a las puertas del Russell 1000 a pesar de estar en rojo se p</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.xataka.com.mx/home/mova-sabe-que-mexico-nos-gustan-productos-3b-trae-su-robot-poderoso-ahora-precio-atractivo" target="_blank" class="source-link">→ Xataka.com.mx</a>
+          <a href="https://www.criptonoticias.com/mercados/bitmine-mayor-tesoreria-ethereum-russell-1000-rojo/" target="_blank" class="source-link">→ Criptonoticias.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="bitcoin sufrió salidas de usd 2.200 millones en dos semanas">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.criptonoticias.com/mercados/bitcoin-sufrio-salidas-usd-2200-millones-dos-semanas/" target="_blank" class="news-link">
-          <div class="news-item-title">Bitcoin sufrió salidas de USD 2.200 millones en dos semanas</div>
+      <div class="news-item" data-score="10" data-title="la guerra en medio oriente le trajo a la argentina exportaciones récord y una factura fiscal más cara">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.lanacion.com.ar/economia/la-guerra-en-medio-oriente-le-trajo-a-la-argentina-exportaciones-record-y-una-factura-fiscal-mas-nid25052026/" target="_blank" class="news-link">
+          <div class="news-item-title">La guerra en Medio Oriente le trajo a la Argentina exportaciones récord y una factura fiscal más cara</div>
         </a>
-        <div class="news-item-detail">El éxodo del capital se generó en los fondos cotizados en bolsa (ETF) que cotizan en la bolsa de EE. UU.
-La entrada Bitcoin sufrió salidas de USD 2.200 millones en dos semanas se publicó primero en Cr</div>
+        <div class="news-item-detail">Las exportaciones rozaron los US$9000 millones en abril, un máximo histórico, impulsadas en parte por combustibles; al mismo tiempo, los subsidios energéticos crecieron 150% real interanual y presiona</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.criptonoticias.com/mercados/bitcoin-sufrio-salidas-usd-2200-millones-dos-semanas/" target="_blank" class="source-link">→ Criptonoticias.com</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.lanacion.com.ar/economia/la-guerra-en-medio-oriente-le-trajo-a-la-argentina-exportaciones-record-y-una-factura-fiscal-mas-nid25052026/" target="_blank" class="source-link">→ La Nacion</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="ceo de circle: «la economía de los agentes de ia ha llegado»">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.criptonoticias.com/finanzas/ceo-circle-economia-agentes-ia-ha-llegado/" target="_blank" class="news-link">
-          <div class="news-item-title">CEO de Circle: «La economía de los agentes de IA ha llegado»</div>
+      <div class="news-item" data-score="6" data-title="enrique riquelme: «tenemos dos estrellas internacionales fichadas y las anunciaremos»">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.abc.es/deportes/real-madrid/enrique-riquelme-dos-estrellas-internacionales-fichadas-20260525190827-nt.html" target="_blank" class="news-link">
+          <div class="news-item-title">Enrique Riquelme: «Tenemos dos estrellas internacionales fichadas y las anunciaremos»</div>
         </a>
-        <div class="news-item-detail">Jeremy Allaire comentó esto después que una agente produjera un memo para comité de inversión sobre la salida a bolsa de SpaceX. 
-La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
+        <div class="news-item-detail">A la espera de saber la fecha concreta de las elecciones, que la dará a conocer este martes la Junta Electoral, Enrique Riquelme ya trabaja con el domingo 7 como día con más opciones de celebración de</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.criptonoticias.com/finanzas/ceo-circle-economia-agentes-ia-ha-llegado/" target="_blank" class="source-link">→ Criptonoticias.com</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.abc.es/deportes/real-madrid/enrique-riquelme-dos-estrellas-internacionales-fichadas-20260525190827-nt.html" target="_blank" class="source-link">→ Www.abc.es</a>
         </div>
       </div>
     </div>
@@ -903,50 +917,50 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">🤖</span>
             Inteligencia Artificial
         </h2>
-        <span class="section-subtitle">TLDR AI · Ben's Bites · The Rundown AI</span>
+        <span class="section-subtitle">OpenAI · Anthropic · Google DeepMind · TLDR AI</span>
         
-      <div class="news-item" data-score="5" data-title="minisforum ms-02, análisis: el servidor de 24 núcleos que cabe entre dos libros">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.larazon.es/tecnologia-consumo/analisis/minisforum-ms-02-analisis-servidor-24-nucleos-dos-libros_202605246a12fff77e0b463207955c16.html" target="_blank" class="news-link">
-          <div class="news-item-title">Minisforum MS-02, análisis: el servidor de 24 núcleos que cabe entre dos libros</div>
+      <div class="news-item" data-score="8" data-title="jeff park de bitwise ve a cripto en su fase más alcista y la compara con nvidia antes de la ia">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.diariobitcoin.com/criptomonedas/jeff-park-de-bitwise-ve-a-cripto-en-su-fase-mas-alcista-y-la-compara-con-nvidia-antes-de-la-ia/" target="_blank" class="news-link">
+          <div class="news-item-title">Jeff Park de Bitwise ve a cripto en su fase más alcista y la compara con NVIDIA antes de la IA</div>
         </a>
-        <div class="news-item-detail">Probamos durante un mes el nuevo mini-server de Minisforum con Core Ultra 9 285HX, red 10GbE, IA local y rendimiento de sobra para un homelab serio</div>
+        <div class="news-item-detail">Jeff Park, ejecutivo de Bitwise, sostiene que las criptomonedas están entrando en su fase “más alcista” y compara el momento actual del sector con la posición de NVIDIA antes del gran boom de la intel</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.larazon.es/tecnologia-consumo/analisis/minisforum-ms-02-analisis-servidor-24-nucleos-dos-libros_202605246a12fff77e0b463207955c16.html" target="_blank" class="source-link">→ Larazon.es</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.diariobitcoin.com/criptomonedas/jeff-park-de-bitwise-ve-a-cripto-en-su-fase-mas-alcista-y-la-compara-con-nvidia-antes-de-la-ia/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="'scale up' españolas que duplican su valor en la economía digital">
+      <div class="news-item" data-score="5" data-title="minsait y mutua universal acuerdan el desarrollo de una arquitectura de ia para mejorar servicios sanitarios">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.expansion.com/expansion-empleo/emprendedores/2026/05/24/6a10494ae5fdea4d198b4576.html" target="_blank" class="news-link">
-          <div class="news-item-title">'Scale up' españolas que duplican su valor en la economía digital</div>
+        <a href="https://www.europapress.es/economia/noticia-minsait-mutua-universal-acuerdan-desarrollo-arquitectura-ia-mejorar-servicios-sanitarios-20260525113453.html" target="_blank" class="news-link">
+          <div class="news-item-title">Minsait y Mutua Universal acuerdan el desarrollo de una arquitectura de IA para mejorar servicios sanitarios</div>
         </a>
-        <div class="news-item-detail">Lideradas por referentes como Glovo, Job&Talent, Factorial o Cabify las 'scale up' de EsTech transforman la economía española con la intención de acelerar la competitividad y consolidar empleos de alt</div>
+        <div class="news-item-detail">Minsait, compañía de Indra, y Mutua Universal, mutua colaboradora con la Seguridad Social, han firmado un acuerdo para el desarrollo e implantación de una arquitectura corporativa de inteligencia arti</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.expansion.com/expansion-empleo/emprendedores/2026/05/24/6a10494ae5fdea4d198b4576.html" target="_blank" class="source-link">→ Expansion.com</a>
+          <a href="https://www.europapress.es/economia/noticia-minsait-mutua-universal-acuerdan-desarrollo-arquitectura-ia-mejorar-servicios-sanitarios-20260525113453.html" target="_blank" class="source-link">→ Europapress.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="adiós al contenido basura: spotify por fin verificará los pódcast creados por humanos">
+      <div class="news-item" data-score="5" data-title="magnífica humanidad, pero no tanto">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://hipertextual.com/internet/spotify-verificacion-podcast-creados-humanos/" target="_blank" class="news-link">
-          <div class="news-item-title">Adiós al contenido basura: Spotify por fin verificará los pódcast creados por humanos</div>
+        <a href="https://www.jotdown.es/2026/05/magnifica-humanidad-pero-no-tanto/" target="_blank" class="news-link">
+          <div class="news-item-title">Magnífica humanidad, pero no tanto</div>
         </a>
-        <div class="news-item-detail">La invasión de contenidos generados con inteligencia artificial está obligando a las plataformas a tomar medidas para que sea más fácil identificarlos. En el caso de Spotify, en los últimos días anunc</div>
+        <div class="news-item-detail">Uno de mis vicios confesables es leer encíclicas papales y pensar en ellas. Pasa con esto como con otros dos vicios privados, leer sentencias del tribunal supremo americano y del español: uno puede es</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://hipertextual.com/internet/spotify-verificacion-podcast-creados-humanos/" target="_blank" class="source-link">→ Hipertextual</a>
+          <a href="https://www.jotdown.es/2026/05/magnifica-humanidad-pero-no-tanto/" target="_blank" class="source-link">→ Jotdown.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="6" data-title="google wallet estrena rediseño mayor para android en i/o 2026">
+      <div class="news-item" data-score="6" data-title="la ia convirtió samsung en billonaria. sus trabajadores reclamaron su parte. el gobierno surcoreano dijo que tienen razón.">
         <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.diariobitcoin.com/noticias/google-wallet-estrena-rediseno-mayor-para-android-en-i-o-2026/" target="_blank" class="news-link">
-          <div class="news-item-title">Google Wallet estrena rediseño mayor para Android en I/O 2026</div>
+        <a href="https://wwwhatsnew.com/2026/05/25/samsung-huelga-ia-riqueza-corea-del-sur-2026/" target="_blank" class="news-link">
+          <div class="news-item-title">La IA convirtió Samsung en billonaria. Sus trabajadores reclamaron su parte. El gobierno surcoreano dijo que tienen razón.</div>
         </a>
-        <div class="news-item-detail">Google puso a Google Wallet entre las novedades de I/O 2026 con un rediseño importante para Android, en medio de una conferencia marcada por anuncios sobre Gemini, Search y Android XR. Aunque la infor</div>
+        <div class="news-item-detail">Samsung estuvo a punto de protagonizar la huelga más masiva de su historia. 48.000 empleados —casi el 40% de su plantilla en Corea del Sur— amenazaron con paralizar durante 18 días las fábricas de mem</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.diariobitcoin.com/noticias/google-wallet-estrena-rediseno-mayor-para-android-en-i-o-2026/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
+          <a href="https://wwwhatsnew.com/2026/05/25/samsung-huelga-ia-riqueza-corea-del-sur-2026/" target="_blank" class="source-link">→ Wwwhatsnew.com</a>
         </div>
       </div>
     </div>
@@ -957,50 +971,50 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">🌍</span>
             Geopolítica
         </h2>
-        <span class="section-subtitle">China · EE.UU. · OPEP+ · Medio Oriente</span>
+        <span class="section-subtitle">Reuters · FT · Bloomberg · The Economist</span>
         
-      <div class="news-item" data-score="5" data-title="antonelli tiene 'quemado' a russell y se lleva la cuarta consecutiva, sainz puntúa otra vez">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.marca.com/motor/formula1/gp-canada/2026/05/24/antonelli-quemado-russell-lleva-cuarta-consecutiva-sainz-puntua-vez.html" target="_blank" class="news-link">
-          <div class="news-item-title">Antonelli tiene 'quemado' a Russell y se lleva la cuarta consecutiva, Sainz puntúa otra vez</div>
+      <div class="news-item" data-score="8" data-title="“la fábrica oscura” de china ya fabrica cazas casi sin humanos: el futuro industrial se parece más a terminator que a ford">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.xataka.com/magnet/fabrica-oscura-china-fabrica-cazas-casi-humanos-futuro-industrial-se-parece-a-terminator-que-a-ford" target="_blank" class="news-link">
+          <div class="news-item-title">“La fábrica oscura” de China ya fabrica cazas casi sin humanos: el futuro industrial se parece más a Terminator que a Ford</div>
         </a>
-        <div class="news-item-detail">Asedia a su compañero, al que el coche se le fundió en la vuelta 30. Carlos sigue fuerte pese al error de Williams inicial y Alonso abandona... por el asiento  Leer</div>
+        <div class="news-item-detail">“Hunter-Killers. Máquinas de patrulla. Construidas en fábricas automatizadas.” La frase la pronuncia Kyle Reese en ‘Terminator’, cuando intenta explicar un futuro dominado por Skynet y sus máquinas de</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.marca.com/motor/formula1/gp-canada/2026/05/24/antonelli-quemado-russell-lleva-cuarta-consecutiva-sainz-puntua-vez.html" target="_blank" class="source-link">→ Marca</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.xataka.com/magnet/fabrica-oscura-china-fabrica-cazas-casi-humanos-futuro-industrial-se-parece-a-terminator-que-a-ford" target="_blank" class="source-link">→ Xataka.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="pln tiene en sus manos el futuro de la ley de armonización eléctrica, en medio del fuego cruzado entre el ppso y el frente amplio">
+      <div class="news-item" data-score="5" data-title="un exministro alemán lanza un aviso si el gran partido conservador acaba pactando con la ultraderecha: "la gente preguntará si la historia se repite"">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.nacion.com/politica/pln-tiene-en-sus-manos-el-futuro-de-la-ley-de/L3AZJ4UEKNDSNINDGJC4BG2EYI/story/" target="_blank" class="news-link">
-          <div class="news-item-title">PLN tiene en sus manos el futuro de la ley de armonización eléctrica, en medio del fuego cruzado entre el PPSO y el Frente Amplio</div>
+        <a href="https://www.huffingtonpost.es/global/un-exministro-aleman-lanza-aviso-gran-partido-conservador-acaba-pactandoultraderecha-la-gente-preguntara-historia-repite-f202605.html" target="_blank" class="news-link">
+          <div class="news-item-title">Un exministro alemán lanza un aviso si el gran partido conservador acaba pactando con la ultraderecha: "La gente preguntará si la historia se repite"</div>
         </a>
-        <div class="news-item-detail">El gobierno necesita del PLN para aprobar el proyecto de armonización eléctrica, en momentos en que el Frente Amplio se opone abiertamente al texto y Pueblo Soberano acusa a los frenteamplistas de men</div>
+        <div class="news-item-detail"></div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.nacion.com/politica/pln-tiene-en-sus-manos-el-futuro-de-la-ley-de/L3AZJ4UEKNDSNINDGJC4BG2EYI/story/" target="_blank" class="source-link">→ Nacion.com</a>
+          <a href="https://www.huffingtonpost.es/global/un-exministro-aleman-lanza-aviso-gran-partido-conservador-acaba-pactandoultraderecha-la-gente-preguntara-historia-repite-f202605.html" target="_blank" class="source-link">→ Huffingtonpost.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="mapa de refugios de kiev [eng]">
+      <div class="news-item" data-score="5" data-title="netanyahu ordena "pisar el acelerador aún más" en la ofensiva en líbano">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.meneame.net/m/politica/mapa-refugios-kiev-eng" target="_blank" class="news-link">
-          <div class="news-item-title">Mapa de refugios de Kiev [ENG]</div>
+        <a href="https://www.europapress.es/internacional/noticia-netanyahu-ordena-pisar-acelerador-aun-mas-ofensiva-libano-20260525211229.html" target="_blank" class="news-link">
+          <div class="news-item-title">Netanyahu ordena "pisar el acelerador aún más" en la ofensiva en Líbano</div>
         </a>
-        <div class="news-item-detail">Desde el inicio de la guerra a gran escala, se han emitido alertas antiaéreas en Kiev casi a diario, advirtiendo a residentes y visitantes sobre posibles ataques aéreos. Cuando hay una alerta activa, </div>
+        <div class="news-item-detail">El primer ministro israelí, Benjamin Netanyahu, ha anunciado este lunes que ha ordenado a las Fuerzas Armadas "pisar el acelerador aún más" en la ofensiva militar en Líbano en respuesta a los ataques </div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.meneame.net/m/politica/mapa-refugios-kiev-eng" target="_blank" class="source-link">→ Meneame.net</a>
+          <a href="https://www.europapress.es/internacional/noticia-netanyahu-ordena-pisar-acelerador-aun-mas-ofensiva-libano-20260525211229.html" target="_blank" class="source-link">→ Europapress.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="las redes no perdonan: el vestuario en guerra y real madrid tv elige una película que no 'ayuda'">
+      <div class="news-item" data-score="5" data-title="golpes, agresiones sexuales... una oleada de abusos infantiles durante las actividades extraescolares sacude a parís">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.mundodeportivo.com/futbol/real-madrid/20260524/1004187428/redes-no-perdonan-vestuario-guerra-real-madrid-tv-elige-pelicula-no-ayuda.html" target="_blank" class="news-link">
-          <div class="news-item-title">Las redes no perdonan: el vestuario en guerra y Real Madrid TV elige una película que no 'ayuda'</div>
+        <a href="https://www.abc.es/internacional/oleada-abusos-infantiles-actividades-extraescolares-sacude-paris-20260525203710-nt.html" target="_blank" class="news-link">
+          <div class="news-item-title">Golpes, agresiones sexuales... Una oleada de abusos infantiles durante las actividades extraescolares sacude a París</div>
         </a>
-        <div class="news-item-detail">Como se suele decir coloquialmente, no está el horno para bollos en el Real Madrid después de una temporada nefasta en la que han vuelto a sumar otro año en blanco y donde, tras confirmar el fiasco de</div>
+        <div class="news-item-detail">Es una de las mayores operaciones policiales desde el inicio de este escándalo. La Policía francesa detuvo el día 13 en la escuela Saint-Dominique de París a 16 personas por presuntas violaciones o ag</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.mundodeportivo.com/futbol/real-madrid/20260524/1004187428/redes-no-perdonan-vestuario-guerra-real-madrid-tv-elige-pelicula-no-ayuda.html" target="_blank" class="source-link">→ Mundodeportivo.com</a>
+          <a href="https://www.abc.es/internacional/oleada-abusos-infantiles-actividades-extraescolares-sacude-paris-20260525203710-nt.html" target="_blank" class="source-link">→ Www.abc.es</a>
         </div>
       </div>
     </div>
@@ -1011,50 +1025,50 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">🇨🇱</span>
             Chile Estratégico
         </h2>
-        <span class="section-subtitle">Gobierno · Minería · Energía</span>
+        <span class="section-subtitle">Codelco · BCCh · CMF · Gobierno</span>
         
-      <div class="news-item" data-score="5" data-title="indagan hallazgo de un cadáver en cerro dragón de iquique: pericias descartan lesiones externas">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.latercera.com/nacional/noticia/indagan-hallazgo-de-un-cadaver-en-cerro-dragon-de-iquique-pericias-descartan-lesiones-externas/" target="_blank" class="news-link">
-          <div class="news-item-title">Indagan hallazgo de un cadáver en Cerro Dragón de Iquique: pericias descartan lesiones externas</div>
-        </a>
-        <div class="news-item-detail">Las primeras pericias realizadas en el sitio del suceso determinaron que el cuerpo corresponde al sexo masculino y no mantiene lesiones externas.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.latercera.com/nacional/noticia/indagan-hallazgo-de-un-cadaver-en-cerro-dragon-de-iquique-pericias-descartan-lesiones-externas/" target="_blank" class="source-link">→ Latercera.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="lautaro carmona (pc) califica de “un fracaso” para el ejecutivo el cambio de gabinete">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.latercera.com/politica/noticia/lautaro-carmona-pc-califica-de-un-fracaso-para-el-ejecutivo-el-cambio-de-gabinete/" target="_blank" class="news-link">
-          <div class="news-item-title">Lautaro Carmona (PC) califica de “un fracaso” para el Ejecutivo el cambio de gabinete</div>
-        </a>
-        <div class="news-item-detail">Para el timonel del PC, “el primer fracaso del Gobierno ha sido la obligación, sin presión de nadie, de tener que cambiar dos de las más importantes ministras, nombradas por el propio Presidente".</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.latercera.com/politica/noticia/lautaro-carmona-pc-califica-de-un-fracaso-para-el-ejecutivo-el-cambio-de-gabinete/" target="_blank" class="source-link">→ Latercera.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="cayó una banda que robó en la casa de del potro en tandil y era buscada por el fbi por asaltos a deportistas de élite en los estados unidos">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.lanacion.com.ar/seguridad/cayo-una-banda-que-robo-en-la-casa-de-del-potro-en-tandil-y-era-buscada-por-el-fbi-por-asaltos-a-nid24052026/" target="_blank" class="news-link">
-          <div class="news-item-title">Cayó una banda que robó en la casa de Del Potro en Tandil y era buscada por el FBI por asaltos a deportistas de élite en los Estados Unidos</div>
-        </a>
-        <div class="news-item-detail">Los identificaron por una cámara de seguridad cuando cargaban nafta en la localidad bonaerense de Ayacucho; son cuatro chilenos y un argentino</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.lanacion.com.ar/seguridad/cayo-una-banda-que-robo-en-la-casa-de-del-potro-en-tandil-y-era-buscada-por-el-fbi-por-asaltos-a-nid24052026/" target="_blank" class="source-link">→ La Nacion</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="8" data-title="mundial 2026: exige ee.uu. a la selección del congo aislarse 21 días para ingresar al país">
+      <div class="news-item" data-score="8" data-title="protestas y bloqueos en bolivia: el presidente rodrigo paz reduce su salario a la mitad por la crisis">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://aristeguinoticias.com/2405/deportes/mundial-2026-exige-ee-uu-a-la-seleccion-del-congo-aislarse-21-dias-para-ingresar-al-pais/" target="_blank" class="news-link">
-          <div class="news-item-title">Mundial 2026: Exige EE.UU. a la Selección del Congo aislarse 21 días para ingresar al país</div>
+        <a href="https://www.elpais.com.uy/mundo/protestas-y-bloqueos-en-bolivia-el-presidente-rodrigo-paz-reduce-su-salario-a-la-mitad-por-la-crisis" target="_blank" class="news-link">
+          <div class="news-item-title">Protestas y bloqueos en Bolivia: el presidente Rodrigo Paz reduce su salario a la mitad por la crisis</div>
         </a>
-        <div class="news-item-detail">Andrew Giuliani, jefe del grupo de trabajo de la Casa Blanca para la justa mundialista, indicó que el equipo africano deberá realizar una cuarentena de 21 días antes de disputar la fase de grupos de l</div>
+        <div class="news-item-detail">El mandatario anunció la reducción del 50% de su sueldo y el de sus ministros a cuatro semanas del conflicto que mantiene aisladas a varias regiones y afectan el abastecimiento en ciudades clave.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://aristeguinoticias.com/2405/deportes/mundial-2026-exige-ee-uu-a-la-seleccion-del-congo-aislarse-21-dias-para-ingresar-al-pais/" target="_blank" class="source-link">→ Aristeguinoticias.com</a>
+          <a href="https://www.elpais.com.uy/mundo/protestas-y-bloqueos-en-bolivia-el-presidente-rodrigo-paz-reduce-su-salario-a-la-mitad-por-la-crisis" target="_blank" class="source-link">→ Diario EL PAIS Uruguay</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="engie sale a tentar al mercado con nuevo bono para refinanciar deuda y acelerar giro renovable">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.df.cl/mercados/bolsa-monedas/engie-sale-a-tentar-al-mercado-con-nuevo-bono-para-refinanciar-deuda-y" target="_blank" class="news-link">
+          <div class="news-item-title">Engie sale a tentar al mercado con nuevo bono para refinanciar deuda y acelerar giro renovable</div>
+        </a>
+        <div class="news-item-detail">Emisión fue estructurada en tres series por hasta UF 4 millones, unos US$ 180 millones.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.df.cl/mercados/bolsa-monedas/engie-sale-a-tentar-al-mercado-con-nuevo-bono-para-refinanciar-deuda-y" target="_blank" class="source-link">→ Www.df.cl</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="quince jugadores gallegos fueron convocados para un mundial">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.lavozdegalicia.es/noticia/deportes/2026/05/25/quince-jugadores-gallegos-fueron-convocados-mundial/00031779734744307420533.htm" target="_blank" class="news-link">
+          <div class="news-item-title">Quince jugadores gallegos fueron convocados para un Mundial</div>
+        </a>
+        <div class="news-item-detail">Hasta la llamada a Borja Iglesias, 14 futbolistas de la comunidad habían estado presentes en la historia del torneo</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.lavozdegalicia.es/noticia/deportes/2026/05/25/quince-jugadores-gallegos-fueron-convocados-mundial/00031779734744307420533.htm" target="_blank" class="source-link">→ Lavozdegalicia.es</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="video: una extraña 'constelación' de estrellas de mar queda varada en las costas de este país latinoamericano">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://actualidad.rt.com/viral/607031-video-extrana-constelacion-estrellas-mar-chile" target="_blank" class="news-link">
+          <div class="news-item-title">VIDEO: Una extraña 'constelación' de estrellas de mar queda varada en las costas de este país latinoamericano</div>
+        </a>
+        <div class="news-item-detail">Decenas de estrellas marinas se quedaron varadas en una playa de la localidad de Pichilemu, en el centro de Chile. El inusual fenómeno llamó la atención de visitantes y residentes, que rápidamente se </div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://actualidad.rt.com/viral/607031-video-extrana-constelacion-estrellas-mar-chile" target="_blank" class="source-link">→ RT</a>
         </div>
       </div>
     </div>
@@ -1065,50 +1079,50 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">🤝</span>
             Cooperativismo
         </h2>
-        <span class="section-subtitle">Movimiento cooperativo · Organización</span>
+        <span class="section-subtitle">CONFECOOP · Coopeuch · ACI Américas · BID</span>
         
-      <div class="news-item" data-score="5" data-title="camila alonso y jesús beceiro ganan la carrera corre por eles">
+      <div class="news-item" data-score="5" data-title="la fundación fernández celebró sus 30 años de trabajo con su clásica comida">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.lavozdegalicia.es/noticia/ferrol/ferrol/2026/05/24/camila-alonso-jesus-beceiro-ganan-carrera-corre-eles/00031779653278762535782.htm" target="_blank" class="news-link">
-          <div class="news-item-title">Camila Alonso y Jesús Beceiro ganan la carrera Corre por Eles</div>
+        <a href="https://www.lanacion.com.ar/sociedad/la-fundacion-fernandez-celebro-sus-30-anos-de-trabajo-con-su-clasica-comida-nid25052026/" target="_blank" class="news-link">
+          <div class="news-item-title">La Fundación Fernández celebró sus 30 años de trabajo con su clásica comida</div>
         </a>
-        <div class="news-item-detail">La prueba, con un recorrido de cinco kilómetros, discurrió por el centro de Ferrol</div>
+        <div class="news-item-detail">Hubo una mención especial para Mirtha Legrand y se disfrutó de la música de Alejandro Lerner</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.lavozdegalicia.es/noticia/ferrol/ferrol/2026/05/24/camila-alonso-jesus-beceiro-ganan-carrera-corre-eles/00031779653278762535782.htm" target="_blank" class="source-link">→ Lavozdegalicia.es</a>
+          <a href="https://www.lanacion.com.ar/sociedad/la-fundacion-fernandez-celebro-sus-30-anos-de-trabajo-con-su-clasica-comida-nid25052026/" target="_blank" class="source-link">→ La Nacion</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="la policía nacional celebra en almería su carrera solidaria ruta 091 con más de 700 personas inscritas">
+      <div class="news-item" data-score="8" data-title="las familias en situación vulnerable en silleda recibirán comida gratis">
         <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.europapress.es/andalucia/almeria-00350/noticia-policia-nacional-celebra-almeria-carrera-solidaria-ruta-091-mas-700-personas-inscritas-20260524181633.html" target="_blank" class="news-link">
-          <div class="news-item-title">La Policía Nacional celebra en Almería su carrera solidaria Ruta 091 con más de 700 personas inscritas</div>
+        <a href="https://www.lavozdegalicia.es/noticia/deza/silleda/2026/05/26/familias-situacion-vulnerable-silleda-recibiran-comida-gratis/0003_202605D26C3991.htm" target="_blank" class="news-link">
+          <div class="news-item-title">Las familias en situación vulnerable en Silleda recibirán comida gratis</div>
         </a>
-        <div class="news-item-detail">La Policía Nacional ha celebrado en Almería una nueva edición de la carrera solidaria Ruta 091, una cita deportiva y benéfica que ha alcanzado un récord de participación con más de 700 personas inscri</div>
+        <div class="news-item-detail">El Concello firmó un convenio con la empresa Culinaria para distribuir menús o platos individuales, con un coste mínimo para las arcas locales</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.europapress.es/andalucia/almeria-00350/noticia-policia-nacional-celebra-almeria-carrera-solidaria-ruta-091-mas-700-personas-inscritas-20260524181633.html" target="_blank" class="source-link">→ Europapress.es</a>
+          <a href="https://www.lavozdegalicia.es/noticia/deza/silleda/2026/05/26/familias-situacion-vulnerable-silleda-recibiran-comida-gratis/0003_202605D26C3991.htm" target="_blank" class="source-link">→ Lavozdegalicia.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="carrera contra el cáncer barcelona 2026: fecha, recorrido y todo lo que debes saber de la prueba solidaria">
+      <div class="news-item" data-score="5" data-title="cristina saavedra vuelve a sonreír tras años marcados por la tragedia: "nos merecíamos una alegría"">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.elconfidencial.com/espana/cataluna/2026-05-24/fecha-recorrido-carrera-cancer-barcelona-1tna-1qrt_4358167/" target="_blank" class="news-link">
-          <div class="news-item-title">Carrera contra el Cáncer Barcelona 2026: fecha, recorrido y todo lo que debes saber de la prueba solidaria</div>
+        <a href="https://www.hola.com/actualidad/20260525903432/cristina-saavedra-ascenso-depor-tras-muerte-hermanas/" target="_blank" class="news-link">
+          <div class="news-item-title">Cristina Saavedra vuelve a sonreír tras años marcados por la tragedia: "Nos merecíamos una alegría"</div>
         </a>
-        <div class="news-item-detail">La carrera ofrecerá modalidades de 2 y 5 kilómetros, pruebas para niños y dorsales solidarios para recaudar fondos destinados a la investigación oncológica y a la atención de pacientes y familiares</div>
+        <div class="news-item-detail">La periodista, de 50 años, perdió a dos de las personas más importantes de su vida con tan solo nueve meses de diferencia</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.elconfidencial.com/espana/cataluna/2026-05-24/fecha-recorrido-carrera-cancer-barcelona-1tna-1qrt_4358167/" target="_blank" class="source-link">→ Elconfidencial.com</a>
+          <a href="https://www.hola.com/actualidad/20260525903432/cristina-saavedra-ascenso-depor-tras-muerte-hermanas/" target="_blank" class="source-link">→ Hola</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="más de 1.500 personas participan en la i carrera solidaria de la guardia civil contra el cáncer infantil">
+      <div class="news-item" data-score="5" data-title="josé luis gil reaparece en redes sociales tras recibir un premio "muy especial"">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.europapress.es/cantabria/noticia-mas-1500-personas-participan-carrera-solidaria-guardia-civil-contra-cancer-infantil-20260524160117.html" target="_blank" class="news-link">
-          <div class="news-item-title">Más de 1.500 personas participan en la I Carrera Solidaria de la Guardia Civil contra el cáncer infantil</div>
+        <a href="https://www.libertaddigital.com/chic/corazon/2026-05-25/jose-luis-gil-reaparece-en-redes-sociales-tras-recibir-un-premio-muy-especial-7409685/" target="_blank" class="news-link">
+          <div class="news-item-title">José Luis Gil reaparece en redes sociales tras recibir un premio "muy especial"</div>
         </a>
-        <div class="news-item-detail">Más de 1.500 personas, entre corredores adultos, infantiles y dorsal 0, han participado este domingo en el parque de Las Llamas de Santander en la I Carrera Solidaria organizada por la Guardia Civil e</div>
+        <div class="news-item-detail">Su hija Irene comparte una imagen del intérprete, alejado de los focos desde su ictus en 2021, posando con un galardón de ELA-España.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.europapress.es/cantabria/noticia-mas-1500-personas-participan-carrera-solidaria-guardia-civil-contra-cancer-infantil-20260524160117.html" target="_blank" class="source-link">→ Europapress.es</a>
+          <a href="https://www.libertaddigital.com/chic/corazon/2026-05-25/jose-luis-gil-reaparece-en-redes-sociales-tras-recibir-un-premio-muy-especial-7409685/" target="_blank" class="source-link">→ Libertaddigital.com</a>
         </div>
       </div>
     </div>
@@ -1119,7 +1133,7 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">📋</span>
             CMF
         </h2>
-        <span class="section-subtitle">Comisión del Mercado Financiero</span>
+        <span class="section-subtitle">Regulación · Fintech · Banca · Mercado de Capitales</span>
         
       <div class="news-item" data-score="5" data-title="diego peralta, el abogado de las grandes operaciones que llega a la primera línea jurídica de la cmf">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
@@ -1173,7 +1187,7 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">💻</span>
             Tendencias Tech
         </h2>
-        <span class="section-subtitle">Innovación · Startups · Cloud</span>
+        <span class="section-subtitle">TechCrunch · The Verge · MIT Tech Review</span>
         
       <div class="news-item" data-score="5" data-title="carrefour liquida este fin de semana el smart tv lg qned de 86 pulgadas perfecto para salones enormes">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
@@ -1227,8 +1241,19 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
             <span class="section-emoji">🪟</span>
             Microsoft News
         </h2>
-        <span class="section-subtitle">Microsoft Research · Microsoft 365 · Seguridad · IA</span>
+        <span class="section-subtitle">Microsoft Research · Copilot · Azure · Security</span>
         
+      <div class="news-item" data-score="5" data-title="microsoft retira copilot por un lado y lo devuelve por otro">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.muycomputer.com/2026/05/25/microsoft-retira-copilot-por-un-lado-y-lo-devuelve-por-otro/" target="_blank" class="news-link">
+          <div class="news-item-title">Microsoft retira Copilot por un lado y lo devuelve por otro</div>
+        </a>
+        <div class="news-item-detail">Copilot parecía empezar a aprender una lección incómoda en Windows 11. Primero llegó la marcha atrás con la tecla dedicada, después Microsoft permitió esconder el botón flotante de Office y, por un mo</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.muycomputer.com/2026/05/25/microsoft-retira-copilot-por-un-lado-y-lo-devuelve-por-otro/" target="_blank" class="source-link">→ Muycomputer.com</a>
+        </div>
+      </div>
       <div class="news-item" data-score="5" data-title="los mejores contenidos de la semana en muycomputer (dxxv)">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
         <a href="https://www.muycomputer.com/2026/05/24/los-mejores-contenidos-de-la-semana-en-muycomputer-dxxv/" target="_blank" class="news-link">
@@ -1260,17 +1285,6 @@ La entrada CEO de Circle: «La economía de los agentes de IA ha llegado</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
           <a href="https://www.muycomputer.com/2026/05/24/copilot-empieza-a-perder-privilegios-en-office/" target="_blank" class="source-link">→ Muycomputer.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="adobe acrobat: productos en línea y cómo elegir el mejor para ti">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.creativosonline.org/adobe-acrobat-productos-en-linea-y-como-elegir-el-mejor-para-ti.html" target="_blank" class="news-link">
-          <div class="news-item-title">Adobe Acrobat: productos en línea y cómo elegir el mejor para ti</div>
-        </a>
-        <div class="news-item-detail">Compara Acrobat Reader, Standard, Pro y sus alternativas. Descubre qué Adobe Acrobat y qué IA necesitas según tu forma de trabajar con PDFs.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.creativosonline.org/adobe-acrobat-productos-en-linea-y-como-elegir-el-mejor-para-ti.html" target="_blank" class="source-link">→ Creativosonline.org</a>
         </div>
       </div>
     </div>

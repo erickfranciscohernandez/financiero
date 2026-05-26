@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-05-26T19:34:49.432966",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Dólar índice DXY cae a mínimos de dos años ante expectativas de recortes Fed en julio",
+      "seccion": "economia_global",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "Exportaciones chilenas suben 12% en primer cuatrimestre impulsadas por cobre y litio",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Peso chileno se aprecia 3.2% en mayo apoyado por cobre y menor demanda de dólares",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
+    }
+  ]
+}
