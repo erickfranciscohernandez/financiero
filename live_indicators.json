@@ -1,12 +1,12 @@
 {
-  "fecha": "2026-05-27T13:31:32.691317",
+  "fecha": "2026-05-27T13:39:31.733696",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 38120.0,
+      "valor": 40543.07,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
@@ -15,7 +15,7 @@
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 66638.0,
+      "valor": 70588.0,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true

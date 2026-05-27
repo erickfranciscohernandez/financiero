@@ -116,8 +116,8 @@ def fetch_utm_sii():
     year = datetime.now().year
     return _sii_scrape(
         url       = f'https://www.sii.cl/valores_y_fechas/utm/utm{year}.htm',
-        rango_min = 50000,
-        rango_max = 100000,
+        rango_min = 60000,
+        rango_max = 120000,
         es_mensual= True,
     )
 
@@ -182,10 +182,10 @@ def fetch_mindicador():
 # ── Capa 4: Mock ─────────────────────────────────────────────────────────────
 
 MOCK_DATA = {
-    'uf':     {'valor': 38120.0, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'utm':    {'valor': 66638.0, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'tpm':    {'valor': 4.75,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'imacec': {'valor': 4.1,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'uf':     {'valor': 40543.07, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'utm':    {'valor': 70588.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'tpm':    {'valor': 4.75,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'imacec': {'valor': 4.1,      'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
 }
 
 INDICADORES_META = {
