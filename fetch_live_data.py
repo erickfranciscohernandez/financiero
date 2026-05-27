@@ -123,6 +123,17 @@ def fetch_utm_sii():
     )
 
 
+def fetch_usd_sii():
+    """Obtiene el valor diario del dólar observado desde sii.cl."""
+    year = datetime.now().year
+    return _sii_scrape(
+        url       = f'https://www.sii.cl/valores_y_fechas/dolar/dolar{year}.htm',
+        rango_min = 700,
+        rango_max = 1200,
+        es_mensual= False,
+    )
+
+
 # ── Capa 2: BCCh SI3 ─────────────────────────────────────────────────────────
 
 def _bcentral_fetch(series_code):
@@ -186,7 +197,7 @@ MOCK_DATA = {
     'uf':      {'valor': 40543.07, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
     'utm':     {'valor': 70588.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
     'tpm':     {'valor': 4.75,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'usd_clp': {'valor': 935.0,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'usd_clp': {'valor': 894.67,   'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
 }
 
 INDICADORES_META = {
@@ -214,6 +225,18 @@ def fetch_all_indicators():
             print('   ⚠️  SII: sin resultado, usando fallback')
     except Exception as e:
         print(f'   ⚠️  SII: {e}')
+
+    # Dólar: SII primero
+    print('🏛️  Consultando dólar en sii.cl...')
+    try:
+        usd = fetch_usd_sii()
+        if usd:
+            indicadores['usd_clp'] = usd
+            print(f'   ✅ Dólar desde SII: ${usd["valor"]:,.2f}')
+        else:
+            print('   ⚠️  SII: sin resultado, usando fallback')
+    except Exception as e:
+        print(f'   ⚠️  SII dólar: {e}')
 
     # UTM: SII primero
     print('🏛️  Consultando UTM en sii.cl...')

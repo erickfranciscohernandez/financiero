@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-27T13:48:49.738012",
+  "fecha": "2026-05-27T13:55:14.263725",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -33,7 +33,7 @@
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 935.0,
+      "valor": 894.67,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
