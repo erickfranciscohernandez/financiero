@@ -27,12 +27,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests weasyprint
+        run: pip install requests weasyprint beautifulsoup4 lxml
 
       - name: Generate dynamic mock news (for sandbox environment)
         run: python generate_mock_news.py
 
-      - name: Fetch live economic indicators (BCCh)
+      - name: Fetch indicadores macroeconómicos (SII + BCCh + mindicador.cl)
         env:
           BCENTRAL_USER: ${{ secrets.BCENTRAL_USER }}
           BCENTRAL_PASS: ${{ secrets.BCENTRAL_PASS }}
@@ -54,9 +54,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add newsletter.html newsletter_v4.html live_indicators.json alerts_*.json \
-                  noticias_diarias.json newsletter_*.pdf newsletter_data_*.json \
-                  noticias_*.csv resumen_*.txt
+          git add newsletter.html newsletter_v4.html live_indicators.json live_data_cache.json \
+                  alerts_*.json noticias_diarias.json newsletter_*.pdf \
+                  newsletter_data_*.json noticias_*.csv resumen_*.txt
           git diff --quiet && git diff --staged --quiet || git commit -m "chore: update newsletter with live data - $(date +'%Y-%m-%d %H:%M')"
           git push
 
