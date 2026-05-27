@@ -153,6 +153,29 @@ def fetch_newsapi(category, query, max_results=4):
         return []
 
 
+OFFOPIC_KEYWORDS = [
+    'receta', 'marinada', 'pollo', 'cocina', 'gastronomía', 'restaurante',
+    'ingredientes', 'preparación', 'horno', 'fritura', 'ensalada', 'postre',
+    'bebida', 'vino', 'cerveza', 'cocktail', 'moda', 'belleza', 'maquillaje',
+    'horóscopo', 'celebrities', 'farándula', 'deporte', 'fútbol', 'tenis',
+    'recetas', 'jugosas', 'sabrosas', 'pechuga', 'filete', 'carne',
+]
+
+OFFOPIC_DOMAINS = [
+    'directoalpaladar.com', 'hogarmania.com', 'pequerecetas.com',
+]
+
+
+def is_relevant(title, link=''):
+    """Retorna False si el artículo es claramente off-topic para un boletín financiero."""
+    title_lower = title.lower()
+    if any(kw in title_lower for kw in OFFOPIC_KEYWORDS):
+        return False
+    if any(domain in link for domain in OFFOPIC_DOMAINS):
+        return False
+    return True
+
+
 def fetch_rss_feed(url, timeout=5):
     """Fetch and parse a single RSS feed."""
     try:
@@ -171,7 +194,7 @@ def fetch_rss_feed(url, timeout=5):
                     description = item.findtext('description', '')
                     content = item.findtext('content:encoded', '', ns)
                     text = strip_html(content if content else description)[:300]
-                    if title and link:
+                    if title and link and is_relevant(title, link):
                         articles.append({
                             'title': title,
                             'link': link,
