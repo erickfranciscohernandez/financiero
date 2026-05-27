@@ -55,12 +55,14 @@ def _get_json(url, timeout=8):
 
 # ── Capa 1 (UF): SII ─────────────────────────────────────────────────────────
 
-def fetch_uf_sii():
-    """Obtiene el valor diario de la UF desde sii.cl."""
-    year  = datetime.now().year
-    day   = datetime.now().day
+def _sii_scrape(url, rango_min, rango_max, es_mensual=False):
+    """Extrae el valor vigente de una página de tabla SII.
+
+    es_mensual=True: toma el valor del mes actual (UTM).
+    es_mensual=False: toma el valor del día actual (UF).
+    """
     month = datetime.now().month
-    url   = f'https://www.sii.cl/valores_y_fechas/uf/uf{year}.htm'
+    day   = datetime.now().day
 
     html = _get_html(url)
 
@@ -68,24 +70,26 @@ def fetch_uf_sii():
                    'julio','agosto','septiembre','octubre','noviembre','diciembre']
     mes_nombre = month_names[month - 1]
 
-    # Encontrar sección del mes en la tabla
     idx = html.lower().find(mes_nombre)
     if idx == -1:
         return None
 
     bloque = html[idx:idx + 3000]
-
-    # Valores UF tienen formato 38.xxx,xx
     valores = re.findall(r'(\d{2}[.\s]\d{3}[,.]\d{2})', bloque)
     if not valores:
         return None
 
-    idx_dia = min(day - 1, len(valores) - 1)
-    valor_str = valores[idx_dia].replace('.', '').replace(',', '.').replace(' ', '')
+    if es_mensual:
+        # UTM: un valor por mes — tomar el primero del bloque
+        idx_val = 0
+    else:
+        # UF: un valor por día
+        idx_val = min(day - 1, len(valores) - 1)
 
+    valor_str = valores[idx_val].replace('.', '').replace(',', '.').replace(' ', '')
     try:
         valor = float(valor_str)
-        if 30000 < valor < 50000:
+        if rango_min < valor < rango_max:
             return {
                 'valor':  valor,
                 'fecha':  datetime.now().strftime('%Y-%m-%d'),
@@ -94,6 +98,28 @@ def fetch_uf_sii():
     except ValueError:
         pass
     return None
+
+
+def fetch_uf_sii():
+    """Obtiene el valor diario de la UF desde sii.cl."""
+    year = datetime.now().year
+    return _sii_scrape(
+        url       = f'https://www.sii.cl/valores_y_fechas/uf/uf{year}.htm',
+        rango_min = 30000,
+        rango_max = 50000,
+        es_mensual= False,
+    )
+
+
+def fetch_utm_sii():
+    """Obtiene el valor mensual de la UTM desde sii.cl."""
+    year = datetime.now().year
+    return _sii_scrape(
+        url       = f'https://www.sii.cl/valores_y_fechas/utm/utm{year}.htm',
+        rango_min = 50000,
+        rango_max = 100000,
+        es_mensual= True,
+    )
 
 
 # ── Capa 2: BCCh SI3 ─────────────────────────────────────────────────────────
@@ -188,7 +214,19 @@ def fetch_all_indicators():
     except Exception as e:
         print(f'   ⚠️  SII: {e}')
 
-    # BCCh SI3 (UTM y los que falten)
+    # UTM: SII primero
+    print('🏛️  Consultando UTM en sii.cl...')
+    try:
+        utm = fetch_utm_sii()
+        if utm:
+            indicadores['utm'] = utm
+            print(f'   ✅ UTM desde SII: ${utm["valor"]:,.0f}')
+        else:
+            print('   ⚠️  SII: sin resultado, usando fallback')
+    except Exception as e:
+        print(f'   ⚠️  SII UTM: {e}')
+
+    # BCCh SI3 para lo que falte
     if BCENTRAL_USER and BCENTRAL_PASS:
         print('🏦 Consultando BCCh SI3...')
         bcentral = fetch_bcentral()
