@@ -154,15 +154,21 @@ def fetch_newsapi(category, query, max_results=4):
 
 
 OFFOPIC_KEYWORDS = [
+    # Gastronomía
     'receta', 'marinada', 'pollo', 'cocina', 'gastronomía', 'restaurante',
     'ingredientes', 'preparación', 'horno', 'fritura', 'ensalada', 'postre',
-    'bebida', 'vino', 'cerveza', 'cocktail', 'moda', 'belleza', 'maquillaje',
-    'horóscopo', 'celebrities', 'farándula', 'deporte', 'fútbol', 'tenis',
-    'recetas', 'jugosas', 'sabrosas', 'pechuga', 'filete', 'carne',
+    'bebida', 'vino', 'cerveza', 'cocktail', 'recetas', 'jugosas', 'sabrosas',
+    'pechuga', 'filete', 'carne',
+    # Moda y entretenimiento
+    'moda', 'belleza', 'maquillaje', 'horóscopo', 'celebrities', 'farándula',
+    # Deportes y política no financiera
+    'deporte', 'fútbol', 'tenis', 'boicot', 'genocidio', 'partido político',
+    'manifestación', 'protesta',
 ]
 
 OFFOPIC_DOMAINS = [
     'directoalpaladar.com', 'hogarmania.com', 'pequerecetas.com',
+    'huffingtonpost.es', 'huffpost.com',
 ]
 
 
