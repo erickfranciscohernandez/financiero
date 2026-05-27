@@ -66,6 +66,7 @@ RSS_FEEDS = {
         'https://www.artificialintelligence-news.com/feed/',
     ],
     'noticias_economicas': [
+        'https://www.ine.gob.cl/rss/estadisticas',
         'https://feeds.reuters.com/reuters/businessNews',
         'https://feeds.cnbc.com/id/10000664/rss.xml',
         'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml',

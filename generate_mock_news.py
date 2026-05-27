@@ -226,10 +226,10 @@ NEWS_TEMPLATES = {
             'link': 'https://www.emol.com'
         },
         {
-            'title': 'Tasa de desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato en cuatro años',
-            'summary': 'INE registra 180.000 nuevos empleos formales. Sector servicios, construcción y comercio lideran creación de puestos. Brecha de género en empleo cae al 10.3%.',
+            'title': 'INE: desocupación nacional en 8,9% en trimestre enero-marzo 2026 con informalidad en 26,5%',
+            'summary': 'Encuesta Nacional de Empleo confirma tasa de desocupación de 8,9%. Remuneraciones nominales suben 5,1% a doce meses. Tasa combinada de desocupación y tiempo parcial involuntario llega a 15,2%.',
             'source': 'INE',
-            'link': 'https://www.ine.gob.cl'
+            'link': 'https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion'
         },
     ],
     'tendencias_tech': [
@@ -426,10 +426,16 @@ NEWS_TEMPLATES = {
             'link': 'https://www.ine.gob.cl'
         },
         {
-            'title': 'Desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato desde el segundo trimestre de 2022',
-            'summary': 'INE registra 180.000 nuevos empleos formales. Construcción, servicios financieros y tecnología lideran contratación. Empleo femenino sube al 46.8% de la fuerza laboral.',
+            'title': 'INE: tasa de desocupación nacional llega a 8,9% en trimestre enero-marzo 2026',
+            'summary': 'Encuesta Nacional de Empleo revela que 8,9% de la fuerza laboral estuvo desocupada en el trimestre móvil enero-marzo 2026. La tasa combinada de desocupación y tiempo parcial involuntario alcanza 15,2% en el mismo período.',
             'source': 'INE',
-            'link': 'https://www.ine.gob.cl'
+            'link': 'https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion'
+        },
+        {
+            'title': 'Remuneraciones e informalidad laboral: INE reporta alza nominal de 5,1% en marzo 2026',
+            'summary': 'El Índice Nominal de Remuneraciones crece 5,1% a doce meses a marzo 2026 (provisional), mientras el Índice Nominal de Costos Laborales sube 6,0%. La tasa de ocupación informal nacional se mantiene en 26,5% en el trimestre enero-marzo.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion'
         },
         {
             'title': 'Imacec de abril 2026 anota 4.1% de crecimiento interanual, superando todas las estimaciones',
