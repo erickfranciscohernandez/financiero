@@ -32,7 +32,10 @@ jobs:
       - name: Generate dynamic mock news (for sandbox environment)
         run: python generate_mock_news.py
 
-      - name: Fetch live economic indicators (FASE 4)
+      - name: Fetch live economic indicators (BCCh)
+        env:
+          BCENTRAL_USER: ${{ secrets.BCENTRAL_USER }}
+          BCENTRAL_PASS: ${{ secrets.BCENTRAL_PASS }}
         run: python fetch_live_data.py
 
       - name: Generate newsletter v4 with visualizations
