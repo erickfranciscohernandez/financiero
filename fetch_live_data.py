@@ -188,5 +188,19 @@ def fetch_all_indicators():
     return resultado
 
 
+# ── Compatibilidad con generate_newsletter_v4.py ─────────────────────────
+
+class LiveDataFetcher:
+    """Wrapper de compatibilidad para código existente."""
+    def get_all_indicators(self):
+        return fetch_all_indicators()
+
+
+def generate_chart_data(indicators):
+    """Devuelve los indicadores en formato listo para visualizaciones."""
+    ind = indicators.get('indicadores', {})
+    return {k: v for k, v in ind.items()}
+
+
 if __name__ == '__main__':
     fetch_all_indicators()

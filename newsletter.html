@@ -587,203 +587,133 @@
     <div class="alerts-section">
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
         
-    <div class="alert-item" data-score="8">
-      <strong>🚨 El Gobierno aprueba el proyecto de ley de la IA: multas mill...</strong>
-      <p>Se trata de un instrumento que asegurará la supervisión humana para todos aquellos sistemas considerados de 'alto riesgo' porque podrían afectar a los</p>
-      <small>Score: 8/10 | Eldiario.es</small>
+    <div class="alert-item" data-score="10">
+      <strong>🚨 G7 lanza iniciativa de cadenas de suministro críticas para r...</strong>
+      <p>Plan moviliza USD 70.000M en diez años para financiar minas de litio, cobalto y tierras raras en países aliados. Chile, Australia y Canadá son socios </p>
+      <small>Score: 10/10 | The Economist</small>
     </div>
-    <div class="alert-item" data-score="8">
-      <strong>🚨 DES 2026, un universo de innovación que se espera visiten má...</strong>
-      <p>China será el país invitado de una edición en la que se presenta el Universo DES, un nuevo espacio expositivo.</p>
-      <small>Score: 8/10 | Silicon.es</small>
+    <div class="alert-item" data-score="10">
+      <strong>🚨 IPSA alcanza récord histórico de 7.480 puntos: minería, reta...</strong>
+      <p>Bolsa de Santiago registra mejor semestre desde 2010. Flujos extranjeros ingresan USD 1.200M. Analistas elevan proyección al rango 7.500-7.800 para el</p>
+      <small>Score: 10/10 | La Tercera</small>
+    </div>
+    <div class="alert-item" data-score="10">
+      <strong>🚨 Oro supera USD 3.450/oz: bancos centrales emergentes acelera...</strong>
+      <p>China, India y Turquía aumentan reservas de oro al ritmo más alto en 55 años. Analistas proyectan precio hacia USD 3.700/oz si Fed recorta en septiemb</p>
+      <small>Score: 10/10 | Bloomberg</small>
+    </div>
+    <div class="alert-item" data-score="9">
+      <strong>🚨 Irán firma acuerdo nuclear con potencias occidentales que li...</strong>
+      <p>Diplomacia de tres años culmina en Viena con reducción gradual de sanciones a cambio de inspecciones permanentes del OIEA. Israel mantiene reservas.</p>
+      <small>Score: 9/10 | Financial Times</small>
+    </div>
+    <div class="alert-item" data-score="9">
+      <strong>🚨 China lanza plan fiscal de USD 600.000M para estimular consu...</strong>
+      <p>Beijing inyecta recursos en subsidios al consumo, infraestructura urbana y rescate de desarrolladores. Analistas estiman impulso de 0.8 pp al PIB en 2</p>
+      <small>Score: 9/10 | Bloomberg Commodities</small>
     </div>
     </div>
 
     <!-- VISUALIZACIONES + DATOS EN VIVO -->
     
-    <!-- FASE 4: VISUALIZACIONES EN VIVO -->
+    <!-- INDICADORES BANCO CENTRAL DE CHILE -->
     <section class="live-indicators">
-      <h2>📊 INDICADORES MACRO EN VIVO</h2>
-      <p class="subtitle">Datos actualizados automáticamente · Fuentes: Alpha Vantage, Federal Reserve</p>
+      <h2>📊 INDICADORES BANCO CENTRAL DE CHILE</h2>
+      <p class="subtitle">Fuente: Simulado · Actualizado: 27/05/2026 13:22 UTC</p>
 
       <div class="indicators-grid">
 
-        <!-- Indicador 1: USD/CLP -->
+        <!-- UF -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>💱 Tipo de Cambio</h3>
-            <span class="indicator-label">USD/CLP</span>
+            <h3>📐 Unidad de Fomento</h3>
+            <span class="indicator-label">UF</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">841.50</span>
+            <span class="big-number">$38,120.00</span>
             <span class="unit">pesos chilenos</span>
           </div>
-          <div class="indicator-change positive">
-            📈 +1.2%
-          </div>
-          <canvas id="chart-usd-clp"></canvas>
+          <div class="indicator-status normal">🟢 Vigente hoy</div>
+          <canvas id="chart-uf"></canvas>
         </div>
 
-        <!-- Indicador 2: Inflación -->
+        <!-- UTM -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>📈 Inflación Anual</h3>
-            <span class="indicator-label">CPI EE.UU.</span>
+            <h3>🧾 Unidad Tributaria Mensual</h3>
+            <span class="indicator-label">UTM</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">3.20%</span>
-            <span class="unit">cambio anual</span>
+            <span class="big-number">$66,638</span>
+            <span class="unit">pesos chilenos</span>
           </div>
-          <div class="indicator-status normal">
-            🟢 Moderada
-          </div>
-          <canvas id="chart-inflacion"></canvas>
+          <div class="indicator-status normal">🟢 Mes en curso</div>
+          <canvas id="chart-utm"></canvas>
         </div>
 
-        <!-- Indicador 3: Tasa Fed -->
+        <!-- TPM -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>🏦 Tasa de Fondos Fed</h3>
-            <span class="indicator-label">Federal Funds Rate</span>
+            <h3>🏦 Tasa de Política Monetaria</h3>
+            <span class="indicator-label">TPM · BCCh</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">4.50%</span>
+            <span class="big-number">4.75%</span>
             <span class="unit">anualizada</span>
           </div>
           <div class="indicator-status normal">
-            🟡 Monitor
+            🟡 Moderada
           </div>
-          <canvas id="chart-fed"></canvas>
+          <canvas id="chart-tpm"></canvas>
         </div>
 
-        <!-- Indicador 4: Cobre -->
+        <!-- Imacec -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>🔴 Precio del Cobre</h3>
-            <span class="indicator-label">Commodity Principal Chile</span>
+            <h3>📈 Imacec</h3>
+            <span class="indicator-label">Actividad económica</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">USD 4.12</span>
-            <span class="unit">por libra</span>
+            <span class="big-number">4.1%</span>
+            <span class="unit">variación anual</span>
           </div>
-          <div class="indicator-status normal">
-            💹 Operativo
+          <div class="indicator-status positive">
+            📈 Expansión
           </div>
-          <canvas id="chart-cobre"></canvas>
-        </div>
-
-        <!-- Indicador 5: S&P 500 -->
-        <div class="indicator-card">
-          <div class="indicator-header">
-            <h3>📊 Índice S&P 500</h3>
-            <span class="indicator-label">Mercado Accionario USA</span>
-          </div>
-          <div class="indicator-value">
-            <span class="big-number">5244</span>
-            <span class="unit">puntos</span>
-          </div>
-          <div class="indicator-change positive">
-            📈 +12.5
-          </div>
-          <canvas id="chart-sp500"></canvas>
+          <canvas id="chart-imacec"></canvas>
         </div>
 
       </div>
 
-      <!-- Info de actualización -->
       <div class="update-info">
-        <p>⏰ Última actualización: 27/05/2026 12:37 UTC</p>
-        <p>📍 Datos en vivo · 🔄 Auto-actualización cada 4 horas</p>
+        <p>⏰ Última actualización: 27/05/2026 13:22 UTC</p>
+        <p>🏦 Banco Central de Chile · mindicador.cl · 🔄 Actualización cada 6 horas</p>
       </div>
 
     </section>
 
-    <!-- Chart.js Library -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-
     <script>
-      // Datos para los gráficos (últimos 7 días simulados)
-      const generateChartData = (label, current, max, min) => ({
-        labels: ['L', 'M', 'X', 'J', 'V', 'S', 'H'],
+      const makeData = (label, val, colorHex) => ({
+        labels: ['L','M','X','J','V','S','H'],
         datasets: [{
           label: label,
-          data: [
-            current * 0.98,
-            current * 0.99,
-            current * 0.995,
-            current,
-            current * 1.01,
-            current * 1.005,
-            current
-          ],
-          borderColor: '#2563eb',
-          backgroundColor: 'rgba(37, 99, 235, 0.05)',
-          borderWidth: 2,
-          fill: true,
-          tension: 0.4,
-          pointRadius: 4,
-          pointBackgroundColor: '#2563eb'
+          data: [val*0.998, val*0.999, val*0.9995, val, val*1.0005, val*1.001, val],
+          borderColor: colorHex,
+          backgroundColor: colorHex + '15',
+          borderWidth: 2, fill: true, tension: 0.4,
+          pointRadius: 3, pointBackgroundColor: colorHex
         }]
       });
-
-      const chartOptions = {
-        responsive: true,
-        maintainAspectRatio: true,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            backgroundColor: 'rgba(0,0,0,0.8)',
-            padding: 12,
-            cornerRadius: 6
-          }
-        },
-        scales: {
-          y: {
-            grid: { color: '#f0f0f0' },
-            beginAtZero: false
-          },
-          x: {
-            grid: { display: false }
-          }
-        }
+      const opts = {
+        responsive: true, maintainAspectRatio: true,
+        plugins: { legend: { display: false } },
+        scales: { y: { grid: { color: '#f0f0f0' }, beginAtZero: false }, x: { grid: { display: false } } }
       };
-
-      // Crear gráficos
-      new Chart(document.getElementById('chart-usd-clp'), {
-        type: 'line',
-        data: generateChartData('USD/CLP', 841.5, 850, 800),
-        options: chartOptions
-      });
-
-      new Chart(document.getElementById('chart-inflacion'), {
-        type: 'line',
-        data: generateChartData('Inflación (%)', 3.2, 5, 2),
-        options: chartOptions
-      });
-
-      new Chart(document.getElementById('chart-fed'), {
-        type: 'line',
-        data: generateChartData('Fed Rate (%)', 4.5, 5, 4),
-        options: chartOptions
-      });
-
-      new Chart(document.getElementById('chart-cobre'), {
-        type: 'line',
-        data: generateChartData('Cobre (USD/lb)', 4.12, 4.5, 3.8),
-        options: chartOptions
-      });
-
-      new Chart(document.getElementById('chart-sp500'), {
-        type: 'line',
-        data: generateChartData('S&P 500', 5243.88, 5400, 5100),
-        options: chartOptions
-      });
-
-      // Auto-actualizar cada 4 horas
-      setInterval(() => {
-        console.log('⏰ Verificando datos en vivo...');
-        // Aquí ir a fetch live data
-      }, 4 * 60 * 60 * 1000);
+      new Chart(document.getElementById('chart-uf'),     { type:'line', data: makeData('UF',     38120.0, '#2563eb'), options: opts });
+      new Chart(document.getElementById('chart-utm'),    { type:'line', data: makeData('UTM',    66638.0, '#7c3aed'), options: opts });
+      new Chart(document.getElementById('chart-tpm'),    { type:'line', data: makeData('TPM',    4.75, '#dc2626'), options: opts });
+      new Chart(document.getElementById('chart-imacec'), { type:'line', data: makeData('Imacec', 4.1, '#16a34a'), options: opts });
     </script>
     
 
@@ -795,48 +725,48 @@
         </h2>
         <span class="section-subtitle">Bloomberg · Reuters · WSJ · The Economist</span>
         
-      <div class="news-item" data-score="5" data-title="stocks extend highs on ai optimism as oil slides: markets wrap">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-26/asian-stocks-set-to-rise-as-iran-deal-hopes-hold-markets-wrap" target="_blank" class="news-link">
-          <div class="news-item-title">Stocks Extend Highs on AI Optimism as Oil Slides: Markets Wrap</div>
+      <div class="news-item" data-score="9" data-title="china lanza plan fiscal de usd 600.000m para estimular consumo interno y reactivar sector inmobiliario">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
+        <a href="https://www.bloomberg.com/markets" target="_blank" class="news-link">
+          <div class="news-item-title">China lanza plan fiscal de USD 600.000M para estimular consumo interno y reactivar sector inmobiliario</div>
         </a>
-        <div class="news-item-detail">The rally in US stocks is set to stretch into a fifth day as optimism around artificial intelligence, lower oil prices and easing bond yields combined to drive an increasingly bullish mood.</div>
+        <div class="news-item-detail">Beijing inyecta recursos en subsidios al consumo, infraestructura urbana y rescate de desarrolladores. Analistas estiman impulso de 0.8 pp al PIB en 2026.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-26/asian-stocks-set-to-rise-as-iran-deal-hopes-hold-markets-wrap" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.bloomberg.com/markets" target="_blank" class="source-link">→ Bloomberg Commodities</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="guindos says ecb must consider weaker growth at june meeting">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-27/guindos-says-ecb-must-consider-weaker-growth-in-june-decision" target="_blank" class="news-link">
-          <div class="news-item-title">Guindos Says ECB Must Consider Weaker Growth at June Meeting</div>
+      <div class="news-item" data-score="10" data-title="oro supera usd 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.bloomberg.com/markets" target="_blank" class="news-link">
+          <div class="news-item-title">Oro supera USD 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas</div>
         </a>
-        <div class="news-item-detail">The European Central Bank should take a close look at how badly the Iran war is weighing on the economy when it decides whether to raise interest rates next month, according to Vice President Luis de </div>
+        <div class="news-item-detail">China, India y Turquía aumentan reservas de oro al ritmo más alto en 55 años. Analistas proyectan precio hacia USD 3.700/oz si Fed recorta en septiembre.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-27/guindos-says-ecb-must-consider-weaker-growth-in-june-decision" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.bloomberg.com/markets" target="_blank" class="source-link">→ Bloomberg</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="data center firm polardc sets nordic record with junk bond sale">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-27/data-center-firm-polardc-sets-nordic-record-with-junk-bond-sale" target="_blank" class="news-link">
-          <div class="news-item-title">Data Center Firm PolarDC Sets Nordic Record With Junk Bond Sale</div>
+      <div class="news-item" data-score="8" data-title="déficit fiscal de ee.uu. alcanza usd 1.8 billones en 2026: deuda supera el 130% del pib">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.cnbc.com" target="_blank" class="news-link">
+          <div class="news-item-title">Déficit fiscal de EE.UU. alcanza USD 1.8 billones en 2026: deuda supera el 130% del PIB</div>
         </a>
-        <div class="news-item-detail">Data center operator PolarDC sold €800 million ($930 million) of high-yield bonds in the biggest deal of its kind in the Nordic market.</div>
+        <div class="news-item-detail">CBO advierte que la trayectoria fiscal es insostenible sin ajuste. Rendimiento del bono T-10 trepa a 4.6%, presionando al alza el costo del crédito global.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-27/data-center-firm-polardc-sets-nordic-record-with-junk-bond-sale" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.cnbc.com" target="_blank" class="source-link">→ CNBC</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="copper startup quilla is in ipo talks ahead of peru mining expansion">
+      <div class="news-item" data-score="5" data-title="banco mundial: américa latina crecerá 3.1% en 2026, la mejor performance desde 2011">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bloomberg.com/news/articles/2026-05-27/copper-startup-quilla-is-in-ipo-talks-ahead-of-peru-mining-expansion" target="_blank" class="news-link">
-          <div class="news-item-title">Copper Startup Quilla Is in IPO Talks Ahead of Peru Mining Expansion</div>
+        <a href="https://www.ft.com/economics" target="_blank" class="news-link">
+          <div class="news-item-title">Banco Mundial: América Latina crecerá 3.1% en 2026, la mejor performance desde 2011</div>
         </a>
-        <div class="news-item-detail">Copper startup Quilla Resources Inc. is in discussions with prospective advisers about listing shares in Toronto as it weighs expansion plans in Peru.</div>
+        <div class="news-item-detail">Impulso de commodities, inversión extranjera y consumo privado elevan perspectivas regionales. Chile, Brasil y Perú lideran entre exportadores de materias primas.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bloomberg.com/news/articles/2026-05-27/copper-startup-quilla-is-in-ipo-talks-ahead-of-peru-mining-expansion" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
+          <a href="https://www.ft.com/economics" target="_blank" class="source-link">→ Financial Times</a>
         </div>
       </div>
     </div>
@@ -849,48 +779,37 @@
         </h2>
         <span class="section-subtitle">INE · BCCh · ICARE · Banco Mundial</span>
         
-      <div class="news-item" data-score="6" data-title="llega a españa el lotus emira 420 sport, que sube la potencia de su motor turbo de mercedes-amg y pierde peso">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.diariomotor.com/noticia/lotus-emira-420-sport/" target="_blank" class="news-link">
-          <div class="news-item-title">Llega a España el Lotus Emira 420 Sport, que sube la potencia de su motor turbo de Mercedes-AMG y pierde peso</div>
-        </a>
-        <div class="news-item-detail">No todo está perdido para Lotus. Muchos fuimos los que dejamos de creer cuando la marca comunicó que, una vez bajo el control de Geely, iba a convertirse en una firma enfocada en coches eléctricos y q</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.diariomotor.com/noticia/lotus-emira-420-sport/" target="_blank" class="source-link">→ Diariomotor.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="bitmine immersion technologies (bmnr) anuncia que sus tenencias de eth alcanzan los 5,39 millones de tokens">
+      <div class="news-item" data-score="5" data-title="ventas minoristas crecen 5.8% en mayo: electrodomésticos, vestuario y restaurantes lideran alza">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-anuncia-que-sus-tenencias-de-eth-alcanzan-los-5-39-millones-de-tokens-302781793.html" target="_blank" class="news-link">
-          <div class="news-item-title">Bitmine Immersion Technologies (BMNR) anuncia que sus tenencias de ETH alcanzan los 5,39 millones de tokens</div>
+        <a href="https://www.ine.gob.cl" target="_blank" class="news-link">
+          <div class="news-item-title">Ventas minoristas crecen 5.8% en mayo: electrodomésticos, vestuario y restaurantes lideran alza</div>
         </a>
-        <div class="news-item-detail">- Bitmine Immersion Technologies (BMNR) anuncia que sus tenencias de ETH alcanzan los 5,39 millones de tokens, y que el total de criptomonedas y efectivo en tenencias asciende a 12.300 millones de dól</div>
+        <div class="news-item-detail">INE registra el mejor dato de ventas del comercio en 18 meses. Mayor empleo y menor inflación dinamizan consumo de hogares. Crédito de consumo creció 6.3% interanual.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.prnewswire.com/news-releases/bitmine-immersion-technologies-bmnr-anuncia-que-sus-tenencias-de-eth-alcanzan-los-5-39-millones-de-tokens-302781793.html" target="_blank" class="source-link">→ PRNewswire</a>
+          <a href="https://www.ine.gob.cl" target="_blank" class="source-link">→ INE</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="exchange bitget apuesta por acciones tokenizadas con su nueva plataforma rwa reality">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.diariobitcoin.com/exchanges/exchange-bitget-apuesta-por-acciones-tokenizadas-con-su-nueva-plataforma-rwa-reality/" target="_blank" class="news-link">
-          <div class="news-item-title">Exchange Bitget apuesta por acciones tokenizadas con su nueva plataforma RWA Reality</div>
-        </a>
-        <div class="news-item-detail">Bitget lanza Reality para llevar acciones y ETF tokenizados a su ecosistema cripto. El exchange presentó Reality, una plataforma financiera licenciada enfocada en activos del mundo real tokenizados, c</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.diariobitcoin.com/exchanges/exchange-bitget-apuesta-por-acciones-tokenizadas-con-su-nueva-plataforma-rwa-reality/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="olvídate de los apple airtags, ugreen rebaja el smarttag tracker edición fifa world cup a su precio más bajo histórico">
+      <div class="news-item" data-score="6" data-title="icare: confianza empresarial sube a 57.8 puntos en junio, el nivel más alto desde el primer trimestre de 2022">
         <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://es.gizmodo.com/olvidate-de-los-apple-airtags-ugreen-rebaja-el-smarttag-tracker-edicion-fifa-world-cup-a-su-precio-mas-bajo-historico-2000237599" target="_blank" class="news-link">
-          <div class="news-item-title">Olvídate de los Apple AirTags, UGREEN rebaja el SmartTag Tracker edición FIFA World Cup a su precio más bajo histórico</div>
+        <a href="https://www.icare.cl" target="_blank" class="news-link">
+          <div class="news-item-title">ICARE: confianza empresarial sube a 57.8 puntos en junio, el nivel más alto desde el primer trimestre de 2022</div>
         </a>
-        <div class="news-item-detail">Perder las llaves ya es un clásico. Perder la mochila, la maleta o incluso el balón del crío en mitad de un entrenamiento… eso ya duele más. El UGREEN FineTrack 2 Smart Finder con diseño de fútbol ha </div>
+        <div class="news-item-detail">Encuesta mensual refleja menor incertidumbre regulatoria, optimismo por datos macro y expectativa de recorte de TPM. Inversión privada se reactiva en manufacturas y retail.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟠 Alto</span>
-          <a href="https://es.gizmodo.com/olvidate-de-los-apple-airtags-ugreen-rebaja-el-smarttag-tracker-edicion-fifa-world-cup-a-su-precio-mas-bajo-historico-2000237599" target="_blank" class="source-link">→ Gizmodo.com</a>
+          <a href="https://www.icare.cl" target="_blank" class="source-link">→ ICARE</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="9" data-title="ipc de mayo 2026 registra 0.1% mensual: inflación cae a 3.4% anual, mínimo desde diciembre 2021">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
+        <a href="https://www.ine.gob.cl" target="_blank" class="news-link">
+          <div class="news-item-title">IPC de mayo 2026 registra 0.1% mensual: inflación cae a 3.4% anual, mínimo desde diciembre 2021</div>
+        </a>
+        <div class="news-item-detail">INE confirma desaceleración sostenida. Combustibles caen 1.2% y alimentos frescos bajan 0.3%. Resultado fortalece expectativas de recorte de TPM en agosto.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.ine.gob.cl" target="_blank" class="source-link">→ INE</a>
         </div>
       </div>
     </div>
@@ -903,50 +822,37 @@
         </h2>
         <span class="section-subtitle">OpenAI · Anthropic · Google DeepMind · TLDR AI</span>
         
-      <div class="news-item" data-score="8" data-title="des 2026, un universo de innovación que se espera visiten más de 15.000 personas">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.silicon.es/des-2026-innovacion-15-000-personas-2580409" target="_blank" class="news-link">
-          <div class="news-item-title">DES 2026, un universo de innovación que se espera visiten más de 15.000 personas</div>
-        </a>
-        <div class="news-item-detail">China será el país invitado de una edición en la que se presenta el Universo DES, un nuevo espacio expositivo.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.silicon.es/des-2026-innovacion-15-000-personas-2580409" target="_blank" class="source-link">→ Silicon.es</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="cloud nation 2026: la soberanía del dato marca la estrategia cloud en españa">
+      <div class="news-item" data-score="5" data-title="microsoft integra copilot en toda la suite office 365 con nuevas capacidades de análisis financiero">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.silicon.es/cloud-nation-2026-la-soberania-del-dato-marca-la-estrategia-cloud-en-espana-2580399" target="_blank" class="news-link">
-          <div class="news-item-title">Cloud Nation 2026: La soberanía del dato marca la estrategia cloud en España</div>
+        <a href="https://bensbites.com" target="_blank" class="news-link">
+          <div class="news-item-title">Microsoft integra Copilot en toda la suite Office 365 con nuevas capacidades de análisis financiero</div>
         </a>
-        <div class="news-item-detail">El informe de Aire y Atlas Tecnológico revela que España lidera el uso estratégico de la nube en procesos críticos pese a las brechas en pymes.</div>
+        <div class="news-item-detail">Asistente IA analiza balances, genera proyecciones y redacta informes ejecutivos directamente desde Excel y PowerPoint.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.silicon.es/cloud-nation-2026-la-soberania-del-dato-marca-la-estrategia-cloud-en-espana-2580399" target="_blank" class="source-link">→ Silicon.es</a>
+          <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="barcelona acoge la reunión del consejo de bbva con el foco puesto en las pymes y la ia">
+      <div class="news-item" data-score="5" data-title="anthropic lanza claude 4 con mejoras en seguridad y capacidad de agentes autónomos">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.elperiodico.com/es/economia/20260526/barcelona-acoge-reunion-consejo-bbva-130667942" target="_blank" class="news-link">
-          <div class="news-item-title">Barcelona acoge la reunión del Consejo de BBVA con el foco puesto en las pymes y la IA</div>
+        <a href="https://bensbites.com" target="_blank" class="news-link">
+          <div class="news-item-title">Anthropic lanza Claude 4 con mejoras en seguridad y capacidad de agentes autónomos</div>
         </a>
-        <div class="news-item-detail">El Consejo de Administración de BBVA ha viajado este martes a Barcelona para celebrar una reunión centrada en los proyectos estratégicos del banco en Catalunya. La última vez que los directivos del ba</div>
+        <div class="news-item-detail">Nuevo modelo integra capacidades de uso de computadora, navegación web y ejecución de código con supervisión humana mejorada.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.elperiodico.com/es/economia/20260526/barcelona-acoge-reunion-consejo-bbva-130667942" target="_blank" class="source-link">→ Elperiodico.com</a>
+          <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="el ayuntamiento de san martín de la vega de madrid plagia con ia el cartel de paco roca para la fira del llibre de valència">
+      <div class="news-item" data-score="5" data-title="startup chilena xepelin lanza motor de ia para evaluación de crédito pyme en tiempo real">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.eldiario.es/comunitat-valenciana/cultura/ayuntamiento-san-martin-vega-madrid-plagia-ia-cartel-paco-roca-fira-llibre-valencia_1_13250592.html" target="_blank" class="news-link">
-          <div class="news-item-title">El Ayuntamiento de San Martín de la Vega de Madrid plagia con IA el cartel de Paco Roca para la Fira del Llibre de València</div>
+        <a href="https://therundown.ai" target="_blank" class="news-link">
+          <div class="news-item-title">Startup chilena Xepelin lanza motor de IA para evaluación de crédito Pyme en tiempo real</div>
         </a>
-        <div class="news-item-detail">El diseñador valenciano ha criticado la situación en sus redes sociales y ante la posibilidad de presentar una denuncia asegura: “Soy socio del VEGAP y lo dejaré en sus manos”
-
- El Ayuntamiento de Sa</div>
+        <div class="news-item-detail">Fintech usa modelos de lenguaje para analizar flujo de caja, historial tributario y comportamiento de pagos en menos de 2 minutos.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.eldiario.es/comunitat-valenciana/cultura/ayuntamiento-san-martin-vega-madrid-plagia-ia-cartel-paco-roca-fira-llibre-valencia_1_13250592.html" target="_blank" class="source-link">→ Eldiario.es</a>
+          <a href="https://therundown.ai" target="_blank" class="source-link">→ The Rundown AI</a>
         </div>
       </div>
     </div>
@@ -959,51 +865,37 @@
         </h2>
         <span class="section-subtitle">Reuters · FT · Bloomberg · The Economist</span>
         
-      <div class="news-item" data-score="8" data-title="el gobierno aprueba el proyecto de ley de la ia: multas millonarias, veto a los 'deepfakes' y sistemas prohibidos">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.eldiario.es/tecnologia/gobierno-aprueba-proyecto-ley-ia-multas-millonarias-veto-deepfakes-sistemas-prohibidos_1_13251093.html" target="_blank" class="news-link">
-          <div class="news-item-title">El Gobierno aprueba el proyecto de ley de la IA: multas millonarias, veto a los 'deepfakes' y sistemas prohibidos</div>
+      <div class="news-item" data-score="10" data-title="g7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de china en minerales">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.economist.com" target="_blank" class="news-link">
+          <div class="news-item-title">G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales</div>
         </a>
-        <div class="news-item-detail">Se trata de un instrumento que asegurará la supervisión humana para todos aquellos sistemas considerados de 'alto riesgo' porque podrían afectar a los derechos fundamentales de las personas
-
-La UE pr</div>
+        <div class="news-item-detail">Plan moviliza USD 70.000M en diez años para financiar minas de litio, cobalto y tierras raras en países aliados. Chile, Australia y Canadá son socios clave.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.eldiario.es/tecnologia/gobierno-aprueba-proyecto-ley-ia-multas-millonarias-veto-deepfakes-sistemas-prohibidos_1_13251093.html" target="_blank" class="source-link">→ Eldiario.es</a>
+          <a href="https://www.economist.com" target="_blank" class="source-link">→ The Economist</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title=""como vikingos": soldados de israel describen la rapiña en la invasión de líbano">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.eldiario.es/internacional/vikingos-soldados-israel-describen-rapina-invasion-libano_1_13250640.html" target="_blank" class="news-link">
-          <div class="news-item-title">"Como vikingos": soldados de Israel describen la rapiña en la invasión de Líbano</div>
+      <div class="news-item" data-score="9" data-title="irán firma acuerdo nuclear con potencias occidentales que limita enriquecimiento de uranio a 20%">
+        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
+        <a href="https://www.ft.com/world" target="_blank" class="news-link">
+          <div class="news-item-title">Irán firma acuerdo nuclear con potencias occidentales que limita enriquecimiento de uranio a 20%</div>
         </a>
-        <div class="news-item-detail">El diario Haaretz habló con cinco militares que señalan un escenario de pillaje tolerado en medio de la destrucción generalizada de viviendas, escuelas y clínicas
-Israel repite el guion fallido de la</div>
+        <div class="news-item-detail">Diplomacia de tres años culmina en Viena con reducción gradual de sanciones a cambio de inspecciones permanentes del OIEA. Israel mantiene reservas.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.eldiario.es/internacional/vikingos-soldados-israel-describen-rapina-invasion-libano_1_13250640.html" target="_blank" class="source-link">→ Eldiario.es</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.ft.com/world" target="_blank" class="source-link">→ Financial Times</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="durante décadas nadie pudo investigar estas misteriosas vasijas gigantes por culpa de las bombas enterradas en laos. cuando finalmente abrieron una, apareció un descubrimiento arqueológico extraordinario">
+      <div class="news-item" data-score="5" data-title="opep+ extiende recortes de producción hasta diciembre de 2026 para defender precio del crudo">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://es.gizmodo.com/durante-decadas-nadie-pudo-investigar-estas-misteriosas-vasijas-gigantes-por-culpa-de-las-bombas-enterradas-en-laos-cuando-finalmente-abrieron-una-aparecio-un-descubrimiento-arqueologico-extraordina-2000237723" target="_blank" class="news-link">
-          <div class="news-item-title">Durante décadas nadie pudo investigar estas misteriosas vasijas gigantes por culpa de las bombas enterradas en Laos. Cuando finalmente abrieron una, apareció un descubrimiento arqueológico extraordinario</div>
+        <a href="https://www.bloomberg.com/news" target="_blank" class="news-link">
+          <div class="news-item-title">OPEP+ extiende recortes de producción hasta diciembre de 2026 para defender precio del crudo</div>
         </a>
-        <div class="news-item-detail">La guerra mantuvo bloqueado durante años uno de los mayores enigmas arqueológicos de Asia. Pero tras varias temporadas de excavación, los científicos hallaron huesos humanos, objetos rituales y prueba</div>
+        <div class="news-item-detail">Arabia Saudita liderará reducción adicional de 500.000 bpd. Mercado petrolero proyecta Brent entre USD 72-80 para el segundo semestre.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://es.gizmodo.com/durante-decadas-nadie-pudo-investigar-estas-misteriosas-vasijas-gigantes-por-culpa-de-las-bombas-enterradas-en-laos-cuando-finalmente-abrieron-una-aparecio-un-descubrimiento-arqueologico-extraordina-2000237723" target="_blank" class="source-link">→ Gizmodo.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="apodo ingrato: quién es el "equipo rocket" y por qué remite a los menem">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://noticias.perfil.com/noticias/politica/apodo-ingrato-quien-es-el-equipo-rocket-y-por-que-remite-a-los-menem.phtml" target="_blank" class="news-link">
-          <div class="news-item-title">Apodo ingrato: quién es el "Equipo Rocket" y por qué remite a los Menem</div>
-        </a>
-        <div class="news-item-detail">Los celestiales de Caputo lo acuñaron para identificar a quienes orbitan alrededor de los Menem. La referencia a Pokémon no es inocente: el Equipo Rocket es la banda de los perdedortes. Leer más</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://noticias.perfil.com/noticias/politica/apodo-ingrato-quien-es-el-equipo-rocket-y-por-que-remite-a-los-menem.phtml" target="_blank" class="source-link">→ Perfil.com</a>
+          <a href="https://www.bloomberg.com/news" target="_blank" class="source-link">→ Bloomberg</a>
         </div>
       </div>
     </div>
@@ -1016,48 +908,37 @@ Israel repite el guion fallido de la</div>
         </h2>
         <span class="section-subtitle">Codelco · BCCh · CMF · Gobierno</span>
         
-      <div class="news-item" data-score="5" data-title="days of play 2026 empieza el 27 de mayo">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://blog.es.playstation.com/2026/05/26/days-of-play-2026-empieza-el-27-de-mayo/" target="_blank" class="news-link">
-          <div class="news-item-title">Days of Play 2026 empieza el 27 de mayo</div>
+      <div class="news-item" data-score="6" data-title="tasa de desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato en cuatro años">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.ine.gob.cl" target="_blank" class="news-link">
+          <div class="news-item-title">Tasa de desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato en cuatro años</div>
         </a>
-        <div class="news-item-detail">¡Days of Play vuelve en 2026! A partir del 27 de mayo, en el evento de este año tendremos grandes ofertas en juegos y accesorios de PlayStation, nuevo contenido para PlayStation Plus, PlayStation Tour</div>
+        <div class="news-item-detail">INE registra 180.000 nuevos empleos formales. Sector servicios, construcción y comercio lideran creación de puestos. Brecha de género en empleo cae al 10.3%.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://blog.es.playstation.com/2026/05/26/days-of-play-2026-empieza-el-27-de-mayo/" target="_blank" class="source-link">→ Playstation.com</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.ine.gob.cl" target="_blank" class="source-link">→ INE</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="el truco para hacer unas pechugas de pollo más jugosas y sabrosas: tres marinadas fáciles">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.directoalpaladar.com/curso-de-cocina/truco-para-hacer-unas-pechugas-pollo-jugosas-sabrosas-tres-marinadas-faciles" target="_blank" class="news-link">
-          <div class="news-item-title">El truco para hacer unas pechugas de pollo más jugosas y sabrosas: tres marinadas fáciles</div>
+      <div class="news-item" data-score="10" data-title="ipsa alcanza récord histórico de 7.480 puntos: minería, retail y banca lideran alza">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.latercera.com" target="_blank" class="news-link">
+          <div class="news-item-title">IPSA alcanza récord histórico de 7.480 puntos: minería, retail y banca lideran alza</div>
         </a>
-        <div class="news-item-detail">La pechuga de pollo es una de las proteínas más consumidas del mundo, pero también una de las más secas. Un filete de pollo a la plancha, sin más añadidos, es la cena más triste que existe sobre la fa</div>
+        <div class="news-item-detail">Bolsa de Santiago registra mejor semestre desde 2010. Flujos extranjeros ingresan USD 1.200M. Analistas elevan proyección al rango 7.500-7.800 para el año.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.directoalpaladar.com/curso-de-cocina/truco-para-hacer-unas-pechugas-pollo-jugosas-sabrosas-tres-marinadas-faciles" target="_blank" class="source-link">→ Directoalpaladar.com</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.latercera.com" target="_blank" class="source-link">→ La Tercera</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="la teniente francisca caces se convierte en la primera mujer en graduarse como piloto de f-16 en la historia de la fach">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.cnnchile.com/pais/la-teniente-francisca-caces-se-convierte-en-la-primera-mujer-en-graduarse-como-piloto-de-f-16-en-la-historia-de-la-fach/" target="_blank" class="news-link">
-          <div class="news-item-title">La teniente Francisca Caces se convierte en la primera mujer en graduarse como piloto de F-16 en la historia de la FACh</div>
+      <div class="news-item" data-score="8" data-title="sqm eleva producción de litio a 220.000 toneladas anuales con nueva planta en el salar de atacama">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.df.cl" target="_blank" class="news-link">
+          <div class="news-item-title">SQM eleva producción de litio a 220.000 toneladas anuales con nueva planta en el Salar de Atacama</div>
         </a>
-        <div class="news-item-detail">En el Hangar del Grupo de Aviación N°8 de la Vª Brigada Aérea de la Fuerza Aérea de Chile (FACh) se llevó a cabo la ceremonia de graduación del curso de vuelo de F-16, donde oficiales de la institució</div>
+        <div class="news-item-detail">Compañía inaugura instalación que eleva capacidad en 40%. Acuerdo con el Estado asegura royalty creciente vinculado al precio del carbonato de litio.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.cnnchile.com/pais/la-teniente-francisca-caces-se-convierte-en-la-primera-mujer-en-graduarse-como-piloto-de-f-16-en-la-historia-de-la-fach/" target="_blank" class="source-link">→ Cnnchile.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="por qué chile se convirtió en el "shopping" de cada vez más compradores argentinos">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bbc.com/mundo/articles/c87qyrlz3p3o" target="_blank" class="news-link">
-          <div class="news-item-title">Por qué Chile se convirtió en el "shopping" de cada vez más compradores argentinos</div>
-        </a>
-        <div class="news-item-detail">Chile se convirtió en un "centro comercial" para muchos argentinos que buscan ofertas en el país vecino. Te contamos las razones.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bbc.com/mundo/articles/c87qyrlz3p3o" target="_blank" class="source-link">→ BBC News</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.df.cl" target="_blank" class="source-link">→ Diario Financiero</a>
         </div>
       </div>
     </div>
@@ -1070,48 +951,37 @@ Israel repite el guion fallido de la</div>
         </h2>
         <span class="section-subtitle">CONFECOOP · Coopeuch · ACI Américas · BID</span>
         
-      <div class="news-item" data-score="5" data-title="microsoft, once y fundación once refuerzan su apuesta por la ia para impulsar la inclusión de personas con discapacidad">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.europapress.es/epsocial/responsables/noticia-microsoft-once-fundacion-once-refuerzan-apuesta-ia-impulsar-inclusion-personas-discapacidad-20260526131348.html" target="_blank" class="news-link">
-          <div class="news-item-title">Microsoft, ONCE y Fundación ONCE refuerzan su apuesta por la IA para impulsar la inclusión de personas con discapacidad</div>
+      <div class="news-item" data-score="6" data-title="análisis: cooperativas de ahorro en chile ante el desafío de escalar sin perder el modelo solidario">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.elmostrador.cl" target="_blank" class="news-link">
+          <div class="news-item-title">Análisis: cooperativas de ahorro en Chile ante el desafío de escalar sin perder el modelo solidario</div>
         </a>
-        <div class="news-item-detail">Microsoft, ONCE y Fundación ONCE han renovado su colaboración para impulsar una nueva etapa de trabajo conjunto centrada en el desarrollo de soluciones basadas en tecnologías avanzadas de nube e intel</div>
+        <div class="news-item-detail">Expertos debaten cómo el cooperativismo financiero puede crecer en activos y cobertura geográfica manteniendo su identidad democrática y los beneficios para sus socios.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.europapress.es/epsocial/responsables/noticia-microsoft-once-fundacion-once-refuerzan-apuesta-ia-impulsar-inclusion-personas-discapacidad-20260526131348.html" target="_blank" class="source-link">→ Europapress.es</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.elmostrador.cl" target="_blank" class="source-link">→ El Mostrador</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="deporte sin genocidio = boicot a israel">
+      <div class="news-item" data-score="5" data-title="bid destaca al cooperativismo latinoamericano como motor de inclusión financiera rural en 2026">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.huffingtonpost.es/opinion/deporte-genocidio-boicot-israel-f202605.html" target="_blank" class="news-link">
-          <div class="news-item-title">Deporte sin genocidio = boicot a Israel</div>
+        <a href="https://www.iadb.org" target="_blank" class="news-link">
+          <div class="news-item-title">BID destaca al cooperativismo latinoamericano como motor de inclusión financiera rural en 2026</div>
         </a>
-        <div class="news-item-detail"></div>
+        <div class="news-item-detail">Organismo multilateral resalta el rol de las cooperativas en llevar servicios financieros formales a comunidades alejadas de la banca comercial tradicional.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.huffingtonpost.es/opinion/deporte-genocidio-boicot-israel-f202605.html" target="_blank" class="source-link">→ Huffingtonpost.es</a>
+          <a href="https://www.iadb.org" target="_blank" class="source-link">→ BID</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="kaitlin quevedo y la pulsera solidaria que siempre le acompaña: "es por las enfermedades raras"">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.marca.com/tenis/roland-garros/2026/05/26/kaitlin-quevedo-pulsera-solidaria-siempre-le-acompana-enfermedades-raras.html" target="_blank" class="news-link">
-          <div class="news-item-title">Kaitlin Quevedo y la pulsera solidaria que siempre le acompaña: "Es por las enfermedades raras"</div>
+      <div class="news-item" data-score="8" data-title="cooperativas chilenas aceleran transformación digital para competir con la banca en productos hipotecarios">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.df.cl" target="_blank" class="news-link">
+          <div class="news-item-title">Cooperativas chilenas aceleran transformación digital para competir con la banca en productos hipotecarios</div>
         </a>
-        <div class="news-item-detail">La tenista es una de las dos miembros de la 'Armada' en la segunda ronda de Roland Garros  Leer</div>
+        <div class="news-item-detail">El sector avanza en digitalización de procesos de crédito inmobiliario. La reducción de tiempos de aprobación y la mejora en experiencia de usuario son las principales apuestas.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.marca.com/tenis/roland-garros/2026/05/26/kaitlin-quevedo-pulsera-solidaria-siempre-le-acompana-enfermedades-raras.html" target="_blank" class="source-link">→ Marca</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="“en azqueltán hay discriminación, pero también dignidad y fortaleza”">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.jornada.com.mx/2026/05/26/estados/025n1est" target="_blank" class="news-link">
-          <div class="news-item-title">“En Azqueltán hay discriminación, pero también dignidad y fortaleza”</div>
-        </a>
-        <div class="news-item-detail">Guadalajara, Jal., Racismo, discriminación, amenazas, pero sobre todo “fortaleza, resistencia, dignidad y bondad de la comunidad”, encontraron organizaciones civiles que realizaron una cuarta misión d</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.jornada.com.mx/2026/05/26/estados/025n1est" target="_blank" class="source-link">→ Jornada.com.mx</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.df.cl" target="_blank" class="source-link">→ Diario Financiero</a>
         </div>
       </div>
     </div>
@@ -1124,48 +994,37 @@ Israel repite el guion fallido de la</div>
         </h2>
         <span class="section-subtitle">Regulación · Fintech · Banca · Mercado de Capitales</span>
         
-      <div class="news-item" data-score="5" data-title="diego peralta, el abogado de las grandes operaciones que llega a la primera línea jurídica de la cmf">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.df.cl/senal-df/senales-financieras/diego-peralta-el-abogado-de-las-grandes-operaciones-que-llega-a-la-primera" target="_blank" class="news-link">
-          <div class="news-item-title">Diego Peralta, el abogado de las grandes operaciones que llega a la primera línea jurídica de la CMF</div>
+      <div class="news-item" data-score="6" data-title="cmf avanza en nuevos estándares de resiliencia operacional para el sistema financiero chileno">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
+          <div class="news-item-title">CMF avanza en nuevos estándares de resiliencia operacional para el sistema financiero chileno</div>
         </a>
-        <div class="news-item-detail">El nuevo director general jurídico de la Comisión para el Mercado Financiero asumirá el cargo tras una trayectoria marcada por complejas operaciones financieras y una visión práctica de la industria. </div>
+        <div class="news-item-detail">El regulador trabaja en normativas que exigirán mayor robustez ante ciberataques y fallas sistémicas. El sector financiero evalúa inversiones en continuidad operacional.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.df.cl/senal-df/senales-financieras/diego-peralta-el-abogado-de-las-grandes-operaciones-que-llega-a-la-primera" target="_blank" class="source-link">→ Www.df.cl</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="josé antonio gaspar, director general jurídico removido de la cmf: “siendo honesto, no me lo esperaba”">
+      <div class="news-item" data-score="5" data-title="cmf avanza en reglamentación del equity crowdfunding bajo la ley fintech para pymes chilenas">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.latercera.com/pulso/noticia/jose-antonio-gaspar-director-general-juridico-removido-de-la-cmf-siendo-honesto-no-me-lo-esperaba/" target="_blank" class="news-link">
-          <div class="news-item-title">José Antonio Gaspar, director general jurídico removido de la CMF: “Siendo honesto, no me lo esperaba”</div>
+        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
+          <div class="news-item-title">CMF avanza en reglamentación del equity crowdfunding bajo la Ley Fintech para Pymes chilenas</div>
         </a>
-        <div class="news-item-detail">El exdirectivo de la CMF, que fue desvinculado por su nueva presidenta, Catherine Tornel, hace un balance sobre los doce años que estuvo en el organismo regulador y habla sobre su reciente salida. El </div>
+        <div class="news-item-detail">El marco regulatorio para plataformas de financiamiento colectivo busca ampliar el acceso de pequeñas empresas a capital sin pasar por la banca tradicional.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.latercera.com/pulso/noticia/jose-antonio-gaspar-director-general-juridico-removido-de-la-cmf-siendo-honesto-no-me-lo-esperaba/" target="_blank" class="source-link">→ Latercera.com</a>
+          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="actas de directorio, computadores requisados y gerentes declarando hace meses: el allanamiento al cda que remece a la u">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.latercera.com/el-deportivo/noticia/actas-de-directorio-computadores-requisados-y-gerentes-declarando-meses-atras-el-allanamiento-al-cda-que-remece-a-la-u/" target="_blank" class="news-link">
-          <div class="news-item-title">Actas de directorio, computadores requisados y gerentes declarando hace meses: el allanamiento al CDA que remece a la U</div>
+      <div class="news-item" data-score="6" data-title="cmf autoriza inicio de operaciones de cuatro nuevas cooperativas de ahorro y crédito en regiones">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
+          <div class="news-item-title">CMF autoriza inicio de operaciones de cuatro nuevas cooperativas de ahorro y crédito en regiones</div>
         </a>
-        <div class="news-item-detail">El operativo se extendió por cerca de tres horas e incluyó todo tipo de documentos relacionados al expresidente Michael Clark. Cecilia Pérez no estaba en La Cisterna cuando llegó la PDI, pero se movil</div>
+        <div class="news-item-detail">Resoluciones habilitantes cubren cooperativas en Atacama, Aysén, Los Lagos y Maule, ampliando acceso a crédito formal en zonas con baja cobertura bancaria.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.latercera.com/el-deportivo/noticia/actas-de-directorio-computadores-requisados-y-gerentes-declarando-meses-atras-el-allanamiento-al-cda-que-remece-a-la-u/" target="_blank" class="source-link">→ Latercera.com</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="caso sartor: fiscalía allana el centro deportivo de la universidad de chile y domicilio de michael clark">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.latercera.com/nacional/noticia/caso-sartor-fiscalia-allana-el-centro-deportivo-de-la-universidad-de-chile-y-domicilio-de-michael-clark/" target="_blank" class="news-link">
-          <div class="news-item-title">Caso Sartor: Fiscalía allana el centro deportivo de la Universidad de Chile y domicilio de Michael Clark</div>
-        </a>
-        <div class="news-item-detail">El Ministerio Público investiga irregularidades financieras como negociación incompatible, fraude a Ley de Mercado de Valores y omisión de oferta pública de adquisición de acciones, entre otros. A fin</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.latercera.com/nacional/noticia/caso-sartor-fiscalia-allana-el-centro-deportivo-de-la-universidad-de-chile-y-domicilio-de-michael-clark/" target="_blank" class="source-link">→ Latercera.com</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
         </div>
       </div>
     </div>
@@ -1178,48 +1037,48 @@ Israel repite el guion fallido de la</div>
         </h2>
         <span class="section-subtitle">TechCrunch · The Verge · MIT Tech Review</span>
         
-      <div class="news-item" data-score="5" data-title="carrefour liquida este fin de semana el smart tv lg qned de 86 pulgadas perfecto para salones enormes">
+      <div class="news-item" data-score="5" data-title="apple lanza iphone 17 con chip a19 y funciones avanzadas de ia en cámara">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.compradiccion.com/television/carrefour-liquida-este-fin-semana-smart-tv-lg-qned-86-pulgadas-perfecto-para-salones-enormes" target="_blank" class="news-link">
-          <div class="news-item-title">Carrefour liquida este fin de semana el Smart TV LG QNED de 86 pulgadas perfecto para salones enormes</div>
+        <a href="https://www.theverge.com" target="_blank" class="news-link">
+          <div class="news-item-title">Apple lanza iPhone 17 con chip A19 y funciones avanzadas de IA en cámara</div>
         </a>
-        <div class="news-item-detail">Si tienes la suerte de contar con un salón enorme, de esos en los que cabría hasta un minipiso de los de la exministra Trujillo, este fin de semana Carrefour te lo pone más fácil para hacerte con un t</div>
+        <div class="news-item-detail">Nuevo dispositivo integra procesamiento de imágenes con IA local y mejora autonomía de batería en 40%.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.compradiccion.com/television/carrefour-liquida-este-fin-semana-smart-tv-lg-qned-86-pulgadas-perfecto-para-salones-enormes" target="_blank" class="source-link">→ Compradiccion.com</a>
+          <a href="https://www.theverge.com" target="_blank" class="source-link">→ The Verge</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="agenda do dia: varejo nos eua e leilão do tesouro são destaque">
+      <div class="news-item" data-score="5" data-title="apple intelligence llega a ios 19: siri reescrito con llm propio y procesamiento 100% on-device">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://valor.globo.com/financas/noticia/2026/05/14/agenda-do-dia-varejo-nos-eua-e-leilao-do-tesouro-sao-destaque.ghtml" target="_blank" class="news-link">
-          <div class="news-item-title">Agenda do dia: Varejo nos EUA e leilão do Tesouro são destaque</div>
+        <a href="https://www.theverge.com" target="_blank" class="news-link">
+          <div class="news-item-title">Apple Intelligence llega a iOS 19: Siri reescrito con LLM propio y procesamiento 100% on-device</div>
         </a>
-        <div class="news-item-detail">Os números do comércio varejista dos Estados Unido...</div>
+        <div class="news-item-detail">Nueva generación de IA de Apple integra razonamiento contextual sin enviar datos a la nube. Compatible con iPhone 16 y superiores desde junio 2026.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://valor.globo.com/financas/noticia/2026/05/14/agenda-do-dia-varejo-nos-eua-e-leilao-do-tesouro-sao-destaque.ghtml" target="_blank" class="source-link">→ Globo</a>
+          <a href="https://www.theverge.com" target="_blank" class="source-link">→ The Verge</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="summit ny: especialistas defendem ética, mas divergem sobre regulamentação da ia">
+      <div class="news-item" data-score="5" data-title="ciberseguridad: brecha en proveedor cloud expone datos de 200 millones de usuarios en europa">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://valor.globo.com/brasil/summit-brazil-usa/noticia/2026/05/13/summit-ny-especialistas-defendem-etica-mas-divergem-sobre-regulamentacao-da-ia.ghtml" target="_blank" class="news-link">
-          <div class="news-item-title">Summit NY: Especialistas defendem ética, mas divergem sobre regulamentação da IA</div>
+        <a href="https://www.technologyreview.com" target="_blank" class="news-link">
+          <div class="news-item-title">Ciberseguridad: brecha en proveedor cloud expone datos de 200 millones de usuarios en Europa</div>
         </a>
-        <div class="news-item-detail">O impacto da inteligência artificial (IA) generati...</div>
+        <div class="news-item-detail">Incidente activa protocolos GDPR con notificaciones obligatorias. Reguladores europeos abren investigación y multas podrían superar EUR 800M.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://valor.globo.com/brasil/summit-brazil-usa/noticia/2026/05/13/summit-ny-especialistas-defendem-etica-mas-divergem-sobre-regulamentacao-da-ia.ghtml" target="_blank" class="source-link">→ Globo</a>
+          <a href="https://www.technologyreview.com" target="_blank" class="source-link">→ MIT Technology Review</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="educação climática ganha espaço em evento educacional">
+      <div class="news-item" data-score="5" data-title="spacex starship completa primer vuelo comercial: lleva satélites de nasa y esa a órbita polar">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://valor.globo.com/patrocinado/dino/noticia/2026/05/13/educacao-climatica-ganha-espaco-em-evento-educacional-1.ghtml" target="_blank" class="news-link">
-          <div class="news-item-title">Educação climática ganha espaço em evento educacional</div>
+        <a href="https://techcrunch.com" target="_blank" class="news-link">
+          <div class="news-item-title">SpaceX Starship completa primer vuelo comercial: lleva satélites de NASA y ESA a órbita polar</div>
         </a>
-        <div class="news-item-detail">Iniciativas educacionais voltadas à sustentabilidade e ao protagonismo estudantil impulsionam o uso de experiências imersivas e tecnologias interativas no setor</div>
+        <div class="news-item-detail">Cohete más poderoso del mundo logra misión operacional tras cuatro años de pruebas. Abre nueva era de lanzamientos pesados a bajo costo.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://valor.globo.com/patrocinado/dino/noticia/2026/05/13/educacao-climatica-ganha-espaco-em-evento-educacional-1.ghtml" target="_blank" class="source-link">→ Globo</a>
+          <a href="https://techcrunch.com" target="_blank" class="source-link">→ TechCrunch</a>
         </div>
       </div>
     </div>
@@ -1232,48 +1091,63 @@ Israel repite el guion fallido de la</div>
         </h2>
         <span class="section-subtitle">Microsoft Research · Copilot · Azure · Security</span>
         
-      <div class="news-item" data-score="5" data-title="solo el 3,3% de los usuarios de microsoft 365 paga por copilot: qué significa y por qué microsoft acaba de cambiar su estrategia">
+      <div class="news-item" data-score="5" data-title="magenticlite, magenticbrain, fara1.5: an agentic experience optimized for small models">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://wwwhatsnew.com/2026/05/26/microsoft-copilot-3-por-ciento-usuarios-pagan-opcional-2026/" target="_blank" class="news-link">
-          <div class="news-item-title">Solo el 3,3% de los usuarios de Microsoft 365 paga por Copilot: qué significa y por qué Microsoft acaba de cambiar su estrategia</div>
+        <a href="https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/" target="_blank" class="news-link">
+          <div class="news-item-title">MagenticLite, MagenticBrain, Fara1.5: An agentic experience optimized for small models</div>
         </a>
-        <div class="news-item-detail">Dos años después de su lanzamiento. Decenas de miles de millones invertidos. Cero de cada 30 usuarios empresariales convirtiendo en clientes de pago. Esos son los números de Microsoft Copilot en 2026,</div>
+        <div class="news-item-detail">At a glance
+
+
+
+
+MagenticLite is an agentic application that works across both the browser and local file system in a single workflow. Built as the next generation of Magentic-UI, it combines a redesig</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://wwwhatsnew.com/2026/05/26/microsoft-copilot-3-por-ciento-usuarios-pagan-opcional-2026/" target="_blank" class="source-link">→ Wwwhatsnew.com</a>
+          <a href="https://www.microsoft.com/en-us/research/blog/magenticlite-magenticbrain-fara1-5-an-agentic-experience-optimized-for-small-models/" target="_blank" class="source-link">→ www.microsoft.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="microsoft añade silenciosamente la posibilidad de desactivar copilot por completo en windows 11">
+      <div class="news-item" data-score="5" data-title="vega: zero-knowledge proofs for digital identity in the age of ai">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.europapress.es/portaltic/software/noticia-microsoft-anade-silenciosamente-posibilidad-desactivar-copilot-completo-windows-11-20260526105306.html" target="_blank" class="news-link">
-          <div class="news-item-title">Microsoft añade silenciosamente la posibilidad de desactivar Copilot por completo en Windows 11</div>
+        <a href="https://www.microsoft.com/en-us/research/blog/vega-zero-knowledge-proofs-for-digital-identity-in-the-age-of-ai/" target="_blank" class="news-link">
+          <div class="news-item-title">Vega: Zero-knowledge proofs for digital identity in the age of AI</div>
         </a>
-        <div class="news-item-detail">Microsoft ha añadido una nueva 'Directiva de grupo' (Group Policy) en Windows 11 que permite eliminar Copilot totalmente del sistema tras su llegada con la actualización de abril de 2026.</div>
+        <div class="news-item-detail">At a glance
+
+
+
+
+Vega lets users prove facts from government-issued credentials — age, personhood, professional status — without revealing the credential itself. The credential never leaves the device.</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.europapress.es/portaltic/software/noticia-microsoft-anade-silenciosamente-posibilidad-desactivar-copilot-completo-windows-11-20260526105306.html" target="_blank" class="source-link">→ Europapress.es</a>
+          <a href="https://www.microsoft.com/en-us/research/blog/vega-zero-knowledge-proofs-for-digital-identity-in-the-age-of-ai/" target="_blank" class="source-link">→ www.microsoft.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="microsoft retira copilot por un lado y lo devuelve por otro">
+      <div class="news-item" data-score="5" data-title="further notes on our recent research on ai delegation and long-horizon reliability">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.muycomputer.com/2026/05/25/microsoft-retira-copilot-por-un-lado-y-lo-devuelve-por-otro/" target="_blank" class="news-link">
-          <div class="news-item-title">Microsoft retira Copilot por un lado y lo devuelve por otro</div>
+        <a href="https://www.microsoft.com/en-us/research/blog/further-notes-on-our-recent-research-on-ai-delegation-and-long-horizon-reliability/" target="_blank" class="news-link">
+          <div class="news-item-title">Further Notes on Our Recent Research on AI Delegation and Long-Horizon Reliability</div>
         </a>
-        <div class="news-item-detail">Copilot parecía empezar a aprender una lección incómoda en Windows 11. Primero llegó la marcha atrás con la tecla dedicada, después Microsoft permitió esconder el botón flotante de Office y, por un mo</div>
+        <div class="news-item-detail">Our recent paper, “LLMs Corrupt Your Documents When You Delegate”, has generated discussion about the reliability of AI systems in delegated workflows. We appreciate the interest in this work and want</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.muycomputer.com/2026/05/25/microsoft-retira-copilot-por-un-lado-y-lo-devuelve-por-otro/" target="_blank" class="source-link">→ Muycomputer.com</a>
+          <a href="https://www.microsoft.com/en-us/research/blog/further-notes-on-our-recent-research-on-ai-delegation-and-long-horizon-reliability/" target="_blank" class="source-link">→ www.microsoft.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="los mejores contenidos de la semana en muycomputer (dxxv)">
+      <div class="news-item" data-score="5" data-title="mimalloc: a new, high-performance, scalable memory allocator for the modern era">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.muycomputer.com/2026/05/24/los-mejores-contenidos-de-la-semana-en-muycomputer-dxxv/" target="_blank" class="news-link">
-          <div class="news-item-title">Los mejores contenidos de la semana en MuyComputer (DXXV)</div>
+        <a href="https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/" target="_blank" class="news-link">
+          <div class="news-item-title">mimalloc: A new, high-performance, scalable memory allocator for the modern era</div>
         </a>
-        <div class="news-item-detail">Cerramos domingo con el recopilatorio de los mejores contenidos que hemos publicado en MC a lo largo de la semana y que puedes revisar de un vistazo en esta selección con lo más relevante: Razer Iskur</div>
+        <div class="news-item-detail">At a glance
+
+
+
+
+Today’s critical services and applications are often highly concurrent, using hundreds of threads. They also operate at large memory scales, frequently hundreds of gigabytes, especiall</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.muycomputer.com/2026/05/24/los-mejores-contenidos-de-la-semana-en-muycomputer-dxxv/" target="_blank" class="source-link">→ Muycomputer.com</a>
+          <a href="https://www.microsoft.com/en-us/research/blog/mimalloc-a-high-performance-scalable-memory-allocator-for-the-modern-era/" target="_blank" class="source-link">→ www.microsoft.com</a>
         </div>
       </div>
     </div>
