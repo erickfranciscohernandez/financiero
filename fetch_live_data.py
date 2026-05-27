@@ -20,22 +20,18 @@ BCENTRAL_URL  = 'https://si3.bcentral.cl/SieteRestWS/SieteRestWS.ashx'
 
 # Códigos de series BCCh SI3
 BCENTRAL_SERIES = {
-    'usd_clp': 'F073.TCO.PRE.Z.D',   # Dólar observado
-    'uf':      'F073.UF.PRE.Z.D',    # Unidad de Fomento
-    'ipc':     'F073.IPC.VAR.Z.M',   # IPC variación mensual
-    'euro':    'F073.TCO.PRE.E.D',   # Euro observado
+    'uf':  'F073.UF.PRE.Z.D',    # Unidad de Fomento
+    'utm': 'F073.UTM.PRE.Z.M',   # Unidad Tributaria Mensual
 }
 
 # ── mindicador.cl (sin autenticación) ──────────────────────────────────────
 MINDICADOR_URL = 'https://mindicador.cl/api'
 
 MINDICADOR_SERIES = {
-    'usd_clp': 'dolar',
-    'uf':      'uf',
-    'tpm':     'tpm',
-    'ipc':     'ipc',
-    'imacec':  'imacec',
-    'euro':    'euro',
+    'uf':     'uf',
+    'utm':    'utm',
+    'tpm':    'tpm',
+    'imacec': 'imacec',
 }
 
 
@@ -112,24 +108,20 @@ def fetch_mindicador():
 # ── Capa 3: Mock ──────────────────────────────────────────────────────────
 
 MOCK_DATA = {
-    'usd_clp': {'valor': 935.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'uf':      {'valor': 38120.0,'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'tpm':     {'valor': 4.75,   'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'ipc':     {'valor': 0.1,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'imacec':  {'valor': 4.1,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'euro':    {'valor': 1012.0, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'uf':     {'valor': 38120.0, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'utm':    {'valor': 66638.0, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'tpm':    {'valor': 4.75,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'imacec': {'valor': 4.1,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
 }
 
 
 # ── Orquestador principal ─────────────────────────────────────────────────
 
 INDICADORES_META = {
-    'usd_clp': {'label': 'Dólar observado (CLP)',   'unidad': '$',   'tipo': 'precio'},
-    'uf':      {'label': 'UF',                       'unidad': '$',   'tipo': 'precio'},
-    'tpm':     {'label': 'TPM (Tasa Política Mon.)', 'unidad': '%',   'tipo': 'tasa'},
-    'ipc':     {'label': 'IPC variación mensual',    'unidad': '%',   'tipo': 'porcentaje'},
-    'imacec':  {'label': 'Imacec',                   'unidad': '%',   'tipo': 'porcentaje'},
-    'euro':    {'label': 'Euro observado (CLP)',      'unidad': '$',   'tipo': 'precio'},
+    'uf':     {'label': 'UF',                        'unidad': '$', 'tipo': 'precio'},
+    'utm':    {'label': 'UTM',                        'unidad': '$', 'tipo': 'precio'},
+    'tpm':    {'label': 'TPM (Tasa Política Mon.)',   'unidad': '%', 'tipo': 'tasa'},
+    'imacec': {'label': 'Imacec',                     'unidad': '%', 'tipo': 'porcentaje'},
 }
 
 

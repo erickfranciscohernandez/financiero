@@ -1,21 +1,21 @@
 {
-  "fecha": "2026-05-27T13:13:29.235446",
+  "fecha": "2026-05-27T13:18:39.842432",
   "version": "v5-bcentral",
   "indicadores": {
-    "usd_clp": {
-      "label": "Dólar observado (CLP)",
-      "unidad": "$",
-      "tipo": "precio",
-      "valor": 935.0,
-      "fecha": "2026-05-27",
-      "fuente": "Simulado",
-      "mock": true
-    },
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
       "valor": 38120.0,
+      "fecha": "2026-05-27",
+      "fuente": "Simulado",
+      "mock": true
+    },
+    "utm": {
+      "label": "UTM",
+      "unidad": "$",
+      "tipo": "precio",
+      "valor": 66638.0,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
@@ -29,29 +29,11 @@
       "fuente": "Simulado",
       "mock": true
     },
-    "ipc": {
-      "label": "IPC variación mensual",
-      "unidad": "%",
-      "tipo": "porcentaje",
-      "valor": 0.1,
-      "fecha": "2026-05-27",
-      "fuente": "Simulado",
-      "mock": true
-    },
     "imacec": {
       "label": "Imacec",
       "unidad": "%",
       "tipo": "porcentaje",
       "valor": 4.1,
-      "fecha": "2026-05-27",
-      "fuente": "Simulado",
-      "mock": true
-    },
-    "euro": {
-      "label": "Euro observado (CLP)",
-      "unidad": "$",
-      "tipo": "precio",
-      "valor": 1012.0,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
