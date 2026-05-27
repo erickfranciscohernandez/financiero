@@ -11,16 +11,16 @@ def generate_charts_html(indicators_data: dict) -> str:
     """Generar sección HTML con indicadores del Banco Central de Chile."""
 
     ind = indicators_data.get('indicadores', {})
-    uf     = ind.get('uf',     {})
-    utm    = ind.get('utm',    {})
-    tpm    = ind.get('tpm',    {})
-    imacec = ind.get('imacec', {})
+    uf      = ind.get('uf',      {})
+    utm     = ind.get('utm',     {})
+    tpm     = ind.get('tpm',     {})
+    usd_clp = ind.get('usd_clp', {})
 
-    uf_val     = uf.get('valor', 0)
-    utm_val    = utm.get('valor', 0)
-    tpm_val    = tpm.get('valor', 0)
-    imacec_val = imacec.get('valor', 0)
-    fuente     = uf.get('fuente', 'Banco Central de Chile')
+    uf_val      = uf.get('valor', 0)
+    utm_val     = utm.get('valor', 0)
+    tpm_val     = tpm.get('valor', 0)
+    usd_clp_val = usd_clp.get('valor', 0)
+    fuente      = uf.get('fuente', 'Banco Central de Chile')
     fecha      = datetime.now().strftime('%d/%m/%Y %H:%M UTC')
 
     html = """
@@ -75,20 +75,18 @@ def generate_charts_html(indicators_data: dict) -> str:
           <canvas id="chart-tpm"></canvas>
         </div>
 
-        <!-- Imacec -->
+        <!-- Dólar observado -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>📈 Imacec</h3>
-            <span class="indicator-label">Actividad económica</span>
+            <h3>💵 Dólar observado</h3>
+            <span class="indicator-label">USD/CLP · BCCh</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">""" + f"{imacec_val:.1f}" + """%</span>
-            <span class="unit">variación anual</span>
+            <span class="big-number">$""" + f"{usd_clp_val:,.2f}" + """</span>
+            <span class="unit">pesos chilenos</span>
           </div>
-          <div class="indicator-status """ + ("positive" if imacec_val >= 3 else "normal") + """">
-            """ + ("📈 Expansión" if imacec_val >= 3 else "🟡 Moderado") + """
-          </div>
-          <canvas id="chart-imacec"></canvas>
+          <div class="indicator-status normal">🟡 Tipo de cambio</div>
+          <canvas id="chart-usd"></canvas>
         </div>
 
       </div>
@@ -121,7 +119,7 @@ def generate_charts_html(indicators_data: dict) -> str:
       new Chart(document.getElementById('chart-uf'),     { type:'line', data: makeData('UF',     """ + str(uf_val) + """, '#2563eb'), options: opts });
       new Chart(document.getElementById('chart-utm'),    { type:'line', data: makeData('UTM',    """ + str(utm_val) + """, '#7c3aed'), options: opts });
       new Chart(document.getElementById('chart-tpm'),    { type:'line', data: makeData('TPM',    """ + str(tpm_val) + """, '#dc2626'), options: opts });
-      new Chart(document.getElementById('chart-imacec'), { type:'line', data: makeData('Imacec', """ + str(imacec_val) + """, '#16a34a'), options: opts });
+      new Chart(document.getElementById('chart-usd'),    { type:'line', data: makeData('USD/CLP', """ + str(usd_clp_val) + """, '#f59e0b'), options: opts });
     </script>
     """
 
@@ -315,10 +313,10 @@ def main():
         print("⚠️  No se encontró live_indicators.json, usando mock data")
         indicators = {
             'indicadores': {
-                'uf':     {'valor': 38120.0, 'fuente': 'Simulado'},
-                'utm':    {'valor': 66638.0, 'fuente': 'Simulado'},
-                'tpm':    {'valor': 4.75,    'fuente': 'Simulado'},
-                'imacec': {'valor': 4.1,     'fuente': 'Simulado'},
+                'uf':      {'valor': 40543.07, 'fuente': 'Simulado'},
+                'utm':     {'valor': 70588.0,  'fuente': 'Simulado'},
+                'tpm':     {'valor': 4.75,     'fuente': 'Simulado'},
+                'usd_clp': {'valor': 935.0,    'fuente': 'Simulado'},
             }
         }
 

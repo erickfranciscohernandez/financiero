@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-27T13:39:31.733696",
+  "fecha": "2026-05-27T13:48:49.738012",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -29,11 +29,11 @@
       "fuente": "Simulado",
       "mock": true
     },
-    "imacec": {
-      "label": "Imacec",
-      "unidad": "%",
-      "tipo": "porcentaje",
-      "valor": 4.1,
+    "usd_clp": {
+      "label": "Dólar observado",
+      "unidad": "$",
+      "tipo": "precio",
+      "valor": 935.0,
       "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true

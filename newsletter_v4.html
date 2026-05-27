@@ -619,7 +619,7 @@
     <!-- INDICADORES BANCO CENTRAL DE CHILE -->
     <section class="live-indicators">
       <h2>📊 INDICADORES BANCO CENTRAL DE CHILE</h2>
-      <p class="subtitle">Fuente: Simulado · Actualizado: 27/05/2026 13:39 UTC</p>
+      <p class="subtitle">Fuente: Simulado · Actualizado: 27/05/2026 13:48 UTC</p>
 
       <div class="indicators-grid">
 
@@ -667,26 +667,24 @@
           <canvas id="chart-tpm"></canvas>
         </div>
 
-        <!-- Imacec -->
+        <!-- Dólar observado -->
         <div class="indicator-card">
           <div class="indicator-header">
-            <h3>📈 Imacec</h3>
-            <span class="indicator-label">Actividad económica</span>
+            <h3>💵 Dólar observado</h3>
+            <span class="indicator-label">USD/CLP · BCCh</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">4.1%</span>
-            <span class="unit">variación anual</span>
+            <span class="big-number">$935.00</span>
+            <span class="unit">pesos chilenos</span>
           </div>
-          <div class="indicator-status positive">
-            📈 Expansión
-          </div>
-          <canvas id="chart-imacec"></canvas>
+          <div class="indicator-status normal">🟡 Tipo de cambio</div>
+          <canvas id="chart-usd"></canvas>
         </div>
 
       </div>
 
       <div class="update-info">
-        <p>⏰ Última actualización: 27/05/2026 13:39 UTC</p>
+        <p>⏰ Última actualización: 27/05/2026 13:48 UTC</p>
         <p>🏦 Banco Central de Chile · mindicador.cl · 🔄 Actualización cada 6 horas</p>
       </div>
 
@@ -713,7 +711,7 @@
       new Chart(document.getElementById('chart-uf'),     { type:'line', data: makeData('UF',     40543.07, '#2563eb'), options: opts });
       new Chart(document.getElementById('chart-utm'),    { type:'line', data: makeData('UTM',    70588.0, '#7c3aed'), options: opts });
       new Chart(document.getElementById('chart-tpm'),    { type:'line', data: makeData('TPM',    4.75, '#dc2626'), options: opts });
-      new Chart(document.getElementById('chart-imacec'), { type:'line', data: makeData('Imacec', 4.1, '#16a34a'), options: opts });
+      new Chart(document.getElementById('chart-usd'),    { type:'line', data: makeData('USD/CLP', 935.0, '#f59e0b'), options: opts });
     </script>
     
 

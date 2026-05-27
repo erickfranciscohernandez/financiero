@@ -24,16 +24,17 @@ BCENTRAL_PASS = os.environ.get('BCENTRAL_PASS', '')
 BCENTRAL_URL  = 'https://si3.bcentral.cl/SieteRestWS/SieteRestWS.ashx'
 
 BCENTRAL_SERIES = {
-    'utm': 'F073.UTM.PRE.Z.M',
+    'utm':     'F073.UTM.PRE.Z.M',
+    'usd_clp': 'F073.TCO.PRE.Z.D',   # Dólar observado
 }
 
 MINDICADOR_URL = 'https://mindicador.cl/api'
 
 MINDICADOR_SERIES = {
-    'uf':     'uf',
-    'utm':    'utm',
-    'tpm':    'tpm',
-    'imacec': 'imacec',
+    'uf':      'uf',
+    'utm':     'utm',
+    'tpm':     'tpm',
+    'usd_clp': 'dolar',
 }
 
 
@@ -182,17 +183,17 @@ def fetch_mindicador():
 # ── Capa 4: Mock ─────────────────────────────────────────────────────────────
 
 MOCK_DATA = {
-    'uf':     {'valor': 40543.07, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'utm':    {'valor': 70588.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'tpm':    {'valor': 4.75,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
-    'imacec': {'valor': 4.1,      'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'uf':      {'valor': 40543.07, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'utm':     {'valor': 70588.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'tpm':     {'valor': 4.75,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'usd_clp': {'valor': 935.0,    'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
 }
 
 INDICADORES_META = {
-    'uf':     {'label': 'UF',                      'unidad': '$', 'tipo': 'precio'},
-    'utm':    {'label': 'UTM',                      'unidad': '$', 'tipo': 'precio'},
-    'tpm':    {'label': 'TPM (Tasa Política Mon.)', 'unidad': '%', 'tipo': 'tasa'},
-    'imacec': {'label': 'Imacec',                   'unidad': '%', 'tipo': 'porcentaje'},
+    'uf':      {'label': 'UF',                      'unidad': '$',   'tipo': 'precio'},
+    'utm':     {'label': 'UTM',                      'unidad': '$',   'tipo': 'precio'},
+    'tpm':     {'label': 'TPM (Tasa Política Mon.)', 'unidad': '%',   'tipo': 'tasa'},
+    'usd_clp': {'label': 'Dólar observado',          'unidad': '$',   'tipo': 'precio'},
 }
 
 
