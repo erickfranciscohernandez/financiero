@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-05-27T12:15:46.694310",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Exportaciones chilenas acumulan superávit de USD 4.800M en enero-mayo 2026",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.economist.com"
+    },
+    {
+      "titulo": "Sector cooperativo chileno acumula activos por USD 9.800M en junio 2026, récord histórico",
+      "seccion": "cooperativismo",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.iadb.org"
+    }
+  ]
+}

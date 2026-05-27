@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "fecha_generacion": "2026-05-27T12:15:50.899107",
+    "version": "v3",
+    "total_noticias": 28
+  },
+  "datos": {
+    "geopolitica": [
+      {
+        "title": "EE.UU. y China acuerdan cumbre presidencial para formalizar acuerdo comercial fase 2",
+        "summary": "Trump y Xi acuerdan reunirse en Ginebra en julio para sellar segunda fase del acuerdo comercial. Aranceles industriales bajarían del 25% al 12% en sectores clave.",
+        "source": "Reuters",
+        "link": "https://www.reuters.com/world",
+        "date": "2026-05-27T09:15:27.220887"
+      },
+      {
+        "title": "Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual",
+        "summary": "Medida es la más amplia adoptada por Bruselas contra Pekín. China amenaza con represalias arancelarias sobre automóviles y vinos europeos.",
+        "source": "The Economist",
+        "link": "https://www.economist.com",
+        "date": "2026-05-27T12:15:27.220906"
+      },
+      {
+        "title": "Cumbre ASEAN en Bangkok aprueba zona de libre comercio digital con reglas de datos transfronterizos",
+        "summary": "Bloque de 10 países del sudeste asiático establece primer marco regional para flujos de datos comerciales. Cubre USD 340.000M en comercio digital.",
+        "source": "Bloomberg",
+        "link": "https://www.bloomberg.com/politics",
+        "date": "2026-05-27T09:15:27.220911"
+      }
+    ],
+    "economia_global": [
+      {
+        "title": "Déficit fiscal de EE.UU. alcanza USD 1.8 billones en 2026: deuda supera el 130% del PIB",
+        "summary": "CBO advierte que la trayectoria fiscal es insostenible sin ajuste. Rendimiento del bono T-10 trepa a 4.6%, presionando al alza el costo del crédito global.",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com",
+        "date": "2026-05-27T09:15:27.220928"
+      },
+      {
+        "title": "Banco Mundial: América Latina crecerá 3.1% en 2026, la mejor performance desde 2011",
+        "summary": "Impulso de commodities, inversión extranjera y consumo privado elevan perspectivas regionales. Chile, Brasil y Perú lideran entre exportadores de materias primas.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/economics",
+        "date": "2026-05-27T10:15:27.220932"
+      },
+      {
+        "title": "Banco de Japón sube tasa de interés a 0.75%, mayor nivel desde 2008, ante presiones inflacionarias",
+        "summary": "BoJ confirma normalización monetaria gradual. Yen se aprecia frente al dólar por primera vez en tres años. Exportadores japoneses ajustan coberturas cambiarias.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/economics",
+        "date": "2026-05-27T10:15:27.220940"
+      }
+    ],
+    "economia_chile": [
+      {
+        "title": "IPC de mayo sube apenas 0.1% mensual y acumula 3.4% anual, mínimo en dos años",
+        "summary": "INE confirma desaceleración inflacionaria. Caída en precios de combustibles y alimentos frescos modera el indicador. BCCh tiene margen para nuevos recortes.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl",
+        "date": "2026-05-27T10:15:27.220955"
+      },
+      {
+        "title": "Ley de pensiones promulgada: sistema mixto con 3% a fondo solidario entrará en vigencia en enero 2027",
+        "summary": "Presidente Boric promulga reforma histórica tras tres años de tramitación. Nuevas pensiones promediarán CLP 320.000 adicionales según proyecciones del Ministerio.",
+        "source": "La Tercera",
+        "link": "https://www.latercera.com/politica",
+        "date": "2026-05-27T06:15:27.220960"
+      },
+      {
+        "title": "SQM eleva producción de litio a 220.000 toneladas anuales con nueva planta en el Salar de Atacama",
+        "summary": "Compañía inaugura instalación que eleva capacidad en 40%. Acuerdo con el Estado asegura royalty creciente vinculado al precio del carbonato de litio.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-05-27T10:15:27.220963"
+      },
+      {
+        "title": "IPSA alcanza récord histórico de 7.480 puntos: minería, retail y banca lideran alza",
+        "summary": "Bolsa de Santiago registra mejor semestre desde 2010. Flujos extranjeros ingresan USD 1.200M. Analistas elevan proyección al rango 7.500-7.800 para el año.",
+        "source": "La Tercera",
+        "link": "https://www.latercera.com",
+        "date": "2026-05-27T09:15:27.220966"
+      }
+    ],
+    "tendencias_tech": [
+      {
+        "title": "SpaceX Starship completa primer vuelo comercial: lleva satélites de NASA y ESA a órbita polar",
+        "summary": "Cohete más poderoso del mundo logra misión operacional tras cuatro años de pruebas. Abre nueva era de lanzamientos pesados a bajo costo.",
+        "source": "TechCrunch",
+        "link": "https://techcrunch.com",
+        "date": "2026-05-27T11:15:27.220973"
+      },
+      {
+        "title": "Meta lanza Ray-Ban 3 con pantalla holográfica y asistente de IA integrado",
+        "summary": "Tercera generación de gafas inteligentes incluye proyección AR de baja latencia y reconocimiento facial en tiempo real. Precio: USD 499.",
+        "source": "The Verge",
+        "link": "https://www.theverge.com",
+        "date": "2026-05-27T11:15:27.220976"
+      },
+      {
+        "title": "Apple Intelligence llega a iOS 19: Siri reescrito con LLM propio y procesamiento 100% on-device",
+        "summary": "Nueva generación de IA de Apple integra razonamiento contextual sin enviar datos a la nube. Compatible con iPhone 16 y superiores desde junio 2026.",
+        "source": "The Verge",
+        "link": "https://www.theverge.com",
+        "date": "2026-05-27T07:15:27.220979"
+      },
+      {
+        "title": "Apple lanza iPhone 17 con chip A19 y funciones avanzadas de IA en cámara",
+        "summary": "Nuevo dispositivo integra procesamiento de imágenes con IA local y mejora autonomía de batería en 40%.",
+        "source": "The Verge",
+        "link": "https://www.theverge.com",
+        "date": "2026-05-27T09:15:27.220986"
+      }
+    ],
+    "cooperativismo": [
+      {
+        "title": "Cooperativas agrícolas chilenas exportan USD 1.200M en frutas y vinos en primera mitad de 2026",
+        "summary": "FEDEFRUTA reporta récord en exportaciones cooperativas hacia Asia y Europa. Uva de mesa, cerezas y vinos premium concentran el 68% del valor exportado.",
+        "source": "ACI Américas",
+        "link": "https://www.aciamericas.coop",
+        "date": "2026-05-27T09:15:27.220993"
+      },
+      {
+        "title": "Coopeuch lanza primer producto de inversión en cobre tokenizado para socios",
+        "summary": "Instrumento permite invertir en certificados respaldados por cobre físico desde UF 5. Rendimiento vinculado al precio LME con liquidez mensual garantizada.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-05-27T07:15:27.220996"
+      },
+      {
+        "title": "Ley de Cooperativas actualizada promulgada: nueva normativa moderniza gobierno corporativo y refuerza derechos de socios",
+        "summary": "Reforma del Código Cooperativo incorpora asambleas digitales, voto remoto y mayores exigencias de transparencia financiera. Entra en vigencia en enero 2027.",
+        "source": "El Mostrador",
+        "link": "https://www.elmostrador.cl",
+        "date": "2026-05-27T10:15:27.220999"
+      },
+      {
+        "title": "Sector cooperativo chileno acumula activos por USD 9.800M en junio 2026, récord histórico",
+        "summary": "Crecimiento de 22% en doce meses refleja migración de ahorrantes desde fondos mutuos bancarios. Regulación CMF robustece confianza del público en el sector.",
+        "source": "BID",
+        "link": "https://www.iadb.org",
+        "date": "2026-05-27T07:15:27.221003"
+      }
+    ],
+    "cmf": [
+      {
+        "title": "CMF regula uso de IA en modelos de scoring crediticio: obliga a explicabilidad y auditoría externa",
+        "summary": "Nueva circular exige que algoritmos de crédito cumplan principios de transparencia, imparcialidad y derecho a explicación. Plazo de adecuación: 12 meses.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-05-27T10:15:27.221009"
+      },
+      {
+        "title": "CMF actualiza tabla de tasas máximas convencionales: rebaja tope para créditos de consumo en junio 2026",
+        "summary": "Tasa máxima convencional para créditos entre UF 200 y UF 5.000 baja de 41.2% a 38.7% anual. Medida beneficia a 2.3 millones de deudores de consumo.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-05-27T07:15:27.221012"
+      },
+      {
+        "title": "CMF reporta caída de morosidad bancaria a 1.8%: sistema financiero en mejor posición desde 2019",
+        "summary": "Índice de cartera vencida sobre colocaciones totales alcanza mínimo histórico. Capital de nivel 1 promedio supera 13.5% en todos los bancos supervisados.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-05-27T12:15:27.221017"
+      }
+    ],
+    "noticias_economicas_actuales": [
+      {
+        "title": "Exportaciones chilenas acumulan superávit de USD 4.800M en enero-mayo 2026",
+        "summary": "Cobre, litio y fruta fresca lideran ingresos por USD 26.300M. China mantiene 41% de participación. Balanza energética mejora por menor precio del petróleo importado.",
+        "source": "Banco Central de Chile",
+        "link": "https://www.bcentral.cl",
+        "date": "2026-05-27T10:15:27.221024"
+      },
+      {
+        "title": "Desempleo baja a 7.2% en trimestre febrero-abril 2026: mejor dato desde el segundo trimestre de 2022",
+        "summary": "INE registra 180.000 nuevos empleos formales. Construcción, servicios financieros y tecnología lideran contratación. Empleo femenino sube al 46.8% de la fuerza laboral.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl",
+        "date": "2026-05-27T06:15:27.221028"
+      },
+      {
+        "title": "PIB primer trimestre 2026 confirmado en 3.8%: el mayor crecimiento trimestral en cinco años",
+        "summary": "Revisión final del BCCh confirma expansión récord. Consumo privado (+4.1%), inversión fija (+6.2%) y exportaciones (+8.9%) fueron los motores del crecimiento.",
+        "source": "ICARE",
+        "link": "https://www.icare.cl",
+        "date": "2026-05-27T09:15:27.221031"
+      }
+    ],
+    "inteligencia_artificial": [
+      {
+        "title": "Startup chilena Xepelin lanza motor de IA para evaluación de crédito Pyme en tiempo real",
+        "summary": "Fintech usa modelos de lenguaje para analizar flujo de caja, historial tributario y comportamiento de pagos en menos de 2 minutos.",
+        "source": "The Rundown AI",
+        "link": "https://therundown.ai",
+        "date": "2026-05-27T07:15:27.221038"
+      },
+      {
+        "title": "Anthropic Claude 4: nuevo modelo supera GPT-5 en benchmarks de razonamiento legal y financiero",
+        "summary": "Evaluaciones independientes muestran ventaja en análisis de contratos, modelado financiero y generación de código seguro. API disponible para empresas desde junio.",
+        "source": "Ben's Bites",
+        "link": "https://bensbites.com",
+        "date": "2026-05-27T11:15:27.221041"
+      },
+      {
+        "title": "OpenAI GPT-5 integra búsqueda web en tiempo real y memoria persistente cross-session",
+        "summary": "Nuevo modelo accede a información actualizada sin fechas de corte y recuerda contexto entre conversaciones. Precios API caen 40% respecto a GPT-4.",
+        "source": "TLDR AI",
+        "link": "https://tldr.ai",
+        "date": "2026-05-27T08:15:27.221044"
+      },
+      {
+        "title": "AI Act UE: primeras auditorías a sistemas de IA de alto riesgo revelan brechas de compliance en banca",
+        "summary": "Reguladores europeos identifican 34 sistemas de scoring crediticio sin documentación técnica suficiente. Instituciones tienen 6 meses para remediar o suspender uso.",
+        "source": "TLDR AI",
+        "link": "https://tldr.ai",
+        "date": "2026-05-27T07:15:27.221047"
+      }
+    ]
+  }
+}
