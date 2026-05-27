@@ -1,39 +1,59 @@
 {
-  "fecha": "2026-05-27T12:37:55.993568",
-  "version": "v4",
-  "datos": {
+  "fecha": "2026-05-27T13:13:29.235446",
+  "version": "v5-bcentral",
+  "indicadores": {
     "usd_clp": {
-      "tipo": "USD/CLP (simulado)",
-      "precio": 841.5,
-      "fecha": "2026-05-27T12:37:56.036562",
-      "cambio": 16.5,
-      "mock": true
-    },
-    "inflacion": {
-      "tipo": "Inflación Anual (simulada)",
-      "porcentaje": 3.2,
-      "fecha": "2026-05-26T12:37:56.117630",
+      "label": "Dólar observado (CLP)",
+      "unidad": "$",
+      "tipo": "precio",
+      "valor": 935.0,
+      "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
     },
-    "fed_rate": {
-      "tipo": "Tasa de fondos Fed (simulada)",
-      "porcentaje": 4.5,
-      "fecha": "2026-05-26T12:37:56.225039",
+    "uf": {
+      "label": "UF",
+      "unidad": "$",
+      "tipo": "precio",
+      "valor": 38120.0,
+      "fecha": "2026-05-27",
       "fuente": "Simulado",
       "mock": true
     },
-    "cobre": {
-      "tipo": "Cobre (simulado USD/lb)",
-      "precio": 4.12,
-      "fecha": "2026-05-27T12:37:56.265976",
+    "tpm": {
+      "label": "TPM (Tasa Política Mon.)",
+      "unidad": "%",
+      "tipo": "tasa",
+      "valor": 4.75,
+      "fecha": "2026-05-27",
+      "fuente": "Simulado",
       "mock": true
     },
-    "sp500": {
-      "tipo": "S&P 500 (simulado)",
-      "precio": 5243.88,
-      "cambio": 12.5,
-      "fecha": "2026-05-27T12:37:56.309320",
+    "ipc": {
+      "label": "IPC variación mensual",
+      "unidad": "%",
+      "tipo": "porcentaje",
+      "valor": 0.1,
+      "fecha": "2026-05-27",
+      "fuente": "Simulado",
+      "mock": true
+    },
+    "imacec": {
+      "label": "Imacec",
+      "unidad": "%",
+      "tipo": "porcentaje",
+      "valor": 4.1,
+      "fecha": "2026-05-27",
+      "fuente": "Simulado",
+      "mock": true
+    },
+    "euro": {
+      "label": "Euro observado (CLP)",
+      "unidad": "$",
+      "tipo": "precio",
+      "valor": 1012.0,
+      "fecha": "2026-05-27",
+      "fuente": "Simulado",
       "mock": true
     }
   }
