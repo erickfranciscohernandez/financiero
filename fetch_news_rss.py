@@ -15,6 +15,12 @@ from html.parser import HTMLParser
 NEWSAPI_KEY = os.environ.get('NEWSAPI_KEY', '')
 NEWSAPI_URL = 'https://newsapi.org/v2/everything'
 
+CHOCALE_FEEDS = [
+    'https://www.chocale.cl/feed/',
+    'https://www.chocale.cl/feed/rss/',
+    'https://www.chocale.cl/rss.xml',
+]
+
 NEWSAPI_QUERIES = {
     'geopolitica': 'geopolitica OR guerra OR sanciones OR OTAN OR diplomacia',
     'economia_mercados': 'economia global OR fed reserva federal OR banco central OR inflacion mercados',
@@ -34,6 +40,8 @@ RSS_FEEDS = {
         'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
     ],
     'chile_estrategico': [
+        'https://www.chocale.cl/feed/',
+        'https://www.chocale.cl/feed/rss/',
         'https://www.diariofinanciero.com/feed',
         'https://www.emol.com/rss/economia.xml',
         'https://www.latercera.com/feed/',
@@ -64,6 +72,7 @@ RSS_FEEDS = {
         'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
     ],
     'cooperativismo': [
+        'https://www.chocale.cl/feed/',
         'https://www.elmostrador.cl/feed/',
         'https://www.latercera.com/feed/',
     ],
@@ -181,8 +190,20 @@ def fetch_rss_feed(url, timeout=5):
 fetch_feed = fetch_rss_feed
 
 
+def fetch_chocale_news(max_results=4):
+    """Siempre intenta obtener noticias desde chocale.cl."""
+    for url in CHOCALE_FEEDS:
+        articles = fetch_rss_feed(url)
+        if articles:
+            print(f'   chocale.cl: ✅ {len(articles[:max_results])} noticias')
+            return articles[:max_results]
+    print('   chocale.cl: ❌ sin datos')
+    return []
+
+
 def fetch_all_news():
-    """Fetch news: NewsAPI first, RSS fallback for categorías sin resultados."""
+    """Fetch news: NewsAPI first, RSS fallback para categorías sin resultados.
+    Chocale.cl se incorpora siempre a chile_estrategico."""
     all_news = {key: [] for key in RSS_FEEDS}
 
     if NEWSAPI_KEY:
@@ -195,6 +216,12 @@ def fetch_all_news():
         total = sum(len(v) for v in all_news.values())
         if total > 0:
             print(f'✅ NewsAPI: {total} noticias obtenidas\n')
+
+    # Chocale.cl: fuente nacional siempre activa
+    print('📡 Obteniendo noticias desde chocale.cl...')
+    chocale_articles = fetch_chocale_news()
+    if chocale_articles:
+        all_news['chile_estrategico'] = chocale_articles + all_news.get('chile_estrategico', [])
 
     # RSS para categorías vacías (siempre se intenta Microsoft y demás)
     print('📡 Complementando con RSS feeds...')
