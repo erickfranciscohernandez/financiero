@@ -296,82 +296,82 @@ NEWS_TEMPLATES = {
     ],
     'cooperativismo': [
         {
-            'title': 'Coopeuch supera 1 millón de socios activos: primera cooperativa de ahorro en Chile en alcanzar este hito',
-            'summary': 'Crecimiento de 18% en 12 meses refleja mayor confianza en el modelo cooperativo. Colocaciones alcanzan CLP 2.8 billones con morosidad de 1.7%.',
+            'title': 'Sector cooperativo de ahorro en Chile mantiene tendencia de crecimiento sostenido en 2026',
+            'summary': 'El cooperativismo financiero chileno continúa ganando participación de mercado frente a la banca tradicional, impulsado por menores tasas y mayor cercanía con socios en regiones.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
         {
-            'title': 'CONFECOOP anuncia fusión de cuatro cooperativas regionales para fortalecer capital y escala nacional',
-            'summary': 'Cooperativas de Valparaíso, Concepción, Temuco y Puerto Montt integran operaciones bajo nueva entidad con activos combinados de UF 2.800.000.',
+            'title': 'Cooperativas chilenas aceleran transformación digital para competir con la banca en productos hipotecarios',
+            'summary': 'El sector avanza en digitalización de procesos de crédito inmobiliario. La reducción de tiempos de aprobación y la mejora en experiencia de usuario son las principales apuestas.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'Ley de Cooperativas actualizada promulgada: nueva normativa moderniza gobierno corporativo y refuerza derechos de socios',
-            'summary': 'Reforma del Código Cooperativo incorpora asambleas digitales, voto remoto y mayores exigencias de transparencia financiera. Entra en vigencia en enero 2027.',
+            'title': 'Análisis: cooperativas de ahorro en Chile ante el desafío de escalar sin perder el modelo solidario',
+            'summary': 'Expertos debaten cómo el cooperativismo financiero puede crecer en activos y cobertura geográfica manteniendo su identidad democrática y los beneficios para sus socios.',
             'source': 'El Mostrador',
             'link': 'https://www.elmostrador.cl'
         },
         {
-            'title': 'Cooperativas agrícolas chilenas exportan USD 1.200M en frutas y vinos en primera mitad de 2026',
-            'summary': 'FEDEFRUTA reporta récord en exportaciones cooperativas hacia Asia y Europa. Uva de mesa, cerezas y vinos premium concentran el 68% del valor exportado.',
+            'title': 'Cooperativas agrícolas del sur de Chile apuestan por la exportación directa para mejorar márgenes',
+            'summary': 'El modelo cooperativo permite a pequeños agricultores acceder a mercados de exportación en Asia y Europa que individualmente serían inalcanzables.',
             'source': 'ACI Américas',
             'link': 'https://www.aciamericas.coop'
         },
         {
-            'title': 'BID aprueba crédito de USD 120M para modernización tecnológica del sector cooperativo chileno',
-            'summary': 'Financiamiento cubre transformación digital, ciberseguridad y capacitación en 85 cooperativas. Proyecto busca reducir brecha con banca tradicional en servicios digitales.',
+            'title': 'BID destaca al cooperativismo latinoamericano como motor de inclusión financiera rural en 2026',
+            'summary': 'Organismo multilateral resalta el rol de las cooperativas en llevar servicios financieros formales a comunidades alejadas de la banca comercial tradicional.',
             'source': 'BID',
             'link': 'https://www.iadb.org'
         },
         {
-            'title': 'Cooperativas de vivienda obtienen acceso a fondo MINVU de USD 200M para proyectos habitacionales',
-            'summary': 'Ministerio de Vivienda abre nueva línea de crédito exclusiva para cooperativas que desarrollen viviendas sociales y de clase media. Primeros proyectos en Región Metropolitana.',
+            'title': 'Cooperativas de vivienda ganan terreno en segmento de clase media ante altas tasas hipotecarias bancarias',
+            'summary': 'El modelo de ahorro previo cooperativo se posiciona como alternativa viable al crédito hipotecario convencional en un contexto de tasas aún elevadas.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': 'CONFECOOP presenta modelo de cooperativa digital nativa para captar generación Z en Chile',
-            'summary': 'Nuevo formato opera 100% en app móvil con onboarding en 5 minutos, tarjeta de débito y productos de ahorro e inversión desde CLP 5.000.',
+            'title': 'Jóvenes chilenos entre 18 y 30 años lideran apertura de cuentas en cooperativas de ahorro',
+            'summary': 'La generación Z valora la propiedad colectiva y las tasas competitivas del sector cooperativo. Las apps móviles han sido clave para acercar el modelo a nuevos socios.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
         {
-            'title': 'Sector cooperativo chileno acumula activos por USD 9.800M en junio 2026, récord histórico',
-            'summary': 'Crecimiento de 22% en doce meses refleja migración de ahorrantes desde fondos mutuos bancarios. Regulación CMF robustece confianza del público en el sector.',
+            'title': 'Informe BID: cooperativismo latinoamericano muestra mayor resiliencia que banca tradicional ante ciclos de estrés',
+            'summary': 'Análisis comparativo concluye que las cooperativas financieras mantienen menores índices de morosidad y mayor retención de socios durante períodos de contracción económica.',
             'source': 'BID',
             'link': 'https://www.iadb.org'
         },
         {
-            'title': 'Coopeuch lanza primer producto de inversión en cobre tokenizado para socios',
-            'summary': 'Instrumento permite invertir en certificados respaldados por cobre físico desde UF 5. Rendimiento vinculado al precio LME con liquidez mensual garantizada.',
-            'source': 'Diario Financiero',
-            'link': 'https://www.df.cl'
-        },
-        {
-            'title': 'ACI Américas: cooperativismo chileno es modelo a seguir en digitalización para América Latina',
-            'summary': 'Informe anual destaca adopción de open banking, IA en crédito y cobertura rural de cooperativas nacionales como mejores prácticas regionales para 2026.',
+            'title': 'ACI Américas: cooperativas de ahorro latinoamericanas crecen sostenidamente en socios activos',
+            'summary': 'Chile, Colombia y México lideran la incorporación de nuevos socios al sistema cooperativo financiero, con foco en digitalización y productos de bajo costo.',
             'source': 'ACI Américas',
             'link': 'https://www.aciamericas.coop'
+        },
+        {
+            'title': 'Tecnología e inteligencia artificial: nuevos aliados del sector cooperativo para mejorar evaluación crediticia',
+            'summary': 'Las cooperativas de ahorro comienzan a adoptar modelos de scoring con IA que permiten evaluar perfiles de riesgo con mayor precisión y en menor tiempo que los métodos tradicionales.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
         },
     ],
     'cmf': [
         {
-            'title': 'CMF publica Norma de Carácter General N°502: nuevos estándares de resiliencia operacional para entidades financieras',
-            'summary': 'Regulador exige pruebas de recuperación ante desastres cada semestre, planes de continuidad con RTO máximo de 4 horas y reportes de incidentes en tiempo real.',
+            'title': 'CMF avanza en nuevos estándares de resiliencia operacional para el sistema financiero chileno',
+            'summary': 'El regulador trabaja en normativas que exigirán mayor robustez ante ciberataques y fallas sistémicas. El sector financiero evalúa inversiones en continuidad operacional.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF multa a Banco Internacional y dos corredoras con UF 32.000 por operaciones sospechosas no reportadas',
-            'summary': 'Investigación detectó omisión de reportes SBIF en transacciones vinculadas a lavado de activos. Es la mayor sanción del regulador en el sector bursátil en 2026.',
+            'title': 'CMF fortalece fiscalización del mercado de valores con foco en conflictos de interés y transparencia',
+            'summary': 'El regulador intensifica la supervisión de administradoras de fondos y corredoras de bolsa, priorizando la protección de inversionistas minoristas y la integridad del mercado.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
         {
-            'title': 'CMF aprueba primera plataforma de equity crowdfunding regulada en Chile bajo Ley Fintec',
-            'summary': 'Plataforma FinanCoop obtiene registro CMF y podrá captar hasta UF 10.000 por empresa en 12 meses. Abre financiamiento de capital a Pymes y startups nacionales.',
+            'title': 'CMF avanza en reglamentación del equity crowdfunding bajo la Ley Fintech para Pymes chilenas',
+            'summary': 'El marco regulatorio para plataformas de financiamiento colectivo busca ampliar el acceso de pequeñas empresas a capital sin pasar por la banca tradicional.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
