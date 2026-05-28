@@ -18,7 +18,7 @@ if not all([email_from, email_password, email_to_raw]):
 
 recipients = [e.strip() for e in email_to_raw.split(',') if e.strip()]
 
-newsletter_url = 'https://erickfranciscohernandez.github.io/financiero/newsletter_v4.html'
+newsletter_url = 'https://erickfranciscohernandez.github.io/financiero/'
 fecha = datetime.now().strftime('%d/%m/%Y')
 hora  = datetime.now().strftime('%H:%M')
 
