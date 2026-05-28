@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-05-28T13:02:13.491766",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Dólar cae a $928: máximo histórico de cobre y pausa Fed aprecian el peso chileno",
+      "seccion": "economia_chile",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
+    },
+    {
+      "titulo": "G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.economist.com"
+    },
+    {
+      "titulo": "Oro supera USD 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    }
+  ]
+}
