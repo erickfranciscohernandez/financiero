@@ -1,18 +1,11 @@
 {
-  "fecha": "2026-05-28T13:48:25.515083",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-05-28T20:51:34.052662",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Dólar cae a $928: máximo histórico de cobre y pausa Fed aprecian el peso chileno",
-      "seccion": "economia_chile",
-      "score": 10,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
-    },
-    {
-      "titulo": "Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual",
+      "titulo": "G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
