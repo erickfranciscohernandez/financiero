@@ -453,108 +453,108 @@
 
       /* AGENDA CSS */
       
-    /* AGENDA DE ACTIVIDADES */
-    .agenda-container {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+    /* ── BANNER AGENDA ───────────────────────────────────────── */
+    .agenda-banner {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      border-radius: 10px;
+      padding: 22px 28px;
+      margin: 40px 0;
+      box-shadow: 0 4px 16px rgba(30,64,175,0.25);
     }
 
-    .agenda-section h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--ink);
+    .agenda-banner-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
       margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--rule);
     }
 
-    .agenda-item {
+    .agenda-banner-label {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .agenda-banner-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.04em;
+    }
+
+    .agenda-pills {
       display: flex;
-      gap: 20px;
-      padding: 16px;
-      background: var(--cream);
-      border-radius: 4px;
-      border-left: 4px solid var(--accent);
-      margin-bottom: 12px;
-      transition: all 0.2s;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .agenda-item:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transform: translateX(4px);
-    }
-
-    .agenda-date {
+    .agenda-pill {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      min-width: 80px;
-      font-weight: 600;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-left: 4px solid var(--pill-color, #60a5fa);
+      border-radius: 6px;
+      padding: 10px 14px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      min-width: 200px;
+      max-width: 260px;
+      flex: 1 1 200px;
     }
 
-    .agenda-day {
-      font-size: 12px;
-      color: var(--muted);
+    .agenda-pill:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    .pill-date {
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.70);
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
-    .agenda-time {
-      font-size: 14px;
-      color: var(--accent);
+    .pill-icon {
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .pill-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    .pill-type {
+      font-size: 10px;
       font-weight: 700;
+      color: var(--pill-color, #93c5fd);
+      letter-spacing: 0.08em;
+      margin-top: 2px;
     }
 
-    .agenda-content h4 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-
-    .agenda-content p {
-      font-size: 14px;
-      color: var(--ink);
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    .agenda-meta {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      font-size: 12px;
-    }
-
-    .agenda-type {
-      background: var(--light-accent);
-      color: var(--accent);
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-weight: 600;
-    }
-
-    .agenda-link {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-
-    .agenda-link:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .agenda-item {
-        flex-direction: column;
-        gap: 10px;
+    @media (max-width: 600px) {
+      .agenda-pill {
+        min-width: 100%;
+        max-width: 100%;
       }
+      .agenda-banner {
+        padding: 16px 16px;
+      }
+    }
 
-      .agenda-date {
-        flex-direction: row;
-        gap: 10px;
-        justify-content: space-between;
+    @media print {
+      .agenda-banner {
+        background: #1e3a5f !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
     }
     
@@ -619,7 +619,7 @@
     <!-- INDICADORES BANCO CENTRAL DE CHILE -->
     <section class="live-indicators">
       <h2>📊 INDICADORES BANCO CENTRAL DE CHILE</h2>
-      <p class="subtitle">Fuente: Simulado · Actualizado: 28/05/2026 13:48 UTC</p>
+      <p class="subtitle">Fuente: Simulado · Actualizado: 28/05/2026 14:43 UTC</p>
 
       <div class="indicators-grid">
 
@@ -684,7 +684,7 @@
       </div>
 
       <div class="update-info">
-        <p>⏰ Última actualización: 28/05/2026 13:48 UTC</p>
+        <p>⏰ Última actualización: 28/05/2026 14:43 UTC</p>
         <p>🏦 Banco Central de Chile · mindicador.cl · 🔄 Actualización cada 6 horas</p>
       </div>
 
@@ -1176,106 +1176,51 @@ Vega lets users prove facts from government-issued credentials — age, personho
 
     <!-- AGENDA DE ACTIVIDADES -->
     
-    <div class="section">
-        <h2 class="section-header">
-            <span class="section-emoji">📅</span>
-            Agenda de Actividades
-        </h2>
-        <span class="section-subtitle">Eventos próximos · Seminarios · Asambleas</span>
-
-        <div class="agenda-container">
-<div class="agenda-section"><h3>📅 iCare</h3>
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-06-03</span>
-                <span class="agenda-time">08:30</span>
-            </div>
-            <div class="agenda-content">
-                <h4>Conoce a tu ministro: Martín Arrau, Ministro de Obras Públicas</h4>
-                <p>Encuentro directo con el Ministro de Obras Públicas para conocer sus iniciativas y políticas públicas.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">ENCUENTRO</span>
-                    <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-06-10</span>
-                <span class="agenda-time">08:30</span>
-            </div>
-            <div class="agenda-content">
-                <h4>Conoce a tu ministro: Ximena Rincón, Ministra de Energía</h4>
-                <p>Encuentro con la Ministra de Energía para discutir políticas de energía renovable y sostenibilidad.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">ENCUENTRO</span>
-                    <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-06-18</span>
-                <span class="agenda-time">08:00</span>
-            </div>
-            <div class="agenda-content">
-                <h4>El Pulso de la Economía Nacional: Claves del IPoM – Junio</h4>
-                <p>Análisis de la situación económica nacional con enfoque en el Informe de Política Monetaria de junio.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">SEMINARIO</span>
-                    <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-06-24</span>
-                <span class="agenda-time">08:30</span>
-            </div>
-            <div class="agenda-content">
-                <h4>Conoce a tu ministra: Ximena Lincolao, Ministra de Ciencia, Tecnología, Conocimiento e Innovación</h4>
-                <p>Encuentro con la Ministra de Ciencia y Tecnología para explorar iniciativas de innovación en Chile.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">ENCUENTRO</span>
-                    <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-</div><div class="agenda-section"><h3>🤝 Movimiento Cooperativo</h3>
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-05-21</span>
-                <span class="agenda-time">18:00</span>
-            </div>
-            <div class="agenda-content">
-                <h4>Asamblea General de Cooperativa Nacional</h4>
-                <p>Reunión anual de miembros para aprobación de estados financieros y dirección.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">ASAMBLEA</span>
-                    <a href="https://www.cooperativas.cl" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">2026-05-24</span>
-                <span class="agenda-time">14:00</span>
-            </div>
-            <div class="agenda-content">
-                <h4>Foro de Cooperativismo Sostenible</h4>
-                <p>Encuentro de líderes cooperativos para discutir iniciativas de sostenibilidad.</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">FORO</span>
-                    <a href="https://www.cooperativas.cl/eventos" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-</div>
-        </div>
+    <!-- BANNER AGENDA DE ACTIVIDADES -->
+    <div class="agenda-banner">
+      <div class="agenda-banner-header">
+        <span class="agenda-banner-label">📅 AGENDA</span>
+        <span class="agenda-banner-sub">Próximos eventos · iCare · Cooperativas</span>
+      </div>
+      <div class="agenda-pills">
+        
+        <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-pill" style="--pill-color:#2563eb;">
+          <span class="pill-date">3 Jun · 08:30</span>
+          <span class="pill-icon">🤝</span>
+          <span class="pill-title">Conoce a tu ministro: Martín Arrau, Ministro de Obra…</span>
+          <span class="pill-type">ENCUENTRO</span>
+        </a>
+        <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-pill" style="--pill-color:#2563eb;">
+          <span class="pill-date">10 Jun · 08:30</span>
+          <span class="pill-icon">🤝</span>
+          <span class="pill-title">Conoce a tu ministro: Ximena Rincón, Ministra de Ene…</span>
+          <span class="pill-type">ENCUENTRO</span>
+        </a>
+        <a href="https://www.cooperativas.cl" target="_blank" class="agenda-pill" style="--pill-color:#b45309;">
+          <span class="pill-date">12 Jun · 18:00</span>
+          <span class="pill-icon">🏛️</span>
+          <span class="pill-title">Asamblea General de Cooperativa Nacional</span>
+          <span class="pill-type">ASAMBLEA</span>
+        </a>
+        <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-pill" style="--pill-color:#7c3aed;">
+          <span class="pill-date">18 Jun · 08:00</span>
+          <span class="pill-icon">🎓</span>
+          <span class="pill-title">El Pulso de la Economía Nacional: Claves del IPoM – …</span>
+          <span class="pill-type">SEMINARIO</span>
+        </a>
+        <a href="https://www.cooperativas.cl/eventos" target="_blank" class="agenda-pill" style="--pill-color:#059669;">
+          <span class="pill-date">20 Jun · 14:00</span>
+          <span class="pill-icon">💬</span>
+          <span class="pill-title">Foro de Cooperativismo Sostenible</span>
+          <span class="pill-type">FORO</span>
+        </a>
+        <a href="https://www.icare.cl/agenda-de-actividades/" target="_blank" class="agenda-pill" style="--pill-color:#2563eb;">
+          <span class="pill-date">24 Jun · 08:30</span>
+          <span class="pill-icon">🤝</span>
+          <span class="pill-title">Conoce a tu ministra: Ximena Lincolao, Ministra de C…</span>
+          <span class="pill-type">ENCUENTRO</span>
+        </a>
+      </div>
     </div>
 
 

@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
 """
-Generador de agenda de actividades
-Agrega eventos e información de agendas cooperativas
+Generador de agenda de actividades — banner horizontal
 """
-import json
-from datetime import datetime, timedelta
+from datetime import datetime
 
 AGENDA_EVENTS = {
     "icare": [
         {
             "fecha": "2026-06-03",
             "titulo": "Conoce a tu ministro: Martín Arrau, Ministro de Obras Públicas",
-            "descripcion": "Encuentro directo con el Ministro de Obras Públicas para conocer sus iniciativas y políticas públicas.",
+            "descripcion": "Encuentro directo con el Ministro de Obras Públicas.",
             "hora": "08:30",
             "tipo": "encuentro",
             "enlace": "https://www.icare.cl/agenda-de-actividades/"
@@ -19,15 +17,7 @@ AGENDA_EVENTS = {
         {
             "fecha": "2026-06-10",
             "titulo": "Conoce a tu ministro: Ximena Rincón, Ministra de Energía",
-            "descripcion": "Encuentro con la Ministra de Energía para discutir políticas de energía renovable y sostenibilidad.",
-            "hora": "08:30",
-            "tipo": "encuentro",
-            "enlace": "https://www.icare.cl/agenda-de-actividades/"
-        },
-        {
-            "fecha": "2026-06-24",
-            "titulo": "Conoce a tu ministra: Ximena Lincolao, Ministra de Ciencia, Tecnología, Conocimiento e Innovación",
-            "descripcion": "Encuentro con la Ministra de Ciencia y Tecnología para explorar iniciativas de innovación en Chile.",
+            "descripcion": "Encuentro con la Ministra de Energía sobre renovables y sostenibilidad.",
             "hora": "08:30",
             "tipo": "encuentro",
             "enlace": "https://www.icare.cl/agenda-de-actividades/"
@@ -35,223 +25,223 @@ AGENDA_EVENTS = {
         {
             "fecha": "2026-06-18",
             "titulo": "El Pulso de la Economía Nacional: Claves del IPoM – Junio",
-            "descripcion": "Análisis de la situación económica nacional con enfoque en el Informe de Política Monetaria de junio.",
+            "descripcion": "Análisis del Informe de Política Monetaria de junio.",
             "hora": "08:00",
             "tipo": "seminario",
             "enlace": "https://www.icare.cl/agenda-de-actividades/"
-        }
+        },
+        {
+            "fecha": "2026-06-24",
+            "titulo": "Conoce a tu ministra: Ximena Lincolao, Ministra de Ciencia e Innovación",
+            "descripcion": "Encuentro con la Ministra de Ciencia y Tecnología.",
+            "hora": "08:30",
+            "tipo": "encuentro",
+            "enlace": "https://www.icare.cl/agenda-de-actividades/"
+        },
     ],
     "cooperativas": [
         {
-            "fecha": "2026-05-21",
+            "fecha": "2026-06-12",
             "titulo": "Asamblea General de Cooperativa Nacional",
-            "descripcion": "Reunión anual de miembros para aprobación de estados financieros y dirección.",
+            "descripcion": "Reunión anual de miembros para aprobación de estados financieros.",
             "hora": "18:00",
             "tipo": "asamblea",
             "enlace": "https://www.cooperativas.cl"
         },
         {
-            "fecha": "2026-05-24",
+            "fecha": "2026-06-20",
             "titulo": "Foro de Cooperativismo Sostenible",
-            "descripcion": "Encuentro de líderes cooperativos para discutir iniciativas de sostenibilidad.",
+            "descripcion": "Encuentro de líderes cooperativos sobre sostenibilidad.",
             "hora": "14:00",
             "tipo": "foro",
             "enlace": "https://www.cooperativas.cl/eventos"
-        }
+        },
     ]
 }
 
+TYPE_COLORS = {
+    "encuentro": "#2563eb",
+    "seminario": "#7c3aed",
+    "asamblea":  "#b45309",
+    "foro":      "#059669",
+}
+
+TYPE_ICONS = {
+    "encuentro": "🤝",
+    "seminario": "🎓",
+    "asamblea":  "🏛️",
+    "foro":      "💬",
+}
+
+
+def _format_date(fecha_str):
+    """Convierte '2026-06-03' a '3 Jun'"""
+    try:
+        d = datetime.strptime(fecha_str, "%Y-%m-%d")
+        meses = ['Ene','Feb','Mar','Abr','May','Jun',
+                 'Jul','Ago','Sep','Oct','Nov','Dic']
+        return f"{d.day} {meses[d.month - 1]}"
+    except Exception:
+        return fecha_str
+
 
 def generate_agenda_html():
-    """Genera sección HTML con agenda de actividades ordenada por fecha"""
+    """Banner horizontal con próximos eventos, ordenados por fecha."""
 
-    html = """
-    <div class="section">
-        <h2 class="section-header">
-            <span class="section-emoji">📅</span>
-            Agenda de Actividades
-        </h2>
-        <span class="section-subtitle">Eventos próximos · Seminarios · Asambleas</span>
+    today = datetime.now().strftime("%Y-%m-%d")
 
-        <div class="agenda-container">
-"""
-
-    # Combinar todos los eventos y ordenar por fecha
+    # Reunir todos los eventos futuros (o del día)
     all_events = []
+    for source, events in AGENDA_EVENTS.items():
+        for ev in events:
+            if ev["fecha"] >= today:
+                ev_copy = ev.copy()
+                ev_copy["source"] = source
+                all_events.append(ev_copy)
 
-    # Agregar eventos de iCare con fuente
-    for event in AGENDA_EVENTS.get('icare', []):
-        event_copy = event.copy()
-        event_copy['source'] = 'icare'
-        all_events.append(event_copy)
+    all_events.sort(key=lambda x: x["fecha"])
+    upcoming = all_events[:6]   # máximo 6 en el banner
 
-    # Agregar eventos de cooperativas con fuente
-    for event in AGENDA_EVENTS.get('cooperativas', []):
-        event_copy = event.copy()
-        event_copy['source'] = 'cooperativas'
-        all_events.append(event_copy)
+    if not upcoming:
+        return ""
 
-    # Ordenar por fecha (YYYY-MM-DD se ordena alfabéticamente correctamente)
-    all_events.sort(key=lambda x: x['fecha'])
+    # Construir pills de eventos
+    pills_html = ""
+    for ev in upcoming:
+        color  = TYPE_COLORS.get(ev["tipo"], "#374151")
+        icon   = TYPE_ICONS.get(ev["tipo"], "📌")
+        label  = _format_date(ev["fecha"])
+        titulo = ev["titulo"][:52] + "…" if len(ev["titulo"]) > 52 else ev["titulo"]
 
-    # Agrupar por fuente para mostrar con encabezados
-    html += '<div class="agenda-section"><h3>📅 iCare</h3>'
-    icare_events = [e for e in all_events if e['source'] == 'icare']
-    for event in icare_events:
-        html += f'''
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">{event['fecha']}</span>
-                <span class="agenda-time">{event['hora']}</span>
-            </div>
-            <div class="agenda-content">
-                <h4>{event['titulo']}</h4>
-                <p>{event['descripcion']}</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">{event['tipo'].upper()}</span>
-                    <a href="{event['enlace']}" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-'''
-    html += '</div>'
+        pills_html += f"""
+        <a href="{ev['enlace']}" target="_blank" class="agenda-pill" style="--pill-color:{color};">
+          <span class="pill-date">{label} · {ev['hora']}</span>
+          <span class="pill-icon">{icon}</span>
+          <span class="pill-title">{titulo}</span>
+          <span class="pill-type">{ev['tipo'].upper()}</span>
+        </a>"""
 
-    # Agregar eventos cooperativas
-    html += '<div class="agenda-section"><h3>🤝 Movimiento Cooperativo</h3>'
-    coop_events = [e for e in all_events if e['source'] == 'cooperativas']
-    for event in coop_events:
-        html += f'''
-        <div class="agenda-item">
-            <div class="agenda-date">
-                <span class="agenda-day">{event['fecha']}</span>
-                <span class="agenda-time">{event['hora']}</span>
-            </div>
-            <div class="agenda-content">
-                <h4>{event['titulo']}</h4>
-                <p>{event['descripcion']}</p>
-                <div class="agenda-meta">
-                    <span class="agenda-type">{event['tipo'].upper()}</span>
-                    <a href="{event['enlace']}" target="_blank" class="agenda-link">Más info →</a>
-                </div>
-            </div>
-        </div>
-'''
-    html += '</div>'
-
-    html += """
-        </div>
+    html = f"""
+    <!-- BANNER AGENDA DE ACTIVIDADES -->
+    <div class="agenda-banner">
+      <div class="agenda-banner-header">
+        <span class="agenda-banner-label">📅 AGENDA</span>
+        <span class="agenda-banner-sub">Próximos eventos · iCare · Cooperativas</span>
+      </div>
+      <div class="agenda-pills">
+        {pills_html}
+      </div>
     </div>
 """
-
     return html
 
 
 def get_agenda_css():
-    """Retorna estilos CSS para la agenda"""
+    """CSS del banner de agenda."""
 
     css = """
-    /* AGENDA DE ACTIVIDADES */
-    .agenda-container {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
+    /* ── BANNER AGENDA ───────────────────────────────────────── */
+    .agenda-banner {
+      background: linear-gradient(135deg, #1e3a5f 0%, #1e40af 100%);
+      border-radius: 10px;
+      padding: 22px 28px;
+      margin: 40px 0;
+      box-shadow: 0 4px 16px rgba(30,64,175,0.25);
     }
 
-    .agenda-section h3 {
-      font-size: 16px;
-      font-weight: 600;
-      color: var(--ink);
+    .agenda-banner-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
       margin-bottom: 16px;
-      padding-bottom: 10px;
-      border-bottom: 2px solid var(--rule);
     }
 
-    .agenda-item {
+    .agenda-banner-label {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .agenda-banner-sub {
+      font-size: 12px;
+      color: rgba(255,255,255,0.6);
+      letter-spacing: 0.04em;
+    }
+
+    .agenda-pills {
       display: flex;
-      gap: 20px;
-      padding: 16px;
-      background: var(--cream);
-      border-radius: 4px;
-      border-left: 4px solid var(--accent);
-      margin-bottom: 12px;
-      transition: all 0.2s;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .agenda-item:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transform: translateX(4px);
-    }
-
-    .agenda-date {
+    .agenda-pill {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      min-width: 80px;
-      font-weight: 600;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.18);
+      border-left: 4px solid var(--pill-color, #60a5fa);
+      border-radius: 6px;
+      padding: 10px 14px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      min-width: 200px;
+      max-width: 260px;
+      flex: 1 1 200px;
     }
 
-    .agenda-day {
-      font-size: 12px;
-      color: var(--muted);
+    .agenda-pill:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    .pill-date {
+      font-size: 11px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.70);
+      letter-spacing: 0.05em;
       text-transform: uppercase;
     }
 
-    .agenda-time {
-      font-size: 14px;
-      color: var(--accent);
+    .pill-icon {
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    .pill-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+    }
+
+    .pill-type {
+      font-size: 10px;
       font-weight: 700;
+      color: var(--pill-color, #93c5fd);
+      letter-spacing: 0.08em;
+      margin-top: 2px;
     }
 
-    .agenda-content h4 {
-      font-size: 15px;
-      font-weight: 600;
-      color: var(--ink);
-      margin-bottom: 8px;
-    }
-
-    .agenda-content p {
-      font-size: 14px;
-      color: var(--ink);
-      margin-bottom: 10px;
-      line-height: 1.6;
-    }
-
-    .agenda-meta {
-      display: flex;
-      gap: 12px;
-      align-items: center;
-      font-size: 12px;
-    }
-
-    .agenda-type {
-      background: var(--light-accent);
-      color: var(--accent);
-      padding: 4px 10px;
-      border-radius: 12px;
-      font-weight: 600;
-    }
-
-    .agenda-link {
-      color: var(--accent);
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.2s;
-    }
-
-    .agenda-link:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 768px) {
-      .agenda-item {
-        flex-direction: column;
-        gap: 10px;
+    @media (max-width: 600px) {
+      .agenda-pill {
+        min-width: 100%;
+        max-width: 100%;
       }
+      .agenda-banner {
+        padding: 16px 16px;
+      }
+    }
 
-      .agenda-date {
-        flex-direction: row;
-        gap: 10px;
-        justify-content: space-between;
+    @media print {
+      .agenda-banner {
+        background: #1e3a5f !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
     }
     """
@@ -260,5 +250,5 @@ def get_agenda_css():
 
 
 if __name__ == '__main__':
-    print("📅 Generador de Agenda\n")
+    print("📅 Banner Agenda\n")
     print(generate_agenda_html())
