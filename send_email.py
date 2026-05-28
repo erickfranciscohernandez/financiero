@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Envía email diario con link al newsletter
+Envía notificación de actualización del newsletter con indicadores del día
 """
 import smtplib
 import os
+import json
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from datetime import datetime
@@ -17,41 +18,102 @@ if not all([email_from, email_password, email_to_raw]):
     exit(0)
 
 recipients = [e.strip() for e in email_to_raw.split(',') if e.strip()]
-
 newsletter_url = 'https://erickfranciscohernandez.github.io/financiero/'
 fecha = datetime.now().strftime('%d/%m/%Y')
 hora  = datetime.now().strftime('%H:%M')
 
-subject = f'📰 El Despacho · Newsletter Estratégico — {fecha}'
+
+def _load_indicators():
+    """Lee live_indicators.json y retorna filas HTML para la tabla."""
+    try:
+        with open('live_indicators.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        ind = data.get('indicadores', {})
+        rows = ''
+        icons = {'uf': '📐', 'utm': '🧾', 'tpm': '🏦', 'usd_clp': '💵'}
+        for key, meta in ind.items():
+            icono  = icons.get(key, '•')
+            label  = meta.get('label', key.upper())
+            val    = meta.get('valor', 0)
+            unidad = meta.get('unidad', '')
+            tipo   = meta.get('tipo', 'precio')
+            fuente = meta.get('fuente', '')
+            mock   = meta.get('mock', False)
+            if tipo == 'tasa':
+                valor_fmt = f"{val:.2f}%"
+            else:
+                valor_fmt = f"{unidad}{val:,.2f}"
+            fuente_txt = '⚠️ Simulado' if mock else fuente
+            rows += f"""
+            <tr>
+              <td style="padding:10px 14px;font-size:20px;">{icono}</td>
+              <td style="padding:10px 8px;font-size:14px;font-weight:600;color:#1a1a1a;">{label}</td>
+              <td style="padding:10px 14px;font-size:16px;font-weight:700;color:#1e40af;text-align:right;">{valor_fmt}</td>
+              <td style="padding:10px 14px;font-size:11px;color:#9ca3af;">{fuente_txt}</td>
+            </tr>"""
+        return rows
+    except Exception:
+        return '<tr><td colspan="4" style="padding:10px;color:#9ca3af;">No disponible</td></tr>'
+
+
+indicator_rows = _load_indicators()
+
+subject = f'🔔 El Despacho actualizado · {fecha} {hora} UTC'
 
 html_body = f"""
 <html>
-<body style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background: #faf8f3;">
-  <div style="border-top: 4px solid #8b1a1a; padding-top: 20px; background: white; padding: 30px;">
-    <h2 style="color: #1a1a1a; font-size: 28px; margin-bottom: 4px; font-family: Georgia, serif;">El Despacho</h2>
-    <p style="color: #8a8a8a; font-size: 12px; margin: 0; text-transform: uppercase; letter-spacing: 0.1em;">Newsletter Estratégico · {fecha}</p>
-    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
-    <p style="color: #1a1a1a; font-size: 16px; line-height: 1.6;">
-      Tu newsletter del día está listo. Análisis ejecutivo de geopolítica,
-      mercados financieros, Chile estratégico, tecnología e inteligencia artificial.
+<body style="font-family:Arial,sans-serif;max-width:620px;margin:0 auto;padding:20px;background:#f4f4f4;">
+
+  <!-- Cabecera -->
+  <div style="background:#1e3a5f;border-radius:8px 8px 0 0;padding:24px 32px;">
+    <h1 style="color:#fff;font-family:Georgia,serif;font-size:26px;margin:0 0 4px;">El Despacho</h1>
+    <p style="color:rgba(255,255,255,0.65);font-size:12px;margin:0;letter-spacing:0.1em;text-transform:uppercase;">
+      Newsletter Estratégico · Actualización {fecha} · {hora} UTC
     </p>
-    <div style="text-align: center; margin: 35px 0;">
+  </div>
+
+  <!-- Cuerpo -->
+  <div style="background:#fff;padding:28px 32px;border-left:1px solid #e5e7eb;border-right:1px solid #e5e7eb;">
+
+    <p style="color:#374151;font-size:15px;line-height:1.7;margin-top:0;">
+      Tu newsletter ha sido <strong>actualizado automáticamente</strong>. A continuación los
+      indicadores macroeconómicos vigentes al momento de la actualización:
+    </p>
+
+    <!-- Tabla indicadores -->
+    <table style="width:100%;border-collapse:collapse;margin:20px 0;background:#f8faff;border-radius:8px;overflow:hidden;">
+      <thead>
+        <tr style="background:#1e40af;">
+          <th colspan="4" style="padding:10px 14px;text-align:left;color:#fff;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;">
+            📊 Indicadores del día
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {indicator_rows}
+      </tbody>
+    </table>
+
+    <!-- Botón CTA -->
+    <div style="text-align:center;margin:32px 0 20px;">
       <a href="{newsletter_url}"
-         style="background: #8b1a1a; color: white; padding: 16px 40px;
-                text-decoration: none; font-size: 16px; font-weight: bold;
-                border-radius: 3px; display: inline-block;">
-        Ver Newsletter →
+         style="background:#8b1a1a;color:#fff;padding:15px 44px;text-decoration:none;
+                font-size:15px;font-weight:bold;border-radius:4px;display:inline-block;">
+        Ver Newsletter completo →
       </a>
     </div>
-    <p style="color: #8a8a8a; font-size: 13px; text-align: center;">
-      Generado a las {hora} UTC · Actualizado automáticamente
-    </p>
-    <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
-    <p style="color: #aaa; font-size: 11px; text-align: center;">
-      El Despacho · Newsletter Estratégico<br>
+
+  </div>
+
+  <!-- Pie -->
+  <div style="background:#f9fafb;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 8px 8px;
+              padding:14px 32px;text-align:center;">
+    <p style="color:#9ca3af;font-size:11px;margin:0;">
+      El Despacho · Newsletter Estratégico · Actualización automática cada 4 horas<br>
       Este boletín es de carácter informativo y no constituye asesoría de inversión.
     </p>
   </div>
+
 </body>
 </html>
 """
@@ -66,7 +128,7 @@ try:
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
         server.login(email_from, email_password)
         server.sendmail(email_from, recipients, msg.as_string())
-    print(f'✅ Email enviado a: {", ".join(recipients)}')
+    print(f'✅ Notificación enviada a: {", ".join(recipients)}')
 except Exception as e:
     print(f'❌ Error enviando email: {e}')
     exit(1)
