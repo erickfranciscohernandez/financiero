@@ -194,7 +194,7 @@ def fetch_mindicador():
 # ── Capa 4: Mock ─────────────────────────────────────────────────────────────
 
 MOCK_DATA = {
-    'uf':      {'valor': 40543.07, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
+    'uf':      {'valor': 40559.96, 'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
     'utm':     {'valor': 70588.0,  'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
     'tpm':     {'valor': 4.75,     'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
     'usd_clp': {'valor': 894.67,   'fecha': datetime.now().strftime('%Y-%m-%d'), 'fuente': 'Simulado', 'mock': True},
