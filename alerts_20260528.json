@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-05-28T13:02:13.491766",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-05-28T13:48:25.515083",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,7 +12,7 @@
       "enlace": "https://www.df.cl"
     },
     {
-      "titulo": "G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales",
+      "titulo": "Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
@@ -24,6 +24,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "Ministerio de Hacienda proyecta superávit fiscal de 0.4% del PIB para 2026 gracias a cobre y litio",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }

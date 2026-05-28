@@ -1,114 +1,114 @@
 {
   "metadata": {
-    "fecha_generacion": "2026-05-28T13:02:18.758683",
+    "fecha_generacion": "2026-05-28T13:48:25.297261",
     "version": "v3",
-    "total_noticias": 29
+    "total_noticias": 28
   },
   "datos": {
     "geopolitica": [
       {
-        "title": "G7 lanza iniciativa de cadenas de suministro críticas para reducir dependencia de China en minerales",
-        "summary": "Plan moviliza USD 70.000M en diez años para financiar minas de litio, cobalto y tierras raras en países aliados. Chile, Australia y Canadá son socios clave.",
+        "title": "Unión Europea anuncia sanciones a 47 entidades chinas por vulneración de propiedad intelectual",
+        "summary": "Medida es la más amplia adoptada por Bruselas contra Pekín. China amenaza con represalias arancelarias sobre automóviles y vinos europeos.",
         "source": "The Economist",
         "link": "https://www.economist.com",
-        "date": "2026-05-28T10:01:53.882728"
+        "date": "2026-05-28T11:47:52.286676"
       },
       {
-        "title": "ONU adopta resolución histórica sobre gobernanza global de inteligencia artificial",
-        "summary": "Consejo de Seguridad aprueba por primera vez marco vinculante para uso de IA en sistemas de armas. 142 países firman compromiso de auditoría internacional.",
-        "source": "Reuters",
-        "link": "https://www.reuters.com",
-        "date": "2026-05-28T07:01:53.882745"
+        "title": "Irán firma acuerdo nuclear con potencias occidentales que limita enriquecimiento de uranio a 20%",
+        "summary": "Diplomacia de tres años culmina en Viena con reducción gradual de sanciones a cambio de inspecciones permanentes del OIEA. Israel mantiene reservas.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/world",
+        "date": "2026-05-28T10:47:52.286743"
       },
       {
         "title": "OPEP+ extiende recortes de producción hasta diciembre de 2026 para defender precio del crudo",
         "summary": "Arabia Saudita liderará reducción adicional de 500.000 bpd. Mercado petrolero proyecta Brent entre USD 72-80 para el segundo semestre.",
         "source": "Bloomberg",
         "link": "https://www.bloomberg.com/news",
-        "date": "2026-05-28T12:01:53.882748"
+        "date": "2026-05-28T13:47:52.286749"
       }
     ],
     "economia_global": [
-      {
-        "title": "Oro supera USD 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas",
-        "summary": "China, India y Turquía aumentan reservas de oro al ritmo más alto en 55 años. Analistas proyectan precio hacia USD 3.700/oz si Fed recorta en septiembre.",
-        "source": "Bloomberg",
-        "link": "https://www.bloomberg.com/markets",
-        "date": "2026-05-28T13:01:53.882762"
-      },
       {
         "title": "Fed anticipa primer recorte de tasas para septiembre con inflación PCE convergiendo al 2.1%",
         "summary": "Actas del FOMC revelan consenso creciente para iniciar ciclo de relajación. Mercados asignan 78% de probabilidad a recorte de 25 pb en septiembre.",
         "source": "CNBC",
         "link": "https://www.cnbc.com",
-        "date": "2026-05-28T08:01:53.882764"
+        "date": "2026-05-28T10:47:52.286767"
       },
       {
         "title": "Déficit fiscal de EE.UU. alcanza USD 1.8 billones en 2026: deuda supera el 130% del PIB",
         "summary": "CBO advierte que la trayectoria fiscal es insostenible sin ajuste. Rendimiento del bono T-10 trepa a 4.6%, presionando al alza el costo del crédito global.",
         "source": "CNBC",
         "link": "https://www.cnbc.com",
-        "date": "2026-05-28T09:01:53.882770"
+        "date": "2026-05-28T10:47:52.286771"
       },
       {
-        "title": "China lanza plan fiscal de USD 600.000M para estimular consumo interno y reactivar sector inmobiliario",
-        "summary": "Beijing inyecta recursos en subsidios al consumo, infraestructura urbana y rescate de desarrolladores. Analistas estiman impulso de 0.8 pp al PIB en 2026.",
-        "source": "Bloomberg Commodities",
+        "title": "Oro supera USD 3.450/oz: bancos centrales emergentes aceleran compras para diversificar reservas",
+        "summary": "China, India y Turquía aumentan reservas de oro al ritmo más alto en 55 años. Analistas proyectan precio hacia USD 3.700/oz si Fed recorta en septiembre.",
+        "source": "Bloomberg",
         "link": "https://www.bloomberg.com/markets",
-        "date": "2026-05-28T09:01:53.882775"
+        "date": "2026-05-28T09:47:52.286777"
+      },
+      {
+        "title": "Petróleo Brent repunta a USD 79 tras extensión de recortes OPEP+ hasta diciembre 2026",
+        "summary": "Arabia Saudita lidera restricción adicional de 500.000 bpd. Posición de inventarios globales cae a mínimos de tres años, reforzando perspectivas alcistas.",
+        "source": "Reuters",
+        "link": "https://www.reuters.com/business/energy",
+        "date": "2026-05-28T08:47:52.286782"
       }
     ],
     "economia_chile": [
       {
-        "title": "Codelco supera producción trimestral: 430.000 toneladas en Q1 2026, récord en seis años",
-        "summary": "Corporación estatal eleva guía anual a 1.65 millones de toneladas. División El Teniente y Chuquicamata lideran incremento. Resultado fortalece posición fiscal.",
-        "source": "EMOL",
-        "link": "https://www.emol.com",
-        "date": "2026-05-28T08:01:53.882804"
+        "title": "Ley de pensiones promulgada: sistema mixto con 3% a fondo solidario entrará en vigencia en enero 2027",
+        "summary": "Presidente Boric promulga reforma histórica tras tres años de tramitación. Nuevas pensiones promediarán CLP 320.000 adicionales según proyecciones del Ministerio.",
+        "source": "La Tercera",
+        "link": "https://www.latercera.com/politica",
+        "date": "2026-05-28T10:47:52.286825"
       },
       {
         "title": "Dólar cae a $928: máximo histórico de cobre y pausa Fed aprecian el peso chileno",
         "summary": "Tipo de cambio alcanza mínimo en 18 meses. BCCh monitorea posible intervención si tendencia persiste. Exportadores incrementan liquidaciones de divisas.",
         "source": "Diario Financiero",
         "link": "https://www.df.cl",
-        "date": "2026-05-28T07:01:53.882809"
+        "date": "2026-05-28T07:47:52.286832"
       },
       {
-        "title": "Aeropuerto de Santiago inaugura terminal ampliada con capacidad para 30 millones de pasajeros anuales",
-        "summary": "Concesionaria Nuevo Pudahuel entrega obra que duplica la superficie actual. Inversión de USD 920M mejora conectividad y posiciona al país como hub regional.",
+        "title": "Ministerio de Hacienda proyecta superávit fiscal de 0.4% del PIB para 2026 gracias a cobre y litio",
+        "summary": "Mejora en balance estructural permite financiar Plan de Inversión en Infraestructura y mantener holgura para eventualidades macroeconómicas.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-05-28T11:47:52.286835"
+      },
+      {
+        "title": "Codelco supera producción trimestral: 430.000 toneladas en Q1 2026, récord en seis años",
+        "summary": "Corporación estatal eleva guía anual a 1.65 millones de toneladas. División El Teniente y Chuquicamata lideran incremento. Resultado fortalece posición fiscal.",
         "source": "EMOL",
         "link": "https://www.emol.com",
-        "date": "2026-05-28T11:01:53.882812"
+        "date": "2026-05-28T13:47:52.286897"
       }
     ],
     "tendencias_tech": [
+      {
+        "title": "Apple Intelligence llega a iOS 19: Siri reescrito con LLM propio y procesamiento 100% on-device",
+        "summary": "Nueva generación de IA de Apple integra razonamiento contextual sin enviar datos a la nube. Compatible con iPhone 16 y superiores desde junio 2026.",
+        "source": "The Verge",
+        "link": "https://www.theverge.com",
+        "date": "2026-05-28T13:47:52.286910"
+      },
       {
         "title": "SpaceX Starship completa primer vuelo comercial: lleva satélites de NASA y ESA a órbita polar",
         "summary": "Cohete más poderoso del mundo logra misión operacional tras cuatro años de pruebas. Abre nueva era de lanzamientos pesados a bajo costo.",
         "source": "TechCrunch",
         "link": "https://techcrunch.com",
-        "date": "2026-05-28T11:01:53.882838"
+        "date": "2026-05-28T09:47:52.286913"
       },
       {
-        "title": "Nvidia supera USD 3 billones de capitalización bursátil impulsada por demanda de chips IA",
-        "summary": "GPU H100 y Blackwell Architecture consolidan dominio en infraestructura de entrenamiento de modelos de lenguaje.",
-        "source": "Bloomberg",
-        "link": "https://www.bloomberg.com/technology",
-        "date": "2026-05-28T11:01:53.882843"
-      },
-      {
-        "title": "AMD lanza GPU Instinct MI400 para centros de datos desafiando dominio de Nvidia en IA",
-        "summary": "Nuevo acelerador ofrece 40% más TFLOPS por dólar versus H200. Microsoft Azure y Google Cloud anuncian integración inmediata.",
-        "source": "TechCrunch",
-        "link": "https://techcrunch.com",
-        "date": "2026-05-28T12:01:53.882846"
-      },
-      {
-        "title": "Starlink expande cobertura en Latinoamérica con nueva constelación de satélites",
-        "summary": "SpaceX despliega 120 satélites adicionales para reducir latencia y ampliar conectividad rural en Chile, Perú y Colombia.",
-        "source": "TechCrunch",
-        "link": "https://techcrunch.com",
-        "date": "2026-05-28T07:01:53.882848"
+        "title": "Quantum computing alcanza hito: procesador de 1.000 qubits supera barrera de corrección de errores",
+        "summary": "IBM y Google reportan avances simultáneos que acercan la computación cuántica a aplicaciones comerciales en criptografía y logística.",
+        "source": "MIT Technology Review",
+        "link": "https://www.technologyreview.com",
+        "date": "2026-05-28T09:47:52.286916"
       }
     ],
     "cooperativismo": [
@@ -117,111 +117,104 @@
         "summary": "El cooperativismo financiero chileno continúa ganando participación de mercado frente a la banca tradicional, impulsado por menores tasas y mayor cercanía con socios en regiones.",
         "source": "Cooperativas.cl",
         "link": "https://www.cooperativas.cl",
-        "date": "2026-05-28T09:01:53.882855"
+        "date": "2026-05-28T12:47:52.286923"
+      },
+      {
+        "title": "Cooperativas agrícolas del sur de Chile apuestan por la exportación directa para mejorar márgenes",
+        "summary": "El modelo cooperativo permite a pequeños agricultores acceder a mercados de exportación en Asia y Europa que individualmente serían inalcanzables.",
+        "source": "ACI Américas",
+        "link": "https://www.aciamericas.coop",
+        "date": "2026-05-28T07:47:52.286925"
       },
       {
         "title": "Jóvenes chilenos entre 18 y 30 años lideran apertura de cuentas en cooperativas de ahorro",
         "summary": "La generación Z valora la propiedad colectiva y las tasas competitivas del sector cooperativo. Las apps móviles han sido clave para acercar el modelo a nuevos socios.",
         "source": "Cooperativas.cl",
         "link": "https://www.cooperativas.cl",
-        "date": "2026-05-28T09:01:53.882858"
-      },
-      {
-        "title": "BID destaca al cooperativismo latinoamericano como motor de inclusión financiera rural en 2026",
-        "summary": "Organismo multilateral resalta el rol de las cooperativas en llevar servicios financieros formales a comunidades alejadas de la banca comercial tradicional.",
-        "source": "BID",
-        "link": "https://www.iadb.org",
-        "date": "2026-05-28T08:01:53.882860"
-      },
-      {
-        "title": "ACI Américas: cooperativas de ahorro latinoamericanas crecen sostenidamente en socios activos",
-        "summary": "Chile, Colombia y México lideran la incorporación de nuevos socios al sistema cooperativo financiero, con foco en digitalización y productos de bajo costo.",
-        "source": "ACI Américas",
-        "link": "https://www.aciamericas.coop",
-        "date": "2026-05-28T10:01:53.882862"
+        "date": "2026-05-28T09:47:52.286927"
       }
     ],
     "cmf": [
       {
-        "title": "CMF avanza en reglamentación del equity crowdfunding bajo la Ley Fintech para Pymes chilenas",
-        "summary": "El marco regulatorio para plataformas de financiamiento colectivo busca ampliar el acceso de pequeñas empresas a capital sin pasar por la banca tradicional.",
+        "title": "CMF fortalece fiscalización del mercado de valores con foco en conflictos de interés y transparencia",
+        "summary": "El regulador intensifica la supervisión de administradoras de fondos y corredoras de bolsa, priorizando la protección de inversionistas minoristas y la integridad del mercado.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-05-28T13:01:53.882867"
+        "date": "2026-05-28T11:47:52.286933"
       },
       {
-        "title": "CMF avanza en nuevos estándares de resiliencia operacional para el sistema financiero chileno",
-        "summary": "El regulador trabaja en normativas que exigirán mayor robustez ante ciberataques y fallas sistémicas. El sector financiero evalúa inversiones en continuidad operacional.",
+        "title": "CMF y BCCh publican informe conjunto sobre riesgos sistémicos del mercado de criptoactivos en Chile",
+        "summary": "Documento identifica tres exchanges con concentración sistémica y propone regulación de reservas mínimas para emisores de stablecoins vinculados al peso chileno.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-05-28T12:01:53.882869"
+        "date": "2026-05-28T07:47:52.286936"
       },
       {
-        "title": "CMF autoriza inicio de operaciones de cuatro nuevas cooperativas de ahorro y crédito en regiones",
-        "summary": "Resoluciones habilitantes cubren cooperativas en Atacama, Aysén, Los Lagos y Maule, ampliando acceso a crédito formal en zonas con baja cobertura bancaria.",
+        "title": "CMF lanza portal de datos abiertos con información consolidada del sistema financiero chileno",
+        "summary": "Plataforma Open Data publica en tiempo real indicadores de bancos, cooperativas, compañías de seguros y fondos de inversión. Integra API pública para desarrolladores.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-05-28T11:01:53.882871"
+        "date": "2026-05-28T08:47:52.286938"
+      },
+      {
+        "title": "CMF actualiza tabla de tasas máximas convencionales: rebaja tope para créditos de consumo en junio 2026",
+        "summary": "Tasa máxima convencional para créditos entre UF 200 y UF 5.000 baja de 41.2% a 38.7% anual. Medida beneficia a 2.3 millones de deudores de consumo.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-05-28T09:47:52.286940"
       }
     ],
     "noticias_economicas_actuales": [
       {
-        "title": "INE publica IPP de mayo: precios al productor caen 0.3% mensual, acumulan solo 1.8% en 12 meses",
-        "summary": "Reducción en precios de insumos industriales anticipa menor presión inflacionaria aguas abajo. Sectores agrícola, minero e industrial registran contracción de costos.",
+        "title": "INE: tasa de desocupación nacional llega a 8,9% en trimestre enero-marzo 2026",
+        "summary": "Encuesta Nacional de Empleo revela que 8,9% de la fuerza laboral estuvo desocupada en el trimestre móvil enero-marzo 2026. La tasa combinada de desocupación y tiempo parcial involuntario alcanza 15,2% en el mismo período.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion",
+        "date": "2026-05-28T09:47:52.286946"
+      },
+      {
+        "title": "Ventas minoristas crecen 5.8% en mayo: electrodomésticos, vestuario y restaurantes lideran alza",
+        "summary": "INE registra el mejor dato de ventas del comercio en 18 meses. Mayor empleo y menor inflación dinamizan consumo de hogares. Crédito de consumo creció 6.3% interanual.",
         "source": "INE",
         "link": "https://www.ine.gob.cl",
-        "date": "2026-05-28T11:01:53.882912"
+        "date": "2026-05-28T13:47:52.286949"
+      },
+      {
+        "title": "Encuesta BCCh: mercado anticipa dólar en $910 y TPM en 4.25% al cierre de 2026",
+        "summary": "Consenso de analistas ajusta proyecciones ante recorte ya realizado y mejores datos macro. Tres recortes adicionales de 25 pb son el escenario base para el segundo semestre.",
+        "source": "Banco Central de Chile",
+        "link": "https://www.bcentral.cl",
+        "date": "2026-05-28T07:47:52.286951"
       },
       {
         "title": "Remuneraciones e informalidad laboral: INE reporta alza nominal de 5,1% en marzo 2026",
         "summary": "El Índice Nominal de Remuneraciones crece 5,1% a doce meses a marzo 2026 (provisional), mientras el Índice Nominal de Costos Laborales sube 6,0%. La tasa de ocupación informal nacional se mantiene en 26,5% en el trimestre enero-marzo.",
         "source": "INE",
         "link": "https://www.ine.gob.cl/estadisticas-por-tema/mercado-laboral/ocupacion-y-desocupacion",
-        "date": "2026-05-28T08:01:53.882918"
-      },
-      {
-        "title": "PIB primer trimestre 2026 confirmado en 3.8%: el mayor crecimiento trimestral en cinco años",
-        "summary": "Revisión final del BCCh confirma expansión récord. Consumo privado (+4.1%), inversión fija (+6.2%) y exportaciones (+8.9%) fueron los motores del crecimiento.",
-        "source": "ICARE",
-        "link": "https://www.icare.cl",
-        "date": "2026-05-28T08:01:53.882922"
-      },
-      {
-        "title": "Banco Central eleva rango de crecimiento del PIB 2026 a 3.5%-4.0% en IPoM de junio",
-        "summary": "Revisión al alza respaldada por mayor dinamismo de inversión, consumo y exportaciones. BCCh advierte que deterioro del entorno externo sigue siendo riesgo principal.",
-        "source": "Banco Central de Chile",
-        "link": "https://www.bcentral.cl",
-        "date": "2026-05-28T13:01:53.882925"
+        "date": "2026-05-28T12:47:52.286953"
       }
     ],
     "inteligencia_artificial": [
+      {
+        "title": "Microsoft lanza Copilot Wave 3 con agentes autónomos para finanzas, RRHH y cadena de suministro",
+        "summary": "Tercera ola del asistente IA empresarial incorpora orquestación multi-agente. Demos muestran cierre automático de libros contables y gestión de órdenes de compra.",
+        "source": "Ben's Bites",
+        "link": "https://bensbites.com",
+        "date": "2026-05-28T07:47:52.286959"
+      },
       {
         "title": "OpenAI lanza GPT-5 con capacidad de razonamiento extendido y memoria persistente",
         "summary": "Nuevo modelo supera benchmarks de matemáticas y codificación. Integra memoria a largo plazo entre conversaciones y herramientas autónomas.",
         "source": "TLDR AI",
         "link": "https://tldr.ai",
-        "date": "2026-05-28T11:01:53.882935"
+        "date": "2026-05-28T09:47:52.286961"
       },
       {
-        "title": "Startup chilena Xepelin lanza motor de IA para evaluación de crédito Pyme en tiempo real",
-        "summary": "Fintech usa modelos de lenguaje para analizar flujo de caja, historial tributario y comportamiento de pagos en menos de 2 minutos.",
-        "source": "The Rundown AI",
-        "link": "https://therundown.ai",
-        "date": "2026-05-28T10:01:53.882938"
-      },
-      {
-        "title": "Microsoft integra Copilot en toda la suite Office 365 con nuevas capacidades de análisis financiero",
-        "summary": "Asistente IA analiza balances, genera proyecciones y redacta informes ejecutivos directamente desde Excel y PowerPoint.",
-        "source": "Ben's Bites",
-        "link": "https://bensbites.com",
-        "date": "2026-05-28T12:01:53.882940"
-      },
-      {
-        "title": "Anthropic Claude 4: nuevo modelo supera GPT-5 en benchmarks de razonamiento legal y financiero",
-        "summary": "Evaluaciones independientes muestran ventaja en análisis de contratos, modelado financiero y generación de código seguro. API disponible para empresas desde junio.",
-        "source": "Ben's Bites",
-        "link": "https://bensbites.com",
-        "date": "2026-05-28T12:01:53.882942"
+        "title": "AI Act UE: primeras auditorías a sistemas de IA de alto riesgo revelan brechas de compliance en banca",
+        "summary": "Reguladores europeos identifican 34 sistemas de scoring crediticio sin documentación técnica suficiente. Instituciones tienen 6 meses para remediar o suspender uso.",
+        "source": "TLDR AI",
+        "link": "https://tldr.ai",
+        "date": "2026-05-28T07:47:52.286987"
       }
     ]
   }
