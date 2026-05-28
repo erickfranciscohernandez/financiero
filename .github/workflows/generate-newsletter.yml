@@ -1,10 +1,7 @@
 name: Generate Daily Newsletter
 
 on:
-  schedule:
-    # Ejecutar cada 6 horas
-    - cron: '0 */6 * * *'
-  # También permitir ejecución manual
+  # Ejecución manual únicamente (cron desactivado)
   workflow_dispatch:
 
 permissions:
