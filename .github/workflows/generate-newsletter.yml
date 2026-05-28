@@ -7,9 +7,6 @@ on:
   # También permitir ejecución manual
   workflow_dispatch:
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 permissions:
   contents: write
 
@@ -19,15 +16,18 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      - name: Install system dependencies for weasyprint
+        run: sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libfontconfig1 libcairo2
+
       - name: Install dependencies
-        run: pip install requests weasyprint beautifulsoup4 lxml
+        run: pip install requests weasyprint beautifulsoup4 lxml anthropic
 
       - name: Generate dynamic mock news (for sandbox environment)
         run: python generate_mock_news.py
