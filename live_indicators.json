@@ -1,14 +1,14 @@
 {
-  "fecha": "2026-05-29T13:27:32.174085",
+  "fecha": "2026-05-29T13:40:01.902917",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 40559.96,
+      "valor": 40576.86,
       "fecha": "2026-05-29",
-      "fuente": "Simulado",
+      "fuente": "SII (manual 29-may-2026)",
       "mock": true
     },
     "utm": {
@@ -33,9 +33,9 @@
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 894.79,
+      "valor": 892.89,
       "fecha": "2026-05-29",
-      "fuente": "Simulado",
+      "fuente": "BCCh SI3 (manual 29-may-2026)",
       "mock": true
     }
   }
