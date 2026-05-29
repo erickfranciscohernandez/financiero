@@ -96,8 +96,8 @@ TODAY_NEWS_29MAY2026 = {
     ],
     'cooperativismo': [
         {
-            'title': '[29 May] Coopeuch celebra hoy 56° aniversario: anuncia expansión a 5 nuevas regiones y meta de 2 millones de socios',
-            'summary': 'La cooperativa más grande de Chile presenta plan estratégico 2026-2030 con foco en hipotecario, digital y educación financiera. Activos totales superan CLP 5.2 billones, crecimiento del 18% interanual.',
+            'title': '[29 May] Cooperativas de ahorro chilenas cierran mayo con cartera de crédito sobre CLP 4,8 billones: máximo histórico',
+            'summary': 'El sector cooperativo financiero acumula crecimiento de 14% interanual en colocaciones. Crédito hipotecario lidera el alza con +22%. La mora se mantiene en 1.3%, muy por debajo del promedio bancario de 2.1%.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
