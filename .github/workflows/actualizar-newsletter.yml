@@ -1,0 +1,76 @@
+name: Actualizar Newsletter
+
+on:
+  schedule:
+    # Cada 4 horas: 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 UTC
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Instalar dependencias del sistema (weasyprint)
+        run: sudo apt-get install -y libpango-1.0-0 libpangoft2-1.0-0 libfontconfig1 libcairo2
+
+      - name: Instalar dependencias Python
+        run: pip install requests weasyprint beautifulsoup4 lxml anthropic
+
+      - name: Generar noticias del día
+        run: python generate_mock_news.py
+
+      - name: Obtener indicadores macroeconómicos
+        env:
+          BCENTRAL_USER: ${{ secrets.BCENTRAL_USER }}
+          BCENTRAL_PASS: ${{ secrets.BCENTRAL_PASS }}
+        run: python fetch_live_data.py
+
+      - name: Generar newsletter v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python generate_newsletter_v4.py
+
+      - name: Exportar formatos (PDF, JSON, CSV)
+        run: python export_newsletter.py
+
+      - name: Ejecutar sistema de alertas
+        run: python alerts_system.py
+
+      - name: Publicar cambios en GitHub Pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          TODAY=$(date +'%Y%m%d')
+          git add newsletter.html newsletter_v4.html live_indicators.json \
+                  noticias_diarias.json \
+                  alerts_${TODAY}.json \
+                  newsletter_${TODAY}.pdf \
+                  newsletter_data_${TODAY}.json \
+                  noticias_${TODAY}.csv \
+                  resumen_${TODAY}.txt || true
+          git diff --quiet && git diff --staged --quiet || \
+            git commit -m "chore: newsletter actualizado $(date +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: Enviar email con indicadores y alertas
+        continue-on-error: true
+        env:
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python send_email.py
