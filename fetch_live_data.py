@@ -196,7 +196,7 @@ def fetch_mindicador():
 MOCK_DATA = {
     'uf':      {'valor': 40576.86, 'fecha': '2026-05-29', 'fuente': 'SII (manual 29-may-2026)', 'mock': True},
     'utm':     {'valor': 70588.0,  'fecha': '2026-05-29', 'fuente': 'Simulado', 'mock': True},
-    'tpm':     {'valor': 4.75,     'fecha': '2026-05-29', 'fuente': 'Simulado', 'mock': True},
+    'tpm':     {'valor': 4.50,     'fecha': '2026-05-29', 'fuente': 'BCCh (manual 29-may-2026)', 'mock': True},
     'usd_clp': {'valor': 892.89,   'fecha': '2026-05-29', 'fuente': 'BCCh SI3 (manual 29-may-2026)', 'mock': True},
 }
 

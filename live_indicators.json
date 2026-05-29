@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-29T13:47:39.670776",
+  "fecha": "2026-05-29T13:58:18.844876",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -24,9 +24,9 @@
       "label": "TPM (Tasa Política Mon.)",
       "unidad": "%",
       "tipo": "tasa",
-      "valor": 4.75,
+      "valor": 4.5,
       "fecha": "2026-05-29",
-      "fuente": "Simulado",
+      "fuente": "BCCh (manual 29-may-2026)",
       "mock": true
     },
     "usd_clp": {
