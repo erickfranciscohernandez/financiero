@@ -73,8 +73,8 @@ RSS_FEEDS = {
         'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
     ],
     'cooperativismo': [
-        'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/feed/',
         'https://www.forocooperativo.cl/feed/',
+        'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/feed/',
         'https://www.chocale.cl/feed/',
         'https://www.elmostrador.cl/feed/',
         'https://www.latercera.com/feed/',
