@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-28T20:51:23.262611",
+  "fecha": "2026-05-29T13:27:32.174085",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -7,7 +7,7 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 40559.96,
-      "fecha": "2026-05-28",
+      "fecha": "2026-05-29",
       "fuente": "Simulado",
       "mock": true
     },
@@ -16,7 +16,7 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 70588.0,
-      "fecha": "2026-05-28",
+      "fecha": "2026-05-29",
       "fuente": "Simulado",
       "mock": true
     },
@@ -25,7 +25,7 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.75,
-      "fecha": "2026-05-28",
+      "fecha": "2026-05-29",
       "fuente": "Simulado",
       "mock": true
     },
@@ -34,7 +34,7 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 894.79,
-      "fecha": "2026-05-28",
+      "fecha": "2026-05-29",
       "fuente": "Simulado",
       "mock": true
     }
