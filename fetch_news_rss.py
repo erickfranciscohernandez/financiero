@@ -26,7 +26,7 @@ NEWSAPI_QUERIES = {
     'economia_mercados': 'economia global OR fed reserva federal OR banco central OR inflacion mercados',
     'chile_estrategico': 'Chile economia OR codelco OR peso chileno OR litio chile OR gobierno chile',
     'tendencias': 'tecnologia innovacion OR startup latinoamerica OR transformacion digital',
-    'cooperativismo': 'cooperativa OR cooperativismo OR economia solidaria',
+    'cooperativismo': 'cooperativa OR cooperativismo OR economia solidaria OR foro cooperativo Chile',
     'cmf': 'CMF Chile OR regulacion financiera Chile OR superintendencia valores',
     'noticias_economicas': 'bolsa latinoamerica OR dolar peso OR commodities OR cobre precio',
     'ia': 'inteligencia artificial OR ChatGPT OR OpenAI OR IA generativa',
@@ -73,6 +73,8 @@ RSS_FEEDS = {
         'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
     ],
     'cooperativismo': [
+        'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/feed/',
+        'https://www.forocooperativo.cl/feed/',
         'https://www.chocale.cl/feed/',
         'https://www.elmostrador.cl/feed/',
         'https://www.latercera.com/feed/',
