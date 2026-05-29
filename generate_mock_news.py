@@ -8,6 +8,110 @@ import json
 from datetime import datetime, timedelta
 import random
 
+# Noticias específicas del 29 de mayo de 2026 — se mezclan con las plantillas generales
+TODAY_NEWS_29MAY2026 = {
+    'geopolitica': [
+        {
+            'title': '[29 May] Cumbre G7 en Canadá arranca hoy: agenda dominada por IA, aranceles y financiamiento de Ucrania',
+            'summary': 'Líderes del G7 se reúnen en Kananaskis, Alberta. Biden propone fondo de USD 50.000M para reconstrucción ucraniana. Trump exige mayor gasto de defensa a aliados. IA y regulación tecnológica en agenda de cierre.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[29 May] China suspende exportación de galio y germanio en represalia por restricciones de chips de EE.UU.',
+            'summary': 'Ministerio de Comercio chino anuncia hoy controles de exportación de dos minerales críticos para semiconductores. Europa y Japón acusan el impacto; TSMC y Samsung aceleran búsqueda de fuentes alternativas.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[29 May] Inflación PCE de EE.UU. de abril baja a 2.5%: Fed está más cerca de recortar en septiembre',
+            'summary': 'Dato publicado hoy por la BEA sorprende a la baja. PCE subyacente en 2.6%. Futuros de fed funds descuentan ahora un 84% de probabilidad de recorte de 25 pb en septiembre. Dólar cede frente a emergentes.',
+            'source': 'CNBC',
+            'link': 'https://www.cnbc.com'
+        },
+        {
+            'title': '[29 May] Cobre cierra la semana en USD 5.08/lb: mejor desempeño semanal del metal en dos años',
+            'summary': 'LME registra alza acumulada de 4.2% en la semana ante datos sólidos de China y restricciones de exportación de minerales. Chile y Perú son los principales beneficiados. Analistas apuntan al rango USD 5.20-5.40 para Q3.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[29 May] BCCh publica hoy encuesta de expectativas: mercado anticipa TPM en 4.50% al cierre de 2026',
+            'summary': 'La Encuesta de Expectativas Económicas de mayo confirma consenso de dos recortes adicionales de 25 pb en el segundo semestre. Dólar proyectado en $888 para diciembre. IPC 2026 esperado en 3.0%.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[29 May] Ministerio de Hacienda coloca USD 1.500M en bonos globales con tasa de 4.95%: fuerte demanda externa',
+            'summary': 'Colocación de bonos en dólares a 10 y 30 años atrae órdenes por USD 6.800M, más de cuatro veces la oferta. Es la mejor recepción de deuda soberana chilena en el exterior desde 2019.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': '[29 May] SQM sube 5.8% hoy en bolsa: Goldman Sachs eleva precio objetivo a USD 72 por acción',
+            'summary': 'El banco eleva su recomendación a "buy" tras revisar al alza el precio del litio. Acuerdo SQM-Codelco y alza del carbonato a USD 17.200/t explican el upgrade. IPSA toca nuevo récord intradía de 7.540 puntos.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[29 May] Microsoft Build 2026 arranca hoy: Copilot Studio abre agentes autónomos a toda empresa',
+            'summary': 'Satya Nadella anuncia que cualquier cliente de Microsoft 365 puede crear y desplegar agentes de IA sin código. Azure AI Foundry integra GPT-5 y Claude 4. Acción sube 3.1% en preapertura de Wall Street.',
+            'source': 'The Verge',
+            'link': 'https://www.theverge.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[29 May] Anthropic publica hoy informe de seguridad de Claude 4: primer modelo con "Constitutional AI v2"',
+            'summary': 'Nuevo marco de alineamiento incorpora preferencias del usuario y sociedad en entrenamiento base. Red-teaming externo no encontró vectores de fuga críticos. Informe completo disponible en anthropic.com/safety.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
+        },
+        {
+            'title': '[29 May] OpenAI anuncia hoy GPT-5 para empresas: procesamiento de contratos legales y estados financieros completos',
+            'summary': 'Paquete Enterprise de GPT-5 incluye contexto de 2M de tokens, memoria persistente y auditoría de uso para compliance. Precio de API cae 35% respecto a GPT-4o. Doce bancos latinoamericanos están en lista de espera.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[29 May] INE publica hoy encuesta de comercio de abril: ventas minoristas crecen 6.1% interanual',
+            'summary': 'Dato supera proyección del mercado de 5.4%. Líneas blancas (+9.2%), restaurantes (+8.1%) y construcción (+7.4%) lideran. Crédito de consumo bancario crece 6.9% apoyando demanda de hogares.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[29 May] Hacienda publica hoy Informe de Finanzas Públicas: Chile acumula superávit de 0.3% del PIB en enero-abril',
+            'summary': 'Ingresos tributarios crecen 8.4% real impulsados por renta minera y IVA. Gasto fiscal se ejecuta 96.1% del presupuesto a abril. Deuda bruta se estabiliza en 39.2% del PIB.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[29 May] Coopeuch celebra hoy 56° aniversario: anuncia expansión a 5 nuevas regiones y meta de 2 millones de socios',
+            'summary': 'La cooperativa más grande de Chile presenta plan estratégico 2026-2030 con foco en hipotecario, digital y educación financiera. Activos totales superan CLP 5.2 billones, crecimiento del 18% interanual.',
+            'source': 'Cooperativas.cl',
+            'link': 'https://www.cooperativas.cl'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[29 May] CMF publica hoy circular sobre gestión de riesgo de liquidez para cooperativas con activos sobre UF 400.000',
+            'summary': 'Nueva normativa exige mantener activos líquidos equivalentes al 10% de los depósitos en un escenario de estrés de 30 días. Plazo de adecuación: 12 meses. Afecta a 8 cooperativas del sistema.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+}
+
 # Plantillas de noticias por categoría — actualizadas mayo 2026 (v3)
 NEWS_TEMPLATES = {
     'geopolitica': [
@@ -570,24 +674,38 @@ NEWS_TEMPLATES = {
 
 
 def generate_dynamic_news():
-    """Genera noticias dinámicas basadas en la hora actual"""
+    """Genera noticias dinámicas basadas en la hora actual.
+    Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
 
+    today_str = datetime.now().strftime('%Y%m%d')
     current_hour = datetime.now().hour
     current_minute = datetime.now().minute
 
     # Seed para reproducibilidad dentro del mismo período de 30 min
     random.seed(current_hour * 60 + (current_minute // 30))
 
+    # Seleccionar bloque de noticias del día si existe
+    today_blocks = TODAY_NEWS_29MAY2026 if today_str == '20260529' else {}
+
     news_data = {}
 
     for category, templates in NEWS_TEMPLATES.items():
-        num_news = random.randint(3, 4)
-        selected = random.sample(templates, min(num_news, len(templates)))
+        today_items = today_blocks.get(category, [])
+
+        # Completar con plantillas generales hasta 4-5 noticias totales
+        slots_remaining = max(0, 4 - len(today_items))
+        selected_general = random.sample(templates, min(slots_remaining, len(templates)))
+
+        combined = today_items + selected_general
 
         news_with_time = []
-        for news in selected:
+        for i, news in enumerate(combined):
             news_copy = news.copy()
-            hours_ago = random.randint(0, 6)
+            # Noticias de hoy tienen timestamp muy reciente
+            if news in today_items:
+                hours_ago = random.randint(0, 2)
+            else:
+                hours_ago = random.randint(2, 8)
             news_copy['date'] = (datetime.now() - timedelta(hours=hours_ago)).isoformat()
             news_with_time.append(news_copy)
 
@@ -618,6 +736,6 @@ def update_news_file():
 
 
 if __name__ == '__main__':
-    print("🔄 Generador de noticias dinámicas v3 — mayo 2026")
+    print("🔄 Generador de noticias dinámicas v3 — 29 mayo 2026")
     print("=" * 50)
     update_news_file()
