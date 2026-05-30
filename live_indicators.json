@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-05-29T22:15:33.402327",
+  "fecha": "2026-05-30T09:05:22.107946",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -7,7 +7,7 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 40746.28,
-      "fecha": "2026-05-29",
+      "fecha": "2026-05-30",
       "fuente": "SII (sii.cl)"
     },
     "utm": {
