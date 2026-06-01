@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-01T13:22:10.151391",
+  "fecha": "2026-06-01T13:23:15.877779",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -33,9 +33,9 @@
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 892.89,
+      "valor": 890.64,
       "fecha": "2026-06-01",
-      "fuente": "BCCh SI3 (referencia 01-jun-2026)",
+      "fuente": "BCCh SI3 (01-jun-2026)",
       "mock": true
     }
   }
