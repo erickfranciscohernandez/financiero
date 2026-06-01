@@ -194,10 +194,10 @@ def fetch_mindicador():
 # ── Capa 4: Mock ─────────────────────────────────────────────────────────────
 
 MOCK_DATA = {
-    'uf':      {'valor': 40576.86, 'fecha': '2026-05-29', 'fuente': 'SII (manual 29-may-2026)', 'mock': True},
-    'utm':     {'valor': 70588.0,  'fecha': '2026-05-29', 'fuente': 'Simulado', 'mock': True},
-    'tpm':     {'valor': 4.50,     'fecha': '2026-05-29', 'fuente': 'BCCh (manual 29-may-2026)', 'mock': True},
-    'usd_clp': {'valor': 892.89,   'fecha': '2026-05-29', 'fuente': 'BCCh SI3 (manual 29-may-2026)', 'mock': True},
+    'uf':      {'valor': 40582.34, 'fecha': '2026-06-01', 'fuente': 'SII (referencia 01-jun-2026)', 'mock': True},
+    'utm':     {'valor': 70588.0,  'fecha': '2026-06-01', 'fuente': 'SII (referencia jun-2026)', 'mock': True},
+    'tpm':     {'valor': 4.50,     'fecha': '2026-06-01', 'fuente': 'BCCh (01-jun-2026)', 'mock': True},
+    'usd_clp': {'valor': 892.89,   'fecha': '2026-06-01', 'fuente': 'BCCh SI3 (referencia 01-jun-2026)', 'mock': True},
 }
 
 INDICADORES_META = {

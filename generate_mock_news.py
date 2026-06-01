@@ -8,104 +8,104 @@ import json
 from datetime import datetime, timedelta
 import random
 
-# Noticias específicas del 29 de mayo de 2026 — se mezclan con las plantillas generales
-TODAY_NEWS_29MAY2026 = {
+# Noticias específicas del 1 de junio de 2026 — se mezclan con las plantillas generales
+TODAY_NEWS_01JUN2026 = {
     'geopolitica': [
         {
-            'title': '[29 May] Cumbre G7 en Canadá arranca hoy: agenda dominada por IA, aranceles y financiamiento de Ucrania',
-            'summary': 'Líderes del G7 se reúnen en Kananaskis, Alberta. Biden propone fondo de USD 50.000M para reconstrucción ucraniana. Trump exige mayor gasto de defensa a aliados. IA y regulación tecnológica en agenda de cierre.',
+            'title': '[1 Jun] G7 en Kananaskis cierra con declaración conjunta sobre IA, sanciones a Rusia y fondo de USD 50.000M para Ucrania',
+            'summary': 'Cumbre en Canadá adopta marco regulatorio mínimo para IA militar y amplía sanciones al sector energético ruso. EE.UU. y Europa comprometen USD 50.000M adicionales para reconstrucción ucraniana a través del Banco Mundial.',
             'source': 'Reuters',
             'link': 'https://www.reuters.com/world'
         },
         {
-            'title': '[29 May] China suspende exportación de galio y germanio en represalia por restricciones de chips de EE.UU.',
-            'summary': 'Ministerio de Comercio chino anuncia hoy controles de exportación de dos minerales críticos para semiconductores. Europa y Japón acusan el impacto; TSMC y Samsung aceleran búsqueda de fuentes alternativas.',
+            'title': '[1 Jun] China endurece controles de exportación de minerales críticos: galio, germanio y grafito bajo nuevas restricciones',
+            'summary': 'Beijing amplía la lista de minerales estratégicos con exportación controlada. Impacto inmediato en cadenas de suministro de semiconductores en Japón, Corea del Sur y Europa. Precios del grafito suben 8% en una sesión.',
             'source': 'Financial Times',
             'link': 'https://www.ft.com/world'
         },
     ],
     'economia_global': [
         {
-            'title': '[29 May] Inflación PCE de EE.UU. de abril baja a 2.5%: Fed está más cerca de recortar en septiembre',
-            'summary': 'Dato publicado hoy por la BEA sorprende a la baja. PCE subyacente en 2.6%. Futuros de fed funds descuentan ahora un 84% de probabilidad de recorte de 25 pb en septiembre. Dólar cede frente a emergentes.',
-            'source': 'CNBC',
-            'link': 'https://www.cnbc.com'
+            'title': '[1 Jun] PMI manufacturero global de mayo sube a 51.3: expansión por tercer mes consecutivo',
+            'summary': 'Índice S&P Global confirma que la actividad fabril mundial entró en zona de expansión. EE.UU. (52.1) y la India (57.5) lideran. China (50.4) recupera terreno. Europa sigue en contracción leve con 48.7.',
+            'source': 'Bloomberg',
+            'link': 'https://www.bloomberg.com/markets'
         },
         {
-            'title': '[29 May] Cobre cierra la semana en USD 5.08/lb: mejor desempeño semanal del metal en dos años',
-            'summary': 'LME registra alza acumulada de 4.2% en la semana ante datos sólidos de China y restricciones de exportación de minerales. Chile y Perú son los principales beneficiados. Analistas apuntan al rango USD 5.20-5.40 para Q3.',
-            'source': 'Bloomberg Commodities',
-            'link': 'https://www.bloomberg.com/commodities'
+            'title': '[1 Jun] Petróleo Brent baja a USD 79 tras datos de inventarios EE.UU. y señales de debilidad en demanda china',
+            'summary': 'EIA reporta aumento inesperado de 3.2 millones de barriles en stocks estadounidenses. Importaciones de crudo en China caen 4% interanual en mayo. Mercado ajusta a la baja proyección OPEP+ para el tercer trimestre.',
+            'source': 'CNBC',
+            'link': 'https://www.cnbc.com'
         },
     ],
     'economia_chile': [
         {
-            'title': '[29 May] BCCh publica hoy encuesta de expectativas: mercado anticipa TPM en 4.50% al cierre de 2026',
-            'summary': 'La Encuesta de Expectativas Económicas de mayo confirma consenso de dos recortes adicionales de 25 pb en el segundo semestre. Dólar proyectado en $888 para diciembre. IPC 2026 esperado en 3.0%.',
+            'title': '[1 Jun] BCCh inicia hoy proceso de actualización de la UF de junio: primer valor del mes en $40.582',
+            'summary': 'El Banco Central publica los valores de la UF para junio 2026. El mes inicia con $40.582,34, reflejando la inflación acumulada de mayo. Los valores completos del mes están disponibles en bcentral.cl.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': '[29 May] Ministerio de Hacienda coloca USD 1.500M en bonos globales con tasa de 4.95%: fuerte demanda externa',
-            'summary': 'Colocación de bonos en dólares a 10 y 30 años atrae órdenes por USD 6.800M, más de cuatro veces la oferta. Es la mejor recepción de deuda soberana chilena en el exterior desde 2019.',
+            'title': '[1 Jun] IPSA abre junio con alza de 0.4%: cobre firme y liquidaciones de fin de mes impulsan al sector minero',
+            'summary': 'Bolsa de Santiago consolida niveles récord al inicio del segundo semestre bursátil. SQM, Codelco-bonos y Banco de Chile lideran las alzas. Volumen de transacciones supera los CLP 120.000M en la sesión matinal.',
             'source': 'Diario Financiero',
             'link': 'https://www.df.cl'
         },
         {
-            'title': '[29 May] SQM sube 5.8% hoy en bolsa: Goldman Sachs eleva precio objetivo a USD 72 por acción',
-            'summary': 'El banco eleva su recomendación a "buy" tras revisar al alza el precio del litio. Acuerdo SQM-Codelco y alza del carbonato a USD 17.200/t explican el upgrade. IPSA toca nuevo récord intradía de 7.540 puntos.',
-            'source': 'La Tercera',
-            'link': 'https://www.latercera.com'
+            'title': '[1 Jun] Dólar observado abre junio bajo $893: cobre sobre USD 5 y flujos de exportadores anclan el tipo de cambio',
+            'summary': 'El peso chileno mantiene fortaleza relativa al inicio del mes. Liquidaciones de exportadores mineros y agrícolas suman USD 420M en la primera jornada de junio. BCCh no interviene; monitorea volatilidad.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
         },
     ],
     'tendencias_tech': [
         {
-            'title': '[29 May] Microsoft Build 2026 arranca hoy: Copilot Studio abre agentes autónomos a toda empresa',
-            'summary': 'Satya Nadella anuncia que cualquier cliente de Microsoft 365 puede crear y desplegar agentes de IA sin código. Azure AI Foundry integra GPT-5 y Claude 4. Acción sube 3.1% en preapertura de Wall Street.',
+            'title': '[1 Jun] Microsoft Build 2026 concluye: Copilot Agents ya disponibles para todas las empresas con Microsoft 365',
+            'summary': 'Satya Nadella cierra la conferencia con el anuncio de disponibilidad general de agentes autónomos sin código. Azure AI Foundry integra GPT-5 y Claude 4 Opus. Microsoft sube 2.8% en Wall Street al cierre del viernes.',
             'source': 'The Verge',
             'link': 'https://www.theverge.com'
         },
     ],
     'inteligencia_artificial': [
         {
-            'title': '[29 May] Anthropic publica hoy informe de seguridad de Claude 4: primer modelo con "Constitutional AI v2"',
-            'summary': 'Nuevo marco de alineamiento incorpora preferencias del usuario y sociedad en entrenamiento base. Red-teaming externo no encontró vectores de fuga críticos. Informe completo disponible en anthropic.com/safety.',
-            'source': "Ben's Bites",
-            'link': 'https://bensbites.com'
-        },
-        {
-            'title': '[29 May] OpenAI anuncia hoy GPT-5 para empresas: procesamiento de contratos legales y estados financieros completos',
-            'summary': 'Paquete Enterprise de GPT-5 incluye contexto de 2M de tokens, memoria persistente y auditoría de uso para compliance. Precio de API cae 35% respecto a GPT-4o. Doce bancos latinoamericanos están en lista de espera.',
+            'title': '[1 Jun] Informe McKinsey: empresas con IA generativa reportan 18% más de productividad en finanzas y legal',
+            'summary': 'Estudio de 1.400 organizaciones en 12 países muestra que las compañías que adoptaron LLMs en flujos de trabajo core llevan ventaja competitiva creciente. El 67% de las empresas Fortune 500 ya usa IA generativa en producción.',
             'source': 'TLDR AI',
             'link': 'https://tldr.ai'
+        },
+        {
+            'title': '[1 Jun] Regulación IA en América Latina: Brasil, Chile y Colombia avanzan en marcos legales con enfoques distintos',
+            'summary': 'Brasil aprueba ley sectorial para IA en crédito y salud. Chile publica borrador de política nacional. Colombia opta por sandbox regulatorio. Divergencia normativa preocupa a empresas tecnológicas con operaciones regionales.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
         },
     ],
     'noticias_economicas_actuales': [
         {
-            'title': '[29 May] INE publica hoy encuesta de comercio de abril: ventas minoristas crecen 6.1% interanual',
-            'summary': 'Dato supera proyección del mercado de 5.4%. Líneas blancas (+9.2%), restaurantes (+8.1%) y construcción (+7.4%) lideran. Crédito de consumo bancario crece 6.9% apoyando demanda de hogares.',
-            'source': 'INE',
-            'link': 'https://www.ine.gob.cl'
+            'title': '[1 Jun] Chile inicia junio con agenda económica cargada: IPoM, TPM y datos de empleo en las próximas semanas',
+            'summary': 'BCCh publica el Informe de Política Monetaria el 18 de junio. La reunión de política monetaria del 17 de junio definirá si hay nuevo recorte de TPM. INE publicará el IPC de mayo el 9 de junio.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
         },
         {
-            'title': '[29 May] Hacienda publica hoy Informe de Finanzas Públicas: Chile acumula superávit de 0.3% del PIB en enero-abril',
-            'summary': 'Ingresos tributarios crecen 8.4% real impulsados por renta minera y IVA. Gasto fiscal se ejecuta 96.1% del presupuesto a abril. Deuda bruta se estabiliza en 39.2% del PIB.',
+            'title': '[1 Jun] Hacienda: ejecución presupuestaria acumula 96.1% al cierre de mayo con superávit de 0.3% del PIB',
+            'summary': 'Ingresos tributarios crecen 8.4% real, impulsados por royalty minero y mayor IVA. El gasto en inversión pública se acelera en el segundo trimestre. Deuda bruta del Gobierno Central se estabiliza en 39.2% del PIB.',
             'source': 'Ministerio de Hacienda',
             'link': 'https://www.hacienda.cl'
         },
     ],
     'cooperativismo': [
         {
-            'title': '[29 May] Cooperativas de ahorro chilenas cierran mayo con cartera de crédito sobre CLP 4,8 billones: máximo histórico',
-            'summary': 'El sector cooperativo financiero acumula crecimiento de 14% interanual en colocaciones. Crédito hipotecario lidera el alza con +22%. La mora se mantiene en 1.3%, muy por debajo del promedio bancario de 2.1%.',
+            'title': '[1 Jun] Cooperativas de ahorro chilenas cierran mayo con cartera récord de CLP 4,8 billones: crece 14% interanual',
+            'summary': 'El sector cooperativo financiero consolida su expansión. Crédito hipotecario lidera con +22%. Mora se mantiene en 1.3%, muy por debajo del promedio bancario de 2.1%. Junio trae nuevas exigencias de liquidez de la CMF.',
             'source': 'Cooperativas.cl',
             'link': 'https://www.cooperativas.cl'
         },
     ],
     'cmf': [
         {
-            'title': '[29 May] CMF publica hoy circular sobre gestión de riesgo de liquidez para cooperativas con activos sobre UF 400.000',
-            'summary': 'Nueva normativa exige mantener activos líquidos equivalentes al 10% de los depósitos en un escenario de estrés de 30 días. Plazo de adecuación: 12 meses. Afecta a 8 cooperativas del sistema.',
+            'title': '[1 Jun] CMF publica hoy en el D.O. circular de riesgo de liquidez para cooperativas: entra en vigencia el 1 de junio 2027',
+            'summary': 'La norma exige mantener activos líquidos equivalentes al 10% de los depósitos bajo escenario de estrés de 30 días. Afecta a 8 cooperativas con activos sobre UF 400.000. Plazo de adecuación: 12 meses.',
             'source': 'CMF Chile',
             'link': 'https://www.cmfchile.cl'
         },
@@ -685,7 +685,10 @@ def generate_dynamic_news():
     random.seed(current_hour * 60 + (current_minute // 30))
 
     # Seleccionar bloque de noticias del día si existe
-    today_blocks = TODAY_NEWS_29MAY2026 if today_str == '20260529' else {}
+    today_map = {
+        '20260601': TODAY_NEWS_01JUN2026,
+    }
+    today_blocks = today_map.get(today_str, {})
 
     news_data = {}
 

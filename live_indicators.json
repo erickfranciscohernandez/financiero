@@ -1,38 +1,42 @@
 {
-  "fecha": "2026-05-31T20:20:44.098530",
+  "fecha": "2026-06-01T13:18:32.902752",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 40746.28,
-      "fecha": "2026-05-31",
-      "fuente": "SII (sii.cl)"
+      "valor": 40582.34,
+      "fecha": "2026-06-01",
+      "fuente": "SII (referencia 01-jun-2026)",
+      "mock": true
     },
     "utm": {
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
       "valor": 70588.0,
-      "fecha": "2026-05-01",
-      "fuente": "Banco Central de Chile vía mindicador.cl"
+      "fecha": "2026-06-01",
+      "fuente": "SII (referencia jun-2026)",
+      "mock": true
     },
     "tpm": {
       "label": "TPM (Tasa Política Mon.)",
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-05-29",
-      "fuente": "Banco Central de Chile vía mindicador.cl"
+      "fecha": "2026-06-01",
+      "fuente": "BCCh (01-jun-2026)",
+      "mock": true
     },
     "usd_clp": {
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
       "valor": 892.89,
-      "fecha": "2026-05-29",
-      "fuente": "Banco Central de Chile vía mindicador.cl"
+      "fecha": "2026-06-01",
+      "fuente": "BCCh SI3 (referencia 01-jun-2026)",
+      "mock": true
     }
   }
 }
