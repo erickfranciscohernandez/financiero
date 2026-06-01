@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-01T13:20:50.744729",
+  "fecha": "2026-06-01T13:22:10.151391",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -15,9 +15,9 @@
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 70588.0,
+      "valor": 71506.0,
       "fecha": "2026-06-01",
-      "fuente": "SII (referencia jun-2026)",
+      "fuente": "BCCh (01-jun-2026)",
       "mock": true
     },
     "tpm": {
