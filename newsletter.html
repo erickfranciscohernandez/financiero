@@ -559,6 +559,118 @@
     }
     
 
+      /* NORMATIVA CMF CSS */
+      
+    /* ── NORMATIVA CMF ───────────────────────────────────────── */
+    .cmf-normativa-box {
+      background: #fff;
+      border-radius: 10px;
+      border-left: 4px solid #1e40af;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      margin: 32px 0;
+      overflow: hidden;
+    }
+
+    .cmf-norm-header {
+      background: linear-gradient(90deg, #1e3a5f 0%, #1e40af 100%);
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .cmf-norm-icon { font-size: 18px; }
+
+    .cmf-norm-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      flex: 1;
+    }
+
+    .cmf-norm-link {
+      font-size: 11px;
+      color: rgba(255,255,255,0.75);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .cmf-norm-link:hover { color: #fff; text-decoration: underline; }
+
+    .cmf-table-wrap { overflow-x: auto; }
+
+    .cmf-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+
+    .cmf-table thead tr {
+      background: #f0f4ff;
+    }
+
+    .cmf-table th {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      color: #1e3a5f;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      border-bottom: 2px solid #dbeafe;
+    }
+
+    .cmf-table tbody tr {
+      border-bottom: 1px solid #f1f5f9;
+      transition: background 0.15s;
+    }
+    .cmf-table tbody tr:last-child { border-bottom: none; }
+    .cmf-table tbody tr:hover { background: #f8faff; }
+
+    .cmf-table td {
+      padding: 10px 14px;
+      vertical-align: top;
+      color: #374151;
+      line-height: 1.5;
+    }
+
+    .cmf-tipo {
+      font-size: 11px;
+      font-weight: 600;
+      color: #6b7280 !important;
+      white-space: nowrap;
+    }
+
+    .cmf-num {
+      font-weight: 700;
+      color: #1e40af !important;
+      white-space: nowrap;
+    }
+
+    .cmf-materia { min-width: 260px; }
+
+    .cmf-fecha {
+      white-space: nowrap;
+      font-size: 12px;
+      color: #6b7280 !important;
+    }
+
+    @media (max-width: 600px) {
+      .cmf-table { font-size: 12px; }
+      .cmf-table th, .cmf-table td { padding: 8px 10px; }
+    }
+
+    @media print {
+      .cmf-normativa-box {
+        border: 1px solid #1e40af;
+        break-inside: avoid;
+      }
+    }
+    
+
       @media print {
         body { padding: 20px; }
         .search-box { display: none; }
@@ -619,7 +731,7 @@
     <!-- INDICADORES BANCO CENTRAL DE CHILE -->
     <section class="live-indicators">
       <h2>📊 INDICADORES BANCO CENTRAL DE CHILE</h2>
-      <p class="subtitle">Fuente: SII (01-jun-2026) · Actualizado: 02/06/2026 17:11 UTC</p>
+      <p class="subtitle">Fuente: SII (01-jun-2026) · Actualizado: 02/06/2026 17:17 UTC</p>
 
       <div class="indicators-grid">
 
@@ -684,7 +796,7 @@
       </div>
 
       <div class="update-info">
-        <p>⏰ Última actualización: 02/06/2026 17:11 UTC</p>
+        <p>⏰ Última actualización: 02/06/2026 17:17 UTC</p>
         <p>🏦 Banco Central de Chile · mindicador.cl · 🔄 Actualización cada 6 horas</p>
       </div>
 
@@ -1092,6 +1204,72 @@
         </div>
       </div>
     </div>
+
+    <!-- NORMATIVA CMF EN CONSULTA -->
+    
+    <!-- NORMATIVA CMF EN CONSULTA -->
+    <div class="cmf-normativa-box">
+      <div class="cmf-norm-header">
+        <span class="cmf-norm-icon">🏛️</span>
+        <span class="cmf-norm-title">Normativa CMF en Consulta</span>
+        <span style="font-size:10px;color:#f59e0b;font-weight:600;margin-left:8px;">⚠ referencia</span>
+        <a href="https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php" target="_blank" class="cmf-norm-link">
+          Ver en cmfchile.cl →
+        </a>
+      </div>
+      <div class="cmf-table-wrap">
+        <table class="cmf-table">
+          <thead>
+            <tr>
+              <th>Tipo de Norma</th>
+              <th>Número</th>
+              <th>Materia</th>
+              <th>Inicio Consulta</th>
+              <th>Término Consulta</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+        <tr>
+          <td class="cmf-tipo">Norma de Carácter General</td>
+          <td class="cmf-num">NCG 512</td>
+          <td class="cmf-materia">Modifica requisitos de capital y liquidez para cooperativas de ahorro con activos sobre UF 400.000</td>
+          <td class="cmf-fecha">12/05/2026</td>
+          <td class="cmf-fecha">12/06/2026</td>
+        </tr>
+        <tr>
+          <td class="cmf-tipo">Circular</td>
+          <td class="cmf-num">N° 2.234</td>
+          <td class="cmf-materia">Transparencia en comisiones de fondos mutuos: obligación de publicar Ratio de Gastos Total (TER)</td>
+          <td class="cmf-fecha">20/05/2026</td>
+          <td class="cmf-fecha">20/06/2026</td>
+        </tr>
+        <tr>
+          <td class="cmf-tipo">Norma de Carácter General</td>
+          <td class="cmf-num">NCG 513</td>
+          <td class="cmf-materia">Open Banking: estándar de APIs para bancos, cooperativas y Fintechs bajo Ley 21.521</td>
+          <td class="cmf-fecha">02/06/2026</td>
+          <td class="cmf-fecha">02/07/2026</td>
+        </tr>
+        <tr>
+          <td class="cmf-tipo">Resolución Exenta</td>
+          <td class="cmf-num">N° 8.901</td>
+          <td class="cmf-materia">Gestión de riesgo climático y de transición para compañías de seguros generales</td>
+          <td class="cmf-fecha">02/06/2026</td>
+          <td class="cmf-fecha">17/06/2026</td>
+        </tr>
+        <tr>
+          <td class="cmf-tipo">Circular</td>
+          <td class="cmf-num">N° 2.235</td>
+          <td class="cmf-materia">Uso de inteligencia artificial en modelos de scoring crediticio: explicabilidad y auditoría externa</td>
+          <td class="cmf-fecha">28/05/2026</td>
+          <td class="cmf-fecha">28/06/2026</td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
 
     <!-- TENDENCIAS TECH -->
     <div class="section">

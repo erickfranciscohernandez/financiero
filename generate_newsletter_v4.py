@@ -11,6 +11,7 @@ from fetch_live_data import LiveDataFetcher, generate_chart_data
 from visualizations import generate_charts_html, generate_charts_css
 from generate_agenda import generate_agenda_html, get_agenda_css
 from generate_ai_analysis import run_ai_analysis
+from fetch_cmf_normativa import generate_normativa_html, get_normativa_css
 
 
 def load_noticias_from_json(filepath='noticias_diarias.json'):
@@ -211,6 +212,11 @@ def main():
     agenda_html = generate_agenda_html()
     agenda_css = get_agenda_css()
 
+    # Generate CMF normativa section
+    print('\n🏛️  Obteniendo normativa CMF en consulta...')
+    normativa_html = generate_normativa_html()
+    normativa_css  = get_normativa_css()
+
     # Generate old HTML (from v3)
     tendencias_items = build_news_items_advanced(all_news.get('tendencias', []))
     ai_analyses = run_ai_analysis(all_news)
@@ -219,6 +225,7 @@ def main():
         econ_items, econ_actuales, ia_items,
         coop_items, cmf_items, geo_items, chile_items,
         tendencias_items, alerts, viz_html, viz_css, agenda_html, agenda_css,
+        normativa_html=normativa_html, normativa_css=normativa_css,
         ai_analyses=ai_analyses
     )
 
@@ -249,7 +256,8 @@ def main():
 
 def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales, ia_items,
                                coop_items, cmf_items, geo_items, chile_items, tendencias_items, alerts,
-                               viz_html, viz_css, agenda_html, agenda_css, ai_analyses=None):
+                               viz_html, viz_css, agenda_html, agenda_css,
+                               normativa_html='', normativa_css='', ai_analyses=None):
     """Generate advanced HTML v4 with visualizations, agenda and Claude AI analysis"""
 
     def items_to_html(items):
@@ -577,6 +585,9 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
       /* AGENDA CSS */
       {agenda_css}
 
+      /* NORMATIVA CMF CSS */
+      {normativa_css}
+
       @media print {{
         body {{ padding: 20px; }}
         .search-box {{ display: none; }}
@@ -679,6 +690,9 @@ def generate_html_advanced_v4(all_news, current_date, econ_items, econ_actuales,
         <span class="section-subtitle">Regulación · Fintech · Banca · Mercado de Capitales</span>
         {cmf_html}
     </div>
+
+    <!-- NORMATIVA CMF EN CONSULTA -->
+    {normativa_html}
 
     <!-- TENDENCIAS TECH -->
     <div class="section">
