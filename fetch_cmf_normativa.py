@@ -11,6 +11,12 @@ import ssl
 import re
 from datetime import datetime
 
+try:
+    from bs4 import BeautifulSoup
+    BS4_AVAILABLE = True
+except ImportError:
+    BS4_AVAILABLE = False
+
 CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
@@ -80,26 +86,61 @@ def _fetch_normativa_html():
         return r.read().decode('utf-8', errors='replace')
 
 
-def _parse_normativa(html):
-    """Extrae filas de la tabla de normativa en tramite."""
+def _parse_normativa_bs4(html):
+    """Extrae filas usando BeautifulSoup (más robusto que regex)."""
+    soup = BeautifulSoup(html, 'lxml')
     rows = []
-    # Buscar todas las <tr> dentro del <tbody>
+    # Buscar cualquier tabla con al menos 5 columnas
+    for table in soup.find_all('table'):
+        trs = table.find_all('tr')
+        for tr in trs:
+            tds = tr.find_all('td')
+            if len(tds) >= 5:
+                row = {
+                    'tipo':    tds[0].get_text(strip=True),
+                    'numero':  tds[1].get_text(strip=True),
+                    'materia': tds[2].get_text(strip=True),
+                    'inicio':  tds[3].get_text(strip=True),
+                    'termino': tds[4].get_text(strip=True),
+                }
+                # Ignorar filas vacías o encabezados que hayan quedado en <td>
+                if row['tipo'] and row['numero'] and row['materia']:
+                    rows.append(row)
+        if rows:
+            break
+    return rows
+
+
+def _parse_normativa_regex(html):
+    """Extrae filas con regex — funciona aun sin <tbody> explícito."""
+    rows = []
+    # Intentar primero dentro de <tbody>
     tbody_match = re.search(r'<tbody[^>]*>(.*?)</tbody>', html, re.DOTALL | re.IGNORECASE)
-    if not tbody_match:
-        return rows
-    tbody = tbody_match.group(1)
-    tr_list = re.findall(r'<tr[^>]*>(.*?)</tr>', tbody, re.DOTALL | re.IGNORECASE)
+    search_zone = tbody_match.group(1) if tbody_match else html
+
+    tr_list = re.findall(r'<tr[^>]*>(.*?)</tr>', search_zone, re.DOTALL | re.IGNORECASE)
     for tr in tr_list:
         tds = re.findall(r'<td[^>]*>(.*?)</td>', tr, re.DOTALL | re.IGNORECASE)
         if len(tds) >= 5:
-            rows.append({
+            row = {
                 'tipo':    _strip_tags(tds[0]),
                 'numero':  _strip_tags(tds[1]),
                 'materia': _strip_tags(tds[2]),
                 'inicio':  _strip_tags(tds[3]),
                 'termino': _strip_tags(tds[4]),
-            })
+            }
+            if row['tipo'] and row['numero'] and row['materia']:
+                rows.append(row)
     return rows
+
+
+def _parse_normativa(html):
+    """Extrae filas de la tabla de normativa en tramite."""
+    if BS4_AVAILABLE:
+        rows = _parse_normativa_bs4(html)
+        if rows:
+            return rows
+    return _parse_normativa_regex(html)
 
 
 def fetch_normativa():

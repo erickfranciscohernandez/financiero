@@ -150,7 +150,7 @@ def run_ai_analysis(all_news):
     analyses = {}
 
     # Resumen ejecutivo
-    print('   → Resumen ejecutivo del día...')
+    print('   -> Resumen ejecutivo del dia...')
     summary = generate_executive_summary(all_news, client)
     if summary:
         analyses['resumen_ejecutivo'] = summary
@@ -166,7 +166,7 @@ def run_ai_analysis(all_news):
         news_list = all_news.get(section_key, [])
         if not news_list:
             continue
-        print(f'   → {section_key}...')
+        print(f'   -> {section_key}...')
         analysis = analyze_section(section_key, news_list, client)
         if analysis:
             analyses[section_key] = analysis
