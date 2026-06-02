@@ -4,7 +4,15 @@ Análisis editorial con Claude AI (Anthropic)
 Genera análisis profesional por sección a partir de noticias del día.
 """
 import os
+import sys
+import traceback
 from datetime import datetime
+
+# Force UTF-8 for stdout/stderr regardless of locale
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
 
 try:
     import anthropic
@@ -89,7 +97,8 @@ Escribe el análisis editorial ejecutivo de esta sección (máximo 3 párrafos).
         )
         return response.content[0].text.strip()
     except Exception as e:
-        print(f'   ⚠️  Error en sección {section_key}: {e}')
+        print(f'   ⚠️  Error en seccion {section_key}: {type(e).__name__}: {e}')
+        traceback.print_exc()
         return None
 
 
@@ -126,7 +135,8 @@ Identifica el tema dominante del día y la tendencia más relevante a monitorear
         )
         return response.content[0].text.strip()
     except Exception as e:
-        print(f'   ⚠️  Error en resumen ejecutivo: {e}')
+        print(f'   ⚠️  Error en resumen ejecutivo: {type(e).__name__}: {e}')
+        traceback.print_exc()
         return None
 
 
