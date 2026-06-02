@@ -8,6 +8,116 @@ import json
 from datetime import datetime, timedelta
 import random
 
+# Noticias específicas del 2 de junio de 2026
+TODAY_NEWS_02JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[2 Jun] Reunión OTAN en Bruselas: aliados elevan gasto de defensa al 2.5% del PIB y refuerzan flanco este',
+            'summary': 'Ministros de Defensa del bloque acuerdan nuevo umbral de gasto ante persistente amenaza rusa. EE.UU. anuncia despliegue adicional de 5.000 efectivos en Polonia. Se discute adhesión de Ucrania como proceso acelerado.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[2 Jun] India y EE.UU. firman acuerdo de defensa e inteligencia artificial que excluye tecnología china',
+            'summary': 'Modi y Trump sellan pacto de acceso preferente a chips avanzados de Nvidia e Intel para India a cambio de bases navales en el Índico. Reconfiguración del tablero tecnológico global se acelera.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[2 Jun] ISM servicios EE.UU. de mayo baja a 49.8: primera contracción en nueve meses eleva dudas sobre la Fed',
+            'summary': 'Dato sorprende a la baja. Componente de empleo en 47.2, mínimo desde 2020. Mercados ajustan expectativas: probabilidad de recorte en septiembre cae al 71%. Rendimiento del T-10 retrocede a 4.58%.',
+            'source': 'CNBC',
+            'link': 'https://www.cnbc.com'
+        },
+        {
+            'title': '[2 Jun] Cobre en USD 5.12/lb: inventarios LME caen a mínimo de 22 años y Chile acelera aprobaciones mineras',
+            'summary': 'Metal rojo suma quinta semana de alzas consecutivas. Gobierno chileno aprueba tres EIA pendientes de Codelco y anuncia ventanilla rápida para proyectos de cobre y litio. IPSA sube 1.1% liderado por mineras.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[2 Jun] BCCh publica encuesta de operadores financieros: dólar proyectado en $885 para septiembre 2026',
+            'summary': 'EOF mensual confirma sesgo apreciador del peso ante cobre fuerte y expectativa de recorte de la Fed. Proyección de IPC 2026 se mantiene en 3.0%. Mercado descuenta TPM en 4.25% al cierre del año.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[2 Jun] Codelco anuncia descubrimiento de nuevo yacimiento en Atacama con reservas estimadas de 800.000 toneladas',
+            'summary': 'Corporación confirma hallazgo en sector norte de la Región de Atacama durante campaña de exploración. Estudio de factibilidad tomará 24 meses. Reservas representarían cuatro años de producción de El Teniente.',
+            'source': 'EMOL',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[2 Jun] SII abre proceso de declaración de IVA anual para grandes contribuyentes: plazo hasta el 20 de junio',
+            'summary': 'Empresas con ventas sobre UF 100.000 deben presentar declaración anual antes del 20 de junio. Nueva plataforma digital del SII reduce el tiempo de presentación en 60%.',
+            'source': 'SII Chile',
+            'link': 'https://www.sii.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[2 Jun] Amazon Web Services confirma región cloud en Santiago: operación desde 2027 con inversión de USD 800M',
+            'summary': 'AWS anuncia tres zonas de disponibilidad en la Región Metropolitana. CORFO co-financia con USD 180M. Gobierno destaca soberanía de datos para sector público, salud y banca. Genera 1.200 empleos directos.',
+            'source': 'TechCrunch',
+            'link': 'https://techcrunch.com'
+        },
+        {
+            'title': '[2 Jun] Starlink anuncia plan residencial a $29.990/mes en Chile desde agosto: presión sobre ISPs locales',
+            'summary': 'SpaceX lanza plan de entrada con velocidades de 100-200 Mbps. VTR, Entel y Movistar ajustan precios en regiones. SUBTEL evalúa marco regulatorio para operadores satelitales de baja órbita.',
+            'source': 'The Verge',
+            'link': 'https://www.theverge.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[2 Jun] Claude 4 llega a empresas chilenas: Banco de Chile y Falabella anuncian pilotos de agentes autónomos',
+            'summary': 'Banco de Chile usará Claude 4 para análisis de contratos y onboarding de clientes. Falabella lo integrará en gestión de inventario y atención al cliente. Ambos proyectos en producción antes de fin de año.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
+        },
+        {
+            'title': '[2 Jun] OpenAI lanza GPT-5 Mini: modelo ligero para móviles con 90% del rendimiento del modelo completo',
+            'summary': 'Versión compacta disponible como API desde hoy. Latencia de 200ms y precio 20 veces menor. Desarrolladores de apps financieras y legales son el segmento objetivo.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[2 Jun] Foro Cooperativo Chile publica ranking 2026: las 10 cooperativas con mayor crecimiento en socios activos',
+            'summary': 'El informe anual destaca expansión en La Araucanía, Los Lagos y Biobío. Cooperativas con foco en crédito hipotecario y digital lideran captación de nuevos socios. Sector supera 1.8 millones de socios activos.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[2 Jun] CMF publica estadísticas del sistema financiero a abril 2026: colocaciones crecen 7.8% y mora baja a 1.8%',
+            'summary': 'Informe mensual confirma solidez del sistema. Crédito hipotecario crece 9.2%, consumo 6.9% y comercial 6.1%. Capital nivel 1 promedio en 14.2%. Rentabilidad sobre patrimonio del sistema en 17.1%.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[2 Jun] INE publicará IPC de mayo el 9 de junio: mercado espera 0.2% mensual y 3.1% anual',
+            'summary': 'Consenso Bloomberg sitúa el dato en 0.2% mensual. Combustibles al alza; alimentos y vestuario a la baja. Un dato en línea daría margen al BCCh para recortar TPM en agosto.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[2 Jun] Exportaciones chilenas de mayo superan USD 6.000M: cobre, litio y fruta lideran cifra récord mensual',
+            'summary': 'Cifra preliminar del BCCh supera en USD 400M el promedio mensual de 2026. Precio del cobre promedia USD 5.05/lb en mayo. China absorbe el 43% de los envíos totales.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+}
+
 # Noticias específicas del 1 de junio de 2026 — se mezclan con las plantillas generales
 TODAY_NEWS_01JUN2026 = {
     'geopolitica': [
@@ -687,6 +797,7 @@ def generate_dynamic_news():
     # Seleccionar bloque de noticias del día si existe
     today_map = {
         '20260601': TODAY_NEWS_01JUN2026,
+        '20260602': TODAY_NEWS_02JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
