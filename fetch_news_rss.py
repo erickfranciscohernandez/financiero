@@ -30,7 +30,6 @@ NEWSAPI_QUERIES = {
     'cmf': 'CMF Chile OR regulacion financiera Chile OR superintendencia valores',
     'noticias_economicas': 'bolsa latinoamerica OR dolar peso OR commodities OR cobre precio',
     'ia': 'inteligencia artificial OR ChatGPT OR OpenAI OR IA generativa',
-    'microsoft': 'Microsoft Copilot OR Microsoft AI OR Microsoft Azure OR Microsoft 365',
 }
 
 RSS_FEEDS = {
@@ -82,11 +81,6 @@ RSS_FEEDS = {
     'cmf': [
         'https://www.diariofinanciero.com/feed',
         'https://www.emol.com/rss/economia.xml',
-    ],
-    'microsoft': [
-        'https://www.microsoft.com/en-us/research/feed/',
-        'https://www.microsoft.com/en-us/microsoft-365/blog/feed/',
-        'https://www.microsoft.com/en-us/security/blog/feed/',
     ],
 }
 
