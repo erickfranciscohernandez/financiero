@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-02T13:07:30.049830",
-  "total_alertas": 7,
-  "alertas_criticas": 7,
+  "fecha": "2026-06-02T17:21:58.561958",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,13 +12,6 @@
       "enlace": "https://www.bcentral.cl"
     },
     {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
-    },
-    {
       "titulo": "[2 Jun] Cobre en USD 5.12/lb: inventarios LME caen a mínimo de 22 años y Chile acelera aprobaciones mineras",
       "seccion": "economia_global",
       "score": 9,
@@ -26,32 +19,11 @@
       "enlace": "https://www.bloomberg.com/commodities"
     },
     {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
-    },
-    {
       "titulo": "[2 Jun] BCCh publica encuesta de operadores financieros: dólar proyectado en $885 para septiembre 2026",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
     }
   ]
 }

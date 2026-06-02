@@ -700,29 +700,24 @@
         <h3>🚨 ALERTAS CRÍTICAS - TOP 5</h3>
         
     <div class="alert-item" data-score="10">
-      <strong>🚨 [2 Jun] India y EE.UU. firman acuerdo de defensa e inteligen...</strong>
-      <p>Modi y Trump sellan pacto de acceso preferente a chips avanzados de Nvidia e Intel para India a cambio de bases navales en el Índico. Reconfiguración </p>
-      <small>Score: 10/10 | Financial Times</small>
+      <strong>🚨 China estaría desarrollando una IA para predecir quién podrí...</strong>
+      <p>Una empresa china vinculada a tecnologías de censura y vigilancia trabaja en herramientas de IA capaces de analizar ubicación, actividad en Internet y</p>
+      <small>Score: 10/10 | Diariobitcoin.com</small>
     </div>
     <div class="alert-item" data-score="10">
-      <strong>🚨 [2 Jun] BCCh publica encuesta de operadores financieros: dól...</strong>
-      <p>EOF mensual confirma sesgo apreciador del peso ante cobre fuerte y expectativa de recorte de la Fed. Proyección de IPC 2026 se mantiene en 3.0%. Merca</p>
-      <small>Score: 10/10 | Banco Central de Chile</small>
+      <strong>🚨 Nicolás Eyzaguirre: “Hay una cierta visión ideológica que pi...</strong>
+      <p>El exministro de Hacienda evalúa la megarreforma de Jorge Quiroz, en quien distingue cierta “impronta ochentera”. Partidario de bajar el impuesto a la</p>
+      <small>Score: 10/10 | Latercera.com</small>
     </div>
-    <div class="alert-item" data-score="10">
-      <strong>🚨 Dólar observado cierra la semana en $891 en Chile: cobre fue...</strong>
-      <p>BCCh monitorea el tipo de cambio pero descarta intervención directa. Exportadores liquidaron USD 780M en la semana. Analistras proyectan rango de $880</p>
-      <small>Score: 10/10 | Diario Financiero</small>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Presidente Kast anuncia Secretaría del Plan Chile Renace: Ap...</strong>
+      <p>Durante su Cuenta Pública de este 1 de junio, el Presidente José Antonio Kast anunció una medida enfocada en la crisis de natalidad que enfrenta el pa</p>
+      <small>Score: 8/10 | Cnnchile.com</small>
     </div>
-    <div class="alert-item" data-score="10">
-      <strong>🚨 [2 Jun] ISM servicios EE.UU. de mayo baja a 49.8: primera co...</strong>
-      <p>Dato sorprende a la baja. Componente de empleo en 47.2, mínimo desde 2020. Mercados ajustan expectativas: probabilidad de recorte en septiembre cae al</p>
-      <small>Score: 10/10 | CNBC</small>
-    </div>
-    <div class="alert-item" data-score="10">
-      <strong>🚨 [2 Jun] Cobre en USD 5.12/lb: inventarios LME caen a mínimo ...</strong>
-      <p>Metal rojo suma quinta semana de alzas consecutivas. Gobierno chileno aprueba tres EIA pendientes de Codelco y anuncia ventanilla rápida para proyecto</p>
-      <small>Score: 10/10 | Bloomberg Commodities</small>
+    <div class="alert-item" data-score="8">
+      <strong>🚨 Florida demanda a OpenAI y Sam Altman por presuntos riesgos ...</strong>
+      <p>Florida presentó una demanda civil contra OpenAI y su CEO, Sam Altman, acusándolos de anteponer ganancias a la seguridad y de promover un producto que</p>
+      <small>Score: 8/10 | Diariobitcoin.com</small>
     </div>
     </div>
 
@@ -731,7 +726,7 @@
     <!-- INDICADORES BANCO CENTRAL DE CHILE -->
     <section class="live-indicators">
       <h2>📊 INDICADORES BANCO CENTRAL DE CHILE</h2>
-      <p class="subtitle">Fuente: SII (01-jun-2026) · Actualizado: 02/06/2026 17:17 UTC</p>
+      <p class="subtitle">Fuente: SII (sii.cl) · Actualizado: 02/06/2026 17:21 UTC</p>
 
       <div class="indicators-grid">
 
@@ -742,7 +737,7 @@
             <span class="indicator-label">UF</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">$40,627.62</span>
+            <span class="big-number">$40,644.55</span>
             <span class="unit">pesos chilenos</span>
           </div>
           <div class="indicator-status normal">🟢 Vigente hoy</div>
@@ -786,7 +781,7 @@
             <span class="indicator-label">USD/CLP · BCCh</span>
           </div>
           <div class="indicator-value">
-            <span class="big-number">$890.64</span>
+            <span class="big-number">$892.91</span>
             <span class="unit">pesos chilenos</span>
           </div>
           <div class="indicator-status normal">🟡 Tipo de cambio</div>
@@ -796,7 +791,7 @@
       </div>
 
       <div class="update-info">
-        <p>⏰ Última actualización: 02/06/2026 17:17 UTC</p>
+        <p>⏰ Última actualización: 02/06/2026 17:21 UTC</p>
         <p>🏦 Banco Central de Chile · mindicador.cl · 🔄 Actualización cada 6 horas</p>
       </div>
 
@@ -820,10 +815,10 @@
         plugins: { legend: { display: false } },
         scales: { y: { grid: { color: '#f0f0f0' }, beginAtZero: false }, x: { grid: { display: false } } }
       };
-      new Chart(document.getElementById('chart-uf'),     { type:'line', data: makeData('UF',     40627.62, '#2563eb'), options: opts });
+      new Chart(document.getElementById('chart-uf'),     { type:'line', data: makeData('UF',     40644.55, '#2563eb'), options: opts });
       new Chart(document.getElementById('chart-utm'),    { type:'line', data: makeData('UTM',    71506.0, '#7c3aed'), options: opts });
       new Chart(document.getElementById('chart-tpm'),    { type:'line', data: makeData('TPM',    4.5, '#dc2626'), options: opts });
-      new Chart(document.getElementById('chart-usd'),    { type:'line', data: makeData('USD/CLP', 890.64, '#f59e0b'), options: opts });
+      new Chart(document.getElementById('chart-usd'),    { type:'line', data: makeData('USD/CLP', 892.91, '#f59e0b'), options: opts });
     </script>
     
 
@@ -835,48 +830,48 @@
         </h2>
         <span class="section-subtitle">Bloomberg · Reuters · WSJ · The Economist</span>
         
-      <div class="news-item" data-score="10" data-title="[2 jun] ism servicios ee.uu. de mayo baja a 49.8: primera contracción en nueve meses eleva dudas sobre la fed">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.cnbc.com" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] ISM servicios EE.UU. de mayo baja a 49.8: primera contracción en nueve meses eleva dudas sobre la Fed</div>
+      <div class="news-item" data-score="5" data-title="tech stocks drive s&amp;p 500 to nine-day winning run: markets wrap">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-06-01/oil-holds-gains-us-futures-slip-on-war-confusion-markets-wrap" target="_blank" class="news-link">
+          <div class="news-item-title">Tech Stocks Drive S&amp;P 500 to Nine-Day Winning Run: Markets Wrap</div>
         </a>
-        <div class="news-item-detail">Dato sorprende a la baja. Componente de empleo en 47.2, mínimo desde 2020. Mercados ajustan expectativas: probabilidad de recorte en septiembre cae al 71%. Rendimiento del T-10 retrocede a 4.58%.</div>
+        <div class="news-item-detail">A revival of the artificial-intelligence trade kept driving Wall Street momentum, with stocks also rising on hopes for an agreement that would end the war that has roiled financial markets around the </div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.cnbc.com" target="_blank" class="source-link">→ CNBC</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-06-01/oil-holds-gains-us-futures-slip-on-war-confusion-markets-wrap" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="[2 jun] cobre en usd 5.12/lb: inventarios lme caen a mínimo de 22 años y chile acelera aprobaciones mineras">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.bloomberg.com/commodities" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Cobre en USD 5.12/lb: inventarios LME caen a mínimo de 22 años y Chile acelera aprobaciones mineras</div>
+      <div class="news-item" data-score="5" data-title="canadian stocks index hits 35,000 amid rally in energy">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-06-02/canadian-stocks-index-hits-35-000-amid-rally-in-energy" target="_blank" class="news-link">
+          <div class="news-item-title">Canadian Stocks Index Hits 35,000 Amid Rally in Energy</div>
         </a>
-        <div class="news-item-detail">Metal rojo suma quinta semana de alzas consecutivas. Gobierno chileno aprueba tres EIA pendientes de Codelco y anuncia ventanilla rápida para proyectos de cobre y litio. IPSA sube 1.1% liderado por mi</div>
+        <div class="news-item-detail">The Canadian equities benchmark passed 35,000 for the first time on a broadening rally in energy and financials.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bloomberg.com/commodities" target="_blank" class="source-link">→ Bloomberg Commodities</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-06-02/canadian-stocks-index-hits-35-000-amid-rally-in-energy" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="oro alcanza usd 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.bloomberg.com/markets" target="_blank" class="news-link">
-          <div class="news-item-title">Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio</div>
+      <div class="news-item" data-score="5" data-title="oil swings higher as traders weigh prospects of us-iran deal">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-06-01/latest-oil-market-news-and-analysis-for-june-2" target="_blank" class="news-link">
+          <div class="news-item-title">Oil Swings Higher as Traders Weigh Prospects of US-Iran Deal</div>
         </a>
-        <div class="news-item-detail">Banco Central de China aumentó reservas de oro por 18° mes consecutivo. Flujos hacia ETFs de oro alcanzan USD 14.000M en mayo. Analistas de Goldman elevan objetivo a USD 3.900.</div>
+        <div class="news-item-detail">Oil edged higher as traders parsed discordant signals on the prospects of a US-Iran peace deal.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bloomberg.com/markets" target="_blank" class="source-link">→ Bloomberg</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-06-01/latest-oil-market-news-and-analysis-for-june-2" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="litio carbonato rebota a usd 17.200/t: reactivación de demanda china y recorte de oferta en australia elevan precio">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.reuters.com/business/energy" target="_blank" class="news-link">
-          <div class="news-item-title">Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio</div>
+      <div class="news-item" data-score="5" data-title="alphabet $80 billion equity sale set to break fundraising record">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.bloomberg.com/news/articles/2026-06-02/alphabet-80-billion-equity-sale-set-to-break-fundraising-record" target="_blank" class="news-link">
+          <div class="news-item-title">Alphabet $80 Billion Equity Sale Set to Break Fundraising Record</div>
         </a>
-        <div class="news-item-detail">Cierre de minas Greenbushes y Pilgangoora reduce oferta en 80.000 t/año. China aprueba subsidios adicionales a vehículos eléctricos. SQM y Albemarle suben 12% en bolsa.</div>
+        <div class="news-item-detail">Alphabet Inc.’s surprise $80 billion sale of equity to fund spending on artificial intelligence infrastructure is expected to become the biggest equity capital markets transaction of all time, accordi</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.reuters.com/business/energy" target="_blank" class="source-link">→ Reuters</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.bloomberg.com/news/articles/2026-06-02/alphabet-80-billion-equity-sale-set-to-break-fundraising-record" target="_blank" class="source-link">→ feeds.bloomberg.com</a>
         </div>
       </div>
     </div>
@@ -889,48 +884,48 @@
         </h2>
         <span class="section-subtitle">INE · BCCh · ICARE · Banco Mundial</span>
         
-      <div class="news-item" data-score="9" data-title="[2 jun] ine publicará ipc de mayo el 9 de junio: mercado espera 0.2% mensual y 3.1% anual">
-        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
-        <a href="https://www.ine.gob.cl" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] INE publicará IPC de mayo el 9 de junio: mercado espera 0.2% mensual y 3.1% anual</div>
-        </a>
-        <div class="news-item-detail">Consenso Bloomberg sitúa el dato en 0.2% mensual. Combustibles al alza; alimentos y vestuario a la baja. Un dato en línea daría margen al BCCh para recortar TPM en agosto.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.ine.gob.cl" target="_blank" class="source-link">→ INE</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="10" data-title="[2 jun] exportaciones chilenas de mayo superan usd 6.000m: cobre, litio y fruta lideran cifra récord mensual">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.bcentral.cl" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Exportaciones chilenas de mayo superan USD 6.000M: cobre, litio y fruta lideran cifra récord mensual</div>
-        </a>
-        <div class="news-item-detail">Cifra preliminar del BCCh supera en USD 400M el promedio mensual de 2026. Precio del cobre promedia USD 5.05/lb en mayo. China absorbe el 43% de los envíos totales.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bcentral.cl" target="_blank" class="source-link">→ Banco Central de Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="ied en chile acumula usd 11.200m en el primer semestre 2026: mayor cifra semestral en 8 años">
+      <div class="news-item" data-score="5" data-title="anthropic se adelanta a openai y pone en marcha su salida a bolsa">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.bcentral.cl" target="_blank" class="news-link">
-          <div class="news-item-title">IED en Chile acumula USD 11.200M en el primer semestre 2026: mayor cifra semestral en 8 años</div>
+        <a href="https://hipertextual.com/economia-empresas/anthropic-pone-en-marcha-salida-a-bolsa/" target="_blank" class="news-link">
+          <div class="news-item-title">Anthropic se adelanta a OpenAI y pone en marcha su salida a bolsa</div>
         </a>
-        <div class="news-item-detail">CORFO destaca inversión en minería verde, centros de datos e hidrógeno. Amazon Web Services anuncia región cloud en Chile y compromete USD 800M en cinco años.</div>
+        <div class="news-item-detail">Anthropic acaba de dar un paso crucial para salir a bolsa. La empresa detrás de Claude anunció este lunes que ha comenzado los papeleos ante la Comisión de Bolsa y Valores de Estados Unidos (SEC), con</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.bcentral.cl" target="_blank" class="source-link">→ Banco Central de Chile</a>
+          <a href="https://hipertextual.com/economia-empresas/anthropic-pone-en-marcha-salida-a-bolsa/" target="_blank" class="source-link">→ Hipertextual</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="encuesta bcch: consenso proyecta dólar en $895 y tpm en 4.0% al cierre de 2026">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.bcentral.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Encuesta BCCh: consenso proyecta dólar en $895 y TPM en 4.0% al cierre de 2026</div>
+      <div class="news-item" data-score="5" data-title="anthropic inicia los trámites para salir a bolsa tras rozar el billón de dólares de valoración">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.elperiodico.com/es/economia/20260601/anthropic-inicia-tramites-salir-bolsa-130905938" target="_blank" class="news-link">
+          <div class="news-item-title">Anthropic inicia los trámites para salir a Bolsa tras rozar el billón de dólares de valoración</div>
         </a>
-        <div class="news-item-detail">Analistas reducen proyección de tipo de cambio ante fortaleza del cobre. Dos recortes adicionales de 25 pb en TPM son el escenario base para el segundo semestre.</div>
+        <div class="news-item-detail">Tras el mazazo de Elon Musk con la salida a Bolsa de SpaceX, su empresa de fabricación de cohetes y satélites, otra de las empresas del momento en EEUU se está moviendo entre bambalinas para salir al </div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bcentral.cl" target="_blank" class="source-link">→ Banco Central de Chile</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.elperiodico.com/es/economia/20260601/anthropic-inicia-tramites-salir-bolsa-130905938" target="_blank" class="source-link">→ Elperiodico.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="6" data-title="wall street avanza pese a que irán detuvo negociación con eu; bmv cae 1.08%">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.elfinanciero.com.mx/mercados/2026/06/01/bmv-wall-street-hoy-1-de-junio-de-2026/" target="_blank" class="news-link">
+          <div class="news-item-title">Wall Street avanza pese a que Irán detuvo negociación con EU; BMV cae 1.08%</div>
+        </a>
+        <div class="news-item-detail">En Wall Street, el Nasdaq avanza ligeramente este lunes, mientras los analistas centran su atención en EU-Irán.</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.elfinanciero.com.mx/mercados/2026/06/01/bmv-wall-street-hoy-1-de-junio-de-2026/" target="_blank" class="source-link">→ El Financiero</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="binance ya permite comercio de acciones y prepara tokenización en bnb chain">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.diariobitcoin.com/exchanges/binance-ya-permite-comercio-de-acciones-y-prepara-tokenizacion-en-bnb-chain/" target="_blank" class="news-link">
+          <div class="news-item-title">Binance ya permite comercio de acciones y prepara tokenización en BNB Chain</div>
+        </a>
+        <div class="news-item-detail">Binance abrió el comercio de más de 7.000 acciones y ETF estadounidenses para usuarios elegibles fuera de Estados Unidos, con compras fraccionadas desde USD $5 y pagos mediante saldos cripto, incluyen</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.diariobitcoin.com/exchanges/binance-ya-permite-comercio-de-acciones-y-prepara-tokenizacion-en-bnb-chain/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
         </div>
       </div>
     </div>
@@ -943,48 +938,48 @@
         </h2>
         <span class="section-subtitle">OpenAI · Anthropic · Google DeepMind · TLDR AI</span>
         
-      <div class="news-item" data-score="5" data-title="[2 jun] claude 4 llega a empresas chilenas: banco de chile y falabella anuncian pilotos de agentes autónomos">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://bensbites.com" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Claude 4 llega a empresas chilenas: Banco de Chile y Falabella anuncian pilotos de agentes autónomos</div>
+      <div class="news-item" data-score="8" data-title="florida demanda a openai y sam altman por presuntos riesgos de seguridad en chatgpt">
+        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
+        <a href="https://www.diariobitcoin.com/regulacion/florida-demanda-a-openai-y-sam-altman-por-presuntos-riesgos-de-seguridad-en-chatgpt/" target="_blank" class="news-link">
+          <div class="news-item-title">Florida demanda a OpenAI y Sam Altman por presuntos riesgos de seguridad en ChatGPT</div>
         </a>
-        <div class="news-item-detail">Banco de Chile usará Claude 4 para análisis de contratos y onboarding de clientes. Falabella lo integrará en gestión de inventario y atención al cliente. Ambos proyectos en producción antes de fin de </div>
+        <div class="news-item-detail">Florida presentó una demanda civil contra OpenAI y su CEO, Sam Altman, acusándolos de anteponer ganancias a la seguridad y de promover un producto que, según el estado, podía causar daños graves a usu</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.diariobitcoin.com/regulacion/florida-demanda-a-openai-y-sam-altman-por-presuntos-riesgos-de-seguridad-en-chatgpt/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="[2 jun] openai lanza gpt-5 mini: modelo ligero para móviles con 90% del rendimiento del modelo completo">
+      <div class="news-item" data-score="5" data-title="anthropic presenta de forma confidencial su solicitud para salir a bolsa">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://tldr.ai" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] OpenAI lanza GPT-5 Mini: modelo ligero para móviles con 90% del rendimiento del modelo completo</div>
+        <a href="https://www.expansion.com/economia-digital/2026/06/01/6a1db45de5fdea685d8b458a.html" target="_blank" class="news-link">
+          <div class="news-item-title">Anthropic presenta de forma confidencial su solicitud para salir a Bolsa</div>
         </a>
-        <div class="news-item-detail">Versión compacta disponible como API desde hoy. Latencia de 200ms y precio 20 veces menor. Desarrolladores de apps financieras y legales son el segmento objetivo.</div>
+        <div class="news-item-detail">La empresa de inteligencia artificial (IA) Anthropic, desarrolladora del asistente Claude, anunció este lunes que ha presentado de forma confidencial un borrador de su solicitud...</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://tldr.ai" target="_blank" class="source-link">→ TLDR AI</a>
+          <a href="https://www.expansion.com/economia-digital/2026/06/01/6a1db45de5fdea685d8b458a.html" target="_blank" class="source-link">→ Expansion.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="anthropic claude 4 opus supera a gpt-5 en razonamiento legal, financiero y científico según benchmarks independientes">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://bensbites.com" target="_blank" class="news-link">
-          <div class="news-item-title">Anthropic Claude 4 Opus supera a GPT-5 en razonamiento legal, financiero y científico según benchmarks independientes</div>
+      <div class="news-item" data-score="6" data-title="anthropic prepara su salida a bolsa y aumenta la presión sobre openai">
+        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
+        <a href="https://www.diariobitcoin.com/tecnologia/anthropic-prepara-su-salida-a-bolsa-y-aumenta-la-presion-sobre-openai/" target="_blank" class="news-link">
+          <div class="news-item-title">Anthropic prepara su salida a bolsa y aumenta la presión sobre OpenAI</div>
         </a>
-        <div class="news-item-detail">Evaluaciones de HELM y BIG-Bench muestran ventaja de 8-14% en tareas de análisis de contratos, modelado financiero y razonamiento multistep. API disponible para empresas desde mayo 2026.</div>
+        <div class="news-item-detail">Anthropic presentó documentación confidencial ante la SEC para una posible salida a bolsa, en un movimiento que podría adelantarla a OpenAI en la carrera de las grandes empresas de inteligencia artifi</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://bensbites.com" target="_blank" class="source-link">→ Ben's Bites</a>
+          <span class="impact-badge">🟠 Alto</span>
+          <a href="https://www.diariobitcoin.com/tecnologia/anthropic-prepara-su-salida-a-bolsa-y-aumenta-la-presion-sobre-openai/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="deepmind alphafold 4 predice interacciones fármaco-proteína con 94% de precisión: acelera oncología y neurología">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://tldr.ai" target="_blank" class="news-link">
-          <div class="news-item-title">DeepMind AlphaFold 4 predice interacciones fármaco-proteína con 94% de precisión: acelera oncología y neurología</div>
+      <div class="news-item" data-score="10" data-title="china estaría desarrollando una ia para predecir quién podría ser un rebelde político">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.diariobitcoin.com/china/china-estaria-desarrollando-una-ia-para-predecir-quien-podria-ser-un-rebelde-politico/" target="_blank" class="news-link">
+          <div class="news-item-title">China estaría desarrollando una IA para predecir quién podría ser un rebelde político</div>
         </a>
-        <div class="news-item-detail">Modelo amplía capacidades a predicción de efectos secundarios y diseño de moléculas candidatas a fármacos. Seis laboratorios farmacéuticos ya lo usan en ensayos clínicos de fase 1.</div>
+        <div class="news-item-detail">Una empresa china vinculada a tecnologías de censura y vigilancia trabaja en herramientas de IA capaces de analizar ubicación, actividad en Internet y otros datos personales para anticipar quién podrí</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://tldr.ai" target="_blank" class="source-link">→ TLDR AI</a>
+          <span class="impact-badge">🔴 Crítico</span>
+          <a href="https://www.diariobitcoin.com/china/china-estaria-desarrollando-una-ia-para-predecir-quien-podria-ser-un-rebelde-politico/" target="_blank" class="source-link">→ Diariobitcoin.com</a>
         </div>
       </div>
     </div>
@@ -997,48 +992,48 @@
         </h2>
         <span class="section-subtitle">Reuters · FT · Bloomberg · The Economist</span>
         
-      <div class="news-item" data-score="8" data-title="[2 jun] reunión otan en bruselas: aliados elevan gasto de defensa al 2.5% del pib y refuerzan flanco este">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.reuters.com/world" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Reunión OTAN en Bruselas: aliados elevan gasto de defensa al 2.5% del PIB y refuerzan flanco este</div>
+      <div class="news-item" data-score="5" data-title=""¡que me quitan el programa!": sonsoles ónega tiene que silenciar a un invitado por lo que dice en pleno directo">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.elconfidencial.com/television/programas-tv/2026-06-01/sonsoles-calla-invitado-directo-me-quitan-programa_4365476/" target="_blank" class="news-link">
+          <div class="news-item-title">"¡Que me quitan el programa!": Sonsoles Ónega tiene que silenciar a un invitado por lo que dice en pleno directo</div>
         </a>
-        <div class="news-item-detail">Ministros de Defensa del bloque acuerdan nuevo umbral de gasto ante persistente amenaza rusa. EE.UU. anuncia despliegue adicional de 5.000 efectivos en Polonia. Se discute adhesión de Ucrania como pro</div>
+        <div class="news-item-detail">Además, la presentadora de 'Y ahora Sonsoles' también chocó con uno de sus habituales colaboradores: "Me estoy incomodando"</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.reuters.com/world" target="_blank" class="source-link">→ Reuters</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.elconfidencial.com/television/programas-tv/2026-06-01/sonsoles-calla-invitado-directo-me-quitan-programa_4365476/" target="_blank" class="source-link">→ Elconfidencial.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="[2 jun] india y ee.uu. firman acuerdo de defensa e inteligencia artificial que excluye tecnología china">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.ft.com/world" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] India y EE.UU. firman acuerdo de defensa e inteligencia artificial que excluye tecnología china</div>
+      <div class="news-item" data-score="5" data-title="las 10 novedades del mundial de fútbol 2026">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://actualidad.rt.com/actualidad/608258-novedades-mundial-futbol" target="_blank" class="news-link">
+          <div class="news-item-title">Las 10 novedades del Mundial de Fútbol 2026</div>
         </a>
-        <div class="news-item-detail">Modi y Trump sellan pacto de acceso preferente a chips avanzados de Nvidia e Intel para India a cambio de bases navales en el Índico. Reconfiguración del tablero tecnológico global se acelera.</div>
+        <div class="news-item-detail">La competición llega con nuevas dimensiones: más equipos, más partidos, más estadios y más países.</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.ft.com/world" target="_blank" class="source-link">→ Financial Times</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://actualidad.rt.com/actualidad/608258-novedades-mundial-futbol" target="_blank" class="source-link">→ RT</a>
         </div>
       </div>
-      <div class="news-item" data-score="8" data-title="g7 aprueba nuevo paquete de sanciones contra rusia que incluye congelación de activos del banco central">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.economist.com" target="_blank" class="news-link">
-          <div class="news-item-title">G7 aprueba nuevo paquete de sanciones contra Rusia que incluye congelación de activos del banco central</div>
+      <div class="news-item" data-score="5" data-title="pasión total con la selección: 80 medios y alguno que se coló">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.abc.es/deportes/futbol/pasion-total-seleccion-medios-alguno-colo-20260601190838-nt.html" target="_blank" class="news-link">
+          <div class="news-item-title">Pasión total con la selección: 80 medios y alguno que se coló</div>
         </a>
-        <div class="news-item-detail">Bloque occidental congela USD 280.000M en reservas soberanas rusas. Medida financia reconstrucción de Ucrania. Rusia amenaza con represalias en exportaciones de titanio y níquel.</div>
+        <div class="news-item-detail">Se ha acabado el agua en el refrigerador instalado junto a la grada alta del campo de entrenamiento de la selección española en la Ciudad del Fútbol en Las Rozas. Decenas y decenas de botellines del p</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.economist.com" target="_blank" class="source-link">→ The Economist</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.abc.es/deportes/futbol/pasion-total-seleccion-medios-alguno-colo-20260601190838-nt.html" target="_blank" class="source-link">→ Www.abc.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="9" data-title="cumbre de shanghai: china, rusia e irán firman acuerdo de pagos en yuan para eludir el sistema swift">
-        <div class="score-badge" title="Score de importancia: 9/10">9/10</div>
-        <a href="https://www.reuters.com" target="_blank" class="news-link">
-          <div class="news-item-title">Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT</div>
+      <div class="news-item" data-score="5" data-title="albares: "hay que ir más allá de la autonomía estratégica y hablar de soberanía europea"">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.elperiodico.com/es/internacional/20260601/albares-autonomia-estrategica-soberania-europea-reunio-cercle-economia-130900448" target="_blank" class="news-link">
+          <div class="news-item-title">Albares: "Hay que ir más allá de la autonomía estratégica y hablar de soberanía europea"</div>
         </a>
-        <div class="news-item-detail">Bloque alternativo lanza plataforma de pagos bilaterales que cubriría USD 890.000M en comercio anual. Reservas globales en yuan suben al 5.8%, nivel histórico.</div>
+        <div class="news-item-detail">El panorama internacional ha cambiado y Europa tiene que adaptarse a ello. Esa es la lección que ha aprendido el bloque de los Veintisiete ante la amenaza rusa que se cierne sobre el Viejo Continente,</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.reuters.com" target="_blank" class="source-link">→ Reuters</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.elperiodico.com/es/internacional/20260601/albares-autonomia-estrategica-soberania-europea-reunio-cercle-economia-130900448" target="_blank" class="source-link">→ Elperiodico.com</a>
         </div>
       </div>
     </div>
@@ -1051,48 +1046,48 @@
         </h2>
         <span class="section-subtitle">Codelco · BCCh · CMF · Gobierno</span>
         
-      <div class="news-item" data-score="10" data-title="[2 jun] bcch publica encuesta de operadores financieros: dólar proyectado en $885 para septiembre 2026">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.bcentral.cl" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] BCCh publica encuesta de operadores financieros: dólar proyectado en $885 para septiembre 2026</div>
-        </a>
-        <div class="news-item-detail">EOF mensual confirma sesgo apreciador del peso ante cobre fuerte y expectativa de recorte de la Fed. Proyección de IPC 2026 se mantiene en 3.0%. Mercado descuenta TPM en 4.25% al cierre del año.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.bcentral.cl" target="_blank" class="source-link">→ Banco Central de Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="[2 jun] codelco anuncia descubrimiento de nuevo yacimiento en atacama con reservas estimadas de 800.000 toneladas">
+      <div class="news-item" data-score="5" data-title="ranking de depósitos a plazo: ¿cuánto podría ganar si invierto $1.000.000 a 30 días?">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.emol.com" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Codelco anuncia descubrimiento de nuevo yacimiento en Atacama con reservas estimadas de 800.000 toneladas</div>
+        <a href="https://chocale.cl/2026/06/ranking-deposito-a-plazo-dap-mejor-tasa-de-interes-junio-2026/" target="_blank" class="news-link">
+          <div class="news-item-title">Ranking de depósitos a plazo: ¿Cuánto podría ganar si invierto $1.000.000 a 30 días?</div>
         </a>
-        <div class="news-item-detail">Corporación confirma hallazgo en sector norte de la Región de Atacama durante campaña de exploración. Estudio de factibilidad tomará 24 meses. Reservas representarían cuatro años de producción de El T</div>
+        <div class="news-item-detail">Banco Ripley ofrece la mejor tasa de interés (0,41%) en depósitos a plazo, seguido por Banco Internacional, BTG Pactual y Banco Consorcio, todos con 0,40%, de acuerdo con una nueva edición del Ranking</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.emol.com" target="_blank" class="source-link">→ EMOL</a>
+          <a href="https://chocale.cl/2026/06/ranking-deposito-a-plazo-dap-mejor-tasa-de-interes-junio-2026/" target="_blank" class="source-link">→ www.chocale.cl</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="[2 jun] sii abre proceso de declaración de iva anual para grandes contribuyentes: plazo hasta el 20 de junio">
+      <div class="news-item" data-score="5" data-title="confianza, digitalización y ciberseguridad: los desafíos compartidos del sector financiero">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.sii.cl" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] SII abre proceso de declaración de IVA anual para grandes contribuyentes: plazo hasta el 20 de junio</div>
+        <a href="https://chocale.cl/2026/06/confianza-digitalizacion-y-ciberseguridad-los-desafios-compartidos-del-sector-financiero/" target="_blank" class="news-link">
+          <div class="news-item-title">Confianza, digitalización y ciberseguridad: Los desafíos compartidos del sector financiero</div>
         </a>
-        <div class="news-item-detail">Empresas con ventas sobre UF 100.000 deben presentar declaración anual antes del 20 de junio. Nueva plataforma digital del SII reduce el tiempo de presentación en 60%.</div>
+        <div class="news-item-detail">La confianza en el ecosistema financiero digital fue uno de los principales temas de debate en la X Conferencia Anual de Desarrollo y Estabilidad Financiera de la Comisión para el Mercado Financiero (</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.sii.cl" target="_blank" class="source-link">→ SII Chile</a>
+          <a href="https://chocale.cl/2026/06/confianza-digitalizacion-y-ciberseguridad-los-desafios-compartidos-del-sector-financiero/" target="_blank" class="source-link">→ www.chocale.cl</a>
         </div>
       </div>
-      <div class="news-item" data-score="10" data-title="dólar observado cierra la semana en $891 en chile: cobre fuerte y expectativa de recorte fed aprecian el peso">
-        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
-        <a href="https://www.df.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso</div>
+      <div class="news-item" data-score="5" data-title="clientes de bancoestado denuncian “desaparición” de sus saldos y movimientos">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://chocale.cl/2026/06/clientes-de-bancoestado-denuncian-desaparicion-de-sus-saldos-y-movimientos/" target="_blank" class="news-link">
+          <div class="news-item-title">Clientes de BancoEstado denuncian “desaparición” de sus saldos y movimientos</div>
         </a>
-        <div class="news-item-detail">BCCh monitorea el tipo de cambio pero descarta intervención directa. Exportadores liquidaron USD 780M en la semana. Analistras proyectan rango de $880-$910 para el tercer trimestre.</div>
+        <div class="news-item-detail">BancoEstado reconoció este martes que sus clientes están experimentando diferencias en los saldos de sus cuentas, luego de que cientos de usuarios reportaran en redes sociales que el dinero depositado</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.df.cl" target="_blank" class="source-link">→ Diario Financiero</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://chocale.cl/2026/06/clientes-de-bancoestado-denuncian-desaparicion-de-sus-saldos-y-movimientos/" target="_blank" class="source-link">→ www.chocale.cl</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="detienen a ejecutivo de santander en operativo contra red del tren de aragua">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://chocale.cl/2026/06/detienen-a-ejecutivo-de-santander-en-operativo-contra-red-del-tren-de-aragua/" target="_blank" class="news-link">
+          <div class="news-item-title">Detienen a ejecutivo de Santander en operativo contra red del Tren de Aragua</div>
+        </a>
+        <div class="news-item-detail">Un ejecutivo de Banco Santander fue detenido este martes durante un allanamiento realizado por la Policía de Investigaciones (PDI) y la Fiscalía Metropolitana Sur en una sucursal de la entidad ubicada</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://chocale.cl/2026/06/detienen-a-ejecutivo-de-santander-en-operativo-contra-red-del-tren-de-aragua/" target="_blank" class="source-link">→ www.chocale.cl</a>
         </div>
       </div>
     </div>
@@ -1105,48 +1100,37 @@
         </h2>
         <span class="section-subtitle">CONFECOOP · Coopeuch · ACI Américas · BID</span>
         
-      <div class="news-item" data-score="6" data-title="[2 jun] foro cooperativo chile publica ranking 2026: las 10 cooperativas con mayor crecimiento en socios activos">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Foro Cooperativo Chile publica ranking 2026: las 10 cooperativas con mayor crecimiento en socios activos</div>
-        </a>
-        <div class="news-item-detail">El informe anual destaca expansión en La Araucanía, Los Lagos y Biobío. Cooperativas con foco en crédito hipotecario y digital lideran captación de nuevos socios. Sector supera 1.8 millones de socios </div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/" target="_blank" class="source-link">→ Foro Cooperativo</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="cooperativas de vivienda presentan propuesta al minvu: modelo de ahorro previo para 50.000 familias">
+      <div class="news-item" data-score="5" data-title="la política después de la ingenuidad">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.elmostrador.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Cooperativas de vivienda presentan propuesta al MINVU: modelo de ahorro previo para 50.000 familias</div>
+        <a href="https://www.abc.es/economia/john-muller-politica-despues-ingenuidad-20260530014407-nt.html" target="_blank" class="news-link">
+          <div class="news-item-title">La política después de la ingenuidad</div>
         </a>
-        <div class="news-item-detail">Sector propone subsidio complementario que reduciría pie requerido al 8% para socios con al menos 24 meses de ahorro cooperativo. Ministerio analiza integración en Política Habitacional 2026.</div>
+        <div class="news-item-detail">Hay libros que llegan a una conversación pública saturada de consignas con una saludable impertinencia. 'De la naturaleza humana al liberalismo moderno' (Unión Editorial, 2026), de Álvaro Fischer, per</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.elmostrador.cl" target="_blank" class="source-link">→ El Mostrador</a>
+          <a href="https://www.abc.es/economia/john-muller-politica-despues-ingenuidad-20260530014407-nt.html" target="_blank" class="source-link">→ Www.abc.es</a>
         </div>
       </div>
-      <div class="news-item" data-score="5" data-title="cooperativas de ahorro lanzan tarjeta de crédito interoperable: 800.000 socios se beneficiarán">
-        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.cooperativas.cl" target="_blank" class="news-link">
-          <div class="news-item-title">Cooperativas de ahorro lanzan tarjeta de crédito interoperable: 800.000 socios se beneficiarán</div>
+      <div class="news-item" data-score="10" data-title="nicolás eyzaguirre: “hay una cierta visión ideológica que piensa que cuanto más pequeño el estado, mejor”">
+        <div class="score-badge" title="Score de importancia: 10/10">10/10</div>
+        <a href="https://www.latercera.com/pulso/noticia/nicolas-eyzaguirre-hay-una-cierta-vision-ideologica-que-piensa-que-cuanto-mas-pequeno-el-estado-mejor/" target="_blank" class="news-link">
+          <div class="news-item-title">Nicolás Eyzaguirre: “Hay una cierta visión ideológica que piensa que cuanto más pequeño el Estado, mejor”</div>
         </a>
-        <div class="news-item-detail">Alianza de 12 cooperativas crea producto compartido con cupo de hasta UF 80, sin comisión de mantención y con acceso a red Transbank y Redbanc. Lanzamiento en agosto 2026.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.cooperativas.cl" target="_blank" class="source-link">→ Cooperativas.cl</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="8" data-title="cooperativas agrícolas del biobío lanzan plataforma exportadora directa hacia mercados asiáticos">
-        <div class="score-badge" title="Score de importancia: 8/10">8/10</div>
-        <a href="https://www.aciamericas.coop" target="_blank" class="news-link">
-          <div class="news-item-title">Cooperativas agrícolas del Biobío lanzan plataforma exportadora directa hacia mercados asiáticos</div>
-        </a>
-        <div class="news-item-detail">Consorcio de 14 cooperativas cerealeras y frutícolas elimina intermediarios y exporta directamente a Japón, Corea y China. Primer embarque de 4.200 toneladas de cereales orgánicos zarpa en junio.</div>
+        <div class="news-item-detail">El exministro de Hacienda evalúa la megarreforma de Jorge Quiroz, en quien distingue cierta “impronta ochentera”. Partidario de bajar el impuesto a las empresas y simplificar los trámites ambientales,</div>
         <div class="news-item-footer">
           <span class="impact-badge">🔴 Crítico</span>
-          <a href="https://www.aciamericas.coop" target="_blank" class="source-link">→ ACI Américas</a>
+          <a href="https://www.latercera.com/pulso/noticia/nicolas-eyzaguirre-hay-una-cierta-vision-ideologica-que-piensa-que-cuanto-mas-pequeno-el-estado-mejor/" target="_blank" class="source-link">→ Latercera.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="andrés fuenzalida deja la gerencia general de copefrut tras 11 años al mando de una de las principales exportadores de fruta del país">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.df.cl/regiones/maule/empresas/andres-fuenzalida-deja-la-gerencia-general-de-copefrut-tras-11-anos-al" target="_blank" class="news-link">
+          <div class="news-item-title">Andrés Fuenzalida deja la gerencia general de Copefrut tras 11 años al mando de una de las principales exportadores de fruta del país</div>
+        </a>
+        <div class="news-item-detail">El ejecutivo pasará ahora a oucpar un puesto en el directorio de la compañía. En su reemplazo asumirá el hasta ahora gerente de operaciones, el agrónomo de la Pontificia Universidad Católica, Manuel I</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.df.cl/regiones/maule/empresas/andres-fuenzalida-deja-la-gerencia-general-de-copefrut-tras-11-anos-al" target="_blank" class="source-link">→ Www.df.cl</a>
         </div>
       </div>
     </div>
@@ -1159,48 +1143,48 @@
         </h2>
         <span class="section-subtitle">Regulación · Fintech · Banca · Mercado de Capitales</span>
         
-      <div class="news-item" data-score="6" data-title="[2 jun] cmf publica estadísticas del sistema financiero a abril 2026: colocaciones crecen 7.8% y mora baja a 1.8%">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] CMF publica estadísticas del sistema financiero a abril 2026: colocaciones crecen 7.8% y mora baja a 1.8%</div>
-        </a>
-        <div class="news-item-detail">Informe mensual confirma solidez del sistema. Crédito hipotecario crece 9.2%, consumo 6.9% y comercial 6.1%. Capital nivel 1 promedio en 14.2%. Rentabilidad sobre patrimonio del sistema en 17.1%.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="cmf actualiza tabla de tasas máximas convencionales de junio 2026: bajan límites en consumo e hipotecario">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">CMF actualiza tabla de tasas máximas convencionales de junio 2026: bajan límites en consumo e hipotecario</div>
-        </a>
-        <div class="news-item-detail">TMC para créditos entre UF 200 y UF 5.000 baja de 38.7% a 36.1% anual. Para hipotecarios sobre UF 5.000, límite se reduce a 17.4%. Medida beneficia a 2.8 millones de deudores.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="6" data-title="cmf exige a compañías de seguros actualizar modelos de reservas ante cambio climático y longevidad creciente">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">CMF exige a compañías de seguros actualizar modelos de reservas ante cambio climático y longevidad creciente</div>
-        </a>
-        <div class="news-item-detail">Nueva circular obliga a incorporar escenarios de temperatura global +1.5°C y tablas de mortalidad actualizadas. Impacto estimado en reservas adicionales de UF 8.5 millones para el sector.</div>
-        <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
-        </div>
-      </div>
-      <div class="news-item" data-score="5" data-title="cmf autoriza primera aafm (administradora de activos financieros modulares) bajo ley fintech">
+      <div class="news-item" data-score="5" data-title="primus capital rechaza reclamo de deloitte por multa de cmf y cuestiona a auditora por nexo de socio con sartor">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://www.cmfchile.cl" target="_blank" class="news-link">
-          <div class="news-item-title">CMF autoriza primera AAFM (Administradora de Activos Financieros Modulares) bajo Ley Fintech</div>
+        <a href="https://www.latercera.com/pulso/noticia/primus-capital-rechaza-reclamo-de-deloitte-por-multa-de-cmf-y-cuestiona-a-auditora-por-nexo-de-socio-con-sartor/" target="_blank" class="news-link">
+          <div class="news-item-title">Primus Capital rechaza reclamo de Deloitte por multa de CMF y cuestiona a auditora por nexo de socio con Sartor</div>
         </a>
-        <div class="news-item-detail">Empresa Fintual Inversiones recibe licencia pionera que le permite ofrecer gestión discrecional de carteras a minoristas sin ser AFP ni corredora tradicional. Abre mercado a nuevos competidores.</div>
+        <div class="news-item-detail">Primus Capital solicitó a la Corte confirmar la multa de la CMF contra su ex auditora Deloitte por negligencia, acusando un déficit estructural reiterado que también habría afectado a Sartor. En respu</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://www.cmfchile.cl" target="_blank" class="source-link">→ CMF Chile</a>
+          <a href="https://www.latercera.com/pulso/noticia/primus-capital-rechaza-reclamo-de-deloitte-por-multa-de-cmf-y-cuestiona-a-auditora-por-nexo-de-socio-con-sartor/" target="_blank" class="source-link">→ Latercera.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="diego peralta, el abogado de las grandes operaciones que llega a la primera línea jurídica de la cmf">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.df.cl/senal-df/senales-financieras/diego-peralta-el-abogado-de-las-grandes-operaciones-que-llega-a-la-primera" target="_blank" class="news-link">
+          <div class="news-item-title">Diego Peralta, el abogado de las grandes operaciones que llega a la primera línea jurídica de la CMF</div>
+        </a>
+        <div class="news-item-detail">El nuevo director general jurídico de la Comisión para el Mercado Financiero asumirá el cargo tras una trayectoria marcada por complejas operaciones financieras y una visión práctica de la industria. </div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.df.cl/senal-df/senales-financieras/diego-peralta-el-abogado-de-las-grandes-operaciones-que-llega-a-la-primera" target="_blank" class="source-link">→ Www.df.cl</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="josé antonio gaspar, director general jurídico removido de la cmf: “siendo honesto, no me lo esperaba”">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.latercera.com/pulso/noticia/jose-antonio-gaspar-director-general-juridico-removido-de-la-cmf-siendo-honesto-no-me-lo-esperaba/" target="_blank" class="news-link">
+          <div class="news-item-title">José Antonio Gaspar, director general jurídico removido de la CMF: “Siendo honesto, no me lo esperaba”</div>
+        </a>
+        <div class="news-item-detail">El exdirectivo de la CMF, que fue desvinculado por su nueva presidenta, Catherine Tornel, hace un balance sobre los doce años que estuvo en el organismo regulador y habla sobre su reciente salida. El </div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.latercera.com/pulso/noticia/jose-antonio-gaspar-director-general-juridico-removido-de-la-cmf-siendo-honesto-no-me-lo-esperaba/" target="_blank" class="source-link">→ Latercera.com</a>
+        </div>
+      </div>
+      <div class="news-item" data-score="5" data-title="actas de directorio, computadores requisados y gerentes declarando hace meses: el allanamiento al cda que remece a la u">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.latercera.com/el-deportivo/noticia/actas-de-directorio-computadores-requisados-y-gerentes-declarando-meses-atras-el-allanamiento-al-cda-que-remece-a-la-u/" target="_blank" class="news-link">
+          <div class="news-item-title">Actas de directorio, computadores requisados y gerentes declarando hace meses: el allanamiento al CDA que remece a la U</div>
+        </a>
+        <div class="news-item-detail">El operativo se extendió por cerca de tres horas e incluyó todo tipo de documentos relacionados al expresidente Michael Clark. Cecilia Pérez no estaba en La Cisterna cuando llegó la PDI, pero se movil</div>
+        <div class="news-item-footer">
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.latercera.com/el-deportivo/noticia/actas-de-directorio-computadores-requisados-y-gerentes-declarando-meses-atras-el-allanamiento-al-cda-que-remece-a-la-u/" target="_blank" class="source-link">→ Latercera.com</a>
         </div>
       </div>
     </div>
@@ -1279,48 +1263,48 @@
         </h2>
         <span class="section-subtitle">TechCrunch · The Verge · MIT Tech Review</span>
         
-      <div class="news-item" data-score="5" data-title="[2 jun] amazon web services confirma región cloud en santiago: operación desde 2027 con inversión de usd 800m">
+      <div class="news-item" data-score="5" data-title="copa impulsiona gestão de dados em cloud">
         <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
-        <a href="https://techcrunch.com" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Amazon Web Services confirma región cloud en Santiago: operación desde 2027 con inversión de USD 800M</div>
+        <a href="https://valor.globo.com/patrocinado/dino/noticia/2026/05/28/copa-impulsiona-gestao-de-dados-em-cloud-1.ghtml" target="_blank" class="news-link">
+          <div class="news-item-title">Copa impulsiona gestão de dados em cloud</div>
         </a>
-        <div class="news-item-detail">AWS anuncia tres zonas de disponibilidad en la Región Metropolitana. CORFO co-financia con USD 180M. Gobierno destaca soberanía de datos para sector público, salud y banca. Genera 1.200 empleos direct</div>
+        <div class="news-item-detail">Com expectativa de recordes de audiência e tráfego digital durante o evento esportivo, cresce a procura por sustentação contínua de operações críticas e plataformas analíticas</div>
         <div class="news-item-footer">
           <span class="impact-badge">🟡 Medio</span>
-          <a href="https://techcrunch.com" target="_blank" class="source-link">→ TechCrunch</a>
+          <a href="https://valor.globo.com/patrocinado/dino/noticia/2026/05/28/copa-impulsiona-gestao-de-dados-em-cloud-1.ghtml" target="_blank" class="source-link">→ Globo</a>
         </div>
       </div>
-      <div class="news-item" data-score="6" data-title="[2 jun] starlink anuncia plan residencial a $29.990/mes en chile desde agosto: presión sobre isps locales">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://www.theverge.com" target="_blank" class="news-link">
-          <div class="news-item-title">[2 Jun] Starlink anuncia plan residencial a $29.990/mes en Chile desde agosto: presión sobre ISPs locales</div>
+      <div class="news-item" data-score="5" data-title="carrefour liquida este fin de semana el smart tv lg qned de 86 pulgadas perfecto para salones enormes">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://www.compradiccion.com/television/carrefour-liquida-este-fin-semana-smart-tv-lg-qned-86-pulgadas-perfecto-para-salones-enormes" target="_blank" class="news-link">
+          <div class="news-item-title">Carrefour liquida este fin de semana el Smart TV LG QNED de 86 pulgadas perfecto para salones enormes</div>
         </a>
-        <div class="news-item-detail">SpaceX lanza plan de entrada con velocidades de 100-200 Mbps. VTR, Entel y Movistar ajustan precios en regiones. SUBTEL evalúa marco regulatorio para operadores satelitales de baja órbita.</div>
+        <div class="news-item-detail">Si tienes la suerte de contar con un salón enorme, de esos en los que cabría hasta un minipiso de los de la exministra Trujillo, este fin de semana Carrefour te lo pone más fácil para hacerte con un t</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.theverge.com" target="_blank" class="source-link">→ The Verge</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://www.compradiccion.com/television/carrefour-liquida-este-fin-semana-smart-tv-lg-qned-86-pulgadas-perfecto-para-salones-enormes" target="_blank" class="source-link">→ Compradiccion.com</a>
         </div>
       </div>
-      <div class="news-item" data-score="7" data-title="nvidia supera usd 3.8 billones de capitalización: gpu blackwell ultra domina mercado de infraestructura ia">
-        <div class="score-badge" title="Score de importancia: 7/10">7/10</div>
-        <a href="https://www.bloomberg.com/technology" target="_blank" class="news-link">
-          <div class="news-item-title">Nvidia supera USD 3.8 billones de capitalización: GPU Blackwell Ultra domina mercado de infraestructura IA</div>
+      <div class="news-item" data-score="5" data-title="agenda do dia: varejo nos eua e leilão do tesouro são destaque">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://valor.globo.com/financas/noticia/2026/05/14/agenda-do-dia-varejo-nos-eua-e-leilao-do-tesouro-sao-destaque.ghtml" target="_blank" class="news-link">
+          <div class="news-item-title">Agenda do dia: Varejo nos EUA e leilão do Tesouro são destaque</div>
         </a>
-        <div class="news-item-detail">Chips H200 y GB200 tienen lista de espera de 18 meses. Margen bruto sube al 78%. Analistas elevan precio objetivo a USD 180. TSMC anuncia ampliación de capacidad exclusiva para Nvidia.</div>
+        <div class="news-item-detail">Os números do comércio varejista dos Estados Unido...</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://www.bloomberg.com/technology" target="_blank" class="source-link">→ Bloomberg</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://valor.globo.com/financas/noticia/2026/05/14/agenda-do-dia-varejo-nos-eua-e-leilao-do-tesouro-sao-destaque.ghtml" target="_blank" class="source-link">→ Globo</a>
         </div>
       </div>
-      <div class="news-item" data-score="6" data-title="starlink gen 3: spacex lanza 180 satélites y promete latencia de 8ms en chile y perú">
-        <div class="score-badge" title="Score de importancia: 6/10">6/10</div>
-        <a href="https://techcrunch.com" target="_blank" class="news-link">
-          <div class="news-item-title">Starlink Gen 3: SpaceX lanza 180 satélites y promete latencia de 8ms en Chile y Perú</div>
+      <div class="news-item" data-score="5" data-title="summit ny: especialistas defendem ética, mas divergem sobre regulamentação da ia">
+        <div class="score-badge" title="Score de importancia: 5/10">5/10</div>
+        <a href="https://valor.globo.com/brasil/summit-brazil-usa/noticia/2026/05/13/summit-ny-especialistas-defendem-etica-mas-divergem-sobre-regulamentacao-da-ia.ghtml" target="_blank" class="news-link">
+          <div class="news-item-title">Summit NY: Especialistas defendem ética, mas divergem sobre regulamentação da IA</div>
         </a>
-        <div class="news-item-detail">Nueva constelación reduce latencia a la mitad y duplica velocidad de bajada. Usuarios en regiones remotas de Chile reportan 400 Mbps. Precio baja a USD 49/mes con subsidio gubernamental.</div>
+        <div class="news-item-detail">O impacto da inteligência artificial (IA) generati...</div>
         <div class="news-item-footer">
-          <span class="impact-badge">🟠 Alto</span>
-          <a href="https://techcrunch.com" target="_blank" class="source-link">→ TechCrunch</a>
+          <span class="impact-badge">🟡 Medio</span>
+          <a href="https://valor.globo.com/brasil/summit-brazil-usa/noticia/2026/05/13/summit-ny-especialistas-defendem-etica-mas-divergem-sobre-regulamentacao-da-ia.ghtml" target="_blank" class="source-link">→ Globo</a>
         </div>
       </div>
     </div>
