@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-02T17:26:32.685943",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-02T17:38:36.307558",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,6 +17,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     },
     {
       "titulo": "[2 Jun] BCCh publica encuesta de operadores financieros: dólar proyectado en $885 para septiembre 2026",
