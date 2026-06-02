@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-02T17:37:45.625822",
+  "fecha": "2026-06-02T22:09:07.998684",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -8,7 +8,7 @@
       "tipo": "precio",
       "valor": 40644.55,
       "fecha": "2026-06-02",
-      "fuente": "SII (sii.cl)"
+      "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "utm": {
       "label": "UTM",
