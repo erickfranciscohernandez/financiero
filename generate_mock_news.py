@@ -118,6 +118,127 @@ TODAY_NEWS_02JUN2026 = {
     ],
 }
 
+TODAY_NEWS_03JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[3 Jun] G7 en Canadá: líderes acuerdan fondo de USD 50.000M para infraestructura crítica frente a China',
+            'summary': 'Cumbre de Kananaskis aprueba financiamiento para puertos, cables submarinos y redes 5G en países emergentes. Chile y Brasil son mencionados como socios estratégicos de Latinoamérica. Tensión EE.UU.-China sube un escalón.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[3 Jun] FMI eleva proyección de crecimiento para Latinoamérica a 2.4% en 2026: Chile lidera con 3.1%',
+            'summary': 'Actualización del WEO destaca solidez fiscal chilena, demanda externa por cobre y litio y reformas al mercado laboral. México y Colombia reducen perspectivas por incertidumbre política. Región supera media global de 2.1%.',
+            'source': 'IMF',
+            'link': 'https://www.imf.org'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[3 Jun] Fed mantiene tasa en 4.25%-4.5%: Powell señala que datos de empleo de mayo definen el próximo paso',
+            'summary': 'Actas de la reunión del FOMC revelan división interna: 5 gobernadores favorecen corte en julio, 7 prefieren esperar a septiembre. Mercados asignan 65% de probabilidad a recorte en septiembre. T-10 en 4.54%.',
+            'source': 'CNBC',
+            'link': 'https://www.cnbc.com'
+        },
+        {
+            'title': '[3 Jun] Cobre cierra semana en USD 5.15/lb: alza semanal de 2.3% apoyada por datos industriales chinos',
+            'summary': 'PMI manufacturero chino de mayo sube a 51.2, superando expectativas. Importaciones de cobre de China alcanzan máximo anual. Goldman Sachs eleva objetivo a USD 5.40/lb para el tercer trimestre.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[3 Jun] IPSA cierra semana con alza de 1.8%: Codelco y SQM lideran ganancias por cobre y litio',
+            'summary': 'Índice bursátil acumula 6.2% de rentabilidad en lo que va de 2026. Codelco sube 3.1% en la semana; SQM avanza 4.2% ante contratos de litio con fabricantes de baterías europeos. Volumen diario supera los UF 1.2 millones.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[3 Jun] Peso chileno se aprecia a $888 por dólar: menor nivel desde enero y quinto dia consecutivo de ganancias',
+            'summary': 'Tipo de cambio cierra en $888, nivel más bajo desde enero 2026. Mineras liquidan divisas, cobre fuerte y expectativa de recorte Fed impulsan al peso. BCCh monitorea sin intervenir.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': '[3 Jun] Hacienda anuncia bono de cargo fiscal de $200.000 para hogares vulnerables: se paga en julio',
+            'summary': 'Beneficio alcanza a 2.8 millones de hogares del Registro Social de Hogares con puntaje hasta el 60%. Costo fiscal de USD 560M financiado con excedentes del cobre. Pago automático via BancoEstado y Caja Los Andes.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[3 Jun] Fintechs chilenas captan USD 180M en rondas de financiamiento durante el primer semestre de 2026',
+            'summary': 'Datos de la CMF muestran que el ecosistema fintech chileno ha recibido la mayor inversión semestral de su historia. Open banking, criptomonedas reguladas y crédito digital son los segmentos con mayor dinamismo.',
+            'source': 'TechCrunch Latam',
+            'link': 'https://techcrunch.com'
+        },
+        {
+            'title': '[3 Jun] Google Cloud y Universidad de Chile abren laboratorio de IA para investigación en salud y recursos naturales',
+            'summary': 'Alianza incluye becas para 200 investigadores y acceso preferente a modelos Gemini. Primeros proyectos abordan predicción de sequías, detección temprana de cáncer y optimización de rutas mineras.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[3 Jun] Anthropic lanza Claude 4 Opus con capacidad de análisis financiero avanzado: bancos latinoamericanos en piloto',
+            'summary': 'Nueva versión procesa hasta 200.000 tokens de contexto y genera reportes de riesgo en tiempo real. Banco de Chile, Itau y BTG Pactual inician piloto regional. Modelo supera benchmarks de análisis cuantitativo.',
+            'source': 'VentureBeat AI',
+            'link': 'https://venturebeat.com/category/ai/'
+        },
+        {
+            'title': '[3 Jun] BCI implementa IA generativa para aprobación de créditos hipotecarios: tiempo baja de 7 días a 4 horas',
+            'summary': 'Modelo desarrollado con Microsoft Azure reduce el tiempo de evaluación en un 95%. El sistema analiza 47 variables patrimoniales y de comportamiento financiero. Aprobaciones con error humano caen un 60%.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[3 Jun] Coopeuch capta 15.000 nuevos socios en mayo 2026: record histórico mensual impulsado por credito digital',
+            'summary': 'Mayor cooperativa de Chile supera el millón de socios activos por primera vez. Crédito de consumo digital representa el 38% de las nuevas colocaciones. CEO destaca la expansión en regiones del sur del país.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[3 Jun] Cooperativas chilenas de ahorro y crédito reportan cartera sana: mora cae a 1.2% en abril 2026',
+            'summary': 'Informe de la CMF muestra que el sector cooperativo mantiene indicadores de calidad superiores al promedio bancario. Activos totales del sector alcanzan los USD 12.500M, creciendo 11% en 12 meses.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[3 Jun] CMF aprueba norma que obliga a bancos y cooperativas a publicar tasas efectivas en lenguaje ciudadano',
+            'summary': 'Nueva circular exige presentar el costo total del crédito en formato simplificado desde enero 2027. Medida apunta a reducir asimetría de información y aumentar competencia. SBIF aplaudida por asociaciones de consumidores.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[3 Jun] Regulador aprueba primeras licencias de Open Banking: 12 fintechs pueden acceder a datos bancarios desde julio',
+            'summary': 'CMF entrega licencias de acceso a información financiera bajo Ley 21.521. Las 12 fintechs habilitadas cubren pagos, inversiones y crédito. Bancos tienen 90 días para implementar las APIs requeridas.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[3 Jun] Dólar cae a $888 y UF se proyecta en $40.680 para julio: mercado ajusta expectativas de inflacion a la baja',
+            'summary': 'Tipo de cambio consolida caída semanal de 0.8%. Swap UF-CLP descontada en la curva implica IPC de mayo en 0.15%, bajo lo esperado. Mercado adelanta posible recorte de TPM a agosto desde octubre.',
+            'source': 'Diario Financiero',
+            'link': 'https://www.df.cl'
+        },
+        {
+            'title': '[3 Jun] Bolsa de Santiago lidera ganancias semanales en Latinoamerica con rentabilidad de 1.8%: cobre y litio, motores',
+            'summary': 'IPSA supera a Bovespa (+0.9%), IPC México (+0.3%) y Merval (+1.1%) en la semana. Flujos de capital externo hacia Chile alcanzan USD 320M en mayo, máximo del año. Calificadoras confirman outlook estable.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+    ],
+}
+
 # Noticias específicas del 1 de junio de 2026 — se mezclan con las plantillas generales
 TODAY_NEWS_01JUN2026 = {
     'geopolitica': [
@@ -798,6 +919,7 @@ def generate_dynamic_news():
     today_map = {
         '20260601': TODAY_NEWS_01JUN2026,
         '20260602': TODAY_NEWS_02JUN2026,
+        '20260603': TODAY_NEWS_03JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
