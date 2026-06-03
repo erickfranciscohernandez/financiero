@@ -1,0 +1,50 @@
+{
+  "fecha": "2026-06-03T12:54:18.077258",
+  "total_alertas": 6,
+  "alertas_criticas": 6,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "[3 Jun] FMI eleva proyección de crecimiento para Latinoamérica a 2.4% en 2026: Chile lidera con 3.1%",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.imf.org"
+    },
+    {
+      "titulo": "[3 Jun] Cobre cierra semana en USD 5.15/lb: alza semanal de 2.3% apoyada por datos industriales chinos",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "[3 Jun] IPSA cierra semana con alza de 1.8%: Codelco y SQM lideran ganancias por cobre y litio",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bolsadesantiago.com"
+    },
+    {
+      "titulo": "[3 Jun] Peso chileno se aprecia a $888 por dólar: menor nivel desde enero y quinto dia consecutivo de ganancias",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
+    },
+    {
+      "titulo": "[3 Jun] Bolsa de Santiago lidera ganancias semanales en Latinoamerica con rentabilidad de 1.8%: cobre y litio, motores",
+      "seccion": "noticias_economicas_actuales",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    }
+  ]
+}
