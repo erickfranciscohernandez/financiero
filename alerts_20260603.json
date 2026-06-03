@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-03T12:54:18.077258",
-  "total_alertas": 6,
-  "alertas_criticas": 6,
+  "fecha": "2026-06-03T18:11:24.690949",
+  "total_alertas": 7,
+  "alertas_criticas": 7,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,6 +17,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
