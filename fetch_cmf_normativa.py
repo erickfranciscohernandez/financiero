@@ -21,42 +21,56 @@ CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
 
-# Datos de respaldo — normativa representativa junio 2026
+# Datos de respaldo — normativa representativa 03-jun-2026
 MOCK_NORMATIVA = [
     {
         'tipo':   'Norma de Carácter General',
+        'numero': 'NCG 513',
+        'materia': 'Open Banking: estándar de APIs y requisitos de seguridad para proveedores de servicios financieros bajo Ley 21.521',
+        'inicio': '02/06/2026',
+        'termino': '02/07/2026',
+    },
+    {
+        'tipo':   'Circular',
+        'numero': 'N° 2.236',
+        'materia': 'Publicación obligatoria de Costo Total del Crédito (CTC) en lenguaje ciudadano para bancos, cooperativas y emisores de tarjetas',
+        'inicio': '03/06/2026',
+        'termino': '03/07/2026',
+    },
+    {
+        'tipo':   'Norma de Carácter General',
         'numero': 'NCG 512',
-        'materia': 'Modifica requisitos de capital y liquidez para cooperativas de ahorro con activos sobre UF 400.000',
+        'materia': 'Modifica requisitos de capital y liquidez para cooperativas de ahorro y crédito con activos superiores a UF 400.000',
         'inicio': '12/05/2026',
         'termino': '12/06/2026',
     },
     {
         'tipo':   'Circular',
+        'numero': 'N° 2.235',
+        'materia': 'Uso de inteligencia artificial en modelos de scoring crediticio: requisitos de explicabilidad, auditoría externa y no discriminación',
+        'inicio': '28/05/2026',
+        'termino': '28/06/2026',
+    },
+    {
+        'tipo':   'Circular',
         'numero': 'N° 2.234',
-        'materia': 'Transparencia en comisiones de fondos mutuos: obligación de publicar Ratio de Gastos Total (TER)',
+        'materia': 'Transparencia en comisiones de fondos mutuos y de inversión: obligación de publicar Ratio de Gastos Total (TER) estandarizado',
         'inicio': '20/05/2026',
         'termino': '20/06/2026',
     },
     {
-        'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 513',
-        'materia': 'Open Banking: estándar de APIs para bancos, cooperativas y Fintechs bajo Ley 21.521',
-        'inicio': '02/06/2026',
-        'termino': '02/07/2026',
-    },
-    {
         'tipo':   'Resolución Exenta',
         'numero': 'N° 8.901',
-        'materia': 'Gestión de riesgo climático y de transición para compañías de seguros generales',
+        'materia': 'Gestión de riesgo climático y de transición: requerimientos de divulgación para compañías de seguros generales',
         'inicio': '02/06/2026',
         'termino': '17/06/2026',
     },
     {
-        'tipo':   'Circular',
-        'numero': 'N° 2.235',
-        'materia': 'Uso de inteligencia artificial en modelos de scoring crediticio: explicabilidad y auditoría externa',
-        'inicio': '28/05/2026',
-        'termino': '28/06/2026',
+        'tipo':   'Norma de Carácter General',
+        'numero': 'NCG 514',
+        'materia': 'Prevención de lavado de activos y financiamiento del terrorismo para operadores de activos digitales y exchanges bajo supervisión CMF',
+        'inicio': '03/06/2026',
+        'termino': '18/07/2026',
     },
 ]
 
