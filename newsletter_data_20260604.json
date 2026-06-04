@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "fecha_generacion": "2026-06-04T19:50:06.958839",
+    "fecha_generacion": "2026-06-04T23:57:53.646062",
     "version": "v3",
     "total_noticias": 32
   },
@@ -11,28 +11,28 @@
         "summary": "Los siete líderes firman declaración conjunta que establece aranceles coordinados del 25% al acero y aluminio chino. Incluye cláusula de nearshoring estratégico que beneficia a Chile como proveedor de litio y cobre para la cadena verde global.",
         "source": "Reuters",
         "link": "https://www.reuters.com/world",
-        "date": "2026-06-04T19:49:36.211746"
+        "date": "2026-06-04T21:57:36.446989"
       },
       {
         "title": "[4 Jun] OCDE: Chile en posición favorable ante reconfiguración global de cadenas de suministro de minerales críticos",
         "summary": "Informe destaca estabilidad institucional chilena y reservas de minerales críticos como ventaja competitiva. Recomienda acelerar acuerdos bilaterales con UE y Japón para exportar litio procesado y no solo materia prima.",
         "source": "OECD",
         "link": "https://www.oecd.org",
-        "date": "2026-06-04T18:49:36.211756"
+        "date": "2026-06-04T22:57:36.446998"
       },
       {
-        "title": "Taiwán refuerza defensa: compra de 400 misiles Patriot PAC-3 a EE.UU. por USD 3.200M",
-        "summary": "Departamento de Estado aprueba venta en tiempo récord. China califica la operación de \"provocación grave\" y anuncia ejercicios navales alrededor de la isla para junio.",
+        "title": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+        "summary": "Acuerdo de 22 países establece que litio, cobalto y manganeso africanos deben ser procesados en el continente antes de exportarse. Impacta directamente cadenas de suministro chinas.",
         "source": "Financial Times",
         "link": "https://www.ft.com/world",
-        "date": "2026-06-04T17:49:36.211761"
+        "date": "2026-06-04T20:57:36.447001"
       },
       {
-        "title": "OPEP+ mantiene recortes de producción: petróleo Brent escala a USD 82 ante tensión en el Golfo Pérsico",
-        "summary": "Arabia Saudita extiende reducción de 500.000 bpd hasta septiembre. Incidente naval en el Estrecho de Ormuz dispara prima de riesgo geopolítico. Analistas elevan objetivo a USD 88.",
-        "source": "Bloomberg",
-        "link": "https://www.bloomberg.com/news",
-        "date": "2026-06-04T14:49:36.211764"
+        "title": "OTAN activa Fuerza de Respuesta Rápida en el flanco este: 8 países refuerzan presencia en Polonia y Bálticos",
+        "summary": "Alianza despliega 12.000 efectivos adicionales ante movimientos de tropas rusas en Bielorrusia. Ministros de Defensa convocan reunión de emergencia en Bruselas para el 4 de junio.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/world",
+        "date": "2026-06-04T19:57:36.447004"
       }
     ],
     "economia_global": [
@@ -41,28 +41,28 @@
         "summary": "Dato de empleo más débil de lo esperado refuerza expectativas de recorte de la Fed en septiembre. Índice DXY cae 0.6%. Probabilidad de recorte sube al 78%. Bolsas globales al alza con S&P 500 +0.8%.",
         "source": "Bloomberg Markets",
         "link": "https://www.bloomberg.com/markets",
-        "date": "2026-06-04T18:49:36.211776"
+        "date": "2026-06-04T22:57:36.447013"
       },
       {
         "title": "[4 Jun] BCE mantiene tasa en 2.5%: Lagarde abre puerta a recorte en julio si inflación confirma tendencia",
         "summary": "Banco Central Europeo mantiene tasas pero cambia sesgo a neutral. Inflación subyacente de la eurozona en 2.3%, convergiendo a meta del 2%. Euro sube 0.4% frente al dólar. Impacto moderado en spreads de deuda emergente.",
         "source": "Financial Times",
         "link": "https://www.ft.com/markets",
-        "date": "2026-06-04T17:49:36.211780"
+        "date": "2026-06-04T23:57:36.447015"
       },
       {
-        "title": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-        "summary": "LME reporta inventarios de 87.000 toneladas, el nivel más bajo desde 2004. Demanda de cableado para IA y EVs supera proyecciones. Chile y Perú aceleran aprobaciones ambientales.",
-        "source": "Bloomberg Commodities",
-        "link": "https://www.bloomberg.com/commodities",
-        "date": "2026-06-04T12:49:36.211786"
-      },
-      {
-        "title": "China lanza segundo paquete de estímulo fiscal: USD 450.000M para infraestructura verde y consumo interno",
-        "summary": "Beijing financiará redes de carga para vehículos eléctricos, vivienda social y bonos de consumo. Analistas estiman impacto de 0.6 pp sobre PIB chino en el segundo semestre.",
-        "source": "Bloomberg Commodities",
+        "title": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+        "summary": "Banco Central de China aumentó reservas de oro por 18° mes consecutivo. Flujos hacia ETFs de oro alcanzan USD 14.000M en mayo. Analistas de Goldman elevan objetivo a USD 3.900.",
+        "source": "Bloomberg",
         "link": "https://www.bloomberg.com/markets",
-        "date": "2026-06-04T11:49:36.211792"
+        "date": "2026-06-04T21:57:36.447021"
+      },
+      {
+        "title": "Fed mantiene tasas en 4.5% pero señala ventana de recorte para septiembre si inflación sigue bajando",
+        "summary": "Actas del FOMC confirman discusión activa sobre primer recorte. PCE subyacente en 2.3% anual da margen. Mercados ya descuentan 2 recortes de 25 pb para el año.",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com",
+        "date": "2026-06-04T19:57:36.447027"
       }
     ],
     "economia_chile": [
@@ -71,28 +71,28 @@
         "summary": "Tipo de cambio observado publicado por el BCCh en $894,29. Mercado modera expectativas de apreciación tras datos mixtos de empleo en EE.UU. BCCh publica encuesta de expectativas que muestra IPC 2026 convergiendo a 3.0%.",
         "source": "Banco Central de Chile",
         "link": "https://www.bcentral.cl",
-        "date": "2026-06-04T17:49:36.211804"
+        "date": "2026-06-04T22:57:36.447037"
       },
       {
         "title": "[4 Jun] INE: desempleo de abril 2026 en 8.3%; empleo informal cae a mínimo histórico de 26.8%",
         "summary": "Tasa dentro de lo esperado. Empleo formal crece 2.9% en doce meses. Sector servicios y minería son los principales impulsores. Brecha de género en empleo formal se reduce a 10.2 puntos porcentuales.",
         "source": "INE",
         "link": "https://www.ine.gob.cl",
-        "date": "2026-06-04T17:49:36.211807"
+        "date": "2026-06-04T23:57:36.447040"
       },
       {
         "title": "[4 Jun] Hacienda: Marco Fiscal proyecta deuda neta en 11.8% del PIB y regla fiscal cumplida por quinto año",
         "summary": "Informe bienal proyecta balance estructural de -1.9% del PIB para 2026. Precio de referencia del cobre se revisa al alza a USD 3.95/lb. Fitch y S&P reafirman notas soberanas A/A- con outlook estable.",
         "source": "Ministerio de Hacienda",
         "link": "https://www.hacienda.cl",
-        "date": "2026-06-04T18:49:36.211810"
+        "date": "2026-06-04T22:57:36.447042"
       },
       {
         "title": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
         "summary": "BCCh monitorea el tipo de cambio pero descarta intervención directa. Exportadores liquidaron USD 780M en la semana. Analistras proyectan rango de $880-$910 para el tercer trimestre.",
         "source": "Diario Financiero",
         "link": "https://www.df.cl",
-        "date": "2026-06-04T15:49:36.211813"
+        "date": "2026-06-04T17:57:36.447045"
       }
     ],
     "tendencias_tech": [
@@ -101,28 +101,28 @@
         "summary": "Plataforma datos.gob.cl incorpora información del SII, BCCh, INE y CMF con APIs estandarizadas. Más de 60 startups ya registradas. CORFO ofrece subsidio de hasta UF 500 para proyectos de innovación con datos públicos.",
         "source": "El Mercurio",
         "link": "https://www.emol.com",
-        "date": "2026-06-04T18:49:36.211821"
+        "date": "2026-06-04T22:57:36.447052"
       },
       {
         "title": "[4 Jun] Mercado de semiconductores Latam crecerá 18% anual hasta 2030: Chile posicionado como hub regional",
         "summary": "Estudio IDC identifica a Chile como destino preferido para centros de datos. TSMC evalúa planta en Quilicura con apoyo de CORFO. Gobierno extiende beneficios tributarios al sector tecnológico de alta densidad energética.",
         "source": "TechCrunch",
         "link": "https://techcrunch.com",
-        "date": "2026-06-04T17:49:36.211824"
+        "date": "2026-06-04T22:57:36.447054"
       },
       {
-        "title": "AMD EPYC Turin en centros de datos: procesador de 192 núcleos reduce costos de inferencia IA en 45%",
-        "summary": "Alternativa a Intel Xeon gana mercado enterprise. Google Cloud y AWS anuncian instancias basadas en EPYC Turin. AMD supera a Intel en cuota de mercado de servidor por primera vez.",
-        "source": "MIT Technology Review",
-        "link": "https://www.technologyreview.com",
-        "date": "2026-06-04T11:49:36.211826"
+        "title": "Microsoft Azure anuncia nodo regional en Chile para 2027: USD 1.200M en infraestructura cloud local",
+        "summary": "Centro de datos en Pudahuel procesará datos de gobierno, banca y salud con soberanía nacional. Elimina la necesidad de enviar datos sensibles a Brasil. CORFO co-financia con USD 180M.",
+        "source": "TechCrunch",
+        "link": "https://techcrunch.com",
+        "date": "2026-06-04T17:57:36.447056"
       },
       {
         "title": "Fintech chilena Fintual lanza gestión patrimonial con IA personalizada para clientes sobre UF 3.000",
         "summary": "Asistente analiza perfil de riesgo, horizonte de inversión y flujos fiscales del usuario para recomendar cartera optimizada. Integra SII, Previred y datos de mercado en tiempo real.",
         "source": "Diario Financiero",
         "link": "https://www.df.cl",
-        "date": "2026-06-04T12:49:36.211829"
+        "date": "2026-06-04T20:57:36.447059"
       }
     ],
     "cooperativismo": [
@@ -131,28 +131,28 @@
         "summary": "Alianza Cooperativa Internacional destaca el marco regulatorio chileno como modelo regional. Sector mantiene índice de capital del 14.8%, superior al mínimo requerido. Expansión hacia Perú y Colombia en evaluación.",
         "source": "Foro Cooperativo",
         "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
-        "date": "2026-06-04T17:49:36.211835"
+        "date": "2026-06-04T21:57:36.447066"
       },
       {
         "title": "[4 Jun] Detacoop lanza plataforma de inversión para socios: retorno proyectado de 6.5% anual en UF",
         "summary": "Nueva oferta permite a socios invertir desde UF 10. Fondos destinados a cartera hipotecaria y crédito educacional. Apertura de cuentas 100% digital disponible desde hoy. Primer producto de inversión cooperativa con liquidez semanal.",
         "source": "Foro Cooperativo",
         "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
-        "date": "2026-06-04T18:49:36.211838"
+        "date": "2026-06-04T23:57:36.447069"
       },
       {
-        "title": "Informe BID: cooperativas financieras de Chile mantienen mora 40% inferior a banca comercial en crédito de consumo",
-        "summary": "Análisis comparativo atribuye mejor calidad de cartera al modelo de evaluación colectiva y al mayor conocimiento del socio. Tasa de recuperación de cartera vencida también supera a la banca.",
+        "title": "BID otorga línea de crédito de USD 200M al cooperativismo financiero de Chile para inclusión en regiones",
+        "summary": "Financiamiento respaldará expansión de cooperativas en comunidades rurales de La Araucanía, Los Lagos y Aysén. Prioridad en crédito productivo para Pymes, pequeños agricultores y emprendedoras.",
         "source": "BID",
         "link": "https://www.iadb.org",
-        "date": "2026-06-04T17:49:36.211840"
+        "date": "2026-06-04T18:57:36.447071"
       },
       {
-        "title": "Cooperativas de ahorro lanzan tarjeta de crédito interoperable: 800.000 socios se beneficiarán",
-        "summary": "Alianza de 12 cooperativas crea producto compartido con cupo de hasta UF 80, sin comisión de mantención y con acceso a red Transbank y Redbanc. Lanzamiento en agosto 2026.",
-        "source": "Cooperativas.cl",
-        "link": "https://www.cooperativas.cl",
-        "date": "2026-06-04T15:49:36.211843"
+        "title": "CMF autoriza a cooperativas de ahorro a emitir bonos en el mercado de capitales chileno",
+        "summary": "Nueva circular abre financiamiento de largo plazo para el sector. Cooperativa Oriencoop y Los Héroes ya evalúan emisiones por UF 500.000 y UF 380.000 respectivamente.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-06-04T15:57:36.447073"
       }
     ],
     "cmf": [
@@ -161,28 +161,28 @@
         "summary": "Patrimonio de la industria de fondos crece 12.3% en doce meses. Fondos de deuda en UF lideran captaciones con USD 2.100M en el mes. Capital extranjero representa el 18% del total gestionado, nuevo máximo histórico.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-06-04T18:49:36.211849"
+        "date": "2026-06-04T23:57:36.447078"
       },
       {
-        "title": "CMF y BCCh emiten circular conjunta sobre exposición de bancos a criptoactivos: límite del 2% del capital",
-        "summary": "Normativa establece que ninguna institución financiera puede superar el 2% de activos ponderados en cripto. Activos elegibles solo Bitcoin y Ether con custodios regulados en Chile.",
+        "title": "CMF autoriza primera AAFM (Administradora de Activos Financieros Modulares) bajo Ley Fintech",
+        "summary": "Empresa Fintual Inversiones recibe licencia pionera que le permite ofrecer gestión discrecional de carteras a minoristas sin ser AFP ni corredora tradicional. Abre mercado a nuevos competidores.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-06-04T12:49:36.211856"
+        "date": "2026-06-04T17:57:36.447080"
       },
       {
-        "title": "CMF activa nuevo sandbox regulatorio para pruebas de tokenización de activos reales en Chile",
-        "summary": "Cinco proyectos piloto de tokenización de deuda inmobiliaria, bonos verdes y acciones de Pymes iniciarán operación controlada. Regulador monitorea por 18 meses antes de normar definitivamente.",
+        "title": "CMF exige a compañías de seguros actualizar modelos de reservas ante cambio climático y longevidad creciente",
+        "summary": "Nueva circular obliga a incorporar escenarios de temperatura global +1.5°C y tablas de mortalidad actualizadas. Impacto estimado en reservas adicionales de UF 8.5 millones para el sector.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-06-04T15:49:36.211859"
+        "date": "2026-06-04T17:57:36.447082"
       },
       {
-        "title": "CMF reporta: sistema bancario chileno con capitalización del 14.2%, el nivel más sólido desde la reforma de 2019",
-        "summary": "Informe de estabilidad financiera del primer semestre 2026 confirma robustez del sector. Ratio de cobertura de liquidez en 148%, muy por encima del mínimo regulatorio del 100%.",
+        "title": "CMF sanciona a tres corredoras por manipulación de precios en el mercado de renta fija",
+        "summary": "Multas por UF 30.000 cada una por operaciones coordinadas que distorsionaron precios de bonos corporativos. Es la mayor sanción en el mercado de capitales en diez años.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-06-04T13:49:36.211861"
+        "date": "2026-06-04T21:57:36.447085"
       }
     ],
     "noticias_economicas_actuales": [
@@ -191,28 +191,28 @@
         "summary": "Valor diario de la Unidad de Fomento publicado por el SII. El incremento semanal refleja la inflación de mayo. Próxima referencia clave: IPC oficial del INE el 9 de junio.",
         "source": "SII Chile",
         "link": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm",
-        "date": "2026-06-04T19:49:36.211867"
+        "date": "2026-06-04T23:57:36.447089"
       },
       {
         "title": "[4 Jun] Balanza comercial mayo 2026: superávit de USD 1.850M impulsado por cobre y litio",
         "summary": "Exportaciones alcanzan USD 8.100M; importaciones USD 6.250M. Cobre representa el 52% de las exportaciones totales. Superávit acumulado enero-mayo en USD 8.200M, 34% superior al mismo período de 2025.",
         "source": "Banco Central de Chile",
         "link": "https://www.bcentral.cl",
-        "date": "2026-06-04T18:49:36.211870"
+        "date": "2026-06-04T23:57:36.447091"
       },
       {
         "title": "Imacec de abril 2026 confirma expansión de 4.1%: cuarto mes sobre el 3.5% y tendencia al alza",
         "summary": "BCCh destaca contribución minera (+7.2%), comercial (+4.8%) y de servicios financieros (+5.1%). Expansión amplia por sectores y regiones confirma solidez del ciclo económico.",
         "source": "Banco Central de Chile",
         "link": "https://www.bcentral.cl",
-        "date": "2026-06-04T15:49:36.211875"
+        "date": "2026-06-04T19:57:36.447096"
       },
       {
-        "title": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-        "summary": "Balanza comercial arroja superávit de USD 5.200M en cinco meses. China concentra el 42% de envíos totales. Precio del cobre promedia USD 4.92/lb en el período.",
-        "source": "Banco Central de Chile",
-        "link": "https://www.bcentral.cl",
-        "date": "2026-06-04T14:49:36.211877"
+        "title": "Ventas minoristas crecen 6.1% en mayo 2026: electrodomésticos, construcción y gastronomía lideran el alza",
+        "summary": "INE registra el mejor dato del comercio en 20 meses. Crédito de consumo crece 6.9% interanual y se acelera. Menor inflación y empleo estable dinamizan el consumo de los hogares.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl",
+        "date": "2026-06-04T15:57:36.447099"
       }
     ],
     "inteligencia_artificial": [
@@ -221,28 +221,28 @@
         "summary": "Documento establece criterios de explicabilidad, no discriminación y supervisión humana para modelos de IA en crédito, scoring y detección de fraude. Las entidades tienen 18 meses para implementar los estándares.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-06-04T19:49:36.211885"
+        "date": "2026-06-04T21:57:36.447103"
       },
       {
         "title": "[4 Jun] Meta lanza Llama 4 Ultra con razonamiento financiero avanzado: API gratuita para startups latinoamericanas",
         "summary": "Nuevo modelo supera benchmarks financieros y jurídicos en español. Licencia comercial gratuita para startups con menos de USD 1M de ingresos. Compatible con AWS, Azure y GCP. Desarrolladores chilenos entre los primeros usuarios.",
         "source": "VentureBeat AI",
         "link": "https://venturebeat.com/category/ai/",
-        "date": "2026-06-04T19:49:36.211888"
+        "date": "2026-06-04T23:57:36.447106"
       },
       {
-        "title": "DeepMind AlphaFold 4 predice interacciones fármaco-proteína con 94% de precisión: acelera oncología y neurología",
-        "summary": "Modelo amplía capacidades a predicción de efectos secundarios y diseño de moléculas candidatas a fármacos. Seis laboratorios farmacéuticos ya lo usan en ensayos clínicos de fase 1.",
+        "title": "OpenAI lanza GPT-5 con razonamiento extendido y memoria persistente: precios API caen 40%",
+        "summary": "Modelo integra búsqueda web en tiempo real, memoria cross-session y capacidades de agente autónomo. Disponible en tres versiones: Mini, Standard y Pro. Límite de contexto de 1 millón de tokens.",
         "source": "TLDR AI",
         "link": "https://tldr.ai",
-        "date": "2026-06-04T17:49:36.211890"
+        "date": "2026-06-04T21:57:36.447108"
       },
       {
-        "title": "CORFO lanza fondo de USD 80M para startups de IA en Chile: foco en agritech, minería y salud",
-        "summary": "Programa InnovaChile IA financiará proyectos con componente de datos propios y aplicación en sectores estratégicos. Convocatoria abierta hasta el 30 de julio con 40 cupos disponibles.",
-        "source": "The Rundown AI",
-        "link": "https://therundown.ai",
-        "date": "2026-06-04T15:49:36.211892"
+        "title": "Regulación de IA en Chile: Ministerio de Ciencia publica borrador de Política Nacional de IA 2026-2030",
+        "summary": "Hoja de ruta nacional define 5 ejes: talento, infraestructura, datos, regulación y adopción sectorial. Incluye observatorio de riesgos y fondo de CLP 50.000M para investigación aplicada.",
+        "source": "TLDR AI",
+        "link": "https://tldr.ai",
+        "date": "2026-06-04T16:57:36.447110"
       }
     ]
   }
