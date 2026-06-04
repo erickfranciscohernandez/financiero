@@ -1,29 +1,22 @@
 {
-  "fecha": "2026-06-04T10:29:26.351123",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-04T12:20:26.045246",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "titulo": "[4 Jun] Cumbre G7: acuerdo sobre aranceles al acero chino y nuevas reglas para cadenas de suministro críticas",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
+      "enlace": "https://www.reuters.com/world"
     },
     {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-      "seccion": "economia_global",
+      "titulo": "[4 Jun] Balanza comercial mayo 2026: superávit de USD 1.850M impulsado por cobre y litio",
+      "seccion": "noticias_economicas_actuales",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.bcentral.cl"
     }
   ]
 }
