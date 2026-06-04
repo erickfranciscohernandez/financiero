@@ -1,15 +1,36 @@
 {
-  "fecha": "2026-06-04T12:24:28.697605",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-06-04T19:50:07.113385",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
+    {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
     {
       "titulo": "[4 Jun] Cumbre G7: acuerdo sobre aranceles al acero chino y nuevas reglas para cadenas de suministro críticas",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     },
     {
       "titulo": "[4 Jun] Balanza comercial mayo 2026: superávit de USD 1.850M impulsado por cobre y litio",
