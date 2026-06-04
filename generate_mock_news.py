@@ -40,8 +40,8 @@ TODAY_NEWS_04JUN2026 = {
     ],
     'economia_chile': [
         {
-            'title': '[4 Jun] Peso chileno toca $885: mínimo del año impulsado por debilidad del dólar global y cobre sobre $5.10/lb',
-            'summary': 'Moneda nacional acumula apreciación de 3.2% en junio. Liquidaciones de exportadoras mineras suman USD 480M en la semana. BCCh publica encuesta de expectativas que muestra IPC 2026 convergiendo a 3.0%.',
+            'title': '[4 Jun] Dólar observado en $894,29: peso chileno cede terreno ante fortaleza global del dólar y toma de utilidades',
+            'summary': 'Tipo de cambio observado publicado por el BCCh en $894,29. Mercado modera expectativas de apreciación tras datos mixtos de empleo en EE.UU. BCCh publica encuesta de expectativas que muestra IPC 2026 convergiendo a 3.0%.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
