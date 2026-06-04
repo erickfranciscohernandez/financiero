@@ -110,8 +110,8 @@ TODAY_NEWS_04JUN2026 = {
     ],
     'noticias_economicas_actuales': [
         {
-            'title': '[4 Jun] UF del 4 de junio: $40.650,22 — acumula alza de $5,67 en la semana',
-            'summary': 'Valor diario de la Unidad de Fomento publicado por el SII. El incremento semanal refleja la inflación de mayo estimada en 0.2% por el mercado. Próxima referencia clave: IPC oficial del INE el 9 de junio.',
+            'title': '[4 Jun] UF del 4 de junio: $40.678,43 — acumula alza de $33,88 en la semana',
+            'summary': 'Valor diario de la Unidad de Fomento publicado por el SII. El incremento semanal refleja la inflación de mayo. Próxima referencia clave: IPC oficial del INE el 9 de junio.',
             'source': 'SII Chile',
             'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
         },
