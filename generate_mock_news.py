@@ -8,6 +8,122 @@ import json
 from datetime import datetime, timedelta
 import random
 
+# Noticias específicas del 4 de junio de 2026
+TODAY_NEWS_04JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[4 Jun] Cumbre G7: acuerdo sobre aranceles al acero chino y nuevas reglas para cadenas de suministro críticas',
+            'summary': 'Los siete líderes firman declaración conjunta que establece aranceles coordinados del 25% al acero y aluminio chino. Incluye cláusula de nearshoring estratégico que beneficia a Chile como proveedor de litio y cobre para la cadena verde global.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[4 Jun] OCDE: Chile en posición favorable ante reconfiguración global de cadenas de suministro de minerales críticos',
+            'summary': 'Informe destaca estabilidad institucional chilena y reservas de minerales críticos como ventaja competitiva. Recomienda acelerar acuerdos bilaterales con UE y Japón para exportar litio procesado y no solo materia prima.',
+            'source': 'OECD',
+            'link': 'https://www.oecd.org'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[4 Jun] Nóminas EE.UU.: 185.000 empleos en mayo vs. 195.000 esperados; dólar cae globalmente y bolsas suben',
+            'summary': 'Dato de empleo más débil de lo esperado refuerza expectativas de recorte de la Fed en septiembre. Índice DXY cae 0.6%. Probabilidad de recorte sube al 78%. Bolsas globales al alza con S&P 500 +0.8%.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[4 Jun] BCE mantiene tasa en 2.5%: Lagarde abre puerta a recorte en julio si inflación confirma tendencia',
+            'summary': 'Banco Central Europeo mantiene tasas pero cambia sesgo a neutral. Inflación subyacente de la eurozona en 2.3%, convergiendo a meta del 2%. Euro sube 0.4% frente al dólar. Impacto moderado en spreads de deuda emergente.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[4 Jun] Peso chileno toca $885: mínimo del año impulsado por debilidad del dólar global y cobre sobre $5.10/lb',
+            'summary': 'Moneda nacional acumula apreciación de 3.2% en junio. Liquidaciones de exportadoras mineras suman USD 480M en la semana. BCCh publica encuesta de expectativas que muestra IPC 2026 convergiendo a 3.0%.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[4 Jun] INE: desempleo de abril 2026 en 8.3%; empleo informal cae a mínimo histórico de 26.8%',
+            'summary': 'Tasa dentro de lo esperado. Empleo formal crece 2.9% en doce meses. Sector servicios y minería son los principales impulsores. Brecha de género en empleo formal se reduce a 10.2 puntos porcentuales.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[4 Jun] Hacienda: Marco Fiscal proyecta deuda neta en 11.8% del PIB y regla fiscal cumplida por quinto año',
+            'summary': 'Informe bienal proyecta balance estructural de -1.9% del PIB para 2026. Precio de referencia del cobre se revisa al alza a USD 3.95/lb. Fitch y S&P reafirman notas soberanas A/A- con outlook estable.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[4 Jun] Gobierno lanza portal de datos abiertos con 1.200 datasets financieros: open data para fintechs chilenas',
+            'summary': 'Plataforma datos.gob.cl incorpora información del SII, BCCh, INE y CMF con APIs estandarizadas. Más de 60 startups ya registradas. CORFO ofrece subsidio de hasta UF 500 para proyectos de innovación con datos públicos.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[4 Jun] Mercado de semiconductores Latam crecerá 18% anual hasta 2030: Chile posicionado como hub regional',
+            'summary': 'Estudio IDC identifica a Chile como destino preferido para centros de datos. TSMC evalúa planta en Quilicura con apoyo de CORFO. Gobierno extiende beneficios tributarios al sector tecnológico de alta densidad energética.',
+            'source': 'TechCrunch',
+            'link': 'https://techcrunch.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[4 Jun] CMF publica guía de IA responsable en servicios financieros: 12 principios para bancos y fintechs',
+            'summary': 'Documento establece criterios de explicabilidad, no discriminación y supervisión humana para modelos de IA en crédito, scoring y detección de fraude. Las entidades tienen 18 meses para implementar los estándares.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[4 Jun] Meta lanza Llama 4 Ultra con razonamiento financiero avanzado: API gratuita para startups latinoamericanas',
+            'summary': 'Nuevo modelo supera benchmarks financieros y jurídicos en español. Licencia comercial gratuita para startups con menos de USD 1M de ingresos. Compatible con AWS, Azure y GCP. Desarrolladores chilenos entre los primeros usuarios.',
+            'source': 'VentureBeat AI',
+            'link': 'https://venturebeat.com/category/ai/'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[4 Jun] ACI: cooperativas financieras chilenas entre las más sólidas de América Latina según ranking 2026',
+            'summary': 'Alianza Cooperativa Internacional destaca el marco regulatorio chileno como modelo regional. Sector mantiene índice de capital del 14.8%, superior al mínimo requerido. Expansión hacia Perú y Colombia en evaluación.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[4 Jun] Detacoop lanza plataforma de inversión para socios: retorno proyectado de 6.5% anual en UF',
+            'summary': 'Nueva oferta permite a socios invertir desde UF 10. Fondos destinados a cartera hipotecaria y crédito educacional. Apertura de cuentas 100% digital disponible desde hoy. Primer producto de inversión cooperativa con liquidez semanal.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[4 Jun] CMF: activos de fondos de inversión chilenos superan USD 85.000M al cierre de mayo 2026',
+            'summary': 'Patrimonio de la industria de fondos crece 12.3% en doce meses. Fondos de deuda en UF lideran captaciones con USD 2.100M en el mes. Capital extranjero representa el 18% del total gestionado, nuevo máximo histórico.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[4 Jun] UF del 4 de junio: $40.650,22 — acumula alza de $5,67 en la semana',
+            'summary': 'Valor diario de la Unidad de Fomento publicado por el SII. El incremento semanal refleja la inflación de mayo estimada en 0.2% por el mercado. Próxima referencia clave: IPC oficial del INE el 9 de junio.',
+            'source': 'SII Chile',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[4 Jun] Balanza comercial mayo 2026: superávit de USD 1.850M impulsado por cobre y litio',
+            'summary': 'Exportaciones alcanzan USD 8.100M; importaciones USD 6.250M. Cobre representa el 52% de las exportaciones totales. Superávit acumulado enero-mayo en USD 8.200M, 34% superior al mismo período de 2025.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+}
+
 # Noticias específicas del 2 de junio de 2026
 TODAY_NEWS_02JUN2026 = {
     'geopolitica': [
@@ -920,6 +1036,7 @@ def generate_dynamic_news():
         '20260601': TODAY_NEWS_01JUN2026,
         '20260602': TODAY_NEWS_02JUN2026,
         '20260603': TODAY_NEWS_03JUN2026,
+        '20260604': TODAY_NEWS_04JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
