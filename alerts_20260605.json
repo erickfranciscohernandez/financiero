@@ -1,15 +1,29 @@
 {
-  "fecha": "2026-06-05T13:51:49.028356",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-05T18:32:06.288062",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
+    {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
     {
       "titulo": "[5 Jun] G7 finaliza cumbre con declaración sobre minerales críticos: Chile y Perú mencionados como socios estratégicos",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "[5 Jun] IPSA acumula alza semanal de 2.1%: cobre fuerte y expectativas de recorte Fed impulsan bolsa chilena",
