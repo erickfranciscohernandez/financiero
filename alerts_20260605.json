@@ -1,29 +1,29 @@
 {
-  "fecha": "2026-06-05T11:53:33.511142",
+  "fecha": "2026-06-05T13:51:49.028356",
   "total_alertas": 3,
   "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "titulo": "[5 Jun] G7 finaliza cumbre con declaración sobre minerales críticos: Chile y Perú mencionados como socios estratégicos",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "[5 Jun] IPSA acumula alza semanal de 2.1%: cobre fuerte y expectativas de recorte Fed impulsan bolsa chilena",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bolsadesantiago.com"
+    },
+    {
+      "titulo": "[5 Jun] Balanza comercial Chile enero-mayo 2026: superávit acumulado de USD 8.200M, el mejor desde 2011",
       "seccion": "noticias_economicas_actuales",
-      "score": 10,
+      "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
     }
   ]
 }
