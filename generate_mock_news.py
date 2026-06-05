@@ -8,6 +8,122 @@ import json
 from datetime import datetime, timedelta
 import random
 
+# Noticias específicas del 5 de junio de 2026
+TODAY_NEWS_05JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[5 Jun] G7 finaliza cumbre con declaración sobre minerales críticos: Chile y Perú mencionados como socios estratégicos',
+            'summary': 'Comunicado final del G7 en Kananaskis incluye por primera vez un capítulo dedicado a minerales críticos. Chile es reconocido como proveedor confiable de cobre y litio para la transición energética del bloque. Se abren negociaciones de acuerdo preferencial.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[5 Jun] OTAN refuerza presencia en Mar Negro tras incidente naval entre Turquía y Rusia',
+            'summary': 'Alianza activa protocolo de monitoreo reforzado luego de interceptación de fragata turca en aguas internacionales. Mercados de energía reaccionan: Brent sube 1.2% a USD 82.4. Impacto moderado en commodities latinoamericanos.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[5 Jun] Nóminas EE.UU. de mayo confirman enfriamiento: 185.000 empleos consolidan expectativas de recorte Fed en septiembre',
+            'summary': 'Mercados digieren el dato de empleo con optimismo. Curva de rendimientos se aplana. Dólar DXY cae 0.4% en la semana. Fed Funds Futures asigna 79% de probabilidad a recorte de 25 pb en septiembre. S&P 500 cierra semana en máximos.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[5 Jun] Cobre cierra semana sobre USD 5.10/lb: acumula alza de 4.8% en mayo impulsado por déficit de oferta',
+            'summary': 'Metal rojo se consolida en rango alto. ICSG reporta déficit global de 180.000 toneladas en el primer trimestre. Inventarios LME caen a 112.000 toneladas, mínimo de dos décadas. Goldman Sachs reafirma objetivo de USD 5.40 para Q3.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[5 Jun] UF hoy $40.678,43 y dólar observado $894,29: indicadores clave al 5 de junio de 2026',
+            'summary': 'Unidad de Fomento publicada por SII para el día de hoy. Dólar observado del BCCh levemente al alza respecto al cierre anterior. Mercado espera IPC de mayo el próximo lunes 9 de junio: consenso en 0.2% mensual y 3.2% anual.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[5 Jun] IPSA acumula alza semanal de 2.1%: cobre fuerte y expectativas de recorte Fed impulsan bolsa chilena',
+            'summary': 'Índice bursátil cierra la semana en 7.840 puntos, máximo desde febrero 2025. Codelco y SQM lideran las ganancias semanales con +4.1% y +5.3% respectivamente. Volumen de transacciones supera el promedio en un 28%.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[5 Jun] BCCh: expectativas de inflación a 24 meses se anclan en 3.0% según encuesta de operadores',
+            'summary': 'Encuesta mensual de operadores financieros muestra convergencia de expectativas a la meta. Proyección de TPM al cierre de 2026 se mantiene en 4.0%-4.25%. Mediana de analistas anticipa primer recorte en agosto.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[5 Jun] Transbank lanza nuevo sistema de pagos instantáneos 24/7 para personas y pymes: sin comisión hasta UF 5',
+            'summary': 'Plataforma TEF+ permite transferencias en menos de 5 segundos a cualquier banco o billetera digital. Sin costo para transacciones bajo UF 5. Integración directa con aplicaciones móviles via API abierta. Disponible desde hoy para todos los usuarios.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[5 Jun] Chile avanza al puesto 22 en ranking global de competitividad digital: primer lugar en América Latina',
+            'summary': 'IMD World Digital Competitiveness 2026 posiciona a Chile como el país más competitivo digitalmente de la región, superando a Brasil y Uruguay. Destacan infraestructura de fibra óptica, adopción de IA en sector público y marco regulatorio fintech.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[5 Jun] Banco Central de Chile lanza piloto de IA para monitoreo de riesgo sistémico en tiempo real',
+            'summary': 'BCCh implementa modelos de lenguaje de gran escala para detectar señales tempranas de estrés financiero. Sistema analiza flujos interbancarios, variaciones de spreads y datos de mercado en tiempo real. Primer banco central de Latinoamérica en aplicar IA generativa en supervisión.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[5 Jun] Microsoft anuncia inversión de USD 500M en IA para sector financiero latinoamericano con sede en Chile',
+            'summary': 'Gigante tecnológico elige Santiago como hub regional para desarrollo de soluciones de IA en banca, seguros y gestión de activos. Acuerdo con CORFO incluye formación de 5.000 profesionales en IA aplicada a finanzas. Primeras soluciones disponibles en el primer trimestre de 2027.',
+            'source': 'TechCrunch',
+            'link': 'https://techcrunch.com'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[5 Jun] Cooperativas chilenas recaudan UF 120.000 en bonos de impacto social: primer instrumento del sector en bolsa',
+            'summary': 'Emisión de bonos sociales cooperativos debuta en la Bolsa de Santiago con demanda que triplica la oferta. Recursos financiarán vivienda cooperativa y crédito educacional en regiones. CMF certifica el instrumento como inversión de impacto.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[5 Jun] CONFECOOP Chile reporta crecimiento de 14% en colocaciones del sector cooperativo en los últimos 12 meses',
+            'summary': 'Cartera total del sector alcanza los USD 13.200M. Crédito hipotecario cooperativo crece 18%, el mayor ritmo en cinco años. Mora del sector en 1.2%, significativamente bajo el promedio bancario de 1.9%. Rentabilidad patrimonial en 12.4%.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[5 Jun] CMF lanza sandbox regulatorio para fintechs de crédito y pagos: 20 empresas podrán operar en régimen especial',
+            'summary': 'Comisión abre convocatoria para programa de innovación regulatoria. Las empresas seleccionadas operarán bajo supervisión especial durante 18 meses con requisitos de capital reducidos. Objetivo: acelerar adopción de open banking y pagos digitales.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[5 Jun] Balanza comercial Chile enero-mayo 2026: superávit acumulado de USD 8.200M, el mejor desde 2011',
+            'summary': 'Cifras del BCCh confirman exportaciones en USD 40.500M y importaciones en USD 32.300M en el período. Cobre representa el 51.3% de las exportaciones totales. Diversificación exportadora avanza con litio procesado y frutas premium.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[5 Jun] Mercado inmobiliario chileno muestra señales de recuperación: ventas de viviendas nuevas suben 8% en mayo',
+            'summary': 'CChC reporta 5.200 unidades vendidas en mayo 2026, mayor cifra desde julio 2024. Segmento de vivienda social lidera con subsidios SERVIU. Tasas hipotecarias bajan a 4.2% en UF desde 4.6% de diciembre 2025.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+}
+
 # Noticias específicas del 4 de junio de 2026
 TODAY_NEWS_04JUN2026 = {
     'geopolitica': [
@@ -1037,6 +1153,7 @@ def generate_dynamic_news():
         '20260602': TODAY_NEWS_02JUN2026,
         '20260603': TODAY_NEWS_03JUN2026,
         '20260604': TODAY_NEWS_04JUN2026,
+        '20260605': TODAY_NEWS_05JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
