@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-08T11:23:47.841401",
+  "fecha": "2026-06-08T22:13:18.700170",
   "total_alertas": 5,
   "alertas_criticas": 5,
   "alertas_altas": 0,
@@ -19,13 +19,6 @@
       "enlace": "https://www.ft.com/world"
     },
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
       "titulo": "[8 Jun] S&P 500 abre semana en máximos históricos: inversores anticipan pausa prolongada de la Fed tras datos de empleo",
       "seccion": "economia_global",
       "score": 9,
@@ -38,6 +31,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     }
   ]
 }
