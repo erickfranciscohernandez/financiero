@@ -1168,7 +1168,7 @@ TODAY_NEWS_08JUN2026 = {
     ],
     'economia_chile': [
         {
-            'title': '[8 Jun] UF $40.678,43 y dólar $894,29: indicadores al inicio de semana del 8 de junio de 2026',
+            'title': '[8 Jun] UF $40.746,28 y dólar $894,29: indicadores al inicio de semana del 8 de junio de 2026',
             'summary': 'Unidad de Fomento publicada por SII para el lunes 8 de junio. Dólar observado del BCCh en $894,29. Mercado espera dato de IPC de mayo del INE el martes 9 de junio: consenso en 0,2% mensual y 3,2% anual. Resultado definirá expectativas de recorte de TPM.',
             'source': 'SII / BCCh',
             'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
