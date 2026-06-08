@@ -1136,6 +1136,123 @@ NEWS_TEMPLATES = {
 }
 
 
+# Noticias específicas del 8 de junio de 2026
+TODAY_NEWS_08JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[8 Jun] Cumbre APEC en Sydney: acuerdo marco sobre cadenas de suministro de minerales críticos favorece a Chile',
+            'summary': 'Los 21 miembros de APEC suscriben declaración que consolida rutas de exportación de litio y cobre procesado. Chile accede a tratamiento arancelario preferencial con Japón, Corea del Sur y Australia. Negociaciones de TLC acelerado con Corea entran en recta final.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[8 Jun] G7 post-cumbre: EE.UU. anuncia paquete de infraestructura verde de USD 600.000M con énfasis en Latinoamérica',
+            'summary': 'Iniciativa Partnership for Global Infrastructure incluye financiamiento preferencial para proyectos de litio y cobre en Chile, Argentina y Brasil. CORFO ya negocia participación en tres proyectos de baterías. Fondos disponibles desde el primer trimestre de 2027.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[8 Jun] S&P 500 abre semana en máximos históricos: inversores anticipan pausa prolongada de la Fed tras datos de empleo',
+            'summary': 'Índice supera los 5.950 puntos en apertura del lunes. Nasdaq +1.2% liderado por semiconductores y IA. VIX cae a 12.4, señalando calma extrema. Mercados emergentes se benefician del dólar débil: CLP y BRL entre las divisas de mayor alza.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[8 Jun] Cobre alcanza USD 5.18/lb al inicio de semana: inventarios LME en mínimos y demanda china robusta',
+            'summary': 'Metal rojo sube 1.6% en la semana tras publicación de datos de importaciones chinas de mayo. Codelco y Anglo American lideran ganancias en bolsas europeas. Goldman Sachs sube objetivo a USD 5.60 para el tercer trimestre de 2026.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[8 Jun] UF $40.678,43 y dólar $894,29: indicadores al inicio de semana del 8 de junio de 2026',
+            'summary': 'Unidad de Fomento publicada por SII para el lunes 8 de junio. Dólar observado del BCCh en $894,29. Mercado espera dato de IPC de mayo del INE el martes 9 de junio: consenso en 0,2% mensual y 3,2% anual. Resultado definirá expectativas de recorte de TPM.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[8 Jun] IPSA abre semana sobre 7.860 puntos: Codelco, SQM y Banco de Chile entre los más activos',
+            'summary': 'Índice bursátil chileno continúa tendencia alcista impulsado por cobre y perspectivas de recorte de TPM. Analistas proyectan cierre de año sobre 8.000 puntos si cobre se mantiene sobre USD 5/lb. Flujo extranjero hacia la bolsa chilena supera USD 380M en lo que va de junio.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[8 Jun] BCCh publica Informe de Política Monetaria (IPoM) de junio: PIB 2026 revisado al alza a 2,8%',
+            'summary': 'Banco Central eleva proyección de crecimiento desde 2,4% ante mejor desempeño de exportaciones y consumo privado. Inflación al cierre de 2026 estimada en 3,0%. Ruta de recorte de TPM con primer movimiento anticipado para agosto si IPC confirma convergencia.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[8 Jun] Open Banking Chile: 45 fintechs ya integradas al ecosistema de APIs bajo NCG 513 de la CMF',
+            'summary': 'Primer mes de vigencia de la normativa de open banking muestra adopción acelerada. Pagos iniciados vía API superaron los 2 millones de transacciones en la primera semana. BancoEstado y Banco de Chile lideran en número de integraciones habilitadas.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[8 Jun] Apple y Google lanzan billeteras digitales interoperables en Chile: cobertura en 98% de comercios habilitados',
+            'summary': 'Ambas plataformas completan integración con el sistema TEF+ de Transbank. Las billeteras operan en pesos, UF y dólares. SBIF reporta que pagos móviles representarán el 35% de las transacciones retail en Chile al cierre de 2026.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[8 Jun] Claude 4 de Anthropic alcanza nivel experto en análisis financiero regulatorio en español: pruebas con CMF',
+            'summary': 'Modelo supera a analistas humanos en velocidad de procesamiento de normativas y detección de cambios regulatorios. CMF evalúa adopción para monitoreo de compliance en tiempo real. Primera implementación piloto en tres bancos chilenos prevista para agosto.',
+            'source': 'VentureBeat AI',
+            'link': 'https://venturebeat.com/category/ai/'
+        },
+        {
+            'title': '[8 Jun] NVIDIA presenta GPU Blackwell Ultra: 4x más potencia para modelos financieros de riesgo y trading algorítmico',
+            'summary': 'Nueva arquitectura reduce el costo de inferencia en 60%. Bancos latinoamericanos podrán procesar modelos de riesgo de crédito en tiempo real a costo accesible. BTG Pactual y Itaú ya son clientes confirmados de la nueva generación.',
+            'source': 'The Rundown AI',
+            'link': 'https://therundown.ai'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[8 Jun] CONFECOOP lanza programa de transformación digital para 180 cooperativas chilenas: subsidio de hasta UF 800',
+            'summary': 'Programa contempla financiamiento para adoptar core bancario en la nube, banca móvil y herramientas de análisis de riesgo con IA. CORFO y el Ministerio de Economía cofinancian el 70% del costo. Postulaciones abiertas hasta el 30 de junio.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[8 Jun] Coopeuch mantiene liderazgo: cartera de créditos supera los USD 6.800M con mora histórica de 1.1%',
+            'summary': 'Mayor cooperativa financiera de Latinoamérica publica resultados del primer semestre con rentabilidad patrimonial de 13.2%. Captaciones a plazo crecen 16% anual. Apertura de 8 nuevas sucursales en regiones anunciada para el segundo semestre.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[8 Jun] CMF publica resultado de stress test bancario 2026: sistema mantiene solvencia ante escenario adverso de recesión',
+            'summary': 'Ejercicio simuló caída de PIB del 3%, desempleo en 12% y alza de mora al 4,5%. Los 12 bancos supervisados mantienen índice de capital sobre el mínimo regulatorio. CMF destaca mejora en gestión de riesgo operacional y ciberseguridad respecto a 2024.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[8 Jun] Petróleo Brent baja a USD 80,5 tras acuerdo OPEP+: impacto moderado en balanza comercial chilena',
+            'summary': 'Arabia Saudita y Rusia acuerdan aumentar producción en 400.000 bbl/día desde julio. Chile, importador neto de petróleo, estima ahorro de USD 280M anual en divisas. Precios de combustibles podrían bajar hasta un 4% en julio si tendencia se mantiene.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[8 Jun] Fitch sube perspectiva de deuda soberana chilena a "positiva": destaca disciplina fiscal y reservas en BCCh',
+            'summary': 'Agencia mantiene nota A- pero mejora el outlook desde "estable". Cita fortaleza del sector exportador, baja deuda neta y política monetaria creíble. Siguiente hito para upgrade: consolidación del IPC en torno al 3% durante doce meses consecutivos.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1154,6 +1271,7 @@ def generate_dynamic_news():
         '20260603': TODAY_NEWS_03JUN2026,
         '20260604': TODAY_NEWS_04JUN2026,
         '20260605': TODAY_NEWS_05JUN2026,
+        '20260608': TODAY_NEWS_08JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 

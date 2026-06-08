@@ -16,9 +16,13 @@ jobs:
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
       - name: Configurar Python 3.11
         uses: actions/setup-python@v5
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -44,6 +48,8 @@ jobs:
           NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PYTHONUTF8: "1"
+          LC_ALL: "en_US.UTF-8"
+          LANG: "en_US.UTF-8"
         run: python generate_newsletter_v4.py
 
       - name: Exportar formatos (PDF, JSON, CSV)
