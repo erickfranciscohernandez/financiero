@@ -21,8 +21,15 @@ CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
 
-# Datos de respaldo — normativa representativa 03-jun-2026
+# Datos de respaldo — normativa representativa 09-jun-2026
 MOCK_NORMATIVA = [
+    {
+        'tipo':   'Norma de Carácter General',
+        'numero': 'NCG 514',
+        'materia': 'Prevención de lavado de activos y financiamiento del terrorismo para operadores de activos digitales y exchanges bajo supervisión CMF',
+        'inicio': '03/06/2026',
+        'termino': '18/07/2026',
+    },
     {
         'tipo':   'Norma de Carácter General',
         'numero': 'NCG 513',
@@ -36,13 +43,6 @@ MOCK_NORMATIVA = [
         'materia': 'Publicación obligatoria de Costo Total del Crédito (CTC) en lenguaje ciudadano para bancos, cooperativas y emisores de tarjetas',
         'inicio': '03/06/2026',
         'termino': '03/07/2026',
-    },
-    {
-        'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 512',
-        'materia': 'Modifica requisitos de capital y liquidez para cooperativas de ahorro y crédito con activos superiores a UF 400.000',
-        'inicio': '12/05/2026',
-        'termino': '12/06/2026',
     },
     {
         'tipo':   'Circular',
@@ -66,11 +66,18 @@ MOCK_NORMATIVA = [
         'termino': '17/06/2026',
     },
     {
+        'tipo':   'Circular',
+        'numero': 'N° 2.237',
+        'materia': 'Requisitos de ciberseguridad y continuidad operacional para entidades bancarias y de infraestructura financiera crítica bajo estándar DORA adaptado',
+        'inicio': '09/06/2026',
+        'termino': '09/07/2026',
+    },
+    {
         'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 514',
-        'materia': 'Prevención de lavado de activos y financiamiento del terrorismo para operadores de activos digitales y exchanges bajo supervisión CMF',
-        'inicio': '03/06/2026',
-        'termino': '18/07/2026',
+        'numero': 'NCG 515',
+        'materia': 'Estándares de divulgación de sostenibilidad para emisores de valores: alineación con marcos ISSB (IFRS S1 y S2) y taxonomía verde chilena',
+        'inicio': '09/06/2026',
+        'termino': '25/07/2026',
     },
 ]
 

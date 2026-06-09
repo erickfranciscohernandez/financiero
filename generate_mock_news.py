@@ -1253,6 +1253,123 @@ TODAY_NEWS_08JUN2026 = {
 }
 
 
+# Noticias específicas del 9 de junio de 2026
+TODAY_NEWS_09JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[9 Jun] G7 activa fondo de USD 50.000M para infraestructura de minerales críticos: Chile receptor prioritario',
+            'summary': 'El mecanismo de financiamiento del G7 habilita créditos blandos a 20 años para proyectos de litio y cobre procesado. Chile es el único país de América del Sur con acceso directo en la primera fase. CORFO y Hacienda ya preparan dos proyectos para postular antes de agosto.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[9 Jun] Tensiones en el Mar Rojo escalan: nuevo ataque a buque portacontenedores eleva prima de seguros marítimos',
+            'summary': 'Cuarto incidente en diez días encoge el tráfico por el Canal de Suez en un 18%. Costo de flete Asia-Europa sube 12% en la semana. Impacto en Chile: encarecimiento de importaciones industriales y retraso en cadenas de suministro manufacturero estimado en 3-4 semanas.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[9 Jun] Fed Watch: inflación PCE de mayo confirma tendencia; mercado asigna 82% de probabilidad a recorte en septiembre',
+            'summary': 'Datos de precios al consumidor en EE.UU. consolidan desinflación gradual. Curva de rendimientos se aplana. Índice DXY cae 0,3% en la sesión. Mercados emergentes se benefician: flujos hacia deuda soberana latinoamericana alcanzan USD 2.400M en la semana.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[9 Jun] Cobre cierra sobre USD 5.20/lb: tercer día consecutivo de alza impulsado por déficit de oferta y demanda china',
+            'summary': 'Inventarios en LME caen a 108.000 toneladas, nivel más bajo desde 2004. China importó 580.000 toneladas en mayo, un 9% más que el año anterior. Analistas de Citigroup elevan objetivo a USD 5.80 para fin de año.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[9 Jun] IPC mayo 2026: INE reporta 0,2% mensual y 3,1% anual — por debajo del consenso, abre espacio para recorte de TPM',
+            'summary': 'Inflación del mes de mayo sorprende levemente a la baja: el consenso esperaba 3,2% anual. Vivienda y servicios siguen presionando, pero alimentos y combustibles compensan. BCCh podría adelantar el primer recorte de la TPM a agosto desde la proyección base de septiembre.',
+            'source': 'INE / Banco Central de Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[9 Jun] UF $40.746,28 y dólar $910,29: mercado reacciona al IPC con apreciación del peso de 0,4%',
+            'summary': 'Tipo de cambio cede ante dato de inflación más bajo de lo esperado. Operadores proyectan dólar en rango $895-$915 durante junio si la tendencia desinflacionaria se mantiene. Bonos en UF pierden atractivo relativo: spread BTP-UF se comprime 8 puntos base.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[9 Jun] IPSA sube 1,3% tras IPC: bancos y utilities lideran al primar expectativas de recorte de tasas',
+            'summary': 'Índice bursátil alcanza 7.942 puntos en la sesión, máximo del año. Banco de Chile +2,1%, Banco Santander +1,9% y Engie Chile +2,4% encabezan las ganancias. Volumen de transacciones supera en 41% el promedio de las últimas 20 ruedas.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[9 Jun] CMF y Ministerio de Hacienda lanzan sandbox de open banking: 60 fintechs en lista de espera para integración',
+            'summary': 'Plataforma permite a empresas fintech conectarse a APIs bancarias bajo supervisión regulatoria en tiempo real. Primeras integraciones operativas incluyen agregación de cuentas, iniciación de pagos y consulta de historial crediticio. Apertura masiva prevista para septiembre de 2026.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[9 Jun] BancoEstado lanza app de inversión en UF para personas: rentabilidad mínima garantizada de inflación + 1%',
+            'summary': 'Producto digital sin comisiones permite invertir desde UF 1 en instrumentos del BCCh. Primer mes sin restricciones de liquidez. Más de 80.000 descargas en las primeras 24 horas. Compite directamente con fondos mutuos de deuda de administradoras privadas.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[9 Jun] BCCh integra IA generativa en su sistema de monitoreo de inflación: procesa 12.000 precios diarios en tiempo real',
+            'summary': 'Sistema piloto reduce el tiempo de detección de presiones inflacionarias de dos semanas a 48 horas. Primer banco central latinoamericano en publicar un modelo de nowcasting de IPC basado en LLMs con datos de e-commerce y supermercados.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[9 Jun] Startup chilena Buda.com lanza agente de IA para trading de criptoactivos regulados bajo CMF',
+            'summary': 'Plataforma de activos digitales integra modelo de lenguaje para análisis de sentimiento de mercado y ejecución automatizada. Opera bajo supervisión de la CMF como exchange regulado. Primera solución de trading algorítmico con IA en el mercado chileno supervisado.',
+            'source': 'VentureBeat AI',
+            'link': 'https://venturebeat.com/category/ai/'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[9 Jun] IPC bajo fortalece proyecciones del sector cooperativo: crédito hipotecario en UF retoma dinamismo',
+            'summary': 'Las cooperativas de ahorro y crédito ven reducirse el costo de fondeo ante expectativas de recorte de TPM. Coopeuch y Detacoop anticipan rebaja de tasas hipotecarias de entre 15 y 25 puntos base para julio. Demanda de crédito habitacional cooperativo proyecta alza de 20% en el segundo semestre.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[9 Jun] Sector cooperativo chileno suma 4,2 millones de socios activos: penetración del 20% de la población adulta',
+            'summary': 'Informe semestral de CONFECOOP revela que una de cada cinco personas adultas en Chile pertenece a una cooperativa financiera. Crecimiento de 8,3% en nuevos socios en los últimos doce meses. Regiones de La Araucanía y Los Lagos lideran en incorporación.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[9 Jun] CMF lanza consulta pública sobre regulación de activos digitales y stablecoins: plazo hasta el 18 de julio',
+            'summary': 'Normativa NCG 514 extiende la supervisión a exchanges y emisores de monedas estables en Chile. Empresas deben registrarse antes del 1° de enero de 2027 bajo los requisitos de capital, prevención de lavado de activos y custodia segregada. Industria cripto tiene 18 meses para adaptarse.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[9 Jun] Hacienda: IPC de mayo confirma convergencia a meta del 3%; regla fiscal sin cambios para el segundo semestre',
+            'summary': 'Ministro de Hacienda celebra dato de inflación y descarta ajustes al presupuesto 2026. Superávit fiscal acumulado enero-mayo en 0,4% del PIB. Emisión de bonos soberanos en UF por UF 3,5 millones programada para julio con demanda proyectada de 3,2 veces la oferta.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+        {
+            'title': '[9 Jun] Precios de la vivienda nueva en Santiago suben 2,1% real en el primer trimestre: tasas más bajas reactivarán mercado',
+            'summary': 'CChC proyecta aceleración del mercado inmobiliario en el segundo semestre ante expectativa de recorte de tasas. Comunas de Santiago, Las Condes y Ñuñoa concentran el 58% de las ventas. Déficit habitacional acumulado supera las 650.000 unidades según Minvu.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1272,6 +1389,7 @@ def generate_dynamic_news():
         '20260604': TODAY_NEWS_04JUN2026,
         '20260605': TODAY_NEWS_05JUN2026,
         '20260608': TODAY_NEWS_08JUN2026,
+        '20260609': TODAY_NEWS_09JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
