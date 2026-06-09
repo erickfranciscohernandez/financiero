@@ -1,15 +1,29 @@
 {
-  "fecha": "2026-06-09T11:46:28.257603",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-09T13:20:15.309239",
+  "total_alertas": 6,
+  "alertas_criticas": 6,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
+      "titulo": "[9 Jun] G7 activa fondo de USD 50.000M para infraestructura de minerales críticos: Chile receptor prioritario",
+      "seccion": "geopolitica",
+      "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
+      "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com"
+    },
+    {
+      "titulo": "[9 Jun] Cobre cierra sobre USD 5.20/lb: tercer día consecutivo de alza impulsado por déficit de oferta y demanda china",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
     },
     {
       "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
@@ -19,11 +33,18 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }
