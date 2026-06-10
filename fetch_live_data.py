@@ -197,7 +197,7 @@ MOCK_DATA = {
     'uf':      {'valor': 40765.00, 'fecha': '2026-06-10', 'fuente': 'SII (10-jun-2026)', 'mock': True},
     'utm':     {'valor': 71506.0,  'fecha': '2026-06-10', 'fuente': 'BCCh (10-jun-2026)', 'mock': True},
     'tpm':     {'valor': 4.50,     'fecha': '2026-06-10', 'fuente': 'BCCh (10-jun-2026)', 'mock': True},
-    'usd_clp': {'valor': 910.29,   'fecha': '2026-06-10', 'fuente': 'BCCh SI3 (10-jun-2026)', 'mock': True},
+    'usd_clp': {'valor': 916.39,   'fecha': '2026-06-10', 'fuente': 'BCCh SI3 (10-jun-2026)', 'mock': True},
 }
 
 INDICADORES_META = {
