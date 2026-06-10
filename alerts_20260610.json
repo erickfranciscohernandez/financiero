@@ -1,22 +1,29 @@
 {
-  "fecha": "2026-06-10T11:04:04.157536",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-06-10T12:31:36.317783",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
+      "titulo": "[10 Jun] Cumbre bilateral EE.UU.-China en Viena: acuerdo parcial en IA militar y apertura de negociaciones comerciales",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
+      "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "[10 Jun] IPSA consolida máximos del año en 7.960 pts: litio, cobre y expectativa de recorte de TPM impulsan rally",
+      "seccion": "noticias_economicas_actuales",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bolsadesantiago.com"
     }
   ]
 }
