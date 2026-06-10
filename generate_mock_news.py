@@ -1370,6 +1370,123 @@ TODAY_NEWS_09JUN2026 = {
 }
 
 
+# Noticias específicas del 10 de junio de 2026
+TODAY_NEWS_10JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[10 Jun] Cumbre bilateral EE.UU.-China en Viena: acuerdo parcial en IA militar y apertura de negociaciones comerciales',
+            'summary': 'Secretario de Estado Rubio y canciller Wang Yi acuerdan moratoria de 18 meses en despliegue de IA en sistemas de armas autónomas. Pausa en escalada arancelaria sobre manufactura liviana. Mercados asiáticos reaccionan con alza generalizada; cobre toca nuevo máximo semanal.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[10 Jun] OCDE eleva proyección de crecimiento global 2026 a 3,2%: baja de tasas en economías avanzadas dinamiza inversión',
+            'summary': 'Organismo revisa al alza el crecimiento de EE.UU. (2,6%), la eurozona (1,4%) y China (4,9%). América Latina sube a 2,8% liderada por Chile (3,0%) y Colombia (3,4%). Riesgos principales: escalada en el Mar Rojo y volatilidad en precios de energía.',
+            'source': 'OECD',
+            'link': 'https://www.oecd.org'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[10 Jun] Fed mantiene tasas: Powell reafirma recorte en septiembre si inflación confirma convergencia en próximos dos meses',
+            'summary': 'Comunicado de la Fed reconoce progreso sostenido hacia el objetivo del 2%. Mercados de futuros asignan 85% de probabilidad al primer recorte en septiembre. Dólar DXY cede 0,4%; bonos del Tesoro a 10 años caen 8 pb a 4,12%. Flujos hacia emergentes se aceleran.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[10 Jun] Litio: precio del carbonato sube 6% en el mes ante recorte de producción de Australia y mayor demanda de baterías EV',
+            'summary': 'Alkem Resources suspende operaciones en Pilbara por costos. SQM y Codelco Litio se benefician directamente. Goldman Sachs proyecta déficit de 45.000 toneladas equivalentes de litio en el segundo semestre. Precio spot en USD 14.800/tonelada, máximo desde octubre 2025.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[10 Jun] BCCh: IPC de mayo valida escenario base del IPoM; siguiente reunión de TPM el 17 de junio con recorte posible',
+            'summary': 'Consejeros del Banco Central señalan que el dato de 3,1% anual del IPC abre espacio para recorte precautorio de 25 pb en la reunión del 17 de junio. Sería el primero desde enero 2025. Mercados de swaps ya descuentan recorte con 71% de probabilidad.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[10 Jun] UF $40.746,28 y dólar $910,29: peso chileno se estabiliza tras datos de inflación y señales de BCCh',
+            'summary': 'Mercado cambiario consolida posiciones a la espera de la reunión de política monetaria del 17 de junio. Operadores esperan dólar en rango $900-$920 durante la semana. Posición de reservas internacionales del BCCh alcanza USD 43.800M, máximo histórico.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[10 Jun] Imacec de abril 2026: actividad económica creció 3,4% anual, superando el consenso de 3,1%',
+            'summary': 'INE publica expansión económica impulsada por minería (+6,2%), construcción (+4,1%) y comercio (+2,8%). Sector servicios crece 2,9%. Acumulado enero-abril: +3,0% anual. BCCh mantiene proyección de PIB 2026 en 2,8% pero con sesgo al alza.',
+            'source': 'INE / Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[10 Jun] Transbank reporta récord de transacciones digitales en mayo: 340 millones de operaciones, un 28% más que hace un año',
+            'summary': 'Pagos sin contacto y transferencias instantáneas TEF+ lideran el crecimiento. El 62% de las transacciones se realizó vía smartphone. Fraude digital cae a 0,003% del total gracias a nuevos modelos de detección basados en IA desplegados en marzo.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[10 Jun] SII digitaliza fiscalización con IA: detecta inconsistencias en declaraciones de renta en tiempo real',
+            'summary': 'Nuevo sistema de auditoría predictiva identifica anomalías en 48 horas versus 6 meses del proceso manual. 14.200 contribuyentes notificados en la primera semana. Recaudación adicional proyectada de USD 180M al año por mejora en cumplimiento voluntario.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[10 Jun] Google lanza Gemini 3 Ultra con especialización financiera para Latinoamérica: acceso gratuito para bancos chilenos',
+            'summary': 'Modelo multimodal procesa estados financieros, contratos y normativa regulatoria en español. Integración nativa con Google Cloud y APIs del sistema financiero chileno. SBIF pilotea el modelo para detección de blanqueo de capitales en flujos de alto riesgo.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+        {
+            'title': '[10 Jun] CMF emite circular preliminar sobre uso de IA en scoring crediticio: tres principios de obligatorio cumplimiento desde 2027',
+            'summary': 'Los principios son: explicabilidad (el cliente puede conocer los factores de rechazo), auditabilidad (registro completo del proceso) y no discriminación (prueba estadística trimestral). Bancos y fintechs tienen hasta el 31 de marzo de 2027 para implementarlos.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[10 Jun] Cooperativas chilenas proyectan rebaja de tasas hipotecarias al 3,8% UF si BCCh recorta TPM el 17 de junio',
+            'summary': 'Coopeuch, Detacoop y CrediCoop Chile anuncian ajuste inmediato de tasas si el Banco Central baja la TPM 25 pb. Para un crédito hipotecario de UF 2.000 a 20 años, el dividendo mensual bajaría en aproximadamente UF 0,8. Demanda reprimida de 38.000 solicitudes en lista de espera.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[10 Jun] Alianza Cooperativa Internacional certifica a tres cooperativas chilenas con sello de Excelencia Financiera 2026',
+            'summary': 'Coopeuch, Oriencoop y Capual reciben certificación internacional que reconoce solidez patrimonial, gobernanza y gestión de riesgo. Chile lidera el ranking regional con más cooperativas certificadas por tercer año consecutivo.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[10 Jun] CMF aprueba primera licencia bancaria digital nativa en Chile: FinBank obtiene autorización de operación plena',
+            'summary': 'Entidad 100% digital sin sucursales físicas recibe autorización para captar depósitos y otorgar créditos. Capital mínimo de UF 800.000 completamente integrado. Operaciones masivas previstas desde septiembre 2026. Se suma a los tres bancos digitales que operan bajo licencia de banco de menor tamaño.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[10 Jun] IPSA consolida máximos del año en 7.960 pts: litio, cobre y expectativa de recorte de TPM impulsan rally',
+            'summary': 'SQM lidera con +3,8% semanal ante alza del litio. Codelco Rojo (instrumento proxy) sube 2,1%. Administradoras de fondos de pensiones aumentan exposición a renta variable local en USD 420M durante la semana. Flujo extranjero neto positivo por cuarta semana consecutiva.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[10 Jun] Ventas del comercio minorista mayo 2026: crecen 4,2% real anual, mejor resultado desde agosto 2024',
+            'summary': 'INE confirma recuperación del consumo privado. Comercio electrónico sube 18% y representa el 24% del total. Líneas blancas y electrónica lideran. Cámara de Comercio de Santiago proyecta segunda mitad del año con crecimiento sobre 5% si la TPM baja en junio.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1390,6 +1507,7 @@ def generate_dynamic_news():
         '20260605': TODAY_NEWS_05JUN2026,
         '20260608': TODAY_NEWS_08JUN2026,
         '20260609': TODAY_NEWS_09JUN2026,
+        '20260610': TODAY_NEWS_10JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
