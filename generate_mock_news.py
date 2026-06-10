@@ -1408,7 +1408,7 @@ TODAY_NEWS_10JUN2026 = {
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': '[10 Jun] UF $40.746,28 y dólar $910,29: peso chileno se estabiliza tras datos de inflación y señales de BCCh',
+            'title': '[10 Jun] UF $40.765 y dólar $910,29: peso chileno se estabiliza tras datos de inflación y señales de BCCh',
             'summary': 'Mercado cambiario consolida posiciones a la espera de la reunión de política monetaria del 17 de junio. Operadores esperan dólar en rango $900-$920 durante la semana. Posición de reservas internacionales del BCCh alcanza USD 43.800M, máximo histórico.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
