@@ -1,29 +1,29 @@
 {
-  "fecha": "2026-06-11T13:31:31.738671",
+  "fecha": "2026-06-11T13:42:39.212733",
   "total_alertas": 3,
   "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "titulo": "[11 Jun] Banco Mundial eleva proyección de crecimiento para Chile a 3,1% en 2026: mejor perspectiva de la región",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "[11 Jun] Cobre supera USD 5,25/lb: nuevo máximo de 2026 ante datos de producción industrial china y déficit estructural",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
+      "enlace": "https://www.bloomberg.com/commodities"
     },
     {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "titulo": "[11 Jun] Exportaciones chilenas enero-mayo: USD 40.800M, alza de 9,3% anual impulsadas por cobre, litio y frutas",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.bcentral.cl"
     }
   ]
 }
