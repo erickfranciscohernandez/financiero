@@ -1408,8 +1408,8 @@ TODAY_NEWS_10JUN2026 = {
             'link': 'https://www.bcentral.cl'
         },
         {
-            'title': '[10 Jun] UF $40.768,69 y dólar $916,39: peso chileno presionado al alza pese a señales de recorte de BCCh',
-            'summary': 'Tipo de cambio observado del BCCh en $916,39, al alza respecto a la semana anterior. Mercado cambiario enfrenta presión de demanda corporativa de fin de mes. Operadores esperan dólar en rango $910-$930 durante la semana. Reservas internacionales del BCCh en USD 43.800M.',
+            'title': '[10 Jun] UF $40.768,69 y dólar $915,97: indicadores al 10 de junio de 2026',
+            'summary': 'Tipo de cambio observado del BCCh en $915,97. Mercado cambiario consolida posiciones a la espera de la reunión de política monetaria del 17 de junio. Operadores esperan dólar en rango $910-$930 durante la semana. Reservas internacionales del BCCh en USD 43.800M.',
             'source': 'Banco Central de Chile',
             'link': 'https://www.bcentral.cl'
         },
