@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-11T13:42:39.212733",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-11T22:31:41.020224",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,6 +17,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     },
     {
       "titulo": "[11 Jun] Exportaciones chilenas enero-mayo: USD 40.800M, alza de 9,3% anual impulsadas por cobre, litio y frutas",
