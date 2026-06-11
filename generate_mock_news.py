@@ -1487,6 +1487,123 @@ TODAY_NEWS_10JUN2026 = {
 }
 
 
+# Noticias específicas del 11 de junio de 2026
+TODAY_NEWS_11JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[11 Jun] Tensiones comerciales EE.UU.-UE: acuerdo arancelario sobre acero verde abre mercado para exportaciones chilenas',
+            'summary': 'Washington y Bruselas firman protocolo que exime de aranceles al acero producido con energías renovables. Chile, con matriz eléctrica 60% renovable, queda en posición privilegiada para exportar acero verde. CORFO estima potencial de USD 2.400M en nuevas exportaciones para 2028.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[11 Jun] Banco Mundial eleva proyección de crecimiento para Chile a 3,1% en 2026: mejor perspectiva de la región',
+            'summary': 'Informe semestral destaca solidez fiscal, baja inflación y términos de intercambio favorables por cobre y litio. Chile lidera ranking de perspectivas entre economías latinoamericanas. Único país de la región con calificación de riesgo en rango A de las tres principales agencias.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[11 Jun] Mercados globales consolidan ganancias: S&P 500 supera 5.980 pts ante expectativa de recortes de tasas en julio',
+            'summary': 'Bolsas en máximos históricos impulsadas por datos de inflación favorables en EE.UU. y Europa. Bonos del Tesoro a 10 años en 4,08%, mínimo desde enero. Flujos hacia emergentes alcanzan USD 12.000M en la semana, récord mensual.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[11 Jun] Cobre supera USD 5,25/lb: nuevo máximo de 2026 ante datos de producción industrial china y déficit estructural',
+            'summary': 'PMI manufacturero chino de mayo confirma expansión por cuarto mes consecutivo. Codelco anuncia inversión de USD 1.800M en ampliación de El Teniente. Goldman Sachs eleva objetivo a USD 5,90 para Q4 2026.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[11 Jun] UF $40.768,69 y dólar $915,97: indicadores al 11 de junio — peso se fortalece por cobre y expectativa de TPM',
+            'summary': 'Unidad de Fomento publicada por SII para el jueves 11 de junio en $40.768,69. Dólar observado del BCCh en $915,97. Mercado aguarda reunión de política monetaria del 17 de junio con alta probabilidad de recorte de 25 pb. Peso acumula apreciación de 1,2% en la semana.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[11 Jun] Exportaciones chilenas enero-mayo: USD 40.800M, alza de 9,3% anual impulsadas por cobre, litio y frutas',
+            'summary': 'BCCh confirma superávit comercial acumulado de USD 8.500M. Cobre representa el 52% del total, litio el 11% con crecimiento del 34% anual. Destino Asia concentra el 68% de las exportaciones. Diversificación exportadora avanza con frutas premium y vinos de calidad.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[11 Jun] IPSA rompe récord intradiario de 7.990 pts: inversionistas anticipan recorte de TPM y rally de renta variable',
+            'summary': 'Bolsa chilena acumula alza de 3,8% en junio. SQM +6,2%, Codelco Rojo +4,1% y Banco de Chile +3,3% lideran. Administradoras AFP aumentan posición en acciones locales en USD 680M durante el mes. Flujo extranjero neto positivo por quinta semana consecutiva.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[11 Jun] Fintechs chilenas recaudan USD 340M en primer semestre 2026: récord histórico de inversión en el sector',
+            'summary': 'CORFO y StartupChile reportan 18 rondas de financiamiento en el período. Tres unicornios en proceso de due diligence. Pagos digitales, crédito alternativo e inversión automatizada concentran el 74% de los fondos. Chile consolida liderazgo fintech en América del Sur.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[11 Jun] Portal de datos abiertos del SII alcanza 2 millones de consultas diarias: fintechs y pymes son los principales usuarios',
+            'summary': 'Plataforma de APIs del SII permite verificación de facturas, consulta de deuda tributaria y validación de rut en tiempo real. Integración con 340 aplicaciones de terceros. Gobierno anuncia extensión al sistema de registros de la CMF para tercer trimestre.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[11 Jun] Ministerio de Hacienda usa IA para proyecciones fiscales: modelo predice recaudación con error menor al 0,3%',
+            'summary': 'Sistema desarrollado con Dirección de Presupuestos procesa 48 variables macroeconómicas en tiempo real. Reduce en 80% el tiempo de elaboración del informe de finanzas públicas mensual. Primer uso de IA generativa en gestión fiscal de un gobierno latinoamericano.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+        {
+            'title': '[11 Jun] OpenAI lanza GPT-5 Finance con especialización en regulación financiera latinoamericana: acceso para bancos chilenos',
+            'summary': 'Modelo fine-tuned sobre normativa CMF, BCCh, SII y regulación de 12 países latinoamericanos. Procesa contratos, resoluciones y circulares en minutos. Tres bancos chilenos ya en piloto para automatización de compliance y revisión de contratos de crédito.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[11 Jun] Detacoop anuncia rebaja de tasa hipotecaria a 3,9% UF anticipando recorte de BCCh el 17 de junio',
+            'summary': 'La cooperativa adelanta el ajuste de tasas antes de la reunión del Banco Central. Para un crédito de UF 2.500 a 20 años, el dividendo mensual bajaría en UF 1,2. Postulaciones abiertas con tasas congeladas hasta el 30 de junio para quienes formalicen esta semana.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[11 Jun] CONFECOOP presenta proyecto de ley para exención tributaria de excedentes cooperativos reinvertidos en capital',
+            'summary': 'Propuesta busca equiparar el tratamiento fiscal de las cooperativas con el de las sociedades anónimas que retienen utilidades. Proyecto ingresado a la Cámara con apoyo de 34 diputados de distintos sectores. Impacto estimado: aumento de 18% en capitalización del sector en cinco años.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[11 Jun] CMF publica balance del primer año de la Ley Fintech: 94 empresas inscritas, USD 1.200M en transacciones supervisadas',
+            'summary': 'Un año después de la entrada en vigor de la Ley 21.521, el ecosistema fintech chileno suma 94 entidades bajo supervisión CMF. Pagos digitales concentran el 61% de las operaciones. La comisión anuncia segunda fase de open banking para agosto con apertura de datos de inversiones.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[11 Jun] Litio carbonato supera USD 15.000/ton: SQM y Albemarle reportan márgenes récord en el trimestre',
+            'summary': 'Precio del litio acumula alza de 22% en el segundo trimestre ante caída de producción australiana y aumento de demanda de baterías para vehículos eléctricos. Chile captura el 35% del mercado global de litio procesado. SQM eleva guidance de producción 2026 en 15%.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[11 Jun] Tasa de desempleo mayo 2026: INE reporta 8,1%, nueva baja mensual impulsada por servicios y construcción',
+            'summary': 'Mercado laboral continúa su recuperación. Empleo formal crece 3,1% en doce meses. Mujeres en empleo formal superan el 44% por primera vez en la historia. BCCh incorpora dato en modelo para reunión del 17 de junio.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1508,6 +1625,7 @@ def generate_dynamic_news():
         '20260608': TODAY_NEWS_08JUN2026,
         '20260609': TODAY_NEWS_09JUN2026,
         '20260610': TODAY_NEWS_10JUN2026,
+        '20260611': TODAY_NEWS_11JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 

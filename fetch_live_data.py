@@ -193,11 +193,17 @@ def fetch_mindicador():
 
 # ── Capa 4: Mock ─────────────────────────────────────────────────────────────
 
+# Anulación manual de indicadores (prioridad máxima — vaciar para usar scrapers)
+MANUAL_OVERRIDE = {
+    'uf':      {'valor': 40768.69, 'fecha': '2026-06-11', 'fuente': 'SII (11-jun-2026)'},
+    'usd_clp': {'valor': 915.97,   'fecha': '2026-06-11', 'fuente': 'BCCh SI3 (11-jun-2026)'},
+}
+
 MOCK_DATA = {
-    'uf':      {'valor': 40768.69, 'fecha': '2026-06-10', 'fuente': 'SII (10-jun-2026)', 'mock': True},
-    'utm':     {'valor': 71506.0,  'fecha': '2026-06-10', 'fuente': 'BCCh (10-jun-2026)', 'mock': True},
-    'tpm':     {'valor': 4.50,     'fecha': '2026-06-10', 'fuente': 'BCCh (10-jun-2026)', 'mock': True},
-    'usd_clp': {'valor': 915.97,   'fecha': '2026-06-10', 'fuente': 'BCCh SI3 (10-jun-2026)', 'mock': True},
+    'uf':      {'valor': 40768.69, 'fecha': '2026-06-11', 'fuente': 'SII (11-jun-2026)', 'mock': True},
+    'utm':     {'valor': 71506.0,  'fecha': '2026-06-11', 'fuente': 'BCCh (11-jun-2026)', 'mock': True},
+    'tpm':     {'valor': 4.50,     'fecha': '2026-06-11', 'fuente': 'BCCh (11-jun-2026)', 'mock': True},
+    'usd_clp': {'valor': 915.97,   'fecha': '2026-06-11', 'fuente': 'BCCh SI3 (11-jun-2026)', 'mock': True},
 }
 
 INDICADORES_META = {
@@ -212,43 +218,51 @@ INDICADORES_META = {
 
 def fetch_all_indicators():
     print('\n📊 FETCH LIVE DATA\n')
+    # Aplicar anulaciones manuales primero (máxima prioridad)
     indicadores = {}
+    for k, v in MANUAL_OVERRIDE.items():
+        indicadores[k] = v
+        print(f'   🔒 Override manual: {k} = {v["valor"]}')
 
-    # UF: SII primero
-    print('🏛️  Consultando UF en sii.cl...')
-    try:
-        uf = fetch_uf_sii()
-        if uf:
-            indicadores['uf'] = uf
-            print(f'   ✅ UF desde SII: ${uf["valor"]:,.2f}')
-        else:
-            print('   ⚠️  SII: sin resultado, usando fallback')
-    except Exception as e:
-        print(f'   ⚠️  SII: {e}')
 
-    # Dólar: SII primero
-    print('🏛️  Consultando dólar en sii.cl...')
-    try:
-        usd = fetch_usd_sii()
-        if usd:
-            indicadores['usd_clp'] = usd
-            print(f'   ✅ Dólar desde SII: ${usd["valor"]:,.2f}')
-        else:
-            print('   ⚠️  SII: sin resultado, usando fallback')
-    except Exception as e:
-        print(f'   ⚠️  SII dólar: {e}')
+    # UF: SII primero (omitir si hay override manual)
+    if 'uf' not in indicadores:
+        print('🏛️  Consultando UF en sii.cl...')
+        try:
+            uf = fetch_uf_sii()
+            if uf:
+                indicadores['uf'] = uf
+                print(f'   ✅ UF desde SII: ${uf["valor"]:,.2f}')
+            else:
+                print('   ⚠️  SII: sin resultado, usando fallback')
+        except Exception as e:
+            print(f'   ⚠️  SII: {e}')
 
-    # UTM: SII primero
-    print('🏛️  Consultando UTM en sii.cl...')
-    try:
-        utm = fetch_utm_sii()
-        if utm:
-            indicadores['utm'] = utm
-            print(f'   ✅ UTM desde SII: ${utm["valor"]:,.0f}')
-        else:
-            print('   ⚠️  SII: sin resultado, usando fallback')
-    except Exception as e:
-        print(f'   ⚠️  SII UTM: {e}')
+    # Dólar: SII primero (omitir si hay override manual)
+    if 'usd_clp' not in indicadores:
+        print('🏛️  Consultando dólar en sii.cl...')
+        try:
+            usd = fetch_usd_sii()
+            if usd:
+                indicadores['usd_clp'] = usd
+                print(f'   ✅ Dólar desde SII: ${usd["valor"]:,.2f}')
+            else:
+                print('   ⚠️  SII: sin resultado, usando fallback')
+        except Exception as e:
+            print(f'   ⚠️  SII dólar: {e}')
+
+    # UTM: SII primero (omitir si hay override manual)
+    if 'utm' not in indicadores:
+        print('🏛️  Consultando UTM en sii.cl...')
+        try:
+            utm = fetch_utm_sii()
+            if utm:
+                indicadores['utm'] = utm
+                print(f'   ✅ UTM desde SII: ${utm["valor"]:,.0f}')
+            else:
+                print('   ⚠️  SII: sin resultado, usando fallback')
+        except Exception as e:
+            print(f'   ⚠️  SII UTM: {e}')
 
     # BCCh SI3 para lo que falte
     if BCENTRAL_USER and BCENTRAL_PASS:
