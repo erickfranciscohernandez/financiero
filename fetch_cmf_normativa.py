@@ -21,63 +21,42 @@ CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
 
-# Datos de respaldo — normativa representativa 09-jun-2026
+# Datos de respaldo — normativa vigente extraída de cmfchile.cl el 10-jun-2026
 MOCK_NORMATIVA = [
     {
-        'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 514',
-        'materia': 'Prevención de lavado de activos y financiamiento del terrorismo para operadores de activos digitales y exchanges bajo supervisión CMF',
-        'inicio': '03/06/2026',
-        'termino': '18/07/2026',
-    },
-    {
-        'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 513',
-        'materia': 'Open Banking: estándar de APIs y requisitos de seguridad para proveedores de servicios financieros bajo Ley 21.521',
-        'inicio': '02/06/2026',
-        'termino': '02/07/2026',
+        'tipo':   'Circular',
+        'numero': 'Mod. N°2.062',
+        'materia': 'Modificación Circular N°2062, que instruye respecto al tratamiento de recálculo de pensión, en pólizas de seguros de renta vitalicia del D.L. N°3.500, de 1980.',
+        'inicio': '10/06/2026',
+        'termino': '08/07/2026',
     },
     {
         'tipo':   'Circular',
-        'numero': 'N° 2.236',
-        'materia': 'Publicación obligatoria de Costo Total del Crédito (CTC) en lenguaje ciudadano para bancos, cooperativas y emisores de tarjetas',
-        'inicio': '03/06/2026',
-        'termino': '03/07/2026',
+        'numero': '—',
+        'materia': 'Imparte instrucciones relativas al Envío de información para Intermediarios de Valores y Corredores de Bolsa de Productos sobre patrimonio mínimo, garantías, liquidez y endeudamiento.',
+        'inicio': '01/06/2026',
+        'termino': '26/06/2026',
     },
     {
         'tipo':   'Circular',
-        'numero': 'N° 2.235',
-        'materia': 'Uso de inteligencia artificial en modelos de scoring crediticio: requisitos de explicabilidad, auditoría externa y no discriminación',
-        'inicio': '28/05/2026',
-        'termino': '28/06/2026',
-    },
-    {
-        'tipo':   'Circular',
-        'numero': 'N° 2.234',
-        'materia': 'Transparencia en comisiones de fondos mutuos y de inversión: obligación de publicar Ratio de Gastos Total (TER) estandarizado',
-        'inicio': '20/05/2026',
-        'termino': '20/06/2026',
-    },
-    {
-        'tipo':   'Resolución Exenta',
-        'numero': 'N° 8.901',
-        'materia': 'Gestión de riesgo climático y de transición: requerimientos de divulgación para compañías de seguros generales',
-        'inicio': '02/06/2026',
-        'termino': '17/06/2026',
-    },
-    {
-        'tipo':   'Circular',
-        'numero': 'N° 2.237',
-        'materia': 'Requisitos de ciberseguridad y continuidad operacional para entidades bancarias y de infraestructura financiera crítica bajo estándar DORA adaptado',
-        'inicio': '09/06/2026',
-        'termino': '09/07/2026',
+        'numero': '—',
+        'materia': 'Imparte instrucciones relativas al Envío de Información para los Intermediarios de Valores y Corredores de Bolsa de Productos sobre Volumen de negocios y Número de clientes.',
+        'inicio': '01/06/2026',
+        'termino': '26/06/2026',
     },
     {
         'tipo':   'Norma de Carácter General',
-        'numero': 'NCG 515',
-        'materia': 'Estándares de divulgación de sostenibilidad para emisores de valores: alineación con marcos ISSB (IFRS S1 y S2) y taxonomía verde chilena',
-        'inicio': '09/06/2026',
-        'termino': '25/07/2026',
+        'numero': 'NCG N°540 (mod.)',
+        'materia': 'Introduce ajustes a las normas de funcionamiento operativo del Registro de Deuda Consolidada (REDEC), conforme a lo dispuesto en la Ley N°21.680.',
+        'inicio': '25/05/2026',
+        'termino': '15/06/2026',
+    },
+    {
+        'tipo':   'Circular',
+        'numero': '—',
+        'materia': 'Imparte instrucciones sobre Reaseguro de Seguros de Rentas Vitalicias del D.L. N°3.500, de 1980, con Entidades Reaseguradoras Extranjeras.',
+        'inicio': '20/04/2026',
+        'termino': '15/06/2026',
     },
 ]
 
