@@ -1604,6 +1604,123 @@ TODAY_NEWS_11JUN2026 = {
 }
 
 
+# Noticias específicas del 12 de junio de 2026
+TODAY_NEWS_12JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[12 Jun] Cumbre G20 en Río: consenso sobre impuesto mínimo global a la riqueza y reforma del FMI con más voz para emergentes',
+            'summary': 'Los líderes del G20 acuerdan avanzar en una tasa mínima del 2% sobre patrimonios superiores a USD 1.000M. Chile y Brasil lideran el bloque latinoamericano que exige mayor representación en el FMI. Reforma podría liberar USD 45.000M adicionales para economías emergentes en 2027.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[12 Jun] Conflicto Mar Rojo: EE.UU. y aliados coordinan escolta naval; fletes marítimos caen 8% ante menor incertidumbre',
+            'summary': 'La operación conjunta de la Armada de EE.UU., Reino Unido y Francia reduce ataques en el estrecho de Bab-el-Mandeb. Índice de flete spot Asia-Europa cede 8% en la semana. Importaciones chilenas de insumos industriales deberían normalizarse en cuatro a seis semanas.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[12 Jun] Cierre semanal: S&P 500 +1,8% en la semana; dólar global cede ante expectativas de recorte Fed en septiembre',
+            'summary': 'Mercados acumulan la cuarta semana consecutiva de ganancias. Nasdaq lidera con +2,3% impulsado por tecnología e IA. Índice VIX en 11,9, mínimo histórico. Commodities latinoamericanos en zona verde: cobre +2,1%, litio +5,4% y soja +1,7% en la semana.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[12 Jun] BCE recorta tasa a 2,25%: Lagarde señala convergencia de inflación y abre puerta a segundo recorte en septiembre',
+            'summary': 'Banco Central Europeo reduce 25 pb ante inflación subyacente en 2,1%. Euro cae 0,3% frente al dólar. Impacto positivo para deuda emergente: spreads soberanos latinoamericanos se comprimen 12 pb. Chile se beneficia con menor costo de refinanciamiento de deuda en euros.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[12 Jun] UF $40.771,41 y dólar $909,02: peso chileno cierra semana en máximo de tres meses ante cobre fuerte y BCE',
+            'summary': 'Unidad de Fomento publicada por SII para el viernes 12 de junio. Dólar observado del BCCh en $909,02, caída de $6,95 respecto al lunes. Cobre sobre USD 5,25/lb y recorte del BCE impulsan apreciación del peso. Mercado fija la mirada en reunión TPM del martes 17 de junio.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[12 Jun] Reunión TPM 17-jun: BCCh revisará recorte de 25 pb con inflación en 3,1% y crecimiento sobre expectativas',
+            'summary': 'Encuesta de operadores financieros del BCCh confirma 78% de probabilidad de recorte de 25 pb el próximo martes. Sería la primera baja desde enero de 2025. Impacto directo en créditos hipotecarios, de consumo y corporativos. Bancos y cooperativas ya tienen preparados los ajustes de tasas.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[12 Jun] IPSA cierra semana en 7.980 pts con alza de 3,6%: mejor desempeño semanal del año para la bolsa chilena',
+            'summary': 'Índice bursátil acumula +11,4% en 2026, superando la proyección anual de consenso. SQM lidera con +7,1% impulsado por litio. Flujo extranjero neto supera USD 820M en el mes de junio. Volumen promedio diario en USD 340M, un 45% sobre la media histórica.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[12 Jun] CMF y BCCh publican hoja de ruta de open finance 2026-2028: incluye datos de AFP, seguros e inversiones',
+            'summary': 'Segunda fase del ecosistema de datos abiertos extenderá el open banking a cuentas de AFP, seguros de vida y fondos de inversión. API unificada disponible para desarrolladores desde enero 2027. Chile sería el primer país latinoamericano con open finance completo bajo estándar regulatorio.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[12 Jun] Startups chilenas de pagos digitales procesan USD 2.100M mensuales: crecimiento de 67% en doce meses',
+            'summary': 'Khipu, Multicaja y Pomelo lideran el segmento de pagos alternativos. El 38% de las pymes ya acepta al menos un método de pago digital distinto a Transbank. CORFO anuncia nuevo fondo de USD 60M para startups fintech de pagos e infraestructura financiera.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[12 Jun] Anthropic y Banco de Chile firman acuerdo para implementar IA generativa en servicio al cliente y compliance',
+            'summary': 'Piloto cubrirá atención al cliente, revisión de contratos y detección de operaciones inusuales. Primer acuerdo directo entre un banco latinoamericano y Anthropic. Implementación en producción prevista para septiembre; potencial de reducción de costos operativos del 22%.',
+            'source': "Ben's Bites",
+            'link': 'https://bensbites.com'
+        },
+        {
+            'title': '[12 Jun] Informe McKinsey: IA generativa podría añadir USD 180.000M al PIB de América Latina para 2030',
+            'summary': 'Sector financiero captura el 28% del valor, seguido por minería (19%) y retail (14%). Chile lidera en adopción corporativa de IA con el 34% de grandes empresas usando modelos en producción. Brecha de talento en IA es el principal obstáculo: faltan 85.000 profesionales especializados en la región.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[12 Jun] Coopeuch anticipa recorte de TPM: congela tasa hipotecaria en 4,0% UF para operaciones formalizadas antes del 20 de junio',
+            'summary': 'La mayor cooperativa financiera de Chile ofrece tasa fija de 4,0% en UF hasta el 20 de junio para capturar demanda antes del ajuste oficial. Condiciones incluyen plazo de hasta 25 años y financiamiento de hasta el 80% del avalúo. Se esperan 1.200 operaciones en la semana.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[12 Jun] Sector cooperativo chileno emite primer bono verde por UF 500.000: demanda triplica la oferta en bolsa',
+            'summary': 'Instrumento de deuda cooperativa de impacto ambiental debuta en la Bolsa de Santiago con sobredemanda de 3,1 veces. Recursos financiarán paneles solares en viviendas cooperativas y eficiencia energética en sedes del sector. Tasa de colocación: UF + 1,85%.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[12 Jun] CMF cierra consulta pública NCG N°540 (REDEC): más de 120 comentarios recibidos de bancos, fintechs y cooperativas',
+            'summary': 'La normativa del Registro de Deuda Consolidada recibió el mayor número de comentarios en la historia de la CMF. Industria valora la iniciativa pero solicita extensión del plazo de implementación a 18 meses. Resolución final esperada para agosto de 2026.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[12 Jun] Producción de cobre Chile mayo 2026: 523.000 toneladas, alza de 5,8% anual — Codelco y Anglo American lideran',
+            'summary': 'Cochilco confirma producción mensual récord para mayo. Codelco aporta 145.000 toneladas tras inversión en El Teniente. Anglo American suma 98.000 ton desde Los Bronces y Quellaveco. Proyección anual de 5,8 millones de toneladas para Chile se mantiene en línea con presupuesto.',
+            'source': 'Cochilco',
+            'link': 'https://www.cochilco.cl'
+        },
+        {
+            'title': '[12 Jun] Ventas de vehículos eléctricos en Chile: 4.800 unidades en mayo 2026, crecimiento de 112% anual',
+            'summary': 'Chile lidera adopción de vehículos eléctricos en Sudamérica. BYD y Tesla concentran el 58% del mercado. Red de carga pública supera los 2.400 puntos en Santiago. Ministerio de Energía proyecta que el 25% de la flota nacional será eléctrica para 2030.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1626,6 +1743,7 @@ def generate_dynamic_news():
         '20260609': TODAY_NEWS_09JUN2026,
         '20260610': TODAY_NEWS_10JUN2026,
         '20260611': TODAY_NEWS_11JUN2026,
+        '20260612': TODAY_NEWS_12JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
