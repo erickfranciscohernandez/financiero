@@ -1,29 +1,29 @@
 {
-  "fecha": "2026-06-12T12:41:09.920230",
+  "fecha": "2026-06-12T17:31:46.939347",
   "total_alertas": 3,
   "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "titulo": "[12 Jun] Cierre semanal: S&P 500 +1,8% en la semana; dólar global cede ante expectativas de recorte Fed en septiembre",
       "seccion": "economia_global",
-      "score": 9,
+      "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "[12 Jun] UF $40.771,41 y dólar $909,02: peso chileno cierra semana en máximo de tres meses ante cobre fuerte y BCE",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
+      "enlace": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm"
     }
   ]
 }
