@@ -37,6 +37,8 @@ RSS_FEEDS = {
         'https://feeds.reuters.com/reuters/worldNews',
         'https://feeds.bloomberg.com/politics/news.rss',
         'https://rss.nytimes.com/services/xml/rss/nyt/World.xml',
+        'https://www.elmostrador.cl/feed/',
+        'https://www.elmostrador.cl/categoria/noticias/feed/',
     ],
     'chile_estrategico': [
         'https://www.chocale.cl/feed/',
@@ -45,6 +47,8 @@ RSS_FEEDS = {
         'https://www.emol.com/rss/economia.xml',
         'https://www.latercera.com/feed/',
         'https://www.elmostrador.cl/feed/',
+        'https://www.elmostrador.cl/categoria/noticias/feed/',
+        'https://www.elmostrador.cl/mercados/feed/',
     ],
     'economia_mercados': [
         'https://feeds.bloomberg.com/markets/news.rss',
@@ -53,11 +57,13 @@ RSS_FEEDS = {
         'https://feeds.cnbc.com/id/100003114/rss.xml',
         'https://feeds.a.dj.com/rss/RSSMarketsMain.xml',
         'https://www.economist.com/finance-and-economics/rss.xml',
+        'https://www.elmostrador.cl/mercados/feed/',
     ],
     'tendencias': [
         'https://feeds.bloomberg.com/technology/news.rss',
         'https://techcrunch.com/feed/',
         'https://www.theverge.com/rss/index.xml',
+        'https://www.elmostrador.cl/categoria/tecnologia/feed/',
     ],
     'ia': [
         'https://techcrunch.com/tag/artificial-intelligence/feed/',
@@ -70,6 +76,7 @@ RSS_FEEDS = {
         'https://feeds.cnbc.com/id/10000664/rss.xml',
         'https://rss.nytimes.com/services/xml/rss/nyt/Business.xml',
         'https://feeds.a.dj.com/rss/WSJcomUSBusiness.xml',
+        'https://www.elmostrador.cl/mercados/feed/',
     ],
     'cooperativismo': [
         'https://www.forocooperativo.cl/feed/',
@@ -81,6 +88,8 @@ RSS_FEEDS = {
     'cmf': [
         'https://www.diariofinanciero.com/feed',
         'https://www.emol.com/rss/economia.xml',
+        'https://www.elmostrador.cl/mercados/feed/',
+        'https://www.elmostrador.cl/categoria/noticias/feed/',
     ],
 }
 

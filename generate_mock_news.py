@@ -1725,6 +1725,12 @@ TODAY_NEWS_12JUN2026 = {
 TODAY_NEWS_15JUN2026 = {
     'geopolitica': [
         {
+            'title': '[12 Jun] Tren de Aragua creó su propia plataforma de criptomonedas en Chile, según investigación',
+            'summary': 'Unidad de Investigación de El Mostrador revela que la banda criminal venezolana Tren de Aragua desarrolló una plataforma propia de activos digitales para blanquear fondos en Chile. La CMF investiga el caso bajo la NCG 514 que regula operadores de activos digitales; PDI ya incautó equipos de minería y servidores en tres regiones del país.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/unidad-de-investigacion/2026/06/12/tren-de-aragua-creo-su-propia-plataforma-de-criptomonedas-en-chile/'
+        },
+        {
             'title': '[15 Jun] G20 Río: acuerdo sobre deuda climática y nuevo mecanismo de swap de divisas para economías emergentes',
             'summary': 'Declaración final del G20 incluye un fondo de USD 100.000M para países en desarrollo afectados por desastres climáticos. Chile accede a línea de swap con el BCE por EUR 5.000M. Mecanismo reduce riesgo cambiario en refinanciamiento de deuda soberana y fortalece posición del BCCh.',
             'source': 'Reuters',
