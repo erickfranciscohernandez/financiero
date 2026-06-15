@@ -1,14 +1,14 @@
 {
-  "fecha": "2026-06-14T23:57:19.493053",
+  "fecha": "2026-06-15T14:08:52.507177",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 40771.41,
-      "fecha": "2026-06-12",
-      "fuente": "SII (12-jun-2026)"
+      "valor": 40779.55,
+      "fecha": "2026-06-15",
+      "fuente": "SII (15-jun-2026)"
     },
     "utm": {
       "label": "UTM",
@@ -23,16 +23,16 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-06-12",
+      "fecha": "2026-06-15",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "usd_clp": {
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 909.02,
-      "fecha": "2026-06-12",
-      "fuente": "BCCh SI3 (12-jun-2026)"
+      "valor": 899.3,
+      "fecha": "2026-06-15",
+      "fuente": "BCCh SI3 (15-jun-2026)"
     }
   }
 }
