@@ -1721,6 +1721,123 @@ TODAY_NEWS_12JUN2026 = {
 }
 
 
+# Noticias específicas del 15 de junio de 2026
+TODAY_NEWS_15JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[15 Jun] G20 Río: acuerdo sobre deuda climática y nuevo mecanismo de swap de divisas para economías emergentes',
+            'summary': 'Declaración final del G20 incluye un fondo de USD 100.000M para países en desarrollo afectados por desastres climáticos. Chile accede a línea de swap con el BCE por EUR 5.000M. Mecanismo reduce riesgo cambiario en refinanciamiento de deuda soberana y fortalece posición del BCCh.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[15 Jun] Cumbre CELAC: Chile propone zona de integración financiera latinoamericana con supervisión coordinada entre CMF y equivalentes regionales',
+            'summary': 'Propuesta chilena busca unificar estándares de supervisión bancaria, de seguros y de valores en América Latina. Brasil, Colombia y Perú expresan apoyo inicial. Implementación estimada en tres años con apoyo técnico del FMI y del Banco Mundial.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/world'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[15 Jun] Apertura semanal positiva: mercados anticipan recortes de Fed y BCCh esta semana — S&P 500 en máximos',
+            'summary': 'Lunes de optimismo en bolsas globales con el S&P 500 sobre 6.000 pts por primera vez. Inversores posicionan en activos de riesgo ante expectativa de recortes coordinados entre bancos centrales. Flujos a renta variable emergente alcanzan USD 3.800M en lo que va de junio.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[15 Jun] Litio carbonato consolida USD 15.200/ton: demanda de baterías supera oferta global por segundo trimestre consecutivo',
+            'summary': 'Déficit estructural estimado en 52.000 toneladas para 2026. SQM y Albemarle lideran ganancias en apertura de semana. Chile cubre el 36% de la producción global de litio procesado. Analistas de Morgan Stanley elevan precio objetivo del litio a USD 18.000 para 2027.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[15 Jun] UF $40.779,55 y dólar $899,30: peso chileno toca mínimo de cuatro meses ante rally de cobre y expectativa de recorte TPM',
+            'summary': 'Unidad de Fomento publicada por SII para el lunes 15 de junio. Dólar observado del BCCh en $899,30, apreciación del peso de 1,1% respecto al viernes. Mercado descuenta con 84% de probabilidad un recorte de TPM de 25 pb mañana martes 17 de junio en la reunión del BCCh.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[15 Jun] Víspera del recorte de TPM: bancos y cooperativas preposicionan tasas — hipotecarios ya en 3,85% UF',
+            'summary': 'Banco de Chile, Santander, BCI y las principales cooperativas publican nuevas listas de tasas anticipando la baja del BCCh. Crédito hipotecario promedio a 20 años cae a 3,85% UF desde 4,2% de diciembre 2025. Demanda acumulada de créditos en espera estimada en 42.000 operaciones.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[15 Jun] Producción industrial mayo 2026: crece 4,1% anual impulsada por minería y manufactura exportadora',
+            'summary': 'INE confirma expansión del sector real con minería +6,8% y manufactura +2,9%. Electricidad, gas y agua +3,4% por mayor generación solar y eólica. Datos refuerzan el escenario base del BCCh de recorte gradual de TPM sin riesgo de sobrecalentamiento.',
+            'source': 'INE',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[15 Jun] Ley Fintech Chile: primer aniversario con 112 entidades inscritas, USD 2.800M en transacciones y cero quiebras supervisadas',
+            'summary': 'CMF publica informe de primer año de la Ley 21.521. Crecimiento de 340% en nuevas inscripciones respecto al período pre-ley. Modelos de negocio: pagos (41%), crédito alternativo (28%), inversión automatizada (18%) y crowdfunding (13%). Regulación chilena citada como modelo en OCDE.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[15 Jun] Mercadopago lanza cuenta corriente digital en Chile con interés diario en UF: 500.000 cuentas en primera semana',
+            'summary': 'Plataforma argentina desembarca en Chile con cuenta remunerada a tasa UF+0,5% anual liquidada diariamente. Sin costo de mantención ni saldo mínimo. Integración nativa con marketplace de Mercadolibre y sistema de pagos QR. CMF certifica operación bajo licencia de empresa de servicios financieros.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[15 Jun] BCCh publica primer informe de estabilidad financiera con sección dedicada a riesgos de IA: alerta por concentración en tres proveedores',
+            'summary': 'Informe semestral del Banco Central advierte que el 78% de los modelos de IA del sistema financiero chileno dependen de infraestructura de solo tres empresas tecnológicas globales. Recomienda plan de contingencia y diversificación. Nuevas instrucciones de la CMF previstas para agosto.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[15 Jun] Fintechs chilenas usan IA para reducir mora: tres startups reportan caída del 40% en incumplimiento con modelos predictivos',
+            'summary': 'Destacan Destacame, Cumplo y Xepelin, que aplican modelos de lenguaje y datos alternativos (redes sociales, comportamiento de pago, flujos de caja) para scoring crediticio. Mora promedio en sus carteras: 1,1% vs 2,8% de la industria bancaria tradicional.',
+            'source': 'VentureBeat AI',
+            'link': 'https://venturebeat.com/category/ai/'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[15 Jun] Coopeuch y Detacoop anuncian baja de tasas hipotecarias a 3,75% UF ante inminente recorte del BCCh',
+            'summary': 'Ambas cooperativas adelantan el ajuste de tasas para esta semana. Para un crédito de UF 3.000 a 20 años, el dividendo mensual bajaría en aproximadamente UF 1,8 respecto a tasas de inicios de año. Lista de espera de socios supera las 15.000 solicitudes en ambas instituciones.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[15 Jun] CONFECOOP: sector cooperativo financiero chileno proyecta crecimiento de cartera de 20% en segundo semestre 2026',
+            'summary': 'Escenario de tasas a la baja activa demanda reprimida de crédito hipotecario y de consumo. Cooperativas tienen ventaja competitiva por menor spread sobre TPM. Tres nuevas cooperativas en proceso de inscripción ante CMF para operar en regiones de Atacama y Magallanes.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[15 Jun] CMF actualiza normativa de consulta: quedan vigentes tres circulares con plazo hasta julio 2026',
+            'summary': 'Vencieron el 15 de junio las consultas sobre REDEC y reaseguro de rentas vitalicias. Siguen abiertas: modificación Circular N°2.062 (rentas vitalicias, hasta 08/07), e instrucciones sobre intermediarios de valores (dos circulares, hasta 26/06). CMF recibirá nuevas consultas desde agosto.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[15 Jun] Precios combustibles Chile: bencina baja $10/litro desde el jueves; ENAP reporta caída en precio de paridad',
+            'summary': 'Caída del Brent a USD 79/barril y apreciación del peso reducen el precio de paridad de la gasolina. ENAP estima rebaja de $10 en gasolina de 93 y 97 octanos desde el jueves 19 de junio. Impacto en IPC de junio: reducción estimada de 0,05 puntos porcentuales.',
+            'source': 'Ministerio de Energía',
+            'link': 'https://www.energia.gob.cl'
+        },
+        {
+            'title': '[15 Jun] Inversión extranjera directa en Chile enero-mayo 2026: USD 7.800M, alza de 22% anual liderada por energías renovables y minería',
+            'summary': 'InvestChile reporta flujos récord en el período. Energías renovables captura el 34% del total con proyectos solares y eólicos en el norte. Minería atrae el 29% con inversiones de Anglo American y BHP en expansiones. Manufactura de baterías suma USD 980M en compromisos formales.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1744,6 +1861,7 @@ def generate_dynamic_news():
         '20260610': TODAY_NEWS_10JUN2026,
         '20260611': TODAY_NEWS_11JUN2026,
         '20260612': TODAY_NEWS_12JUN2026,
+        '20260615': TODAY_NEWS_15JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 

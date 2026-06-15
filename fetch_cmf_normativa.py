@@ -21,7 +21,7 @@ CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
 
-# Datos de respaldo — normativa vigente extraída de cmfchile.cl el 10-jun-2026
+# Datos de respaldo — normativa vigente extraída de cmfchile.cl el 15-jun-2026
 MOCK_NORMATIVA = [
     {
         'tipo':   'Circular',
@@ -43,20 +43,6 @@ MOCK_NORMATIVA = [
         'materia': 'Imparte instrucciones relativas al Envío de Información para los Intermediarios de Valores y Corredores de Bolsa de Productos sobre Volumen de negocios y Número de clientes.',
         'inicio': '01/06/2026',
         'termino': '26/06/2026',
-    },
-    {
-        'tipo':   'Norma de Carácter General',
-        'numero': 'NCG N°540 (mod.)',
-        'materia': 'Introduce ajustes a las normas de funcionamiento operativo del Registro de Deuda Consolidada (REDEC), conforme a lo dispuesto en la Ley N°21.680.',
-        'inicio': '25/05/2026',
-        'termino': '15/06/2026',
-    },
-    {
-        'tipo':   'Circular',
-        'numero': '—',
-        'materia': 'Imparte instrucciones sobre Reaseguro de Seguros de Rentas Vitalicias del D.L. N°3.500, de 1980, con Entidades Reaseguradoras Extranjeras.',
-        'inicio': '20/04/2026',
-        'termino': '15/06/2026',
     },
 ]
 
