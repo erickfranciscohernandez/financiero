@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-17T12:23:26.009099",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-17T18:27:33.426614",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -10,13 +10,6 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
     },
     {
       "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
