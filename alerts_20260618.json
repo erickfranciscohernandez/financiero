@@ -1,29 +1,15 @@
 {
-  "fecha": "2026-06-18T15:49:57.801191",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-06-18T18:31:49.803368",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
-    },
-    {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.bloomberg.com/markets"
     }
   ]
 }

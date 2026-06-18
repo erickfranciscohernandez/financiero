@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-18T15:49:51.954048",
+  "fecha": "2026-06-18T18:31:43.054690",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -23,9 +23,8 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-06-15",
-      "fuente": "BCCh (15-jun-2026)",
-      "mock": true
+      "fecha": "2026-06-18",
+      "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "usd_clp": {
       "label": "Dólar observado",
