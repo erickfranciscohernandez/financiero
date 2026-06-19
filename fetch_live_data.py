@@ -195,15 +195,15 @@ def fetch_mindicador():
 
 # Anulación manual de indicadores (prioridad máxima — vaciar para usar scrapers)
 MANUAL_OVERRIDE = {
-    'uf':      {'valor': 40779.55, 'fecha': '2026-06-15', 'fuente': 'SII (15-jun-2026)'},
-    'usd_clp': {'valor': 899.30,   'fecha': '2026-06-15', 'fuente': 'BCCh SI3 (15-jun-2026)'},
+    'uf':      {'valor': 40790.42, 'fecha': '2026-06-16', 'fuente': 'SII (16-jun-2026)'},
+    'usd_clp': {'valor': 897.19,   'fecha': '2026-06-16', 'fuente': 'BCCh SI3 (16-jun-2026)'},
 }
 
 MOCK_DATA = {
-    'uf':      {'valor': 40779.55, 'fecha': '2026-06-15', 'fuente': 'SII (15-jun-2026)', 'mock': True},
-    'utm':     {'valor': 71506.0,  'fecha': '2026-06-15', 'fuente': 'BCCh (15-jun-2026)', 'mock': True},
-    'tpm':     {'valor': 4.50,     'fecha': '2026-06-15', 'fuente': 'BCCh (15-jun-2026)', 'mock': True},
-    'usd_clp': {'valor': 899.30,   'fecha': '2026-06-15', 'fuente': 'BCCh SI3 (15-jun-2026)', 'mock': True},
+    'uf':      {'valor': 40790.42, 'fecha': '2026-06-16', 'fuente': 'SII (16-jun-2026)', 'mock': True},
+    'utm':     {'valor': 71506.0,  'fecha': '2026-06-16', 'fuente': 'BCCh (16-jun-2026)', 'mock': True},
+    'tpm':     {'valor': 4.50,     'fecha': '2026-06-16', 'fuente': 'BCCh (16-jun-2026)', 'mock': True},
+    'usd_clp': {'valor': 897.19,   'fecha': '2026-06-16', 'fuente': 'BCCh SI3 (16-jun-2026)', 'mock': True},
 }
 
 INDICADORES_META = {

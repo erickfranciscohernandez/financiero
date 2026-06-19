@@ -1844,6 +1844,123 @@ TODAY_NEWS_15JUN2026 = {
 }
 
 
+# Noticias específicas del 16 de junio de 2026
+TODAY_NEWS_16JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[16 Jun] Tensión comercial EE.UU.-China escala: nuevos aranceles a semiconductores activan respuesta de Pekín',
+            'summary': 'Washington anuncia sobretasas del 35% a chips chinos de madurez tecnológica. China responde con restricciones de exportación de germanio y galio, insumos clave para semiconductores occidentales. Bolsas asiáticas caen 1,8%; cobre modera alza ante temores de desaceleración manufacturera.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[16 Jun] Crimen organizado y criptoactivos: PDI amplía investigación a red Tren de Aragua tras revelación de El Mostrador',
+            'summary': 'La PDI ejecuta allanamientos en Santiago, Valparaíso y Antofagasta tras la investigación de El Mostrador sobre la plataforma cripto del Tren de Aragua. CMF coordina con Fiscalía bajo NCG 514. Ministerio del Interior anuncia mesa interinstitucional para regulación urgente de exchanges informales.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/unidad-de-investigacion/2026/06/12/tren-de-aragua-creo-su-propia-plataforma-de-criptomonedas-en-chile/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[16 Jun] BCE y Fed coordinan señales: tasas globales en punto de inflexión — mercados emergentes los grandes ganadores',
+            'summary': 'Recorte del BCE la semana pasada y señales de la Fed consolidan ciclo bajista global de tasas. Índice de bonos emergentes EMBI sube 2,1% en la semana. Chile lidera captación de flujos en la región con USD 1.200M en la semana. Costo de deuda soberana chilena cae a mínimo de 18 meses.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[16 Jun] Cobre cede a USD 5,18/lb por tensión EE.UU.-China: analistas ven corrección temporal ante fundamentos sólidos',
+            'summary': 'Metal rojo retrocede 1,4% ante escalada arancelaria en semiconductores, aunque inventarios LME siguen en mínimos. Codelco mantiene guidance de producción y no modifica plan de inversiones. Analistas de JPMorgan reafirman objetivo de USD 5,70 para fin de año.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[16 Jun] UF $40.790,42 y dólar $897,19: víspera del recorte TPM — peso en mínimo de cinco meses',
+            'summary': 'Unidad de Fomento publicada por SII para el martes 16 de junio. Dólar observado del BCCh en $897,19, apreciación adicional de $2,11 respecto al lunes. El mercado descuenta con 89% de probabilidad un recorte de TPM de 25 pb mañana miércoles 17. Tasas swap a 30 días en 4,27%.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[16 Jun] BCCh publica minutas previas: consejo dividido entre recorte de 25 pb y mantención — sorpresa posible mañana',
+            'summary': 'Dos consejeros habrían abogado por mantener la TPM ante incertidumbre global por tensión EE.UU.-China. Mayoría favorece recorte precautorio de 25 pb. Decisión se anuncia mañana a las 18:00 hrs. con conferencia de prensa del Presidente del BCCh a las 18:30 hrs.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[16 Jun] IPSA cede 0,4% por corrección del cobre: inversores toman utilidades en Codelco y SQM antes del TPM',
+            'summary': 'Toma de utilidades parcial en el sector minero ante volatilidad global. Bolsa acumula +3,2% en junio pese a la corrección de hoy. Bancos y utilities sostienen el índice. Analistas recomiendan esperar la decisión del BCCh antes de reposicionar en renta variable chilena.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[16 Jun] Chile lidera ranking fintech Latam 2026: 312 empresas activas, crecimiento de 41% en dos años',
+            'summary': 'Informe BID Invest posiciona a Chile como el ecosistema fintech más maduro de América del Sur. Regulación CMF bajo Ley 21.521 es citada como el marco más completo de la región. Colombia y Perú siguen a distancia con 198 y 145 empresas activas respectivamente.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[16 Jun] Ciberseguridad financiera: CSIRT reporta 3.400 intentos de intrusión a bancos chilenos en mayo, 28% más que abril',
+            'summary': 'CMF y el CSIRT del Gobierno publican alerta conjunta por aumento de ataques de ransomware y phishing dirigido a entidades financieras. Las cooperativas de menor tamaño son el blanco más frecuente. Nueva circular de ciberseguridad (Circular N°2.237) entra en vigor en 30 días.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[16 Jun] SII implementa IA para fiscalizar IVA en tiempo real: detecta $48.000M en subdeclaraciones en primer mes',
+            'summary': 'Sistema de auditoría predictiva cruza facturas electrónicas, flujos de caja y datos de comercio exterior para detectar inconsistencias. En el primer mes operativo identificó 2.800 empresas con diferencias superiores a UF 100. Cumplimiento voluntario ya aumentó un 9% respecto al mismo período de 2025.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+        {
+            'title': '[16 Jun] Corfo adjudica USD 24M a ocho proyectos de IA financiera chilenos: foco en crédito pyme y detección de fraude',
+            'summary': 'Los ocho proyectos seleccionados abordan scoring crediticio alternativo, automatización de compliance, detección de fraude en pagos digitales y análisis de riesgo de cartera en cooperativas. Plazo de implementación: 18 meses con evaluación de impacto por la CMF.',
+            'source': 'TLDR AI',
+            'link': 'https://tldr.ai'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[16 Jun] Víspera TPM: cooperativas chilenas congelan tasas hipotecarias en 3,75% UF hasta el 30 de junio',
+            'summary': 'Coopeuch, Detacoop, Oriencoop y CrediCoop anuncian tasa promocional congelada a la espera del recorte oficial. Condiciones: plazo hasta 30 años, hasta 80% de financiamiento, sin costo de originación para socios con 12 meses de antigüedad. Más de 22.000 solicitudes en lista de espera.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[16 Jun] Detacoop informa resultados del primer semestre: cartera crece 22%, mora en 0,9% y patrimonio supera UF 1,2 millones',
+            'summary': 'La cooperativa registra su mejor semestre histórico. Nuevos socios en el período: 28.400. Apertura de sucursales en Concepción y Temuco programadas para agosto. Premio ACI a Mejor Gobernanza Cooperativa 2026 recibido en Río de Janeiro.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[16 Jun] CMF activa investigación formal sobre plataforma cripto del Tren de Aragua: primer caso bajo NCG 514',
+            'summary': 'La Comisión para el Mercado Financiero abre expediente formal de investigación bajo la Norma de Carácter General N°514 que regula operadores de activos digitales. Es el primer caso de aplicación de la norma desde su publicación. La CMF tiene facultades para congelar activos y suspender operaciones.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[16 Jun] Precio del petróleo Brent sube a USD 81,4: tensión geopolítica en Medio Oriente y recorte de producción OPEP+',
+            'summary': 'Arabia Saudita anuncia recorte adicional de 200.000 bbl/día ante presión de precios bajos. Enap estima impacto leve en precio de combustibles en julio (+$3/litro). BCCh monitorea efecto en IPC de junio dado que la baja esperada de bencinas se revierte parcialmente.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[16 Jun] Tasa de ahorro de hogares chilenos sube a 8,4% del ingreso disponible: máximo desde 2020 y señal de prudencia pre-TPM',
+            'summary': 'Encuesta BCCh revela que los hogares aumentaron su tasa de ahorro ante incertidumbre sobre la economía global. Depósitos a plazo en el sistema financiero crecen 14% en doce meses. La baja de TPM podría redirigir parte de ese ahorro hacia consumo e inversión inmobiliaria.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1868,6 +1985,7 @@ def generate_dynamic_news():
         '20260611': TODAY_NEWS_11JUN2026,
         '20260612': TODAY_NEWS_12JUN2026,
         '20260615': TODAY_NEWS_15JUN2026,
+        '20260616': TODAY_NEWS_16JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
