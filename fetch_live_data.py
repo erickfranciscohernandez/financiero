@@ -200,10 +200,10 @@ MANUAL_OVERRIDE = {
 }
 
 MOCK_DATA = {
-    'uf':      {'valor': 40790.42, 'fecha': '2026-06-16', 'fuente': 'SII (16-jun-2026)', 'mock': True},
-    'utm':     {'valor': 71506.0,  'fecha': '2026-06-16', 'fuente': 'BCCh (16-jun-2026)', 'mock': True},
-    'tpm':     {'valor': 4.50,     'fecha': '2026-06-16', 'fuente': 'BCCh (16-jun-2026)', 'mock': True},
-    'usd_clp': {'valor': 897.19,   'fecha': '2026-06-16', 'fuente': 'BCCh SI3 (16-jun-2026)', 'mock': True},
+    'uf':      {'valor': 40790.42, 'fecha': '2026-06-22', 'fuente': 'SII (22-jun-2026)', 'mock': True},
+    'utm':     {'valor': 71506.0,  'fecha': '2026-06-22', 'fuente': 'BCCh (22-jun-2026)', 'mock': True},
+    'tpm':     {'valor': 4.25,     'fecha': '2026-06-17', 'fuente': 'BCCh (17-jun-2026)', 'mock': True},
+    'usd_clp': {'valor': 897.19,   'fecha': '2026-06-22', 'fuente': 'BCCh SI3 (22-jun-2026)', 'mock': True},
 }
 
 INDICADORES_META = {

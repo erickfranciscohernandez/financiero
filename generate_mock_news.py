@@ -1961,6 +1961,122 @@ TODAY_NEWS_16JUN2026 = {
 }
 
 
+TODAY_NEWS_22JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[22 Jun] G7 refuerza sanciones a Rusia y acuerda fondo de USD 50.000M con activos soberanos congelados',
+            'summary': 'Los líderes del G7 aprueban fondo de reconstrucción para Ucrania financiado con intereses de activos rusos retenidos en Occidente. Rusia advierte represalias en materias primas estratégicas. Mercados energéticos se mantienen estables ante expectativa de resolución diplomática en el corto plazo.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[22 Jun] ONU alerta por expansión de crimen organizado transnacional en Latinoamérica: Chile refuerza marco antilavado',
+            'summary': 'Informe UNODC revela que flujos de lavado de activos en la región superaron USD 160.000M en 2025. Chile es destacado como uno de los países con avances más sólidos en GAFILAT. La nueva regulación de activos digitales de la CMF es mencionada como buena práctica regional.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[22 Jun] Fed mantiene tasas en reunión de junio: señala recorte en septiembre si IPC sigue bajando',
+            'summary': 'Jerome Powell descarta un recorte prematuro pero confirma que la desinflación avanza según lo esperado. Mercados de renta fija suben; DXY cae 0,3%. El S&P 500 cierra semana pasada en 5.980 puntos. Para Chile, la señal implica dólar moderado y flujos de capital hacia emergentes en el trimestre.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[22 Jun] Cobre retoma USD 5,22/lb al inicio de semana: China anuncia paquete de estímulo a infraestructura por USD 300.000M',
+            'summary': 'El gobierno chino activa plan de inversión en redes eléctricas, transporte y vivienda social que impulsará la demanda de metales base. Analistas de Barclays elevan estimado de cobre para Q3 a USD 5,55/lb. Codelco y SQM lideran el alza en la apertura del IPSA del lunes.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[22 Jun] BCCh recortó TPM a 4,25% el miércoles 17: primer movimiento en cinco meses — peso se aprecia y bolsa sube',
+            'summary': 'El Consejo del Banco Central redujo la Tasa de Política Monetaria en 25 puntos base con votación unánime, citando convergencia de la inflación al 3% y desaceleración global controlada. El peso chileno se apreció 0,8% en la semana. Proyecciones apuntan a nueva baja en agosto si el IPC de julio cumple expectativas.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[22 Jun] IPSA inicia semana con alza de 0,6%: cobre y decisión del BCCh sostienen rally bursátil de junio',
+            'summary': 'El índice bursátil acumula +4,8% en junio, impulsado por el ciclo de baja de tasas y la recuperación del cobre. Codelco, SQM y Banco de Chile lideran las ganancias del mes. Analistas mantienen objetivos de fin de año entre 8.100 y 8.400 puntos para el IPSA.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[22 Jun] Actualización indicadores: UF y dólar observado al 22 de junio de 2026',
+            'summary': 'Valores vigentes del día publicados por SII y BCCh. La baja de la TPM está generando una leve apreciación del peso en la semana. Tasas hipotecarias en UF comienzan a ceder: promedio del sistema en 3,65% para créditos a 20 años.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[22 Jun] Banco Estado lanza cuenta digital para cooperativas: integración directa con plataformas Coopeuch y Detacoop',
+            'summary': 'La nueva API de interoperabilidad permite transferencias instantáneas entre cooperativas y BancoEstado sin comisión por el primer año. Más de 1,2 millones de socios cooperativos podrán acceder desde el lunes. La CMF validó el esquema bajo el marco de open finance de la Ley Fintech.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+        {
+            'title': '[22 Jun] Mercadopago Chile registra 45 millones de transacciones en mayo: supera por primera vez a tarjetas de débito en volumen',
+            'summary': 'El procesador de pagos digitales alcanza hito histórico en el mercado chileno. Las billeteras digitales ya representan el 38% del total de operaciones de pago electrónico. Los bancos responden acelerando sus propias wallets: BCI Pay y Santander Wallet anuncian nuevas funcionalidades.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[22 Jun] CMF publica guía de uso de IA en entidades supervisadas: principios de explicabilidad y no discriminación',
+            'summary': 'La Comisión establece que los modelos de scoring crediticio basados en IA deben ser auditables, documentados y libres de sesgos discriminatorios. Las entidades tienen 12 meses para adecuar sus sistemas. La norma es pionera en América Latina y referencia al marco europeo AI Act.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[22 Jun] Corfo y Ministerio de Ciencia lanzan programa IA para pymes financieras: subsidio de hasta UF 2.000 por empresa',
+            'summary': 'El programa busca digitalizar la gestión de riesgo, cobranza y atención a clientes en empresas del sector financiero con menos de 200 trabajadores. Postulaciones abiertas desde el 1 de julio. Las cooperativas de ahorro y crédito son elegibles como beneficiarias directas.',
+            'source': 'Ministerio de Ciencia',
+            'link': 'https://www.minciencia.gob.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[22 Jun] Baja de TPM reactiva créditos hipotecarios en cooperativas: Coopeuch y CrediCoop anuncian nuevas tasas desde el lunes',
+            'summary': 'Tras el recorte del BCCh, las dos cooperativas más grandes del país publican nuevas tablas de tasas hipotecarias: Coopeuch en 3,60% UF + spread y CrediCoop en 3,55% UF + spread. Condiciones vigentes desde el lunes 22. Lista de espera de más de 18.000 solicitudes se activará esta semana.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[22 Jun] Congreso aprueba en segundo trámite proyecto de modernización del D.L. 3.500 para cooperativas de previsión',
+            'summary': 'La Cámara de Diputados aprobó las modificaciones que permiten a cooperativas ofrecer productos de ahorro previsional complementario. La CMF tendrá 90 días para dictar la normativa secundaria. Se estima que más de 3 millones de trabajadores del sector informal podrían beneficiarse.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/mercados/feed/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[22 Jun] CMF publica informe de estabilidad financiera: sistema bancario sólido con cobertura de provisiones en 2,3x',
+            'summary': 'El Informe de Estabilidad Financiera del primer semestre 2026 concluye que la banca chilena mantiene índices de capital sobre el mínimo regulatorio en todas las entidades supervisadas. La cartera vigente crece 7,2% real; la mora total cede a 1,4%. Las cooperativas de mayor tamaño mantienen indicadores similares al sistema bancario.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[22 Jun] IPC de mayo en 0,2% confirma trayectoria desinflacionaria: inflación anual baja a 3,4%',
+            'summary': 'El Instituto Nacional de Estadísticas publicó el IPC de mayo en línea con el consenso de mercado. La inflación anual continúa su descenso hacia el 3%. Los alimentos y la energía fueron los principales contribuyentes al alza mensual, mientras que vestuario y transporte aportaron deflación.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[22 Jun] Exportaciones chilenas crecen 9,8% en mayo: cobre, litio y salmón lideran el dinamismo exportador',
+            'summary': 'ProChile reporta que las exportaciones totalizaron USD 8.200M en mayo, el segundo mejor registro histórico. El cobre aporta USD 4.800M (+11%), el litio USD 680M (+34%) y el sector silvoagropecuario USD 820M (+7%). La diversificación de destinos —con mayor peso de India y ASEAN— reduce dependencia de China.',
+            'source': 'ProChile / Banco Central',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -1986,6 +2102,7 @@ def generate_dynamic_news():
         '20260612': TODAY_NEWS_12JUN2026,
         '20260615': TODAY_NEWS_15JUN2026,
         '20260616': TODAY_NEWS_16JUN2026,
+        '20260622': TODAY_NEWS_22JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
