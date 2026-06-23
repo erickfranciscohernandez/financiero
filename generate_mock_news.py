@@ -2077,6 +2077,122 @@ TODAY_NEWS_22JUN2026 = {
 }
 
 
+TODAY_NEWS_23JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[23 Jun] Consejo de Seguridad ONU debate resolución sobre Ucrania: EE.UU. y aliados buscan ampliar fondo G7',
+            'summary': 'Washington presenta ante el Consejo de Seguridad propuesta para internacionalizar el fondo de USD 50.000M acordado en el G7. China y Rusia anuncian veto. Europa presiona por solución diplomática antes del verano boreal. Mercados de energía se mantienen cautelosos con Brent en USD 81,8.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[23 Jun] Chile y Perú acuerdan corredor logístico para exportación de cobre y litio hacia puertos del Pacífico',
+            'summary': 'Cancilleres de ambos países firman memorándum de entendimiento para optimizar la cadena de exportación de minerales críticos. El acuerdo incluye interconexión ferroviaria y reducción de tiempos de tránsito en un 30%. Analistas destacan el impacto positivo para Codelco y SQM.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[23 Jun] Minutas Fed confirman paciencia: recorte en septiembre condicionado a dos IPC favorables consecutivos',
+            'summary': 'Las actas de la reunión de junio de la Reserva Federal muestran consenso en esperar datos adicionales antes de recortar. Los mercados mantienen 72% de probabilidad de baja en septiembre. Dólar DXY se debilita 0,2% ante emergentes. Chile se beneficia con entrada de capitales a renta fija local.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[23 Jun] Cobre supera USD 5,25/lb: estímulo chino y déficit de oferta consolidan rally del metal rojo',
+            'summary': 'Los inventarios LME caen a 108.000 toneladas, mínimo histórico en veinte años. El plan de infraestructura chino se traduce en órdenes firmes de cobre refinado. Analistas de Goldman Sachs elevan target para Q3 a USD 5,60/lb. Acciones de Codelco y mineras chilenas suben 1,2% en la apertura.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[23 Jun] UF y dólar observado al 23 de junio: peso se fortalece tras datos de cobre y flujos de capital',
+            'summary': 'El peso chileno acumula apreciación de 1,4% en la semana impulsado por el rally del cobre y la entrada de capitales a bonos soberanos. La UF continúa su trayectoria gradual al alza en línea con el IPC. El BCCh registra reservas internacionales en USD 44.200M, nivel récord.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[23 Jun] ICARE: mañana encuentro con Ministra de Ciencia Ximena Lincolao — agenda de innovación y IA',
+            'summary': 'El encuentro del 24 de junio reunirá a líderes empresariales con la Ministra de Ciencia para abordar la política nacional de IA, el financiamiento de startups deeptech y la transferencia tecnológica desde universidades. Inscripciones disponibles en icare.cl.',
+            'source': 'ICARE',
+            'link': 'https://www.icare.cl/agenda-de-actividades/'
+        },
+        {
+            'title': '[23 Jun] Ventas retail suben 3,2% real en mayo: primer alza en cuatro meses confirma recuperación del consumo',
+            'summary': 'El INE reporta que las ventas del comercio minorista crecieron 3,2% en términos reales respecto a mayo 2025. Tecnología, electrodomésticos y materiales de construcción lideran el alza. El dato es consistente con la baja de TPM del BCCh y refuerza las proyecciones de crecimiento de 2,5% para 2026.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[23 Jun] Transbank lanza plataforma de pagos instantáneos 24/7 para pymes: integración con cooperativas en agosto',
+            'summary': 'El operador de pagos anuncia que su nueva API de pagos en tiempo real estará disponible para comercios de cualquier tamaño desde julio. Las cooperativas de ahorro y crédito podrán integrarse desde agosto bajo el marco de open finance de la Ley Fintech. Costo de transacción baja un 40% respecto al esquema anterior.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+        {
+            'title': '[23 Jun] Fintechs chilenas captan USD 180M en primera mitad de 2026: crédito digital y seguros lideran inversión',
+            'summary': 'Reporte de ACVC y Fintech Chile muestra que el ecosistema local atrajo un 35% más de capital que en el mismo período de 2025. Los segmentos de crédito digital y seguros tecnológicos concentran el 58% de la inversión. Cinco startups chilenas están en proceso de expansión a Colombia y México.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[23 Jun] BancoEstado pilotea asistente IA para atención de clientes cooperativos: 94% de satisfacción en prueba piloto',
+            'summary': 'El banco estatal presenta resultados de su piloto de asistente conversacional con IA para socios de cooperativas afiliadas. El sistema resuelve el 78% de las consultas sin intervención humana, con un índice de satisfacción del 94%. Ampliación a 500.000 usuarios en Q3 2026.',
+            'source': 'BancoEstado',
+            'link': 'https://www.bancoestado.cl'
+        },
+        {
+            'title': '[23 Jun] Ministerio de Ciencia lanza Fondo IA Chile 2026: USD 45M para proyectos de impacto en finanzas y salud',
+            'summary': 'Convocatoria abierta para proyectos de inteligencia artificial en sectores estratégicos. Financiamiento de hasta USD 3M por proyecto. Las cooperativas de crédito y entidades financieras no bancarias son elegibles. Postulaciones hasta el 15 de agosto a través de la plataforma de Corfo.',
+            'source': 'Ministerio de Ciencia',
+            'link': 'https://www.minciencia.gob.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[23 Jun] Coopeuch anuncia nueva sucursal en Temuco: responde a demanda creciente en La Araucanía',
+            'summary': 'La cooperativa más grande de Chile inaugurará su décima sucursal regional en Temuco el próximo 1 de julio. La apertura responde al crecimiento del 34% en socios de la región en los últimos dos años. Ofrecerá crédito hipotecario, ahorro y productos de inversión para trabajadores del sector público y privado.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[23 Jun] ACI Américas convoca al Congreso Cooperativo Latinoamericano 2026: Chile sede en octubre',
+            'summary': 'La Alianza Cooperativa Internacional anuncia que Santiago será sede del encuentro regional en octubre de 2026. El congreso reunirá a más de 2.000 dirigentes cooperativos de 18 países para abordar gobernanza, tecnología y sostenibilidad. Foro Cooperativo Chile liderará la organización local.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[23 Jun] CMF publica circular sobre requerimientos de capital para cooperativas de mayor tamaño',
+            'summary': 'La Comisión emite instrucciones para cooperativas con activos superiores a UF 400.000, estableciendo requerimientos de capital mínimo y cobertura de riesgo alineados con Basilea III adaptado. Las entidades tienen 18 meses para adecuarse. La norma afecta principalmente a Coopeuch, Detacoop y Oriencoop.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[23 Jun] Petróleo Brent en USD 81,8: OPEP+ mantiene recortes pese a presión de consumidores — impacto moderado en Chile',
+            'summary': 'La alianza de productores ratifica recorte de producción hasta fin de año. Enap ajusta proyección de precios de combustibles para julio: alzas de entre $2 y $4 por litro dependiendo del tipo de combustible. El BCCh monitorea el efecto inflacionario, estimado en 0,05 puntos porcentuales en el IPC de julio.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[23 Jun] Deuda pública chilena: gobierno coloca bonos en el exterior por USD 1.500M a tasa récord de 4,85%',
+            'summary': 'Hacienda completa exitosa colocación de bonos soberanos en mercados internacionales. La tasa obtenida es la más baja desde 2020 y refleja la confianza de los mercados en la solidez fiscal de Chile. Los fondos se destinarán a infraestructura pública y al programa de vivienda del gobierno.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -2103,6 +2219,7 @@ def generate_dynamic_news():
         '20260615': TODAY_NEWS_15JUN2026,
         '20260616': TODAY_NEWS_16JUN2026,
         '20260622': TODAY_NEWS_22JUN2026,
+        '20260623': TODAY_NEWS_23JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
