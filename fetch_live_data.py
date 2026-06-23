@@ -202,7 +202,7 @@ MANUAL_OVERRIDE = {
 MOCK_DATA = {
     'uf':      {'valor': 40801.29, 'fecha': '2026-06-23', 'fuente': 'SII (23-jun-2026)', 'mock': True},
     'utm':     {'valor': 71506.0,  'fecha': '2026-06-23', 'fuente': 'BCCh (23-jun-2026)', 'mock': True},
-    'tpm':     {'valor': 4.25,     'fecha': '2026-06-17', 'fuente': 'BCCh (17-jun-2026)', 'mock': True},
+    'tpm':     {'valor': 4.50,     'fecha': '2026-06-23', 'fuente': 'BCCh SI3 (23-jun-2026)', 'mock': True},
     'usd_clp': {'valor': 905.78,   'fecha': '2026-06-23', 'fuente': 'BCCh SI3 (23-jun-2026)', 'mock': True},
 }
 
