@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-06-23T17:06:27.804775",
-  "total_alertas": 1,
-  "alertas_criticas": 1,
+  "fecha": "2026-06-23T18:06:55.853894",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -10,6 +10,13 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.latercera.com"
     }
   ]
 }
