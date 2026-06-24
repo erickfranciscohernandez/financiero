@@ -1,22 +1,29 @@
 {
-  "fecha": "2026-06-24T11:11:50.433189",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-06-24T12:56:13.919614",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
+      "titulo": "[24 Jun] OCDE eleva proyección de crecimiento global a 3,2% para 2026: Chile entre los más beneficiados de Latam",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
+      "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "[24 Jun] Cumbre UE–Celac reactiva agenda comercial: acuerdo de minerales críticos Chile–Europa en etapa final",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.elmostrador.cl/categoria/noticias/feed/"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     }
   ]
 }
