@@ -1,15 +1,15 @@
 {
-  "fecha": "2026-06-25T10:49:45.817485",
-  "total_alertas": 5,
-  "alertas_criticas": 5,
+  "fecha": "2026-06-25T14:48:53.372116",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "seccion": "geopolitica",
+      "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
+      "enlace": "https://www.ft.com/world"
     },
     {
       "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
@@ -19,13 +19,6 @@
       "enlace": "https://www.bloomberg.com/politics"
     },
     {
-      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.ft.com/world"
-    },
-    {
       "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
@@ -33,11 +26,11 @@
       "enlace": "https://www.reuters.com/business/energy"
     },
     {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.df.cl"
     }
   ]
 }
