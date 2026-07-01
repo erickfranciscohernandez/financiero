@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-01T04:45:06.778617",
+  "fecha": "2026-07-01T11:31:00.489247",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -14,8 +14,8 @@
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 71506.0,
-      "fecha": "2026-06-01",
+      "valor": 71649.0,
+      "fecha": "2026-07-01",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "tpm": {
@@ -23,7 +23,7 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-06-30",
+      "fecha": "2026-07-01",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "usd_clp": {
