@@ -2303,6 +2303,122 @@ TODAY_NEWS_24JUN2026 = {
 }
 
 
+TODAY_NEWS_25JUN2026 = {
+    'geopolitica': [
+        {
+            'title': '[25 Jun] Cumbre UE–Celac concluye con acuerdo marco de minerales críticos: Chile firma capítulo de litio',
+            'summary': 'Los líderes europeos y latinoamericanos firman el marco general del acuerdo de minerales críticos. Chile asegura acceso preferencial a tecnología de baterías de la UE a cambio de suministro estable de litio procesado. Se estima que el acuerdo generará inversiones por USD 4.000M en los próximos cinco años.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[25 Jun] OTAN y socios del Indo-Pacífico refuerzan acuerdo de seguridad marítima: impacto en rutas comerciales del Pacífico',
+            'summary': 'La alianza amplía su acuerdo con Japón, Corea del Sur y Australia para proteger rutas marítimas estratégicas en el Indo-Pacífico. Chile, como exportador dependiente de estas rutas, beneficia de mayor estabilidad para sus envíos de cobre, litio y productos agrícolas a Asia.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[25 Jun] PCE de EE.UU. en 2,6% anual: dato clave consolida expectativa de recorte Fed en septiembre',
+            'summary': 'El índice de precios PCE —el favorito de la Fed— bajó a 2,6% en mayo, acercándose a la meta del 2%. Los mercados elevan la probabilidad de recorte en septiembre al 81%. Dólar DXY pierde 0,5%, peso chileno se aprecia y cobre avanza a USD 5,30/lb.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[25 Jun] Banco de Japón mantiene tasa en 0,5%: yen se debilita y flujos rotan hacia emergentes — Chile capta USD 420M',
+            'summary': 'La decisión del BoJ de no subir tasas amplía el diferencial con EE.UU. y deprecia el yen. Los fondos globales aumentan exposición a bonos emergentes; Chile recibe USD 420M de flujos netos en la semana. El IPSA sube 0,9% y el peso se aprecia.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[25 Jun] UF y dólar observado al 25 de junio: peso en nivel más fuerte desde abril',
+            'summary': 'El tipo de cambio continúa apreciándose ante la debilidad global del dólar y el alza del cobre. La UF mantiene su trayectoria gradual al alza en línea con el IPC de mayo. BCCh interviene verbalmente para calmar la apreciación excesiva del peso.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[25 Jun] ICARE: resultados del encuentro de ayer con Ministra Lincolao — USD 220M para IA y 15.000 especialistas',
+            'summary': 'El Plan Nacional de IA presentado ayer contempla cinco centros de excelencia en universidades regionales y un fondo de USD 220M en cuatro años. Las cooperativas de crédito fueron destacadas como caso de uso prioritario para IA financiera inclusiva. Próximo encuentro ICARE en julio.',
+            'source': 'ICARE',
+            'link': 'https://www.icare.cl/agenda-de-actividades/'
+        },
+        {
+            'title': '[25 Jun] Imacec de mayo en 3,4%: tercer mes consecutivo de crecimiento robusto — economía chilena acelera',
+            'summary': 'El Indicador Mensual de Actividad Económica superó las expectativas del mercado (consenso: 3,1%). Minería aportó 0,9 pp gracias al cobre; comercio y servicios sumaron 1,8 pp. El BCCh podría revisar al alza su proyección de crecimiento de 2,5% para 2026.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[25 Jun] Ley de Ciberseguridad: Congreso aprueba regulación de incidentes para sector financiero — CMF implementa en 60 días',
+            'summary': 'El Congreso aprueba el reglamento que obliga a bancos, cooperativas y fintechs a reportar incidentes de ciberseguridad en menos de 72 horas. La CMF tendrá 60 días para emitir las instrucciones específicas. Las multas por incumplimiento alcanzan las UF 10.000.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+        {
+            'title': '[25 Jun] Open Banking Chile: 140 entidades ya integradas a la plataforma de datos financieros abiertos',
+            'summary': 'La plataforma de open finance bajo la Ley Fintech supera el hito de 140 entidades integradas, incluyendo 28 cooperativas de ahorro y crédito. Los usuarios ya pueden compartir sus datos entre instituciones para acceder a mejores tasas y productos personalizados.',
+            'source': 'El Mercurio',
+            'link': 'https://www.emol.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[25 Jun] BCCh publica primer informe de riesgos de IA en el sistema financiero chileno',
+            'summary': 'El documento identifica cuatro riesgos principales: concentración en proveedores de IA, opacidad de modelos de crédito, ciberataques a sistemas de IA y efectos procíclicos por uso masivo de algoritmos similares. Se recomienda diversificación tecnológica y auditorías independientes periódicas.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[25 Jun] Corfo adjudica primera ronda del Fondo IA Chile 2026: ocho proyectos financieros seleccionados',
+            'summary': 'Los ocho proyectos incluyen scoring alternativo para trabajadores independientes, detección de fraude cooperativo, automatización de compliance AML y análisis de riesgo climático en cartera hipotecaria. Monto total adjudicado: USD 18M. Implementación en 18 meses.',
+            'source': 'CORFO',
+            'link': 'https://www.corfo.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[25 Jun] Detacoop inaugura plataforma digital: gestión 100% en línea de créditos, ahorros e inversiones',
+            'summary': 'La cooperativa lanza su nueva plataforma digital que permite a los socios gestionar todos sus productos sin ir a sucursal. Incluye firma electrónica avanzada, videollamada con ejecutivo y apertura de productos en menos de 10 minutos. Disponible en iOS, Android y web.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[25 Jun] Foro Cooperativo Chile: seminario "Cooperativas y transición energética" el 8 de julio en Santiago',
+            'summary': 'El evento reunirá a líderes del sector cooperativo, representantes del Ministerio de Energía y expertos internacionales para analizar el rol de las cooperativas en la descarbonización. Se presentarán los primeros proyectos de energía solar cooperativa en regiones.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[25 Jun] Último día hábil para comentar normativas CMF sobre intermediarios de valores — vence mañana 26 de junio',
+            'summary': 'La CMF recuerda que mañana viernes 26 es el último día para enviar observaciones sobre las circulares de patrimonio mínimo, garantías, liquidez y volumen de negocios para intermediarios de valores y corredores de bolsa. Los comentarios deben ingresarse a través del portal oficial de la CMF.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[25 Jun] Cobre alcanza USD 5,30/lb: máximo de cuatro semanas — exportaciones chilenas superarán USD 50.000M en 2026',
+            'summary': 'El metal rojo avanza impulsado por el PCE favorable de EE.UU. y el estímulo chino. Analistas de Codelco estiman que a este precio las exportaciones anuales de cobre superarán por primera vez los USD 32.000M. Las reservas del BCCh se benefician de la entrada de divisas.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[25 Jun] Tasa de desocupación de mayo en 8,1%: mercado laboral se fortalece — empleo formal crece 3,1%',
+            'summary': 'INE reporta descenso de la desocupación en 0,2 puntos respecto a abril. El empleo formal crece 3,1% en doce meses, liderado por minería, construcción y servicios financieros. La tasa de participación femenina sube a 52,4%, nuevo máximo histórico.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -2331,6 +2447,7 @@ def generate_dynamic_news():
         '20260622': TODAY_NEWS_22JUN2026,
         '20260623': TODAY_NEWS_23JUN2026,
         '20260624': TODAY_NEWS_24JUN2026,
+        '20260625': TODAY_NEWS_25JUN2026,
     }
     today_blocks = today_map.get(today_str, {})
 
