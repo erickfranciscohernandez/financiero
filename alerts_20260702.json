@@ -1,15 +1,15 @@
 {
-  "fecha": "2026-07-02T04:12:24.327836",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-07-02T10:48:59.581140",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
-      "seccion": "geopolitica",
-      "score": 9,
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.ft.com/world"
+      "enlace": "https://www.bcentral.cl"
     },
     {
       "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
@@ -19,11 +19,18 @@
       "enlace": "https://www.bloomberg.com/politics"
     },
     {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
+      "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     },
     {
       "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
