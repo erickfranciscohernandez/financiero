@@ -1,29 +1,22 @@
 {
-  "fecha": "2026-07-03T03:58:53.535649",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-07-03T07:32:20.667484",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
+    {
+      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/politics"
+    },
     {
       "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.ft.com/world"
-    },
-    {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
