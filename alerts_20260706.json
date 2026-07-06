@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-06T11:22:53.981634",
-  "total_alertas": 6,
-  "alertas_criticas": 6,
+  "fecha": "2026-07-06T12:12:39.497739",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,13 +17,6 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
     },
     {
       "titulo": "[6 Jul] IPSA cierra junio con alza de 5,1%: mejor mes desde noviembre 2024 — Codelco y SQM lideran",
