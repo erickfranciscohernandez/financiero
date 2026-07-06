@@ -21,7 +21,7 @@ CMF_NORMATIVA_URL = (
     'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
 )
 
-# Datos de respaldo — normativa vigente extraída de cmfchile.cl el 15-jun-2026
+# Datos de respaldo — normativa vigente extraída de cmfchile.cl (actualizado 06-jul-2026)
 MOCK_NORMATIVA = [
     {
         'tipo':   'Circular',
@@ -29,20 +29,6 @@ MOCK_NORMATIVA = [
         'materia': 'Modificación Circular N°2062, que instruye respecto al tratamiento de recálculo de pensión, en pólizas de seguros de renta vitalicia del D.L. N°3.500, de 1980.',
         'inicio': '10/06/2026',
         'termino': '08/07/2026',
-    },
-    {
-        'tipo':   'Circular',
-        'numero': '—',
-        'materia': 'Imparte instrucciones relativas al Envío de información para Intermediarios de Valores y Corredores de Bolsa de Productos sobre patrimonio mínimo, garantías, liquidez y endeudamiento.',
-        'inicio': '01/06/2026',
-        'termino': '26/06/2026',
-    },
-    {
-        'tipo':   'Circular',
-        'numero': '—',
-        'materia': 'Imparte instrucciones relativas al Envío de Información para los Intermediarios de Valores y Corredores de Bolsa de Productos sobre Volumen de negocios y Número de clientes.',
-        'inicio': '01/06/2026',
-        'termino': '26/06/2026',
     },
 ]
 

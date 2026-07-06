@@ -2419,6 +2419,122 @@ TODAY_NEWS_25JUN2026 = {
 }
 
 
+TODAY_NEWS_06JUL2026 = {
+    'geopolitica': [
+        {
+            'title': '[6 Jul] G7 activa plan de defensa comercial ante escalada arancelaria EE.UU.–China: litio y cobre exentos',
+            'summary': 'Los ministros de comercio del G7 acuerdan un mecanismo de exenciones para minerales críticos ante la espiral de aranceles entre Washington y Pekín. El acuerdo protege a Chile como proveedor estratégico de litio y cobre. Las bolsas asiáticas suben 1,1% y el precio del cobre alcanza USD 5,35/lb.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[6 Jul] Cumbre CELAC en Caracas: Chile impulsa agenda de integración financiera cooperativa en Latam',
+            'summary': 'La delegación chilena presenta propuesta de red de cooperativas financieras regionales para financiar la transición energética. El modelo Coopeuch y Detacoop es presentado como referencia para la región. Ocho países manifiestan interés en adoptar el marco regulatorio cooperativo chileno.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[6 Jul] Mercados inician julio con optimismo: S&P 500 en máximos históricos ante expectativa de recorte Fed',
+            'summary': 'El índice cierra junio con alza de 4,2% y abre julio en 6.080 puntos, récord histórico. La probabilidad de recorte Fed en septiembre sube al 86% tras el PCE de mayo. Cobre supera USD 5,35/lb; IPSA chileno avanza 0,7% en la apertura del lunes.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[6 Jul] FMI mejora proyección de crecimiento de Chile a 2,9% para 2026: minería y consumo interno destacan',
+            'summary': 'El Fondo Monetario Internacional revisa al alza su estimación para la economía chilena, citando el rally del cobre, la baja de tasas del BCCh y la recuperación del consumo. Chile lidera el crecimiento en América del Sur según la actualización del World Economic Outlook.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[6 Jul] Indicadores al 6 de julio: UF y dólar observado — peso chileno inicia el mes apreciado',
+            'summary': 'El peso acumula apreciación de 2,8% en junio impulsado por el rally del cobre y la entrada de capitales. La UF refleja el IPC de junio publicado la semana pasada. BCCh presenta su próxima Reunión de Política Monetaria el 22 de julio: mercado descuenta recorte de 25 pb.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[6 Jul] IPC de junio en 0,3%: inflación anual sube a 3,6% por alza de energía — BCCh mantiene sesgo bajista',
+            'summary': 'El IPC de junio publicado por el INE superó levemente el consenso de 0,2% por alzas en combustibles y tarifas eléctricas. La inflación anual sube temporalmente a 3,6% pero el BCCh mantiene su proyección de convergencia al 3% en el horizonte de política. No modifica el sesgo de recorte.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+        {
+            'title': '[6 Jul] IPSA cierra junio con alza de 5,1%: mejor mes desde noviembre 2024 — Codelco y SQM lideran',
+            'summary': 'El índice bursátil cerró junio en 8.120 puntos, impulsado por el cobre, la baja de TPM y los flujos de capital extranjero. Codelco acumula +8,3% en el mes y SQM +11,2%. Julio inicia con volúmenes de transacción por sobre el promedio histórico.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[6 Jul] Ley Fintech: primer aniversario de la plataforma open banking — 180 entidades y 2,1M de usuarios activos',
+            'summary': 'Un año después de la entrada en vigor del open finance bajo la Ley Fintech, la plataforma suma 180 entidades integradas y 2,1 millones de usuarios que han compartido sus datos para obtener mejores condiciones. Las cooperativas aportan el 18% del tráfico total de la plataforma.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[6 Jul] Transbank integra pagos en tiempo real con cooperativas: primera transacción Coopeuch–BancoEstado en 1,2 segundos',
+            'summary': 'El sistema de pagos instantáneos entre cooperativas y la banca pública completa su primer mes de operación con 4,2 millones de transacciones. El tiempo promedio de liquidación es de 1,8 segundos. La expansión al resto de la banca privada está programada para septiembre.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[6 Jul] Corfo abre segunda ronda Fondo IA Chile 2026: USD 27M disponibles para proyectos financieros y agro',
+            'summary': 'Tras adjudicar USD 18M en la primera ronda, Corfo abre convocatoria por USD 27M adicionales con foco en IA para agricultura de precisión, finanzas cooperativas y salud pública. Postulaciones hasta el 31 de agosto. Las cooperativas de crédito pueden postular como ejecutores o asociadas.',
+            'source': 'CORFO',
+            'link': 'https://www.corfo.cl'
+        },
+        {
+            'title': '[6 Jul] CMF publica primeros resultados del sandbox de criptoactivos: cuatro exchanges operan bajo supervisión experimental',
+            'summary': 'A una semana del inicio del sandbox regulatorio, los cuatro exchanges participantes reportan volumen combinado de USD 48M. La CMF identificó oportunidades de mejora en KYC y monitoreo de transacciones. El reporte completo se publicará en 90 días y alimentará la normativa permanente.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[6 Jul] Coopeuch inaugura sucursal Temuco: más de 3.000 socios se inscriben en el primer día',
+            'summary': 'La décima sucursal regional de Coopeuch abrió el martes 1 de julio con una demanda que superó todas las expectativas. En las primeras 24 horas se atendieron 3.200 socios y se tramitaron 840 solicitudes de crédito. La cooperativa anuncia apertura en Rancagua para septiembre.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[6 Jul] Semana Cooperativa 2026: del 7 al 11 de julio — actividades en todo Chile con foco en inclusión financiera',
+            'summary': 'La semana conmemorativa del movimiento cooperativo reúne talleres, asambleas y actividades en 15 regiones del país. El eje temático de este año es "Cooperativas e inteligencia artificial: tecnología para la inclusión". Foro Cooperativo coordinará el cierre el viernes 11 en Santiago.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[6 Jul] CMF: vence el 8 de julio consulta sobre recálculo de pensiones en rentas vitalicias — último llamado',
+            'summary': 'La Comisión recuerda que el próximo miércoles 8 de julio es el último día para enviar observaciones sobre la Modificación de la Circular N°2.062 relativa al recálculo de pensión en pólizas de seguros de renta vitalicia del D.L. N°3.500. Los comentarios deben ingresarse a través del portal oficial.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[6 Jul] Cobre cierra junio en USD 5,32/lb: mejor mes desde enero — proyecciones apuntan a USD 5,60 en Q3',
+            'summary': 'El metal rojo acumuló una alza de 6,8% en junio, el mejor desempeño mensual del año. Los inventarios LME permanecen en mínimos y la demanda china se acelera. Codelco estima que sus ingresos del primer semestre superarán en 18% los del mismo período de 2025.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[6 Jul] Hacienda proyecta superávit fiscal en junio: recaudación tributaria crece 11% real por el boom del cobre',
+            'summary': 'Los ingresos fiscales de junio superaron la meta en USD 380M gracias al impuesto específico a la minería y al royalty al litio. El Ministerio de Hacienda revisa al alza la proyección de balance estructural para 2026. Moody\'s y S&P reafirman la calificación soberana Aa3/A+ con perspectiva estable.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -2448,6 +2564,7 @@ def generate_dynamic_news():
         '20260623': TODAY_NEWS_23JUN2026,
         '20260624': TODAY_NEWS_24JUN2026,
         '20260625': TODAY_NEWS_25JUN2026,
+        '20260706': TODAY_NEWS_06JUL2026,
     }
     today_blocks = today_map.get(today_str, {})
 
