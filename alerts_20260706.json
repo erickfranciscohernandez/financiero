@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-06T12:22:14.264077",
-  "total_alertas": 5,
-  "alertas_criticas": 5,
+  "fecha": "2026-07-06T18:17:24.773575",
+  "total_alertas": 7,
+  "alertas_criticas": 7,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,6 +17,20 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
     },
     {
       "titulo": "[6 Jul] IPSA cierra junio con alza de 5,1%: mejor mes desde noviembre 2024 — Codelco y SQM lideran",
