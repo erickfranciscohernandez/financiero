@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-09T21:36:07.423715",
+  "fecha": "2026-07-10T04:02:16.944241",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -23,7 +23,7 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-07-09",
+      "fecha": "2026-07-10",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "usd_clp": {
