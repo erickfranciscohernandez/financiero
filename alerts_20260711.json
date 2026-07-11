@@ -1,29 +1,15 @@
 {
-  "fecha": "2026-07-11T13:43:40.275623",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-07-11T17:06:16.783267",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-      "seccion": "economia_global",
-      "score": 9,
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.bcentral.cl"
     }
   ]
 }
