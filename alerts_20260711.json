@@ -1,29 +1,22 @@
 {
-  "fecha": "2026-07-11T09:44:39.834394",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-07-11T13:43:40.275623",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.reuters.com/business/energy"
     },
     {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
-      "seccion": "economia_chile",
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
+      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
