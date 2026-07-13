@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-13T15:54:34.258815",
+  "fecha": "2026-07-13T18:02:30.918106",
   "total_alertas": 5,
   "alertas_criticas": 5,
   "alertas_altas": 0,
@@ -12,18 +12,18 @@
       "enlace": "https://www.reuters.com/world"
     },
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
       "titulo": "[13 Jul] BCE recorta 25 pb: tasa de depósito en 2,0% — inflación eurozona converge al 2% por primera vez desde 2021",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.reuters.com/world"
+    },
+    {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
