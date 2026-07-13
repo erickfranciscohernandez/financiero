@@ -1,14 +1,14 @@
 {
-  "fecha": "2026-07-13T15:19:33.790118",
+  "fecha": "2026-07-13T15:54:16.258481",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
       "label": "UF",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 40836.63,
-      "fecha": "2026-07-06",
-      "fuente": "SII (06-jul-2026)"
+      "valor": 40844.0,
+      "fecha": "2026-07-13",
+      "fuente": "SII (13-jul-2026)"
     },
     "utm": {
       "label": "UTM",
