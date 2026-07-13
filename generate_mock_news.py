@@ -2535,6 +2535,122 @@ TODAY_NEWS_06JUL2026 = {
 }
 
 
+TODAY_NEWS_07JUL2026 = {
+    'geopolitica': [
+        {
+            'title': '[7 Jul] EE.UU. y China acuerdan pausa arancelaria de 90 días: minerales críticos quedan fuera de la escalada',
+            'summary': 'Tras las conversaciones del G7 del fin de semana, Washington y Pekín anuncian una tregua comercial de 90 días que excluye explícitamente los minerales críticos. El acuerdo abre espacio para un tratado bilateral de largo plazo. El cobre supera USD 5,40/lb y el IPSA avanza 0,9% al cierre del lunes.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[7 Jul] Cumbre APEC Santiago 2026: agenda confirma sesión sobre finanzas cooperativas y banca pública',
+            'summary': 'El programa de la cumbre APEC incluye una sesión específica sobre el modelo cooperativo chileno como herramienta de inclusión financiera. Foro Cooperativo y Coopeuch participarán como expositores ante los 21 delegados de la región Asia-Pacífico. La cumbre se realizará en noviembre en Santiago.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[7 Jul] S&P 500 mantiene máximos históricos: Fed confirma que no subirá tasas antes de septiembre',
+            'summary': 'El presidente de la Fed, Jerome Powell, ratifica ante el Congreso que la política monetaria permanecerá sin cambios hasta que los datos de inflación confirmen la convergencia al 2%. Los futuros descuentan 87% de probabilidad de recorte en septiembre. El dólar índice cae 0,4% y los mercados emergentes se benefician.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[7 Jul] Banco Mundial: América Latina crecerá 2,6% en 2026 — Chile y Uruguay lideran la región',
+            'summary': 'El informe semestral del Banco Mundial sitúa a Chile con el mayor crecimiento de la región (2,9%) gracias al impulso minero, el consumo privado y la inversión en energías renovables. El organismo destaca la solidez fiscal y el marco de metas de inflación del BCCh como factores de estabilidad.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[7 Jul] Indicadores del lunes 7 de julio: mercados locales siguen tendencia global positiva',
+            'summary': 'El IPSA abre la semana con alza impulsado por la tregua arancelaria EE.UU.–China y los precios del cobre. El peso chileno se aprecia frente al dólar reflejando el mejor ánimo externo. El BCCh publicará su informe de comercio exterior de junio el próximo jueves.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[7 Jul] Hacienda: gasto público de junio creció 4,2% real — inversión en infraestructura lidera la ejecución presupuestaria',
+            'summary': 'El Ministerio de Hacienda reporta que la ejecución del gasto en junio alcanzó el 96% de la meta mensual, liderada por proyectos de infraestructura y subsidios habitacionales. El superávit fiscal acumulado al primer semestre asciende a USD 1.200M, el mejor resultado desde 2011.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+        {
+            'title': '[7 Jul] BCCh: Reunión de Política Monetaria del 22 de julio — mercado anticipa recorte de 25 pb a 4,25%',
+            'summary': 'Con la inflación bajo control y el IPC de junio dentro de la banda, el consenso de mercado asigna 78% de probabilidad a un recorte de 25 puntos base en la RPM de julio. De concretarse, la TPM quedaría en 4,25%, acumulando 225 pb de recortes desde el ciclo de baja iniciado en 2024.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[7 Jul] Ley Fintech: CMF publica reglamento de cuentas de pago — efectivo en septiembre para cooperativas',
+            'summary': 'La Comisión para el Mercado Financiero publica el reglamento definitivo de cuentas de pago bajo la Ley Fintech. Las cooperativas de ahorro y crédito tienen hasta el 30 de septiembre para adecuar sus sistemas. El reglamento establece límites de saldo, interoperabilidad y protección de fondos de los socios.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[7 Jul] BancoEstado lanza billetera digital con QR para cooperativas: interoperabilidad lista en agosto',
+            'summary': 'La nueva billetera CuentaRUT+QR permite a los socios de cooperativas afiliadas realizar pagos en el comercio sin necesidad de tarjeta. El sistema opera sobre el estándar ISO 20022 y es compatible con los principales procesadores de pagos. Coopeuch y Detacoop serán las primeras en integrarse.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[7 Jul] CMF publica lineamientos de IA responsable para el sector financiero: cooperativas incluidas',
+            'summary': 'La Comisión publica un documento de buenas prácticas para el uso de inteligencia artificial en scoring crediticio, detección de fraude y atención al cliente. Los lineamientos son de aplicación voluntaria en 2026 y se convertirán en normativa obligatoria en 2027. Las cooperativas participaron en la consulta pública.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[7 Jul] Ministerio de Economía adjudica contratos de transformación digital a cooperativas por $4.200 millones',
+            'summary': 'Diez cooperativas de ahorro y crédito recibieron fondos del programa "Cooperativas Digitales 2026" para implementar plataformas de atención omnicanal y modelos predictivos de riesgo crediticio. Los proyectos deben estar operativos antes del 31 de diciembre de 2026.',
+            'source': 'Ministerio de Economía',
+            'link': 'https://www.economia.gob.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[7 Jul] Semana Cooperativa 2026: acto inaugural reúne a 1.200 dirigentes en el Centro Cultural Gabriela Mistral',
+            'summary': 'El acto de apertura de la Semana Cooperativa contó con la presencia del Ministro de Economía y representantes de Foro Cooperativo, Coopeuch y Detacoop. El eje temático "Cooperativas e Inteligencia Artificial" marcó el tono de las actividades que se extenderán hasta el viernes 11. Hay eventos en 15 regiones del país.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[7 Jul] Coopeuch: resultados del primer semestre — cartera de crédito crece 8,2% y mora baja a 1,9%',
+            'summary': 'La mayor cooperativa de Chile presenta sus resultados preliminares del primer semestre con crecimiento sostenido en créditos de consumo e hipotecarios. La morosidad sobre 90 días baja al mínimo histórico de 1,9%. El excedente del semestre supera los $18.000 millones y será distribuido entre los socios.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[7 Jul] CMF recuerda: mañana cierra la consulta sobre Circular N°2.062 de recálculo de pensiones en rentas vitalicias',
+            'summary': 'La Comisión para el Mercado Financiero informa que el martes 8 de julio vence el plazo para enviar observaciones a la Modificación de la Circular N°2.062 sobre recálculo de pensión en pólizas de seguros de renta vitalicia. Las aseguradoras y actuarios interesados deben presentar sus comentarios antes de las 17:00 horas.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[7 Jul] Cobre supera USD 5,40/lb impulsado por la tregua EE.UU.–China y déficit de inventarios LME',
+            'summary': 'El metal rojo inicia la semana con el mejor precio desde enero de 2025, impulsado por la pausa arancelaria y la baja de inventarios en la Bolsa de Metales de Londres. Los analistas de Goldman Sachs elevan su objetivo para fin de año a USD 5,80/lb. Codelco y Teck actualizan sus proyecciones de ventas al alza.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[7 Jul] INE publica Imacec de mayo: economía chilena crece 3,4% — minería aporta 1,8 puntos porcentuales',
+            'summary': 'El Indicador Mensual de Actividad Económica de mayo superó el consenso de mercado (3,1%) gracias al dinamismo de la minería y los servicios. El dato confirma que la economía chilena está en la senda de crecimiento proyectada por el BCCh en el IPoM de junio. El IPSA reacciona al alza con un incremento de 0,8%.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -2565,6 +2681,7 @@ def generate_dynamic_news():
         '20260624': TODAY_NEWS_24JUN2026,
         '20260625': TODAY_NEWS_25JUN2026,
         '20260706': TODAY_NEWS_06JUL2026,
+        '20260707': TODAY_NEWS_07JUL2026,
     }
     today_blocks = today_map.get(today_str, {})
 
