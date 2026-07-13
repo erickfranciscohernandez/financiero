@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-13T18:02:30.918106",
-  "total_alertas": 5,
-  "alertas_criticas": 5,
+  "fecha": "2026-07-13T21:06:07.676153",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,25 +12,18 @@
       "enlace": "https://www.reuters.com/world"
     },
     {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
       "titulo": "[13 Jul] BCE recorta 25 pb: tasa de depósito en 2,0% — inflación eurozona converge al 2% por primera vez desde 2021",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.reuters.com/world"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
-    },
-    {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
     },
     {
       "titulo": "[13 Jul] Cobre mantiene USD 5,42/lb: China reactiva compras tras semana de tregua arancelaria",
