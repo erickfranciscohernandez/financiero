@@ -2651,6 +2651,122 @@ TODAY_NEWS_07JUL2026 = {
 }
 
 
+TODAY_NEWS_13JUL2026 = {
+    'geopolitica': [
+        {
+            'title': '[13 Jul] G20 en Sudáfrica: Chile presenta propuesta de fondo multilateral para minerales críticos',
+            'summary': 'La delegación chilena ante el G20 presenta un borrador de fondo multilateral de USD 20.000M para financiar proyectos de litio y cobre con estándares ESG. El mecanismo busca reducir la dependencia de un solo comprador para minerales estratégicos. Brasil y Australia apoyan la iniciativa; China pide paridad de condiciones.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[13 Jul] Tregua EE.UU.–China: primera semana de pausa consolida mercados — índices asiáticos acumulan +3,1%',
+            'summary': 'Los mercados financieros cierran la primera semana completa de tregua arancelaria con ganancias generalizadas. El yuan se aprecia 0,6% y los mercados emergentes reciben flujos netos positivos por tercer día consecutivo. El peso chileno acumula apreciación de 1,4% en la semana.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[13 Jul] Wall Street: S&P 500 avanza por cuarta semana consecutiva — nvidia y semis lideran el alza',
+            'summary': 'El índice cierra la semana del 7–11 de julio en 6.140 puntos, con el sector tecnológico aportando el 60% de los retornos. La temporada de resultados Q2 inicia el lunes con los grandes bancos. Las estimaciones de BPA del S&P 500 para 2026 han subido 4,2% desde enero.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+        {
+            'title': '[13 Jul] BCE recorta 25 pb: tasa de depósito en 2,0% — inflación eurozona converge al 2% por primera vez desde 2021',
+            'summary': 'El Banco Central Europeo baja su tasa de referencia ante la consolidación de la inflación en el objetivo. El euro cae levemente frente al dólar. La Fed podría acelerar su propio ciclo de recortes si el dato de IPC de EE.UU. del miércoles confirma la tendencia de desinflación.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[13 Jul] UF al 13 de julio: $40.844 — refleja el IPC de junio dentro de la meta del BCCh',
+            'summary': 'La Unidad de Fomento se ubica en $40.844 conforme a la publicación del SII. El valor incorpora el IPC de junio de 0,3% y mantiene la trayectoria proyectada por el BCCh. La próxima Reunión de Política Monetaria del 22 de julio podría modificar el sesgo si la inflación de julio sorprende.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[13 Jul] IPSA inicia la semana en terreno positivo: acciones mineras y retail lideran los avances',
+            'summary': 'El IPSA abre el lunes con alza respaldado por el precio del cobre sobre USD 5,40/lb y los datos positivos del Imacec de mayo. El sector retail reporta el mejor julio desde 2023 según la Cámara de Comercio de Santiago. Los fondos de pensiones tipo A registran retorno de 1,8% en lo que va de julio.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[13 Jul] BCCh: RPM del 22 de julio — probabilidad de recorte a 4,25% sube al 82% tras datos de empleo de junio',
+            'summary': 'La tasa de desempleo de junio bajó a 8,1%, con creación de 38.000 empleos formales. Los datos confirman que la economía crece sin presiones inflacionarias adicionales, reforzando el argumento del BCCh para continuar el ciclo de recortes en julio. El mercado de swaps descuenta 25 pb de baja.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[13 Jul] Semana Cooperativa cerró con récord: 28.000 asistentes y 15 regiones conectadas en formato híbrido',
+            'summary': 'La Semana Cooperativa 2026 (7–11 de julio) culminó con más asistentes que cualquier edición anterior. Los talleres de IA aplicada a cooperativas fueron los más demandados, con listas de espera de hasta 400 personas. Foro Cooperativo anuncia que los contenidos estarán disponibles en su plataforma digital.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[13 Jul] CMF aprueba primer modelo de scoring crediticio con IA de una cooperativa chilena',
+            'summary': 'La Comisión para el Mercado Financiero autoriza el uso del modelo predictivo desarrollado por una cooperativa regional, convirtiéndola en la primera entidad no bancaria del país en operar con scoring basado en machine learning bajo la supervisión de la CMF. El modelo reduce la morosidad proyectada en 18%.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[13 Jul] Microsoft invierte USD 800M en Chile: centro de datos en Quilicura amplía capacidad en 40%',
+            'summary': 'Microsoft anuncia la segunda fase de su inversión en infraestructura cloud en Chile, con foco en IA generativa y servicios financieros. El centro de Quilicura será el hub de Azure para el Cono Sur. El acuerdo incluye un programa de formación en IA para 5.000 profesionales del sector financiero chileno.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+        {
+            'title': '[13 Jul] Corfo: cooperativas de crédito podrán usar el fondo IA Chile para automatizar procesos de cumplimiento normativo',
+            'summary': 'La agencia amplía el alcance del Fondo IA Chile 2026 para incluir proyectos de RegTech y cumplimiento automatizado en cooperativas. La iniciativa apunta a reducir los costos de compliance bajo las normativas de la CMF. Las postulaciones para esta línea específica se abren el 21 de julio.',
+            'source': 'CORFO',
+            'link': 'https://www.corfo.cl'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[13 Jul] Detacoop: excedentes del primer semestre crecen 12% — distribución a socios en agosto',
+            'summary': 'La cooperativa de trabajadores del Estado reporta sus mejores resultados en cinco años, impulsados por el crecimiento de la cartera hipotecaria y la baja en el costo de fondos tras los recortes de TPM. La distribución de excedentes se realizará en agosto conforme al estatuto social.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[13 Jul] OHEC convoca Encuentro Nacional de Cooperativas de Vivienda para agosto — inscripciones abiertas',
+            'summary': 'La Organización de Hogares de Empleados de Chile convoca a su encuentro anual con el foco en el acceso al crédito hipotecario cooperativo. Se esperan 800 asistentes de 12 regiones. El evento analiza el impacto del nuevo reglamento de cuentas de pago de la CMF en las cooperativas de vivienda.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[13 Jul] CMF: cerrada la consulta sobre Circular N°2.062 — análisis de observaciones en curso para nueva normativa',
+            'summary': 'Tras el cierre del período de consulta el 8 de julio, la CMF inicia el análisis de las observaciones recibidas sobre el recálculo de pensión en rentas vitalicias. Se espera que la circular modificada sea publicada en el Diario Oficial durante agosto. El mercado asegurador aguarda con atención los ajustes finales.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[13 Jul] Cobre mantiene USD 5,42/lb: China reactiva compras tras semana de tregua arancelaria',
+            'summary': 'Los inventarios LME caen por decimoquinta sesión consecutiva y la demanda física china se acelera. Los analistas de JP Morgan elevan su estimación para el precio promedio de 2026 a USD 5,50/lb. Las acciones de Codelco en el mercado de deuda alcanzan su menor spread desde 2019.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[13 Jul] INE: tasa de desempleo de junio baja a 8,1% — creación de empleo formal supera expectativas',
+            'summary': 'El mercado laboral chileno sorprende positivamente en junio con la menor tasa de desempleo en tres años. La construcción y el comercio aportan el 60% de los empleos creados. El dato refuerza la proyección de crecimiento del BCCh y da espacio para el recorte de TPM en la RPM del 22 de julio.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+}
+
+
 def generate_dynamic_news():
     """Genera noticias dinámicas basadas en la hora actual.
     Mezcla noticias del día (TODAY_NEWS) con plantillas generales."""
@@ -2682,6 +2798,7 @@ def generate_dynamic_news():
         '20260625': TODAY_NEWS_25JUN2026,
         '20260706': TODAY_NEWS_06JUL2026,
         '20260707': TODAY_NEWS_07JUL2026,
+        '20260713': TODAY_NEWS_13JUL2026,
     }
     today_blocks = today_map.get(today_str, {})
 
