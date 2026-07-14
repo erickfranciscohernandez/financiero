@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "fecha_generacion": "2026-07-14T13:03:53.155399",
+    "fecha_generacion": "2026-07-14T14:04:01.762000",
     "version": "v3",
     "total_noticias": 32
   },
@@ -11,28 +11,28 @@
         "summary": "La ministra de Relaciones Exteriores se reúne con su contraparte alemana para destrabar el acuerdo estratégico de minerales críticos Chile–UE. El pacto aseguraría a Europa suministro de litio y cobre bajo estándares medioambientales exigentes. La firma podría concretarse antes de fin de año.",
         "source": "Reuters",
         "link": "https://www.reuters.com/world",
-        "date": "2026-07-14T11:02:56.726238"
+        "date": "2026-07-14T13:03:00.681649"
       },
       {
         "title": "[14 Jul] Cumbre G20 en Johannesburgo: Chile lidera bloque de economías emergentes productoras de minerales críticos",
         "summary": "El Presidente de Chile preside el panel de países productores de minerales críticos en el G20, proponiendo estándares comunes de trazabilidad y precios de referencia. Indonesia, Australia y la RDC se suman a la iniciativa. El bloque representa el 74% de la oferta mundial de litio y cobalto.",
         "source": "El Mostrador",
         "link": "https://www.elmostrador.cl/categoria/noticias/feed/",
-        "date": "2026-07-14T11:02:56.726247"
+        "date": "2026-07-14T12:03:00.681659"
       },
       {
         "title": "G7 aprueba nuevo paquete de sanciones contra Rusia que incluye congelación de activos del banco central",
         "summary": "Bloque occidental congela USD 280.000M en reservas soberanas rusas. Medida financia reconstrucción de Ucrania. Rusia amenaza con represalias en exportaciones de titanio y níquel.",
         "source": "The Economist",
         "link": "https://www.economist.com",
-        "date": "2026-07-14T10:02:56.726254"
+        "date": "2026-07-14T06:03:00.681668"
       },
       {
-        "title": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-        "summary": "Bloque alternativo lanza plataforma de pagos bilaterales que cubriría USD 890.000M en comercio anual. Reservas globales en yuan suben al 5.8%, nivel histórico.",
-        "source": "Reuters",
-        "link": "https://www.reuters.com",
-        "date": "2026-07-14T08:02:56.726257"
+        "title": "Taiwán refuerza defensa: compra de 400 misiles Patriot PAC-3 a EE.UU. por USD 3.200M",
+        "summary": "Departamento de Estado aprueba venta en tiempo récord. China califica la operación de \"provocación grave\" y anuncia ejercicios navales alrededor de la isla para junio.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/world",
+        "date": "2026-07-14T09:03:00.681672"
       }
     ],
     "economia_global": [
@@ -41,28 +41,28 @@
         "summary": "Los grandes bancos de EE.UU. abren la temporada de resultados con sorpresas positivas: JPMorgan reporta BPA de USD 4,82 vs USD 4,51 estimado. El margen neto de interés sigue elevado. Los mercados reaccionan con alza de 0,6% en el S&P 500. Los resultados de Big Tech se publican la próxima semana.",
         "source": "Bloomberg Markets",
         "link": "https://www.bloomberg.com/markets",
-        "date": "2026-07-14T12:02:56.726268"
+        "date": "2026-07-14T14:03:00.681683"
       },
       {
         "title": "[14 Jul] IPC de EE.UU. de junio: inflación cae a 2,8% anual — probabilidad de recorte Fed en septiembre sube al 91%",
         "summary": "El dato de inflación norteamericano de junio confirma la tendencia desinflacionaria. El componente de vivienda desacelera por primera vez en 18 meses. Los bonos del Tesoro a 10 años caen a 4,12% y el dólar índice baja 0,5%, aliviando la presión sobre monedas emergentes.",
         "source": "Financial Times",
         "link": "https://www.ft.com/markets",
-        "date": "2026-07-14T13:02:56.726272"
+        "date": "2026-07-14T12:03:00.681687"
       },
       {
-        "title": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-        "summary": "Banco Central de China aumentó reservas de oro por 18° mes consecutivo. Flujos hacia ETFs de oro alcanzan USD 14.000M en mayo. Analistas de Goldman elevan objetivo a USD 3.900.",
-        "source": "Bloomberg",
-        "link": "https://www.bloomberg.com/markets",
-        "date": "2026-07-14T07:02:56.726278"
+        "title": "Banco Mundial eleva proyección para América Latina a 3.2% en 2026: mejor desempeño en 15 años",
+        "summary": "Chile, Perú y Uruguay lideran crecimiento en la región. Inversión en minería verde, energías renovables y centros de datos impulsa el PIB regional. Riesgo político en Venezuela y Nicaragua persiste.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/economics",
+        "date": "2026-07-14T12:03:00.681692"
       },
       {
-        "title": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-        "summary": "Cierre de minas Greenbushes y Pilgangoora reduce oferta en 80.000 t/año. China aprueba subsidios adicionales a vehículos eléctricos. SQM y Albemarle suben 12% en bolsa.",
-        "source": "Reuters",
-        "link": "https://www.reuters.com/business/energy",
-        "date": "2026-07-14T11:02:56.726284"
+        "title": "S&P 500 roza los 6.300 puntos: resultados del Q1 superan estimaciones en 73% de empresas del índice",
+        "summary": "Tecnología, energía y salud lideran alza. Nvidia reporta utilidades récord con margen del 55%. Analistas elevan objetivo promedio para el índice a 6.600 a fin de año.",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com/markets",
+        "date": "2026-07-14T08:03:00.681699"
       }
     ],
     "economia_chile": [
@@ -71,28 +71,28 @@
         "summary": "La Unidad de Fomento se mantiene en $40.844 según publica el SII. La inflación contenida y el IPC de junio en 0,3% sostienen el ritmo de ajuste mensual de la UF. La próxima RPM del 22 de julio es el evento clave del mes: un recorte de TPM de 25 pb llevaría la tasa a 4,25%.",
         "source": "SII / BCCh",
         "link": "https://www.sii.cl/valores_y_fechas/uf/uf2026.htm",
-        "date": "2026-07-14T11:02:56.726296"
+        "date": "2026-07-14T13:03:00.681710"
       },
       {
         "title": "[14 Jul] IPSA sube 0,8% impulsado por mineras y bancos: cobre sobre USD 5,42/lb sostiene el optimismo",
         "summary": "El índice bursátil chileno avanza liderado por Codelco, SQM y los bancos, que se benefician de los resultados positivos de la banca norteamericana. El volumen transado supera el promedio de los últimos 30 días. Los fondos extranjeros aportan flujos netos positivos por cuarta jornada consecutiva.",
         "source": "Bolsa de Santiago",
         "link": "https://www.bolsadesantiago.com",
-        "date": "2026-07-14T11:02:56.726299"
+        "date": "2026-07-14T13:03:00.681713"
       },
       {
         "title": "[14 Jul] Hacienda publica informe de finanzas públicas de junio: ingresos tributarios crecen 12,4% real",
         "summary": "El Ministerio de Hacienda reporta el mejor junio fiscal desde 2011 con ingresos tributarios impulsados por el royalty minero y el IVA. El balance acumulado del primer semestre proyecta un déficit estructural menor al proyectado en la Ley de Presupuestos. El espacio fiscal para 2027 mejora.",
         "source": "Ministerio de Hacienda",
         "link": "https://www.hacienda.cl",
-        "date": "2026-07-14T11:02:56.726302"
+        "date": "2026-07-14T14:03:00.681716"
       },
       {
-        "title": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
-        "summary": "BCCh monitorea el tipo de cambio pero descarta intervención directa. Exportadores liquidaron USD 780M en la semana. Analistras proyectan rango de $880-$910 para el tercer trimestre.",
+        "title": "Ministerio de Hacienda coloca bonos en UF a 20 años a tasa de 1.85%: la más baja en cuatro años",
+        "summary": "Demanda de USD 4.200M por una oferta de USD 2.000M evidencia apetito por deuda chilena. Chile mantiene clasificación A+ en S&P y A1 en Moody's, las más altas de la región.",
         "source": "Diario Financiero",
         "link": "https://www.df.cl",
-        "date": "2026-07-14T06:02:56.726304"
+        "date": "2026-07-14T12:03:00.681719"
       }
     ],
     "tendencias_tech": [
@@ -101,28 +101,28 @@
         "summary": "A catorce meses de la entrada en vigencia de la Ley Fintech, el segundo informe de la CMF muestra que las cooperativas de ahorro y crédito tienen la mayor tasa de adopción regional del open banking, superando a la banca en 12 de las 16 regiones del país. La interoperabilidad crece 34% en el trimestre.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-07-14T13:02:56.726312"
+        "date": "2026-07-14T13:03:00.681727"
       },
       {
         "title": "[14 Jul] Transbank: pagos QR entre cooperativas y comercio crecen 48% en la primera semana de julio",
         "summary": "El sistema de pagos instantáneos QR registra un crecimiento acelerado impulsado por la integración de Coopeuch y Detacoop. El ticket promedio es de $28.400 y el 62% de las transacciones se realiza fuera de la Región Metropolitana, demostrando el impacto en la inclusión financiera regional.",
         "source": "La Tercera",
         "link": "https://www.latercera.com",
-        "date": "2026-07-14T13:02:56.726315"
+        "date": "2026-07-14T14:03:00.681730"
       },
       {
-        "title": "Nvidia supera USD 3.8 billones de capitalización: GPU Blackwell Ultra domina mercado de infraestructura IA",
-        "summary": "Chips H200 y GB200 tienen lista de espera de 18 meses. Margen bruto sube al 78%. Analistas elevan precio objetivo a USD 180. TSMC anuncia ampliación de capacidad exclusiva para Nvidia.",
-        "source": "Bloomberg",
-        "link": "https://www.bloomberg.com/technology",
-        "date": "2026-07-14T06:02:56.726318"
-      },
-      {
-        "title": "Starlink Gen 3: SpaceX lanza 180 satélites y promete latencia de 8ms en Chile y Perú",
-        "summary": "Nueva constelación reduce latencia a la mitad y duplica velocidad de bajada. Usuarios en regiones remotas de Chile reportan 400 Mbps. Precio baja a USD 49/mes con subsidio gubernamental.",
+        "title": "Robotaxis Tesla en operación en Austin: 1.000 vehículos autónomos sin conductor ya transportan pasajeros",
+        "summary": "FSD v14 recibe aprobación de la NHTSA para operación comercial sin respaldo humano. Tarifa de USD 1.80/km. Tesla proyecta expansión a 20 ciudades para finales de 2026.",
         "source": "TechCrunch",
         "link": "https://techcrunch.com",
-        "date": "2026-07-14T05:02:56.726323"
+        "date": "2026-07-14T07:03:00.681733"
+      },
+      {
+        "title": "Apple WWDC 2026: iOS 20 integra modelo LLM propio on-device con 8.000M de parámetros",
+        "summary": "Siri 3.0 procesa contexto completo de la vida digital del usuario sin enviar datos a la nube. Apple Intelligence estará disponible desde iPhone 16 en adelante. Privacidad como ventaja competitiva.",
+        "source": "The Verge",
+        "link": "https://www.theverge.com",
+        "date": "2026-07-14T09:03:00.681737"
       }
     ],
     "cooperativismo": [
@@ -131,28 +131,28 @@
         "summary": "Aprovechando la tendencia bajista de la TPM, Coopeuch lanza una campaña de ahorro a plazo con tasa de 5,2% anual a 180 días, superior a la oferta bancaria promedio del mercado. La campaña incluye un bono de bienvenida para nuevos ahorrantes y está disponible en todas las sucursales y app.",
         "source": "Foro Cooperativo",
         "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
-        "date": "2026-07-14T11:02:56.726329"
+        "date": "2026-07-14T14:03:00.681769"
       },
       {
         "title": "[14 Jul] Foro Cooperativo publica resultados de la Semana Cooperativa 2026: 28.400 participantes y récord de cobertura regional",
         "summary": "El balance oficial de la Semana Cooperativa 2026 confirma 28.400 participantes en 15 regiones y 42 actividades. El webinar sobre IA en cooperativas fue el más visto con 6.800 conexiones simultáneas. Los contenidos estarán disponibles en la plataforma de Foro Cooperativo hasta el 31 de agosto.",
         "source": "Foro Cooperativo",
         "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
-        "date": "2026-07-14T11:02:56.726332"
+        "date": "2026-07-14T12:03:00.681772"
       },
       {
-        "title": "Cooperativas de vivienda presentan propuesta al MINVU: modelo de ahorro previo para 50.000 familias",
-        "summary": "Sector propone subsidio complementario que reduciría pie requerido al 8% para socios con al menos 24 meses de ahorro cooperativo. Ministerio analiza integración en Política Habitacional 2026.",
-        "source": "El Mostrador",
-        "link": "https://www.elmostrador.cl",
-        "date": "2026-07-14T06:02:56.726334"
+        "title": "Cooperativa Los Héroes digitaliza 100% de sus procesos: cero papel y aprobación de créditos en 12 horas",
+        "summary": "Migración total a plataforma digital reduce costos operacionales en 28% y eleva satisfacción de socios a NPS de 72 puntos. Algoritmo de scoring propio aprueba o rechaza créditos de consumo en minutos.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-07-14T09:03:00.681775"
       },
       {
-        "title": "Cooperativas de ahorro lanzan tarjeta de crédito interoperable: 800.000 socios se beneficiarán",
-        "summary": "Alianza de 12 cooperativas crea producto compartido con cupo de hasta UF 80, sin comisión de mantención y con acceso a red Transbank y Redbanc. Lanzamiento en agosto 2026.",
-        "source": "Cooperativas.cl",
-        "link": "https://www.cooperativas.cl",
-        "date": "2026-07-14T10:02:56.726337"
+        "title": "Asamblea del Consejo Mundial Cooperativo (ICA) definirá estándares ESG para cooperativas globales en junio",
+        "summary": "Reunión en Ginebra establecerá métricas de impacto social, huella de carbono y gobierno democrático para el reporte cooperativo. Chile participa con representación de cinco entidades.",
+        "source": "ACI Américas",
+        "link": "https://www.aciamericas.coop",
+        "date": "2026-07-14T09:03:00.681778"
       }
     ],
     "cmf": [
@@ -161,28 +161,28 @@
         "summary": "Tras el cierre de la consulta sobre Circular N°2.062, la CMF publica su plan de normativas para el segundo semestre. Destacan: reglamento definitivo de criptoactivos (agosto), norma de gobierno corporativo para cooperativas (septiembre) y circular sobre IA en decisiones crediticias (octubre).",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php",
-        "date": "2026-07-14T12:02:56.726342"
+        "date": "2026-07-14T12:03:00.681784"
       },
       {
-        "title": "CMF autoriza primera AAFM (Administradora de Activos Financieros Modulares) bajo Ley Fintech",
-        "summary": "Empresa Fintual Inversiones recibe licencia pionera que le permite ofrecer gestión discrecional de carteras a minoristas sin ser AFP ni corredora tradicional. Abre mercado a nuevos competidores.",
+        "title": "CMF reporta: sistema bancario chileno con capitalización del 14.2%, el nivel más sólido desde la reforma de 2019",
+        "summary": "Informe de estabilidad financiera del primer semestre 2026 confirma robustez del sector. Ratio de cobertura de liquidez en 148%, muy por encima del mínimo regulatorio del 100%.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-07-14T10:02:56.726345"
+        "date": "2026-07-14T09:03:00.681787"
       },
       {
         "title": "CMF sanciona a tres corredoras por manipulación de precios en el mercado de renta fija",
         "summary": "Multas por UF 30.000 cada una por operaciones coordinadas que distorsionaron precios de bonos corporativos. Es la mayor sanción en el mercado de capitales en diez años.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-07-14T05:02:56.726347"
+        "date": "2026-07-14T06:03:00.681789"
       },
       {
         "title": "CMF y BCCh emiten circular conjunta sobre exposición de bancos a criptoactivos: límite del 2% del capital",
         "summary": "Normativa establece que ninguna institución financiera puede superar el 2% de activos ponderados en cripto. Activos elegibles solo Bitcoin y Ether con custodios regulados en Chile.",
         "source": "CMF Chile",
         "link": "https://www.cmfchile.cl",
-        "date": "2026-07-14T07:02:56.726349"
+        "date": "2026-07-14T09:03:00.681792"
       }
     ],
     "noticias_economicas_actuales": [
@@ -191,28 +191,28 @@
         "summary": "El precio del cobre escala impulsado por la tregua EE.UU.–China y la reapertura de contratos de suministro de largo plazo por parte de fundidoras chinas. Los analistas proyectan que el metal podría superar USD 5,60/lb si la Fed recorta en septiembre. Codelco publica sus resultados del primer semestre el 25 de julio.",
         "source": "Bloomberg Commodities",
         "link": "https://www.bloomberg.com/commodities",
-        "date": "2026-07-14T12:02:56.726355"
+        "date": "2026-07-14T14:03:00.681797"
       },
       {
         "title": "[14 Jul] Imacec de junio se publica el 31 de julio — consenso apunta a crecimiento de 3,1% anual",
         "summary": "El mercado anticipa un Imacec de junio en línea con el dinamismo mostrado en mayo (3,4%). Los sectores de comercio, minería y servicios financieros serían los principales aportantes. El dato será clave para calibrar las expectativas de la RPM de agosto y el IPoM de septiembre del BCCh.",
         "source": "INE Chile",
         "link": "https://www.ine.gob.cl",
-        "date": "2026-07-14T12:02:56.726358"
+        "date": "2026-07-14T13:03:00.681800"
       },
       {
-        "title": "ICARE: confianza empresarial en 58.4 puntos en mayo — máximo desde el primer trimestre de 2022",
-        "summary": "Encuesta refleja optimismo por datos macro, menor incertidumbre regulatoria y expectativa de recorte de TPM en agosto. Inversión privada en manufactura y servicios se reactiva.",
-        "source": "ICARE",
-        "link": "https://www.icare.cl",
-        "date": "2026-07-14T05:02:56.726361"
+        "title": "IED en Chile acumula USD 11.200M en el primer semestre 2026: mayor cifra semestral en 8 años",
+        "summary": "CORFO destaca inversión en minería verde, centros de datos e hidrógeno. Amazon Web Services anuncia región cloud en Chile y compromete USD 800M en cinco años.",
+        "source": "Banco Central de Chile",
+        "link": "https://www.bcentral.cl",
+        "date": "2026-07-14T10:03:00.681802"
       },
       {
-        "title": "IPC de mayo 2026 sube 0.2% mensual: inflación anual desacelera a 3.2%, mínimo en 57 meses",
-        "summary": "INE confirma trayectoria hacia la meta. Energía residencial sube 0.9%, alimentos caen 0.4% y transporte baja 0.3%. Deflación en bienes industriales importados refleja apreciación del peso.",
+        "title": "Ventas minoristas crecen 6.1% en mayo 2026: electrodomésticos, construcción y gastronomía lideran el alza",
+        "summary": "INE registra el mejor dato del comercio en 20 meses. Crédito de consumo crece 6.9% interanual y se acelera. Menor inflación y empleo estable dinamizan el consumo de los hogares.",
         "source": "INE",
         "link": "https://www.ine.gob.cl",
-        "date": "2026-07-14T07:02:56.726363"
+        "date": "2026-07-14T10:03:00.681805"
       }
     ],
     "inteligencia_artificial": [
@@ -221,28 +221,28 @@
         "summary": "El Banco Central de Chile actualiza su plataforma de datos abiertos con una API REST de alto rendimiento que incluye 3.800 series estadísticas históricas. La plataforma es gratuita y permite a cooperativas, fintechs y academias desarrollar modelos predictivos. El acceso ya está disponible en el portal del BCCh.",
         "source": "Banco Central de Chile",
         "link": "https://www.bcentral.cl",
-        "date": "2026-07-14T12:02:56.726368"
+        "date": "2026-07-14T12:03:00.681811"
       },
       {
         "title": "[14 Jul] Startup chilena Fintual lanza asistente de inversión con IA generativa: 120.000 usuarios en lista de espera",
         "summary": "El robo-advisor chileno lanza su asistente de inversión con IA que analiza el perfil financiero del usuario y genera recomendaciones personalizadas en lenguaje natural. El lanzamiento posiciona a Chile como referente de fintech con IA en América Latina. Las cooperativas exploran acuerdos de distribución.",
         "source": "La Tercera",
         "link": "https://www.latercera.com",
-        "date": "2026-07-14T13:02:56.726371"
+        "date": "2026-07-14T14:03:00.681813"
       },
       {
-        "title": "IA en la banca chilena: tres de los cuatro mayores bancos ya usan LLMs para originar créditos Pyme",
-        "summary": "Banco de Chile, Santander y BCI confirman uso de modelos de lenguaje en scoring crediticio. CMF publicará circular de supervisión algorítmica en agosto 2026.",
-        "source": "Ben's Bites",
-        "link": "https://bensbites.com",
-        "date": "2026-07-14T10:02:56.726373"
+        "title": "AI Act UE: primeras multas por incumplimiento superan EUR 1.200M en sectores de crédito y RRHH",
+        "summary": "Reguladores de Alemania, Francia e Italia sancionan a 11 empresas por sistemas de IA sin documentación técnica o con sesgos discriminatorios verificados. Compliance de IA emerge como industria.",
+        "source": "TLDR AI",
+        "link": "https://tldr.ai",
+        "date": "2026-07-14T06:03:00.681815"
       },
       {
-        "title": "Agentes de IA autónomos gestionan el 12% de todas las tareas de código en GitHub según informe Microsoft",
-        "summary": "Copilot Workspace y Cursor generaron 340 millones de líneas de código aceptadas por desarrolladores en Q1 2026. El rol del desarrollador evoluciona hacia revisor y arquitecto de sistemas.",
-        "source": "Ben's Bites",
-        "link": "https://bensbites.com",
-        "date": "2026-07-14T11:02:56.726376"
+        "title": "Startup chilena NotCo extiende uso de IA generativa a diseño de alimentos: modelo predice textura, sabor y valor nutricional",
+        "summary": "Giuseppe 3.0 genera en horas formulaciones de productos que antes tomaban 18 meses de I+D. Modelo entrenado con 5 millones de combinaciones moleculares. Licencia a tres multinacionales de alimentos.",
+        "source": "The Rundown AI",
+        "link": "https://therundown.ai",
+        "date": "2026-07-14T09:03:00.681818"
       }
     ]
   }
