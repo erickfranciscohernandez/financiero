@@ -2651,6 +2651,122 @@ TODAY_NEWS_07JUL2026 = {
 }
 
 
+TODAY_NEWS_14JUL2026 = {
+    'geopolitica': [
+        {
+            'title': '[14 Jul] Canciller chilena en Berlín: Chile y UE aceleran el acuerdo de minerales críticos para 2026',
+            'summary': 'La ministra de Relaciones Exteriores se reúne con su contraparte alemana para destrabar el acuerdo estratégico de minerales críticos Chile–UE. El pacto aseguraría a Europa suministro de litio y cobre bajo estándares medioambientales exigentes. La firma podría concretarse antes de fin de año.',
+            'source': 'Reuters',
+            'link': 'https://www.reuters.com/world'
+        },
+        {
+            'title': '[14 Jul] Cumbre G20 en Johannesburgo: Chile lidera bloque de economías emergentes productoras de minerales críticos',
+            'summary': 'El Presidente de Chile preside el panel de países productores de minerales críticos en el G20, proponiendo estándares comunes de trazabilidad y precios de referencia. Indonesia, Australia y la RDC se suman a la iniciativa. El bloque representa el 74% de la oferta mundial de litio y cobalto.',
+            'source': 'El Mostrador',
+            'link': 'https://www.elmostrador.cl/categoria/noticias/feed/'
+        },
+    ],
+    'economia_global': [
+        {
+            'title': '[14 Jul] Temporada de resultados Q2 en EE.UU.: JPMorgan y Wells Fargo superan expectativas — banca gana con tasas altas',
+            'summary': 'Los grandes bancos de EE.UU. abren la temporada de resultados con sorpresas positivas: JPMorgan reporta BPA de USD 4,82 vs USD 4,51 estimado. El margen neto de interés sigue elevado. Los mercados reaccionan con alza de 0,6% en el S&P 500. Los resultados de Big Tech se publican la próxima semana.',
+            'source': 'Bloomberg Markets',
+            'link': 'https://www.bloomberg.com/markets'
+        },
+        {
+            'title': '[14 Jul] IPC de EE.UU. de junio: inflación cae a 2,8% anual — probabilidad de recorte Fed en septiembre sube al 91%',
+            'summary': 'El dato de inflación norteamericano de junio confirma la tendencia desinflacionaria. El componente de vivienda desacelera por primera vez en 18 meses. Los bonos del Tesoro a 10 años caen a 4,12% y el dólar índice baja 0,5%, aliviando la presión sobre monedas emergentes.',
+            'source': 'Financial Times',
+            'link': 'https://www.ft.com/markets'
+        },
+    ],
+    'economia_chile': [
+        {
+            'title': '[14 Jul] UF al 14 de julio: $40.844 — valor estable en la segunda quincena del mes',
+            'summary': 'La Unidad de Fomento se mantiene en $40.844 según publica el SII. La inflación contenida y el IPC de junio en 0,3% sostienen el ritmo de ajuste mensual de la UF. La próxima RPM del 22 de julio es el evento clave del mes: un recorte de TPM de 25 pb llevaría la tasa a 4,25%.',
+            'source': 'SII / BCCh',
+            'link': 'https://www.sii.cl/valores_y_fechas/uf/uf2026.htm'
+        },
+        {
+            'title': '[14 Jul] IPSA sube 0,8% impulsado por mineras y bancos: cobre sobre USD 5,42/lb sostiene el optimismo',
+            'summary': 'El índice bursátil chileno avanza liderado por Codelco, SQM y los bancos, que se benefician de los resultados positivos de la banca norteamericana. El volumen transado supera el promedio de los últimos 30 días. Los fondos extranjeros aportan flujos netos positivos por cuarta jornada consecutiva.',
+            'source': 'Bolsa de Santiago',
+            'link': 'https://www.bolsadesantiago.com'
+        },
+        {
+            'title': '[14 Jul] Hacienda publica informe de finanzas públicas de junio: ingresos tributarios crecen 12,4% real',
+            'summary': 'El Ministerio de Hacienda reporta el mejor junio fiscal desde 2011 con ingresos tributarios impulsados por el royalty minero y el IVA. El balance acumulado del primer semestre proyecta un déficit estructural menor al proyectado en la Ley de Presupuestos. El espacio fiscal para 2027 mejora.',
+            'source': 'Ministerio de Hacienda',
+            'link': 'https://www.hacienda.cl'
+        },
+    ],
+    'tendencias_tech': [
+        {
+            'title': '[14 Jul] Open banking Chile: CMF publica segundo informe de adopción — cooperativas lideran integración en regiones',
+            'summary': 'A catorce meses de la entrada en vigencia de la Ley Fintech, el segundo informe de la CMF muestra que las cooperativas de ahorro y crédito tienen la mayor tasa de adopción regional del open banking, superando a la banca en 12 de las 16 regiones del país. La interoperabilidad crece 34% en el trimestre.',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl'
+        },
+        {
+            'title': '[14 Jul] Transbank: pagos QR entre cooperativas y comercio crecen 48% en la primera semana de julio',
+            'summary': 'El sistema de pagos instantáneos QR registra un crecimiento acelerado impulsado por la integración de Coopeuch y Detacoop. El ticket promedio es de $28.400 y el 62% de las transacciones se realiza fuera de la Región Metropolitana, demostrando el impacto en la inclusión financiera regional.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'inteligencia_artificial': [
+        {
+            'title': '[14 Jul] BCCh lanza "Datos Abiertos BCCh 2.0": API con 50 años de series estadísticas para IA y fintech',
+            'summary': 'El Banco Central de Chile actualiza su plataforma de datos abiertos con una API REST de alto rendimiento que incluye 3.800 series estadísticas históricas. La plataforma es gratuita y permite a cooperativas, fintechs y academias desarrollar modelos predictivos. El acceso ya está disponible en el portal del BCCh.',
+            'source': 'Banco Central de Chile',
+            'link': 'https://www.bcentral.cl'
+        },
+        {
+            'title': '[14 Jul] Startup chilena Fintual lanza asistente de inversión con IA generativa: 120.000 usuarios en lista de espera',
+            'summary': 'El robo-advisor chileno lanza su asistente de inversión con IA que analiza el perfil financiero del usuario y genera recomendaciones personalizadas en lenguaje natural. El lanzamiento posiciona a Chile como referente de fintech con IA en América Latina. Las cooperativas exploran acuerdos de distribución.',
+            'source': 'La Tercera',
+            'link': 'https://www.latercera.com'
+        },
+    ],
+    'cooperativismo': [
+        {
+            'title': '[14 Jul] Coopeuch inicia campaña de captación de ahorro para socios: tasa de 5,2% anual a 180 días',
+            'summary': 'Aprovechando la tendencia bajista de la TPM, Coopeuch lanza una campaña de ahorro a plazo con tasa de 5,2% anual a 180 días, superior a la oferta bancaria promedio del mercado. La campaña incluye un bono de bienvenida para nuevos ahorrantes y está disponible en todas las sucursales y app.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+        {
+            'title': '[14 Jul] Foro Cooperativo publica resultados de la Semana Cooperativa 2026: 28.400 participantes y récord de cobertura regional',
+            'summary': 'El balance oficial de la Semana Cooperativa 2026 confirma 28.400 participantes en 15 regiones y 42 actividades. El webinar sobre IA en cooperativas fue el más visto con 6.800 conexiones simultáneas. Los contenidos estarán disponibles en la plataforma de Foro Cooperativo hasta el 31 de agosto.',
+            'source': 'Foro Cooperativo',
+            'link': 'https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/'
+        },
+    ],
+    'cmf': [
+        {
+            'title': '[14 Jul] CMF: próximas normas en consulta — plan de trabajo para el segundo semestre 2026',
+            'summary': 'Tras el cierre de la consulta sobre Circular N°2.062, la CMF publica su plan de normativas para el segundo semestre. Destacan: reglamento definitivo de criptoactivos (agosto), norma de gobierno corporativo para cooperativas (septiembre) y circular sobre IA en decisiones crediticias (octubre).',
+            'source': 'CMF Chile',
+            'link': 'https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php'
+        },
+    ],
+    'noticias_economicas_actuales': [
+        {
+            'title': '[14 Jul] Cobre en USD 5,44/lb: mayor nivel desde enero 2025 — China reabre contratos de largo plazo',
+            'summary': 'El precio del cobre escala impulsado por la tregua EE.UU.–China y la reapertura de contratos de suministro de largo plazo por parte de fundidoras chinas. Los analistas proyectan que el metal podría superar USD 5,60/lb si la Fed recorta en septiembre. Codelco publica sus resultados del primer semestre el 25 de julio.',
+            'source': 'Bloomberg Commodities',
+            'link': 'https://www.bloomberg.com/commodities'
+        },
+        {
+            'title': '[14 Jul] Imacec de junio se publica el 31 de julio — consenso apunta a crecimiento de 3,1% anual',
+            'summary': 'El mercado anticipa un Imacec de junio en línea con el dinamismo mostrado en mayo (3,4%). Los sectores de comercio, minería y servicios financieros serían los principales aportantes. El dato será clave para calibrar las expectativas de la RPM de agosto y el IPoM de septiembre del BCCh.',
+            'source': 'INE Chile',
+            'link': 'https://www.ine.gob.cl'
+        },
+    ],
+}
+
+
 TODAY_NEWS_13JUL2026 = {
     'geopolitica': [
         {
@@ -2799,6 +2915,7 @@ def generate_dynamic_news():
         '20260706': TODAY_NEWS_06JUL2026,
         '20260707': TODAY_NEWS_07JUL2026,
         '20260713': TODAY_NEWS_13JUL2026,
+        '20260714': TODAY_NEWS_14JUL2026,
     }
     today_blocks = today_map.get(today_str, {})
 

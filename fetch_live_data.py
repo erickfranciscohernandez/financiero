@@ -193,12 +193,12 @@ def fetch_mindicador():
 
 # Anulación manual de indicadores (prioridad máxima — vaciar para usar scrapers)
 MANUAL_OVERRIDE = {
-    'uf':      {'valor': 40844.00, 'fecha': '2026-07-13', 'fuente': 'SII (13-jul-2026)'},
+    'uf':      {'valor': 40844.00, 'fecha': '2026-07-14', 'fuente': 'SII (14-jul-2026)'},
     'usd_clp': {'valor': 921.74,   'fecha': '2026-07-06', 'fuente': 'BCCh SI3 (06-jul-2026)'},
 }
 
 MOCK_DATA = {
-    'uf':      {'valor': 40844.00, 'fecha': '2026-07-13', 'fuente': 'SII (13-jul-2026)', 'mock': True},
+    'uf':      {'valor': 40844.00, 'fecha': '2026-07-14', 'fuente': 'SII (14-jul-2026)', 'mock': True},
     'utm':     {'valor': 71649.0,  'fecha': '2026-07-06', 'fuente': 'BCCh (06-jul-2026)', 'mock': True},
     'tpm':     {'valor': 4.50,     'fecha': '2026-07-06', 'fuente': 'BCCh SI3 (06-jul-2026)', 'mock': True},
     'usd_clp': {'valor': 921.74,   'fecha': '2026-07-06', 'fuente': 'BCCh SI3 (06-jul-2026)', 'mock': True},
