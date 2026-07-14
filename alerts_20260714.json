@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-14T17:23:23.177835",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-07-14T21:07:03.761360",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -10,6 +10,13 @@
       "score": 10,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
     },
     {
       "titulo": "[14 Jul] Canciller chilena en Berlín: Chile y UE aceleran el acuerdo de minerales críticos para 2026",
