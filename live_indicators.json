@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-14T10:05:57.554143",
+  "fecha": "2026-07-14T13:01:40.653484",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -7,8 +7,8 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 40844.0,
-      "fecha": "2026-07-13",
-      "fuente": "SII (13-jul-2026)"
+      "fecha": "2026-07-14",
+      "fuente": "SII (14-jul-2026)"
     },
     "utm": {
       "label": "UTM",
@@ -23,8 +23,9 @@
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-07-14",
-      "fuente": "Banco Central de Chile vía mindicador.cl"
+      "fecha": "2026-07-06",
+      "fuente": "BCCh SI3 (06-jul-2026)",
+      "mock": true
     },
     "usd_clp": {
       "label": "Dólar observado",
