@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-14T13:01:40.653484",
+  "fecha": "2026-07-14T13:03:46.356195",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -15,25 +15,25 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 71649.0,
-      "fecha": "2026-07-01",
-      "fuente": "Banco Central de Chile vía mindicador.cl"
+      "fecha": "2026-07-06",
+      "fuente": "BCCh (06-jul-2026)",
+      "mock": true
     },
     "tpm": {
       "label": "TPM (Tasa Política Mon.)",
       "unidad": "%",
       "tipo": "tasa",
       "valor": 4.5,
-      "fecha": "2026-07-06",
-      "fuente": "BCCh SI3 (06-jul-2026)",
-      "mock": true
+      "fecha": "2026-07-14",
+      "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "usd_clp": {
       "label": "Dólar observado",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 921.74,
-      "fecha": "2026-07-06",
-      "fuente": "BCCh SI3 (06-jul-2026)"
+      "valor": 928.84,
+      "fecha": "2026-07-14",
+      "fuente": "BCCh SI3 (14-jul-2026)"
     }
   }
 }
