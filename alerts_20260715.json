@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-15T14:39:33.286708",
-  "total_alertas": 8,
-  "alertas_criticas": 8,
+  "fecha": "2026-07-15T17:26:12.725809",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -19,20 +19,6 @@
       "enlace": "https://www.reuters.com/world"
     },
     {
-      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.ft.com/world"
-    },
-    {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
       "titulo": "[15 Jul] Goldman Sachs eleva proyección cobre a USD 5,80/lb para fin de 2026: déficit estructural se profundiza",
       "seccion": "economia_global",
       "score": 9,
@@ -45,13 +31,6 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.ft.com/markets"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
     },
     {
       "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
