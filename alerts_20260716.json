@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-16T17:26:44.257631",
+  "fecha": "2026-07-16T21:11:12.162449",
   "total_alertas": 3,
   "alertas_criticas": 3,
   "alertas_altas": 0,
@@ -12,18 +12,18 @@
       "enlace": "https://www.bloomberg.com/commodities"
     },
     {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
       "titulo": "[16 Jul] Comercio exterior de junio: exportaciones crecen 18,2% por alza del cobre — balanza comercial con superávit de USD 2.100M",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
     }
   ]
 }
