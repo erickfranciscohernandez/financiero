@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-07-17T03:27:01.234616",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "[17 Jul] Tregua EE.UU.–China cumple dos semanas: comercio bilateral de minerales sube 14% desde el anuncio",
+      "seccion": "geopolitica",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "[17 Jul] BCCh: IPOM de septiembre anticipará nuevo escenario con crecimiento revisado al alza — impacto cobre y litio",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    }
+  ]
+}
