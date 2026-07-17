@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-17T03:27:01.234616",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-07-17T06:23:56.793406",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -17,6 +17,13 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }
