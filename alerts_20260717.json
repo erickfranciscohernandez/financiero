@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-17T17:18:51.655283",
+  "fecha": "2026-07-17T21:03:27.441219",
   "total_alertas": 3,
   "alertas_criticas": 3,
   "alertas_altas": 0,
@@ -12,18 +12,18 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
       "titulo": "[17 Jul] BCCh: IPOM de septiembre anticipará nuevo escenario con crecimiento revisado al alza — impacto cobre y litio",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
     }
   ]
 }
