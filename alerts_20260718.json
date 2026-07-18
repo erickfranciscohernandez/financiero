@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-18T17:05:07.720548",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-07-18T20:59:44.664408",
+  "total_alertas": 6,
+  "alertas_criticas": 6,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,6 +12,13 @@
       "enlace": "https://www.bloomberg.com/commodities"
     },
     {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
       "titulo": "[18 Jul] Estados Unidos anuncia exención de aranceles adicionales para litio y cobre chileno bajo el T-TLC — vigencia inmediata",
       "seccion": "geopolitica",
       "score": 9,
@@ -19,18 +26,25 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
+      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
       "titulo": "[18 Jul] Hacienda eleva proyección de crecimiento 2026 a 2,8%: cobre y litio reescriben el escenario fiscal",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.hacienda.cl"
-    },
-    {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
     }
   ]
 }
