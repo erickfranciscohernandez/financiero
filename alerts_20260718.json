@@ -1,0 +1,29 @@
+{
+  "fecha": "2026-07-18T03:16:36.502654",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "[18 Jul] Cobre cierra la semana en USD 5,51/lb: mejor precio de cierre semanal desde enero 2024",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "[18 Jul] Estados Unidos anuncia exención de aranceles adicionales para litio y cobre chileno bajo el T-TLC — vigencia inmediata",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
+      "titulo": "[18 Jul] Hacienda eleva proyección de crecimiento 2026 a 2,8%: cobre y litio reescriben el escenario fiscal",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.hacienda.cl"
+    }
+  ]
+}

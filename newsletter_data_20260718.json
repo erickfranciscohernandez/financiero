@@ -1,0 +1,249 @@
+{
+  "metadata": {
+    "fecha_generacion": "2026-07-18T03:16:36.315599",
+    "version": "v3",
+    "total_noticias": 32
+  },
+  "datos": {
+    "geopolitica": [
+      {
+        "title": "[18 Jul] G20: Declaración de Johannesburgo firma hoja de ruta de transición energética justa — Chile coordina seguimiento",
+        "summary": "El documento final del G20 incluye compromisos vinculantes sobre trazabilidad de minerales críticos y just transition. Chile fue nombrado coordinador del grupo de trabajo de seguimiento junto con la Unión Europea y Canadá. La implementación comenzará en 2027 con un sistema de certificación desarrollado en Chile.",
+        "source": "Reuters",
+        "link": "https://www.reuters.com/world",
+        "date": "2026-07-18T01:16:21.816753"
+      },
+      {
+        "title": "[18 Jul] Estados Unidos anuncia exención de aranceles adicionales para litio y cobre chileno bajo el T-TLC — vigencia inmediata",
+        "summary": "El Representante Comercial de EE.UU. confirma que los minerales críticos chilenos quedan exentos de los aranceles de la sección 232 bajo una adenda al Tratado de Libre Comercio bilateral. La medida protege USD 4.200M de exportaciones anuales chilenas y da certeza al sector minero para nuevas inversiones.",
+        "source": "Bloomberg Markets",
+        "link": "https://www.bloomberg.com/markets",
+        "date": "2026-07-18T03:16:21.816762"
+      },
+      {
+        "title": "OPEP+ mantiene recortes de producción: petróleo Brent escala a USD 82 ante tensión en el Golfo Pérsico",
+        "summary": "Arabia Saudita extiende reducción de 500.000 bpd hasta septiembre. Incidente naval en el Estrecho de Ormuz dispara prima de riesgo geopolítico. Analistas elevan objetivo a USD 88.",
+        "source": "Bloomberg",
+        "link": "https://www.bloomberg.com/news",
+        "date": "2026-07-17T21:16:21.816766"
+      },
+      {
+        "title": "OTAN activa Fuerza de Respuesta Rápida en el flanco este: 8 países refuerzan presencia en Polonia y Bálticos",
+        "summary": "Alianza despliega 12.000 efectivos adicionales ante movimientos de tropas rusas en Bielorrusia. Ministros de Defensa convocan reunión de emergencia en Bruselas para el 4 de junio.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/world",
+        "date": "2026-07-17T23:16:21.816770"
+      }
+    ],
+    "economia_global": [
+      {
+        "title": "[18 Jul] Mercados globales: semana positiva en Wall Street — el rally de julio acumula +5,8% en el S&P 500",
+        "summary": "El índice norteamericano cierra la semana del 14–18 de julio con una ganancia acumulada de 5,8%, el mejor julio desde 2009. Los resultados de Q2 de los grandes bancos superaron el consenso en promedio un 12%. La atención se desplaza hacia los resultados de Big Tech que se publicarán la próxima semana.",
+        "source": "Financial Times",
+        "link": "https://www.ft.com/markets",
+        "date": "2026-07-18T01:16:21.816781"
+      },
+      {
+        "title": "[18 Jul] Petróleo cae a USD 72/barril: Arabia Saudita eleva producción — impacto positivo en cuentas fiscales de Chile",
+        "summary": "La OPEP+ acuerda un aumento de producción gradual que presiona el precio del crudo a la baja. Para Chile, importador neto de petróleo, la caída tiene impacto positivo en el IPC, la cuenta corriente y los costos de generación eléctrica. El BCCh incorporará el efecto en su próximo IPoM de septiembre.",
+        "source": "Bloomberg Commodities",
+        "link": "https://www.bloomberg.com/commodities",
+        "date": "2026-07-18T02:16:21.816784"
+      },
+      {
+        "title": "Fed mantiene tasas en 4.5% pero señala ventana de recorte para septiembre si inflación sigue bajando",
+        "summary": "Actas del FOMC confirman discusión activa sobre primer recorte. PCE subyacente en 2.3% anual da margen. Mercados ya descuentan 2 recortes de 25 pb para el año.",
+        "source": "CNBC",
+        "link": "https://www.cnbc.com",
+        "date": "2026-07-18T00:16:21.816790"
+      },
+      {
+        "title": "China lanza segundo paquete de estímulo fiscal: USD 450.000M para infraestructura verde y consumo interno",
+        "summary": "Beijing financiará redes de carga para vehículos eléctricos, vivienda social y bonos de consumo. Analistas estiman impacto de 0.6 pp sobre PIB chino en el segundo semestre.",
+        "source": "Bloomberg Commodities",
+        "link": "https://www.bloomberg.com/markets",
+        "date": "2026-07-17T21:16:21.816799"
+      }
+    ],
+    "economia_chile": [
+      {
+        "title": "[18 Jul] Semana clave: RPM del BCCh el martes 22 de julio — el mercado aguarda con alta certeza el recorte a 4,25%",
+        "summary": "Con el 83% de probabilidad implícita de recorte de 25 pb según el mercado de swaps, el martes 22 será el evento financiero más relevante del mes. El comunicado post-reunión determinará si el BCCh mantiene su sesgo bajista para la reunión de septiembre. La decisión se conocerá a las 18:00 horas.",
+        "source": "Banco Central de Chile",
+        "link": "https://www.bcentral.cl",
+        "date": "2026-07-18T03:16:21.816812"
+      },
+      {
+        "title": "[18 Jul] Hacienda eleva proyección de crecimiento 2026 a 2,8%: cobre y litio reescriben el escenario fiscal",
+        "summary": "El Ministerio de Hacienda publica su actualización mensual de proyecciones con revisión al alza del PIB desde 2,5% a 2,8%. La mejora obedece al rally de materias primas, el dinamismo del consumo privado y la inversión en energías renovables. El balance estructural proyectado mejora en 0,3% del PIB.",
+        "source": "Ministerio de Hacienda",
+        "link": "https://www.hacienda.cl",
+        "date": "2026-07-18T03:16:21.816815"
+      },
+      {
+        "title": "BCCh mantiene TPM en 4.75%: Rosanna Costa anticipa dos recortes más antes de diciembre",
+        "summary": "Consejo del Banco Central vota 4-1 por mantener la tasa. Proyecciones del IPoM de junio elevan crecimiento a 3.8%-4.2% para 2026. Inflación converge al 3% en el primer trimestre de 2027.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-07-17T20:16:21.816817"
+      },
+      {
+        "title": "Codelco anuncia acuerdo con SQM para producción conjunta de litio en el Salar de Atacama desde 2027",
+        "summary": "Alianza estatal-privada combinará operaciones y aumentará producción en 30% respecto al plan base. Estado chileno captará royalty del 40% sobre excedentes. Inversión estimada: USD 2.800M.",
+        "source": "EMOL",
+        "link": "https://www.emol.com",
+        "date": "2026-07-18T01:16:21.816820"
+      }
+    ],
+    "tendencias_tech": [
+      {
+        "title": "[18 Jul] CMF: cierra el mes con 214 entidades registradas bajo Ley Fintech — cooperativas lideran crecimiento regional",
+        "summary": "El balance de la primera quincena de julio confirma que el ecosistema fintech chileno creció 23% en el año. Las cooperativas de regiones como Biobío, La Araucanía y Los Lagos concentran el mayor crecimiento de nuevas entidades registradas, demostrando que la inclusión financiera digital avanza fuera de Santiago.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-07-18T03:16:21.816828"
+      },
+      {
+        "title": "[18 Jul] Ciberseguridad financiera: CSIRT Chile reporta cero incidentes críticos en el sector cooperativo en el primer semestre",
+        "summary": "El Centro Nacional de Ciberseguridad publica su reporte semestral con datos positivos para el sector financiero: cero incidentes de nivel crítico en cooperativas, gracias a la adopción de los estándares de seguridad impulsados por la CMF y el trabajo coordinado con el CSIRT Financial. Se esperan nuevas exigencias en agosto.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-07-18T03:16:21.816833"
+      },
+      {
+        "title": "Starlink Gen 3: SpaceX lanza 180 satélites y promete latencia de 8ms en Chile y Perú",
+        "summary": "Nueva constelación reduce latencia a la mitad y duplica velocidad de bajada. Usuarios en regiones remotas de Chile reportan 400 Mbps. Precio baja a USD 49/mes con subsidio gubernamental.",
+        "source": "TechCrunch",
+        "link": "https://techcrunch.com",
+        "date": "2026-07-17T19:16:21.816836"
+      },
+      {
+        "title": "Microsoft Azure anuncia nodo regional en Chile para 2027: USD 1.200M en infraestructura cloud local",
+        "summary": "Centro de datos en Pudahuel procesará datos de gobierno, banca y salud con soberanía nacional. Elimina la necesidad de enviar datos sensibles a Brasil. CORFO co-financia con USD 180M.",
+        "source": "TechCrunch",
+        "link": "https://techcrunch.com",
+        "date": "2026-07-17T22:16:21.816838"
+      }
+    ],
+    "cooperativismo": [
+      {
+        "title": "[18 Jul] Detacoop celebra 60 años: 180.000 socios y presencia en las 16 regiones del país",
+        "summary": "La cooperativa de trabajadores del Estado conmemora su aniversario número 60 con un hito histórico: cobertura en las 16 regiones de Chile y 180.000 socios activos. El acto central se realizará el lunes 21 de julio en Santiago con la presencia de autoridades y representantes del movimiento cooperativo nacional.",
+        "source": "Foro Cooperativo",
+        "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
+        "date": "2026-07-18T01:16:21.816844"
+      },
+      {
+        "title": "[18 Jul] Balance semanal: Semana Cooperativa + G20 consolidan a Chile como referente internacional del cooperativismo",
+        "summary": "La semana del 14–18 de julio marca un hito para el cooperativismo chileno: la Semana Cooperativa con récord de participación, el G20 con propuesta chilena aprobada y la presentación en Ginebra ante la ACI posicionan a Chile como modelo global. Foro Cooperativo proyecta 20% de crecimiento en afiliaciones para el segundo semestre.",
+        "source": "Foro Cooperativo",
+        "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
+        "date": "2026-07-18T01:16:21.816847"
+      },
+      {
+        "title": "Cooperativa Los Héroes digitaliza 100% de sus procesos: cero papel y aprobación de créditos en 12 horas",
+        "summary": "Migración total a plataforma digital reduce costos operacionales en 28% y eleva satisfacción de socios a NPS de 72 puntos. Algoritmo de scoring propio aprueba o rechaza créditos de consumo en minutos.",
+        "source": "Diario Financiero",
+        "link": "https://www.df.cl",
+        "date": "2026-07-17T19:16:21.816850"
+      },
+      {
+        "title": "Informe BID: cooperativas financieras de Chile mantienen mora 40% inferior a banca comercial en crédito de consumo",
+        "summary": "Análisis comparativo atribuye mejor calidad de cartera al modelo de evaluación colectiva y al mayor conocimiento del socio. Tasa de recuperación de cartera vencida también supera a la banca.",
+        "source": "BID",
+        "link": "https://www.iadb.org",
+        "date": "2026-07-17T20:16:21.816852"
+      }
+    ],
+    "cmf": [
+      {
+        "title": "[18 Jul] CMF publica agenda regulatoria del segundo semestre: 4 normativas en consulta entre agosto y octubre",
+        "summary": "La Comisión para el Mercado Financiero detalla su plan de trabajo regulatorio con cuatro consultas públicas programadas: gobierno corporativo cooperativas (agosto), criptoactivos permanente (septiembre), IA en crédito (octubre) y norma de capital para cooperativas sistémicas (noviembre). El sector tiene calendario de anticipación de 90 días.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl/institucional/legislacion_normativa/normativa_tramite.php",
+        "date": "2026-07-18T03:16:21.816858"
+      },
+      {
+        "title": "CMF reporta: sistema bancario chileno con capitalización del 14.2%, el nivel más sólido desde la reforma de 2019",
+        "summary": "Informe de estabilidad financiera del primer semestre 2026 confirma robustez del sector. Ratio de cobertura de liquidez en 148%, muy por encima del mínimo regulatorio del 100%.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-07-17T19:16:21.816862"
+      },
+      {
+        "title": "CMF y BCCh emiten circular conjunta sobre exposición de bancos a criptoactivos: límite del 2% del capital",
+        "summary": "Normativa establece que ninguna institución financiera puede superar el 2% de activos ponderados en cripto. Activos elegibles solo Bitcoin y Ether con custodios regulados en Chile.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-07-18T00:16:21.816865"
+      },
+      {
+        "title": "CMF autoriza primera AAFM (Administradora de Activos Financieros Modulares) bajo Ley Fintech",
+        "summary": "Empresa Fintual Inversiones recibe licencia pionera que le permite ofrecer gestión discrecional de carteras a minoristas sin ser AFP ni corredora tradicional. Abre mercado a nuevos competidores.",
+        "source": "CMF Chile",
+        "link": "https://www.cmfchile.cl",
+        "date": "2026-07-18T01:16:21.816867"
+      }
+    ],
+    "noticias_economicas_actuales": [
+      {
+        "title": "[18 Jul] Cobre cierra la semana en USD 5,51/lb: mejor precio de cierre semanal desde enero 2024",
+        "summary": "El metal rojo acumula una ganancia semanal de 2,1% y cierra el viernes con el precio de cierre más alto en 18 meses. La convergencia de la tregua EE.UU.–China, el PIB chino del Q2 y los inventarios LME en mínimos históricos crean un entorno técnico muy alcista. Los analistas no descartan USD 5,70 en agosto.",
+        "source": "Bloomberg Commodities",
+        "link": "https://www.bloomberg.com/commodities",
+        "date": "2026-07-18T01:16:21.816873"
+      },
+      {
+        "title": "[18 Jul] IPSA: mejor semana del año con +2,8% — fondos A y B acumulan retornos de 9,1% y 6,3% en lo que va de 2026",
+        "summary": "El cierre de la semana pone en perspectiva el excelente desempeño bursátil chileno en 2026. Los multifondos más riesgosos son los grandes ganadores del año gracias al rally de renta variable local y global. Los afiliados más jóvenes, concentrados en el fondo A, acumulan retornos superiores al 9% anual.",
+        "source": "Bolsa de Santiago",
+        "link": "https://www.bolsadesantiago.com",
+        "date": "2026-07-18T02:16:21.816875"
+      },
+      {
+        "title": "IPC de mayo 2026 sube 0.2% mensual: inflación anual desacelera a 3.2%, mínimo en 57 meses",
+        "summary": "INE confirma trayectoria hacia la meta. Energía residencial sube 0.9%, alimentos caen 0.4% y transporte baja 0.3%. Deflación en bienes industriales importados refleja apreciación del peso.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl",
+        "date": "2026-07-17T20:16:21.816878"
+      },
+      {
+        "title": "Ventas minoristas crecen 6.1% en mayo 2026: electrodomésticos, construcción y gastronomía lideran el alza",
+        "summary": "INE registra el mejor dato del comercio en 20 meses. Crédito de consumo crece 6.9% interanual y se acelera. Menor inflación y empleo estable dinamizan el consumo de los hogares.",
+        "source": "INE",
+        "link": "https://www.ine.gob.cl",
+        "date": "2026-07-17T19:16:21.816880"
+      }
+    ],
+    "inteligencia_artificial": [
+      {
+        "title": "[18 Jul] CORFO: primera cohorte del programa \"IA para Cooperativas\" completa su formación — 320 profesionales certificados",
+        "summary": "Los 320 profesionales de cooperativas de ahorro y crédito que participaron en el primer programa de formación en IA aplicada al sector reciben sus certificaciones. El 87% de los egresados ya implementa herramientas de IA en sus procesos. La segunda cohorte inicia en septiembre con 500 cupos.",
+        "source": "CORFO",
+        "link": "https://www.corfo.cl",
+        "date": "2026-07-18T01:16:21.816886"
+      },
+      {
+        "title": "[18 Jul] Foro Cooperativo lanza asistente virtual con IA generativa para consultas regulatorias de socios y dirigentes",
+        "summary": "El asistente \"CoopIA\" responde consultas sobre normativa CMF, tributación cooperativa y gestión de excedentes en lenguaje natural. El sistema fue desarrollado con modelos de IA entrenados con la normativa chilena y la doctrina cooperativa internacional. Disponible 24/7 en la plataforma digital de Foro Cooperativo.",
+        "source": "Foro Cooperativo",
+        "link": "https://www.forocooperativo.cl/category/menu-barra-izquierda/noticias/",
+        "date": "2026-07-18T01:16:21.816888"
+      },
+      {
+        "title": "CORFO lanza fondo de USD 80M para startups de IA en Chile: foco en agritech, minería y salud",
+        "summary": "Programa InnovaChile IA financiará proyectos con componente de datos propios y aplicación en sectores estratégicos. Convocatoria abierta hasta el 30 de julio con 40 cupos disponibles.",
+        "source": "The Rundown AI",
+        "link": "https://therundown.ai",
+        "date": "2026-07-17T22:16:21.816891"
+      },
+      {
+        "title": "IA en la banca chilena: tres de los cuatro mayores bancos ya usan LLMs para originar créditos Pyme",
+        "summary": "Banco de Chile, Santander y BCI confirman uso de modelos de lenguaje en scoring crediticio. CMF publicará circular de supervisión algorítmica en agosto 2026.",
+        "source": "Ben's Bites",
+        "link": "https://bensbites.com",
+        "date": "2026-07-17T22:16:21.816893"
+      }
+    ]
+  }
+}
