@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-18T06:11:45.121251",
+  "fecha": "2026-07-18T09:41:30.978058",
   "total_alertas": 4,
   "alertas_criticas": 4,
   "alertas_altas": 0,
@@ -19,18 +19,18 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
+      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com"
+    },
+    {
       "titulo": "[18 Jul] Hacienda eleva proyección de crecimiento 2026 a 2,8%: cobre y litio reescriben el escenario fiscal",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.hacienda.cl"
-    },
-    {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
-      "seccion": "economia_chile",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
     }
   ]
 }
