@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-07-22T06:37:33.648381",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-07-22T10:31:55.979570",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,11 +12,32 @@
       "enlace": "https://www.bcentral.cl"
     },
     {
+      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/politics"
+    },
+    {
       "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
     }
   ]
 }
