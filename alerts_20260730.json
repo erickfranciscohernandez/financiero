@@ -1,9 +1,16 @@
 {
-  "fecha": "2026-07-30T02:57:23.374618",
-  "total_alertas": 1,
-  "alertas_criticas": 1,
+  "fecha": "2026-07-30T06:34:25.364274",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
+    {
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
     {
       "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
       "seccion": "geopolitica",
