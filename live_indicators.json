@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-08-01T03:38:35.820500",
+  "fecha": "2026-08-01T06:36:24.111637",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -15,7 +15,7 @@
       "unidad": "$",
       "tipo": "precio",
       "valor": 71649.0,
-      "fecha": "2026-07-01",
+      "fecha": "2026-08-01",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "tpm": {
