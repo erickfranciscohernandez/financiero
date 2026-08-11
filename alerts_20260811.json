@@ -1,15 +1,22 @@
 {
-  "fecha": "2026-08-11T02:16:11.094337",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-08-11T05:16:02.753857",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "seccion": "geopolitica",
+      "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
+      "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com"
     },
     {
       "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
@@ -19,11 +26,11 @@
       "enlace": "https://www.bloomberg.com/politics"
     },
     {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
+      "enlace": "https://www.reuters.com/business/energy"
     }
   ]
 }
