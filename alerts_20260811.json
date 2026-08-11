@@ -1,16 +1,9 @@
 {
-  "fecha": "2026-08-11T09:08:00.077869",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-08-11T13:21:56.898441",
+  "total_alertas": 2,
+  "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
-    {
-      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.ft.com/world"
-    },
     {
       "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
       "seccion": "geopolitica",
@@ -19,11 +12,11 @@
       "enlace": "https://www.reuters.com"
     },
     {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
-      "seccion": "economia_global",
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
+      "enlace": "https://www.df.cl"
     }
   ]
 }
