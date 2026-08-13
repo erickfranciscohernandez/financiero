@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-08-13T02:34:16.215659",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.ft.com/world"
+    }
+  ]
+}
