@@ -1,22 +1,15 @@
 {
-  "fecha": "2026-08-22T04:40:46.267527",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-08-22T08:39:07.151778",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
+      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
+      "enlace": "https://www.bloomberg.com/politics"
     },
     {
       "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
@@ -26,11 +19,11 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
-      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.latercera.com"
+      "enlace": "https://www.df.cl"
     }
   ]
 }
