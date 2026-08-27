@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-08-27T08:55:06.458733",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-08-27T22:10:58.506188",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,6 +12,13 @@
       "enlace": "https://www.bloomberg.com/politics"
     },
     {
+      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
       "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
       "seccion": "economia_global",
       "score": 9,
@@ -19,11 +26,11 @@
       "enlace": "https://www.bloomberg.com/markets"
     },
     {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.latercera.com"
     }
   ]
 }
