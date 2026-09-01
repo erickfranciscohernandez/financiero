@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-01T13:26:53.012221",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-09-01T19:21:31.742993",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -12,11 +12,25 @@
       "enlace": "https://www.reuters.com"
     },
     {
-      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
       "seccion": "economia_chile",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.df.cl"
+      "enlace": "https://www.latercera.com"
     }
   ]
 }
