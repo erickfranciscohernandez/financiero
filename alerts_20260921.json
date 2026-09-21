@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-09-21T15:03:25.346831",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-09-21T20:23:06.818698",
+  "total_alertas": 5,
+  "alertas_criticas": 5,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -19,11 +19,25 @@
       "enlace": "https://www.reuters.com"
     },
     {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    },
+    {
       "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.bloomberg.com/commodities"
+    },
+    {
+      "titulo": "Reforma tributaria en debate: Hacienda propone royalty minero adicional del 2% sobre cobre sobre USD 4.50/lb",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.latercera.com"
     }
   ]
 }
