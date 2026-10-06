@@ -1,22 +1,22 @@
 {
-  "fecha": "2026-10-06T01:15:49.487753",
+  "fecha": "2026-10-06T11:10:58.250304",
   "total_alertas": 2,
   "alertas_criticas": 2,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bcentral.cl"
+    },
+    {
+      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
       "seccion": "geopolitica",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.ft.com/world"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.bloomberg.com/politics"
     }
   ]
 }
