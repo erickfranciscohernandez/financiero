@@ -1,22 +1,15 @@
 {
-  "fecha": "2026-10-12T05:40:07.222870",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-10-12T17:43:44.914293",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
+      "enlace": "https://www.reuters.com/business/energy"
     }
   ]
 }
