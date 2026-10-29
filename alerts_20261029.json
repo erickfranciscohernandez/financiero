@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-10-29T05:29:41.317869",
-  "total_alertas": 4,
-  "alertas_criticas": 4,
+  "fecha": "2026-10-29T15:09:07.325513",
+  "total_alertas": 3,
+  "alertas_criticas": 3,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -19,18 +19,11 @@
       "enlace": "https://www.reuters.com"
     },
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
-      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com/business/energy"
+      "enlace": "https://www.bloomberg.com/commodities"
     }
   ]
 }
