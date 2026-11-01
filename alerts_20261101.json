@@ -1,9 +1,16 @@
 {
-  "fecha": "2026-11-01T05:44:39.899692",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-11-01T14:56:20.056684",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
+    {
+      "titulo": "África: Cumbre de la UA crea zona de libre comercio en minerales críticos excluyendo a China del procesamiento",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.ft.com/world"
+    },
     {
       "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
       "seccion": "geopolitica",
@@ -12,11 +19,18 @@
       "enlace": "https://www.bloomberg.com/politics"
     },
     {
-      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
       "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/markets"
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }
