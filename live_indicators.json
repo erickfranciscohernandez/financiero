@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-10-31T23:16:15.237065",
+  "fecha": "2026-11-01T05:44:21.007669",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -14,8 +14,8 @@
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 72151.0,
-      "fecha": "2026-10-01",
+      "valor": 72440.0,
+      "fecha": "2026-11-01",
       "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "tpm": {
