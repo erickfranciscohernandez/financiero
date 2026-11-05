@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-05T12:07:12.621248",
+  "fecha": "2026-11-05T21:54:20.705903",
   "version": "v6-sii",
   "indicadores": {
     "uf": {
@@ -14,10 +14,9 @@
       "label": "UTM",
       "unidad": "$",
       "tipo": "precio",
-      "valor": 71649.0,
-      "fecha": "2026-07-06",
-      "fuente": "BCCh (06-jul-2026)",
-      "mock": true
+      "valor": 72440.0,
+      "fecha": "2026-11-01",
+      "fuente": "Banco Central de Chile vía mindicador.cl"
     },
     "tpm": {
       "label": "TPM (Tasa Política Mon.)",
