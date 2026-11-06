@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-11-06T06:15:42.390633",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
+  "alertas_altas": 0,
+  "alertas": [
+    {
+      "titulo": "Oro alcanza USD 3.520/oz: máximo histórico impulsado por compras de bancos centrales y fuga hacia activos refugio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/markets"
+    }
+  ]
+}
