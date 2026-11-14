@@ -1,22 +1,15 @@
 {
-  "fecha": "2026-11-14T11:20:43.377057",
-  "total_alertas": 2,
-  "alertas_criticas": 2,
+  "fecha": "2026-11-14T17:53:41.882985",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
-      "seccion": "noticias_economicas_actuales",
-      "score": 10,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bcentral.cl"
-    },
-    {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
       "score": 9,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
+      "enlace": "https://www.reuters.com/business/energy"
     }
   ]
 }
