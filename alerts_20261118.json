@@ -1,29 +1,15 @@
 {
-  "fecha": "2026-11-18T07:02:44.774724",
-  "total_alertas": 3,
-  "alertas_criticas": 3,
+  "fecha": "2026-11-18T17:09:06.574621",
+  "total_alertas": 1,
+  "alertas_criticas": 1,
   "alertas_altas": 0,
   "alertas": [
     {
-      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
-      "seccion": "geopolitica",
-      "score": 9,
+      "titulo": "Exportaciones chilenas acumulan USD 28.600M en enero-mayo 2026: cobre y litio cubren el 61% del total",
+      "seccion": "noticias_economicas_actuales",
+      "score": 10,
       "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/politics"
-    },
-    {
-      "titulo": "Cumbre de Shanghai: China, Rusia e Irán firman acuerdo de pagos en yuan para eludir el sistema SWIFT",
-      "seccion": "geopolitica",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.reuters.com"
-    },
-    {
-      "titulo": "Cobre supera USD 5.10/lb: déficit estructural de oferta dispara precio a nuevo máximo histórico",
-      "seccion": "economia_global",
-      "score": 9,
-      "nivel": "🔴 CRÍTICO",
-      "enlace": "https://www.bloomberg.com/commodities"
+      "enlace": "https://www.bcentral.cl"
     }
   ]
 }
