@@ -1,7 +1,7 @@
 {
-  "fecha": "2026-11-24T02:51:06.316744",
-  "total_alertas": 1,
-  "alertas_criticas": 1,
+  "fecha": "2026-11-24T14:44:14.988789",
+  "total_alertas": 4,
+  "alertas_criticas": 4,
   "alertas_altas": 0,
   "alertas": [
     {
@@ -10,6 +10,27 @@
       "score": 9,
       "nivel": "🔴 CRÍTICO",
       "enlace": "https://www.ft.com/world"
+    },
+    {
+      "titulo": "Trump firma orden ejecutiva que prohíbe inversiones de fondos federales en bonos chinos",
+      "seccion": "geopolitica",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.bloomberg.com/politics"
+    },
+    {
+      "titulo": "Litio carbonato rebota a USD 17.200/t: reactivación de demanda china y recorte de oferta en Australia elevan precio",
+      "seccion": "economia_global",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.reuters.com/business/energy"
+    },
+    {
+      "titulo": "Dólar observado cierra la semana en $891 en Chile: cobre fuerte y expectativa de recorte Fed aprecian el peso",
+      "seccion": "economia_chile",
+      "score": 9,
+      "nivel": "🔴 CRÍTICO",
+      "enlace": "https://www.df.cl"
     }
   ]
 }
